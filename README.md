@@ -43,4 +43,4 @@ Le bozze con `bozza: true` non vengono mai pubblicate. Quelle che non ti interes
 
 ## Formato di un articolo
 
-Vedi la sezione 4 di `GUIDA-REDAZIONE.md`. Campi facoltativi: `immagine` (percorso di un file in `public/`, es. `/img/foto.jpg`) e `crediti_immagine`.
+Vedi la sezione 6 di `GUIDA-REDAZIONE.md`. Campi per le immagini: `immagine` e `immagine_riserva` (indirizzo `https://...` oppure un file in `public/`, es. `/img/foto.jpg`), `alt_immagine`, `crediti_immagine`. Campi SEO: `titolo_seo`, `parola_chiave`, `aggiornato`.

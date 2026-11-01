@@ -64,12 +64,24 @@ function leggiArticoli() {
         bozza: d.bozza === true,
         fonti: Array.isArray(d.fonti) ? d.fonti.filter((f) => f && f.url) : [],
         immagine: d.immagine || null,
+        immagineRiserva: d.immagine_riserva || "",
+        altImmagine: d.alt_immagine || d.titolo || "",
         creditiImmagine: d.crediti_immagine || "",
+        parolaChiave: d.parola_chiave || "",
+        titoloSeo: d.titolo_seo || "",
+        aggiornato: d.aggiornato ? new Date(d.aggiornato) : null,
         minuti: Math.max(1, Math.round(parole / 220)),
-        html: marked.parse(content),
+        html: marked.parse(content).replace(/<p>\s*<\/p>/g, ""),
         url: `/articoli/${slug}/`,
       };
     });
+  for (const a of articoli) {
+    const avvisi = [];
+    if (a.sommario.length > 160) avvisi.push(`sommario di ${a.sommario.length} caratteri (meglio 140-155)`);
+    if ((a.titoloSeo || a.titolo).length > 65) avvisi.push(`titolo per Google di ${(a.titoloSeo || a.titolo).length} caratteri (meglio entro 60: usa titolo_seo)`);
+    if (a.immagine && !a.creditiImmagine) avvisi.push("immagine senza crediti_immagine");
+    if (avvisi.length) console.warn(`Avviso ${a.file}: ${avvisi.join("; ")}`);
+  }
   if (errori.length) {
     console.error("Controlla questi articoli:\n  " + errori.join("\n  "));
     process.exit(1);
@@ -78,6 +90,22 @@ function leggiArticoli() {
     .filter((a) => CON_BOZZE || !a.bozza)
     .sort((a, b) => b.data - a.data || b.viralita - a.viralita);
 }
+
+// ---------- immagini ----------
+// Se l'immagine principale non si carica, si prova quella di riserva; se manca anche quella, resta la copertina colorata.
+const QUANDO_ERRORE = `if(this.dataset.riserva){this.src=this.dataset.riserva;this.dataset.riserva=''}else{this.remove()}`;
+function img({ src, riserva = "", alt = "", lazy = true, priorita = false, classe = "" }) {
+  return `<img${classe ? ` class="${classe}"` : ""} src="${esc(src)}"${riserva ? ` data-riserva="${esc(riserva)}"` : ""} alt="${esc(alt)}" loading="${lazy ? "lazy" : "eager"}"${priorita ? ' fetchpriority="high"' : ""} decoding="async" referrerpolicy="no-referrer" onerror="${QUANDO_ERRORE}">`;
+}
+// Immagini nel testo: ![testo alternativo](url "crediti") diventa una figura con didascalia
+marked.use({
+  renderer: {
+    image({ href, title, text }) {
+      return `</p><figure class="immagine-testo">${img({ src: href, alt: text })}${title ? `<figcaption>${esc(title)}</figcaption>` : ""}</figure><p>`;
+    },
+  },
+});
+const urlImmagine = (u) => (!u ? "" : /^https?:\/\//.test(u) ? u : urlAssoluto(u.startsWith("/") ? u : `/${u}`));
 
 // ---------- componenti ----------
 const colore = (cat) => config.categorie[cat].colore;
@@ -97,8 +125,12 @@ const tastoLike = (a) =>
     ? ""
     : `<button type="button" class="tasto-like" data-like="${esc(a.slug)}" aria-pressed="false"><svg class="cuore" viewBox="0 0 9 8" aria-hidden="true"><path d="M1 0h2v1h1v1h1V1h1V0h2v1h1v3H8v1H7v1H6v1H5v1H4V7H3V6H2V5H1V4H0V1h1z"/></svg><span class="like-testo">Mi piace</span><span class="like-conto" aria-live="polite"></span></button>`;
 
-function pagina({ titolo, descrizione = config.motto, percorso = "/", corpo, tipo = "website", ticker = [] }) {
-  const titoloCompleto = titolo ? `${titolo} – ${config.nome}` : `${config.nome} – ${config.motto}`;
+function pagina({ titolo, titoloSeo = "", descrizione = config.motto, percorso = "/", corpo, tipo = "website", ticker = [], articolo = null }) {
+  const titoloCompleto = titolo ? `${titoloSeo || titolo} – ${config.nome}` : `${config.nome} – ${config.motto}`;
+  const immagineSocial = articolo?.immagine ? urlImmagine(articolo.immagine) : urlAssoluto("/condivisione.png");
+  const metaArticolo = articolo
+    ? `\n<meta property="article:published_time" content="${articolo.data.toISOString()}">${articolo.aggiornato ? `\n<meta property="article:modified_time" content="${articolo.aggiornato.toISOString()}">` : ""}\n<meta property="article:section" content="${esc(config.categorie[articolo.categoria].nome)}">${articolo.tag.map((t) => `\n<meta property="article:tag" content="${esc(t)}">`).join("")}`
+    : "";
   const nav = Object.entries(config.categorie)
     .map(([k, c]) => `<a href="/categoria/${k}/" data-colore="${c.colore}"${percorso.startsWith(`/categoria/${k}/`) ? ' aria-current="page"' : ""}>${pallino(k)}${esc(c.nome)}</a>`)
     .join("");
@@ -114,6 +146,7 @@ function pagina({ titolo, descrizione = config.motto, percorso = "/", corpo, tip
 <title>${esc(titoloCompleto)}</title>
 <meta name="description" content="${esc(descrizione)}">
 <meta name="theme-color" content="#15122b">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="${urlAssoluto(percorso)}">
 <meta property="og:type" content="${tipo}">
 <meta property="og:title" content="${esc(titolo || config.nome)}">
@@ -121,6 +154,12 @@ function pagina({ titolo, descrizione = config.motto, percorso = "/", corpo, tip
 <meta property="og:url" content="${urlAssoluto(percorso)}">
 <meta property="og:site_name" content="${esc(config.nome)}">
 <meta property="og:locale" content="it_IT">
+<meta property="og:image" content="${esc(immagineSocial)}">
+<meta property="og:image:alt" content="${esc(articolo?.immagine ? articolo.altImmagine : config.nome)}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${esc(titoloSeo || titolo || config.nome)}">
+<meta name="twitter:description" content="${esc(descrizione)}">
+<meta name="twitter:image" content="${esc(immagineSocial)}">${metaArticolo}
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="${esc(config.nome)}" href="/rss.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -151,9 +190,8 @@ ${corpo}
 }
 
 function scheda(a) {
-  const copertina = a.immagine
-    ? `<img src="${esc(a.immagine)}" alt="" loading="lazy">`
-    : `<span class="copertina-nome" aria-hidden="true">${esc(config.categorie[a.categoria].nome)}</span>`;
+  const copertina = `<span class="copertina-nome" aria-hidden="true">${esc(config.categorie[a.categoria].nome)}</span>${
+    a.immagine ? img({ src: a.immagine, riserva: a.immagineRiserva, alt: a.altImmagine }) : ""}`;
   return `<article class="scheda" data-colore="${colore(a.categoria)}">
   <div class="copertina">${copertina}</div>
   <div class="scheda-corpo">
@@ -188,7 +226,8 @@ function home(articoli) {
   const [apertura, ...resto] = articoli;
   const tendenza = inTendenza(articoli);
   const corpo = `
-<section class="eroe" data-colore="${colore(apertura.categoria)}" aria-labelledby="t-apertura">
+<section class="eroe${apertura.immagine ? " eroe-con-arte" : ""}" data-colore="${colore(apertura.categoria)}" aria-labelledby="t-apertura">
+  ${apertura.immagine ? `<div class="eroe-arte" aria-hidden="true">${img({ src: apertura.immagine, riserva: apertura.immagineRiserva, lazy: false, priorita: true })}</div>` : ""}
   <div class="eroe-testo">
     <p class="meta">${etichettaCat(apertura.categoria)}<time datetime="${apertura.data.toISOString()}">${dataLunga.format(apertura.data)}</time>${segnoBozza(apertura)}</p>
     <h1 id="t-apertura" class="eroe-titolo"><a href="${apertura.url}">${esc(apertura.titolo)}</a></h1>
@@ -213,17 +252,34 @@ function paginaArticolo(a, articoli) {
         .join("")}</ul></section>`
     : "";
   const immagine = a.immagine
-    ? `<figure class="immagine"><img src="${esc(a.immagine)}" alt="" loading="eager">${a.creditiImmagine ? `<figcaption>${esc(a.creditiImmagine)}</figcaption>` : ""}</figure>`
+    ? `<figure class="immagine">${img({ src: a.immagine, riserva: a.immagineRiserva, alt: a.altImmagine, lazy: false, priorita: true })}${a.creditiImmagine ? `<figcaption>${esc(a.creditiImmagine)}</figcaption>` : ""}</figure>`
     : "";
-  const jsonld = {
-    "@context": "https://schema.org", "@type": "NewsArticle",
-    headline: a.titolo, description: a.sommario, datePublished: a.data.toISOString(),
-    inLanguage: "it", publisher: { "@type": "Organization", name: config.nome },
-    mainEntityOfPage: urlAssoluto(a.url),
-  };
+  const editore = { "@type": "Organization", name: config.nome, url: config.url, logo: { "@type": "ImageObject", url: urlAssoluto("/logo.png"), width: 512, height: 512 } };
+  const jsonld = [
+    {
+      "@context": "https://schema.org", "@type": "NewsArticle",
+      headline: (a.titoloSeo || a.titolo).slice(0, 110), description: a.sommario,
+      datePublished: a.data.toISOString(), dateModified: (a.aggiornato || a.data).toISOString(),
+      inLanguage: "it-IT", articleSection: config.categorie[a.categoria].nome,
+      keywords: [a.parolaChiave, ...a.tag].filter(Boolean).join(", "),
+      ...(a.immagine ? { image: [urlImmagine(a.immagine)] } : {}),
+      author: { "@type": "Organization", name: `Redazione ${config.nome}`, url: urlAssoluto("/chi-siamo/") },
+      publisher: editore, mainEntityOfPage: { "@type": "WebPage", "@id": urlAssoluto(a.url) },
+      ...(a.fonti.length ? { citation: a.fonti.map((f) => f.url) } : {}),
+    },
+    {
+      "@context": "https://schema.org", "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: config.nome, item: urlAssoluto("/") },
+        { "@type": "ListItem", position: 2, name: config.categorie[a.categoria].nome, item: urlAssoluto(`/categoria/${a.categoria}/`) },
+        { "@type": "ListItem", position: 3, name: a.titolo, item: urlAssoluto(a.url) },
+      ],
+    },
+  ];
   const corpo = `
 <article class="articolo" data-colore="${colore(a.categoria)}">
   <header class="eroe-articolo">
+    <nav class="briciole" aria-label="Percorso"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/categoria/${a.categoria}/">${esc(config.categorie[a.categoria].nome)}</a></nav>
     <p class="meta">${etichettaCat(a.categoria)}<time datetime="${a.data.toISOString()}">${dataLunga.format(a.data)}</time><span>${a.minuti} min di lettura</span>${segnoBozza(a)}</p>
     <h1>${esc(a.titolo)}</h1>
     ${a.sommario ? `<p class="occhiello">${esc(a.sommario)}</p>` : ""}
@@ -238,7 +294,7 @@ function paginaArticolo(a, articoli) {
 ${a.bozza ? "" : `<script src="/like.js" defer></script>`}
 ${correlati.length ? `<section class="correlati" aria-labelledby="t-corr"><h2 id="t-corr" class="titolo-sezione">Altro da ${esc(config.categorie[a.categoria].nome)}</h2><div class="griglia">${correlati.map((x) => scheda(x)).join("")}</div></section>` : ""}
 <script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, "\\u003c")}</script>`;
-  return pagina({ titolo: a.titolo, descrizione: a.sommario || config.motto, percorso: a.url, corpo, tipo: "article" });
+  return pagina({ titolo: a.titolo, titoloSeo: a.titoloSeo, descrizione: a.sommario || config.motto, percorso: a.url, corpo, tipo: "article", articolo: a });
 }
 
 function paginaElenco({ titolo, descrizione, percorso, lista, categoria }) {
@@ -261,10 +317,10 @@ function rss(articoli) {
     <guid>${urlAssoluto(a.url)}</guid>
     <pubDate>${a.data.toUTCString()}</pubDate>
     <category>${esc(config.categorie[a.categoria].nome)}</category>
-    <description>${esc(a.sommario)}</description>
+    <description>${esc(a.sommario)}</description>${a.immagine ? `\n    <media:content url="${esc(urlImmagine(a.immagine))}" medium="image"/>` : ""}
   </item>`).join("");
   return `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel>
   <title>${esc(config.nome)}</title>
   <link>${config.url}</link>
   <description>${esc(config.motto)}</description>
@@ -275,8 +331,8 @@ function rss(articoli) {
 function sitemap(articoli) {
   const percorsi = ["/", "/archivio/", "/chi-siamo/", ...Object.keys(config.categorie).map((k) => `/categoria/${k}/`)];
   const righe = percorsi.map((p) => `<url><loc>${urlAssoluto(p)}</loc></url>`)
-    .concat(articoli.filter((a) => !a.bozza).map((a) => `<url><loc>${urlAssoluto(a.url)}</loc><lastmod>${a.data.toISOString().slice(0, 10)}</lastmod></url>`));
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${righe.join("")}</urlset>`;
+    .concat(articoli.filter((a) => !a.bozza).map((a) => `<url><loc>${urlAssoluto(a.url)}</loc><lastmod>${(a.aggiornato || a.data).toISOString().slice(0, 10)}</lastmod>${a.immagine ? `<image:image><image:loc>${esc(urlImmagine(a.immagine))}</image:loc></image:image>` : ""}</url>`));
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">${righe.join("")}</urlset>`;
 }
 
 // ---------- build ----------
