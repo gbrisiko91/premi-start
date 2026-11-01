@@ -93,7 +93,7 @@ function leggiArticoli() {
 
 // ---------- immagini ----------
 // Se l'immagine principale non si carica, si prova quella di riserva; se manca anche quella, resta la copertina colorata.
-const QUANDO_ERRORE = `if(this.dataset.riserva){this.src=this.dataset.riserva;this.dataset.riserva=''}else{this.remove()}`;
+const QUANDO_ERRORE = `if(this.dataset.riserva){this.src=this.dataset.riserva;this.dataset.riserva=''}else{(this.closest('figure')||this).remove()}`;
 function img({ src, riserva = "", alt = "", lazy = true, priorita = false, classe = "" }) {
   return `<img${classe ? ` class="${classe}"` : ""} src="${esc(src)}"${riserva ? ` data-riserva="${esc(riserva)}"` : ""} alt="${esc(alt)}" loading="${lazy ? "lazy" : "eager"}"${priorita ? ' fetchpriority="high"' : ""} decoding="async" referrerpolicy="no-referrer" onerror="${QUANDO_ERRORE}">`;
 }
