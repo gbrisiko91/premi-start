@@ -1,4 +1,4 @@
-/* Premi Start — schermata del titolo: notte indaco, tasti del controller accesi, titoli larghissimi */
+/* Soffia Cartuccia — schermata del titolo: notte indaco, tasti del controller accesi, titoli larghissimi */
 :root {
   --notte: #15122b;
   --pannello: #211c40;
@@ -66,7 +66,7 @@ img { max-width: 100%; height: auto; display: block; }
 .ticker { display: flex; align-items: stretch; border-top: 1px solid var(--pannello-2); font-family: var(--display); font-weight: 600; font-size: .9rem; }
 .ticker-etichetta { background: var(--rosso); color: #fff; font-weight: 900; font-stretch: 130%; font-style: italic; padding: .45rem .9rem; display: flex; align-items: center; gap: .45rem; flex: none; }
 .ticker-etichetta::before { content: ""; width: .5rem; height: .5rem; border-radius: 50%; background: #fff; animation: lampeggia 1.1s steps(1) infinite; }
-.ticker-finestra { overflow: hidden; flex: 1; mask-image: linear-gradient(90deg, transparent, #000 3rem, #000 calc(100% - 3rem), transparent); }
+.ticker-finestra { overflow: hidden; flex: 1; min-width: 0; mask-image: linear-gradient(90deg, transparent, #000 3rem, #000 calc(100% - 3rem), transparent); }
 .ticker-nastro { display: flex; width: max-content; animation: scorri 50s linear infinite; }
 .ticker:hover .ticker-nastro, .ticker:focus-within .ticker-nastro { animation-play-state: paused; }
 .ticker-copia { display: flex; }
@@ -188,7 +188,7 @@ main { max-width: 78rem; margin: 0 auto; padding: 0 1rem 5rem; }
 /* ---------- schermata del titolo (sito vuoto, 404) ---------- */
 .schermata-titolo { min-height: 72vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 4rem 0; gap: 1rem; }
 .schermata-sopra { font-family: var(--display); font-weight: 700; font-stretch: 120%; color: var(--tenue); margin: 0; }
-.schermata-logo { font-family: var(--display); font-weight: 900; font-stretch: 150%; font-style: italic; font-size: clamp(3.5rem, 15vw, 11rem); line-height: .85; letter-spacing: -.05em; margin: 0; display: flex; flex-direction: column; animation: entra .8s cubic-bezier(.2, .9, .2, 1.1) both; }
+.schermata-logo { font-family: var(--display); font-weight: 900; font-stretch: 150%; font-style: italic; font-size: clamp(3rem, 11vw, 8.5rem); line-height: .85; letter-spacing: -.05em; margin: 0; display: flex; flex-direction: column; animation: entra .8s cubic-bezier(.2, .9, .2, 1.1) both; }
 .schermata-logo span:first-child { color: var(--viola); }
 .schermata-logo span:last-child { -webkit-text-stroke: 3px var(--testo); color: transparent; }
 .schermata-lampeggia { font-family: var(--display); font-weight: 900; font-stretch: 130%; font-style: italic; font-size: 1.4rem; color: var(--giallo); margin: 1.5rem 0 0; animation: lampeggia 1.1s steps(1) infinite; }

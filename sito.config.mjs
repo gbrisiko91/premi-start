@@ -1,6 +1,6 @@
 // Impostazioni del sito: cambia qui nome, indirizzo e categorie.
 export default {
-  nome: "Premi Start",
+  nome: "Soffia Cartuccia",
   motto: "Le notizie di videogiochi di cui si parla oggi",
   // Indirizzo definitivo del sito (serve per RSS e sitemap). Cambialo quando hai il dominio.
   url: "https://cute-bublanina-801681.netlify.app",

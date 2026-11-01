@@ -1,4 +1,4 @@
-# Guida redazionale per le bozze di Premi Start
+# Guida redazionale per le bozze di Soffia Cartuccia
 
 Questa guida è il "cervello" dell'algoritmo: ogni mattina l'attività pianificata la segue per trovare le notizie più virali e scrivere le bozze. Se vuoi cambiare il comportamento dell'algoritmo, cambia questo file (anche la copia salvata nel Progetto claude.ai "Sito blog gaming").
 
@@ -23,7 +23,7 @@ Per ogni notizia candidata assegna un punteggio sommando:
 | Freschezza (meno di 12 ore = massimo) | fino a 15 |
 | Effetto sorpresa o polemica (annuncio inatteso, leak, rinvio, licenziamenti, prezzi) | fino a 15 |
 
-Scegli le notizie con il punteggio più alto, **da 3 a 5**, preferendo una varietà di categorie. Una notizia dedicata al **retro gaming** va inclusa ogni volta che ce n'è una con almeno 50 punti: è il tema che distingue Premi Start.
+Scegli le notizie con il punteggio più alto, **da 3 a 5**, preferendo una varietà di categorie. Una notizia dedicata al **retro gaming** va inclusa ogni volta che ce n'è una con almeno 50 punti: è il tema che distingue Soffia Cartuccia.
 
 Scarta: notizie già coperte dalle bozze dei giorni precedenti (controlla la cartella `bozze/`), offerte e sconti puri, contenuti sponsorizzati, voci prive di qualsiasi fonte credibile.
 
@@ -33,7 +33,7 @@ Ogni bozza deve essere ottimizzata prima ancora di essere scritta. Parti dalla *
 
 **Titoli**
 - `titolo` (H1, visibile sul sito e nelle anteprime social): 55-80 caratteri, contiene la parola chiave il più vicino possibile all'inizio, dice esattamente cosa è successo e dà un motivo per cliccare (un numero, una data, una conseguenza, una domanda a cui l'articolo risponde davvero). Mai promettere ciò che il testo non mantiene: il clickbait abbassa il tempo di lettura e Google Discover lo penalizza.
-- `titolo_seo` (il titolo della scheda di Google): massimo 60 caratteri, parola chiave all'inizio. Il sito aggiunge da solo " – Premi Start".
+- `titolo_seo` (il titolo della scheda di Google): massimo 60 caratteri, parola chiave all'inizio. Il sito aggiunge da solo " – Soffia Cartuccia".
 - Il nome del file (che diventa l'indirizzo della pagina) contiene la parola chiave: `AAAA-MM-GG-parola-chiave-breve.md`, 3-6 parole.
 
 **Sommario (meta description)**
@@ -45,7 +45,7 @@ Ogni bozza deve essere ottimizzata prima ancora di essere scritta. Parti dalla *
 - Sottotitoli `##` che sono frasi cercabili, non etichette generiche. Al posto di "Cosa sappiamo" scrivi ad esempio "## Quando esce The Duskbloods su Switch 2".
 - Paragrafi brevi (2-4 frasi), nomi propri di giochi, studi e console in **grassetto** alla prima menzione.
 - Usa sinonimi e termini correlati (nomi delle console, dello studio, del genere) invece di ripetere la parola chiave: niente keyword stuffing.
-- Almeno un **link interno** a un altro articolo di Premi Start pertinente (cerca in `content/articoli/`), con testo del link descrittivo, e un link alla **fonte ufficiale** quando esiste.
+- Almeno un **link interno** a un altro articolo di Soffia Cartuccia pertinente (cerca in `content/articoli/`), con testo del link descrittivo, e un link alla **fonte ufficiale** quando esiste.
 - Chiudi con una sezione `## Domande frequenti` con 2-3 domande che le persone cercano davvero su Google (controlla le "Altre domande" nei risultati), ognuna come `### Domanda?` seguita da una risposta di 1-2 frasi.
 - Lunghezza: 450-800 parole. Meglio completo che lungo.
 

@@ -1,7 +1,7 @@
 {
-  "name": "premi-start",
+  "name": "soffia-cartuccia",
   "version": "1.0.0",
-  "description": "Premi Start — notizie di videogiochi",
+  "description": "Soffia Cartuccia — notizie di videogiochi",
   "type": "module",
   "private": true,
   "scripts": {

@@ -14,6 +14,7 @@ const json = (dati, stato = 200) =>
   });
 
 const impronta = (ip, id) =>
+  // Il prefisso "premi-start" resta quello originale per non azzerare i voti già dati.
   createHash("sha256").update(`premi-start:${id}:${ip || "sconosciuto"}`).digest("hex").slice(0, 32);
 
 async function leggiConto(store, id) {

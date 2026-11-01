@@ -1,4 +1,4 @@
-# Premi Start — blog di notizie gaming
+# Soffia Cartuccia — blog di notizie gaming
 
 Sito statico leggero: gli articoli sono file Markdown in `content/articoli/`, la build crea le pagine HTML in `dist/`. Nessun database, nessun costo di hosting.
 
@@ -27,7 +27,7 @@ Poi apri http://localhost:4321.
 
 ## Pubblicarlo gratis (GitHub + Netlify)
 
-1. Crea un repository su GitHub (es. `premi-start`) e carica tutti i file di questa cartella.
+1. Crea un repository su GitHub (es. `soffia-cartuccia`) e carica tutti i file di questa cartella.
 2. Su [netlify.com](https://www.netlify.com) scegli **Add new site → Import from GitHub** e seleziona il repository. Le impostazioni di build sono già in `netlify.toml`.
 3. Collega il tuo dominio in Netlify e aggiorna `url` in `sito.config.mjs`.
 

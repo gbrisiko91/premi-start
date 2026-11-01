@@ -170,7 +170,7 @@ ${CON_BOZZE ? `<div class="banner-anteprima">Anteprima con bozze: questa version
 <a class="salta" href="#contenuto">Vai al contenuto</a>
 <header class="testata">
   <div class="testata-riga">
-    <a class="marchio" href="/" aria-label="${esc(config.nome)}, pagina iniziale"><span>Premi</span><span>Start</span><i class="cursore" aria-hidden="true"></i></a>
+    <a class="marchio" href="/" aria-label="${esc(config.nome)}, pagina iniziale"><span>Soffia</span><span>Cartuccia</span><i class="cursore" aria-hidden="true"></i></a>
     <nav class="categorie" aria-label="Categorie">${nav}</nav>
   </div>
   ${nastro}
@@ -179,7 +179,7 @@ ${CON_BOZZE ? `<div class="banner-anteprima">Anteprima con bozze: questa version
 ${corpo}
 </main>
 <footer class="piede">
-  <p class="piede-marchio">Premi Start</p>
+  <p class="piede-marchio">Soffia Cartuccia</p>
   <p>${esc(config.motto)}. Ogni articolo cita le sue fonti.</p>
   <p class="piede-link"><a href="/archivio/">Archivio</a><a href="/rss.xml">Feed RSS</a><a href="/chi-siamo/">Chi siamo</a><a href="/privacy/">Privacy</a></p>
 </footer>
@@ -215,8 +215,8 @@ function home(articoli) {
     return pagina({
       corpo: `<section class="schermata-titolo">
   <p class="schermata-sopra">Il blog delle notizie gaming di cui si parla oggi</p>
-  <h1 class="schermata-logo"><span>Premi</span><span>Start</span></h1>
-  <p class="schermata-lampeggia">Le prime notizie stanno caricando</p>
+  <h1 class="schermata-logo"><span>Soffia</span><span>Cartuccia</span></h1>
+  <p class="schermata-lampeggia">Soffia e premi Start</p><p class="schermata-sotto">Le prime notizie stanno caricando.</p>
   <p class="schermata-sotto">Torna tra poco, oppure seguici dal <a href="/rss.xml">feed RSS</a>.</p>
 </section>`,
     });
