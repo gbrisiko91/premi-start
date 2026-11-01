@@ -5,7 +5,7 @@ data: 2026-11-01
 categoria: console
 tag: [fromsoftware, nintendo-switch-2, the-duskbloods]
 viralita: 80
-bozza: true
+bozza: false
 fonti:
   - titolo: "VGC – FromSoftware's Switch 2 exclusive The Duskbloods has been delayed to 2027"
     url: "https://www.videogameschronicle.com/news/fromsoftwares-switch-2-exclusive-the-duskbloods-has-been-delayed-to-2027/"
