@@ -5,7 +5,7 @@ data: 2026-11-01
 categoria: console
 tag: [call-of-duty, activision, modern-warfare-4]
 viralita: 84
-bozza: true
+bozza: false
 fonti:
   - titolo: "VGC – Activision apologizes and says it will remove South Korean crush footage from Modern Warfare 4"
     url: "https://www.videogameschronicle.com/news/activision-apologizes-and-says-it-will-remove-south-korean-crush-footage-from-modern-warfare-4-after-victims-families-speak-out/"
