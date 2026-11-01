@@ -5,7 +5,7 @@ data: 2026-11-01
 categoria: industria
 tag: [bioware, ea, mass-effect, star-wars]
 viralita: 91
-bozza: true
+bozza: false
 fonti:
   - titolo: "VGC – EA chose to shut down BioWare so it could make Star Wars Battlefront 3 instead, it's claimed"
     url: "https://www.videogameschronicle.com/news/ea-chose-to-shut-down-bioware-so-it-could-make-star-wars-battlefront-3-instead-its-claimed/"
