@@ -80,16 +80,26 @@ function leggiArticoli() {
 }
 
 // ---------- componenti ----------
-const pallino = (cat) => `<span class="pallino" data-colore="${config.categorie[cat].colore}" aria-hidden="true"></span>`;
+const colore = (cat) => config.categorie[cat].colore;
+const pallino = (cat) => `<span class="pallino" data-colore="${colore(cat)}" aria-hidden="true"></span>`;
 const etichettaCat = (cat) =>
-  `<a class="cat" href="/categoria/${cat}/">${pallino(cat)}${esc(config.categorie[cat].nome)}</a>`;
+  `<a class="cat" href="/categoria/${cat}/" data-colore="${colore(cat)}">${esc(config.categorie[cat].nome)}</a>`;
 const segnoBozza = (a) => (a.bozza ? `<span class="segno-bozza">Bozza</span>` : "");
+const hype = (v) => {
+  const pieni = Math.round(Math.max(0, Math.min(100, v)) / 10);
+  const tacche = Array.from({ length: 10 }, (_, i) => `<i${i < pieni ? ' class="on"' : ""}></i>`).join("");
+  return v ? `<span class="hype" role="img" aria-label="Hype ${v} su 100"><span class="hype-nome" aria-hidden="true">Hype</span><span class="hype-barra" aria-hidden="true">${tacche}</span><b aria-hidden="true">${v}</b></span>` : "";
+};
 
-function pagina({ titolo, descrizione = config.motto, percorso = "/", corpo, tipo = "website" }) {
+function pagina({ titolo, descrizione = config.motto, percorso = "/", corpo, tipo = "website", ticker = [] }) {
   const titoloCompleto = titolo ? `${titolo} – ${config.nome}` : `${config.nome} – ${config.motto}`;
   const nav = Object.entries(config.categorie)
-    .map(([k, c]) => `<a href="/categoria/${k}/"${percorso.startsWith(`/categoria/${k}/`) ? ' aria-current="page"' : ""}>${pallino(k)}${esc(c.nome)}</a>`)
+    .map(([k, c]) => `<a href="/categoria/${k}/" data-colore="${c.colore}"${percorso.startsWith(`/categoria/${k}/`) ? ' aria-current="page"' : ""}>${pallino(k)}${esc(c.nome)}</a>`)
     .join("");
+  const vociTicker = ticker.map((a) => `<a href="${a.url}">${pallino(a.categoria)}${esc(a.titolo)}</a>`).join("");
+  const nastro = ticker.length
+    ? `<div class="ticker" aria-label="Ultime notizie"><span class="ticker-etichetta">Live</span><div class="ticker-finestra"><div class="ticker-nastro">${vociTicker}<span class="ticker-copia" aria-hidden="true">${vociTicker.replace(/<a /g, '<a tabindex="-1" ')}</span></div></div></div>`
+    : "";
   return `<!doctype html>
 <html lang="${config.lingua}">
 <head>
@@ -97,6 +107,7 @@ function pagina({ titolo, descrizione = config.motto, percorso = "/", corpo, tip
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(titoloCompleto)}</title>
 <meta name="description" content="${esc(descrizione)}">
+<meta name="theme-color" content="#15122b">
 <link rel="canonical" href="${urlAssoluto(percorso)}">
 <meta property="og:type" content="${tipo}">
 <meta property="og:title" content="${esc(titolo || config.nome)}">
@@ -108,32 +119,43 @@ function pagina({ titolo, descrizione = config.motto, percorso = "/", corpo, tip
 <link rel="alternate" type="application/rss+xml" title="${esc(config.nome)}" href="/rss.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,400..900&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wdth,wght@0,50..150,400..900;1,50..150,400..900&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/stile.css">
 </head>
 <body>
 ${CON_BOZZE ? `<div class="banner-anteprima">Anteprima con bozze: questa versione non va pubblicata.</div>` : ""}
 <a class="salta" href="#contenuto">Vai al contenuto</a>
 <header class="testata">
-  <a class="marchio" href="/" aria-label="${esc(config.nome)}, pagina iniziale"><span>Premi</span><span>Start</span><i class="cursore" aria-hidden="true"></i></a>
-  <nav class="categorie" aria-label="Categorie">${nav}</nav>
+  <div class="testata-riga">
+    <a class="marchio" href="/" aria-label="${esc(config.nome)}, pagina iniziale"><span>Premi</span><span>Start</span><i class="cursore" aria-hidden="true"></i></a>
+    <nav class="categorie" aria-label="Categorie">${nav}</nav>
+  </div>
+  ${nastro}
 </header>
 <main id="contenuto">
 ${corpo}
 </main>
 <footer class="piede">
-  <p><strong>${esc(config.nome)}</strong> — ${esc(config.motto)}.</p>
-  <p><a href="/archivio/">Archivio</a> <a href="/rss.xml">Feed RSS</a> <a href="/chi-siamo/">Chi siamo</a></p>
+  <p class="piede-marchio">Premi Start</p>
+  <p>${esc(config.motto)}. Ogni articolo cita le sue fonti.</p>
+  <p class="piede-link"><a href="/archivio/">Archivio</a><a href="/rss.xml">Feed RSS</a><a href="/chi-siamo/">Chi siamo</a></p>
 </footer>
 </body>
 </html>`;
 }
 
-function scheda(a, { grande = false } = {}) {
-  return `<article class="scheda${grande ? " scheda-grande" : ""}">
-  <p class="meta">${etichettaCat(a.categoria)}<time datetime="${a.data.toISOString()}">${dataBreve.format(a.data)}</time>${segnoBozza(a)}</p>
-  <h${grande ? 1 : 2} class="titolo-scheda"><a href="${a.url}">${esc(a.titolo)}</a></h${grande ? 1 : 2}>
-  ${a.sommario ? `<p class="sommario">${esc(a.sommario)}</p>` : ""}
+function scheda(a) {
+  const copertina = a.immagine
+    ? `<img src="${esc(a.immagine)}" alt="" loading="lazy">`
+    : `<span class="copertina-nome" aria-hidden="true">${esc(config.categorie[a.categoria].nome)}</span>`;
+  return `<article class="scheda" data-colore="${colore(a.categoria)}">
+  <div class="copertina">${copertina}</div>
+  <div class="scheda-corpo">
+    <p class="meta">${etichettaCat(a.categoria)}<time datetime="${a.data.toISOString()}">${dataBreve.format(a.data)}</time>${segnoBozza(a)}</p>
+    <h2 class="titolo-scheda"><a href="${a.url}">${esc(a.titolo)}</a></h2>
+    ${a.sommario ? `<p class="sommario">${esc(a.sommario)}</p>` : ""}
+    ${hype(a.viralita)}
+  </div>
 </article>`;
 }
 
@@ -149,22 +171,32 @@ function inTendenza(articoli) {
 function home(articoli) {
   if (!articoli.length) {
     return pagina({
-      corpo: `<section class="vuoto"><h1>Nessun articolo pubblicato</h1><p>Aggiungi un file in <code>content/articoli/</code> con <code>bozza: false</code> e rilancia la build.</p></section>`,
+      corpo: `<section class="schermata-titolo">
+  <p class="schermata-sopra">Il blog delle notizie gaming di cui si parla oggi</p>
+  <h1 class="schermata-logo"><span>Premi</span><span>Start</span></h1>
+  <p class="schermata-lampeggia">Le prime notizie stanno caricando</p>
+  <p class="schermata-sotto">Torna tra poco, oppure seguici dal <a href="/rss.xml">feed RSS</a>.</p>
+</section>`,
     });
   }
   const [apertura, ...resto] = articoli;
   const tendenza = inTendenza(articoli);
   const corpo = `
-<div class="apertura">
-  ${scheda(apertura, { grande: true })}
-  <aside class="tendenza" aria-labelledby="t-tendenza">
-    <h2 id="t-tendenza">In tendenza</h2>
-    <ol>${tendenza.map((a) => `<li><a href="${a.url}">${esc(a.titolo)}</a><span class="cat-mini">${pallino(a.categoria)}${esc(config.categorie[a.categoria].nome)}</span></li>`).join("")}</ol>
+<section class="eroe" data-colore="${colore(apertura.categoria)}" aria-labelledby="t-apertura">
+  <div class="eroe-testo">
+    <p class="meta">${etichettaCat(apertura.categoria)}<time datetime="${apertura.data.toISOString()}">${dataLunga.format(apertura.data)}</time>${segnoBozza(apertura)}</p>
+    <h1 id="t-apertura" class="eroe-titolo"><a href="${apertura.url}">${esc(apertura.titolo)}</a></h1>
+    ${apertura.sommario ? `<p class="eroe-sommario">${esc(apertura.sommario)}</p>` : ""}
+    <div class="eroe-azioni"><a class="tasto-start" href="${apertura.url}">Leggi l'articolo</a>${hype(apertura.viralita)}</div>
+  </div>
+  <aside class="classifica" aria-labelledby="t-classifica">
+    <h2 id="t-classifica">Classifica hype</h2>
+    <ol>${tendenza.map((a) => `<li data-colore="${colore(a.categoria)}"><a href="${a.url}">${esc(a.titolo)}</a><span class="punti">${a.viralita || "–"}</span></li>`).join("")}</ol>
   </aside>
-</div>
+</section>
 ${resto.length ? `<section class="flusso" aria-labelledby="t-ultime"><h2 id="t-ultime" class="titolo-sezione">Le ultime</h2><div class="griglia">${resto.slice(0, config.articoliPerPagina).map((a) => scheda(a)).join("")}</div>
-${resto.length > config.articoliPerPagina ? `<p class="altro"><a href="/archivio/">Tutti gli articoli</a></p>` : ""}</section>` : ""}`;
-  return pagina({ corpo });
+${resto.length > config.articoliPerPagina ? `<p class="altro"><a class="tasto-start" href="/archivio/">Tutti gli articoli</a></p>` : ""}</section>` : ""}`;
+  return pagina({ corpo, ticker: articoli.slice(0, 8) });
 }
 
 function paginaArticolo(a, articoli) {
@@ -184,15 +216,16 @@ function paginaArticolo(a, articoli) {
     mainEntityOfPage: urlAssoluto(a.url),
   };
   const corpo = `
-<article class="articolo">
-  <header class="intestazione">
+<article class="articolo" data-colore="${colore(a.categoria)}">
+  <header class="eroe-articolo">
     <p class="meta">${etichettaCat(a.categoria)}<time datetime="${a.data.toISOString()}">${dataLunga.format(a.data)}</time><span>${a.minuti} min di lettura</span>${segnoBozza(a)}</p>
     <h1>${esc(a.titolo)}</h1>
     ${a.sommario ? `<p class="occhiello">${esc(a.sommario)}</p>` : ""}
+    ${hype(a.viralita)}
   </header>
   ${immagine}
   <div class="testo">${a.html}</div>
-  ${a.tag.length ? `<p class="tag">${a.tag.map((t) => `<span>#${esc(t)}</span>`).join(" ")}</p>` : ""}
+  ${a.tag.length ? `<p class="tag">${a.tag.map((t) => `<span>#${esc(t)}</span>`).join("")}</p>` : ""}
   ${fonti}
 </article>
 ${correlati.length ? `<section class="correlati" aria-labelledby="t-corr"><h2 id="t-corr" class="titolo-sezione">Altro da ${esc(config.categorie[a.categoria].nome)}</h2><div class="griglia">${correlati.map((x) => scheda(x)).join("")}</div></section>` : ""}
@@ -202,12 +235,12 @@ ${correlati.length ? `<section class="correlati" aria-labelledby="t-corr"><h2 id
 
 function paginaElenco({ titolo, descrizione, percorso, lista, categoria }) {
   const corpo = `
-<header class="intestazione-elenco"${categoria ? ` data-colore="${config.categorie[categoria].colore}"` : ""}>
+<header class="intestazione-elenco"${categoria ? ` data-colore="${colore(categoria)}"` : ""}>
   <h1>${esc(titolo)}</h1>
   ${descrizione ? `<p>${esc(descrizione)}</p>` : ""}
 </header>
 ${lista.length
-    ? `<ul class="elenco">${lista.map((a) => `<li><time datetime="${a.data.toISOString()}">${dataBreve.format(a.data)}</time><div><a href="${a.url}">${esc(a.titolo)}</a>${segnoBozza(a)}${categoria ? "" : `<span class="cat-mini">${pallino(a.categoria)}${esc(config.categorie[a.categoria].nome)}</span>`}</div></li>`).join("")}</ul>`
+    ? `<div class="griglia">${lista.map((a) => scheda(a)).join("")}</div>`
     : `<p class="vuoto-elenco">Ancora nessun articolo in questa sezione. Torna presto.</p>`}`;
   return pagina({ titolo, descrizione, percorso, corpo });
 }
@@ -255,13 +288,13 @@ for (const [k, c] of Object.entries(config.categorie)) {
 scrivi("archivio/index.html", paginaElenco({ titolo: "Archivio", descrizione: "Tutti gli articoli, dal più recente.", percorso: "/archivio/", lista: articoli }));
 scrivi("chi-siamo/index.html", pagina({
   titolo: "Chi siamo", percorso: "/chi-siamo/",
-  corpo: `<article class="articolo"><header class="intestazione"><h1>Chi siamo</h1></header><div class="testo">${marked.parse(
+  corpo: `<article class="articolo"><header class="eroe-articolo"><h1>Chi siamo</h1></header><div class="testo">${marked.parse(
     fs.existsSync(path.join(ROOT, "content", "chi-siamo.md")) ? fs.readFileSync(path.join(ROOT, "content", "chi-siamo.md"), "utf8") : ""
   )}</div></article>`,
 }));
 scrivi("404.html", pagina({
   titolo: "Pagina non trovata", percorso: "/404.html",
-  corpo: `<section class="vuoto"><h1>Game over: questa pagina non esiste</h1><p>Il link potrebbe essere cambiato. <a href="/">Torna alla prima pagina</a> o cerca nell'<a href="/archivio/">archivio</a>.</p></section>`,
+  corpo: `<section class="schermata-titolo"><p class="schermata-sopra">Errore 404</p><h1 class="schermata-logo"><span>Game</span><span>Over</span></h1><p class="schermata-sotto">Questa pagina non esiste. Il link potrebbe essere cambiato.</p><p><a class="tasto-start" href="/">Torna alla prima pagina</a></p></section>`,
 }));
 scrivi("rss.xml", rss(articoli));
 scrivi("sitemap.xml", sitemap(articoli));
