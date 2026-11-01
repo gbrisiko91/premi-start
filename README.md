@@ -35,12 +35,11 @@ Ogni volta che modifichi o aggiungi un file su GitHub, Netlify ricostruisce e pu
 
 ## Il flusso di lavoro quotidiano
 
-1. **Ogni mattina** l'attività pianificata di Claude cerca le notizie gaming più virali e salva 3-5 bozze nella cartella `bozze/` del Progetto claude.ai "Sito blog gaming". Ricevi una notifica quando sono pronte.
-2. **Scegli** le bozze che ti interessano, leggi le note per la redazione in fondo a ciascuna, verifica e riscrivi con la tua voce.
-3. **Copia** il file in `content/articoli/` e cambia `bozza: true` in `bozza: false`.
-4. **Carica** il file su GitHub: dopo un minuto è online.
+1. **Ogni mattina** l'attività pianificata di Claude cerca le notizie gaming più virali e aggiunge 3-5 bozze in `content/articoli/` di questo repository, con `bozza: true` (una copia finisce anche nella cartella `bozze/` del Progetto claude.ai "Sito blog gaming"). Ricevi una notifica quando sono pronte.
+2. **Scegli** le bozze che ti interessano, leggi le note per la redazione in fondo a ciascuna, verifica e riscrivi con la tua voce (puoi farlo direttamente su GitHub con l'icona della matita).
+3. **Pubblica** cambiando `bozza: true` in `bozza: false` e salvando: dopo un minuto è online.
 
-Le bozze lasciate in `content/articoli/` con `bozza: true` non vengono mai pubblicate.
+Le bozze con `bozza: true` non vengono mai pubblicate. Quelle che non ti interessano puoi cancellarle o lasciarle lì.
 
 ## Formato di un articolo
 
