@@ -3,7 +3,7 @@ export default {
   nome: "Premi Start",
   motto: "Le notizie di videogiochi di cui si parla oggi",
   // Indirizzo definitivo del sito (serve per RSS e sitemap). Cambialo quando hai il dominio.
-  url: "https://premistart.it",
+  url: "https://cute-bublanina-801681.netlify.app",
   lingua: "it",
   articoliPerPagina: 12,
   categorie: {
