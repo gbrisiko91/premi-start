@@ -222,3 +222,26 @@ main { max-width: 78rem; margin: 0 auto; padding: 0 1rem 5rem; }
   .ticker-finestra { overflow-x: auto; mask-image: none; }
   .ticker-copia { display: none; }
 }
+
+/* ---------- tasto "Mi piace" ---------- */
+.eroe-azioni-articolo { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.75rem; }
+.tasto-like {
+  position: relative; display: inline-flex; align-items: center; gap: .55rem; cursor: pointer;
+  font: inherit; font-family: var(--display); font-weight: 800; font-stretch: 115%; font-size: 1rem; color: var(--testo);
+  background: var(--pannello); border: 2px solid var(--pannello-2); border-radius: 999px; padding: .55rem 1.1rem .55rem .85rem;
+  transition: border-color .15s, background .15s, transform .1s;
+}
+.tasto-like:hover { border-color: var(--rosso); }
+.tasto-like:active { transform: scale(.94); }
+.tasto-like .cuore { width: 1.25rem; height: 1.1rem; fill: var(--tenue); shape-rendering: crispEdges; transition: fill .15s; }
+.tasto-like[aria-pressed="true"] { background: color-mix(in srgb, var(--rosso) 22%, var(--pannello)); border-color: var(--rosso); }
+.tasto-like[aria-pressed="true"] .cuore { fill: var(--rosso); filter: drop-shadow(0 0 6px color-mix(in srgb, var(--rosso) 70%, transparent)); animation: battito .35s ease-out; }
+.like-conto { font-stretch: 130%; min-width: 1ch; }
+.like-conto:empty { display: none; }
+.like-scoppio { position: absolute; left: 1rem; top: -.2rem; font-weight: 900; font-style: italic; color: var(--rosso); pointer-events: none; animation: sali .8s ease-out forwards; }
+.like-errore { animation: scuoti .3s; border-color: var(--giallo); }
+@keyframes battito { 40% { transform: scale(1.35); } }
+@keyframes sali { to { transform: translateY(-1.8rem); opacity: 0; } }
+@keyframes scuoti { 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
+.like-fine { margin-top: 2.5rem; padding: 1.5rem; border-radius: 18px; background: linear-gradient(135deg, color-mix(in srgb, var(--rosso) 18%, var(--pannello)), var(--pannello)); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }
+.like-fine p { margin: 0; font-family: var(--display); font-weight: 900; font-stretch: 125%; font-style: italic; font-size: 1.35rem; }

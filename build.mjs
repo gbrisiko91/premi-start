@@ -91,6 +91,12 @@ const hype = (v) => {
   return v ? `<span class="hype" role="img" aria-label="Hype ${v} su 100"><span class="hype-nome" aria-hidden="true">Hype</span><span class="hype-barra" aria-hidden="true">${tacche}</span><b aria-hidden="true">${v}</b></span>` : "";
 };
 
+// Tasto "Mi piace": solo sugli articoli pubblicati. Il conteggio arriva da /api/like (funzione Netlify).
+const tastoLike = (a) =>
+  a.bozza
+    ? ""
+    : `<button type="button" class="tasto-like" data-like="${esc(a.slug)}" aria-pressed="false"><svg class="cuore" viewBox="0 0 9 8" aria-hidden="true"><path d="M1 0h2v1h1v1h1V1h1V0h2v1h1v3H8v1H7v1H6v1H5v1H4V7H3V6H2V5H1V4H0V1h1z"/></svg><span class="like-testo">Mi piace</span><span class="like-conto" aria-live="polite"></span></button>`;
+
 function pagina({ titolo, descrizione = config.motto, percorso = "/", corpo, tipo = "website", ticker = [] }) {
   const titoloCompleto = titolo ? `${titolo} – ${config.nome}` : `${config.nome} – ${config.motto}`;
   const nav = Object.entries(config.categorie)
@@ -221,13 +227,15 @@ function paginaArticolo(a, articoli) {
     <p class="meta">${etichettaCat(a.categoria)}<time datetime="${a.data.toISOString()}">${dataLunga.format(a.data)}</time><span>${a.minuti} min di lettura</span>${segnoBozza(a)}</p>
     <h1>${esc(a.titolo)}</h1>
     ${a.sommario ? `<p class="occhiello">${esc(a.sommario)}</p>` : ""}
-    ${hype(a.viralita)}
+    <div class="eroe-azioni-articolo">${hype(a.viralita)}${tastoLike(a)}</div>
   </header>
   ${immagine}
   <div class="testo">${a.html}</div>
   ${a.tag.length ? `<p class="tag">${a.tag.map((t) => `<span>#${esc(t)}</span>`).join("")}</p>` : ""}
+  ${a.bozza ? "" : `<div class="like-fine"><p>Ti è piaciuta questa notizia?</p>${tastoLike(a)}</div>`}
   ${fonti}
 </article>
+${a.bozza ? "" : `<script src="/like.js" defer></script>`}
 ${correlati.length ? `<section class="correlati" aria-labelledby="t-corr"><h2 id="t-corr" class="titolo-sezione">Altro da ${esc(config.categorie[a.categoria].nome)}</h2><div class="griglia">${correlati.map((x) => scheda(x)).join("")}</div></section>` : ""}
 <script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, "\\u003c")}</script>`;
   return pagina({ titolo: a.titolo, descrizione: a.sommario || config.motto, percorso: a.url, corpo, tipo: "article" });
@@ -298,6 +306,13 @@ scrivi("404.html", pagina({
 }));
 scrivi("rss.xml", rss(articoli));
 scrivi("sitemap.xml", sitemap(articoli));
+// Elenco degli articoli pubblicati per la funzione dei "Mi piace" (accetta voti solo per questi)
+fs.mkdirSync(path.join(ROOT, "netlify", "dati"), { recursive: true });
+fs.writeFileSync(
+  path.join(ROOT, "netlify", "dati", "articoli.mjs"),
+  `// File generato da build.mjs: non modificarlo a mano.\nexport default ${JSON.stringify(articoli.filter((a) => !a.bozza).map((a) => a.slug))};\n`
+);
+
 scrivi("robots.txt", `User-agent: *\nAllow: /\nSitemap: ${urlAssoluto("/sitemap.xml")}\n`);
 
 const nBozze = articoli.filter((a) => a.bozza).length;
