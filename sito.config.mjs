@@ -5,6 +5,12 @@ export default {
   // Indirizzo definitivo del sito (serve per RSS e sitemap). Cambialo quando hai il dominio.
   url: "https://cute-bublanina-801681.netlify.app",
   lingua: "it",
+  // Per la pagina privacy: nome e cognome (o ragione sociale) di chi gestisce il sito, e un'email di contatto.
+  titolare: "",
+  emailContatto: "",
+  privacyAggiornata: "2026-11-01",
+  // Codice di verifica di Google Search Console (solo se scegli il metodo "tag HTML"), es. "abc123..."
+  googleVerifica: "",
   articoliPerPagina: 12,
   categorie: {
     console: { nome: "Console", colore: "rosso", descrizione: "PlayStation, Xbox, Nintendo e tutto ciò che si collega alla TV." },

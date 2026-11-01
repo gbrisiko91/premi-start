@@ -162,10 +162,8 @@ function pagina({ titolo, titoloSeo = "", descrizione = config.motto, percorso =
 <meta name="twitter:image" content="${esc(immagineSocial)}">${metaArticolo}
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="${esc(config.nome)}" href="/rss.xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wdth,wght@0,50..150,400..900;1,50..150,400..900&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/stile.css">
+${FONT_PRECARICA}<link rel="stylesheet" href="/font.css">
+<link rel="stylesheet" href="/stile.css">${config.googleVerifica ? `\n<meta name="google-site-verification" content="${esc(config.googleVerifica)}">` : ""}
 </head>
 <body>
 ${CON_BOZZE ? `<div class="banner-anteprima">Anteprima con bozze: questa versione non va pubblicata.</div>` : ""}
@@ -183,7 +181,7 @@ ${corpo}
 <footer class="piede">
   <p class="piede-marchio">Premi Start</p>
   <p>${esc(config.motto)}. Ogni articolo cita le sue fonti.</p>
-  <p class="piede-link"><a href="/archivio/">Archivio</a><a href="/rss.xml">Feed RSS</a><a href="/chi-siamo/">Chi siamo</a></p>
+  <p class="piede-link"><a href="/archivio/">Archivio</a><a href="/rss.xml">Feed RSS</a><a href="/chi-siamo/">Chi siamo</a><a href="/privacy/">Privacy</a></p>
 </footer>
 </body>
 </html>`;
@@ -329,10 +327,43 @@ function rss(articoli) {
 }
 
 function sitemap(articoli) {
-  const percorsi = ["/", "/archivio/", "/chi-siamo/", ...Object.keys(config.categorie).map((k) => `/categoria/${k}/`)];
+  const percorsi = ["/", "/archivio/", "/chi-siamo/", "/privacy/", ...Object.keys(config.categorie).map((k) => `/categoria/${k}/`)];
   const righe = percorsi.map((p) => `<url><loc>${urlAssoluto(p)}</loc></url>`)
     .concat(articoli.filter((a) => !a.bozza).map((a) => `<url><loc>${urlAssoluto(a.url)}</loc><lastmod>${(a.aggiornato || a.data).toISOString().slice(0, 10)}</lastmod>${a.immagine ? `<image:image><image:loc>${esc(urlImmagine(a.immagine))}</image:loc></image:image>` : ""}</url>`));
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">${righe.join("")}</urlset>`;
+}
+
+// ---------- font ospitati sul sito (nessuna connessione a Google Fonts) ----------
+// I file arrivano dai pacchetti npm di Fontsource e vengono copiati in /font durante la build.
+function preparaFont() {
+  const regole = [];
+  const precarica = [];
+  const copia = (pacchetto, filtro) => {
+    const cartella = path.join(ROOT, "node_modules", ...pacchetto.split("/"), "files");
+    if (!fs.existsSync(cartella)) return [];
+    const scelti = fs.readdirSync(cartella).filter((f) => f.endsWith(".woff2") && filtro(f));
+    fs.mkdirSync(path.join(DIST, "font"), { recursive: true });
+    for (const f of scelti) fs.copyFileSync(path.join(cartella, f), path.join(DIST, "font", f));
+    return scelti;
+  };
+  // Anybody variabile (larghezza e peso), alfabeto latino
+  const anybody = copia("@fontsource-variable/anybody", (f) => /-latin-(full|standard|wdth|wght)-(normal|italic)\.woff2$/.test(f));
+  for (const stile of ["normal", "italic"]) {
+    const f = ["full", "standard", "wdth", "wght"].map((a) => `anybody-latin-${a}-${stile}.woff2`).find((n) => anybody.includes(n));
+    if (f) {
+      regole.push(`@font-face{font-family:"Anybody";font-style:${stile};font-display:swap;font-weight:100 900;font-stretch:50% 150%;src:url(/font/${f}) format("woff2-variations"),url(/font/${f}) format("woff2");}`);
+      if (stile === "italic") precarica.push(f);
+    }
+  }
+  // Atkinson Hyperlegible per il testo
+  const atkinson = copia("@fontsource/atkinson-hyperlegible", (f) => /-latin-(400|700)-(normal|italic)\.woff2$/.test(f));
+  for (const f of atkinson) {
+    const [, peso, stile] = f.match(/-latin-(\d+)-(normal|italic)\.woff2$/);
+    regole.push(`@font-face{font-family:"Atkinson Hyperlegible";font-style:${stile};font-display:swap;font-weight:${peso};src:url(/font/${f}) format("woff2");}`);
+    if (peso === "400" && stile === "normal") precarica.push(f);
+  }
+  if (!regole.length) console.warn("Font non trovati (esegui npm install): il sito userà i caratteri di sistema.");
+  return { css: regole.join("\n") + "\n", precarica };
 }
 
 // ---------- build ----------
@@ -340,6 +371,9 @@ const articoli = leggiArticoli();
 fs.rmSync(DIST, { recursive: true, force: true });
 copiaCartella(PUBBLICO, DIST);
 fs.copyFileSync(path.join(ROOT, "src", "stile.css"), path.join(DIST, "stile.css"));
+const FONT = preparaFont();
+fs.writeFileSync(path.join(DIST, "font.css"), FONT.css);
+var FONT_PRECARICA = FONT.precarica.map((f) => `<link rel="preload" href="/font/${f}" as="font" type="font/woff2" crossorigin>\n`).join("");
 
 scrivi("index.html", home(articoli));
 for (const a of articoli) scrivi(`articoli/${a.slug}/index.html`, paginaArticolo(a, articoli));
@@ -356,6 +390,17 @@ scrivi("chi-siamo/index.html", pagina({
     fs.existsSync(path.join(ROOT, "content", "chi-siamo.md")) ? fs.readFileSync(path.join(ROOT, "content", "chi-siamo.md"), "utf8") : ""
   )}</div></article>`,
 }));
+scrivi("privacy/index.html", pagina({
+  titolo: "Privacy", percorso: "/privacy/", descrizione: `Informativa privacy di ${config.nome}`,
+  corpo: `<article class="articolo"><header class="eroe-articolo"><h1>Informativa privacy</h1></header><div class="testo">${marked.parse(
+    fs.readFileSync(path.join(ROOT, "content", "privacy.md"), "utf8")
+      .replaceAll("{{NOME_SITO}}", config.nome)
+      .replaceAll("{{TITOLARE}}", config.titolare || "[titolare da completare in sito.config.mjs]")
+      .replaceAll("{{EMAIL}}", config.emailContatto || "[email da completare in sito.config.mjs]")
+      .replaceAll("{{AGGIORNATA}}", dataLunga.format(new Date(config.privacyAggiornata || Date.now())))
+  )}</div></article>`,
+}));
+if (!config.titolare || !config.emailContatto) console.warn("Avviso: completa titolare ed emailContatto in sito.config.mjs per la pagina privacy.");
 scrivi("404.html", pagina({
   titolo: "Pagina non trovata", percorso: "/404.html",
   corpo: `<section class="schermata-titolo"><p class="schermata-sopra">Errore 404</p><h1 class="schermata-logo"><span>Game</span><span>Over</span></h1><p class="schermata-sotto">Questa pagina non esiste. Il link potrebbe essere cambiato.</p><p><a class="tasto-start" href="/">Torna alla prima pagina</a></p></section>`,
