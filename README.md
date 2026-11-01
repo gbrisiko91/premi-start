@@ -1,0 +1,47 @@
+# Premi Start — blog di notizie gaming
+
+Sito statico leggero: gli articoli sono file Markdown in `content/articoli/`, la build crea le pagine HTML in `dist/`. Nessun database, nessun costo di hosting.
+
+## Cosa c'è dentro
+
+| Percorso | A cosa serve |
+|---|---|
+| `content/articoli/` | Un file `.md` per articolo (anche le bozze, con `bozza: true`) |
+| `content/chi-siamo.md` | Testo della pagina "Chi siamo" |
+| `sito.config.mjs` | Nome, motto, indirizzo del sito e categorie |
+| `src/stile.css` | Grafica |
+| `GUIDA-REDAZIONE.md` | Le regole che l'algoritmo segue per scegliere le notizie e scrivere le bozze |
+| `build.mjs` | Genera il sito (home, articoli, categorie, archivio, RSS, sitemap) |
+
+## Provarlo sul tuo computer
+
+Serve [Node.js](https://nodejs.org) 20 o più recente.
+
+```bash
+npm install
+npm run anteprima   # sito con le bozze, segnalate da un banner giallo
+npm run dev         # sito come lo vedranno i lettori (senza bozze)
+```
+
+Poi apri http://localhost:4321.
+
+## Pubblicarlo gratis (GitHub + Netlify)
+
+1. Crea un repository su GitHub (es. `premi-start`) e carica tutti i file di questa cartella.
+2. Su [netlify.com](https://www.netlify.com) scegli **Add new site → Import from GitHub** e seleziona il repository. Le impostazioni di build sono già in `netlify.toml`.
+3. Collega il tuo dominio in Netlify e aggiorna `url` in `sito.config.mjs`.
+
+Ogni volta che modifichi o aggiungi un file su GitHub, Netlify ricostruisce e pubblica il sito da solo.
+
+## Il flusso di lavoro quotidiano
+
+1. **Ogni mattina** l'attività pianificata di Claude cerca le notizie gaming più virali e salva 3-5 bozze nella cartella `bozze/` del Progetto claude.ai "Sito blog gaming". Ricevi una notifica quando sono pronte.
+2. **Scegli** le bozze che ti interessano, leggi le note per la redazione in fondo a ciascuna, verifica e riscrivi con la tua voce.
+3. **Copia** il file in `content/articoli/` e cambia `bozza: true` in `bozza: false`.
+4. **Carica** il file su GitHub: dopo un minuto è online.
+
+Le bozze lasciate in `content/articoli/` con `bozza: true` non vengono mai pubblicate.
+
+## Formato di un articolo
+
+Vedi la sezione 4 di `GUIDA-REDAZIONE.md`. Campi facoltativi: `immagine` (percorso di un file in `public/`, es. `/img/foto.jpg`) e `crediti_immagine`.

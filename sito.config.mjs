@@ -1,0 +1,15 @@
+// Impostazioni del sito: cambia qui nome, indirizzo e categorie.
+export default {
+  nome: "Premi Start",
+  motto: "Le notizie di videogiochi di cui si parla oggi",
+  // Indirizzo definitivo del sito (serve per RSS e sitemap). Cambialo quando hai il dominio.
+  url: "https://premistart.it",
+  lingua: "it",
+  articoliPerPagina: 12,
+  categorie: {
+    console: { nome: "Console", colore: "rosso", descrizione: "PlayStation, Xbox, Nintendo e tutto ciò che si collega alla TV." },
+    pc: { nome: "PC", colore: "blu", descrizione: "Uscite, hardware e aggiornamenti dal mondo PC." },
+    retro: { nome: "Retro", colore: "giallo", descrizione: "Remake, collezionismo, console d'epoca e giochi che non invecchiano." },
+    industria: { nome: "Industria", colore: "verde", descrizione: "Studi, acquisizioni, vendite e le persone dietro ai giochi." }
+  }
+};
