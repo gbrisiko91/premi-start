@@ -5,7 +5,7 @@ data: 2026-11-01
 categoria: retro
 tag: [doom, id-software, john-romero, john-carmack]
 viralita: 68
-bozza: true
+bozza: false
 fonti:
   - titolo: "Multiplayer.it – DOOM, scontro tra Sandy Petersen e John Romero sulle origini del Deathmatch"
     url: "https://multiplayer.it/notizie/doom-scontro-tra-sandy-petersen-e-john-romero-sulle-origini-del-deathmatch-interviene-anche-john-carmack.html"
