@@ -7,7 +7,7 @@ data: 2026-11-04
 categoria: retro
 tag: [mega-drive, sega, sonic, treasure-tails, segapede]
 viralita: 52
-bozza: true
+bozza: false
 immagine: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Sega-Mega-Drive-JP-Mk1-Console-Set.jpg/1280px-Sega-Mega-Drive-JP-Mk1-Console-Set.jpg"
 immagine_riserva: "https://upload.wikimedia.org/wikipedia/commons/a/a1/Sega-Mega-Drive-JP-Mk1-Console-Set.jpg"
 alt_immagine: "Console Sega Mega Drive giapponese del primo modello con il suo controller"
