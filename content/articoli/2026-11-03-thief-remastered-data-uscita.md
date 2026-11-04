@@ -7,7 +7,7 @@ data: 2026-11-03
 categoria: retro
 tag: [thief, nightdive-studios, looking-glass-studios, retro-gaming]
 viralita: 62
-bozza: true
+bozza: false
 immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4200960/library_hero.jpg"
 immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4200960/header.jpg"
 alt_immagine: "Immagine ufficiale di Thief: The Dark Project Remastered, il ritorno del classico stealth del 1998"
