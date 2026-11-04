@@ -7,7 +7,7 @@ data: 2026-11-02
 categoria: console
 tag: [star-wars-jedi-3, respawn, electronic-arts, star-wars-battlefront-3]
 viralita: 64
-bozza: true
+bozza: false
 immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1774580/library_hero.jpg"
 immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1774580/header.jpg"
 alt_immagine: "Cal Kestis in Star Wars Jedi: Survivor, il capitolo che precede Star Wars Jedi 3"
