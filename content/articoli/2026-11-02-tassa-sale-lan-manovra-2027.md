@@ -7,7 +7,7 @@ data: 2026-11-02
 categoria: industria
 tag: [sale-lan, manovra-2027, esports, adm]
 viralita: 72
-bozza: true
+bozza: false
 immagine: ""
 immagine_riserva: ""
 alt_immagine: ""
