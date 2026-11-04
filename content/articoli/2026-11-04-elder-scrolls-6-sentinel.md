@@ -7,7 +7,7 @@ data: 2026-11-04
 categoria: pc
 tag: [the-elder-scrolls-6, bethesda, hammerfell, xbox]
 viralita: 92
-bozza: true
+bozza: false
 immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/489830/library_hero.jpg"
 immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/489830/header.jpg"
 alt_immagine: "Immagine ufficiale di Skyrim Special Edition, l'ultimo capitolo prima di The Elder Scrolls 6 Sentinel"
