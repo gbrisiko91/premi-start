@@ -7,7 +7,7 @@ data: 2026-11-03
 categoria: industria
 tag: [nagoshi-studio, gang-of-dragon, netease, yakuza]
 viralita: 71
-bozza: true
+bozza: false
 immagine: ""
 immagine_riserva: ""
 alt_immagine: ""
