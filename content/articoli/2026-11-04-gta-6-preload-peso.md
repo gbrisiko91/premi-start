@@ -7,7 +7,7 @@ data: 2026-11-04
 categoria: console
 tag: [gta-6, rockstar-games, ps5, xbox-series-x]
 viralita: 88
-bozza: true
+bozza: false
 immagine: "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/k4ak9okk485712/81e58e08369adca0d68a17dac9b12c3a63848fc3.jpg"
 immagine_riserva: "https://www.rockstargames.com/VI/_next/static/media/meta.0t8ty~nlmxq2s.jpg"
 alt_immagine: "Immagine ufficiale di Grand Theft Auto VI per l'annuncio del preload su PS5 e Xbox"
