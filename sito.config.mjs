@@ -3,7 +3,7 @@ export default {
   nome: "Soffia Cartuccia",
   motto: "Le notizie di videogiochi di cui si parla oggi",
   // Indirizzo definitivo del sito (serve per RSS e sitemap). Cambialo quando hai il dominio.
-  url: "https://cute-bublanina-801681.netlify.app",
+  url: "https://www.soffiacartuccia.it",
   lingua: "it",
   // Per la pagina privacy: nome e cognome (o ragione sociale) di chi gestisce il sito, e un'email di contatto.
   titolare: "Gianmarco Buono",
