@@ -7,7 +7,7 @@ data: 2026-11-04
 categoria: console
 tag: [xbox, xbox-nano-controller, xbox-cloud-gaming, microsoft]
 viralita: 64
-bozza: true
+bozza: false
 immagine: "https://xboxwire.thesourcemediaassets.com/sites/2/2026/10/XBOX-Nano-Controller-textless-full-image-resize-163b4cf933e25ff565e2-1600x900.jpg"
 immagine_riserva: "https://xboxwire.thesourcemediaassets.com/sites/2/2026/10/XBOX-Nano-Controller-textless-full-image-resize-163b4cf933e25ff565e2.jpg"
 alt_immagine: "Immagine ufficiale dell'Xbox Nano Controller, il controller compatto di Microsoft"
