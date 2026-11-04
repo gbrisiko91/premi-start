@@ -125,6 +125,37 @@ const tastoLike = (a) =>
     ? ""
     : `<button type="button" class="tasto-like" data-like="${esc(a.slug)}" aria-pressed="false"><svg class="cuore" viewBox="0 0 9 8" aria-hidden="true"><path d="M1 0h2v1h1v1h1V1h1V0h2v1h1v3H8v1H7v1H6v1H5v1H4V7H3V6H2V5H1V4H0V1h1z"/></svg><span class="like-testo">Mi piace</span><span class="like-conto" aria-live="polite"></span></button>`;
 
+// Pulsanti di condivisione: link diretti (funzionano anche senza JavaScript) + condivisione nativa del telefono e "copia link".
+const ICONE = {
+  whatsapp: '<path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.5-.3z"/>',
+  telegram: '<path d="M21.9 4.3 18.7 19.4c-.2 1-.9 1.3-1.7.8l-4.8-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.5 13.2 1.8 11.7c-1-.3-1-1 .2-1.5L20.5 3.1c.9-.3 1.6.2 1.4 1.2z"/>',
+  x: '<path d="M17.8 2.5h3.3l-7.2 8.2 8.5 10.8h-6.6l-5.2-6.7-6 6.7H1.3l7.7-8.8L.9 2.5h6.8l4.7 6.1 5.4-6.1zm-1.2 17.1h1.8L6.6 4.3H4.6l12 15.3z"/>',
+  facebook: '<path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/>',
+  link: '<path d="M10.6 13.4a1 1 0 0 1 0-1.4l3.5-3.5a1 1 0 1 1 1.4 1.4L12 13.4a1 1 0 0 1-1.4 0zm-2.8 6.4a4.5 4.5 0 0 1-3.2-7.7l2.5-2.5a1 1 0 1 1 1.4 1.4L6 13.5a2.5 2.5 0 0 0 3.5 3.5L12 14.5a1 1 0 1 1 1.4 1.4L11 18.4a4.5 4.5 0 0 1-3.2 1.4zm8.2-5.6a1 1 0 0 1-.7-1.7L18 10a2.5 2.5 0 0 0-3.5-3.5L12 9a1 1 0 1 1-1.4-1.4L13 5a4.5 4.5 0 0 1 6.4 6.4L16.7 14a1 1 0 0 1-.7.2z"/>',
+  condividi: '<path d="M18 16a3 3 0 0 0-2.4 1.2l-6.7-3.4a3 3 0 0 0 0-1.6l6.7-3.4A3 3 0 1 0 15 7l-6.7 3.4a3 3 0 1 0 0 3.2L15 17a3 3 0 1 0 3-1z"/>',
+};
+const icona = (n) => `<svg viewBox="0 0 24 24" aria-hidden="true">${ICONE[n]}</svg>`;
+function condivisione(a) {
+  if (a.bozza) return "";
+  const url = urlAssoluto(a.url);
+  const testo = a.titolo;
+  const e = encodeURIComponent;
+  const voci = [
+    ["whatsapp", "WhatsApp", `https://wa.me/?text=${e(`${testo} ${url}`)}`],
+    ["telegram", "Telegram", `https://t.me/share/url?url=${e(url)}&text=${e(testo)}`],
+    ["x", "X", `https://x.com/intent/post?text=${e(testo)}&url=${e(url)}`],
+    ["facebook", "Facebook", `https://www.facebook.com/sharer/sharer.php?u=${e(url)}`],
+  ];
+  return `<div class="condividi" id="condividi" data-url="${esc(url)}" data-titolo="${esc(testo)}">
+  <p class="condividi-titolo">Passala a un amico</p>
+  <div class="condividi-tasti">
+    <button type="button" class="tasto-condividi nativo" hidden>${icona("condividi")}<span>Condividi</span></button>
+    ${voci.map(([k, nome, href]) => `<a class="tasto-condividi" data-rete="${k}" href="${esc(href)}" target="_blank" rel="noopener">${icona(k)}<span>${nome}</span></a>`).join("\n    ")}
+    <button type="button" class="tasto-condividi copia">${icona("link")}<span class="copia-testo">Copia link</span></button>
+  </div>
+</div>`;
+}
+
 function pagina({ titolo, titoloSeo = "", descrizione = config.motto, percorso = "/", corpo, tipo = "website", ticker = [], articolo = null }) {
   const titoloCompleto = titolo ? `${titoloSeo || titolo} – ${config.nome}` : `${config.nome} – ${config.motto}`;
   const immagineSocial = articolo?.immagine ? urlImmagine(articolo.immagine) : urlAssoluto("/condivisione.png");
@@ -281,15 +312,16 @@ function paginaArticolo(a, articoli) {
     <p class="meta">${etichettaCat(a.categoria)}<time datetime="${a.data.toISOString()}">${dataLunga.format(a.data)}</time><span>${a.minuti} min di lettura</span>${segnoBozza(a)}</p>
     <h1>${esc(a.titolo)}</h1>
     ${a.sommario ? `<p class="occhiello">${esc(a.sommario)}</p>` : ""}
-    <div class="eroe-azioni-articolo">${hype(a.viralita)}${tastoLike(a)}</div>
+    <div class="eroe-azioni-articolo">${hype(a.viralita)}${tastoLike(a)}${a.bozza ? "" : `<a class="tasto-vai-condividi" href="#condividi">${icona("condividi")}<span>Condividi</span></a>`}</div>
   </header>
   ${immagine}
   <div class="testo">${a.html}</div>
   ${a.tag.length ? `<p class="tag">${a.tag.map((t) => `<span>#${esc(t)}</span>`).join("")}</p>` : ""}
   ${a.bozza ? "" : `<div class="like-fine"><p>Ti è piaciuta questa notizia?</p>${tastoLike(a)}</div>`}
+  ${condivisione(a)}
   ${fonti}
 </article>
-${a.bozza ? "" : `<script src="/like.js" defer></script>`}
+${a.bozza ? "" : `<script src="/like.js" defer></script>\n<script src="/condividi.js" defer></script>`}
 ${correlati.length ? `<section class="correlati" aria-labelledby="t-corr"><h2 id="t-corr" class="titolo-sezione">Altro da ${esc(config.categorie[a.categoria].nome)}</h2><div class="griglia">${correlati.map((x) => scheda(x)).join("")}</div></section>` : ""}
 <script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, "\\u003c")}</script>`;
   return pagina({ titolo: a.titolo, titoloSeo: a.titoloSeo, descrizione: a.sommario || config.motto, percorso: a.url, corpo, tipo: "article", articolo: a });

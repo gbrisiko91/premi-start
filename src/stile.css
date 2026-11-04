@@ -264,3 +264,32 @@ main { max-width: 78rem; margin: 0 auto; padding: 0 1rem 5rem; }
 .briciole a { text-decoration: none; }
 .briciole a:hover { color: var(--testo); text-decoration: underline; }
 @media (max-width: 980px) { .eroe-arte { right: 0; width: 100%; top: 0; opacity: .35; } }
+
+/* ---------- condivisione ---------- */
+.tasto-vai-condividi { display: inline-flex; align-items: center; gap: .5rem; text-decoration: none; font-family: var(--display); font-weight: 800; font-stretch: 115%; font-size: 1rem; color: var(--testo); background: var(--pannello); border: 2px solid var(--pannello-2); border-radius: 999px; padding: .55rem 1.1rem .55rem .85rem; }
+.tasto-vai-condividi:hover { border-color: var(--viola); }
+.tasto-vai-condividi svg { width: 1.1rem; height: 1.1rem; fill: currentColor; }
+.condividi { margin-top: 1rem; padding: 1.4rem 1.5rem 1.5rem; border-radius: 18px; background: var(--pannello); border: 1px solid var(--pannello-2); scroll-margin-top: 6rem; }
+.condividi-titolo { margin: 0 0 .9rem; font-family: var(--display); font-weight: 900; font-stretch: 125%; font-style: italic; font-size: 1.25rem; }
+.condividi-tasti { display: flex; flex-wrap: wrap; gap: .6rem; }
+.tasto-condividi {
+  display: inline-flex; align-items: center; gap: .5rem; cursor: pointer; text-decoration: none;
+  font: inherit; font-family: var(--display); font-weight: 800; font-size: .95rem; color: #fff;
+  background: var(--rete, var(--pannello-2)); border: 0; border-radius: 12px; padding: .65rem 1rem;
+  transition: transform .1s, filter .15s;
+}
+.tasto-condividi:hover { filter: brightness(1.12); transform: translateY(-2px); }
+.tasto-condividi:active { transform: translateY(1px); }
+.tasto-condividi svg { width: 1.15rem; height: 1.15rem; fill: currentColor; flex: none; }
+.tasto-condividi[data-rete="whatsapp"] { --rete: #1f9e52; }
+.tasto-condividi[data-rete="telegram"] { --rete: #2481cc; }
+.tasto-condividi[data-rete="x"] { --rete: #000; box-shadow: inset 0 0 0 1px #3a3550; }
+.tasto-condividi[data-rete="facebook"] { --rete: #1667d9; }
+.tasto-condividi.nativo { --rete: var(--viola); color: var(--notte); }
+.tasto-condividi.copia { --rete: var(--pannello-2); }
+.tasto-condividi.copiato { --rete: var(--verde); color: var(--notte); }
+@media (max-width: 620px) {
+  .condividi-tasti { display: grid; grid-template-columns: 1fr 1fr; }
+  .tasto-condividi { justify-content: center; }
+  .nativo[hidden] ~ .copia { grid-column: 1 / -1; }
+}
