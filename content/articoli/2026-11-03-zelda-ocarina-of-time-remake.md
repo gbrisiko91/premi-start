@@ -7,7 +7,7 @@ data: 2026-11-03
 categoria: console
 tag: [the-legend-of-zelda, ocarina-of-time, nintendo, nintendo-switch-2]
 viralita: 84
-bozza: true
+bozza: false
 immagine: "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_2_games/thelegendofzeldaocarinaoftime/banners/16x9_PDP_NSwitch2_TloZOcarinaOfTime_AnniLogo_image1600w.jpg"
 immagine_riserva: "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_2_games/thelegendofzeldaocarinaoftime/banners/16x9_PDP_NSwitch2_TloZOcarinaOfTime_AnniLogo_image1280w.jpg"
 alt_immagine: "Immagine ufficiale di The Legend of Zelda: Ocarina of Time remake per Nintendo Switch 2"
