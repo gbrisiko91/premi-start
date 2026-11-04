@@ -7,7 +7,7 @@ data: 2026-11-04
 categoria: industria
 tag: [prince-of-persia, ubisoft, le-sabbie-del-tempo, remake]
 viralita: 72
-bozza: true
+bozza: false
 immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/13600/0000003879.1920x1080.jpg?t=1720535333"
 immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/13600/header.jpg?t=1720535333"
 alt_immagine: "Scena del Prince of Persia: Le Sabbie del Tempo originale del 2003"
