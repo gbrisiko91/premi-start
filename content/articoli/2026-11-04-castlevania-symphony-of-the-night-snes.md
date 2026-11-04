@@ -7,7 +7,7 @@ data: 2026-11-04
 categoria: retro
 tag: [castlevania, symphony-of-the-night, snes, konami]
 viralita: 62
-bozza: true
+bozza: false
 immagine: ""
 immagine_riserva: ""
 alt_immagine: ""
