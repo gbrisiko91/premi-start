@@ -6,7 +6,7 @@ export default {
   url: "https://cute-bublanina-801681.netlify.app",
   lingua: "it",
   // Per la pagina privacy: nome e cognome (o ragione sociale) di chi gestisce il sito, e un'email di contatto.
-  titolare: "",
+  titolare: "Gianmarco Buono",
   emailContatto: "",
   privacyAggiornata: "2026-11-01",
   // Codice di verifica di Google Search Console (solo se scegli il metodo "tag HTML"), es. "abc123..."
