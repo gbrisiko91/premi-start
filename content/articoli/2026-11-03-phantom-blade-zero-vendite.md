@@ -7,7 +7,7 @@ data: 2026-11-03
 categoria: pc
 tag: [phantom-blade-zero, s-game, ps5, steam]
 viralita: 78
-bozza: true
+bozza: false
 immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4115450/library_hero.jpg"
 immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4115450/header.jpg"
 alt_immagine: "Immagine ufficiale di Phantom Blade Zero, l'action di S-GAME uscito su PS5 e PC"
