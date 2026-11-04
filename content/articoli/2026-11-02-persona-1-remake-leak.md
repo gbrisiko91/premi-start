@@ -4,7 +4,7 @@ titolo_seo: "Persona 1 remake: il video leak è vero?"
 sommario: "Un presunto video del remake di Persona 1 è apparso online: dungeon, combattimenti e Tatsuya di Persona 2. Atlus tace: ecco cosa sappiamo del leak."
 parola_chiave: "persona 1 remake"
 data: 2026-11-02
-categoria: retro
+categoria: false
 tag: [persona, atlus, revelations-persona, remake]
 viralita: 70
 bozza: true
