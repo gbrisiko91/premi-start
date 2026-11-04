@@ -7,7 +7,7 @@ data: 2026-11-04
 categoria: industria
 tag: [arkane-lyon, ubisoft, xbox, marvels-blade, dishonored]
 viralita: 74
-bozza: true
+bozza: false
 immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/403640/library_hero.jpg"
 immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/403640/header.jpg"
 alt_immagine: "Immagine ufficiale di Dishonored 2, uno dei giochi più famosi di Arkane Lyon"
