@@ -7,7 +7,7 @@ data: 2026-11-04
 categoria: industria
 tag: [control-resonant, remedy-entertainment, max-payne]
 viralita: 58
-bozza: true
+bozza: false
 immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3669870/d2c7e4d021ce81d9712ce7983efa9327fe29fece/capsule_616x353.jpg?t=1791013569"
 immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3669870/header.jpg"
 alt_immagine: "Immagine ufficiale di Control Resonant, il nuovo gioco di Remedy Entertainment"
