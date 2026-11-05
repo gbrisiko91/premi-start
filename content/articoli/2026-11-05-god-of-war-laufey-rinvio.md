@@ -7,7 +7,7 @@ data: 2026-11-05
 categoria: console
 tag: [god-of-war-laufey, santa-monica-studio, playstation-5, god-of-war]
 viralita: 86
-bozza: true
+bozza: false
 immagine: "https://image.api.playstation.com/vulcan/ap/rnd/202609/1800/e1e187126032636435888915f17e26c3645661746a38362d.png"
 immagine_riserva: "https://image.api.playstation.com/vulcan/ap/rnd/202609/1800/7454842dd52463181d493ffe0c029c3e6f54c233606d0119.jpg"
 alt_immagine: "Immagine ufficiale di God of War Laufey con Faye, la protagonista dell'esclusiva PS5"
