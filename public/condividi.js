@@ -34,7 +34,7 @@
       campo.remove();
     }
     copia.classList.add("copiato");
-    etichetta.textContent = "Link copiato";
-    setTimeout(() => { copia.classList.remove("copiato"); etichetta.textContent = "Copia link"; }, 2000);
+    etichetta.textContent = copia.dataset.fatto;
+    setTimeout(() => { copia.classList.remove("copiato"); etichetta.textContent = copia.dataset.testo; }, 2000);
   });
 })();

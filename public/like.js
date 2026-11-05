@@ -3,14 +3,14 @@
   const tasti = [...document.querySelectorAll("[data-like]")];
   if (!tasti.length) return;
   const id = tasti[0].dataset.like;
-  const formato = new Intl.NumberFormat("it-IT", { notation: "compact" });
+  const formato = new Intl.NumberFormat(document.documentElement.lang || "it", { notation: "compact" });
   let stato = { conto: null, piaciuto: false };
   let inCorso = false;
 
   function mostra() {
     for (const t of tasti) {
       t.setAttribute("aria-pressed", String(stato.piaciuto));
-      t.querySelector(".like-testo").textContent = stato.piaciuto ? "Ti piace" : "Mi piace";
+      t.querySelector(".like-testo").textContent = stato.piaciuto ? t.dataset.si : t.dataset.no;
       t.querySelector(".like-conto").textContent = stato.conto === null ? "" : formato.format(stato.conto);
     }
   }

@@ -10,8 +10,8 @@
   --giallo: #ffc21a;
   --verde: #22d07a;
   --blu: #3d8bff;
-  --display: "Anybody", "Arial Black", system-ui, sans-serif;
-  --lettura: "Atkinson Hyperlegible", system-ui, sans-serif;
+  --display: "Anybody", "Arial Black", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", "Noto Sans", system-ui, sans-serif;
+  --lettura: "Atkinson Hyperlegible", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans", system-ui, sans-serif;
   --c: var(--viola);
   color-scheme: dark;
 }
@@ -292,4 +292,63 @@ main { max-width: 78rem; margin: 0 auto; padding: 0 1rem 5rem; }
   .condividi-tasti { display: grid; grid-template-columns: 1fr 1fr; }
   .tasto-condividi { justify-content: center; }
   .nativo[hidden] ~ .copia { grid-column: 1 / -1; }
+}
+
+
+/* ---------- lingue ---------- */
+.testata-destra { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; }
+.lingue { position: relative; font-family: var(--display); font-weight: 700; }
+.lingue summary {
+  list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: .4rem;
+  padding: .4rem .8rem .4rem .6rem; border-radius: 999px; background: var(--pannello); border: 2px solid transparent; font-size: .9rem;
+}
+.lingue summary::-webkit-details-marker { display: none; }
+.lingue summary:hover, .lingue[open] summary { border-color: var(--viola); }
+.lingue summary svg { width: 1.05rem; height: 1.05rem; fill: currentColor; }
+.lingue ul {
+  position: absolute; right: 0; top: calc(100% + .5rem); z-index: 20; margin: 0; padding: .4rem; list-style: none;
+  min-width: 12rem; background: var(--pannello); border: 1px solid var(--pannello-2); border-radius: 14px; box-shadow: 0 18px 40px rgba(0, 0, 0, .45);
+}
+.lingue li a { display: flex; align-items: center; gap: .7rem; padding: .5rem .7rem; border-radius: 9px; text-decoration: none; font-weight: 600; }
+.lingue li a:hover { background: var(--pannello-2); }
+.lingue li a[aria-current="true"] { background: color-mix(in srgb, var(--viola) 25%, var(--pannello)); }
+.lingua-codice { font-size: .72rem; font-weight: 900; font-stretch: 125%; color: var(--tenue); min-width: 1.6rem; }
+.piede-lingue { display: flex; flex-wrap: wrap; justify-content: center; gap: .3rem 1rem; margin-top: 1.25rem; font-size: .85rem; }
+.piede-lingue a { color: var(--tenue); text-decoration: none; }
+.piede-lingue a:hover, .piede-lingue a[aria-current="true"] { color: var(--testo); text-decoration: underline; }
+.nota-traduzione { margin-top: 2rem; padding: .9rem 1.1rem; border-left: 4px solid var(--viola); background: var(--pannello); border-radius: 0 12px 12px 0; color: var(--tenue); font-size: .95rem; }
+.nota-traduzione a { color: var(--testo); }
+.altre-lingue { margin-top: 1.5rem; font-family: var(--display); }
+.altre-lingue p { display: flex; align-items: center; gap: .5rem; margin: 0 0 .6rem; font-weight: 800; color: var(--tenue); }
+.altre-lingue p svg { width: 1.1rem; height: 1.1rem; fill: currentColor; }
+.altre-lingue ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem; }
+.altre-lingue a { display: inline-block; padding: .3rem .75rem; border-radius: 999px; background: var(--pannello); text-decoration: none; font-weight: 700; font-size: .85rem; }
+.altre-lingue a:hover { background: var(--pannello-2); }
+/* Giapponese e russo: niente corsivo finto né caratteri allargati sui font di sistema */
+:lang(ja) * { font-style: normal; }
+:lang(ja) h1, :lang(ja) h2, :lang(ja) h3, :lang(ja) .titolo-scheda, :lang(ja) .eroe-titolo { letter-spacing: 0; line-height: 1.25; word-break: auto-phrase; }
+:lang(ja) .eroe-titolo { font-size: clamp(2rem, 5vw, 4rem); }
+:lang(ja) .testo { line-height: 1.95; }
+:lang(ru) .eroe-titolo { font-size: clamp(2.2rem, 6vw, 5rem); }
+
+/* ---------- pagine fisse ---------- */
+.eroe-pagina { border-bottom-color: var(--viola); }
+.sopratitolo { margin: 0 0 .6rem; font-family: var(--display); font-weight: 800; font-stretch: 125%; font-style: italic; color: var(--giallo); }
+.pagina-fissa .testo h2 { margin-top: 2.6rem; }
+.tessere-cat { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; margin: 1.5rem 0 2rem; max-width: none; }
+.tessera {
+  display: flex; flex-direction: column; gap: .35rem; padding: 1rem 1.1rem; border-radius: 14px; text-decoration: none;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--c) 22%, var(--pannello)), var(--pannello)); border: 2px solid transparent;
+  transition: transform .15s, border-color .15s;
+}
+.testo .tessera { color: var(--testo); }
+.tessera:hover { transform: translateY(-3px); border-color: var(--c); }
+.tessera-nome { display: inline-flex; align-items: center; gap: .5rem; font-family: var(--display); font-weight: 900; font-stretch: 125%; font-size: 1.15rem; }
+.tessera-testo { font-size: .95rem; line-height: 1.45; color: var(--tenue); }
+.tessera-conto { margin-top: auto; font-family: var(--display); font-weight: 800; font-size: .85rem; color: var(--c); }
+@media (max-width: 620px) {
+  .tessere-cat { grid-template-columns: 1fr; }
+  .testata-destra { width: 100%; justify-content: space-between; flex-wrap: nowrap; }
+  .testata-destra .categorie { min-width: 0; width: auto; flex: 1 1 auto; }
+  .lingue { flex: none; }
 }

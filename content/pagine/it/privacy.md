@@ -1,3 +1,11 @@
+---
+titolo: "Informativa privacy"
+menu: "Privacy"
+slug: "privacy"
+ordine: 4
+descrizione: "Informativa privacy di Soffia Cartuccia: quali dati trattiamo quando visiti il sito e come puoi esercitare i tuoi diritti."
+---
+
 *Ultimo aggiornamento: {{AGGIORNATA}}*
 
 Questa pagina spiega quali dati vengono trattati quando visiti **{{NOME_SITO}}**, ai sensi del Regolamento (UE) 2016/679 (GDPR).
