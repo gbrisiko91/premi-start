@@ -8,9 +8,14 @@ for (const lingua of Object.keys(LINGUE)) {
   const indice = JSON.parse(fs.readFileSync(`dist/indice-${lingua}.json`, "utf8"));
   assert.ok(home.includes("data-ricerca-dialog"), `Ricerca assente: ${lingua}`);
   assert.ok(home.includes("data-checkpoint"), `Checkpoint assente: ${lingua}`);
+  assert.ok(home.includes("data-checkpoint-toggle"), `Consenso Checkpoint assente: ${lingua}`);
+  assert.ok(home.includes("data-ricerca-apri"), `Pulsante ricerca assente: ${lingua}`);
   assert.ok(home.includes("digest-griglia"), `Digest assente: ${lingua}`);
   assert.ok(home.includes("mondi-griglia"), `Categorie assenti: ${lingua}`);
   assert.ok(Array.isArray(indice), `Indice invalido: ${lingua}`);
+  const privacy = fs.readFileSync(`dist/${prefix}privacy/index.html`, "utf8");
+  assert.ok(privacy.includes("localStorage"), `Informativa privacy non aggiornata: ${lingua}`);
+  assert.ok(!indice.some((a) => a.bozza === true), `Bozze nell’indice: ${lingua}`);
   assert.ok(indice.every(a => a.id && a.url.startsWith("/") && a.titolo), `Dati indice invalidi: ${lingua}`);
   for (const item of indice) {
     const relative = item.url.slice(1) + "index.html";
