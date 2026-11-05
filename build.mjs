@@ -308,7 +308,8 @@ function pagina({ l, titolo, titoloSeo = "", descrizione, percorso, corpo, tipo 
 <link rel="alternate" type="application/rss+xml" title="${esc(config.nome)}" href="${P.rss(l)}">
 ${FONT_PRECARICA}<link rel="stylesheet" href="/font.css">
 <link rel="stylesheet" href="/stile.css">
-<link rel="stylesheet" href="/novita.css">${config.googleVerifica ? `\n<meta name="google-site-verification" content="${esc(config.googleVerifica)}">` : ""}
+<link rel="stylesheet" href="/novita.css">
+<link rel="stylesheet" href="/quiz.css">${config.googleVerifica ? `\n<meta name="google-site-verification" content="${esc(config.googleVerifica)}">` : ""}
 </head>
 <body>
 ${CON_BOZZE ? `<div class="banner-anteprima">${esc(t.banner)}</div>` : ""}
@@ -616,6 +617,7 @@ fs.rmSync(DIST, { recursive: true, force: true });
 copiaCartella(PUBBLICO, DIST);
 fs.copyFileSync(path.join(ROOT, "src", "stile.css"), path.join(DIST, "stile.css"));
 fs.copyFileSync(path.join(ROOT, "src", "novita.css"), path.join(DIST, "novita.css"));
+fs.copyFileSync(path.join(ROOT, "src", "quiz.css"), path.join(DIST, "quiz.css"));
 const FONT = preparaFont();
 fs.writeFileSync(path.join(DIST, "font.css"), FONT.css);
 var FONT_PRECARICA = FONT.precarica.map((f) => `<link rel="preload" href="/font/${f}" as="font" type="font/woff2" crossorigin>\n`).join("");
