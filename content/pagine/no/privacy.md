@@ -45,6 +45,14 @@ Du kan når som helst be om innsyn i dataene dine, få dem rettet eller slettet,
 
 Mener du at dataene dine behandles i strid med regelverket, kan du klage til det italienske datatilsynet, [Garante per la protezione dei dati personali](https://www.garanteprivacy.it), eller til Datatilsynet i Norge.
 
+## Personlige funksjoner: søk, lagrede artikler og Checkpoint
+
+Søk foregår i nettleseren mot en offentlig artikkelindeks. Søkeordene dine sendes ikke til en analysetjeneste.
+
+Hvis du velger **Lagre artikkel**, lagrer nettleseren artikkelidentifikatorene lokalt (*localStorage*). Hvis du selv aktiverer **Checkpoint**, lagres også aktiveringen og identifikatorene til artikler som allerede er vist, slik at nye artikler kan vises ved neste besøk. Opplysningene forblir i nettleseren, sendes ikke til våre servere og synkroniseres ikke mellom enheter. Vi bruker dem ikke til profilering eller besøksanalyse.
+
+Du kan fjerne lagrede artikler, slå av Checkpoint (som sletter historikken), eller slette nettstedets data i nettleserinnstillingene. Ved sletting eller bytte av nettleser/enhet mister du disse dataene.
+
 ## Endringer
 
 Hvis vi endrer måten vi behandler data på, for eksempel ved å legge til statistikk, reklame eller et nyhetsbrev, oppdaterer vi denne siden før vi gjør det.
