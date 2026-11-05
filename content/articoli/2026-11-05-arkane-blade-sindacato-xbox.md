@@ -7,7 +7,7 @@ data: 2026-11-05
 categoria: industria
 tag: [arkane-lyon, marvels-blade, xbox, microsoft]
 viralita: 70
-bozza: true
+bozza: false
 immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1252330/library_hero.jpg"
 immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1252330/header.jpg"
 alt_immagine: "Immagine ufficiale di Deathloop, l'ultimo gioco pubblicato da Arkane Lyon prima di Blade"
