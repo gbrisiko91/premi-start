@@ -13,6 +13,7 @@ import { marked } from "marked";
 import config from "./sito.config.mjs";
 import { LINGUE, PRINCIPALE, T } from "./lingue.mjs";
 import { U } from "./novita.mjs";
+import { QUIZ } from "./quiz.mjs";
 
 const ROOT = path.dirname(new URL(import.meta.url).pathname);
 const CONTENUTI = path.join(ROOT, "content", "articoli");
@@ -44,6 +45,7 @@ const P = {
   categoria: (l, k) => `${pre(l)}/${T[l].seg.categoria}/${k}/`,
   archivio: (l) => `${pre(l)}/${T[l].seg.archivio}/`,
   rss: (l) => `${pre(l)}/rss.xml`,
+  quiz: (l) => `${pre(l)}/quiz/`,
   pagina: (l, slug) => `${pre(l)}/${slug}/`,
 };
 const tuttePerLingua = (f) => Object.fromEntries(CODICI.map((l) => [l, f(l)]));
@@ -316,6 +318,7 @@ ${CON_BOZZE ? `<div class="banner-anteprima">${esc(t.banner)}</div>` : ""}
     <a class="marchio" href="${P.home(l)}" aria-label="${esc(config.nome)}, ${esc(t.home)}"><span>Soffia</span><span>Cartuccia</span><i class="cursore" aria-hidden="true"></i></a>
     <div class="testata-destra">
       <nav class="categorie" aria-label="${esc(t.navCategorie)}">${nav}</nav>
+      <a class="quiz-nav" href="${P.quiz(l)}">✦ ${esc(QUIZ[l].nome)}</a>
       <button type="button" class="bottone-ricerca" data-ricerca-apri hidden aria-haspopup="dialog">${esc(u.search)} ⌕</button>
       ${selettoreLingua(l, alternative)}
     </div>
@@ -406,6 +409,7 @@ function home(l, articoli) {
 <section class="blocco-novita" aria-labelledby="t-mondi"><div class="blocco-heading"><div><span class="eyebrow">02 / ${esc(u.world)}</span><h2 id="t-mondi" class="titolo-sezione">${esc(u.world)}</h2><p>${esc(u.worldLead)}</p></div></div><div class="mondi-griglia">${mondi}</div></section>
 <section class="blocco-novita checkpoint" id="checkpoint" data-checkpoint data-prima="${esc(u.checkpointFirst)}" data-nuovi="${esc(u.checkpointFresh)}" data-aggiornato="${esc(u.checkpointNoNew)}" data-vuoto="${esc(u.checkpointNoNew)}" data-nessun-salvato="${esc(u.savedEmpty)}" data-errore="${esc(u.searchError)}" data-attiva="${esc(u.checkpointOn)}" data-disattiva="${esc(u.checkpointOff)}" data-spento="${esc(u.checkpointOffText)}" aria-labelledby="t-checkpoint"><div class="blocco-heading"><div><span class="eyebrow">03 / Checkpoint</span><h2 id="t-checkpoint" class="titolo-sezione">${esc(u.checkpoint)}</h2><p>${esc(u.checkpointLead)}</p></div><button type="button" class="bottone-salva" data-checkpoint-toggle aria-pressed="false">${esc(u.checkpointOn)}</button></div><div class="checkpoint-layout"><div class="checkpoint-gruppo"><h3>${esc(u.checkpointFresh)}</h3><p class="checkpoint-stato" data-checkpoint-stato aria-live="polite"></p><ul class="checkpoint-lista" data-checkpoint-news></ul></div><div class="checkpoint-gruppo"><h3>${esc(u.checkpointSaved)}</h3><ul class="checkpoint-lista" data-checkpoint-salvati></ul></div></div></section>
 ${retro.length ? `<section class="blocco-novita" aria-labelledby="t-retro"><div class="blocco-heading"><div><span class="eyebrow">04 / Retro</span><h2 id="t-retro" class="titolo-sezione">${esc(u.retro)}</h2><p>${esc(u.retroLead)}</p></div><a class="intro-link" href="${P.categoria(l,"retro")}">${esc(u.viewAll)} ↗</a></div><div class="griglia">${retro.map(scheda).join("")}</div></section>` : ""}
+<section class="blocco-novita quiz-richiamo" aria-labelledby="t-quiz"><div><span class="eyebrow">05 / Daily Quest</span><h2 id="t-quiz" class="titolo-sezione">${esc(QUIZ[l].nome)}</h2><p>${esc(QUIZ[l].intro)}</p></div><a class="tasto-start" href="${P.quiz(l)}">${esc(QUIZ[l].data)}</a></section>
 ${resto.length ? `<section class="flusso" aria-labelledby="t-ultime"><h2 id="t-ultime" class="titolo-sezione">${esc(t.ultime)}</h2><div class="griglia">${resto.slice(0, config.articoliPerPagina).map((a) => scheda(a)).join("")}</div>
 ${resto.length > config.articoliPerPagina ? `<p class="altro"><a class="tasto-start" href="${P.archivio(l)}">${esc(t.tutti)}</a></p>` : ""}</section>` : ""}`;
   return pagina({ l, percorso: P.home(l), corpo, ticker: articoli.slice(0, 8), alternative });
@@ -473,6 +477,30 @@ ${a.bozza ? "" : `<script src="/like.js" defer></script>\n<script src="/condivid
 ${correlati.length ? `<section class="correlati" aria-labelledby="t-corr"><h2 id="t-corr" class="titolo-sezione">${esc(t.altroDa(nomeCat(l, a.categoria)))}</h2><div class="griglia">${correlati.map((x) => scheda(x)).join("")}</div></section>` : ""}
 <script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, "\\u003c")}</script>`;
   return pagina({ l, titolo: a.titolo, titoloSeo: a.titoloSeo, descrizione: a.sommario || t.motto, percorso: a.url, corpo, tipo: "article", articolo: a, alternative });
+}
+
+function paginaQuiz(l) {
+  const q = QUIZ[l];
+  const dati = JSON.stringify(q).replace(/</g, "\\u003c");
+  const corpo = `<section class="quiz-pagina" aria-labelledby="quiz-titolo">
+    <a class="intro-link" href="${P.home(l)}">← ${esc(T[l].home)}</a>
+    <div class="quiz-shell" data-quiz>
+      <span class="eyebrow">DAILY QUEST / 01</span>
+      <h1 id="quiz-titolo">${esc(q.nome)}</h1>
+      <p class="quiz-intro">${esc(q.intro)}</p>
+      <p class="quiz-data">${esc(q.data)} · <time data-giorno></time></p>
+      <h2 class="quiz-domanda" data-domanda>${esc(q.prepara)}</h2>
+      <div data-opzioni></div>
+      <button type="button" hidden class="tasto-start quiz-verifica" data-verifica>${esc(q.verifica)}</button>
+      <div class="quiz-esito" data-esito tabindex="-1" aria-live="polite" hidden></div>
+      <button type="button" class="intro-link" data-condividi hidden>${esc(q.condividi)}</button>
+      <noscript><p>${esc(q.errore)}</p></noscript>
+    </div>
+    <p class="quiz-torna"><a class="intro-link" href="${P.archivio(l)}">${esc(q.altro)} ↗</a></p>
+  </section>
+  <script id="quiz-dati" type="application/json">${dati}</script>
+  <script src="/quiz.js" defer></script>`;
+  return pagina({ l, titolo:q.nome, descrizione:q.intro, percorso:P.quiz(l),corpo,alternative:tuttePerLingua(P.quiz) });
 }
 
 function paginaElenco({ l, titolo, descrizione, percorso, lista, categoria, alternative }) {
@@ -600,6 +628,7 @@ for (const l of CODICI) {
   const t = T[l];
   const lista = perLingua[l];
   scriviPagina(P.home(l), home(l, lista));
+  scriviPagina(P.quiz(l), paginaQuiz(l));
   scrivi(`indice-${l}.json`, JSON.stringify(pubblicati(lista).map((a)=>({id:a.id,url:a.url,titolo:a.titolo,sommario:a.sommario,categoria:nomeCat(l,a.categoria),tag:a.tag,data:a.data.toISOString(),dataBreve:data(l,a.data,"breve")}))));
   for (const a of lista) scriviPagina(a.url, paginaArticolo(a, lista, versioniDi(a.id)));
   for (const k of Object.keys(config.categorie)) {
@@ -622,6 +651,7 @@ for (const l of CODICI) {
 
 // Gruppi per la sitemap (solo contenuti pubblici)
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.home(l) })) });
+gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.quiz(l) })) });
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.archivio(l) })) });
 for (const k of Object.keys(config.categorie)) gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.categoria(l, k) })) });
 for (const id of new Set(PAGINE_FISSE.map((p) => p.id))) gruppiSitemap.push({ versioni: PAGINE_FISSE.filter((p) => p.id === id) });
