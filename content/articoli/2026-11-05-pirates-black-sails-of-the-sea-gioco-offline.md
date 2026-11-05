@@ -6,7 +6,7 @@ parola_chiave: "pirates black sails of the sea"
 data: 2026-11-05
 categoria: industria
 tag: [pirates-black-sails-of-the-sea, giochi-mobile, sviluppatori-italiani, indie]
-bozza: true
+bozza: false
 immagine: "/media/pirates-black-sails/copertina.jpg"
 immagine_riserva: "/media/pirates-black-sails/menu-principale.jpg"
 alt_immagine: "Menu e due scene di gioco di Pirates: Black Sails of the Sea, con navi pirata in mare"
