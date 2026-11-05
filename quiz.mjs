@@ -16,7 +16,14 @@ export const QUIZ = {
       ["In quale anno debuttò Sonic the Hedgehog su Mega Drive?", ["1991", "1986", "1995", "2001"], "Il primo Sonic the Hedgehog uscì nel 1991."],
       ["In quale anno debuttò il Famicom in Giappone?", ["1983", "1980", "1988", "1990"], "Il Family Computer di Nintendo arrivò sul mercato giapponese nel 1983."],
       ["Chi è il creatore di Super Mario?", ["Shigeru Miyamoto", "Satoshi Tajiri", "Gunpei Yokoi", "Yuji Naka"], "Shigeru Miyamoto ideò Mario per Nintendo."],
-      ["In quale anno uscì il primo DOOM?", ["1993", "1989", "1997", "2001"], "DOOM, sviluppato da id Software, uscì nel dicembre 1993."]
+      ["In quale anno uscì il primo DOOM?", ["1993", "1989", "1997", "2001"], "DOOM, sviluppato da id Software, uscì nel dicembre 1993."],
+      ["In quale anno debuttò PAC-MAN?",["1980","1975","1984","1990"],"Il gioco arcade di Bandai Namco debuttò in Giappone nel 1980."],
+      ["In che anno uscì Game Boy Advance?",["2001","1997","2004","2007"],"Nintendo lanciò Game Boy Advance nel 2001."],
+      ["In quale anno debuttò Nintendo DS in Giappone?",["2004","2000","2008","2011"],"Nintendo DS debuttò nel 2004."],
+      ["In quale anno uscì Nintendo Wii?",["2006","2003","2010","2012"],"La console Wii arrivò nel 2006."],
+      ["In che anno fu lanciato Nintendo Switch?",["2017","2014","2019","2020"],"Nintendo Switch debuttò nel 2017."],
+      ["Quando debuttò Nintendo 64 in Giappone?",["1996","1992","1999","2002"],"Nintendo 64 arrivò in Giappone il 23 giugno 1996."],
+      ["In quale anno uscì la prima Xbox in Nord America?",["2001","1998","2004","2006"],"La Xbox originale arrivò in Nord America il 15 novembre 2001."]
     ]
   },
   en: {
@@ -33,7 +40,14 @@ export const QUIZ = {
       ["In which year did Sonic the Hedgehog debut on Mega Drive?", ["1991", "1986", "1995", "2001"], "The first Sonic the Hedgehog came out in 1991."],
       ["In which year did the Famicom launch in Japan?", ["1983", "1980", "1988", "1990"], "Nintendo's Family Computer launched in Japan in 1983."],
       ["Who created Super Mario?", ["Shigeru Miyamoto", "Satoshi Tajiri", "Gunpei Yokoi", "Yuji Naka"], "Shigeru Miyamoto created Mario for Nintendo."],
-      ["What year was the original DOOM released?", ["1993", "1989", "1997", "2001"], "DOOM, developed by id Software, was released in December 1993."]
+      ["What year was the original DOOM released?", ["1993", "1989", "1997", "2001"], "DOOM, developed by id Software, was released in December 1993."],
+      ["What year did PAC-MAN debut?",["1980","1975","1984","1990"],"Bandai Namco's arcade game debuted in Japan in 1980."],
+      ["What year was Game Boy Advance released?",["2001","1997","2004","2007"],"Nintendo launched Game Boy Advance in 2001."],
+      ["When did Nintendo DS debut in Japan?",["2004","2000","2008","2011"],"Nintendo DS debuted in 2004."],
+      ["In which year was Nintendo Wii released?",["2006","2003","2010","2012"],"Wii was released in 2006."],
+      ["What year was Nintendo Switch launched?",["2017","2014","2019","2020"],"Nintendo Switch debuted in 2017."],
+      ["When did Nintendo 64 launch in Japan?",["1996","1992","1999","2002"],"Nintendo 64 launched in Japan on June 23, 1996."],
+      ["In what year did the first Xbox launch in North America?",["2001","1998","2004","2006"],"The original Xbox launched in North America on November 15, 2001."]
     ]
   },
   de: {
@@ -45,7 +59,14 @@ export const QUIZ = {
       ["In welchem Jahr debütierte Sonic the Hedgehog auf dem Mega Drive?",["1991","1986","1995","2001"],"Das erste Sonic the Hedgehog erschien 1991."],
       ["In welchem Jahr erschien das Famicom in Japan?",["1983","1980","1988","1990"],"Nintendos Family Computer erschien 1983 in Japan."],
       ["Wer erschuf Super Mario?",["Shigeru Miyamoto","Satoshi Tajiri","Gunpei Yokoi","Yuji Naka"],"Shigeru Miyamoto erschuf Mario für Nintendo."],
-      ["In welchem Jahr erschien das erste DOOM?",["1993","1989","1997","2001"],"DOOM von id Software erschien im Dezember 1993."]
+      ["In welchem Jahr erschien das erste DOOM?",["1993","1989","1997","2001"],"DOOM von id Software erschien im Dezember 1993."],
+      ["In welchem Jahr erschien PAC-MAN?",["1980","1975","1984","1990"],"Das Arcade-Spiel von Bandai Namco erschien 1980 in Japan."],
+      ["In welchem Jahr erschien der Game Boy Advance?",["2001","1997","2004","2007"],"Nintendo brachte den Game Boy Advance 2001 auf den Markt."],
+      ["Wann erschien Nintendo DS in Japan?",["2004","2000","2008","2011"],"Nintendo DS erschien 2004."],
+      ["In welchem Jahr erschien die Nintendo Wii?",["2006","2003","2010","2012"],"Die Wii erschien 2006."],
+      ["Wann wurde Nintendo Switch veröffentlicht?",["2017","2014","2019","2020"],"Nintendo Switch erschien 2017."],
+      ["Wann erschien Nintendo 64 in Japan?",["1996","1992","1999","2002"],"Nintendo 64 erschien am 23. Juni 1996 in Japan."],
+      ["In welchem Jahr erschien die erste Xbox in Nordamerika?",["2001","1998","2004","2006"],"Die erste Xbox erschien dort am 15. November 2001."]
     ]
   },
   es: {
@@ -57,7 +78,14 @@ export const QUIZ = {
       ["¿En qué año debutó Sonic the Hedgehog en Mega Drive?",["1991","1986","1995","2001"],"El primer Sonic the Hedgehog apareció en 1991."],
       ["¿En qué año salió Famicom en Japón?",["1983","1980","1988","1990"],"El Family Computer de Nintendo se lanzó en Japón en 1983."],
       ["¿Quién creó a Super Mario?",["Shigeru Miyamoto","Satoshi Tajiri","Gunpei Yokoi","Yuji Naka"],"Shigeru Miyamoto creó a Mario para Nintendo."],
-      ["¿En qué año salió el primer DOOM?",["1993","1989","1997","2001"],"DOOM, desarrollado por id Software, salió en diciembre de 1993."]
+      ["¿En qué año salió el primer DOOM?",["1993","1989","1997","2001"],"DOOM, desarrollado por id Software, salió en diciembre de 1993."],
+      ["¿En qué año debutó PAC-MAN?",["1980","1975","1984","1990"],"El arcade de Bandai Namco debutó en Japón en 1980."],
+      ["¿En qué año salió Game Boy Advance?",["2001","1997","2004","2007"],"Nintendo lanzó Game Boy Advance en 2001."],
+      ["¿Cuándo debutó Nintendo DS en Japón?",["2004","2000","2008","2011"],"Nintendo DS debutó en 2004."],
+      ["¿En qué año salió Nintendo Wii?",["2006","2003","2010","2012"],"La consola Wii llegó en 2006."],
+      ["¿En qué año se lanzó Nintendo Switch?",["2017","2014","2019","2020"],"Nintendo Switch debutó en 2017."],
+      ["¿Cuándo se lanzó Nintendo 64 en Japón?",["1996","1992","1999","2002"],"Nintendo 64 llegó a Japón el 23 de junio de 1996."],
+      ["¿En qué año salió la primera Xbox en Norteamérica?",["2001","1998","2004","2006"],"La Xbox original salió allí el 15 de noviembre de 2001."]
     ]
   },
   no: {
@@ -69,7 +97,14 @@ export const QUIZ = {
       ["Hvilket år debuterte Sonic the Hedgehog på Mega Drive?",["1991","1986","1995","2001"],"Det første Sonic the Hedgehog kom i 1991."],
       ["Hvilket år kom Famicom i Japan?",["1983","1980","1988","1990"],"Nintendos Family Computer ble lansert i Japan i 1983."],
       ["Hvem skapte Super Mario?",["Shigeru Miyamoto","Satoshi Tajiri","Gunpei Yokoi","Yuji Naka"],"Shigeru Miyamoto skapte Mario for Nintendo."],
-      ["Hvilket år kom den første DOOM?",["1993","1989","1997","2001"],"DOOM fra id Software ble utgitt i desember 1993."]
+      ["Hvilket år kom den første DOOM?",["1993","1989","1997","2001"],"DOOM fra id Software ble utgitt i desember 1993."],
+      ["Hvilket år debuterte PAC-MAN?",["1980","1975","1984","1990"],"Arkadespillet fra Bandai Namco debuterte i Japan i 1980."],
+      ["Hvilket år kom Game Boy Advance?",["2001","1997","2004","2007"],"Nintendo lanserte Game Boy Advance i 2001."],
+      ["Når debuterte Nintendo DS i Japan?",["2004","2000","2008","2011"],"Nintendo DS debuterte i 2004."],
+      ["Hvilket år kom Nintendo Wii?",["2006","2003","2010","2012"],"Wii kom i 2006."],
+      ["Hvilket år ble Nintendo Switch lansert?",["2017","2014","2019","2020"],"Nintendo Switch debuterte i 2017."],
+      ["Når ble Nintendo 64 lansert i Japan?",["1996","1992","1999","2002"],"Nintendo 64 kom til Japan 23. juni 1996."],
+      ["Når kom den første Xbox i Nord-Amerika?",["2001","1998","2004","2006"],"Den originale Xbox kom i Nord-Amerika 15. november 2001."]
     ]
   },
   sv: {
@@ -81,7 +116,14 @@ export const QUIZ = {
       ["Vilket år debuterade Sonic the Hedgehog på Mega Drive?",["1991","1986","1995","2001"],"Första Sonic the Hedgehog släpptes 1991."],
       ["Vilket år släpptes Famicom i Japan?",["1983","1980","1988","1990"],"Nintendos Family Computer lanserades i Japan 1983."],
       ["Vem skapade Super Mario?",["Shigeru Miyamoto","Satoshi Tajiri","Gunpei Yokoi","Yuji Naka"],"Shigeru Miyamoto skapade Mario för Nintendo."],
-      ["Vilket år släpptes första DOOM?",["1993","1989","1997","2001"],"DOOM från id Software släpptes i december 1993."]
+      ["Vilket år släpptes första DOOM?",["1993","1989","1997","2001"],"DOOM från id Software släpptes i december 1993."],
+      ["Vilket år debuterade PAC-MAN?",["1980","1975","1984","1990"],"Arkadsspelet från Bandai Namco debuterade i Japan 1980."],
+      ["Vilket år släpptes Game Boy Advance?",["2001","1997","2004","2007"],"Nintendo lanserade Game Boy Advance 2001."],
+      ["När debuterade Nintendo DS i Japan?",["2004","2000","2008","2011"],"Nintendo DS debuterade 2004."],
+      ["Vilket år släpptes Nintendo Wii?",["2006","2003","2010","2012"],"Wii lanserades 2006."],
+      ["När lanserades Nintendo Switch?",["2017","2014","2019","2020"],"Nintendo Switch debuterade 2017."],
+      ["När lanserades Nintendo 64 i Japan?",["1996","1992","1999","2002"],"Nintendo 64 släpptes i Japan den 23 juni 1996."],
+      ["Vilket år lanserades den första Xbox i Nordamerika?",["2001","1998","2004","2006"],"Den första Xbox släpptes där den 15 november 2001."]
     ]
   },
   fi: {
@@ -93,7 +135,14 @@ export const QUIZ = {
       ["Minä vuonna Sonic the Hedgehog debytoi Mega Drivella?",["1991","1986","1995","2001"],"Ensimmäinen Sonic the Hedgehog ilmestyi vuonna 1991."],
       ["Minä vuonna Famicom julkaistiin Japanissa?",["1983","1980","1988","1990"],"Nintendon Family Computer julkaistiin Japanissa vuonna 1983."],
       ["Kuka loi Super Marion?",["Shigeru Miyamoto","Satoshi Tajiri","Gunpei Yokoi","Yuji Naka"],"Shigeru Miyamoto loi Marion Nintendolle."],
-      ["Minä vuonna ensimmäinen DOOM julkaistiin?",["1993","1989","1997","2001"],"id Softwaren DOOM julkaistiin joulukuussa 1993."]
+      ["Minä vuonna ensimmäinen DOOM julkaistiin?",["1993","1989","1997","2001"],"id Softwaren DOOM julkaistiin joulukuussa 1993."],
+      ["Minä vuonna PAC-MAN julkaistiin?",["1980","1975","1984","1990"],"Bandai Namcon kolikkopeli julkaistiin Japanissa vuonna 1980."],
+      ["Minä vuonna Game Boy Advance julkaistiin?",["2001","1997","2004","2007"],"Nintendo julkaisi Game Boy Advancen vuonna 2001."],
+      ["Milloin Nintendo DS julkaistiin Japanissa?",["2004","2000","2008","2011"],"Nintendo DS julkaistiin vuonna 2004."],
+      ["Minä vuonna Nintendo Wii julkaistiin?",["2006","2003","2010","2012"],"Wii julkaistiin vuonna 2006."],
+      ["Milloin Nintendo Switch julkaistiin?",["2017","2014","2019","2020"],"Nintendo Switch julkaistiin vuonna 2017."],
+      ["Milloin Nintendo 64 julkaistiin Japanissa?",["1996","1992","1999","2002"],"Nintendo 64 julkaistiin Japanissa 23. kesäkuuta 1996."],
+      ["Minä vuonna ensimmäinen Xbox julkaistiin Pohjois-Amerikassa?",["2001","1998","2004","2006"],"Alkuperäinen Xbox julkaistiin Pohjois-Amerikassa 15. marraskuuta 2001."]
     ]
   },
   ja: {
@@ -105,7 +154,14 @@ export const QUIZ = {
       ["『ソニック・ザ・ヘッジホッグ』がメガドライブで初登場したのは何年？",["1991","1986","1995","2001"],"初代ソニックは1991年に発売されました。"],
       ["ファミリーコンピュータが日本で発売されたのは何年？",["1983","1980","1988","1990"],"任天堂のファミリーコンピュータは1983年に日本で発売されました。"],
       ["マリオを生み出したのは誰？",["Shigeru Miyamoto","Satoshi Tajiri","Gunpei Yokoi","Yuji Naka"],"宮本茂が任天堂のマリオを生み出しました。"],
-      ["初代『DOOM』が発売されたのは何年？",["1993","1989","1997","2001"],"id Softwareの『DOOM』は1993年12月に登場しました。"]
+      ["初代『DOOM』が発売されたのは何年？",["1993","1989","1997","2001"],"id Softwareの『DOOM』は1993年12月に登場しました。"],
+      ["『パックマン』が登場したのは何年？",["1980","1975","1984","1990"],"バンダイナムコのアーケードゲームは1980年に日本で登場しました。"],
+      ["ゲームボーイアドバンスが発売されたのは何年？",["2001","1997","2004","2007"],"任天堂は2001年にゲームボーイアドバンスを発売しました。"],
+      ["ニンテンドーDSが日本で登場したのは何年？",["2004","2000","2008","2011"],"ニンテンドーDSは2004年に登場しました。"],
+      ["Wiiが発売されたのは何年？",["2006","2003","2010","2012"],"Wiiは2006年に発売されました。"],
+      ["Nintendo Switchが発売されたのは何年？",["2017","2014","2019","2020"],"Nintendo Switchは2017年に登場しました。"],
+      ["NINTENDO64が日本で発売されたのは何年？",["1996","1992","1999","2002"],"NINTENDO64は1996年6月23日に日本で発売されました。"],
+      ["初代Xboxが北米で発売されたのは何年？",["2001","1998","2004","2006"],"初代Xboxは2001年11月15日に北米で発売されました。"]
     ]
   },
   ru: {
@@ -117,7 +173,14 @@ export const QUIZ = {
       ["В каком году Sonic the Hedgehog дебютировал на Mega Drive?",["1991","1986","1995","2001"],"Первая игра Sonic the Hedgehog вышла в 1991 году."],
       ["В каком году Famicom вышла в Японии?",["1983","1980","1988","1990"],"Nintendo выпустила Family Computer в Японии в 1983 году."],
       ["Кто создал Super Mario?",["Shigeru Miyamoto","Satoshi Tajiri","Gunpei Yokoi","Yuji Naka"],"Сигэру Миямото создал Марио для Nintendo."],
-      ["В каком году вышла первая DOOM?",["1993","1989","1997","2001"],"DOOM от id Software вышла в декабре 1993 года."]
+      ["В каком году вышла первая DOOM?",["1993","1989","1997","2001"],"DOOM от id Software вышла в декабре 1993 года."],
+      ["В каком году дебютировала PAC-MAN?",["1980","1975","1984","1990"],"Аркадная игра Bandai Namco появилась в Японии в 1980 году."],
+      ["В каком году вышла Game Boy Advance?",["2001","1997","2004","2007"],"Nintendo выпустила Game Boy Advance в 2001 году."],
+      ["Когда Nintendo DS дебютировала в Японии?",["2004","2000","2008","2011"],"Nintendo DS появилась в 2004 году."],
+      ["В каком году вышла Nintendo Wii?",["2006","2003","2010","2012"],"Консоль Wii вышла в 2006 году."],
+      ["Когда вышла Nintendo Switch?",["2017","2014","2019","2020"],"Nintendo Switch появилась в 2017 году."],
+      ["Когда Nintendo 64 вышла в Японии?",["1996","1992","1999","2002"],"Nintendo 64 вышла в Японии 23 июня 1996 года."],
+      ["В каком году первая Xbox вышла в Северной Америке?",["2001","1998","2004","2006"],"Первая Xbox вышла там 15 ноября 2001 года."]
     ]
   }
 };
