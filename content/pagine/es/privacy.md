@@ -45,6 +45,14 @@ Puedes solicitar en cualquier momento el acceso a tus datos, su rectificación o
 
 Si consideras que tus datos se tratan de forma ilícita, puedes presentar una reclamación ante la autoridad italiana de protección de datos, el [Garante per la protezione dei dati personali](https://www.garanteprivacy.it), o ante la autoridad de tu país (en España, la Agencia Española de Protección de Datos).
 
+## Funciones personales: búsqueda, guardados y Checkpoint
+
+La búsqueda se ejecuta en tu navegador a partir de un índice público de artículos; no enviamos las palabras buscadas a un servicio de analítica.
+
+Si seleccionas **Guardar artículo**, tu navegador conserva los identificadores de los artículos en su almacenamiento local (*localStorage*). Si activas **Checkpoint** voluntariamente, también guarda la activación y los identificadores de artículos ya conocidos para mostrar novedades en una visita posterior. Esta información permanece en tu navegador: no se envía a nuestros servidores ni se sincroniza entre dispositivos. No la utilizamos para elaborar perfiles ni para analizar visitas.
+
+Puedes quitar artículos de guardados, desactivar Checkpoint (lo que borra su historial) o eliminar los datos del sitio en los ajustes del navegador. Si borras los datos o cambias de navegador o dispositivo, perderás los guardados y el historial.
+
 ## Cambios
 
 Si cambiamos la forma en que tratamos los datos, por ejemplo añadiendo estadísticas, publicidad o un boletín, actualizaremos esta página antes de hacerlo.

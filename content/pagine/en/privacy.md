@@ -45,6 +45,14 @@ You can ask at any time to access your data, correct or delete it, restrict its 
 
 If you believe your data is being processed unlawfully, you can lodge a complaint with the Italian data protection authority, the [Garante per la protezione dei dati personali](https://www.garanteprivacy.it), or with the authority in your own country.
 
+## Personal features: search, saved articles and Checkpoint
+
+Site search runs in your browser against a public article index; we do not send your search terms to an analytics service.
+
+If you choose **Save article**, your browser keeps the saved article identifiers in its local storage (*localStorage*). If you explicitly enable **Checkpoint**, it also stores your opt-in and identifiers for articles already listed, so it can show what is new on a later visit. This information stays in your browser and is not sent to our servers or synchronized between devices. We do not use it for profiling or visit analytics.
+
+You can remove articles from saved items, disable Checkpoint (which clears its history), or delete this site's stored data in your browser settings. If you clear the data or switch browser/device, saved items and history will no longer be available.
+
 ## Changes
 
 If we change the way we process data, for example by adding statistics, advertising or a newsletter, we will update this page before doing so.

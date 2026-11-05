@@ -45,6 +45,14 @@ Du kan när som helst begära tillgång till dina uppgifter, få dem rättade el
 
 Om du anser att dina uppgifter behandlas felaktigt kan du lämna klagomål till den italienska dataskyddsmyndigheten, [Garante per la protezione dei dati personali](https://www.garanteprivacy.it), eller till Integritetsskyddsmyndigheten (IMY) i Sverige.
 
+## Personliga funktioner: sök, sparade artiklar och Checkpoint
+
+Sökningen sker i din webbläsare mot ett offentligt artikelindex. Dina sökord skickas inte till någon analystjänst.
+
+När du väljer **Spara artikel** sparas artikelidentifierare lokalt i webbläsaren (*localStorage*). Om du själv aktiverar **Checkpoint** sparas även aktiveringen och identifierare för redan kända artiklar för att kunna visa nya artiklar vid nästa besök. Uppgifterna stannar i webbläsaren och skickas inte till våra servrar eller synkroniseras mellan enheter. Vi använder dem inte för profilering eller besöksanalys.
+
+Du kan ta bort sparade artiklar, inaktivera Checkpoint (vilket raderar historiken) eller rensa webbplatsens data i webbläsarens inställningar. Om du rensar data eller byter webbläsare/enhet försvinner sparade artiklar och historik.
+
 ## Ändringar
 
 Om vi ändrar hur vi behandlar uppgifter, till exempel genom att lägga till statistik, reklam eller ett nyhetsbrev, uppdaterar vi den här sidan innan vi gör det.

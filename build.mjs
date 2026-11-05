@@ -12,6 +12,7 @@ import matter from "gray-matter";
 import { marked } from "marked";
 import config from "./sito.config.mjs";
 import { LINGUE, PRINCIPALE, T } from "./lingue.mjs";
+import { U } from "./novita.mjs";
 
 const ROOT = path.dirname(new URL(import.meta.url).pathname);
 const CONTENUTI = path.join(ROOT, "content", "articoli");
@@ -259,6 +260,7 @@ const urlPaginaFissa = (l, id) => (PAGINE_FISSE.find((p) => p.lingua === l && p.
 
 function pagina({ l, titolo, titoloSeo = "", descrizione, percorso, corpo, tipo = "website", ticker = [], articolo = null, alternative = {} }) {
   const t = T[l];
+  const u = U[l];
   descrizione ??= t.motto;
   alternative = { ...alternative, [l]: percorso };
   const titoloCompleto = titolo ? `${titoloSeo || titolo} – ${config.nome}` : `${config.nome} – ${t.motto}`;
@@ -303,7 +305,8 @@ function pagina({ l, titolo, titoloSeo = "", descrizione, percorso, corpo, tipo 
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="${esc(config.nome)}" href="${P.rss(l)}">
 ${FONT_PRECARICA}<link rel="stylesheet" href="/font.css">
-<link rel="stylesheet" href="/stile.css">${config.googleVerifica ? `\n<meta name="google-site-verification" content="${esc(config.googleVerifica)}">` : ""}
+<link rel="stylesheet" href="/stile.css">
+<link rel="stylesheet" href="/novita.css">${config.googleVerifica ? `\n<meta name="google-site-verification" content="${esc(config.googleVerifica)}">` : ""}
 </head>
 <body>
 ${CON_BOZZE ? `<div class="banner-anteprima">${esc(t.banner)}</div>` : ""}
@@ -313,6 +316,7 @@ ${CON_BOZZE ? `<div class="banner-anteprima">${esc(t.banner)}</div>` : ""}
     <a class="marchio" href="${P.home(l)}" aria-label="${esc(config.nome)}, ${esc(t.home)}"><span>Soffia</span><span>Cartuccia</span><i class="cursore" aria-hidden="true"></i></a>
     <div class="testata-destra">
       <nav class="categorie" aria-label="${esc(t.navCategorie)}">${nav}</nav>
+      <button type="button" class="bottone-ricerca" data-ricerca-apri hidden aria-haspopup="dialog">${esc(u.search)} ⌕</button>
       ${selettoreLingua(l, alternative)}
     </div>
   </div>
@@ -327,6 +331,13 @@ ${corpo}
   <p class="piede-link">${linkPiede}</p>
   <nav class="piede-lingue" aria-label="${esc(t.lingua)}">${CODICI.map((x) => `<a href="${alternative[x] || P.home(x)}" hreflang="${LINGUE[x].hreflang}" lang="${LINGUE[x].hreflang}"${x === l ? ' aria-current="true"' : ""}>${esc(LINGUE[x].nome)}</a>`).join("")}</nav>
 </footer>
+<dialog class="ricerca-dialog" data-ricerca-dialog data-scrivi="${esc(u.searchType)}" data-vuoto="${esc(u.searchEmpty)}" data-errore="${esc(u.searchError)}" aria-labelledby="ricerca-titolo">
+ <div class="ricerca-top"><h2 id="ricerca-titolo">${esc(u.search)}</h2><button class="bottone-ricerca" type="button" data-ricerca-chiudi>${esc(u.close)}</button></div>
+ <label for="ricerca-input">${esc(u.searchHint)}</label>
+ <input id="ricerca-input" type="search" data-ricerca-input autocomplete="off" maxlength="120" placeholder="${esc(u.searchHint)}">
+ <p class="ricerca-stato" data-ricerca-stato role="status" aria-live="polite">${esc(u.searchType)}</p><ul class="ricerca-risultati" data-ricerca-risultati></ul>
+</dialog>
+<script src="/esperienza.js" defer></script>
 <script>document.addEventListener("click",function(e){document.querySelectorAll("details.lingue[open]").forEach(function(d){if(!d.contains(e.target))d.removeAttribute("open")})});</script>
 </body>
 </html>`;
@@ -358,6 +369,7 @@ function inTendenza(articoli) {
 // ---------- pagine ----------
 function home(l, articoli) {
   const t = T[l];
+  const u = U[l];
   const alternative = tuttePerLingua(P.home);
   if (!articoli.length) {
     return pagina({
@@ -372,7 +384,11 @@ function home(l, articoli) {
   }
   const [apertura, ...resto] = articoli;
   const tendenza = inTendenza(articoli);
+  const digest = articoli.slice(0, 3);
+  const retro = articoli.filter((a) => a.categoria === "retro").slice(0,3);
+  const mondi = Object.keys(config.categorie).map((k)=>`<a class="mondo-link" data-colore="${colore(k)}" href="${P.categoria(l,k)}"><strong>${esc(nomeCat(l,k))}</strong><span>${esc(T[l].categorie[k]?.descrizione || config.categorie[k].descrizione)}</span></a>`).join("");
   const corpo = `
+<div class="intro-ritmo"><div><span class="eyebrow">${esc(config.nome)}</span><p>${esc(t.motto)}</p></div><a class="intro-link" href="${P.archivio(l)}">${esc(u.viewArchive)} ↗</a></div>
 <section class="eroe${apertura.immagine ? " eroe-con-arte" : ""}" data-colore="${colore(apertura.categoria)}" aria-labelledby="t-apertura">
   ${apertura.immagine ? `<div class="eroe-arte" aria-hidden="true">${img({ src: apertura.immagine, riserva: apertura.immagineRiserva, lazy: false, priorita: true })}</div>` : ""}
   <div class="eroe-testo">
@@ -386,6 +402,10 @@ function home(l, articoli) {
     <ol>${tendenza.map((a) => `<li data-colore="${colore(a.categoria)}"><a href="${a.url}">${esc(a.titolo)}</a><span class="punti">${a.viralita || "–"}</span></li>`).join("")}</ol>
   </aside>
 </section>
+<section class="blocco-novita" aria-labelledby="t-digest"><div class="blocco-heading"><div><span class="eyebrow">01 / ${esc(u.digest)}</span><h2 id="t-digest" class="titolo-sezione">${esc(u.digest)}</h2><p>${esc(u.digestLead)}</p></div></div><div class="digest-griglia">${digest.map((a,i)=>`<article class="digest-voce"><span class="digest-numero" aria-hidden="true">0${i+1}</span><h3><a href="${a.url}">${esc(a.titolo)}</a></h3><p>${esc(a.sommario)}</p></article>`).join("")}</div></section>
+<section class="blocco-novita" aria-labelledby="t-mondi"><div class="blocco-heading"><div><span class="eyebrow">02 / ${esc(u.world)}</span><h2 id="t-mondi" class="titolo-sezione">${esc(u.world)}</h2><p>${esc(u.worldLead)}</p></div></div><div class="mondi-griglia">${mondi}</div></section>
+<section class="blocco-novita checkpoint" id="checkpoint" data-checkpoint data-prima="${esc(u.checkpointFirst)}" data-nuovi="${esc(u.checkpointFresh)}" data-aggiornato="${esc(u.checkpointNoNew)}" data-vuoto="${esc(u.checkpointNoNew)}" data-nessun-salvato="${esc(u.savedEmpty)}" data-errore="${esc(u.searchError)}" data-attiva="${esc(u.checkpointOn)}" data-disattiva="${esc(u.checkpointOff)}" data-spento="${esc(u.checkpointOffText)}" aria-labelledby="t-checkpoint"><div class="blocco-heading"><div><span class="eyebrow">03 / Checkpoint</span><h2 id="t-checkpoint" class="titolo-sezione">${esc(u.checkpoint)}</h2><p>${esc(u.checkpointLead)}</p></div><button type="button" class="bottone-salva" data-checkpoint-toggle aria-pressed="false">${esc(u.checkpointOn)}</button></div><div class="checkpoint-layout"><div class="checkpoint-gruppo"><h3>${esc(u.checkpointFresh)}</h3><p class="checkpoint-stato" data-checkpoint-stato aria-live="polite"></p><ul class="checkpoint-lista" data-checkpoint-news></ul></div><div class="checkpoint-gruppo"><h3>${esc(u.checkpointSaved)}</h3><ul class="checkpoint-lista" data-checkpoint-salvati></ul></div></div></section>
+${retro.length ? `<section class="blocco-novita" aria-labelledby="t-retro"><div class="blocco-heading"><div><span class="eyebrow">04 / Retro</span><h2 id="t-retro" class="titolo-sezione">${esc(u.retro)}</h2><p>${esc(u.retroLead)}</p></div><a class="intro-link" href="${P.categoria(l,"retro")}">${esc(u.viewAll)} ↗</a></div><div class="griglia">${retro.map(scheda).join("")}</div></section>` : ""}
 ${resto.length ? `<section class="flusso" aria-labelledby="t-ultime"><h2 id="t-ultime" class="titolo-sezione">${esc(t.ultime)}</h2><div class="griglia">${resto.slice(0, config.articoliPerPagina).map((a) => scheda(a)).join("")}</div>
 ${resto.length > config.articoliPerPagina ? `<p class="altro"><a class="tasto-start" href="${P.archivio(l)}">${esc(t.tutti)}</a></p>` : ""}</section>` : ""}`;
   return pagina({ l, percorso: P.home(l), corpo, ticker: articoli.slice(0, 8), alternative });
@@ -394,6 +414,7 @@ ${resto.length > config.articoliPerPagina ? `<p class="altro"><a class="tasto-st
 function paginaArticolo(a, stessaLingua, versioni) {
   const l = a.lingua;
   const t = T[l];
+  const u = U[l];
   const correlati = stessaLingua.filter((x) => x !== a && x.categoria === a.categoria).slice(0, 3);
   const fonti = a.fonti.length
     ? `<section class="fonti" aria-labelledby="t-fonti"><h2 id="t-fonti">${esc(t.fonti)}</h2><ul>${a.fonti
@@ -430,13 +451,14 @@ function paginaArticolo(a, stessaLingua, versioni) {
     },
   ];
   const corpo = `
+<div class="lettura-progresso" data-lettura-progresso aria-hidden="true"></div>
 <article class="articolo" data-colore="${colore(a.categoria)}">
   <header class="eroe-articolo">
     <nav class="briciole" aria-label="${esc(t.percorso)}"><a href="${P.home(l)}">${esc(t.home)}</a><span aria-hidden="true">/</span><a href="${P.categoria(l, a.categoria)}">${esc(nomeCat(l, a.categoria))}</a></nav>
     <p class="meta">${etichettaCat(l, a.categoria)}<time datetime="${a.data.toISOString()}">${data(l, a.data, "lunga")}</time><span>${esc(t.minuti(a.minuti))}</span>${segnoBozza(a)}</p>
     <h1>${esc(a.titolo)}</h1>
     ${a.sommario ? `<p class="occhiello">${esc(a.sommario)}</p>` : ""}
-    <div class="eroe-azioni-articolo">${hype(l, a.viralita)}${tastoLike(a)}${a.bozza ? "" : `<a class="tasto-vai-condividi" href="#condividi">${icona("condividi")}<span>${esc(t.condividi)}</span></a>`}</div>
+    <div class="eroe-azioni-articolo">${hype(l, a.viralita)}${tastoLike(a)}${a.bozza ? "" : `<button type="button" hidden class="bottone-salva" data-salva-articolo="${esc(a.id)}" data-salva="${esc(u.save)}" data-salvato="${esc(u.saved)}" aria-pressed="false">${esc(u.save)}</button>`}${a.bozza ? "" : `<a class="tasto-vai-condividi" href="#condividi">${icona("condividi")}<span>${esc(t.condividi)}</span></a>`}</div>
   </header>
   ${immagine}
   <div class="testo">${a.html}</div>
@@ -565,6 +587,7 @@ PAGINE_FISSE = leggiPagine();
 fs.rmSync(DIST, { recursive: true, force: true });
 copiaCartella(PUBBLICO, DIST);
 fs.copyFileSync(path.join(ROOT, "src", "stile.css"), path.join(DIST, "stile.css"));
+fs.copyFileSync(path.join(ROOT, "src", "novita.css"), path.join(DIST, "novita.css"));
 const FONT = preparaFont();
 fs.writeFileSync(path.join(DIST, "font.css"), FONT.css);
 var FONT_PRECARICA = FONT.precarica.map((f) => `<link rel="preload" href="/font/${f}" as="font" type="font/woff2" crossorigin>\n`).join("");
@@ -577,6 +600,7 @@ for (const l of CODICI) {
   const t = T[l];
   const lista = perLingua[l];
   scriviPagina(P.home(l), home(l, lista));
+  scrivi(`indice-${l}.json`, JSON.stringify(pubblicati(lista).map((a)=>({id:a.id,url:a.url,titolo:a.titolo,sommario:a.sommario,categoria:nomeCat(l,a.categoria),tag:a.tag,data:a.data.toISOString(),dataBreve:data(l,a.data,"breve")}))));
   for (const a of lista) scriviPagina(a.url, paginaArticolo(a, lista, versioniDi(a.id)));
   for (const k of Object.keys(config.categorie)) {
     scriviPagina(P.categoria(l, k), paginaElenco({
