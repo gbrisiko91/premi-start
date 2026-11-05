@@ -8,7 +8,7 @@ export default {
   // Per la pagina privacy: nome e cognome (o ragione sociale) di chi gestisce il sito, e un'email di contatto.
   titolare: "Gianmarco Buono",
   emailContatto: "redazione@soffiacartuccia.it",
-  privacyAggiornata: "2026-11-01",
+  privacyAggiornata: "2026-11-05",
   // Codice di verifica di Google Search Console (solo se scegli il metodo "tag HTML"), es. "abc123..."
   googleVerifica: "",
   articoliPerPagina: 12,
