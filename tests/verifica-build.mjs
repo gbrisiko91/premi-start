@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import assert from "node:assert/strict";
+import matter from "gray-matter";
 import { LINGUE } from "../lingue.mjs";
 
 for (const lingua of Object.keys(LINGUE)) {
@@ -13,7 +14,8 @@ for (const lingua of Object.keys(LINGUE)) {
   assert.ok(home.includes("digest-griglia"), `Digest assente: ${lingua}`);
   assert.ok(home.includes("mondi-griglia"), `Categorie assenti: ${lingua}`);
   assert.ok(Array.isArray(indice), `Indice invalido: ${lingua}`);
-  const privacy = fs.readFileSync(`dist/${prefix}privacy/index.html`, "utf8");
+  const privacySlug = matter(fs.readFileSync(`content/pagine/${lingua}/privacy.md`, "utf8")).data.slug;
+  const privacy = fs.readFileSync(`dist/${prefix}${privacySlug}/index.html`, "utf8");
   assert.ok(privacy.includes("localStorage"), `Informativa privacy non aggiornata: ${lingua}`);
   assert.ok(!indice.some((a) => a.bozza === true), `Bozze nell’indice: ${lingua}`);
   assert.ok(indice.every(a => a.id && a.url.startsWith("/") && a.titolo), `Dati indice invalidi: ${lingua}`);
