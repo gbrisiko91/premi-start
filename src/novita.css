@@ -87,3 +87,5 @@ main { min-height: 65vh; }
   .intro-link { font-size: .88rem; }
 }
 @media (prefers-reduced-motion: reduce) { .mondo-link { transition: none; } }
+
+.checkpoint .blocco-heading .bottone-salva { align-self: center; flex: none; }
