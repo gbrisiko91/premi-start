@@ -24,5 +24,5 @@
 .quiz-esito .quiz-domani { color:var(--tenue); font-size:.95rem; }
 .quiz-torna { text-align:center; margin:2rem 0; }
 .quiz-esito[hidden],.quiz-verifica[hidden],[data-condividi][hidden] { display:none; }
-@media(max-width:620px) { .quiz-nav { order:3; flex:1 0 100%; justify-content:center; } .quiz-richiamo .tasto-start { width:100%; justify-content:center; } .quiz-pagina { margin:1.4rem auto 2rem; } }
+@media(max-width:620px) { .testata-destra { flex-wrap:wrap; } .quiz-nav { order:3; flex:1 0 100%; justify-content:center; } .quiz-richiamo .tasto-start { width:100%; justify-content:center; } .quiz-pagina { margin:1.4rem auto 2rem; } }
 @media(prefers-reduced-motion:reduce) { .quiz-opzione { transition:none; } }
