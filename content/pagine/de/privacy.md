@@ -45,6 +45,14 @@ Du kannst jederzeit Auskunft über deine Daten verlangen, sie berichtigen oder l
 
 Wenn du der Meinung bist, dass deine Daten rechtswidrig verarbeitet werden, kannst du Beschwerde bei der italienischen Datenschutzbehörde, dem [Garante per la protezione dei dati personali](https://www.garanteprivacy.it), oder bei der Aufsichtsbehörde deines Landes einlegen.
 
+## Persönliche Funktionen: Suche, gespeicherte Artikel und Checkpoint
+
+Die Suche erfolgt in deinem Browser anhand eines öffentlichen Artikelindex. Suchbegriffe werden nicht an einen Analysedienst gesendet.
+
+Wenn du **Artikel speichern** auswählst, speichert dein Browser die Kennungen der Artikel im lokalen Speicher (*localStorage*). Wenn du **Checkpoint** ausdrücklich aktivierst, werden zusätzlich die Aktivierung und die Kennungen bereits bekannter Artikel gespeichert, damit bei deinem nächsten Besuch neue Beiträge erkennbar sind. Diese Informationen bleiben in deinem Browser, werden nicht an unsere Server übermittelt und nicht zwischen Geräten synchronisiert. Wir verwenden sie weder zur Profilerstellung noch zur Besuchsanalyse.
+
+Du kannst Artikel aus der Merkliste entfernen, Checkpoint deaktivieren (wodurch der Verlauf gelöscht wird) oder die gespeicherten Websitedaten in deinem Browser löschen. Bei einem Browser- oder Gerätewechsel stehen diese Daten nicht mehr zur Verfügung.
+
 ## Änderungen
 
 Wenn wir die Art der Datenverarbeitung ändern, zum Beispiel durch Statistiken, Werbung oder einen Newsletter, aktualisieren wir diese Seite vorher.
