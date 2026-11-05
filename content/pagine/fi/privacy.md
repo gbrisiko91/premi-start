@@ -45,6 +45,14 @@ Voit milloin tahansa pyytää pääsyä tietoihisi, niiden oikaisemista tai pois
 
 Jos katsot, että tietojasi käsitellään lainvastaisesti, voit tehdä valituksen Italian tietosuojaviranomaiselle, [Garante per la protezione dei dati personali](https://www.garanteprivacy.it), tai Suomen tietosuojavaltuutetun toimistolle.
 
+## Henkilökohtaiset toiminnot: haku, tallennetut jutut ja Checkpoint
+
+Haku toimii selaimessasi julkisen artikkelihakemiston avulla. Hakusanoja ei lähetetä analytiikkapalveluun.
+
+Kun valitset **Tallenna artikkeli**, selain tallentaa artikkelien tunnisteet paikalliseen tallennustilaan (*localStorage*). Kun otat **Checkpointin** erikseen käyttöön, tallennetaan myös valinta ja aiemmin nähtyjen artikkelien tunnisteet, jotta uudet jutut voidaan näyttää seuraavalla käynnillä. Tiedot pysyvät selaimessasi: niitä ei lähetetä palvelimillemme eikä synkronoida laitteiden välillä. Emme käytä niitä profilointiin tai kävijäanalytiikkaan.
+
+Voit poistaa tallennettuja artikkeleita, ottaa Checkpointin pois käytöstä (jolloin sen historia poistuu) tai tyhjentää sivuston tiedot selaimen asetuksista. Jos tyhjennät tiedot tai vaihdat selainta/laitetta, tallennukset ja historia eivät ole enää käytettävissä.
+
 ## Muutokset
 
 Jos muutamme tapaa, jolla käsittelemme tietoja, esimerkiksi lisäämällä tilastoinnin, mainontaa tai uutiskirjeen, päivitämme tämän sivun ennen muutosta.
