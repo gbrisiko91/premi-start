@@ -20,7 +20,8 @@ for (const lingua of Object.keys(LINGUE)) {
   assert.ok(quizHtml.includes("data-quiz"), `Quiz assente: ${lingua}`);
   assert.ok(quizHtml.includes('id="quiz-dati"'), `Domande del quiz assenti: ${lingua}`);
   assert.ok(quizHtml.includes('src="/quiz.js"'), `Script quiz assente: ${lingua}`);
-  assert.equal(QUIZ[lingua].items.length, 7, `Servono sette domande: ${lingua}`);
+  assert.equal(QUIZ[lingua].items.length, 14, `Servono quattordici domande: ${lingua}`);
+  assert.equal(new Set(QUIZ[lingua].items.map(([question]) => question)).size, QUIZ[lingua].items.length, `Domande duplicate: ${lingua}`);
   for (const [question, options, explanation] of QUIZ[lingua].items) {
     assert.ok(question && explanation, `Quiz incompleto: ${lingua}`);
     assert.equal(options.length, 4, `Risposte non valide: ${lingua}`);
