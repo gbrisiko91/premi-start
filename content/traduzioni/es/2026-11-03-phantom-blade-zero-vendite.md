@@ -1,7 +1,7 @@
 ---
 titolo: "Ventas récord de Phantom Blade Zero: 4 millones de copias en 3 días en PS5 y PC"
 titolo_seo: "Ventas de Phantom Blade Zero: 4 millones en 3 días"
-sommario: "Phantom Blade Zero vende más de 4 millones de copias en 72 horas y llega a 833 000 jugadores en Steam: las cifras del lanzamiento de S-GAME frente a Wukong."
+sommario: "Phantom Blade Zero vende más de 4 millones de copias en 72 h y llega a 833 000 jugadores en Steam: las cifras del lanzamiento de S-GAME frente a Wukong."
 slug: "phantom-blade-zero-ventas"
 alt_immagine: "Imagen oficial de Phantom Blade Zero, el juego de acción de S-GAME lanzado en PS5 y PC"
 crediti_immagine: "Imagen: S-GAME vía Steam"

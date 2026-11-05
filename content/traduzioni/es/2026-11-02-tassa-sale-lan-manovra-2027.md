@@ -1,7 +1,7 @@
 ---
 titolo: "Impuesto a los locales LAN en los presupuestos italianos de 2027: 1200 euros al año por puesto"
 titolo_seo: "Impuesto a locales LAN en Italia: 1200 euros por puesto"
-sommario: "El borrador de presupuestos de Italia 2027 crea un impuesto a los locales LAN: 1200 euros al año por puesto, 2000 por simulador, licencia ADM y mínimo 20 PC."
+sommario: "El borrador de presupuestos de Italia 2027 fija un impuesto a los locales LAN: 1200 € al año por puesto, 2000 por simulador, licencia ADM y mínimo 20 PC."
 slug: "impuesto-locales-lan-italia-2027"
 ---
 
