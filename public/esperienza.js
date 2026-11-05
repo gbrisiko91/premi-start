@@ -4,7 +4,8 @@
   const lang = document.documentElement.lang || "it";
   const indiceUrl = `/indice-${lang}.json`;
   const chiaveSalvati = "sc:salvati:v1";
-  const chiaveVisita = `sc:visita:${lang}:v1`;
+  const chiaveVisita = `sc:visita:${lang}:v2`;
+  const chiaveAttivo = `sc:checkpoint:${lang}:v1`;
   let indicePromise = null;
 
   function leggi(key, fallback) {
@@ -126,7 +127,7 @@
   });
   aggiornaBottoni();
 
-  // Checkpoint: confronta la visita precedente con le date editoriali autentiche.
+  // Checkpoint attivato volontariamente: confronta gli ID, anche per notizie pubblicate lo stesso giorno.
   const checkpoint = document.querySelector("[data-checkpoint]");
   function rigaArticolo(a) {
     const li = document.createElement("li");
@@ -155,21 +156,36 @@
     const stato = checkpoint.querySelector("[data-checkpoint-stato]");
     try {
       const articoli = await caricaIndice();
-      const precedente = leggi(chiaveVisita, null);
-      const timestamp = typeof precedente === "string" ? Date.parse(precedente) : NaN;
-      const prima = !Number.isFinite(timestamp);
-      const nuovi = prima ? articoli.slice(0, 3) : articoli.filter((a) => Date.parse(a.data) > timestamp).slice(0, 3);
+      const attivo = leggi(chiaveAttivo, false) === true;
+      const toggle = checkpoint.querySelector("[data-checkpoint-toggle]");
+      toggle.textContent = attivo ? checkpoint.dataset.disattiva : checkpoint.dataset.attiva;
+      toggle.setAttribute("aria-pressed", String(attivo));
+      const precedente = attivo ? leggi(chiaveVisita, null) : null;
+      const visti = Array.isArray(precedente) ? new Set(precedente.filter((x) => typeof x === "string")) : null;
+      const nuovi = visti ? articoli.filter((a) => !visti.has(a.id)).slice(0, 3) : articoli.slice(0, 3);
       mostraLista(news, nuovi.length ? nuovi : articoli.slice(0, 3), checkpoint.dataset.vuoto);
-      stato.textContent = prima ? checkpoint.dataset.prima : nuovi.length ? checkpoint.dataset.nuovi : checkpoint.dataset.aggiornato;
+      stato.textContent = !attivo ? checkpoint.dataset.spento : !visti ? checkpoint.dataset.prima : nuovi.length ? checkpoint.dataset.nuovi : checkpoint.dataset.aggiornato;
       const preferiti = new Set(salvati());
       mostraLista(saves, articoli.filter((a) => preferiti.has(a.id)).slice(0, 6), checkpoint.dataset.nessunSalvato);
-      // Il timestamp viene registrato solo quando l'indice è stato caricato.
-      scrivi(chiaveVisita, new Date().toISOString());
+      if (attivo) scrivi(chiaveVisita, articoli.map((a) => a.id));
     } catch {
       stato.textContent = checkpoint.dataset.errore || "";
     }
   }
-  if (checkpoint) aggiornaCheckpoint();
+  if (checkpoint) {
+    const toggle = checkpoint.querySelector("[data-checkpoint-toggle]");
+    toggle.addEventListener("click", () => {
+      const attivo = leggi(chiaveAttivo, false) === true;
+      if (attivo) {
+        scrivi(chiaveAttivo, false);
+        try { localStorage.removeItem(chiaveVisita); } catch { /* browser senza storage */ }
+      } else {
+        scrivi(chiaveAttivo, true);
+      }
+      aggiornaCheckpoint();
+    });
+    aggiornaCheckpoint();
+  }
   window.addEventListener("storage", (ev) => {
     if (ev.key === chiaveSalvati) {
       aggiornaBottoni();
