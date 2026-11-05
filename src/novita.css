@@ -38,7 +38,7 @@ main { min-height: 65vh; }
 .digest-voce h3 a:hover { color: var(--giallo); }
 .digest-voce p { margin: 0; color: var(--tenue); font-size: .95rem; }
 .mondi-griglia { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: .8rem; }
-.mondo-link { --c: var(--viola); display: flex; flex-direction: column; min-height: 8.8rem; border: 1px solid color-mix(in srgb,var(--c) 35%,var(--pannello-2)); background: linear-gradient(140deg,color-mix(in srgb,var(--c) 18%,var(--pannello)),var(--pannello)); border-radius: 16px; padding: 1.25rem; text-decoration: none; transition: transform .15s,border-color .15s; }
+.mondo-link { display: flex; flex-direction: column; min-height: 8.8rem; border: 1px solid color-mix(in srgb,var(--c) 35%,var(--pannello-2)); background: linear-gradient(140deg,color-mix(in srgb,var(--c) 18%,var(--pannello)),var(--pannello)); border-radius: 16px; padding: 1.25rem; text-decoration: none; transition: transform .15s,border-color .15s; }
 .mondo-link:hover { transform: translateY(-3px); border-color: var(--c); }
 .mondo-link strong { font: 900 1.4rem/1 var(--display); color: var(--testo); }
 .mondo-link span { color: var(--tenue); margin-top: .7rem; font-size: .9rem; line-height: 1.4; }
