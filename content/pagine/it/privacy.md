@@ -45,6 +45,14 @@ Puoi chiedere in qualsiasi momento di accedere ai tuoi dati, di correggerli o ca
 
 Se ritieni che i tuoi dati siano trattati in modo non conforme, puoi presentare un reclamo al [Garante per la protezione dei dati personali](https://www.garanteprivacy.it).
 
+## Funzioni personali: ricerca, preferiti e Checkpoint
+
+La ricerca interna funziona nel browser confrontando ciò che scrivi con un indice pubblico degli articoli: non inviamo le tue parole di ricerca a un servizio di analisi.
+
+Se scegli **Salva articolo**, il browser conserva nella propria memoria locale (*localStorage*) gli identificativi degli articoli preferiti. Se attivi volontariamente **Checkpoint**, conserva anche la scelta di attivazione e gli identificativi degli articoli già presenti, per mostrarti le novità in una visita successiva. Questi dati rimangono nel tuo browser e non vengono inviati ai nostri server o sincronizzati tra dispositivi. Non utilizziamo queste informazioni per profilarti o misurare le visite.
+
+Puoi togliere ogni articolo dai preferiti, disattivare Checkpoint (cancellando la sua cronologia) o eliminare tutti i dati del sito dalle impostazioni del browser. Se cancelli i dati o cambi browser/dispositivo, preferiti e cronologia non saranno più disponibili.
+
 ## Modifiche
 
 Se cambieremo il modo in cui trattiamo i dati, ad esempio aggiungendo statistiche, pubblicità o una newsletter, aggiorneremo questa pagina prima di farlo.
