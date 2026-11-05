@@ -7,7 +7,7 @@ data: 2026-11-05
 categoria: retro
 tag: [hyperkin, mega95, sega-mega-drive, retro-console]
 viralita: 58
-bozza: true
+bozza: false
 immagine: "https://commons.wikimedia.org/wiki/Special:FilePath/Sega-Mega-Drive-EU-Mk1-wController-FL.jpg?width=1600"
 immagine_riserva: "https://commons.wikimedia.org/wiki/Special:FilePath/Sega-Mega-Drive-JP-Mk1-Console-Set.jpg?width=1600"
 alt_immagine: "Il Sega Mega Drive europeo originale con il controller, la console che il Mega95 rende portatile"
