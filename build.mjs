@@ -50,6 +50,7 @@ const P = {
   uscite: (l) => `${pre(l)}/${R[l].seg.uscite}/`,
   sondaggio: (l) => `${pre(l)}/${R[l].seg.sondaggio}/`,
   newsletterGrazie: "/newsletter/grazie/",
+  newsletterConfermata: "/newsletter/confermata/",
   pagina: (l, slug) => `${pre(l)}/${slug}/`,
 };
 const tuttePerLingua = (f) => Object.fromEntries(CODICI.map((l) => [l, f(l)]));
@@ -632,6 +633,14 @@ function paginaGrazie() {
   });
 }
 
+function paginaConfermata() {
+  const n = NEWSLETTER;
+  const l = PRINCIPALE;
+  return pagina({
+    l, titolo: n.confermataTitolo, percorso: P.newsletterConfermata, robots: "noindex, follow", alternative: {},
+    corpo: `<section class="schermata-titolo"><p class="schermata-sopra">Newsletter</p><h1 class="schermata-logo"><span>Soffia</span><span>Cartuccia</span></h1><p class="schermata-sotto"><strong>${esc(n.confermataTitolo)}</strong> ${esc(n.confermataTesto)}</p><p class="confermata-azioni"><a class="tasto-start" href="${P.uscite(l)}">${esc(R[l].uscite.nome)}</a> <a class="tasto-start" href="${P.sondaggio(l)}">${esc(R[l].poll.nome)}</a> <a class="tasto-start" href="${P.home(l)}">${esc(n.torna)}</a></p></section>`,
+  });
+}
 function paginaElenco({ l, titolo, descrizione, percorso, lista, categoria, alternative }) {
   const corpo = `
 <header class="intestazione-elenco"${categoria ? ` data-colore="${colore(categoria)}"` : ""}>
@@ -789,6 +798,7 @@ gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.quiz(l) })
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.uscite(l) })) });
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.sondaggio(l) })) });
 scriviPagina(P.newsletterGrazie, paginaGrazie());
+scriviPagina(P.newsletterConfermata, paginaConfermata());
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.archivio(l) })) });
 for (const k of Object.keys(config.categorie)) gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.categoria(l, k) })) });
 for (const id of new Set(PAGINE_FISSE.map((p) => p.id))) gruppiSitemap.push({ versioni: PAGINE_FISSE.filter((p) => p.id === id) });

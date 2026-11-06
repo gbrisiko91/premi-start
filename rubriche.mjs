@@ -190,4 +190,6 @@ export const NEWSLETTER = {
   grazieTitolo: "Manca solo un clic!",
   grazieTesto: "Ti abbiamo mandato un'email: apri il link che contiene per confermare l'iscrizione. Da quel momento il Soffio della settimana arriverà ogni domenica. Non la trovi? Controlla spam e promozioni.",
   torna: "Torna alle notizie",
+  confermataTitolo: "Iscrizione confermata!",
+  confermataTesto: "Benvenuto nel Soffio della settimana: ogni domenica ti mandiamo le 5 notizie gaming più importanti. Nell'attesa, dai un'occhiata alle prossime uscite o vota il sondaggio della settimana.",
 };
