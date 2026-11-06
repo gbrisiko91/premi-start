@@ -41,6 +41,10 @@ Ogni volta che modifichi o aggiungi un file su GitHub, Netlify ricostruisce e pu
 
 Le bozze con `bozza: true` non vengono mai pubblicate. Quelle che non ti interessano puoi cancellarle o lasciarle lì.
 
+4. **Traduzioni**: alle 7:20 di ogni mattina, insieme alla sincronizzazione delle bozze, Claude traduce in inglese, tedesco, spagnolo, norvegese, svedese, finlandese, giapponese e russo gli articoli pubblicati che non hanno ancora una traduzione (un assistente per lingua). Le traduzioni finiscono in `content/traduzioni/<lingua>/` con lo stesso nome del file italiano. Finché una traduzione manca, quella lingua semplicemente non mostra l'articolo.
+
+Strumenti utili: `node strumenti/traduzioni.mjs mancanti` mostra cosa manca; `node strumenti/traduzioni.mjs istruzioni <lingua> <cartella>` prepara le istruzioni per chi traduce; `node strumenti/traduzioni.mjs importa <pacchetto>` salva un pacchetto di traduzioni. Se correggi un articolo italiano già tradotto, cancella le sue traduzioni: verranno rifatte la mattina dopo.
+
 ## Formato di un articolo
 
 Vedi la sezione 6 di `GUIDA-REDAZIONE.md`. Campi per le immagini: `immagine` e `immagine_riserva` (indirizzo `https://...` oppure un file in `public/`, es. `/img/foto.jpg`), `alt_immagine`, `crediti_immagine`. Campi SEO: `titolo_seo`, `parola_chiave`, `aggiornato`.
