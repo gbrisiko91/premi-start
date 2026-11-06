@@ -42,6 +42,8 @@ export default async (req) => {
       headers: { "content-type": "application/x-www-form-urlencoded", "user-agent": "SoffiaCartuccia-Newsletter/1.0" },
       signal: AbortSignal.timeout(10000),
     });
+    const testo = (await r.text().catch(() => "")).replace(/<style[\s\S]*?<\/style>|<script[\s\S]*?<\/script>/gi, " ").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+    console.log(`Brevo: stato ${r.status}, location ${r.headers.get("location") || "-"}, testo: ${testo.slice(0, 400) || "-"}`);
     if (r.status >= 400) {
       console.error("Brevo ha risposto", r.status);
       return rispondi(false, "il servizio della newsletter ha rifiutato l'iscrizione", 502);
