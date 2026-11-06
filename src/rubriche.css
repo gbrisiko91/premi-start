@@ -90,3 +90,5 @@
   .conto-celle { gap:.35rem; }
 }
 .confermata-azioni { display:flex; flex-wrap:wrap; gap:.7rem; justify-content:center; }
+.newsletter-stato:empty { display:none; }
+.newsletter-stato { margin:.7rem 0 0; color:#ffb4bc; font-size:.9rem; }
