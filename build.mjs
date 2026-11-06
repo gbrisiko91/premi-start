@@ -628,7 +628,7 @@ function paginaGrazie() {
   const n = NEWSLETTER;
   return pagina({
     l: PRINCIPALE, titolo: n.grazieTitolo, percorso: P.newsletterGrazie, robots: "noindex, follow", alternative: {},
-    corpo: `<section class="schermata-titolo"><p class="schermata-sopra">Newsletter</p><h1 class="schermata-logo"><span>Press</span><span>Start</span></h1><p class="schermata-sotto"><strong>${esc(n.grazieTitolo)}</strong> ${esc(n.grazieTesto)}</p><p><a class="tasto-start" href="${P.home(PRINCIPALE)}">${esc(n.torna)}</a></p></section>`,
+    corpo: `<section class="schermata-titolo"><p class="schermata-sopra">Newsletter</p><h1 class="schermata-logo"><span>Soffia</span><span>Cartuccia</span></h1><p class="schermata-sotto"><strong>${esc(n.grazieTitolo)}</strong> ${esc(n.grazieTesto)}</p><p><a class="tasto-start" href="${P.home(PRINCIPALE)}">${esc(n.torna)}</a></p></section>`,
   });
 }
 
