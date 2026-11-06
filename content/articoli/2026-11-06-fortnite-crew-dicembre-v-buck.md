@@ -7,7 +7,7 @@ data: 2026-11-06
 categoria: pc
 tag: [fortnite, epic-games, fortnite-crew, v-buck]
 viralita: 72
-bozza: true
+bozza: false
 immagine: "https://image.api.playstation.com/vulcan/ap/rnd/202608/2000/2c7ee56fbf89ace584ee82e74ec198d061a3e035d9f8ee7f.png"
 immagine_riserva: ""
 alt_immagine: "Immagine ufficiale di Fortnite dalla pagina del gioco su PlayStation Store"
