@@ -13,7 +13,13 @@ export default {
   // Se "azione" è vuoto, le iscrizioni arrivano nel pannello di Netlify (Forms → newsletter).
   // Se usi un servizio di newsletter (es. Brevo), incolla qui l'indirizzo del suo modulo di iscrizione
   // e il nome del campo email che richiede, e scrivi il nome del servizio in "fornitore" (finisce nella privacy).
-  newsletter: { azione: "", campo: "email", fornitore: "" },
+  newsletter: {
+    azione: "https://33d4fc8a.sibforms.com/serve/MUIFAHb_rSeY_HydWmYMfQ_-UvrmgoTu91wN0YHxyE8ORoaRmzsnqnz2bLE3tsTHvfpr92CtZA56quiw315QgksxXW_a2Aalnu4L5AIGIz1GXgl4b3W2fib5iNOVvg9eGLiZ7mko5Y5aydP9QfN97LhmR4fHe54IkgDttTYyf2dHVTwvu-9f0T6ChCtHH7Ka6ILakaaQvh6WTWN3bA==",
+    campo: "EMAIL",
+    fornitore: "Brevo (Sendinblue SAS, con sede in Francia)",
+    // Campi nascosti richiesti dal modulo Brevo ("HTML semplice"): email_address_check è la trappola anti-spam e va lasciata vuota.
+    campiExtra: { email_address_check: "", locale: "it", html_type: "simple" },
+  },
   // Codice di verifica di Google Search Console (solo se scegli il metodo "tag HTML"), es. "abc123..."
   googleVerifica: "",
   articoliPerPagina: 12,

@@ -54,7 +54,7 @@ for (const lingua of Object.keys(LINGUE)) {
 assert.equal(new Set(SONDAGGI.map((s) => s.id)).size, SONDAGGI.length, "Id dei sondaggi duplicati");
 assert.ok(SONDAGGI.every((s, i) => i === 0 || s.dal > SONDAGGI[i - 1].dal), "Sondaggi non in ordine di data");
 assert.ok(USCITE.every((u) => (u.data ? /^\d{4}-\d{2}-\d{2}$/.test(u.data) : /^\d{4}$/.test(u.anno)) && u.piattaforme.length && /^https:\/\//.test(u.fonte)), "Uscita senza data, piattaforme o fonte");
-assert.ok(fs.readFileSync("dist/index.html", "utf8").includes('data-netlify="true"') || Boolean((await import("../sito.config.mjs")).default.newsletter?.azione), "Modulo newsletter assente");
+assert.ok(/data-netlify="true"|data-newsletter-esterna/.test(fs.readFileSync("dist/index.html", "utf8")), "Modulo newsletter assente");
 assert.ok(fs.existsSync("dist/newsletter/grazie/index.html"), "Pagina di ringraziamento newsletter mancante");
 for (const f of ["dist/rubriche.css","dist/uscite.js","dist/sondaggio.js","dist/novita.css","dist/quiz.css","dist/quiz.js","dist/esperienza.js","dist/sitemap.xml","dist/rss.xml","dist/stile.css"]) {
   assert.ok(fs.existsSync(f), `File mancante: ${f}`);
