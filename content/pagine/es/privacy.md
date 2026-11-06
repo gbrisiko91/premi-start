@@ -33,6 +33,12 @@ Cuando pulsas "Me gusta" en un artículo, para evitar que un mismo visitante vot
 
 La base jurídica es nuestro interés legítimo en mostrar un recuento fiable. Si no pulsas el botón, no se guarda nada.
 
+## La encuesta de la semana
+
+Cuando votas en la encuesta, para evitar votos duplicados guardamos una **huella anónima** calculada a partir de tu dirección IP y de la encuesta, que no permite averiguar la dirección, junto con la respuesta elegida. Los datos se conservan en los servidores de Netlify mientras la encuesta siga en el sitio; solo publicamos el total de votos. Además, tu navegador recuerda tu respuesta en su almacenamiento local (*localStorage*) para mostrarte los resultados al momento.
+
+La base jurídica es nuestro interés legítimo en mostrar resultados fiables. Si no votas, no se guarda nada.
+
 ## Imágenes y enlaces a otros sitios
 
 Algunas imágenes de los artículos son material oficial que se carga directamente desde los servidores de sus propietarios (por ejemplo Valve para Steam, Nintendo o las editoras de los juegos). Para mostrarlas, tu navegador se conecta a esos servidores, que pueden ver tu dirección IP, como ocurre con cualquier web. Nuestro sitio pide a tu navegador que no les comunique desde qué página llegas.

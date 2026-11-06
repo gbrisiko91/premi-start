@@ -33,6 +33,12 @@ When you press "Like" on an article, to stop the same visitor from voting more t
 
 The legal basis is our legitimate interest in showing a reliable count. If you don't press the button, nothing is stored.
 
+## The poll of the week
+
+When you vote in the poll, we store an **anonymous fingerprint** calculated from your IP address and the poll, which cannot be traced back to the address, together with the answer you chose, to prevent duplicate votes. The data is kept on Netlify's servers for as long as the poll remains on the site; we only publish the vote totals. Your browser also remembers your answer in its local storage (*localStorage*) so it can show you the results straight away.
+
+The legal basis is our legitimate interest in showing reliable results. If you don't vote, nothing is stored.
+
 ## Images and links to other sites
 
 Some article images are official material loaded directly from their owners' servers (for example Valve for Steam, Nintendo or game publishers). To show them, your browser connects to those servers, which can therefore see your IP address, as happens with any website. Our site asks your browser not to tell them which page you came from.

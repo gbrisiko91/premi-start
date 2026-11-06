@@ -33,6 +33,12 @@ När du trycker på ”Gilla” på en artikel sparar vi ett **anonymt fingeravt
 
 Den rättsliga grunden är vårt berättigade intresse av att visa en tillförlitlig räkning. Trycker du inte på knappen sparas ingenting.
 
+## Veckans omröstning
+
+När du röstar sparar vi ett **anonymt fingeravtryck**, beräknat utifrån din IP-adress och omröstningen, som inte går att spåra tillbaka till adressen, tillsammans med svaret du valde, för att förhindra dubbelröster. Uppgifterna lagras på Netlifys servrar så länge omröstningen finns på sajten; vi publicerar bara det totala antalet röster. Din webbläsare minns dessutom ditt svar i sin lokala lagring (*localStorage*) så att du ser resultatet direkt.
+
+Den rättsliga grunden är vårt berättigade intresse av att visa tillförlitliga resultat. Om du inte röstar sparas ingenting.
+
 ## Bilder och länkar till andra sajter
 
 Vissa bilder i artiklarna är officiellt material som laddas direkt från ägarnas servrar (till exempel Valve för Steam, Nintendo eller spelutgivare). För att visa dem ansluter din webbläsare till dessa servrar, som därmed kan se din IP-adress, precis som med alla webbplatser. Vår sajt ber din webbläsare att inte berätta för dem vilken sida du kommer från.

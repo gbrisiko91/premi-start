@@ -14,6 +14,7 @@ import config from "./sito.config.mjs";
 import { LINGUE, PRINCIPALE, T } from "./lingue.mjs";
 import { U } from "./novita.mjs";
 import { QUIZ } from "./quiz.mjs";
+import { R, USCITE, SONDAGGI, NEWSLETTER } from "./rubriche.mjs";
 
 const ROOT = path.dirname(new URL(import.meta.url).pathname);
 const CONTENUTI = path.join(ROOT, "content", "articoli");
@@ -46,6 +47,9 @@ const P = {
   archivio: (l) => `${pre(l)}/${T[l].seg.archivio}/`,
   rss: (l) => `${pre(l)}/rss.xml`,
   quiz: (l) => `${pre(l)}/quiz/`,
+  uscite: (l) => `${pre(l)}/${R[l].seg.uscite}/`,
+  sondaggio: (l) => `${pre(l)}/${R[l].seg.sondaggio}/`,
+  newsletterGrazie: "/newsletter/grazie/",
   pagina: (l, slug) => `${pre(l)}/${slug}/`,
 };
 const tuttePerLingua = (f) => Object.fromEntries(CODICI.map((l) => [l, f(l)]));
@@ -260,7 +264,7 @@ let PAGINE_FISSE = [];
 const pagineDi = (l) => PAGINE_FISSE.filter((p) => p.lingua === l).sort((a, b) => a.ordine - b.ordine);
 const urlPaginaFissa = (l, id) => (PAGINE_FISSE.find((p) => p.lingua === l && p.id === id) || PAGINE_FISSE.find((p) => p.lingua === PRINCIPALE && p.id === id))?.url || P.home(l);
 
-function pagina({ l, titolo, titoloSeo = "", descrizione, percorso, corpo, tipo = "website", ticker = [], articolo = null, alternative = {} }) {
+function pagina({ l, titolo, titoloSeo = "", descrizione, percorso, corpo, tipo = "website", ticker = [], articolo = null, alternative = {}, robots = "index, follow, max-image-preview:large, max-snippet:-1" }) {
   const t = T[l];
   const u = U[l];
   descrizione ??= t.motto;
@@ -281,7 +285,7 @@ function pagina({ l, titolo, titoloSeo = "", descrizione, percorso, corpo, tipo 
   const nastro = ticker.length
     ? `<div class="ticker" aria-label="${esc(t.ultimeNotizie)}"><span class="ticker-etichetta">${esc(t.live)}</span><div class="ticker-finestra"><div class="ticker-nastro">${vociTicker}<span class="ticker-copia" aria-hidden="true">${vociTicker.replace(/<a /g, '<a tabindex="-1" ')}</span></div></div></div>`
     : "";
-  const linkPiede = [`<a href="${P.archivio(l)}">${esc(t.archivio)}</a>`, ...pagineDi(l).map((p) => `<a href="${p.url}">${esc(p.menu)}</a>`), `<a href="${P.rss(l)}">${esc(t.feedRss)}</a>`].join("");
+  const linkPiede = [`<a href="${P.archivio(l)}">${esc(t.archivio)}</a>`, `<a href="${P.uscite(l)}">${esc(R[l].uscite.nome)}</a>`, `<a href="${P.sondaggio(l)}">${esc(R[l].poll.nome)}</a>`, ...pagineDi(l).map((p) => `<a href="${p.url}">${esc(p.menu)}</a>`), `<a href="${P.rss(l)}">${esc(t.feedRss)}</a>`].join("");
   return `<!doctype html>
 <html lang="${LINGUE[l].hreflang}">
 <head>
@@ -290,7 +294,7 @@ function pagina({ l, titolo, titoloSeo = "", descrizione, percorso, corpo, tipo 
 <title>${esc(titoloCompleto)}</title>
 <meta name="description" content="${esc(descrizione)}">
 <meta name="theme-color" content="#15122b">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="robots" content="${robots}">
 <link rel="canonical" href="${urlAssoluto(percorso)}">${hreflang}
 <meta property="og:type" content="${tipo}">
 <meta property="og:title" content="${esc(titolo || config.nome)}">
@@ -309,7 +313,8 @@ function pagina({ l, titolo, titoloSeo = "", descrizione, percorso, corpo, tipo 
 ${FONT_PRECARICA}<link rel="stylesheet" href="/font.css">
 <link rel="stylesheet" href="/stile.css">
 <link rel="stylesheet" href="/novita.css">
-<link rel="stylesheet" href="/quiz.css">${config.googleVerifica ? `\n<meta name="google-site-verification" content="${esc(config.googleVerifica)}">` : ""}
+<link rel="stylesheet" href="/quiz.css">
+<link rel="stylesheet" href="/rubriche.css">${config.googleVerifica ? `\n<meta name="google-site-verification" content="${esc(config.googleVerifica)}">` : ""}
 </head>
 <body>
 ${CON_BOZZE ? `<div class="banner-anteprima">${esc(t.banner)}</div>` : ""}
@@ -407,10 +412,13 @@ function home(l, articoli) {
   </aside>
 </section>
 <section class="blocco-novita" aria-labelledby="t-digest"><div class="blocco-heading"><div><span class="eyebrow">01 / ${esc(u.digest)}</span><h2 id="t-digest" class="titolo-sezione">${esc(u.digest)}</h2><p>${esc(u.digestLead)}</p></div></div><div class="digest-griglia">${digest.map((a,i)=>`<article class="digest-voce"><span class="digest-numero" aria-hidden="true">0${i+1}</span><h3><a href="${a.url}">${esc(a.titolo)}</a></h3><p>${esc(a.sommario)}</p></article>`).join("")}</div></section>
-<section class="blocco-novita" aria-labelledby="t-mondi"><div class="blocco-heading"><div><span class="eyebrow">02 / ${esc(u.world)}</span><h2 id="t-mondi" class="titolo-sezione">${esc(u.world)}</h2><p>${esc(u.worldLead)}</p></div></div><div class="mondi-griglia">${mondi}</div></section>
-<section class="blocco-novita checkpoint" id="checkpoint" data-checkpoint data-prima="${esc(u.checkpointFirst)}" data-nuovi="${esc(u.checkpointFresh)}" data-aggiornato="${esc(u.checkpointNoNew)}" data-vuoto="${esc(u.checkpointNoNew)}" data-nessun-salvato="${esc(u.savedEmpty)}" data-errore="${esc(u.searchError)}" data-attiva="${esc(u.checkpointOn)}" data-disattiva="${esc(u.checkpointOff)}" data-spento="${esc(u.checkpointOffText)}" aria-labelledby="t-checkpoint"><div class="blocco-heading"><div><span class="eyebrow">03 / Checkpoint</span><h2 id="t-checkpoint" class="titolo-sezione">${esc(u.checkpoint)}</h2><p>${esc(u.checkpointLead)}</p></div><button type="button" class="bottone-salva" data-checkpoint-toggle aria-pressed="false">${esc(u.checkpointOn)}</button></div><div class="checkpoint-layout"><div class="checkpoint-gruppo"><h3>${esc(u.checkpointFresh)}</h3><p class="checkpoint-stato" data-checkpoint-stato aria-live="polite"></p><ul class="checkpoint-lista" data-checkpoint-news></ul></div><div class="checkpoint-gruppo"><h3>${esc(u.checkpointSaved)}</h3><ul class="checkpoint-lista" data-checkpoint-salvati></ul></div></div></section>
-${retro.length ? `<section class="blocco-novita" aria-labelledby="t-retro"><div class="blocco-heading"><div><span class="eyebrow">04 / Retro</span><h2 id="t-retro" class="titolo-sezione">${esc(u.retro)}</h2><p>${esc(u.retroLead)}</p></div><a class="intro-link" href="${P.categoria(l,"retro")}">${esc(u.viewAll)} ↗</a></div><div class="griglia">${retro.map(scheda).join("")}</div></section>` : ""}
-<section class="blocco-novita quiz-richiamo" aria-labelledby="t-quiz"><div><span class="eyebrow">05 / Daily Quest</span><h2 id="t-quiz" class="titolo-sezione">${esc(QUIZ[l].nome)}</h2><p>${esc(QUIZ[l].intro)}</p></div><a class="tasto-start" href="${P.quiz(l)}">${esc(QUIZ[l].data)}</a></section>
+${bloccoUscite(l, articoli)}
+<section class="blocco-novita" aria-labelledby="t-mondi"><div class="blocco-heading"><div><span class="eyebrow">03 / ${esc(u.world)}</span><h2 id="t-mondi" class="titolo-sezione">${esc(u.world)}</h2><p>${esc(u.worldLead)}</p></div></div><div class="mondi-griglia">${mondi}</div></section>
+<section class="blocco-novita checkpoint" id="checkpoint" data-checkpoint data-prima="${esc(u.checkpointFirst)}" data-nuovi="${esc(u.checkpointFresh)}" data-aggiornato="${esc(u.checkpointNoNew)}" data-vuoto="${esc(u.checkpointNoNew)}" data-nessun-salvato="${esc(u.savedEmpty)}" data-errore="${esc(u.searchError)}" data-attiva="${esc(u.checkpointOn)}" data-disattiva="${esc(u.checkpointOff)}" data-spento="${esc(u.checkpointOffText)}" aria-labelledby="t-checkpoint"><div class="blocco-heading"><div><span class="eyebrow">04 / Checkpoint</span><h2 id="t-checkpoint" class="titolo-sezione">${esc(u.checkpoint)}</h2><p>${esc(u.checkpointLead)}</p></div><button type="button" class="bottone-salva" data-checkpoint-toggle aria-pressed="false">${esc(u.checkpointOn)}</button></div><div class="checkpoint-layout"><div class="checkpoint-gruppo"><h3>${esc(u.checkpointFresh)}</h3><p class="checkpoint-stato" data-checkpoint-stato aria-live="polite"></p><ul class="checkpoint-lista" data-checkpoint-news></ul></div><div class="checkpoint-gruppo"><h3>${esc(u.checkpointSaved)}</h3><ul class="checkpoint-lista" data-checkpoint-salvati></ul></div></div></section>
+${retro.length ? `<section class="blocco-novita" aria-labelledby="t-retro"><div class="blocco-heading"><div><span class="eyebrow">05 / Retro</span><h2 id="t-retro" class="titolo-sezione">${esc(u.retro)}</h2><p>${esc(u.retroLead)}</p></div><a class="intro-link" href="${P.categoria(l,"retro")}">${esc(u.viewAll)} ↗</a></div><div class="griglia">${retro.map(scheda).join("")}</div></section>` : ""}
+<section class="blocco-novita quiz-richiamo" aria-labelledby="t-quiz"><div><span class="eyebrow">06 / Daily Quest</span><h2 id="t-quiz" class="titolo-sezione">${esc(QUIZ[l].nome)}</h2><p>${esc(QUIZ[l].intro)}</p></div><a class="tasto-start" href="${P.quiz(l)}">${esc(QUIZ[l].data)}</a></section>
+${bloccoSondaggio(l)}
+${boxNewsletter(l)}
 ${resto.length ? `<section class="flusso" aria-labelledby="t-ultime"><h2 id="t-ultime" class="titolo-sezione">${esc(t.ultime)}</h2><div class="griglia">${resto.slice(0, config.articoliPerPagina).map((a) => scheda(a)).join("")}</div>
 ${resto.length > config.articoliPerPagina ? `<p class="altro"><a class="tasto-start" href="${P.archivio(l)}">${esc(t.tutti)}</a></p>` : ""}</section>` : ""}`;
   return pagina({ l, percorso: P.home(l), corpo, ticker: articoli.slice(0, 8), alternative });
@@ -471,6 +479,7 @@ function paginaArticolo(a, stessaLingua, versioni) {
   ${a.tag.length ? `<p class="tag">${a.tag.map((x) => `<span>#${esc(x)}</span>`).join("")}</p>` : ""}
   ${a.bozza ? "" : `<div class="like-fine"><p>${esc(t.tiPiaciuta)}</p>${tastoLike(a)}</div>`}
   ${condivisione(a)}
+  ${a.bozza ? "" : boxNewsletter(l)}
   ${fonti}
   ${altreLingue.length ? `<nav class="altre-lingue" aria-label="${esc(t.altreLingue)}"><p>${icona("globo")}${esc(t.altreLingue)}</p><ul>${altreLingue.map((v) => `<li><a href="${v.url}" hreflang="${LINGUE[v.lingua].hreflang}" lang="${LINGUE[v.lingua].hreflang}">${esc(LINGUE[v.lingua].nome)}</a></li>`).join("")}</ul></nav>` : ""}
 </article>
@@ -504,6 +513,121 @@ function paginaQuiz(l) {
   return pagina({ l, titolo:q.nome, descrizione:q.intro, percorso:P.quiz(l),corpo,alternative:tuttePerLingua(P.quiz) });
 }
 
+// ---------- rubriche: calendario uscite, sondaggio, newsletter ----------
+const OGGI = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Rome" }).format(new Date());
+const dataUTC = (iso) => new Date(`${iso}T00:00:00Z`);
+const fmtData = (l, opzioni) => new Intl.DateTimeFormat(LINGUE[l].intl, { timeZone: "UTC", ...opzioni });
+const maiuscola = (s) => s.charAt(0).toLocaleUpperCase() + s.slice(1);
+const prossimeUscite = () =>
+  USCITE.filter((u) => !u.data || u.data >= OGGI).sort((a, b) => (a.data || `${a.anno}-99`).localeCompare(b.data || `${b.anno}-99`));
+const linkArticolo = (lista, id) => (id ? lista.find((a) => a.id === id && !a.bozza)?.url : undefined);
+
+function voceUscita(l, u, lista, completa) {
+  const t = R[l].uscite;
+  const quando = u.data
+    ? `<time class="uscita-data" datetime="${u.data}"><span class="uscita-giorno">${fmtData(l, { day: "numeric" }).format(dataUTC(u.data))}</span><span class="uscita-mese">${esc(fmtData(l, { month: "short" }).format(dataUTC(u.data)))}</span></time>`
+    : `<span class="uscita-data uscita-tbd"><span class="uscita-giorno">${esc(u.anno)}</span><span class="uscita-mese">TBA</span></span>`;
+  const url = linkArticolo(lista, u.articolo);
+  const link = url
+    ? `<a class="uscita-link" href="${url}">${esc(t.notizia)} →</a>`
+    : completa ? `<a class="uscita-link" href="${esc(u.fonte)}" rel="noopener" target="_blank">${esc(t.fonte)} ↗</a>` : "";
+  return `<li class="uscita${u.evidenza ? " uscita-top" : ""}"${u.data ? ` data-uscita="${u.data}"` : ""}>${quando}<div class="uscita-info"><strong class="uscita-gioco">${esc(u.gioco)}</strong><span class="uscita-piattaforme">${u.piattaforme.map((p) => `<span>${esc(p)}</span>`).join("")}${u.tipo ? `<span class="uscita-tipo">${esc(t.tipi[u.tipo])}</span>` : ""}</span></div><div class="uscita-lato"><span class="uscita-mancano"${u.data ? " data-mancano" : ""}>${u.data ? "" : esc(t.senzaData)}</span>${link}</div></li>`;
+}
+
+function contoGrande(l, u, lista) {
+  const t = R[l].uscite;
+  const url = linkArticolo(lista, u.articolo);
+  const nome = url ? `<a href="${url}">${esc(u.gioco)}</a>` : esc(u.gioco);
+  const celle = ["day", "hour", "minute", "second"].map((k) => `<span class="conto-cella" data-unita="${k}"><b>–</b><small></small></span>`).join("");
+  return `<div class="conto" data-conto="${u.data}" data-uscito="${esc(t.uscito)}"><p class="conto-etichetta">${esc(t.conto)}</p><p class="conto-gioco">${nome}</p><div class="conto-celle" aria-hidden="true">${celle}</div><p class="conto-quando"><time datetime="${u.data}">${esc(maiuscola(fmtData(l, { dateStyle: "full" }).format(dataUTC(u.data))))}</time> · ${esc(u.piattaforme.join(", "))}</p><p class="conto-stato" data-conto-stato></p></div>`;
+}
+
+function bloccoUscite(l, lista) {
+  const t = R[l].uscite;
+  const pros = prossimeUscite().filter((u) => u.data);
+  if (!pros.length) return "";
+  const top = pros.find((u) => u.evidenza) || pros[0];
+  return `<section class="blocco-novita uscite-box" aria-labelledby="t-uscite"><div class="blocco-heading"><div><span class="eyebrow">02 / ${esc(t.conto)}</span><h2 id="t-uscite" class="titolo-sezione">${esc(t.prossime)}</h2><p>${esc(t.intro)}</p></div><a class="intro-link" href="${P.uscite(l)}">${esc(t.tutto)} ↗</a></div>
+<div class="uscite-griglia">${contoGrande(l, top, lista)}<ol class="uscite-lista uscite-compatte" data-uscite-max="5">${pros.filter((u) => u !== top).slice(0, 8).map((u) => voceUscita(l, u, lista, false)).join("")}</ol></div></section>
+<script src="/uscite.js" defer></script>`;
+}
+
+function paginaUscite(l, lista) {
+  const t = R[l].uscite;
+  const pros = prossimeUscite();
+  const top = pros.find((u) => u.evidenza && u.data) || pros.find((u) => u.data);
+  const gruppi = [];
+  for (const u of pros) {
+    const chiave = u.data ? u.data.slice(0, 7) : `anno-${u.anno}`;
+    let g = gruppi.find((x) => x.chiave === chiave);
+    if (!g) gruppi.push((g = { chiave, titolo: u.data ? maiuscola(fmtData(l, { month: "long", year: "numeric" }).format(dataUTC(u.data))) : t.anno.replace("{y}", u.anno), voci: [] }));
+    g.voci.push(u);
+  }
+  const corpo = `<section class="rubrica-pagina">
+  <header class="rubrica-testa"><span class="eyebrow">${esc(config.nome)} / ${esc(t.conto)}</span><h1>${esc(t.nome)}</h1><p>${esc(t.intro)}</p></header>
+  ${top ? contoGrande(l, top, lista) : ""}
+  ${gruppi.map((g) => `<section class="uscite-mese" data-mese><h2>${esc(g.titolo)}</h2><ol class="uscite-lista">${g.voci.map((u) => voceUscita(l, u, lista, true)).join("")}</ol></section>`).join("\n  ")}
+  <p class="rubrica-nota">${esc(t.nota)}</p>
+</section>
+<script src="/uscite.js" defer></script>`;
+  return pagina({ l, titolo: t.nome, descrizione: t.descr, percorso: P.uscite(l), corpo, alternative: tuttePerLingua(P.uscite) });
+}
+
+const sondaggioCorrente = () => SONDAGGI.filter((s) => s.dal <= OGGI).at(-1) || SONDAGGI[0];
+function datiSondaggi(l) {
+  const p = R[l].poll;
+  const dati = {
+    lingua: LINGUE[l].intl, voti: p.voti,
+    testi: { vota: p.vota, grazie: p.grazie, gia: p.gia, errore: p.errore, caricamento: p.caricamento, scegli: p.scegli },
+    lista: SONDAGGI.map((s) => ({ id: s.id, dal: s.dal, domanda: s.testi[l][0], opzioni: s.testi[l][1] })),
+  };
+  return `<script type="application/json" data-sondaggi-dati>${JSON.stringify(dati).replace(/</g, "\\u003c")}</script>\n<script src="/sondaggio.js" defer></script>`;
+}
+function formSondaggio(l, s) {
+  const [domanda, opzioni] = s.testi[l];
+  return `<form class="sondaggio" data-sondaggio data-id="${s.id}"><fieldset><legend class="sondaggio-domanda">${esc(domanda)}</legend><div class="sondaggio-opzioni">${opzioni.map((o, i) => `<label class="sondaggio-opzione"><input type="radio" name="scelta" value="${i}" required><span>${esc(o)}</span></label>`).join("")}</div></fieldset><button class="tasto-start" type="submit">${esc(R[l].poll.vota)}</button><p class="sondaggio-stato" data-stato role="status" aria-live="polite"></p></form>`;
+}
+function bloccoSondaggio(l) {
+  const p = R[l].poll;
+  return `<section class="blocco-novita sondaggio-box" aria-labelledby="t-sondaggio"><div class="blocco-heading"><div><span class="eyebrow">07 / Poll</span><h2 id="t-sondaggio" class="titolo-sezione">${esc(p.nome)}</h2><p>${esc(p.intro)}</p></div><a class="intro-link" href="${P.sondaggio(l)}">${esc(p.passati)} ↗</a></div>${formSondaggio(l, sondaggioCorrente())}</section>
+${datiSondaggi(l)}`;
+}
+function paginaSondaggio(l) {
+  const p = R[l].poll;
+  const corpo = `<section class="rubrica-pagina">
+  <header class="rubrica-testa"><span class="eyebrow">${esc(config.nome)} / Poll</span><h1>${esc(p.nome)}</h1><p>${esc(p.intro)}</p></header>
+  <div class="sondaggio-box">${formSondaggio(l, sondaggioCorrente())}</div>
+  <section class="sondaggi-passati" data-sondaggi-passati hidden aria-labelledby="t-passati"><h2 id="t-passati">${esc(p.passati)}</h2><div class="sondaggi-passati-lista" data-passati-lista></div></section>
+</section>
+${datiSondaggi(l)}`;
+  return pagina({ l, titolo: p.nome, descrizione: p.intro, percorso: P.sondaggio(l), corpo, alternative: tuttePerLingua(P.sondaggio) });
+}
+
+function boxNewsletter(l) {
+  if (l !== PRINCIPALE) return "";
+  const nl = config.newsletter || {};
+  const n = NEWSLETTER;
+  const esterno = Boolean(nl.azione);
+  const attributi = esterno
+    ? `action="${esc(nl.azione)}" method="post"`
+    : `name="newsletter" method="POST" action="${P.newsletterGrazie}" data-netlify="true" netlify-honeypot="sito-web"`;
+  return `<section class="newsletter" aria-labelledby="t-newsletter">
+  <div class="newsletter-testo"><span class="eyebrow">Newsletter</span><h2 id="t-newsletter">${esc(n.nome)}</h2><p>${esc(n.intro)}</p></div>
+  <form class="newsletter-form" ${attributi}>
+    ${esterno ? "" : `<input type="hidden" name="form-name" value="newsletter"><p hidden><label>Lascia vuoto questo campo: <input name="sito-web" tabindex="-1" autocomplete="off"></label></p>`}
+    <div class="newsletter-riga"><label class="vh" for="nl-email">${esc(n.segnaposto)}</label><input id="nl-email" type="email" name="${esc(nl.campo || "email")}" required autocomplete="email" placeholder="${esc(n.segnaposto)}"><button class="tasto-start" type="submit">${esc(n.bottone)}</button></div>
+    <label class="newsletter-consenso"><input type="checkbox" name="consenso" value="si" required><span>${n.consenso.replace("{privacy}", urlPaginaFissa(l, "privacy"))}</span></label>
+  </form>
+</section>`;
+}
+function paginaGrazie() {
+  const n = NEWSLETTER;
+  return pagina({
+    l: PRINCIPALE, titolo: n.grazieTitolo, percorso: P.newsletterGrazie, robots: "noindex, follow", alternative: {},
+    corpo: `<section class="schermata-titolo"><p class="schermata-sopra">Newsletter</p><h1 class="schermata-logo"><span>Press</span><span>Start</span></h1><p class="schermata-sotto"><strong>${esc(n.grazieTitolo)}</strong> ${esc(n.grazieTesto)}</p><p><a class="tasto-start" href="${P.home(PRINCIPALE)}">${esc(n.torna)}</a></p></section>`,
+  });
+}
+
 function paginaElenco({ l, titolo, descrizione, percorso, lista, categoria, alternative }) {
   const corpo = `
 <header class="intestazione-elenco"${categoria ? ` data-colore="${colore(categoria)}"` : ""}>
@@ -525,6 +649,7 @@ function sostituisci(testo, l, stessaLingua) {
     .replaceAll("{{TITOLARE}}", config.titolare || "[titolare da completare in sito.config.mjs]")
     .replaceAll("{{EMAIL}}", config.emailContatto || "[email da completare in sito.config.mjs]")
     .replaceAll("{{AGGIORNATA}}", data(l, new Date(config.privacyAggiornata || Date.now()), "lunga"))
+    .replaceAll("{{NL_FORNITORE}}", config.newsletter?.fornitore || "Netlify, Inc. (servizio Netlify Forms)")
     .replaceAll("{{NUMERO_ARTICOLI}}", String(stessaLingua.filter((a) => !a.bozza).length))
     .replaceAll("{{CATEGORIE}}", `\n\n${tessere}\n\n`)
     .replace(/\{\{LINK:([a-z-]+)\}\}/g, (_, id) => urlPaginaFissa(l, id));
@@ -618,6 +743,7 @@ copiaCartella(PUBBLICO, DIST);
 fs.copyFileSync(path.join(ROOT, "src", "stile.css"), path.join(DIST, "stile.css"));
 fs.copyFileSync(path.join(ROOT, "src", "novita.css"), path.join(DIST, "novita.css"));
 fs.copyFileSync(path.join(ROOT, "src", "quiz.css"), path.join(DIST, "quiz.css"));
+fs.copyFileSync(path.join(ROOT, "src", "rubriche.css"), path.join(DIST, "rubriche.css"));
 const FONT = preparaFont();
 fs.writeFileSync(path.join(DIST, "font.css"), FONT.css);
 var FONT_PRECARICA = FONT.precarica.map((f) => `<link rel="preload" href="/font/${f}" as="font" type="font/woff2" crossorigin>\n`).join("");
@@ -631,6 +757,8 @@ for (const l of CODICI) {
   const lista = perLingua[l];
   scriviPagina(P.home(l), home(l, lista));
   scriviPagina(P.quiz(l), paginaQuiz(l));
+  scriviPagina(P.uscite(l), paginaUscite(l, lista));
+  scriviPagina(P.sondaggio(l), paginaSondaggio(l));
   scrivi(`indice-${l}.json`, JSON.stringify(pubblicati(lista).map((a)=>({id:a.id,url:a.url,titolo:a.titolo,sommario:a.sommario,categoria:nomeCat(l,a.categoria),tag:a.tag,data:a.data.toISOString(),dataBreve:data(l,a.data,"breve")}))));
   for (const a of lista) scriviPagina(a.url, paginaArticolo(a, lista, versioniDi(a.id)));
   for (const k of Object.keys(config.categorie)) {
@@ -654,6 +782,9 @@ for (const l of CODICI) {
 // Gruppi per la sitemap (solo contenuti pubblici)
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.home(l) })) });
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.quiz(l) })) });
+gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.uscite(l) })) });
+gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.sondaggio(l) })) });
+scriviPagina(P.newsletterGrazie, paginaGrazie());
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.archivio(l) })) });
 for (const k of Object.keys(config.categorie)) gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.categoria(l, k) })) });
 for (const id of new Set(PAGINE_FISSE.map((p) => p.id))) gruppiSitemap.push({ versioni: PAGINE_FISSE.filter((p) => p.id === id) });
@@ -671,6 +802,8 @@ fs.writeFileSync(
 );
 scrivi("robots.txt", `User-agent: *\nAllow: /\nSitemap: ${urlAssoluto("/sitemap.xml")}\n`);
 
+const ultimoSondaggio = SONDAGGI.at(-1).dal;
+if (ultimoSondaggio <= new Date(Date.now() + 7 * 864e5).toISOString().slice(0, 10)) console.warn(`Avviso: l'ultimo sondaggio parte il ${ultimoSondaggio}: aggiungine di nuovi in rubriche.mjs.`);
 if (!config.titolare || !config.emailContatto) console.warn("Avviso: completa titolare ed emailContatto in sito.config.mjs per la pagina privacy.");
 const nBozze = perLingua[PRINCIPALE].filter((a) => a.bozza).length;
 const riepilogoLingue = CODICI.filter((l) => l !== PRINCIPALE).map((l) => `${l} ${pubblicati(perLingua[l]).length}`).join(", ");

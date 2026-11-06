@@ -45,6 +45,12 @@ Le bozze con `bozza: true` non vengono mai pubblicate. Quelle che non ti interes
 
 Strumenti utili: `node strumenti/traduzioni.mjs mancanti` mostra cosa manca; `node strumenti/traduzioni.mjs istruzioni <lingua> <cartella>` prepara le istruzioni per chi traduce; `node strumenti/traduzioni.mjs importa <pacchetto>` salva un pacchetto di traduzioni. Se correggi un articolo italiano già tradotto, cancella le sue traduzioni: verranno rifatte la mattina dopo.
 
+## Calendario uscite, sondaggio e newsletter
+
+- **Calendario uscite** (`/uscite/`, e in homepage): le date sono in `rubriche.mjs`, nell'elenco `USCITE`. Per aggiungere un gioco copia una riga e cambia nome, data, piattaforme e fonte; `evidenza: true` mette il gioco nel conto alla rovescia grande. I giochi già usciti spariscono da soli.
+- **Sondaggio della settimana** (`/sondaggio/`, e in homepage): le domande sono in `rubriche.mjs`, nell'elenco `SONDAGGI`, una per lunedì, già tradotte in 9 lingue. I voti si salvano su Netlify (come i "Mi piace"). Quando restano poche domande, la build stampa un avviso: Claude ne aggiunge di nuove.
+- **Newsletter "Il Soffio della settimana"** (solo in italiano, in homepage e in fondo agli articoli): finché in `sito.config.mjs` il campo `newsletter.azione` è vuoto, le iscrizioni arrivano nel pannello di Netlify alla voce **Forms → newsletter** (va attivato una volta con "Enable form detection"). Ogni domenica Claude prepara il testo da spedire nella cartella `newsletter/` del Progetto; puoi generarlo anche a mano con `node strumenti/newsletter.mjs`. Quando sceglierai un servizio di invio (per esempio Brevo), incolla in `newsletter.azione` l'indirizzo del suo modulo e scrivi il nome del servizio in `newsletter.fornitore`: la privacy si aggiorna da sola.
+
 ## Formato di un articolo
 
 Vedi la sezione 6 di `GUIDA-REDAZIONE.md`. Campi per le immagini: `immagine` e `immagine_riserva` (indirizzo `https://...` oppure un file in `public/`, es. `/img/foto.jpg`), `alt_immagine`, `crediti_immagine`. Campi SEO: `titolo_seo`, `parola_chiave`, `aggiornato`.

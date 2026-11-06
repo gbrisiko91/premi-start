@@ -18,7 +18,7 @@ Il titolare del trattamento è **{{TITOLARE}}**. Per qualsiasi domanda sulla pri
 
 - {{NOME_SITO}} **non usa cookie**, né di profilazione né statistici.
 - Non usiamo strumenti di analisi del traffico né pubblicità.
-- Non ti chiediamo di registrarti e non raccogliamo nome, email o altri dati personali.
+- Non ti chiediamo di registrarti: l'unico dato personale che raccogliamo direttamente è l'indirizzo email, e solo se scegli di iscriverti alla newsletter.
 - I caratteri tipografici sono ospitati direttamente sul nostro sito: la tua visita non viene comunicata a Google Fonts.
 
 ## Dati raccolti durante la navigazione
@@ -32,6 +32,18 @@ La base giuridica è il nostro legittimo interesse a rendere disponibile il sito
 Quando premi "Mi piace" su un articolo, per evitare che lo stesso visitatore voti più volte salviamo un'**impronta anonima**: un codice calcolato a partire dal tuo indirizzo IP e dall'articolo, dal quale non è possibile risalire all'indirizzo IP stesso. Insieme all'impronta salviamo soltanto il fatto che quell'articolo ti è piaciuto. Il dato è conservato sui server di Netlify finché l'articolo resta pubblicato, e viene cancellato se togli il "Mi piace".
 
 La base giuridica è il nostro legittimo interesse a mostrare un conteggio affidabile. Se non premi il tasto, non viene salvato nulla.
+
+## Il sondaggio della settimana
+
+Quando voti nel sondaggio, per evitare voti doppi salviamo un'**impronta anonima** calcolata dal tuo indirizzo IP e dal sondaggio, dalla quale non è possibile risalire all'indirizzo, insieme alla risposta che hai scelto. I dati sono conservati sui server di Netlify finché il sondaggio resta sul sito; pubblichiamo soltanto il totale dei voti. Il browser ricorda inoltre nella propria memoria locale (*localStorage*) la tua risposta, per mostrarti subito i risultati.
+
+La base giuridica è il nostro legittimo interesse a mostrare risultati affidabili. Se non voti, non viene salvato nulla.
+
+## La newsletter
+
+Se ti iscrivi al **Soffio della settimana**, trattiamo il tuo indirizzo email per inviarti una volta a settimana una selezione delle nostre notizie. La base giuridica è il tuo consenso (art. 6, par. 1, lett. a del GDPR), che dai spuntando la casella del modulo e che puoi ritirare in qualsiasi momento con il link di cancellazione presente in ogni email oppure scrivendo a **{{EMAIL}}**.
+
+Il modulo di iscrizione e l'elenco degli iscritti sono gestiti per nostro conto da {{NL_FORNITORE}}. Conserviamo l'indirizzo finché resti iscritto e lo cancelliamo quando ti disiscrivi. Non lo cediamo a nessuno e non lo usiamo per altri scopi.
 
 ## Immagini e link di altri siti
 
@@ -55,4 +67,4 @@ Puoi togliere ogni articolo dai preferiti, disattivare Checkpoint (cancellando l
 
 ## Modifiche
 
-Se cambieremo il modo in cui trattiamo i dati, ad esempio aggiungendo statistiche, pubblicità o una newsletter, aggiorneremo questa pagina prima di farlo.
+Se cambieremo il modo in cui trattiamo i dati, ad esempio aggiungendo statistiche o pubblicità, aggiorneremo questa pagina prima di farlo.

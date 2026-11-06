@@ -33,6 +33,12 @@ Kun painat artikkelissa ”Tykkää”, tallennamme **anonyymin sormenjäljen**,
 
 Käsittelyn oikeusperuste on oikeutettu etumme näyttää luotettava määrä. Jos et paina painiketta, mitään ei tallenneta.
 
+## Viikon kysely
+
+Kun äänestät kyselyssä, tallennamme kaksoisäänien estämiseksi **nimettömän tunnisteen**, joka lasketaan IP-osoitteestasi ja kyselystä ja josta osoitetta ei voi päätellä, sekä valitsemasi vastauksen. Tiedot säilytetään Netlifyn palvelimilla niin kauan kuin kysely on sivustolla; julkaisemme vain äänten kokonaismäärät. Selaimesi muistaa lisäksi vastauksesi paikallisessa tallennustilassa (*localStorage*), jotta näet tulokset heti.
+
+Käsittelyperuste on oikeutettu etumme näyttää luotettavia tuloksia. Jos et äänestä, mitään ei tallenneta.
+
 ## Kuvat ja linkit muille sivustoille
 
 Osa artikkelien kuvista on virallista materiaalia, joka ladataan suoraan omistajiensa palvelimilta (esimerkiksi Valve Steamin osalta, Nintendo tai pelien julkaisijat). Niiden näyttämiseksi selaimesi muodostaa yhteyden näihin palvelimiin, jotka voivat siksi nähdä IP-osoitteesi, kuten minkä tahansa verkkosivuston kanssa. Sivustomme pyytää selaintasi olemaan kertomatta niille, miltä sivulta tulet.

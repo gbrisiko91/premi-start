@@ -33,6 +33,12 @@ Når du trykker «Lik» på en artikkel, lagrer vi et **anonymt fingeravtrykk** 
 
 Behandlingsgrunnlaget er vår berettigede interesse i å vise et pålitelig antall. Trykker du ikke på knappen, lagres ingenting.
 
+## Ukens avstemning
+
+Når du stemmer, lagrer vi et **anonymt fingeravtrykk** beregnet ut fra IP-adressen din og avstemningen, som ikke kan spores tilbake til adressen, sammen med svaret du valgte, for å hindre dobbeltstemmer. Dataene lagres på Netlifys servere så lenge avstemningen ligger på nettstedet; vi publiserer bare totalt antall stemmer. Nettleseren din husker i tillegg svaret ditt i lokal lagring (*localStorage*) slik at du ser resultatene med en gang.
+
+Behandlingsgrunnlaget er vår berettigede interesse i å vise pålitelige resultater. Hvis du ikke stemmer, lagres ingenting.
+
 ## Bilder og lenker til andre nettsteder
 
 Noen bilder i artiklene er offisielt materiale som lastes direkte fra eiernes servere (for eksempel Valve for Steam, Nintendo eller spillutgivere). For å vise dem kobler nettleseren din seg til disse serverne, som dermed kan se IP-adressen din, slik det skjer med alle nettsteder. Nettstedet vårt ber nettleseren din om ikke å fortelle dem hvilken side du kommer fra.

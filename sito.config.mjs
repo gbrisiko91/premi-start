@@ -8,7 +8,12 @@ export default {
   // Per la pagina privacy: nome e cognome (o ragione sociale) di chi gestisce il sito, e un'email di contatto.
   titolare: "Gianmarco Buono",
   emailContatto: "redazione@soffiacartuccia.it",
-  privacyAggiornata: "2026-11-05",
+  privacyAggiornata: "2026-11-06",
+  // Newsletter "Il Soffio della settimana".
+  // Se "azione" è vuoto, le iscrizioni arrivano nel pannello di Netlify (Forms → newsletter).
+  // Se usi un servizio di newsletter (es. Brevo), incolla qui l'indirizzo del suo modulo di iscrizione
+  // e il nome del campo email che richiede, e scrivi il nome del servizio in "fornitore" (finisce nella privacy).
+  newsletter: { azione: "", campo: "email", fornitore: "" },
   // Codice di verifica di Google Search Console (solo se scegli il metodo "tag HTML"), es. "abc123..."
   googleVerifica: "",
   articoliPerPagina: 12,

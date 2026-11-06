@@ -33,6 +33,12 @@ Wenn du bei einem Artikel auf „Gefällt mir“ drückst, speichern wir, damit 
 
 Rechtsgrundlage ist unser berechtigtes Interesse, eine verlässliche Zählung anzuzeigen. Wenn du den Button nicht drückst, wird nichts gespeichert.
 
+## Die Umfrage der Woche
+
+Wenn du an der Umfrage teilnimmst, speichern wir zur Vermeidung doppelter Stimmen einen **anonymen Fingerabdruck**, der aus deiner IP-Adresse und der Umfrage berechnet wird und keinen Rückschluss auf die Adresse zulässt, zusammen mit der gewählten Antwort. Die Daten werden auf den Servern von Netlify gespeichert, solange die Umfrage auf der Website bleibt; veröffentlicht werden nur die Gesamtzahlen. Dein Browser merkt sich deine Antwort außerdem im lokalen Speicher (*localStorage*), um dir die Ergebnisse sofort anzuzeigen.
+
+Rechtsgrundlage ist unser berechtigtes Interesse an verlässlichen Ergebnissen. Wenn du nicht abstimmst, wird nichts gespeichert.
+
 ## Bilder und Links zu anderen Seiten
 
 Einige Bilder in den Artikeln sind offizielles Material, das direkt von den Servern der jeweiligen Inhaber geladen wird (zum Beispiel Valve für Steam, Nintendo oder Spiele-Publisher). Um sie anzuzeigen, verbindet sich dein Browser mit diesen Servern, die dadurch deine IP-Adresse sehen können, wie bei jeder Website. Unsere Seite bittet deinen Browser, ihnen nicht mitzuteilen, von welcher Seite du kommst.
