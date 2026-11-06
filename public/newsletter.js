@@ -1,6 +1,5 @@
-// Newsletter: invia l'iscrizione al servizio esterno (Brevo) senza lasciare il sito,
-// poi apre la nostra pagina di ringraziamento. Se l'invio non riesce, il visitatore resta
-// sulla pagina e vede un messaggio di errore (niente pagine di errore del browser).
+// Newsletter: invia l'iscrizione alla nostra funzione /api/newsletter (che la passa a Brevo),
+// poi apre la pagina di ringraziamento. Se qualcosa va storto, resta sulla pagina con un messaggio.
 (() => {
   for (const form of document.querySelectorAll("[data-newsletter-esterna]")) {
     const stato = document.createElement("p");
@@ -17,7 +16,9 @@
       const dati = new URLSearchParams();
       for (const [k, v] of new FormData(form)) dati.append(k, v);
       try {
-        await fetch(form.action, { method: "POST", mode: "no-cors", body: dati });
+        const r = await fetch(form.action, { method: "POST", body: dati, headers: { accept: "application/json" } });
+        const esito = await r.json().catch(() => ({}));
+        if (!r.ok || !esito.ok) throw new Error(esito.errore || String(r.status));
         location.href = form.dataset.grazie;
       } catch {
         bottone.disabled = false;

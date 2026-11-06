@@ -610,7 +610,7 @@ function boxNewsletter(l) {
   const n = NEWSLETTER;
   const esterno = Boolean(nl.azione);
   const attributi = esterno
-    ? `action="${esc(nl.azione)}" method="post"`
+    ? `action="/api/newsletter" method="post"`
     : `name="newsletter" method="POST" action="${P.newsletterGrazie}" data-netlify="true" netlify-honeypot="sito-web"`;
   const extra = Object.entries(nl.campiExtra || {})
     .map(([k, v]) => (k === "email_address_check"
@@ -621,7 +621,7 @@ function boxNewsletter(l) {
   <form class="newsletter-form" ${attributi}${esterno ? ` data-newsletter-esterna data-grazie="${P.newsletterGrazie}" data-errore="${esc(n.errore)}"` : ""}>
     ${esterno ? extra : `<input type="hidden" name="form-name" value="newsletter"><p hidden><label>Lascia vuoto questo campo: <input name="sito-web" tabindex="-1" autocomplete="off"></label></p>`}
     <div class="newsletter-riga"><label class="vh" for="nl-email">${esc(n.segnaposto)}</label><input id="nl-email" type="email" name="${esc(nl.campo || "email")}" required autocomplete="email" placeholder="${esc(n.segnaposto)}"><button class="tasto-start" type="submit">${esc(n.bottone)}</button></div>
-    <label class="newsletter-consenso"><input type="checkbox"${esterno ? "" : ' name="consenso" value="si"'} required><span>${n.consenso.replace("{privacy}", urlPaginaFissa(l, "privacy"))}</span></label>
+    <label class="newsletter-consenso"><input type="checkbox" name="consenso" value="si" required><span>${n.consenso.replace("{privacy}", urlPaginaFissa(l, "privacy"))}</span></label>
   </form>
 </section>${esterno ? `\n<script src="/newsletter.js" defer></script>` : ""}`;
 }
