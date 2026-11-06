@@ -33,6 +33,36 @@ export default async (req) => {
   // Trappola anti-spam: le persone non vedono questo campo, i bot lo compilano.
   if ((dati.get("email_address_check") || "").trim()) return rispondi(true);
 
+  // Metodo principale: API di Brevo con doppia conferma (serve la chiave BREVO_API_KEY nelle variabili di Netlify).
+  const chiave = process.env.BREVO_API_KEY;
+  const api = nl.brevo || {};
+  if (chiave && api.lista && api.modello) {
+    try {
+      const r = await fetch("https://api.brevo.com/v3/contacts/doubleOptinConfirmation", {
+        method: "POST",
+        headers: { "api-key": chiave, "content-type": "application/json", accept: "application/json" },
+        body: JSON.stringify({
+          email,
+          includeListIds: [Number(api.lista)],
+          templateId: Number(api.modello),
+          redirectionUrl: api.confermata || `${sito.url.replace(/\/$/, "")}/newsletter/confermata/`,
+          contactPixelTrackingConsent: false,
+        }),
+        signal: AbortSignal.timeout(10000),
+      });
+      const testo = await r.text().catch(() => "");
+      console.log(`Brevo API: stato ${r.status}, risposta: ${testo.slice(0, 300) || "-"}`);
+      if (r.ok) return rispondi(true);
+      // Iscrizione già in corso o contatto già presente: per il visitatore va bene così.
+      if (r.status === 400 && /already|exist/i.test(testo)) return rispondi(true);
+      return rispondi(false, "il servizio della newsletter ha rifiutato l'iscrizione", 502);
+    } catch (e) {
+      console.error("Brevo API non raggiungibile", e?.message);
+      return rispondi(false, "il servizio della newsletter non risponde", 502);
+    }
+  }
+
+  // Metodo di riserva: inoltro al modulo "HTML semplice" di Brevo.
   const inoltro = new URLSearchParams({ [campo]: email, ...(nl.campiExtra || {}) });
   try {
     const r = await fetch(nl.azione, {

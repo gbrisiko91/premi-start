@@ -19,6 +19,9 @@ export default {
     fornitore: "Brevo (Sendinblue SAS, con sede in Francia)",
     // Campi nascosti richiesti dal modulo Brevo ("HTML semplice"): email_address_check è la trappola anti-spam e va lasciata vuota.
     campiExtra: { email_address_check: "", locale: "it", html_type: "simple" },
+    // API di Brevo (metodo principale): numero della lista e del modello di doppia conferma.
+    // La chiave segreta NON va qui: si mette su Netlify come variabile d'ambiente BREVO_API_KEY.
+    brevo: { lista: 0, modello: 0, confermata: "https://soffiacartuccia.it/newsletter/confermata/" },
   },
   // Codice di verifica di Google Search Console (solo se scegli il metodo "tag HTML"), es. "abc123..."
   googleVerifica: "",
