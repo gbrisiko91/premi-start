@@ -7,7 +7,7 @@ data: 2026-11-06
 categoria: industria
 tag: [nintendo-switch-2, nintendo, mario-kart-world]
 viralita: 76
-bozza: true
+bozza: false
 immagine: "https://upload.wikimedia.org/wikipedia/commons/f/f2/Nintendo_Switch_2-Spieleequipment_20250605.png"
 immagine_riserva: "https://commons.wikimedia.org/wiki/Special:FilePath/Nintendo_Switch_2-Spieleequipment_20250605.png"
 alt_immagine: "Console Nintendo Switch 2 nel dock con i Joy-Con 2 e l'impugnatura"
