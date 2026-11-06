@@ -7,7 +7,7 @@ data: 2026-11-06
 categoria: retro
 tag: [commodore-64, c64-ultimate, commodore, retro-computer]
 viralita: 56
-bozza: true
+bozza: false
 immagine: "https://commodore.net/content/uploads/2026/04/C64C-Ultimate-.png"
 immagine_riserva: "https://commodore.net/content/uploads/2026/04/Founders-Edition-pairing-1024x252.png"
 alt_immagine: "Il Commodore 64C Ultimate, nuova versione del computer Commodore 64 con case slim"
