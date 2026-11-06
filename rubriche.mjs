@@ -187,7 +187,7 @@ export const NEWSLETTER = {
   segnaposto: "La tua email",
   consenso: "Voglio ricevere la newsletter e ho letto l'<a href=\"{privacy}\">informativa privacy</a>.",
   bottone: "Iscriviti",
-  grazieTitolo: "Iscrizione ricevuta!",
-  grazieTesto: "Grazie: da domenica prossima il Soffio della settimana arriverà nella tua casella. Se non lo trovi, controlla la cartella spam o promozioni.",
+  grazieTitolo: "Manca solo un clic!",
+  grazieTesto: "Ti abbiamo mandato un'email: apri il link che contiene per confermare l'iscrizione. Da quel momento il Soffio della settimana arriverà ogni domenica. Non la trovi? Controlla spam e promozioni.",
   torna: "Torna alle notizie",
 };
