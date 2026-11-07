@@ -7,7 +7,7 @@ data: 2026-11-07
 categoria: pc
 tag: [league-of-legends, worlds-2026, esports, t1, bilibili-gaming]
 viralita: 82
-bozza: true
+bozza: false
 immagine: ""
 immagine_riserva: ""
 alt_immagine: ""
