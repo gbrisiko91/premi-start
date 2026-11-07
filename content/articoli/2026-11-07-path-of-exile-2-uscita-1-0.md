@@ -7,7 +7,7 @@ data: 2026-11-07
 categoria: pc
 tag: [path-of-exile-2, grinding-gear-games, exilecon, action-rpg]
 viralita: 68
-bozza: true
+bozza: false
 immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2694490/library_hero.jpg"
 immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2694490/0f59c5bb74b3a2bc7eb77a1d0bc28afe4196a0e0/capsule_616x353.jpg"
 alt_immagine: "Immagine ufficiale di Path of Exile 2 con l'eroe nel mondo oscuro di Wraeclast"
