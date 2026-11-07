@@ -7,7 +7,7 @@ data: 2026-11-07
 categoria: pc
 tag: [fortnite, epic-games, one-piece, battle-royale]
 viralita: 76
-bozza: true
+bozza: false
 immagine: ""
 immagine_riserva: ""
 alt_immagine: ""
