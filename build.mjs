@@ -199,6 +199,17 @@ marked.use({
     },
   },
 });
+// Tabelle: una cornice che scorre di lato su telefono; i punteggi (es. 3-1) non vanno mai a capo
+marked.use({
+  hooks: {
+    postprocess(html) {
+      return html
+        .replace(/<table>/g, '<div class="tabella" tabindex="0"><table>')
+        .replace(/<\/table>/g, "</table></div>")
+        .replace(/<td>(\d{1,2}\s?[-–]\s?\d{1,2})<\/td>/g, '<td class="punteggio">$1</td>');
+    },
+  },
+});
 const urlImmagine = (u) => (!u ? "" : /^https?:\/\//.test(u) ? u : urlAssoluto(u.startsWith("/") ? u : `/${u}`));
 
 // ---------- componenti ----------
@@ -207,6 +218,8 @@ const nomeCat = (l, cat) => T[l].categorie[cat]?.nome || config.categorie[cat].n
 const pallino = (cat) => `<span class="pallino" data-colore="${colore(cat)}" aria-hidden="true"></span>`;
 const etichettaCat = (l, cat) =>
   `<a class="cat" href="${P.categoria(l, cat)}" data-colore="${colore(cat)}">${esc(nomeCat(l, cat))}</a>`;
+// Stessa etichetta senza link, per i riquadri che sono già un link
+const etichettaCatSemplice = (l, cat) => `<span class="cat" data-colore="${colore(cat)}">${esc(nomeCat(l, cat))}</span>`;
 const segnoBozza = (a) => (a.bozza ? `<span class="segno-bozza">${esc(T[a.lingua].bozza)}</span>` : "");
 const hype = (l, v) => {
   const pieni = Math.round(Math.max(0, Math.min(100, v)) / 10);
@@ -641,6 +654,38 @@ function paginaConfermata() {
     corpo: `<section class="schermata-titolo"><p class="schermata-sopra">Newsletter</p><h1 class="schermata-logo"><span>Soffia</span><span>Cartuccia</span></h1><p class="schermata-sotto"><strong>${esc(n.confermataTitolo)}</strong> ${esc(n.confermataTesto)}</p><p class="confermata-azioni"><a class="tasto-start" href="${P.uscite(l)}">${esc(R[l].uscite.nome)}</a> <a class="tasto-start" href="${P.sondaggio(l)}">${esc(R[l].poll.nome)}</a> <a class="tasto-start" href="${P.home(l)}">${esc(n.torna)}</a></p></section>`,
   });
 }
+// Pagina per il link in bio di Instagram (solo italiano): le ultime notizie in grande, una per riquadro.
+// I link portano l'etichetta utm, così le statistiche separano chi arriva da Instagram.
+const PERCORSO_INSTAGRAM = "/instagram/";
+function paginaInstagram(lista) {
+  const l = PRINCIPALE;
+  const utm = (u) => `${u}?utm_source=instagram&utm_medium=social&utm_campaign=link-in-bio`;
+  const notizie = lista.filter((a) => !a.bozza).slice(0, 12);
+  const [prima, ...altre] = notizie;
+  const copertina = (a, grande) => `<span class="bio-copertina${grande ? " bio-copertina-grande" : ""}" data-colore="${colore(a.categoria)}"><span class="copertina-nome" aria-hidden="true">${esc(nomeCat(l, a.categoria))}</span>${a.immagine ? img({ src: a.immagine, riserva: a.immagineRiserva, alt: "", lazy: !grande, priorita: grande }) : ""}</span>`;
+  const voce = (a) => `<li><a class="bio-voce" href="${utm(a.url)}" data-colore="${colore(a.categoria)}">${copertina(a, false)}<span class="bio-voce-testo"><span class="meta">${etichettaCatSemplice(l, a.categoria)}<time datetime="${a.data.toISOString()}">${data(l, a.data, "breve")}</time></span><span class="bio-voce-titolo">${esc(a.titolo)}</span></span></a></li>`;
+  const scorciatoie = [
+    [P.quiz(l), `✦ ${QUIZ[l].nome}`],
+    [P.sondaggio(l), R[l].poll.nome],
+    [P.uscite(l), R[l].uscite.nome],
+    ["#newsletter", "Newsletter"],
+  ].map(([u, t]) => `<a class="bio-scorciatoia" href="${u.startsWith("#") ? u : utm(u)}">${esc(t)}</a>`).join("");
+  const corpo = `
+<section class="bio" aria-labelledby="t-bio">
+  <header class="bio-testa">
+    <span class="eyebrow">Dal nostro Instagram</span>
+    <h1 id="t-bio">Le notizie dei post</h1>
+    <p>Tocca la notizia che hai visto su Instagram e leggila per intero.</p>
+  </header>
+  ${prima ? `<a class="bio-apertura" href="${utm(prima.url)}" data-colore="${colore(prima.categoria)}">${copertina(prima, true)}<span class="bio-apertura-testo"><span class="meta">${etichettaCatSemplice(l, prima.categoria)}<time datetime="${prima.data.toISOString()}">${data(l, prima.data, "breve")}</time></span><span class="bio-apertura-titolo">${esc(prima.titolo)}</span><span class="tasto-start">${esc(T[l].leggi || "Leggi l'articolo")}</span></span></a>` : ""}
+  <ol class="bio-lista">${altre.map(voce).join("")}</ol>
+  <nav class="bio-scorciatoie" aria-label="Altro da Soffia Cartuccia">${scorciatoie}</nav>
+  <div id="newsletter">${boxNewsletter(l)}</div>
+  <p class="bio-tutte"><a class="intro-link" href="${utm(P.archivio(l))}">Tutte le notizie ↗</a></p>
+</section>`;
+  return pagina({ l, titolo: "Le notizie dei post Instagram", descrizione: "Le ultime notizie di Soffia Cartuccia, dal link in bio di Instagram.", percorso: PERCORSO_INSTAGRAM, corpo, robots: "noindex, follow", alternative: {} });
+}
+
 function paginaElenco({ l, titolo, descrizione, percorso, lista, categoria, alternative }) {
   const corpo = `
 <header class="intestazione-elenco"${categoria ? ` data-colore="${colore(categoria)}"` : ""}>
@@ -798,6 +843,7 @@ gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.quiz(l) })
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.uscite(l) })) });
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.sondaggio(l) })) });
 scriviPagina(P.newsletterGrazie, paginaGrazie());
+scriviPagina(PERCORSO_INSTAGRAM, paginaInstagram(perLingua[PRINCIPALE]));
 scriviPagina(P.newsletterConfermata, paginaConfermata());
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.archivio(l) })) });
 for (const k of Object.keys(config.categorie)) gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.categoria(l, k) })) });

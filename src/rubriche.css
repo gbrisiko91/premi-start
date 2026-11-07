@@ -92,3 +92,29 @@
 .confermata-azioni { display:flex; flex-wrap:wrap; gap:.7rem; justify-content:center; }
 .newsletter-stato:empty { display:none; }
 .newsletter-stato { margin:.7rem 0 0; color:#ffb4bc; font-size:.9rem; }
+
+/* ---------- pagina per il link in bio di Instagram (/instagram/) ---------- */
+.bio { max-width: 40rem; margin: 0 auto; padding-top: 1.5rem; }
+.bio-testa { margin: 0 0 1.5rem; }
+.bio-testa h1 { font:italic 900 clamp(2.2rem,8vw,3.4rem)/.95 var(--display); font-stretch:140%; letter-spacing:-.035em; margin:.5rem 0 .6rem; }
+.bio-testa p { margin:0; color:var(--tenue); }
+.bio-copertina { display:block; position:relative; overflow:hidden; border-radius:14px; aspect-ratio:1; flex:none; width:5.5rem;
+  background: repeating-linear-gradient(-55deg, transparent 0 14px, rgba(255,255,255,.08) 14px 28px), linear-gradient(135deg, var(--c), color-mix(in srgb, var(--c) 40%, var(--notte))); }
+.bio-copertina .copertina-nome { font-size:1.15rem; }
+.bio-copertina img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:1; }
+.bio-copertina-grande { width:100%; aspect-ratio:16/9; border-radius:18px 18px 0 0; }
+.bio-copertina-grande .copertina-nome { font-size:4rem; }
+.bio-apertura { display:block; text-decoration:none; background:var(--pannello); border:2px solid var(--c); border-radius:20px; overflow:hidden; margin-bottom:1.25rem; box-shadow:0 18px 44px rgba(0,0,0,.3); }
+.bio-apertura-testo { display:flex; flex-direction:column; gap:.6rem; padding:1.1rem 1.25rem 1.35rem; }
+.bio-apertura-titolo { font:italic 900 1.55rem/1.08 var(--display); font-stretch:120%; letter-spacing:-.02em; }
+.bio-apertura .tasto-start { align-self:flex-start; margin-top:.3rem; }
+.bio-lista { list-style:none; margin:0; padding:0; display:grid; gap:.75rem; }
+.bio-voce { display:flex; gap:1rem; align-items:center; text-decoration:none; background:var(--pannello); border:1px solid rgba(255,255,255,.1); border-radius:18px; padding:.65rem; transition:border-color .2s, transform .2s; }
+.bio-voce:hover, .bio-voce:focus-visible { border-color:var(--c); transform:translateY(-2px); }
+.bio-voce-testo { display:flex; flex-direction:column; gap:.3rem; min-width:0; }
+.bio-voce-titolo { font-family:var(--display); font-weight:800; font-stretch:110%; font-size:1.05rem; line-height:1.15; }
+.bio .meta { margin:0; font-size:.8rem; }
+.bio-scorciatoie { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.6rem; margin:1.75rem 0 0; }
+.bio-scorciatoia { display:flex; align-items:center; justify-content:center; text-align:center; min-height:3.2rem; padding:.6rem .8rem; border-radius:999px; background:#ffffff10; border:2px solid #ffffff22; font-family:var(--display); font-weight:800; font-style:italic; text-decoration:none; }
+.bio-scorciatoia:hover, .bio-scorciatoia:focus-visible { border-color:var(--viola); }
+.bio-tutte { text-align:center; margin:1.5rem 0 0; }

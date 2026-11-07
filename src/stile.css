@@ -21,7 +21,7 @@
 [data-colore="blu"] { --c: var(--blu); }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; }
+html { -webkit-text-size-adjust: 100%; overflow-x: clip; }
 body {
   margin: 0;
   background:
@@ -154,7 +154,7 @@ main { max-width: 78rem; margin: 0 auto; padding: 0 1rem 5rem; }
 /* ---------- articolo ---------- */
 .articolo { max-width: 46rem; margin: 0 auto; }
 .eroe-articolo { position: relative; padding: 3rem 0 2rem; margin-bottom: 2rem; border-bottom: 4px solid var(--c); isolation: isolate; }
-.eroe-articolo::before { content: ""; position: absolute; z-index: -1; inset: 0 -40vw; background: radial-gradient(40rem 22rem at 30% 0%, color-mix(in srgb, var(--c) 30%, transparent), transparent 70%); }
+.eroe-articolo::before { content: ""; position: absolute; z-index: -1; inset: 0 calc(50% - 50vw); background: radial-gradient(40rem 22rem at 30% 0%, color-mix(in srgb, var(--c) 30%, transparent), transparent 70%); }
 .eroe-articolo h1 { font-family: var(--display); font-weight: 900; font-stretch: 120%; font-style: italic; font-size: clamp(2.1rem, 5.4vw, 3.9rem); line-height: .98; letter-spacing: -.03em; margin: 0 0 1.1rem; }
 .occhiello { font-size: 1.3rem; line-height: 1.45; margin: 0 0 1.4rem; color: #dcd7f5; }
 .immagine { margin: 0 0 2rem; }
@@ -169,6 +169,15 @@ main { max-width: 78rem; margin: 0 auto; padding: 0 1rem 5rem; }
 .testo strong { color: #fff; }
 .testo blockquote { margin: 1.75rem 0; padding: .5rem 0 .5rem 1.25rem; border-left: 4px solid var(--viola); font-size: 1.25rem; font-style: italic; }
 .testo code { font-size: .9em; background: var(--pannello); padding: .1em .35em; border-radius: 4px; }
+/* Tabelle: riquadro scuro con righe alternate; su telefono la tabella scorre dentro il suo riquadro */
+.testo .tabella { max-width: 100%; margin: 1.75rem 0; overflow-x: auto; border: 1px solid rgba(255,255,255,.12); border-radius: 16px; background: var(--pannello); scrollbar-width: thin; }
+.testo table { width: 100%; border-collapse: collapse; font-size: 1rem; line-height: 1.4; font-variant-numeric: tabular-nums; }
+.testo th { font-family: var(--display); font-weight: 800; font-style: italic; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--tenue); text-align: left; padding: .85rem 1rem; border-bottom: 2px solid var(--c, var(--viola)); white-space: nowrap; }
+.testo td { padding: .75rem 1rem; border-top: 1px solid rgba(255,255,255,.07); vertical-align: top; }
+.testo tbody tr:first-child td { border-top: 0; }
+.testo tbody tr:nth-child(even) { background: var(--pannello-2); }
+.testo td:first-child { font-weight: 700; color: var(--testo); }
+.testo td.punteggio { white-space: nowrap; font-family: var(--display); font-weight: 900; font-style: italic; color: var(--c, var(--viola)); }
 .tag { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 2.25rem; font-family: var(--display); font-weight: 700; font-size: .85rem; }
 .tag span { background: var(--pannello); padding: .25rem .7rem; border-radius: 999px; color: var(--tenue); }
 .fonti { margin-top: 2.5rem; padding: 1.25rem 1.4rem; background: var(--pannello); border-radius: 14px; }
@@ -180,7 +189,7 @@ main { max-width: 78rem; margin: 0 auto; padding: 0 1rem 5rem; }
 
 /* ---------- elenchi ---------- */
 .intestazione-elenco { position: relative; padding: 3.5rem 0 2.5rem; isolation: isolate; }
-.intestazione-elenco::before { content: ""; position: absolute; z-index: -1; inset: 0 -40vw; background: radial-gradient(36rem 18rem at 20% 10%, color-mix(in srgb, var(--c) 35%, transparent), transparent 70%); }
+.intestazione-elenco::before { content: ""; position: absolute; z-index: -1; inset: 0 calc(50% - 50vw); background: radial-gradient(36rem 18rem at 20% 10%, color-mix(in srgb, var(--c) 35%, transparent), transparent 70%); }
 .intestazione-elenco h1 { font-family: var(--display); font-weight: 900; font-stretch: 150%; font-style: italic; font-size: clamp(3rem, 10vw, 7rem); line-height: .9; letter-spacing: -.04em; margin: 0 0 .75rem; color: var(--c); }
 .intestazione-elenco p { margin: 0; font-size: 1.2rem; max-width: 50ch; }
 .vuoto-elenco { padding: 2rem 0; color: var(--tenue); font-size: 1.15rem; }
