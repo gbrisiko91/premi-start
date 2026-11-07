@@ -7,7 +7,7 @@ data: 2026-11-07
 categoria: retro
 tag: [playstation, playstation-2, sony, prototipi]
 viralita: 56
-bozza: true
+bozza: false
 immagine: "https://readonlymemory.com/cdn/shop/files/ptf30y_card.jpg?crop=center&height=628&v=1759073146&width=1200"
 immagine_riserva: "https://readonlymemory.com/cdn/shop/files/ptf30y_dlx_1_hero.png?v=1788971369&width=2500"
 alt_immagine: "Copertina del libro PlayStation: The First 30 Years di Read-Only Memory"
