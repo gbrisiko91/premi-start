@@ -1,61 +1,60 @@
-// Voti del sondaggio della settimana, salvati in Netlify Blobs.
-//   GET  /api/sondaggio?id=gta-6-day-one     → { conti: [..], scelta: indice | null }
-//   POST /api/sondaggio { "id": "...", "scelta": 0 }  → { conti: [..], scelta }
-// Ogni visitatore (riconosciuto da un'impronta anonima del suo indirizzo IP) vota una volta sola per sondaggio.
-// Si vota solo nel sondaggio in corso; i risultati dei precedenti restano consultabili.
+// Sondaggi: base storica immutata, nuovi voti come ballot separati.
+// Le impronte nuove sono pseudonime HMAC e richiedono VOTE_HASH_SECRET su Netlify.
 import { getStore } from "@netlify/blobs";
 import { createHash } from "node:crypto";
 import { SONDAGGI } from "../../rubriche.mjs";
+import { secretValid, tokenVoter, countBallots } from "../voti-sicuri.mjs";
 
-const json = (dati, stato = 200) =>
-  new Response(JSON.stringify(dati), {
-    status: stato,
-    headers: { "content-type": "application/json; charset=utf-8", "cache-control": "no-store" },
-  });
-
-const impronta = (ip, id) =>
-  createHash("sha256").update(`soffia-cartuccia-sondaggio:${id}:${ip || "sconosciuto"}`).digest("hex").slice(0, 32);
-
-// Il sondaggio in corso è l'ultimo già iniziato (ora italiana).
-function inCorso(adesso = new Date()) {
-  const oggi = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Rome" }).format(adesso);
-  return SONDAGGI.filter((s) => s.dal <= oggi).at(-1)?.id;
+const json = (data, status = 200) => new Response(JSON.stringify(data), {
+  status, headers: { "content-type": "application/json; charset=utf-8", "cache-control": "no-store" }
+});
+const legacyHash = (ip, id) => createHash("sha256")
+  .update(`soffia-cartuccia-sondaggio:${id}:${ip || "sconosciuto"}`).digest("hex").slice(0,32);
+function inCorso(now = new Date()) {
+  const day = new Intl.DateTimeFormat("en-CA",{ timeZone:"Europe/Rome" }).format(now);
+  return SONDAGGI.filter(s => s.dal <= day).at(-1)?.id;
 }
-
 export default async (req, context) => {
-  const store = getStore({ name: "sondaggi", consistency: "strong" });
   let id, scelta;
-  if (req.method === "GET") {
-    id = new URL(req.url).searchParams.get("id");
-  } else if (req.method === "POST") {
-    try {
-      ({ id, scelta } = await req.json());
-    } catch {
-      return json({ errore: "Richiesta non valida" }, 400);
-    }
-  } else {
-    return json({ errore: "Metodo non consentito" }, 405);
-  }
+  if (req.method === "GET") id = new URL(req.url).searchParams.get("id");
+  else if (req.method === "POST") {
+    try { ({ id, scelta } = await req.json()); }
+    catch { return json({ errore: "Richiesta non valida" }, 400); }
+  } else return json({ errore: "Metodo non consentito" }, 405);
 
-  const sondaggio = SONDAGGI.find((s) => s.id === id);
-  if (!sondaggio) return json({ errore: "Sondaggio sconosciuto" }, 404);
-  const nOpzioni = sondaggio.testi.it[1].length;
-  const chiaveVoto = `voti/${id}/${impronta(context.ip, id)}`;
-  const giaVotato = await store.get(chiaveVoto);
-  const letti = (await store.get(`conti/${id}`, { type: "json" })) || [];
-  const conti = Array.from({ length: nOpzioni }, (_, i) => Math.max(0, Number(letti[i]) || 0));
-
-  if (req.method === "POST") {
-    if (id !== inCorso()) return json({ errore: "Sondaggio chiuso", conti, scelta: giaVotato === null ? null : Number(giaVotato) }, 409);
-    if (!Number.isInteger(scelta) || scelta < 0 || scelta >= nOpzioni) return json({ errore: "Risposta non valida" }, 400);
-    if (giaVotato === null) {
-      await store.set(chiaveVoto, String(scelta));
-      conti[scelta] += 1;
-      await store.setJSON(`conti/${id}`, conti);
-      return json({ conti, scelta });
+  const poll = SONDAGGI.find(s => s.id === id);
+  if (!poll) return json({ errore: "Sondaggio sconosciuto" }, 404);
+  const n = poll.testi.it[1].length;
+  if (req.method === "POST" && (!Number.isInteger(scelta) || scelta < 0 || scelta >= n))
+    return json({ errore: "Risposta non valida" }, 400);
+  const store = getStore({name:"sondaggi",consistency:"strong"});
+  try {
+    const legacy = await store.get(`voti/${id}/${legacyHash(context.ip,id)}`);
+    const oldChoice = legacy === null ? null : Number(legacy);
+    const base = (await store.get(`conti/${id}`, {type:"json"})) || [];
+    const conti = Array.from({length:n}, (_,i)=>Math.max(0,Number(base[i])||0));
+    const secret = process.env.VOTE_HASH_SECRET;
+    if (!secretValid(secret)) {
+      if (req.method === "POST") return json({errore:"Sondaggio temporaneamente non disponibile"},503);
+      return json({conti,scelta:oldChoice});
     }
+    const prefix = `v2/${id}/`;
+    const key = prefix + tokenVoter(secret,"poll",id,context.ip);
+    let newer = await store.get(key);
+    if (req.method === "POST") {
+      if (id !== inCorso()) return json({errore:"Sondaggio chiuso",conti,scelta:oldChoice ?? (newer===null ? null : Number(newer))},409);
+      if (legacy === null && newer === null) {
+        // Create-only garantisce un solo ballot per visitatore anche con POST concorrenti.
+        await store.set(key,String(scelta),{onlyIfNew:true});
+        newer = await store.get(key);
+      }
+    }
+    const extra = await countBallots(store,prefix,n);
+    extra.forEach((v,i)=>{conti[i]+=v;});
+    return json({conti,scelta:oldChoice ?? (newer===null ? null : Number(newer))});
+  } catch (err) {
+    console.error("Errore archivio sondaggio",err?.message);
+    return json({errore:"Sondaggio non disponibile"},503);
   }
-  return json({ conti, scelta: giaVotato === null ? null : Number(giaVotato) });
 };
-
 export const config = { path: "/api/sondaggio" };
