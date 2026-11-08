@@ -29,15 +29,11 @@ The legal basis is our legitimate interest in making the site available securely
 
 ## The "Like" button
 
-When you press "Like" on an article, to stop the same visitor from voting more than once we store an **anonymous fingerprint**: a code calculated from your IP address and the article, from which the IP address itself cannot be recovered. Alongside the fingerprint we only store the fact that you liked that article. The data is kept on Netlify's servers for as long as the article is published, and is deleted if you remove your "Like".
-
-The legal basis is our legitimate interest in showing a reliable count. If you don't press the button, nothing is stored.
+When you press "Like", we record a **pseudonymous technical identifier** derived from your IP address and the article to limit duplicate votes. Older votes used an unkeyed hash; new identifiers use HMAC with a secret kept on the server. These identifiers are not necessarily anonymous personal data. We also retain the voting state: if you remove your Like, the state is updated to keep counts accurate. Data is stored with Netlify while needed to manage the article's votes.
 
 ## The poll of the week
 
-When you vote in the poll, we store an **anonymous fingerprint** calculated from your IP address and the poll, which cannot be traced back to the address, together with the answer you chose, to prevent duplicate votes. The data is kept on Netlify's servers for as long as the poll remains on the site; we only publish the vote totals. Your browser also remembers your answer in its local storage (*localStorage*) so it can show you the results straight away.
-
-The legal basis is our legitimate interest in showing reliable results. If you don't vote, nothing is stored.
+When you take part in a poll, we store a **pseudonymous technical identifier** based on your IP address and the poll, together with your selected answer, to limit duplicate votes. Historical identifiers used an unkeyed hash; new ones use server-keyed HMAC. We do not regard these identifiers as fully anonymous. Poll records remain with Netlify for the poll's history; only aggregate results are published. Your browser also saves your choice in *localStorage* to show the results.
 
 ## Images and links to other sites
 
