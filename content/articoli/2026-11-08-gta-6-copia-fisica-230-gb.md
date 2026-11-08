@@ -7,7 +7,7 @@ data: 2026-11-08
 categoria: console
 tag: [gta-6, rockstar-games, ps5, xbox-series-x]
 viralita: 80
-bozza: true
+bozza: false
 immagine: "https://www.rockstargames.com/VI/_next/static/media/meta.0t8ty~nlmxq2s.jpg"
 immagine_riserva: "https://www.rockstargames.com/VI/_next/static/media/Jason_and_Lucia_14_Mobile.17zv0lmevzbgs.jpg"
 alt_immagine: "Immagine ufficiale di Grand Theft Auto VI con Jason e Lucia, dal sito Rockstar"
