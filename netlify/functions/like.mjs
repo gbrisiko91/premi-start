@@ -1,7 +1,7 @@
 // Mi piace: lettura compatibile con la base storica, scritture su ballot
 // indipendenti firmati. Richiede VOTE_HASH_SECRET (>=32 byte) su Netlify.
 // Senza segreto: letture legacy possibili, scritture disabilitate (503).
-import { getStore } from "@netlify/blobs";
+import { getStore, getDeployStore } from "@netlify/blobs";
 import { createHash } from "node:crypto";
 import articoli from "../dati/articoli.mjs";
 import { secretValid, tokenVoter, deltaLike, effectiveLike, sumDeltas } from "../voti-sicuri.mjs";
@@ -24,7 +24,9 @@ export default async (req, context) => {
   } else return json({ errore: "Metodo non consentito" }, 405);
   if (typeof id !== "string" || !valido.has(id)) return json({ errore: "Articolo sconosciuto" }, 404);
   if (req.method === "POST" && azione !== "like" && azione !== "unlike") return json({ errore: "Azione non valida" }, 400);
-  const store = getStore({ name: "mi-piace", consistency: "strong" });
+  const store = process.env.CONTEXT === "production"
+    ? getStore({ name: "mi-piace", consistency: "strong" })
+    : getDeployStore({ name: "mi-piace", consistency: "strong" });
   try {
     const legacyKey = `voti/${id}/${legacyHash(context.ip, id)}`;
     const previouslyLiked = (await store.get(legacyKey)) !== null;
