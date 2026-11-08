@@ -7,7 +7,7 @@ data: 2026-11-08
 categoria: console
 tag: [assassins-creed, ubisoft, assassins-creed-hexe]
 viralita: 76
-bozza: true
+bozza: false
 immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/48190/library_hero.jpg"
 immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/48190/header.jpg"
 alt_immagine: "Copertina ufficiale di Assassin's Creed Brotherhood, il capitolo ambientato nella Roma rinascimentale"
