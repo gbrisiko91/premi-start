@@ -31,9 +31,13 @@ Behandlingsgrunnlaget er vår berettigede interesse i å gjøre nettstedet tilgj
 
 Når du trykker «Lik», lagrer vi en **pseudonym teknisk identifikator** basert på IP-adressen din og artikkelen for å begrense dobbeltstemmer. Gamle stemmer bruker en hash uten hemmelig nøkkel; nye identifikatorer bruker HMAC med en nøkkel lagret på serveren. Dette er ikke nødvendigvis anonyme data. Når du fjerner «Lik», oppdateres stemmestatusen for korrekt opptelling. Data lagres hos Netlify så lenge de trengs for å håndtere artikkelstemmer.
 
+Det oppgitte behandlingsgrunnlaget er berettiget interesse i å hindre dobbeltstemmer og vise pålitelige resultater (GDPR art. 6(1)(f)); behandlingsansvarlig bør gjennomgå vurderingen.
+
 ## Ukens avstemning
 
 Når du deltar i en avstemning, lagrer vi en **pseudonym teknisk identifikator** basert på IP-adressen og avstemningen, sammen med svaret, for å begrense dobbeltstemmer. Historiske identifikatorer bruker hash uten nøkkel; nye bruker HMAC med servernøkkel. De regnes ikke som helt anonyme. Opplysningene oppbevares hos Netlify for avstemningshistorikk; bare samlede resultater publiseres. Nettleseren lagrer også svaret i *localStorage*.
+
+Det oppgitte behandlingsgrunnlaget er berettiget interesse i å hindre dobbeltstemmer og vise pålitelige resultater (GDPR art. 6(1)(f)); behandlingsansvarlig bør gjennomgå vurderingen.
 
 ## Bilder og lenker til andre nettsteder
 
