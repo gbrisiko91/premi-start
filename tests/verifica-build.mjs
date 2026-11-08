@@ -51,6 +51,7 @@ for (const lingua of Object.keys(LINGUE)) {
     assert.ok(fs.existsSync("dist/" + relative), `Indice punta a pagina mancante: ${item.url}`);
     const html = fs.readFileSync("dist/" + relative, "utf8");
     assert.ok(html.includes("data-salva-articolo"), `Preferiti assenti: ${item.url}`);
+    assert.ok(!html.includes("NOTE PER LA REDAZIONE") && !html.includes("DA COMPLETARE PRIMA DI PUBBLICARE"), `Nota interna esposta: ${item.url}`);
   }
 }
 {
