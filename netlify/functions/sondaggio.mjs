@@ -1,6 +1,6 @@
 // Sondaggi: base storica immutata, nuovi voti come ballot separati.
 // Le impronte nuove sono pseudonime HMAC e richiedono VOTE_HASH_SECRET su Netlify.
-import { getStore } from "@netlify/blobs";
+import { getStore, getDeployStore } from "@netlify/blobs";
 import { createHash } from "node:crypto";
 import { SONDAGGI } from "../../rubriche.mjs";
 import { secretValid, tokenVoter, countBallots } from "../voti-sicuri.mjs";
@@ -27,7 +27,9 @@ export default async (req, context) => {
   const n = poll.testi.it[1].length;
   if (req.method === "POST" && (!Number.isInteger(scelta) || scelta < 0 || scelta >= n))
     return json({ errore: "Risposta non valida" }, 400);
-  const store = getStore({name:"sondaggi",consistency:"strong"});
+  const store = process.env.CONTEXT === "production"
+    ? getStore({ name: "sondaggi", consistency: "strong" })
+    : getDeployStore({ name: "sondaggi", consistency: "strong" });
   try {
     const legacy = await store.get(`voti/${id}/${legacyHash(context.ip,id)}`);
     const oldChoice = legacy === null ? null : Number(legacy);
