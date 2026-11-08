@@ -21,6 +21,11 @@ export default {
     campiExtra: { email_address_check: "", locale: "it", html_type: "simple" },
     // API di Brevo (metodo principale): numero della lista e del modello di doppia conferma.
     // La chiave segreta NON va qui: si mette su Netlify come variabile d'ambiente BREVO_API_KEY.
+    // Invio automatico ogni domenica alle 10:00 (11:00 con l'ora legale): netlify/functions/newsletter-domenica.mjs.
+    // Serve una chiave BREVO_API_KEY con il permesso "Campagne email". false = la spedisci tu a mano da Brevo.
+    invioAutomatico: true,
+    mittente: "newsletter@soffiacartuccia.it",
+    nomeMittente: "Soffia Cartuccia",
     brevo: { lista: 3, modello: 2, confermata: "https://soffiacartuccia.it/newsletter/confermata/" },
   },
   // Codice di verifica di Google Search Console (solo se scegli il metodo "tag HTML"), es. "abc123..."

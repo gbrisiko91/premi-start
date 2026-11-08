@@ -860,6 +860,11 @@ fs.writeFileSync(
   path.join(ROOT, "netlify", "dati", "articoli.mjs"),
   `// File generato da build.mjs: non modificarlo a mano.\nexport default ${JSON.stringify(originali.filter((a) => !a.bozza).map((a) => a.id))};\n`
 );
+// Articoli pubblicati per l'invio automatico della newsletter della domenica (netlify/functions/newsletter-domenica.mjs)
+fs.writeFileSync(
+  path.join(ROOT, "netlify", "dati", "newsletter.mjs"),
+  `// File generato da build.mjs: non modificarlo a mano.\nexport default ${JSON.stringify(originali.filter((a) => !a.bozza).map((a) => ({ titolo: a.titolo, titolo_seo: a.titoloSeo, sommario: a.sommario, slug: a.slug, giorno: a.data.toISOString().slice(0, 10), viralita: a.viralita, bozza: false })))};\n`
+);
 scrivi("robots.txt", `User-agent: *\nAllow: /\nSitemap: ${urlAssoluto("/sitemap.xml")}\n`);
 
 const ultimoSondaggio = SONDAGGI.at(-1).dal;

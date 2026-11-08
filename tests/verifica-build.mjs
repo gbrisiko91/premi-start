@@ -4,6 +4,8 @@ import matter from "gray-matter";
 import { LINGUE } from "../lingue.mjs";
 import { QUIZ } from "../quiz.mjs";
 import { R, SONDAGGI, USCITE } from "../rubriche.mjs";
+import { componi } from "../strumenti/newsletter-componi.mjs";
+import ARTICOLI_NL from "../netlify/dati/newsletter.mjs";
 
 for (const lingua of Object.keys(LINGUE)) {
   const prefix = lingua === "it" ? "" : lingua + "/";
@@ -50,6 +52,11 @@ for (const lingua of Object.keys(LINGUE)) {
     const html = fs.readFileSync("dist/" + relative, "utf8");
     assert.ok(html.includes("data-salva-articolo"), `Preferiti assenti: ${item.url}`);
   }
+}
+{
+  const ultimo = ARTICOLI_NL.map((a) => a.giorno).sort().at(-1);
+  const nl = componi(ARTICOLI_NL, ultimo);
+  assert.ok(nl && nl.notizie.length >= 1 && nl.html.includes("{{ unsubscribe }}") && nl.oggetto.length > 10, "Newsletter automatica non componibile");
 }
 assert.equal(new Set(SONDAGGI.map((s) => s.id)).size, SONDAGGI.length, "Id dei sondaggi duplicati");
 assert.ok(SONDAGGI.every((s, i) => i === 0 || s.dal > SONDAGGI[i - 1].dal), "Sondaggi non in ordine di data");
