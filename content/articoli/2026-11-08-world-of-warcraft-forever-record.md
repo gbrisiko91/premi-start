@@ -7,7 +7,7 @@ data: 2026-11-08
 categoria: pc
 tag: [world-of-warcraft-forever, blizzard, world-of-warcraft]
 viralita: 59
-bozza: true
+bozza: false
 immagine: "https://bnetcmsus-a.akamaihd.net/cms/blog_header/bx/BXPRPCQR5J551793833689036.png"
 immagine_riserva: "https://bnetcmsus-a.akamaihd.net/cms/blog_header/p9/P9HCAU7X9HSV1789250934116.png"
 alt_immagine: "Immagine ufficiale del lancio di World of Warcraft Forever dal blog Blizzard"
