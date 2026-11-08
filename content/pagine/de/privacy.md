@@ -31,9 +31,13 @@ Rechtsgrundlage ist unser berechtigtes Interesse, die Seite sicher bereitzustell
 
 Wenn du „Gefällt mir“ anklickst, speichern wir eine **pseudonyme technische Kennung**, die aus IP-Adresse und Artikel abgeleitet wird, um Mehrfachstimmen zu begrenzen. Ältere Stimmen nutzen einen Hash ohne geheimen Schlüssel; neue Kennungen werden mit HMAC und einem serverseitig gespeicherten Schlüssel berechnet. Diese Kennungen sind nicht vollständig anonym. Wenn du dein „Gefällt mir“ zurücknimmst, wird der Status für eine korrekte Zählung aktualisiert. Die Daten bleiben bei Netlify gespeichert, solange sie für die Stimmenverwaltung benötigt werden.
 
+Als Rechtsgrundlage wird das berechtigte Interesse an der Vermeidung mehrfacher Stimmen und an verlässlichen Ergebnissen angegeben (Art. 6 Abs. 1 lit. f DSGVO); die Bewertung sollte vom Verantwortlichen geprüft werden.
+
 ## Die Umfrage der Woche
 
 Bei einer Umfrage speichern wir zur Begrenzung doppelter Stimmen eine **pseudonyme technische Kennung** aus IP-Adresse und Umfrage sowie die gewählte Antwort. Ältere Kennungen nutzen einen Hash ohne Schlüssel; neue Kennungen verwenden serverseitiges HMAC. Wir behandeln sie nicht als vollständig anonym. Die Umfragedaten bleiben für die Auswertung bei Netlify; veröffentlicht werden nur zusammengefasste Ergebnisse. Dein Browser speichert die Antwort außerdem in *localStorage*.
+
+Als Rechtsgrundlage wird das berechtigte Interesse an der Vermeidung mehrfacher Stimmen und an verlässlichen Ergebnissen angegeben (Art. 6 Abs. 1 lit. f DSGVO); die Bewertung sollte vom Verantwortlichen geprüft werden.
 
 ## Bilder und Links zu anderen Seiten
 
