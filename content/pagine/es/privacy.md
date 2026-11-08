@@ -31,9 +31,13 @@ La base jurídica es nuestro interés legítimo en ofrecer el sitio de forma seg
 
 Cuando pulsas «Me gusta», guardamos un **identificador técnico seudónimo** derivado de tu IP y del artículo para limitar los votos duplicados. Los votos antiguos utilizaban un hash sin clave; los identificadores nuevos emplean HMAC con una clave secreta conservada en el servidor. No consideramos estos identificadores completamente anónimos. Si retiras tu «Me gusta», se actualiza el estado para mantener el recuento. Los datos se almacenan en Netlify mientras sean necesarios para gestionar los votos del artículo.
 
+La base jurídica declarada para este tratamiento es el interés legítimo en evitar votos duplicados y mostrar resultados fiables (art. 6.1.f del RGPD); el responsable debe revisar esta valoración.
+
 ## La encuesta de la semana
 
 Al votar en una encuesta, guardamos un **identificador técnico seudónimo** derivado de tu IP y de la encuesta, junto con la respuesta elegida, para limitar los votos duplicados. Los registros anteriores usan un hash sin clave; los nuevos, HMAC con clave del servidor. No los consideramos totalmente anónimos. Los registros permanecen en Netlify para gestionar el historial; solo publicamos resultados agregados. El navegador también conserva tu respuesta en *localStorage*.
+
+La base jurídica declarada para este tratamiento es el interés legítimo en evitar votos duplicados y mostrar resultados fiables (art. 6.1.f del RGPD); el responsable debe revisar esta valoración.
 
 ## Imágenes y enlaces a otros sitios
 
