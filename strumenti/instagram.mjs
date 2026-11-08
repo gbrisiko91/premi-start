@@ -5,6 +5,8 @@
 //   { "tipo": "elenco",    "categoria": "...", "colore": "...", "titolo": "...", "punti": ["...", "..."], "nota": "..." }
 //   { "tipo": "date",      "categoria": "...", "colore": "...", "titolo": "...", "date": [["10 nov", "Preload"], ...], "piede": "..." }
 //   { "tipo": "storia",    "categoria": "...", "colore": "...", "titolo": "...", "testo": "...", "invito": "Leggi la notizia" }
+// Facoltativi su ogni slide: "sfondo": "percorso/immagine.jpg" (immagine ufficiale sotto il testo, scurita)
+//   e "crediti": "Immagine: Rockstar Games" (scritto piccolo in basso, obbligatorio se c'è lo sfondo).
 // Le slide "storia" sono 1080×1920 (Storie), le altre 1080×1350 (post 4:5).
 import fs from "node:fs";
 import path from "node:path";
@@ -50,6 +52,13 @@ p{font-size:40px;line-height:1.35;color:#d9d4f2;font-weight:500}
 .cartuccia::after{content:"";position:absolute;left:30px;right:30px;bottom:-6px;height:44px;background:repeating-linear-gradient(90deg,#ffffff1c 0 14px,transparent 14px 26px)}
 `;
 
+const sfondoUrl = (f) => {
+  if (!f) return "";
+  if (/^https?:/.test(f)) return f;
+  const est = path.extname(f).slice(1).toLowerCase().replace("jpg", "jpeg");
+  return `data:image/${est};base64,${fs.readFileSync(path.resolve(path.dirname(fileSpec), f)).toString("base64")}`;
+};
+
 function html(s) {
   const c = COLORI[s.colore] || COLORI.viola;
   const alto = s.tipo === "storia" ? 1920 : 1350;
@@ -75,7 +84,7 @@ function html(s) {
       <div style="margin-top:auto;margin-bottom:250px;text-align:center"><div style="font-weight:800;font-size:38px;color:#bdb6e6;margin-bottom:26px">${esc(s.invito || "Leggi la notizia")} 👇</div>
       <div style="margin:0 auto;width:560px;height:130px;border-radius:32px;border:5px dashed #ffffff55;display:grid;place-items:center;font-size:30px;color:#ffffff88;font-weight:700">qui l'adesivo link</div></div>`;
   }
-  return `<!doctype html><html><head><meta charset="utf-8"><style>${base(c, alto)}</style></head><body><div class="fondo"></div><div class="griglia"></div>${s.tipo === "copertina" ? '<div class="cartuccia"></div>' : ""}<div class="cornice">${testa}${corpo}</div></body></html>`;
+  return `<!doctype html><html><head><meta charset="utf-8"><style>${base(c, alto)}</style></head><body>${s.sfondo ? `<div style="position:absolute;inset:0;background:url('${sfondoUrl(s.sfondo)}') center/cover"></div><div style="position:absolute;inset:0;background:linear-gradient(180deg,#0e0c22aa 0%,#0e0c2233 30%,#0e0c22dd 62%,#0e0c22 100%)"></div>` : '<div class="fondo"></div>'}${s.sfondo ? "" : '<div class="griglia"></div>'}${s.tipo === "copertina" && !s.sfondo ? '<div class="cartuccia"></div>' : ""}<div class="cornice">${testa}${corpo}</div>${s.crediti ? `<div style="position:absolute;left:56px;bottom:18px;font-size:20px;font-weight:600;color:#ffffffaa">${esc(s.crediti)}</div>` : ""}</body></html>`;
 }
 
 const browser = await chromium.launch();
