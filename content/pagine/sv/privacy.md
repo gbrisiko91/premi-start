@@ -29,15 +29,11 @@ Den rättsliga grunden är vårt berättigade intresse av att tillhandahålla sa
 
 ## Knappen ”Gilla”
 
-När du trycker på ”Gilla” på en artikel sparar vi ett **anonymt fingeravtryck** för att samma besökare inte ska kunna rösta flera gånger: en kod som beräknas utifrån din IP-adress och artikeln, och som IP-adressen inte kan återskapas ur. Tillsammans med fingeravtrycket sparar vi bara att du gillade artikeln. Uppgiften sparas på Netlifys servrar så länge artikeln är publicerad och raderas om du tar bort din ”Gilla”.
-
-Den rättsliga grunden är vårt berättigade intresse av att visa en tillförlitlig räkning. Trycker du inte på knappen sparas ingenting.
+När du trycker på ”Gilla” sparar vi en **pseudonym teknisk identifierare** baserad på din IP-adress och artikeln för att begränsa dubbelröster. Tidigare röster använde en hash utan hemlig nyckel; nya identifierare använder HMAC med en nyckel som förvaras på servern. Uppgifterna är inte nödvändigtvis helt anonyma. Om du tar bort din gilla-markering uppdateras statusen för korrekt räkning. Uppgifterna lagras hos Netlify så länge de behövs för artikelröstningen.
 
 ## Veckans omröstning
 
-När du röstar sparar vi ett **anonymt fingeravtryck**, beräknat utifrån din IP-adress och omröstningen, som inte går att spåra tillbaka till adressen, tillsammans med svaret du valde, för att förhindra dubbelröster. Uppgifterna lagras på Netlifys servrar så länge omröstningen finns på sajten; vi publicerar bara det totala antalet röster. Din webbläsare minns dessutom ditt svar i sin lokala lagring (*localStorage*) så att du ser resultatet direkt.
-
-Den rättsliga grunden är vårt berättigade intresse av att visa tillförlitliga resultat. Om du inte röstar sparas ingenting.
+När du deltar i en omröstning sparar vi en **pseudonym teknisk identifierare** baserad på IP-adress och omröstning tillsammans med ditt svar, för att begränsa dubbelröster. Äldre identifierare använder hash utan nyckel, nya använder servernycklad HMAC. Vi betraktar dem inte som helt anonyma. Uppgifterna lagras hos Netlify för omröstningshistoriken; bara sammanställda resultat publiceras. Webbläsaren sparar även ditt svar i *localStorage*.
 
 ## Bilder och länkar till andra sajter
 
