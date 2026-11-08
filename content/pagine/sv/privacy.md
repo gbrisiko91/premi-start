@@ -31,9 +31,13 @@ Den rättsliga grunden är vårt berättigade intresse av att tillhandahålla sa
 
 När du trycker på ”Gilla” sparar vi en **pseudonym teknisk identifierare** baserad på din IP-adress och artikeln för att begränsa dubbelröster. Tidigare röster använde en hash utan hemlig nyckel; nya identifierare använder HMAC med en nyckel som förvaras på servern. Uppgifterna är inte nödvändigtvis helt anonyma. Om du tar bort din gilla-markering uppdateras statusen för korrekt räkning. Uppgifterna lagras hos Netlify så länge de behövs för artikelröstningen.
 
+Den angivna rättsliga grunden är berättigat intresse av att förhindra dubbelröster och visa tillförlitliga resultat (GDPR art. 6.1 f); personuppgiftsansvarig bör granska bedömningen.
+
 ## Veckans omröstning
 
 När du deltar i en omröstning sparar vi en **pseudonym teknisk identifierare** baserad på IP-adress och omröstning tillsammans med ditt svar, för att begränsa dubbelröster. Äldre identifierare använder hash utan nyckel, nya använder servernycklad HMAC. Vi betraktar dem inte som helt anonyma. Uppgifterna lagras hos Netlify för omröstningshistoriken; bara sammanställda resultat publiceras. Webbläsaren sparar även ditt svar i *localStorage*.
+
+Den angivna rättsliga grunden är berättigat intresse av att förhindra dubbelröster och visa tillförlitliga resultat (GDPR art. 6.1 f); personuppgiftsansvarig bör granska bedömningen.
 
 ## Bilder och länkar till andra sajter
 
