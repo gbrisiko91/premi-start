@@ -7,7 +7,7 @@ data: 2026-11-08
 categoria: industria
 tag: [sega, bandai-namco, taiko-no-tatsujin, arcade]
 viralita: 64
-bozza: true
+bozza: false
 immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2288630/library_hero.jpg"
 immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2288630/fe1ef81e09d106e03905cb17fcfcd041ab9003d6/capsule_616x353.jpg"
 alt_immagine: "Immagine ufficiale di Taiko no Tatsujin: Rhythm Festival con il tamburo Don-chan"
