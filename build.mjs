@@ -157,7 +157,7 @@ function leggiTraduzioni(originali) {
         tag: Array.isArray(d.tag) ? d.tag : base.tag,
         parolaChiave: d.parola_chiave || "",
         minuti: minutiLettura(l, content),
-        html: marked.parse(content).replace(/<p>\s*<\/p>/g, ""),
+        html: marked.parse(rimuoviNote(content)).replace(/<p>\s*<\/p>/g, ""),
         url: P.articolo(l, slug),
         originale: base,
       });
