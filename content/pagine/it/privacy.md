@@ -29,15 +29,11 @@ La base giuridica è il nostro legittimo interesse a rendere disponibile il sito
 
 ## Il tasto "Mi piace"
 
-Quando premi "Mi piace" su un articolo, per evitare che lo stesso visitatore voti più volte salviamo un'**impronta anonima**: un codice calcolato a partire dal tuo indirizzo IP e dall'articolo, dal quale non è possibile risalire all'indirizzo IP stesso. Insieme all'impronta salviamo soltanto il fatto che quell'articolo ti è piaciuto. Il dato è conservato sui server di Netlify finché l'articolo resta pubblicato, e viene cancellato se togli il "Mi piace".
-
-La base giuridica è il nostro legittimo interesse a mostrare un conteggio affidabile. Se non premi il tasto, non viene salvato nulla.
+Quando premi "Mi piace", per limitare i voti ripetuti registriamo uno **pseudonimo tecnico** derivato dall'indirizzo IP e dall'articolo. I vecchi voti usano un hash senza chiave; i nuovi identificativi sono calcolati con HMAC e una chiave conservata sul server. Gli identificativi non sono dati anonimi in senso assoluto. Conserviamo anche lo stato del voto: se lo annulli, lo stato viene aggiornato per mantenere il conteggio corretto. I dati risiedono su Netlify e sono conservati finché servono alla gestione delle votazioni dell'articolo.
 
 ## Il sondaggio della settimana
 
-Quando voti nel sondaggio, per evitare voti doppi salviamo un'**impronta anonima** calcolata dal tuo indirizzo IP e dal sondaggio, dalla quale non è possibile risalire all'indirizzo, insieme alla risposta che hai scelto. I dati sono conservati sui server di Netlify finché il sondaggio resta sul sito; pubblichiamo soltanto il totale dei voti. Il browser ricorda inoltre nella propria memoria locale (*localStorage*) la tua risposta, per mostrarti subito i risultati.
-
-La base giuridica è il nostro legittimo interesse a mostrare risultati affidabili. Se non voti, non viene salvato nulla.
+Quando partecipi al sondaggio registriamo uno **pseudonimo tecnico** derivato dall'IP e dal sondaggio, insieme alla risposta scelta, per limitare voti duplicati. I voti storici sono basati su hash senza chiave; i nuovi identificativi sono protetti tramite HMAC con chiave sul server. Non consideriamo queste impronte completamente anonime. I record rimangono su Netlify per gestire lo storico del sondaggio; pubblichiamo solo i risultati aggregati. Il browser salva inoltre la tua scelta in *localStorage* per mostrarti i risultati.
 
 ## La newsletter
 
