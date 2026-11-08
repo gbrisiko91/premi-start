@@ -29,15 +29,11 @@ Behandlingsgrunnlaget er vår berettigede interesse i å gjøre nettstedet tilgj
 
 ## «Lik»-knappen
 
-Når du trykker «Lik» på en artikkel, lagrer vi et **anonymt fingeravtrykk** for å hindre at samme besøkende stemmer flere ganger: en kode beregnet ut fra IP-adressen din og artikkelen, som IP-adressen ikke kan gjenskapes fra. Sammen med fingeravtrykket lagrer vi bare at du likte artikkelen. Opplysningen lagres på Netlifys servere så lenge artikkelen er publisert, og slettes hvis du fjerner «Lik».
-
-Behandlingsgrunnlaget er vår berettigede interesse i å vise et pålitelig antall. Trykker du ikke på knappen, lagres ingenting.
+Når du trykker «Lik», lagrer vi en **pseudonym teknisk identifikator** basert på IP-adressen din og artikkelen for å begrense dobbeltstemmer. Gamle stemmer bruker en hash uten hemmelig nøkkel; nye identifikatorer bruker HMAC med en nøkkel lagret på serveren. Dette er ikke nødvendigvis anonyme data. Når du fjerner «Lik», oppdateres stemmestatusen for korrekt opptelling. Data lagres hos Netlify så lenge de trengs for å håndtere artikkelstemmer.
 
 ## Ukens avstemning
 
-Når du stemmer, lagrer vi et **anonymt fingeravtrykk** beregnet ut fra IP-adressen din og avstemningen, som ikke kan spores tilbake til adressen, sammen med svaret du valgte, for å hindre dobbeltstemmer. Dataene lagres på Netlifys servere så lenge avstemningen ligger på nettstedet; vi publiserer bare totalt antall stemmer. Nettleseren din husker i tillegg svaret ditt i lokal lagring (*localStorage*) slik at du ser resultatene med en gang.
-
-Behandlingsgrunnlaget er vår berettigede interesse i å vise pålitelige resultater. Hvis du ikke stemmer, lagres ingenting.
+Når du deltar i en avstemning, lagrer vi en **pseudonym teknisk identifikator** basert på IP-adressen og avstemningen, sammen med svaret, for å begrense dobbeltstemmer. Historiske identifikatorer bruker hash uten nøkkel; nye bruker HMAC med servernøkkel. De regnes ikke som helt anonyme. Opplysningene oppbevares hos Netlify for avstemningshistorikk; bare samlede resultater publiseres. Nettleseren lagrer også svaret i *localStorage*.
 
 ## Bilder og lenker til andre nettsteder
 
