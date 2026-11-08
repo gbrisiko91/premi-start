@@ -31,9 +31,13 @@ The legal basis is our legitimate interest in making the site available securely
 
 When you press "Like", we record a **pseudonymous technical identifier** derived from your IP address and the article to limit duplicate votes. Older votes used an unkeyed hash; new identifiers use HMAC with a secret kept on the server. These identifiers are not necessarily anonymous personal data. We also retain the voting state: if you remove your Like, the state is updated to keep counts accurate. Data is stored with Netlify while needed to manage the article's votes.
 
+The stated legal basis for this processing is legitimate interest in preventing duplicate votes and displaying reliable results (GDPR Art. 6(1)(f)); the controller should review the assessment.
+
 ## The poll of the week
 
 When you take part in a poll, we store a **pseudonymous technical identifier** based on your IP address and the poll, together with your selected answer, to limit duplicate votes. Historical identifiers used an unkeyed hash; new ones use server-keyed HMAC. We do not regard these identifiers as fully anonymous. Poll records remain with Netlify for the poll's history; only aggregate results are published. Your browser also saves your choice in *localStorage* to show the results.
+
+The stated legal basis for this processing is legitimate interest in preventing duplicate votes and displaying reliable results (GDPR Art. 6(1)(f)); the controller should review the assessment.
 
 ## Images and links to other sites
 
