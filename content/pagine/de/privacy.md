@@ -29,15 +29,11 @@ Rechtsgrundlage ist unser berechtigtes Interesse, die Seite sicher bereitzustell
 
 ## Der „Gefällt mir“-Button
 
-Wenn du bei einem Artikel auf „Gefällt mir“ drückst, speichern wir, damit dieselbe Person nicht mehrfach abstimmt, einen **anonymen Fingerabdruck**: einen Code, der aus deiner IP-Adresse und dem Artikel berechnet wird und aus dem sich die IP-Adresse nicht zurückgewinnen lässt. Zusammen mit dem Fingerabdruck speichern wir nur, dass dir der Artikel gefallen hat. Die Daten liegen auf den Servern von Netlify, solange der Artikel veröffentlicht ist, und werden gelöscht, wenn du dein „Gefällt mir“ zurücknimmst.
-
-Rechtsgrundlage ist unser berechtigtes Interesse, eine verlässliche Zählung anzuzeigen. Wenn du den Button nicht drückst, wird nichts gespeichert.
+Wenn du „Gefällt mir“ anklickst, speichern wir eine **pseudonyme technische Kennung**, die aus IP-Adresse und Artikel abgeleitet wird, um Mehrfachstimmen zu begrenzen. Ältere Stimmen nutzen einen Hash ohne geheimen Schlüssel; neue Kennungen werden mit HMAC und einem serverseitig gespeicherten Schlüssel berechnet. Diese Kennungen sind nicht vollständig anonym. Wenn du dein „Gefällt mir“ zurücknimmst, wird der Status für eine korrekte Zählung aktualisiert. Die Daten bleiben bei Netlify gespeichert, solange sie für die Stimmenverwaltung benötigt werden.
 
 ## Die Umfrage der Woche
 
-Wenn du an der Umfrage teilnimmst, speichern wir zur Vermeidung doppelter Stimmen einen **anonymen Fingerabdruck**, der aus deiner IP-Adresse und der Umfrage berechnet wird und keinen Rückschluss auf die Adresse zulässt, zusammen mit der gewählten Antwort. Die Daten werden auf den Servern von Netlify gespeichert, solange die Umfrage auf der Website bleibt; veröffentlicht werden nur die Gesamtzahlen. Dein Browser merkt sich deine Antwort außerdem im lokalen Speicher (*localStorage*), um dir die Ergebnisse sofort anzuzeigen.
-
-Rechtsgrundlage ist unser berechtigtes Interesse an verlässlichen Ergebnissen. Wenn du nicht abstimmst, wird nichts gespeichert.
+Bei einer Umfrage speichern wir zur Begrenzung doppelter Stimmen eine **pseudonyme technische Kennung** aus IP-Adresse und Umfrage sowie die gewählte Antwort. Ältere Kennungen nutzen einen Hash ohne Schlüssel; neue Kennungen verwenden serverseitiges HMAC. Wir behandeln sie nicht als vollständig anonym. Die Umfragedaten bleiben für die Auswertung bei Netlify; veröffentlicht werden nur zusammengefasste Ergebnisse. Dein Browser speichert die Antwort außerdem in *localStorage*.
 
 ## Bilder und Links zu anderen Seiten
 
