@@ -7,7 +7,7 @@ data: 2026-11-08
 categoria: pc
 tag: [league-of-legends, worlds-2026, esports, gen-g, t1]
 viralita: 84
-bozza: true
+bozza: false
 immagine: ""
 immagine_riserva: ""
 alt_immagine: ""
