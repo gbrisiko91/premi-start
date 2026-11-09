@@ -7,7 +7,7 @@ data: 2026-11-09
 categoria: industria
 tag: [playstation, ps5, ghost-of-yotei, until-dawn-2, sony]
 viralita: 61
-bozza: true
+bozza: false
 immagine: "https://image.api.playstation.com/vulcan/ap/rnd/202608/2808/6779640b51ca4b98c8185f677cb10e13792de40fe06614fa.png"
 immagine_riserva: "https://gmedia.playstation.com/is/image/SIEPDC/until-dawn-2-hero-desktop-01-02sep26"
 alt_immagine: "Immagine ufficiale di Until Dawn 2, esclusiva PlayStation per PS5"
