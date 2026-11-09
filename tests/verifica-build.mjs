@@ -66,4 +66,18 @@ assert.ok(fs.existsSync("dist/newsletter/grazie/index.html") && fs.existsSync("d
 for (const f of ["dist/rubriche.css","dist/uscite.js","dist/sondaggio.js","dist/novita.css","dist/quiz.css","dist/quiz.js","dist/esperienza.js","dist/sitemap.xml","dist/rss.xml","dist/stile.css"]) {
   assert.ok(fs.existsSync(f), `File mancante: ${f}`);
 }
+{
+  // Google: niente link a indirizzi che reindirizzano (es. /404.html → /404) e 404 fuori dall'indice
+  const pagine = [];
+  const giro = (d) => { for (const f of fs.readdirSync(d, { withFileTypes: true })) { const x = `${d}/${f.name}`; if (f.isDirectory()) giro(x); else if (x.endsWith(".html")) pagine.push(x); } };
+  giro("dist");
+  for (const f of pagine) {
+    const h = fs.readFileSync(f, "utf8");
+    assert.ok(!/(href|content)="(\/|https?:\/\/(www\.)?soffiacartuccia\.it)[^"]*\.html"/.test(h), `Link interno a una pagina .html (Netlify la reindirizza) in ${f}`);
+    assert.ok(!/"(http:\/\/|https:\/\/www\.)soffiacartuccia\.it/.test(h), `Link interno con http o www (reindirizzato) in ${f}`);
+    if (f.endsWith("404.html")) assert.ok(h.includes('content="noindex') && !h.includes('rel="canonical"'), `404 indicizzabile: ${f}`);
+  }
+  const sm = fs.readFileSync("dist/sitemap.xml", "utf8");
+  assert.ok([...sm.matchAll(/<loc>([^<]*)<\/loc>/g)].every((m) => /^https:\/\/soffiacartuccia\.it\/(.*\/)?$/.test(m[1])), "Sitemap con indirizzi che reindirizzano");
+}
 console.log("OK: tutte le lingue, indici, articoli e asset verificati.");

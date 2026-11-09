@@ -278,11 +278,13 @@ let PAGINE_FISSE = [];
 const pagineDi = (l) => PAGINE_FISSE.filter((p) => p.lingua === l).sort((a, b) => a.ordine - b.ordine);
 const urlPaginaFissa = (l, id) => (PAGINE_FISSE.find((p) => p.lingua === l && p.id === id) || PAGINE_FISSE.find((p) => p.lingua === PRINCIPALE && p.id === id))?.url || P.home(l);
 
-function pagina({ l, titolo, titoloSeo = "", descrizione, percorso, corpo, tipo = "website", ticker = [], articolo = null, alternative = {}, robots = "index, follow, max-image-preview:large, max-snippet:-1" }) {
+function pagina({ l, titolo, titoloSeo = "", descrizione, percorso, corpo, tipo = "website", ticker = [], articolo = null, alternative = {}, robots = "index, follow, max-image-preview:large, max-snippet:-1", errore = false }) {
+  // Pagine di errore (404): fuori da Google, senza canonical, hreflang né og:url
+  if (errore) robots = "noindex, follow";
   const t = T[l];
   const u = U[l];
   descrizione ??= t.motto;
-  alternative = { ...alternative, [l]: percorso };
+  alternative = errore ? {} : { ...alternative, [l]: percorso };
   const titoloCompleto = titolo ? `${titoloSeo || titolo} – ${config.nome}` : `${config.nome} – ${t.motto}`;
   const immagineSocial = articolo?.immagine ? urlImmagine(articolo.immagine) : urlAssoluto("/condivisione.png");
   const metaArticolo = articolo
@@ -309,11 +311,11 @@ function pagina({ l, titolo, titoloSeo = "", descrizione, percorso, corpo, tipo 
 <meta name="description" content="${esc(descrizione)}">
 <meta name="theme-color" content="#15122b">
 <meta name="robots" content="${robots}">
-<link rel="canonical" href="${urlAssoluto(percorso)}">${hreflang}
+${errore ? "" : `<link rel="canonical" href="${urlAssoluto(percorso)}">${hreflang}`}
 <meta property="og:type" content="${tipo}">
 <meta property="og:title" content="${esc(titolo || config.nome)}">
 <meta property="og:description" content="${esc(descrizione)}">
-<meta property="og:url" content="${urlAssoluto(percorso)}">
+${errore ? "" : `<meta property="og:url" content="${urlAssoluto(percorso)}">`}
 <meta property="og:site_name" content="${esc(config.nome)}">
 <meta property="og:locale" content="${LINGUE[l].og}">${ogAlt}
 <meta property="og:image" content="${esc(immagineSocial)}">
@@ -830,7 +832,7 @@ for (const l of CODICI) {
   for (const p of pagineDi(l)) scriviPagina(p.url, paginaFissa(p, lista));
   const percorso404 = l === PRINCIPALE ? "/404.html" : `${pre(l)}/404.html`;
   scrivi(percorso404.slice(1), pagina({
-    l, titolo: t.nonTrovato, percorso: percorso404, alternative: {},
+    l, titolo: t.nonTrovato, percorso: percorso404, alternative: {}, errore: true,
     corpo: `<section class="schermata-titolo"><p class="schermata-sopra">${esc(t.errore)}</p><h1 class="schermata-logo"><span>Game</span><span>Over</span></h1><p class="schermata-sotto">${esc(t.nonTrovatoTesto)}</p><p><a class="tasto-start" href="${P.home(l)}">${esc(t.tornaHome)}</a></p></section>`,
   }));
   if (l !== PRINCIPALE) redirect404.push(`${pre(l)}/*  ${pre(l)}/404.html  404`);
