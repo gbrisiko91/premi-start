@@ -7,7 +7,7 @@ data: 2026-11-09
 categoria: retro
 tag: [the-legend-of-zelda, ocarina-of-time, master-quest, nintendo-switch-2]
 viralita: 66
-bozza: true
+bozza: false
 immagine: "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_2_games/thelegendofzeldaocarinaoftime/banners/16x9_PDP_NSwitch2_TloZOcarinaOfTime_AnniLogo_image1600w.jpg"
 immagine_riserva: "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_2_games/thelegendofzeldaocarinaoftime/banners/16x9_PDP_NSwitch2_TloZOcarinaOfTime_AnniLogo_image1280w.jpg"
 alt_immagine: "Immagine ufficiale di Zelda Ocarina of Time per Nintendo Switch 2 con il logo"
