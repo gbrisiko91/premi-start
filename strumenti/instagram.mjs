@@ -87,7 +87,7 @@ function html(s) {
     return `<!doctype html><html><head><meta charset="utf-8"><style>${base(c, alto)}
       .foto{position:absolute;inset:0;background:url(${dati}) center/cover no-repeat}
       .velo{position:absolute;inset:0;background:linear-gradient(180deg,#0e0c22cc 0%,#0e0c2200 22%,#0e0c2200 45%,#0e0c22ee 78%,#0e0c22 100%)}
-      .crediti{font-size:24px;font-weight:600;color:#ffffffb3;letter-spacing:.3px}</style></head><body><div class="foto"></div><div class="velo"></div>
+      .crediti{display:inline-block;font-size:28px;font-weight:700;color:#fff;letter-spacing:.3px;background:#0e0c22d9;border:2px solid #ffffff40;border-radius:14px;padding:10px 18px}</style></head><body><div class="foto"></div><div class="velo"></div>
       <div class="cornice">${testa}<div style="margin-top:auto${storia ? ";margin-bottom:230px" : ""}">${s.occhiello ? `<div class="occhiello" style="font-size:80px">${esc(s.occhiello)}</div>` : ""}
       ${s.titolo ? `<h1 style="font-size:${storia ? 100 : 84}px;margin:18px 0 26px">${ricco(s.titolo)}</h1>` : ""}${s.testo ? `<p style="font-size:${storia ? 44 : 38}px">${ricco(s.testo)}</p>` : ""}
       <div class="crediti" style="margin-top:28px">📷 ${esc(s.crediti)}</div></div></div></body></html>`;
