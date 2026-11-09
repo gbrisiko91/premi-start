@@ -5,7 +5,8 @@
 //   { "tipo": "elenco",    "categoria": "...", "colore": "...", "titolo": "...", "punti": ["...", "..."], "nota": "..." }
 //   { "tipo": "date",      "categoria": "...", "colore": "...", "titolo": "...", "date": [["10 nov", "Preload"], ...], "piede": "..." }
 //   { "tipo": "storia",    "categoria": "...", "colore": "...", "titolo": "...", "testo": "...", "invito": "Leggi la notizia" }
-//   { "tipo": "foto",      "categoria": "...", "colore": "...", "immagine": "percorso/locale.jpg", "crediti": "Immagine: EA / BioWare", "titolo": "...", "testo": "...", "formato": "post|storia" }
+//   { "tipo": "foto",      "categoria": "...", "colore": "...", "immagine": "percorso/locale.jpg", "crediti": "Immagine: EA / BioWare", "titolo": "...", "testo": "...", "formato": "post|storia", "intera": true }
+//     ("intera": la foto orizzontale si vede tutta, a piena larghezza, con il testo sotto)
 //     (foto reale a tutto schermo, con il credito sempre stampato in basso)
 // Le slide "storia" sono 1080×1920 (Storie), le altre 1080×1350 (post 4:5).
 import fs from "node:fs";
@@ -85,9 +86,12 @@ function html(s) {
     const dati = `data:image/${ext};base64,${fs.readFileSync(s.immagine).toString("base64")}`;
     const storia = alto === 1920;
     return `<!doctype html><html><head><meta charset="utf-8"><style>${base(c, alto)}
-      .foto{position:absolute;inset:0;background:url(${dati}) center/cover no-repeat}
-      .velo{position:absolute;inset:0;background:linear-gradient(180deg,#0e0c22cc 0%,#0e0c2200 22%,#0e0c2200 45%,#0e0c22ee 78%,#0e0c22 100%)}
-      .crediti{display:inline-block;font-size:28px;font-weight:700;color:#fff;letter-spacing:.3px;background:#0e0c22d9;border:2px solid #ffffff40;border-radius:14px;padding:10px 18px}</style></head><body><div class="foto"></div><div class="velo"></div>
+      ${s.intera
+        ? `.foto{position:absolute;left:0;right:0;top:${storia ? 420 : 170}px;height:${storia ? 640 : 610}px;background:url(${dati}) center/cover no-repeat}
+      .velo{position:absolute;left:0;right:0;top:${storia ? 420 : 170}px;height:${storia ? 640 : 610}px;background:linear-gradient(180deg,#0e0c22 0%,#0e0c2200 14%,#0e0c2200 72%,#0e0c22 100%)}`
+        : `.foto{position:absolute;inset:0;background:url(${dati}) center/cover no-repeat}
+      .velo{position:absolute;inset:0;background:linear-gradient(180deg,#0e0c22cc 0%,#0e0c2200 22%,#0e0c2200 45%,#0e0c22ee 78%,#0e0c22 100%)}`}
+      .crediti{display:inline-block;font-size:28px;font-weight:700;color:#fff;letter-spacing:.3px;background:#0e0c22d9;border:2px solid #ffffff40;border-radius:14px;padding:10px 18px}</style></head><body>${s.intera ? '<div class="fondo"></div><div class="griglia"></div>' : ""}<div class="foto"></div><div class="velo"></div>
       <div class="cornice">${testa}<div style="margin-top:auto${storia ? ";margin-bottom:230px" : ""}">${s.occhiello ? `<div class="occhiello" style="font-size:80px">${esc(s.occhiello)}</div>` : ""}
       ${s.titolo ? `<h1 style="font-size:${storia ? 100 : 84}px;margin:18px 0 26px">${ricco(s.titolo)}</h1>` : ""}${s.testo ? `<p style="font-size:${storia ? 44 : 38}px">${ricco(s.testo)}</p>` : ""}
       <div class="crediti" style="margin-top:28px">📷 ${esc(s.crediti)}</div></div></div></body></html>`;
