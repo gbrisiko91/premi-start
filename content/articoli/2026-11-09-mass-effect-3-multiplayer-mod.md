@@ -7,7 +7,7 @@ data: 2026-11-09
 categoria: pc
 tag: [mass-effect, mass-effect-legendary-edition, me3tweaks, bioware]
 viralita: 69
-bozza: false
+bozza: true
 immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1328670/library_hero.jpg"
 immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1328670/header.jpg"
 alt_immagine: "Immagine ufficiale di Mass Effect Legendary Edition con il comandante Shepard e la Normandy"
