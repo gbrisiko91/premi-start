@@ -1,10 +1,12 @@
-// Genera le immagini per Instagram nello stile di Soffia Cartuccia (solo grafica e testo, nessuna immagine di terzi).
+// Genera le immagini per Instagram nello stile di Soffia Cartuccia.
 //   node strumenti/instagram.mjs <post.json> <cartella-di-uscita>
 // post.json: { "slide": [ ... ] } dove ogni slide è uno di questi tipi:
 //   { "tipo": "copertina", "categoria": "Console", "colore": "rosso", "occhiello": "GTA 6", "titolo": "...", "testo": "...", "piede": "Scorri →" }
 //   { "tipo": "elenco",    "categoria": "...", "colore": "...", "titolo": "...", "punti": ["...", "..."], "nota": "..." }
 //   { "tipo": "date",      "categoria": "...", "colore": "...", "titolo": "...", "date": [["10 nov", "Preload"], ...], "piede": "..." }
 //   { "tipo": "storia",    "categoria": "...", "colore": "...", "titolo": "...", "testo": "...", "invito": "Leggi la notizia" }
+//   { "tipo": "foto",      "categoria": "...", "colore": "...", "immagine": "percorso/locale.jpg", "crediti": "Immagine: EA / BioWare", "titolo": "...", "testo": "...", "formato": "post|storia" }
+//     (foto reale a tutto schermo, con il credito sempre stampato in basso)
 // Le slide "storia" sono 1080×1920 (Storie), le altre 1080×1350 (post 4:5).
 import fs from "node:fs";
 import path from "node:path";
@@ -50,9 +52,11 @@ p{font-size:40px;line-height:1.35;color:#d9d4f2;font-weight:500}
 .cartuccia::after{content:"";position:absolute;left:30px;right:30px;bottom:-6px;height:44px;background:repeating-linear-gradient(90deg,#ffffff1c 0 14px,transparent 14px 26px)}
 `;
 
+const altezza = (s) => (s.tipo === "storia" || (s.tipo === "foto" && s.formato === "storia") ? 1920 : 1350);
+
 function html(s) {
   const c = COLORI[s.colore] || COLORI.viola;
-  const alto = s.tipo === "storia" ? 1920 : 1350;
+  const alto = altezza(s);
   const testa = `<div class="testa"><div class="marchio"><span>Soffia</span> <span>Cartuccia</span></div><div class="chip"><i></i>${esc(s.categoria || "")}</div></div>`;
   let corpo = "";
   if (s.tipo === "copertina") {
@@ -74,13 +78,26 @@ function html(s) {
       ${s.testo ? `<p style="font-size:46px">${ricco(s.testo)}</p>` : ""}</div>
       <div style="margin-top:auto;margin-bottom:250px;text-align:center"><div style="font-weight:800;font-size:38px;color:#bdb6e6;margin-bottom:26px">${esc(s.invito || "Leggi la notizia")} 👇</div>
       <div style="margin:0 auto;width:560px;height:130px;border-radius:32px;border:5px dashed #ffffff55;display:grid;place-items:center;font-size:30px;color:#ffffff88;font-weight:700">qui l'adesivo link</div></div>`;
+  } else if (s.tipo === "foto") {
+    if (!s.immagine || !fs.existsSync(s.immagine)) throw new Error(`Immagine mancante: ${s.immagine}`);
+    if (!s.crediti) throw new Error(`Crediti mancanti per ${s.immagine}`);
+    const ext = path.extname(s.immagine).slice(1).toLowerCase().replace("jpg", "jpeg");
+    const dati = `data:image/${ext};base64,${fs.readFileSync(s.immagine).toString("base64")}`;
+    const storia = alto === 1920;
+    return `<!doctype html><html><head><meta charset="utf-8"><style>${base(c, alto)}
+      .foto{position:absolute;inset:0;background:url(${dati}) center/cover no-repeat}
+      .velo{position:absolute;inset:0;background:linear-gradient(180deg,#0e0c22cc 0%,#0e0c2200 22%,#0e0c2200 45%,#0e0c22ee 78%,#0e0c22 100%)}
+      .crediti{font-size:24px;font-weight:600;color:#ffffffb3;letter-spacing:.3px}</style></head><body><div class="foto"></div><div class="velo"></div>
+      <div class="cornice">${testa}<div style="margin-top:auto${storia ? ";margin-bottom:230px" : ""}">${s.occhiello ? `<div class="occhiello" style="font-size:80px">${esc(s.occhiello)}</div>` : ""}
+      ${s.titolo ? `<h1 style="font-size:${storia ? 100 : 84}px;margin:18px 0 26px">${ricco(s.titolo)}</h1>` : ""}${s.testo ? `<p style="font-size:${storia ? 44 : 38}px">${ricco(s.testo)}</p>` : ""}
+      <div class="crediti" style="margin-top:28px">📷 ${esc(s.crediti)}</div></div></div></body></html>`;
   }
   return `<!doctype html><html><head><meta charset="utf-8"><style>${base(c, alto)}</style></head><body><div class="fondo"></div><div class="griglia"></div>${s.tipo === "copertina" ? '<div class="cartuccia"></div>' : ""}<div class="cornice">${testa}${corpo}</div></body></html>`;
 }
 
 const browser = await chromium.launch();
 for (const [i, s] of spec.slide.entries()) {
-  const alto = s.tipo === "storia" ? 1920 : 1350;
+  const alto = altezza(s);
   const pagina = await browser.newPage({ viewport: { width: 1080, height: alto }, deviceScaleFactor: 1 });
   await pagina.setContent(html(s), { waitUntil: "load" });
   const nome = s.file || `${String(i + 1).padStart(2, "0")}-${s.tipo}.png`;
