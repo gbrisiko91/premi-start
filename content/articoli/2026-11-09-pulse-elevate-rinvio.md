@@ -7,7 +7,7 @@ data: 2026-11-09
 categoria: console
 tag: [pulse-elevate, playstation, ps5, sony]
 viralita: 63
-bozza: true
+bozza: false
 immagine: "https://blog.playstation.com/tachyon/2025/09/0b5929848fab038c483bf779be2c9388791ca4b7.jpg"
 immagine_riserva: "https://blog.playstation.com/tachyon/2025/09/33a1663d44d742a2e7d0d44c264e8c2fe8bd37dc-scaled.jpg?fit=1024%2C1024"
 alt_immagine: "Gli altoparlanti wireless Pulse Elevate per PS5 e PC nell'immagine ufficiale PlayStation"
