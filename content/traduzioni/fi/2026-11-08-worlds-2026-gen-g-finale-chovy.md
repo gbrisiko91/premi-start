@@ -1,7 +1,7 @@
 ---
 titolo: "Chovy murtaa kirouksen: seitsemän MM-kisan jälkeen Gen.G vie hänet finaaliin"
 titolo_seo: "Worlds 2026: Gen.G finaaliin, Chovy murtaa kirouksen"
-sommario: "Gen.G voitti Invictus Gamingin 3–0 ja eteni Worlds 2026 -finaaliin: Chovylle ensimmäinen kerta seitsemän MM-kisan jälkeen. Tänä yönä BLG–T1 ratkaisee vastustajan."
+sommario: "Gen.G kaatoi Invictus Gamingin 3–0 ja eteni Worlds 2026 -finaaliin: Chovylle ensimmäinen seitsemän MM-kisan jälkeen. BLG–T1 ratkaisee yöllä vastustajan."
 slug: "worlds-2026-gen-g-finaali-chovy"
 ---
 
