@@ -87,14 +87,16 @@ function html(s) {
     const storia = alto === 1920;
     return `<!doctype html><html><head><meta charset="utf-8"><style>${base(c, alto)}
       ${s.intera
-        ? `.foto{position:absolute;left:0;right:0;top:${storia ? 420 : 170}px;height:${storia ? 640 : 610}px;background:url(${dati}) center/cover no-repeat}
-      .velo{position:absolute;left:0;right:0;top:${storia ? 420 : 170}px;height:${storia ? 640 : 610}px;background:linear-gradient(180deg,#0e0c22 0%,#0e0c2200 14%,#0e0c2200 72%,#0e0c22 100%)}`
+        ? `.foto{position:absolute;left:0;right:0;top:${storia ? 200 : 170}px;height:${storia ? 640 : 610}px;background:url(${dati}) center/cover no-repeat}
+      .velo{position:absolute;left:0;right:0;top:${storia ? 200 : 170}px;height:${storia ? 640 : 610}px;background:linear-gradient(180deg,#0e0c22 0%,#0e0c2200 14%,#0e0c2200 72%,#0e0c22 100%)}`
         : `.foto{position:absolute;inset:0;background:url(${dati}) center/cover no-repeat}
       .velo{position:absolute;inset:0;background:linear-gradient(180deg,#0e0c22cc 0%,#0e0c2200 22%,#0e0c2200 45%,#0e0c22ee 78%,#0e0c22 100%)}`}
       .crediti{display:inline-block;font-size:28px;font-weight:700;color:#fff;letter-spacing:.3px;background:#0e0c22d9;border:2px solid #ffffff40;border-radius:14px;padding:10px 18px}</style></head><body>${s.intera ? '<div class="fondo"></div><div class="griglia"></div>' : ""}<div class="foto"></div><div class="velo"></div>
-      <div class="cornice">${testa}<div style="margin-top:auto${storia ? ";margin-bottom:230px" : ""}">${s.occhiello ? `<div class="occhiello" style="font-size:80px">${esc(s.occhiello)}</div>` : ""}
+      <div class="cornice">${testa}<div style="margin-top:${storia && s.intera ? "900px" : "auto"}${storia ? ";margin-bottom:330px" : ""}">${s.occhiello ? `<div class="occhiello" style="font-size:80px">${esc(s.occhiello)}</div>` : ""}
       ${s.titolo ? `<h1 style="font-size:${storia ? 100 : 84}px;margin:18px 0 26px">${ricco(s.titolo)}</h1>` : ""}${s.testo ? `<p style="font-size:${storia ? 44 : 38}px">${ricco(s.testo)}</p>` : ""}
-      <div class="crediti" style="margin-top:28px">📷 ${esc(s.crediti)}</div></div></div></body></html>`;
+      <div class="crediti" style="margin-top:28px">📷 ${esc(s.crediti)}</div></div>
+      ${storia ? `<div style="position:absolute;left:0;right:0;bottom:90px;text-align:center"><div style="font-weight:800;font-size:38px;color:#bdb6e6;margin-bottom:26px">${esc(s.invito || "Leggi la notizia")} 👇</div>
+      <div style="margin:0 auto;width:560px;height:130px;border-radius:32px;border:5px dashed #ffffff55;display:grid;place-items:center;font-size:30px;color:#ffffff88;font-weight:700">qui l'adesivo link</div></div>` : ""}</div></body></html>`;
   }
   return `<!doctype html><html><head><meta charset="utf-8"><style>${base(c, alto)}</style></head><body><div class="fondo"></div><div class="griglia"></div>${s.tipo === "copertina" ? '<div class="cartuccia"></div>' : ""}<div class="cornice">${testa}${corpo}</div></body></html>`;
 }
