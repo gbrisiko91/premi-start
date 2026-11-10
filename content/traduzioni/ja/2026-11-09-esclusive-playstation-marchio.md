@@ -1,7 +1,7 @@
 ---
 titolo: "PlayStation独占タイトルの表記が復活、Ghost of YoteiとUntil Dawn 2に「PlayStation Exclusive」"
 titolo_seo: "PlayStation独占表記が復活：Ghost of YoteiとUntil Dawn 2"
-sommario: "SonyがGhost of YoteiとUntil Dawn 2に「PlayStation Exclusive」表記を再び付与。PCやSteamへの移植が続いた後の独占回帰のサインです。"
+sommario: "SonyがGhost of YoteiとUntil Dawn 2に「PlayStation Exclusive」表記を再付与。PCやSteamへの移植の後、独占回帰のサインです。"
 slug: "playstation-exclusive-branding-ghost-of-yotei-until-dawn-2"
 alt_immagine: "PS5独占タイトル『Until Dawn 2』の公式イメージ"
 crediti_immagine: "画像：Sony Interactive Entertainment、playstation.com公式ページ"
