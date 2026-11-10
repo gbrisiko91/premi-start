@@ -7,7 +7,7 @@ data: 2026-11-10
 categoria: industria
 tag: [gta-6, take-two, rockstar-games, gta-5]
 viralita: 86
-bozza: true
+bozza: false
 immagine: "https://www.rockstargames.com/VI/_next/static/media/meta.0t8ty~nlmxq2s.jpg"
 immagine_riserva: "https://www.rockstargames.com/VI/_next/static/media/heroBackground.17_mn1qm8~f_4.jpg"
 alt_immagine: "Immagine ufficiale di Grand Theft Auto VI dal sito di Rockstar Games"
