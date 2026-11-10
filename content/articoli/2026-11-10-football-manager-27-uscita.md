@@ -7,7 +7,7 @@ data: 2026-11-10
 categoria: pc
 tag: [football-manager-27, sports-interactive, sega, xbox-game-pass]
 viralita: 72
-bozza: true
+bozza: false
 immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4530370/library_hero.jpg"
 immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4530370/dbddb621648ea947a5cc8d38f17088b571ca2fe7/capsule_616x353_alt_assets_0.jpg"
 alt_immagine: "Immagine ufficiale di Football Manager 27 dalla pagina Steam di Sports Interactive"
