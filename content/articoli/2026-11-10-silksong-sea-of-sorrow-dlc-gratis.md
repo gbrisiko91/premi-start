@@ -7,7 +7,7 @@ data: 2026-11-10
 categoria: console
 tag: [hollow-knight-silksong, team-cherry, sea-of-sorrow, ps5]
 viralita: 70
-bozza: true
+bozza: false
 immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1030300/library_hero.jpg"
 immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1030300/eb4f42b7595ecf3b9c9131aaadec283158c1019e/capsule_616x353.jpg"
 alt_immagine: "Copertina ufficiale di Hollow Knight: Silksong con Hornet nel regno di Pharloom"
