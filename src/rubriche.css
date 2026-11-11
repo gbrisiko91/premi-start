@@ -118,3 +118,34 @@
 .bio-scorciatoia { display:flex; align-items:center; justify-content:center; text-align:center; min-height:3.2rem; padding:.6rem .8rem; border-radius:999px; background:#ffffff10; border:2px solid #ffffff22; font-family:var(--display); font-weight:800; font-style:italic; text-decoration:none; }
 .bio-scorciatoia:hover, .bio-scorciatoia:focus-visible { border-color:var(--viola); }
 .bio-tutte { text-align:center; margin:1.5rem 0 0; }
+
+/* Missione 2K: voto della top 100 */
+.top100-box { background:linear-gradient(140deg,#2a2148,var(--pannello)); border:1px solid rgba(255,194,26,.35); border-radius:22px; padding:clamp(1.1rem,3vw,1.8rem); display:grid; grid-template-columns:minmax(0,1fr); gap:.9rem; min-width:0; }
+.top100-avviso { margin:0; font-weight:700; }
+.top100-box[data-fase="prima"] .top100-avviso { color:var(--giallo); }
+.top100-votanti { margin:0; color:var(--tenue); font-size:.9rem; min-height:1.2em; }
+.top100-votanti:empty { display:none; }
+.top100-form { display:grid; grid-template-columns:minmax(0,1fr); gap:.9rem; min-width:0; }
+.top100-barra { display:flex; gap:.6rem; align-items:center; position:sticky; top:.5rem; z-index:2; background:var(--pannello); border-radius:14px; padding:.35rem; }
+.top100-barra input { flex:1; min-width:0; font:inherit; color:var(--testo); background:rgba(0,0,0,.3); border:1px solid rgba(255,255,255,.15); border-radius:12px; padding:.7rem .9rem; }
+.top100-contatore { font:italic 900 1.2rem/1 var(--display); color:var(--giallo); padding:0 .4rem; flex:none; font-variant-numeric:tabular-nums; }
+.top100-scelti { display:flex; flex-wrap:wrap; gap:.4rem; }
+.top100-scelti:empty { display:none; }
+.top100-chip { font:700 .88rem/1.2 var(--lettura); color:var(--notte); background:var(--giallo); border:0; border-radius:999px; padding:.4rem .8rem; cursor:pointer; }
+.top100-lista { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,16rem),1fr)); gap:.45rem; max-height:min(60vh,34rem); overflow-y:auto; overscroll-behavior:contain; }
+.top100-gioco { display:flex; gap:.6rem; align-items:center; background:rgba(0,0,0,.22); border:1px solid rgba(255,255,255,.1); border-radius:12px; padding:.6rem .75rem; cursor:pointer; }
+.top100-gioco:has(input:checked) { border-color:var(--giallo); background:rgba(255,194,26,.14); }
+.top100-gioco input { accent-color:var(--giallo); width:1.1rem; height:1.1rem; flex:none; margin:0; }
+.top100-titolo { flex:1; min-width:0; line-height:1.25; }
+.top100-anno { color:var(--tenue); font-size:.8rem; font-variant-numeric:tabular-nums; }
+.top100-proposta { display:grid; gap:.35rem; color:var(--tenue); font-size:.92rem; }
+.top100-proposta input { font:inherit; color:var(--testo); background:rgba(0,0,0,.3); border:1px solid rgba(255,255,255,.15); border-radius:12px; padding:.65rem .85rem; }
+.top100-form .tasto-start[disabled] { opacity:.5; cursor:default; }
+.top100-condividi { background:none; border:0; padding:0; font:inherit; color:var(--giallo); cursor:pointer; justify-self:start; }
+.top100-nota { color:var(--tenue); margin:0; }
+.top100-tabella { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; }
+.top100-tabella th, .top100-tabella td { text-align:left; padding:.5rem .4rem; border-bottom:1px solid rgba(255,255,255,.08); }
+.top100-tabella .top100-num { text-align:right; }
+.top100-pos { font:italic 900 1.05rem/1 var(--display); width:3.5rem; }
+.top100-fuori { opacity:.45; }
+.top100-proposte { margin:0; padding-left:1.2rem; }

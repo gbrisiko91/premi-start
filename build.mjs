@@ -15,6 +15,7 @@ import { LINGUE, PRINCIPALE, T } from "./lingue.mjs";
 import { U } from "./novita.mjs";
 import { QUIZ } from "./quiz.mjs";
 import { R, USCITE, SONDAGGI, NEWSLETTER } from "./rubriche.mjs";
+import { TOP100 } from "./top100.mjs";
 
 const ROOT = path.dirname(new URL(import.meta.url).pathname);
 const CONTENUTI = path.join(ROOT, "content", "articoli");
@@ -49,6 +50,7 @@ const P = {
   quiz: (l) => `${pre(l)}/quiz/`,
   uscite: (l) => `${pre(l)}/${R[l].seg.uscite}/`,
   sondaggio: (l) => `${pre(l)}/${R[l].seg.sondaggio}/`,
+  top100: "/top-100/",
   newsletterGrazie: "/newsletter/grazie/",
   newsletterConfermata: "/newsletter/confermata/",
   pagina: (l, slug) => `${pre(l)}/${slug}/`,
@@ -656,6 +658,35 @@ function paginaConfermata() {
     corpo: `<section class="schermata-titolo"><p class="schermata-sopra">Newsletter</p><h1 class="schermata-logo"><span>Soffia</span><span>Cartuccia</span></h1><p class="schermata-sotto"><strong>${esc(n.confermataTitolo)}</strong> ${esc(n.confermataTesto)}</p><p class="confermata-azioni"><a class="tasto-start" href="${P.uscite(l)}">${esc(R[l].uscite.nome)}</a> <a class="tasto-start" href="${P.sondaggio(l)}">${esc(R[l].poll.nome)}</a> <a class="tasto-start" href="${P.home(l)}">${esc(n.torna)}</a></p></section>`,
   });
 }
+// Missione 2K – Boss finale: voto della top 100 dei videogiochi (solo italiano). Logica in public/top100.js.
+function paginaTop100() {
+  const dati = { apertura: TOP100.apertura, chiusura: TOP100.chiusura, max: TOP100.maxScelte, candidati: TOP100.candidati };
+  const corpo = `<section class="rubrica-pagina top100">
+  <header class="rubrica-testa"><span class="eyebrow">Missione 2K / Boss finale</span><h1>La top 100 dei videogiochi</h1><p>Scegli fino a ${TOP100.maxScelte} giochi della tua vita. La classifica la decide la community di Soffia Cartuccia, e la sveliamo a puntate su Instagram fino al numero 1.</p></header>
+  <div class="top100-box" data-top100>
+    <p class="top100-avviso" data-avviso></p>
+    <p class="top100-votanti" data-votanti></p>
+    <form class="top100-form">
+      <div class="top100-barra">
+        <label class="vh" for="top100-cerca">Cerca un gioco</label>
+        <input id="top100-cerca" type="search" data-cerca placeholder="Cerca un gioco…" autocomplete="off">
+        <span class="top100-contatore" data-contatore aria-live="polite">0/${TOP100.maxScelte}</span>
+      </div>
+      <div class="top100-scelti" data-scelti aria-label="I tuoi giochi"></div>
+      <ul class="top100-lista" data-lista></ul>
+      <p class="top100-nota" data-nessuno hidden>Nessun gioco trovato: scrivilo qui sotto.</p>
+      <label class="top100-proposta">Manca il tuo gioco? Scrivilo qui (facoltativo)<input type="text" maxlength="60" data-proposta autocomplete="off"></label>
+      <button class="tasto-start" type="submit" data-invia>Salva il mio voto</button>
+      <p class="sondaggio-stato" data-stato role="status" aria-live="polite"></p>
+      <button class="intro-link top100-condividi" type="button" data-condividi hidden>Invita un amico a votare ↗</button>
+    </form>
+  </div>
+  <p class="rubrica-nota">Un voto per persona (lo riconosciamo da un codice casuale salvato nel tuo browser, senza dati personali). Ogni gioco scelto vale 1 punto.</p>
+</section>
+<script type="application/json" data-top100-dati>${JSON.stringify(dati).replace(/</g, "\\u003c")}</script>
+<script src="/top100.js" defer></script>`;
+  return pagina({ l: PRINCIPALE, titolo: "Vota la top 100 dei videogiochi", descrizione: "Missione 2K: scegli i giochi della tua vita e costruisci con noi la top 100 della community di Soffia Cartuccia.", percorso: P.top100, corpo, alternative: {} });
+}
 // Pagina per il link in bio di Instagram (solo italiano): le ultime notizie in grande, una per riquadro.
 // I link portano l'etichetta utm, così le statistiche separano chi arriva da Instagram.
 const PERCORSO_INSTAGRAM = "/instagram/";
@@ -667,6 +698,7 @@ function paginaInstagram(lista) {
   const copertina = (a, grande) => `<span class="bio-copertina${grande ? " bio-copertina-grande" : ""}" data-colore="${colore(a.categoria)}"><span class="copertina-nome" aria-hidden="true">${esc(nomeCat(l, a.categoria))}</span>${a.immagine ? img({ src: a.immagine, riserva: a.immagineRiserva, alt: "", lazy: !grande, priorita: grande }) : ""}</span>`;
   const voce = (a) => `<li><a class="bio-voce" href="${utm(a.url)}" data-colore="${colore(a.categoria)}">${copertina(a, false)}<span class="bio-voce-testo"><span class="meta">${etichettaCatSemplice(l, a.categoria)}<time datetime="${a.data.toISOString()}">${data(l, a.data, "breve")}</time></span><span class="bio-voce-titolo">${esc(a.titolo)}</span></span></a></li>`;
   const scorciatoie = [
+    ...(OGGI >= TOP100.apertura && OGGI <= TOP100.chiusura ? [[P.top100, "🏆 Vota la top 100"]] : []),
     [P.quiz(l), `✦ ${QUIZ[l].nome}`],
     [P.sondaggio(l), R[l].poll.nome],
     [P.uscite(l), R[l].uscite.nome],
@@ -846,6 +878,7 @@ gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.uscite(l) 
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.sondaggio(l) })) });
 scriviPagina(P.newsletterGrazie, paginaGrazie());
 scriviPagina(PERCORSO_INSTAGRAM, paginaInstagram(perLingua[PRINCIPALE]));
+scriviPagina(P.top100, paginaTop100());
 scriviPagina(P.newsletterConfermata, paginaConfermata());
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.archivio(l) })) });
 for (const k of Object.keys(config.categorie)) gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.categoria(l, k) })) });

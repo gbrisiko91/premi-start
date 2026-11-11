@@ -80,4 +80,18 @@ for (const f of ["dist/rubriche.css","dist/uscite.js","dist/sondaggio.js","dist/
   const sm = fs.readFileSync("dist/sitemap.xml", "utf8");
   assert.ok([...sm.matchAll(/<loc>([^<]*)<\/loc>/g)].every((m) => /^https:\/\/soffiacartuccia\.it\/(.*\/)?$/.test(m[1])), "Sitemap con indirizzi che reindirizzano");
 }
+{
+  // Missione 2K: pagina di voto della top 100
+  const { TOP100, pulisciVoto, contaVoti, statoVoto } = await import("../top100.mjs");
+  const h = fs.readFileSync("dist/top-100/index.html", "utf8");
+  assert.ok(h.includes("data-top100-dati") && h.includes('src="/top100.js"'), "Pagina top 100 incompleta");
+  const ids = TOP100.candidati.map((c) => c.id);
+  assert.equal(new Set(ids).size, ids.length, "Giochi duplicati nella top 100");
+  assert.ok(ids.length >= 100, "Servono almeno 100 giochi candidati");
+  assert.ok(TOP100.apertura <= TOP100.chiusura, "Date del voto invertite");
+  assert.equal(pulisciVoto({ scelte: ["inventato"] }), null, "Accettato un gioco fuori elenco");
+  assert.equal(pulisciVoto({ scelte: ids.slice(0, TOP100.maxScelte + 1) }), null, "Accettati troppi giochi");
+  assert.equal(contaVoti([{ scelte: [ids[0], ids[1]] }, { scelte: [ids[1]] }]).classifica[0].id, ids[1], "Conteggio dei voti sbagliato");
+  assert.equal(statoVoto("2000-01-01"), "prima", "Stato del voto sbagliato");
+}
 console.log("OK: tutte le lingue, indici, articoli e asset verificati.");
