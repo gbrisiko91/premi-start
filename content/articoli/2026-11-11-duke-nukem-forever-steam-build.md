@@ -7,7 +7,7 @@ data: 2026-11-11
 categoria: retro
 tag: [duke-nukem-forever, duke-nukem, gearbox, 2k-games, 3d-realms]
 viralita: 58
-bozza: true
+bozza: false
 immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/57900/library_hero.jpg"
 immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/57900/a64f210082dab463bd46c6729f5b98f48823d0c7/header.jpg?t=1794342510"
 alt_immagine: "Copertina ufficiale di Duke Nukem Forever dalla pagina Steam del gioco"
