@@ -7,7 +7,7 @@ data: 2026-11-11
 categoria: pc
 tag: [arc-raiders, embark-studios, nexon]
 viralita: 60
-bozza: true
+bozza: false
 immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1808500/library_hero.jpg"
 immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1808500/a602a7cbfa617d23b11c13aba324e8aa6f753269/capsule_616x353_alt_assets_9.jpg?t=1793353805"
 alt_immagine: "Immagine ufficiale di ARC Raiders, lo sparatutto extraction di Embark Studios"
