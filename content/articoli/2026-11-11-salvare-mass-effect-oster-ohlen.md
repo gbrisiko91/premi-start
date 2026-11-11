@@ -7,7 +7,7 @@ data: 2026-11-11
 categoria: industria
 tag: [mass-effect, dragon-age, bioware, beamdog, ea]
 viralita: 76
-bozza: true
+bozza: false
 immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1328670/library_hero.jpg"
 immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1328670/header.jpg"
 alt_immagine: "Copertina ufficiale di Mass Effect Legendary Edition, la trilogia BioWare che i fan vogliono salvare"
