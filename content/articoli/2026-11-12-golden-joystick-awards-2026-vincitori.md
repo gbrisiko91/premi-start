@@ -7,7 +7,7 @@ data: 2026-11-12
 categoria: industria
 tag: [golden-joystick-awards, resident-evil-requiem, capcom, meccha-chameleon]
 viralita: 72
-bozza: true
+bozza: false
 immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3764200/library_hero.jpg"
 immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3764200/ce5437442768e38eb575f205ab9397d0264017b0/header.jpg?t=1779840172"
 alt_immagine: "Immagine ufficiale di Resident Evil Requiem, gioco dell'anno ai Golden Joystick Awards 2026"
