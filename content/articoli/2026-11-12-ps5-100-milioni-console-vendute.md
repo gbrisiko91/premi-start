@@ -7,7 +7,7 @@ data: 2026-11-12
 categoria: console
 tag: [ps5, playstation, sony]
 viralita: 78
-bozza: true
+bozza: false
 immagine: "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$facebook$"
 immagine_riserva: "https://gmedia.playstation.com/is/image/SIEPDC/ps5-overview-evergreen-hero-desktop-video-thumb-01-en-16oct25?$1600px$"
 alt_immagine: "La console PS5 con il controller DualSense nell'immagine ufficiale di PlayStation"
