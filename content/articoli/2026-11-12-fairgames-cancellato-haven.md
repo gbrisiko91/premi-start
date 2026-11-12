@@ -7,7 +7,7 @@ data: 2026-11-12
 categoria: industria
 tag: [fairgames, haven-studios, playstation, ps5]
 viralita: 74
-bozza: true
+bozza: false
 immagine: "https://blog.playstation.com/tachyon/2023/05/6ac6e2fc686ac426947749d73514cbafabe5f58a.jpg"
 immagine_riserva: "https://live.staticflickr.com/65535/52923467868_4b99be2787_h.jpg"
 alt_immagine: "Immagine ufficiale di Fairgames, lo sparatutto di Haven Studios per PS5 e PC"
