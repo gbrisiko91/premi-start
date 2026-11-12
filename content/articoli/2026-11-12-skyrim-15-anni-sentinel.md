@@ -7,7 +7,7 @@ data: 2026-11-12
 categoria: retro
 tag: [skyrim, the-elder-scrolls, bethesda, elder-scrolls-6-sentinel]
 viralita: 62
-bozza: true
+bozza: false
 immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/489830/library_hero.jpg"
 immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/489830/header.jpg?t=1786648247"
 alt_immagine: "Immagine ufficiale di The Elder Scrolls V: Skyrim Special Edition con il paesaggio innevato"
