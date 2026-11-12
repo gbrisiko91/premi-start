@@ -1,7 +1,7 @@
 ---
 titolo: "ARC Raiders、販売本数1,700万本を突破　一方でNexonは減収を予想"
 titolo_seo: "ARC Raiders販売本数が1,700万本を突破"
-sommario: "ARC Raidersが発売から約1年で1,700万本を突破。Nexonは大型アップデートFrozen Trailの好調を喜ぶ一方、2026年末の減収を予想。数字をまとめて紹介します。"
+sommario: "ARC Raidersが発売から約1年で1,700万本を突破。NexonはFrozen Trailの好調を喜ぶ一方、2026年末の減収を予想。数字をまとめて紹介。"
 slug: "arc-raiders-sales-17-million"
 alt_immagine: "Embark Studiosのエクストラクションシューター『ARC Raiders』の公式イメージ"
 crediti_immagine: "画像：Embark Studios / Nexon（Steamより）"

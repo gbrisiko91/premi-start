@@ -1,7 +1,7 @@
 ---
 titolo: "Mass Effectを救え：BioWare共同創業者がかつての仲間の再結集を目指す"
 titolo_seo: "Mass Effectを救う計画：Trent OsterとOhlenの構想"
-sommario: "BioWare閉鎖後、Mass EffectとDragon Ageを救えるか。共同創業者Trent Osterが試算を重ね、KOTORのディレクターJames Ohlenに声をかけた。その計画とは。"
+sommario: "BioWare閉鎖後のMass EffectとDragon Ageを救えるか。共同創業者Trent Osterが試算を重ね、KOTORのJames Ohlenに声をかけた。"
 slug: "save-mass-effect-trent-oster-james-ohlen"
 alt_immagine: "ファンが救おうとしているBioWareの三部作『Mass Effect Legendary Edition』の公式カバーアート"
 crediti_immagine: "画像：BioWare / Electronic Arts（Steamより）"

@@ -1,7 +1,7 @@
 ---
 titolo: "ARC Raiders passerar 17 miljoner sålda exemplar, men Nexon räknar med en nedgång"
 titolo_seo: "ARC Raiders försäljning: över 17 miljoner exemplar"
-sommario: "ARC Raiders försäljning slår rekord: över 17 miljoner exemplar på ett år. Nexon firar Frozen Trail men väntar sig lägre intäkter i slutet av 2026. Siffrorna."
+sommario: "ARC Raiders försäljning: rekord med över 17 miljoner exemplar på ett år. Nexon firar Frozen Trail men väntar sig lägre intäkter i slutet av 2026. Alla tal."
 slug: "arc-raiders-forsaljning-17-miljoner"
 alt_immagine: "Officiell bild från ARC Raiders, extraction-skjutaren från Embark Studios"
 crediti_immagine: "Bild: Embark Studios / Nexon via Steam"

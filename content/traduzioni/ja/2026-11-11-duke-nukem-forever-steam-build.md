@@ -1,7 +1,7 @@
 ---
 titolo: "Duke Nukem Forever、Steamページに幻の旧ビルド映像　復活の前触れか？"
 titolo_seo: "Duke Nukem Forever Steamページに旧ビルドの映像が登場"
-sommario: "Duke Nukem ForeverのSteamページが更新され、未発売に終わった2000年版と2006年版ビルドの映像が登場。公式リリースを期待するファンも。現時点で分かっていることをまとめた。"
+sommario: "Duke Nukem ForeverのSteamページに未発売の2000年版・2006年版ビルドの映像が登場。公式リリースを期待する声も。分かっていることをまとめた。"
 slug: "duke-nukem-forever-steam-old-builds"
 alt_immagine: "Steamのストアページに掲載されている『Duke Nukem Forever』の公式カバーアート"
 crediti_immagine: "画像：Gearbox Software / 2K（Steamより）"
