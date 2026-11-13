@@ -43,7 +43,7 @@ Ogni bozza deve essere ottimizzata prima ancora di essere scritta. Parti dalla *
 - Parola chiave (o una sua variante naturale) nelle prime 100 parole e in almeno un sottotitolo `##`.
 - Primo paragrafo di 2-3 frasi che risponde subito a chi, cosa, quando: è quello che Google mostra come risposta.
 - Sottotitoli `##` che sono frasi cercabili, non etichette generiche. Al posto di "Cosa sappiamo" scrivi ad esempio "## Quando esce The Duskbloods su Switch 2".
-- Paragrafi brevi (2-4 frasi), nomi propri di giochi, studi e console in **grassetto** alla prima menzione.
+- Paragrafi brevi (2-4 frasi). Grassetto solo alla prima menzione dei 2-3 nomi protagonisti dell'articolo (di solito il gioco e lo studio o la console); mai su date, numeri, prezzi o nomi secondari.
 - Usa sinonimi e termini correlati (nomi delle console, dello studio, del genere) invece di ripetere la parola chiave: niente keyword stuffing.
 - Almeno un **link interno** a un altro articolo di Soffia Cartuccia pertinente (cerca in `content/articoli/`), con testo del link descrittivo, e un link alla **fonte ufficiale** quando esiste.
 - Chiudi con una sezione `## Domande frequenti` con 2-3 domande che le persone cercano davvero su Google (controlla le "Altre domande" nei risultati), ognuna come `### Domanda?` seguita da una risposta di 1-2 frasi.
@@ -58,6 +58,16 @@ Ogni bozza deve essere ottimizzata prima ancora di essere scritta. Parti dalla *
 - Lingua italiana, tono diretto e informato, da appassionati per appassionati.
 - **Scrivi sempre con parole tue.** Non copiare frasi dagli articoli delle fonti; al massimo una citazione breve (meno di 15 parole) tra virgolette, attribuita.
 - Ogni fatto importante deve essere confermato da almeno due fonti, oppure da una fonte ufficiale. Le indiscrezioni vanno dichiarate come tali nel titolo o nel primo paragrafo ("secondo un leak", "non ancora confermato").
+- **Scrivi come una persona, non come un'IA** (regole della skill Humanizer, la stessa usata per revisionare gli articoli il 13 novembre 2026):
+  - niente contrasti costruiti del tipo "non è solo X, ma Y", "non X, bensì Y", "per ora è un indizio, non un annuncio": dici direttamente cosa è successo;
+  - niente frasi di chiusura che ripetono il punto o lo "commentano" ("Il messaggio è chiaro", "Una cosa però è chiara", "Resta da vedere", "Una frenata che pesa"), niente frasi a effetto di una riga;
+  - niente aperture di lancio ("Va detto chiaramente:", "Ecco tutto quello che c'è da sapere", "Non solo:", "Il paradosso è che") e niente gonfiature ("segna la fine di un'epoca", "un momento storico", "dato impressionante", "ben quattro");
+  - niente elenchi di tre cose messi lì solo per ritmo: elenca quanti elementi ci sono davvero;
+  - niente lineette (— o –) nel testo: usa virgole, punti, due punti o parentesi;
+  - negli elenchi puntati niente etichette in grassetto con i due punti;
+  - verbi semplici ("è", "ha") invece di "rappresenta", "si configura come", "vanta";
+  - frasi di lunghezza varia, attacchi diversi, qualche reazione da appassionato quando ci sta (senza inventare opinioni sui fatti).
+  - Prima di salvare, rileggi la bozza cercando proprio questi schemi e riscrivi le frasi che li contengono.
 - Struttura consigliata:
   1. Primo paragrafo: la notizia in due o tre frasi (chi, cosa, quando).
   2. Due o tre sezioni `##` con titoli cercabili: i dettagli verificati, perché se ne parla (reazioni, numeri, contesto), cosa aspettarsi (date, cosa resta da chiarire).
