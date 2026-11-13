@@ -7,7 +7,7 @@ data: 2026-11-13
 categoria: console
 tag: [wolfenstein-3, machinegames, bethesda, xbox]
 viralita: 84
-bozza: true
+bozza: false
 immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/612880/library_hero.jpg"
 immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/612880/header.jpg"
 alt_immagine: "Immagine ufficiale di Wolfenstein II The New Colossus, il capitolo che precede Wolfenstein 3"
