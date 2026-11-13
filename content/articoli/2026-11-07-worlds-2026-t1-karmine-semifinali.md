@@ -29,15 +29,15 @@ fonti:
     url: "https://liquipedia.net/leagueoflegends/World_Championship/2026"
 ---
 
-**T1** ha battuto **Karmine Corp** 3-1 nell'ultimo quarto di finale dei **Worlds 2026** di **League of Legends**, giocato nella notte ad Allen, in Texas. I campioni in carica, a caccia di un quarto titolo mondiale consecutivo che nessuno ha mai vinto, domenica sfidano **Bilibili Gaming** in semifinale. Con KC esce anche l'ultima squadra europea: l'LEC chiude il Mondiale senza nessuno tra le prime quattro.
+**T1** ha battuto **Karmine Corp** 3-1 nell'ultimo quarto di finale dei **Worlds 2026** di League of Legends, giocato nella notte ad Allen, in Texas. I campioni in carica inseguono un quarto titolo mondiale consecutivo, cosa mai riuscita a nessuno, e domenica sfidano Bilibili Gaming in semifinale. Con KC esce anche l'ultima squadra europea, e l'LEC chiude il Mondiale senza nessuno tra le prime quattro.
 
 ## Come T1 ha eliminato Karmine Corp ai Worlds 2026
 
-Le prime due partite sono state a senso unico. In gara 1 T1 ha retto il ritmo nei primi minuti e poi ha preso il controllo dal mid game, chiudendo in 35 minuti con una composizione costruita per crescere sulla distanza. Gara 2 è durata meno di mezz'ora, con **Peyz** su Kai'Sa e **Oner** su Trundle a dominare la mappa.
+Le prime due partite sono state a senso unico. In gara 1 T1 ha retto il ritmo nei primi minuti, ha preso il controllo dal mid game e ha chiuso in 35 minuti con una composizione costruita per crescere sulla distanza. Gara 2 è durata meno di mezz'ora, con Peyz su Kai'Sa e Oner su Trundle padroni della mappa.
 
-Karmine Corp ha risposto in gara 3 con una partita lenta e ordinata, vinta grazie a più Baron e a un Drago Ancestrale. Gara 4 è stata la più tesa: 35 minuti decisi da una giocata di **Keria**, che con Flash e la sua ultimate ha chiuso la serie. Dall'altra parte **Canna** su Renekton è stato il migliore di KC. Per lui la partita aveva un sapore speciale: è cresciuto nel vivaio di T1 e ci ha giocato in prima squadra nel 2020 e 2021.
+Karmine Corp ha risposto in gara 3 con una partita lenta e ordinata, vinta grazie a più Baron e a un Drago Ancestrale. Gara 4 è stata la più tesa: 35 minuti decisi da Keria, che con Flash e la sua ultimate ha chiuso la serie. Il migliore di KC è stato Canna su Renekton, per cui la partita aveva un sapore speciale: è cresciuto nel vivaio di T1 e ci ha giocato in prima squadra nel 2020 e 2021.
 
-Per la Karmine Corp l'impresa dell'estate non si è ripetuta. A luglio, all'Esports World Cup di Parigi, aveva battuto T1 2-1 in semifinale. Al meglio delle cinque, però, **Faker** e compagni hanno fatto valere l'esperienza.
+Per la Karmine Corp l'impresa dell'estate non si è ripetuta. A luglio, all'Esports World Cup di Parigi, aveva battuto T1 2-1 in semifinale, ma al meglio delle cinque Faker e compagni hanno fatto valere l'esperienza.
 
 ## I risultati dei quarti di finale dei Worlds 2026
 
@@ -48,17 +48,17 @@ Per la Karmine Corp l'impresa dell'estate non si è ripetuta. A luglio, all'Espo
 | Dplus KIA vs Bilibili Gaming | 0-3 | Bilibili Gaming |
 | T1 vs Karmine Corp | 3-1 | T1 |
 
-**Il crollo di Dplus KIA.** La sorpresa più grande dei quarti. DK aveva chiuso la fase Swiss senza perdere una partita ed è uscita senza vincerne una. BLG ha preso 14 draghi su 15 e tutti e quattro i Baron, con 62 uccisioni contro 28. A luglio era stata DK a eliminare BLG all'Esports World Cup: vendetta servita.
+La sorpresa più grande dei quarti è il crollo di Dplus KIA, che aveva chiuso la fase Swiss senza perdere una partita ed è uscita senza vincerne una. BLG ha preso 14 draghi su 15 e tutti e quattro i Baron, con 62 uccisioni contro 28. A luglio era stata DK a eliminare BLG all'Esports World Cup: vendetta servita.
 
-**Gen.G, la macchina perfetta.** Imbattuta nella fase Swiss, 3-0 secco a LYON, ultima speranza del Nord America. Per Chovy, Canyon e Ruler è la terza semifinale mondiale di fila.
+Gen.G invece non sbaglia un colpo. Imbattuta nella fase Swiss, ha liquidato 3-0 LYON, ultima speranza del Nord America, e per Chovy, Canyon e Ruler è la terza semifinale mondiale di fila.
 
-**Il ritorno di IG.** Invictus Gaming, la squadra di TheShy, non arrivava alla fase a eliminazione diretta da sette anni. Nel derby cinese ha eliminato Top Esports.
+Torna a farsi vedere anche Invictus Gaming, la squadra di TheShy, che non arrivava alla fase a eliminazione diretta da sette anni: nel derby cinese ha eliminato Top Esports.
 
-La semifinale è quindi due contro due: Corea contro Cina. Oltre a DK, la Corea ha già perso Hanwha Life Esports, campione dell'MSI, eliminata nella fase Swiss.
+In semifinale saranno quindi due coreane contro due cinesi. Oltre a DK, la Corea ha già perso Hanwha Life Esports, campione dell'MSI, eliminata nella fase Swiss.
 
 ## T1 contro Bilibili Gaming: la rivincita della finale 2024
 
-La semifinale di domenica è la sfida più attesa del torneo. Le due squadre si sono già giocate un titolo mondiale: nella finale 2024 di Londra T1 vinse 3-2, al termine di una delle serie più combattute della storia del gioco. BLG arriva in forma: dopo una fase Swiss incerta ha battuto Hanwha Life e poi spazzato via DK, e non ha mai perso un quarto di finale ai Worlds.
+La semifinale di domenica è la sfida più attesa del torneo, perché le due squadre si sono già giocate un titolo mondiale: nella finale 2024 di Londra T1 vinse 3-2, al termine di una delle serie più combattute della storia del gioco. BLG arriva in forma. Dopo una fase Swiss incerta ha battuto Hanwha Life e poi spazzato via DK, e ai Worlds non ha mai perso un quarto di finale.
 
 ## Semifinali e finale dei Worlds 2026: date e dove vederle
 
@@ -68,9 +68,9 @@ La semifinale di domenica è la sfida più attesa del torneo. Le due squadre si 
 | Domenica 8 novembre | Bilibili Gaming vs T1 | Allen, Texas |
 | Sabato 14 novembre, ore 20:00 | Finale | Barclays Center, Brooklyn |
 
-Tutte le serie sono al meglio delle cinque con Fearless Draft: nessun campione può essere ripreso nella stessa serie. In palio ci sono 5 milioni di dollari, di cui 1 milione alla squadra campione. Le partite si guardano gratis sui canali [Twitch e YouTube di LoL Esports](https://lolesports.com/).
+Tutte le serie sono al meglio delle cinque con Fearless Draft, quindi nessun campione può essere ripreso nella stessa serie. In palio ci sono 5 milioni di dollari, di cui 1 milione alla squadra campione. Le partite si guardano gratis sui canali [Twitch e YouTube di LoL Esports](https://lolesports.com/).
 
-La domanda adesso è una sola: la Cina riesce a portare due squadre in finale e a chiudere l'era coreana, o T1 scrive un altro capitolo di storia?
+Riuscirà la Cina a portare due squadre in finale e a chiudere l'era coreana, o T1 si prenderà un altro pezzo di storia?
 
 ## Domande frequenti
 

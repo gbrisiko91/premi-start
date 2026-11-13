@@ -25,9 +25,7 @@ fonti:
     url: "https://asia.sega.com/p4r/en/"
 ---
 
-Un **remake di Persona 1** potrebbe essere in arrivo, ma per ora è solo un **leak non confermato**. Tra il 31 ottobre e il 1° novembre è comparso online un video di poco meno di due minuti che sembra mostrare una versione moderna di **Revelations: Persona**, il primo capitolo della serie **Atlus** uscito nel 1996. Né Atlus né **SEGA** hanno commentato.
-
-Il tempismo non è casuale: la saga festeggia proprio quest'anno i suoi 30 anni.
+Un **remake di Persona 1** potrebbe essere in arrivo, ma per ora c'è solo un leak non confermato. Tra il 31 ottobre e il 1° novembre è comparso online un video di poco meno di due minuti che sembra mostrare una versione moderna di **Revelations: Persona**, il primo capitolo della serie **Atlus**, uscito nel 1996. Né Atlus né SEGA hanno commentato, e il momento è curioso: la saga compie 30 anni proprio quest'anno.
 
 ## Cosa mostra il video del presunto Persona 1 remake
 
@@ -36,21 +34,21 @@ Il filmato è stato caricato su YouTube da un account chiamato "P1REMAKE" e poi 
 - esplorazione dei dungeon in stile moderno;
 - combattimenti a turni con animazioni spettacolari, simili a quelle degli ultimi capitoli;
 - una scena di dialogo con l'impostazione grafica dei Persona recenti;
-- un riferimento a **Unreal Engine** nell'angolo in alto a sinistra dello schermo.
+- un riferimento a Unreal Engine nell'angolo in alto a sinistra dello schermo.
 
-Il dettaglio più discusso è la presenza di **Tatsuya Suou**, protagonista di **Persona 2: Innocent Sin**, nel gruppo. Nel Persona originale non c'era: potrebbe essere un modello provvisorio, un contenuto bonus oppure un indizio di un progetto più ampio sui primi due capitoli.
+A far discutere più di tutto è Tatsuya Suou, protagonista di Persona 2: Innocent Sin, che compare nel gruppo. Nel Persona originale non c'era, quindi potrebbe trattarsi di un modello provvisorio, di un contenuto bonus o di un indizio di un progetto più ampio sui primi due capitoli.
 
 ## Il leak di Persona 1 è vero o falso?
 
-I pareri sono divisi. Secondo **PC Gamer** un falso generato con l'intelligenza artificiale è poco probabile, perché il video è lungo e coerente. Altri notano però che l'animazione di evocazione di Eriko sembra identica a quella di Yukiko in **Persona 4 Revival**: per qualcuno è la prova che il materiale viene dallo stesso studio, per altri il segno di un montaggio fatto con asset presi altrove.
+I pareri sono divisi. Secondo PC Gamer un falso generato con l'intelligenza artificiale è poco probabile, perché il video è lungo e coerente. Altri notano però che l'animazione di evocazione di Eriko sembra identica a quella di Yukiko in Persona 4 Revival: per qualcuno vuol dire che il materiale viene dallo stesso studio, per altri che è un montaggio fatto con asset presi altrove.
 
-C'è un precedente che fa ben sperare: anche **Persona 3 Reload** fu mostrato per la prima volta da un leak, prima dell'annuncio ufficiale. Ad agosto, inoltre, il producer **Kazuhisa Wada** aveva detto che rifare i primi Persona è qualcosa che, a suo parere, Atlus "dovrebbe assolutamente fare", senza però confermare nessun progetto.
+Un precedente fa ben sperare: anche Persona 3 Reload fu mostrato per la prima volta da un leak, prima dell'annuncio ufficiale. E ad agosto il producer Kazuhisa Wada aveva detto che rifare i primi Persona è qualcosa che, a suo parere, Atlus "dovrebbe assolutamente fare", senza però confermare alcun progetto.
 
 ## Perché un remake di Persona 1 farebbe notizia
 
-Revelations: Persona è uscito su PlayStation nel 1996 e in Europa non è mai arrivato nella sua versione originale: molti giocatori italiani lo hanno scoperto solo anni dopo, con la riedizione per PSP. È un gioco duro, lento e con un sistema di combattimento molto diverso da quello moderno, quindi un remake sarebbe più una ricostruzione che un semplice restauro.
+Revelations: Persona è uscito su PlayStation nel 1996 e in Europa non è mai arrivato nella sua versione originale: molti giocatori italiani lo hanno scoperto solo anni dopo, con la riedizione per PSP. È un gioco duro e lento, con un sistema di combattimento molto lontano da quelli di oggi, quindi rifarlo vorrebbe dire ricostruirlo più che restaurarlo.
 
-Atlus, intanto, ha già un remake in calendario: Persona 4 Revival esce il 18 febbraio 2027 su PS5, Xbox Series X|S e PC, e il 20 maggio 2027 su **Nintendo Switch 2**. Un annuncio di Persona 1 potrebbe arrivare più avanti, magari a uno degli eventi di fine anno, ma al momento è solo un'ipotesi.
+Atlus, intanto, ha già un remake in calendario: Persona 4 Revival esce il 18 febbraio 2027 su PS5, Xbox Series X|S e PC, e il 20 maggio 2027 su Nintendo Switch 2. Un annuncio di Persona 1 potrebbe arrivare più avanti, magari a uno degli eventi di fine anno, ma per ora è solo un'ipotesi.
 
 Se ti piacciono le storie sulle origini dei classici, leggi anche come [DOOM ha inventato il Deathmatch secondo Romero, Petersen e Carmack](/articoli/doom-deathmatch-romero-petersen-carmack/).
 

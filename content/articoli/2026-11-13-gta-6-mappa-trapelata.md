@@ -25,27 +25,25 @@ fonti:
     url: "https://www.playstation.com/en-us/GTAVIfeatures/"
 ---
 
-A una settimana dal lancio, la **mappa di GTA 6** è finita online. Il 12 novembre sui social hanno iniziato a girare le foto della mappa stampata di **Leonida** inclusa nel **Collector's Box** ufficiale, fotografata in un punto vendita **Selfridges** nel Regno Unito. **Rockstar Games** non ha commentato e non ha mostrato la mappa ufficialmente: va quindi presa come un leak, per quanto molto credibile.
-
-**Grand Theft Auto VI** esce il **19 novembre** su PS5 e Xbox Series X|S.
+A una settimana dal lancio, la **mappa di GTA 6** è finita online. Il 12 novembre sui social hanno iniziato a girare le foto della mappa stampata di **Leonida** inclusa nel Collector's Box ufficiale, scattate in un punto vendita Selfridges nel Regno Unito. **Rockstar Games** non ha commentato e non ha mostrato la mappa ufficialmente, quindi va presa come un leak, per quanto molto credibile. Grand Theft Auto VI esce il 19 novembre su PS5 e Xbox Series X|S.
 
 ## Da dove arriva la mappa di GTA 6 trapelata
 
-Secondo GamesRadar e tbreak, la prima foto è stata pubblicata su X da un utente che ha visto l'esposizione del Collector's Box in un negozio Selfridges a Manchester; l'immagine più nitida veniva invece da un account Instagram poi cancellato. Lo stile grafico coincide con le immagini promozionali del box, che include un poster souvenir a doppia faccia: è molto probabile che si tratti proprio di quello.
+Secondo GamesRadar e tbreak, la prima foto l'ha pubblicata su X un utente che ha visto il Collector's Box esposto in un negozio Selfridges a Manchester, mentre l'immagine più nitida veniva da un account Instagram poi cancellato. Lo stile grafico coincide con le immagini promozionali del box, che include un poster souvenir a doppia faccia: con ogni probabilità è proprio quello.
 
-Circola anche la voce che sia stato un dipendente del negozio a diffonderla, ma non ci sono conferme. Il Collector's Box, chiamato "Goodtime State – Vice City Collection", costa 399,99 dollari negli Stati Uniti e 349,99 sterline nel Regno Unito: contiene solo gadget, non il gioco.
+Circola anche la voce che a diffonderla sia stato un dipendente del negozio, ma non ci sono conferme. Il Collector's Box, chiamato "Goodtime State: Vice City Collection", costa 399,99 dollari negli Stati Uniti e 349,99 sterline nel Regno Unito, e dentro ci sono solo gadget: il gioco va comprato a parte.
 
 ## I luoghi di Leonida svelati dal leak
 
-La mappa è stilizzata, non una vista dettagliata come quella che avremo nel gioco, ma basta a dare un'idea delle dimensioni. Oltre a **Vice City** compaiono nomi come **Little Cuba**, **Port Gellhorn**, **Goose Key**, **Lummox County**, **Moreau**, **Ambrosia** e **Pelican Valley**, nella zona delle **Grassrivers**. Secondo il conteggio di alcune testate ci sono cinque contee principali, undici tra isole e isolotti e tredici città.
+La mappa è stilizzata e molto meno dettagliata di quella che avremo nel gioco, ma basta a dare un'idea delle dimensioni. Oltre a Vice City compaiono nomi come Little Cuba, Port Gellhorn, Goose Key, Lummox County, Moreau, Ambrosia e Pelican Valley, nella zona delle Grassrivers. Secondo il conteggio di alcune testate ci sono cinque contee principali, undici tra isole e isolotti e tredici città.
 
-Si vede anche lo schema generale delle autostrade, ma non la rete stradale completa. E i fan più attenti hanno già notato un **UFO** disegnato sopra una cava: un possibile richiamo agli easter egg extraterrestri di GTA 5, tutto da verificare.
+Si vede anche lo schema generale delle autostrade, ma non la rete stradale completa. E i fan più attenti hanno già notato un UFO disegnato sopra una cava: potrebbe essere un richiamo agli easter egg extraterrestri di GTA 5, ma è tutto da verificare.
 
 ## GTA 6 quasi bocciato in Corea del Sud per i nudi
 
-Nelle stesse ore è emersa un'altra curiosità. Secondo i verbali riportati da PC Gamer e Gamereactor, l'ente di classificazione sudcoreano ha rischiato di **rifiutare il rating** a GTA 6, cosa che ne avrebbe impedito la vendita nel Paese. Il nodo erano le scene di nudo integrale fuori contesto.
+Nelle stesse ore è venuta fuori un'altra curiosità. Secondo i verbali riportati da PC Gamer e Gamereactor, l'ente di classificazione sudcoreano ha rischiato di rifiutare il rating a GTA 6, e senza rating il gioco non si sarebbe potuto vendere nel Paese. Il problema erano le scene di nudo integrale fuori contesto.
 
-Le revisioni sono state tre, tra settembre e ottobre: la prima si è chiusa in parità, poi il 16 ottobre il gioco ha ottenuto il bollino **per soli adulti** con otto voti a favore e uno contrario. Chi l'ha giocato per intero ha concluso che le scene con nudi non sono sessuali e che quelle di sesso non mostrano genitali.
+Le revisioni sono state tre, tra settembre e ottobre: la prima si è chiusa in parità, poi il 16 ottobre il gioco ha ottenuto il bollino per soli adulti con otto voti a favore e uno contrario. Chi l'ha giocato per intero ha concluso che le scene con nudi non sono sessuali e che quelle di sesso non mostrano genitali.
 
 Se state ancora preparando il lancio, trovate qui [cosa c'è nella copia fisica di GTA 6 e quanto spazio serve](/articoli/gta-6-copia-fisica-230-gb/).
 

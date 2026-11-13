@@ -23,31 +23,31 @@ fonti:
     url: "https://kaffeeware.itch.io/sotn-snes"
 ---
 
-**Castlevania: Symphony of the Night** gira su **Super Nintendo**. Non è un'uscita ufficiale di **Konami**, ma il lavoro di un appassionato: lo sviluppatore indipendente **Kaffeeware** ha pubblicato una demo gratuita del suo port amatoriale, che riporta il capolavoro PlayStation del 1997 su una console che non lo ha mai avuto. E sottolinea di averlo fatto senza usare l'intelligenza artificiale.
+**Castlevania: Symphony of the Night** gira su **Super Nintendo**, anche se Konami non c'entra niente: è il lavoro di un appassionato. Lo sviluppatore indipendente **Kaffeeware** ha pubblicato una demo gratuita del suo port amatoriale, che porta il capolavoro PlayStation del 1997 su una console che non lo ha mai avuto, e ci tiene a dire di averlo fatto senza usare l'intelligenza artificiale.
 
 ## Castlevania Symphony of the Night su SNES: cosa c'è nella demo
 
-La demo è stata pubblicata come regalo di Halloween ed è scaricabile gratis dalla [pagina itch.io di Kaffeeware](https://kaffeeware.itch.io/sotn-snes). Copre all'incirca la **prima metà del gioco**: si esplora il castello di Dracula con **Alucard** fino al momento del celebre colpo di scena a metà avventura, che qui non è incluso.
+La demo è uscita come regalo di Halloween e si scarica gratis dalla [pagina itch.io di Kaffeeware](https://kaffeeware.itch.io/sotn-snes). Copre più o meno la prima metà del gioco: si esplora il castello di Dracula con Alucard fino al celebre colpo di scena a metà avventura, che qui non c'è.
 
-Il port funziona negli emulatori ma anche su hardware reale: console SNES modificate o con flash cartridge e riedizioni come **Analogue Super Nt**. L'autore chiede ai giocatori di segnalare bug e dare pareri su itch.io e nei commenti su YouTube, dove pubblica aggiornamenti sul progetto da giugno 2025.
+Il port funziona negli emulatori e anche su hardware reale, cioè console SNES modificate o con flash cartridge e riedizioni come Analogue Super Nt. L'autore chiede ai giocatori di segnalare bug e dare pareri su itch.io e nei commenti su YouTube, dove aggiorna sul progetto da giugno 2025.
 
 ## Come si fa a far girare Symphony of the Night su Super Nintendo
 
-L'obiettivo dichiarato di Kaffeeware è restare fedele alle **specifiche originali dello SNES**. Per riuscirci servono compromessi: la ROM è più grande di quelle dell'epoca per contenere tutta la grafica, e in alcune stanze ci sono meno zombie sullo schermo, che si comportano anche in modo un po' diverso.
+Kaffeeware vuole restare fedele alle specifiche originali dello SNES, e per riuscirci ha dovuto scendere a compromessi: la ROM è più grande di quelle dell'epoca per contenere tutta la grafica, e in alcune stanze ci sono meno zombie sullo schermo, che si comportano anche in modo un po' diverso.
 
-Il lavoro è stato fatto "a occhio", guardando il gioco originale invece di convertirne direttamente il codice: non è quindi una copia perfetta, ma una ricostruzione. Secondo Multiplayer.it, lo sviluppatore starebbe valutando di sfruttare i progetti di decompilazione del gioco PlayStation per rendere la conversione più precisa.
+Il lavoro è stato fatto "a occhio", guardando il gioco originale invece di convertirne direttamente il codice, quindi è una ricostruzione e non una copia perfetta. Secondo Multiplayer.it, lo sviluppatore starebbe valutando di sfruttare i progetti di decompilazione del gioco PlayStation per rendere la conversione più precisa.
 
 ## Il castello capovolto non arriverà
 
-Chi spera in una versione completa deve mettersi l'anima in pace. Alla domanda se porterà su SNES tutto il gioco, Kaffeeware ha risposto in modo netto: no, e di certo non il castello invertito, la seconda metà che ha reso leggendario Symphony of the Night.
+Chi spera in una versione completa deve mettersi l'anima in pace. Alla domanda se porterà su SNES tutto il gioco, Kaffeeware ha risposto secco: no, e di certo non il castello invertito, la seconda metà che ha reso leggendario Symphony of the Night.
 
-Non è la prima impresa del genere: già nel 2024 un altro progetto amatoriale aveva mostrato una conversione del gioco per **Mega Drive**, la storica rivale di casa Sega.
+Non è la prima impresa del genere: già nel 2024 un altro progetto amatoriale aveva mostrato una conversione del gioco per Mega Drive, la storica rivale di casa Sega.
 
 ## Perché se ne parla tanto
 
-Symphony of the Night è uno dei giochi che hanno definito il genere **metroidvania**, e vederlo girare su una console a 16 bit ha fatto il giro dei forum di retro gaming in pochi giorni. Il fatto che l'autore abbia rivendicato di non aver usato IA generativa ha aggiunto benzina alla discussione, in un periodo in cui le piattaforme come itch.io stanno facendo pulizia dei giochi creati con l'IA.
+Symphony of the Night è uno dei giochi che hanno definito il genere metroidvania, e vederlo girare su una console a 16 bit ha fatto il giro dei forum di retro gaming in pochi giorni. La scelta dell'autore di rivendicare il no all'IA generativa ha aggiunto benzina alla discussione, proprio mentre piattaforme come itch.io stanno facendo pulizia dei giochi creati con l'IA.
 
-Resta il solito interrogativo legale: si tratta di un progetto non autorizzato basato su una proprietà di Konami, che in passato non ha sempre tollerato i fan game. Per ora la demo è disponibile. Se vi piacciono queste storie di retro gaming, leggete anche la [lite tra Romero, Petersen e Carmack sulle origini del deathmatch di DOOM](/articoli/doom-deathmatch-romero-petersen-carmack/).
+Resta il solito problema legale: è un progetto non autorizzato basato su una proprietà di Konami, che in passato non ha sempre tollerato i fan game. Per ora la demo è disponibile. Se vi piacciono queste storie di retro gaming, leggete anche la [lite tra Romero, Petersen e Carmack sulle origini del deathmatch di DOOM](/articoli/doom-deathmatch-romero-petersen-carmack/).
 
 ## Domande frequenti
 

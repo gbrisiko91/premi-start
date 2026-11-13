@@ -25,27 +25,27 @@ fonti:
     url: "https://www.q-gin.info/commodore-64-ultimate-torna-negozi-colby-europa-mediamarkt-2026/"
 ---
 
-Il **Commodore 64 Ultimate** sta per tornare sugli scaffali dei negozi, per la prima volta da oltre 30 anni per un computer a marchio **Commodore**. L'azienda ha annunciato questa settimana un accordo di distribuzione esclusivo con **Colby**, che porterà la riedizione del C64 nei punti vendita fisici in Europa e in parte di Africa e Asia. Tra i rivenditori citati ci sono **MediaMarkt** e **Argos**.
+Il **Commodore 64 Ultimate** sta per arrivare sugli scaffali dei negozi: per un computer a marchio **Commodore** non succedeva da oltre 30 anni. Questa settimana l'azienda ha annunciato un accordo di distribuzione esclusivo con **Colby**, che porterà la riedizione del C64 nei punti vendita fisici in Europa e in parte di Africa e Asia. Tra i rivenditori citati ci sono MediaMarkt e Argos.
 
 ## Dove si potrà comprare il Commodore 64 Ultimate
 
-Finora il C64 Ultimate si poteva ordinare solo sul sito ufficiale di Commodore. Con l'accordo annunciato su X, la macchina entra nella rete di Colby: secondo Everyeye il distributore conta circa 70 partner commerciali e oltre 500 punti vendita, e lavora già con editori come **SEGA**, **Konami** e **Bandai**.
+Finora il C64 Ultimate si poteva ordinare solo sul sito ufficiale di Commodore. Con l'accordo annunciato su X la macchina entra nella rete di Colby, che secondo Everyeye conta circa 70 partner commerciali e oltre 500 punti vendita e lavora già con editori come SEGA, Konami e Bandai.
 
-Commodore ha nominato MediaMarkt e Argos come esempi, promettendo altri negozi a breve, e ha detto di essere al lavoro anche per gli Stati Uniti. L'arrivo nei negozi è previsto per il periodo natalizio, ma una data precisa non è ancora stata comunicata.
+Commodore ha fatto i nomi di MediaMarkt e Argos come esempi, ha promesso altri negozi a breve e ha detto di essere al lavoro anche per gli Stati Uniti. L'arrivo nei negozi è previsto per il periodo natalizio, ma una data precisa non è ancora stata comunicata.
 
 ## Il Commodore 64 Ultimate arriva in Italia?
 
-Per ora l'Italia non è citata in modo esplicito. Il nostro Paese rientra nell'area europea coperta dall'accordo e MediaMarkt ha molti negozi da noi, ma non esistono ancora un elenco di punti vendita italiani né un prezzo in euro. Come sottolinea Q-Gin, la citazione delle catene non significa che il computer sarà disponibile in tutti i loro negozi.
+Per ora l'Italia non è citata in modo esplicito. Il nostro Paese rientra nell'area europea coperta dall'accordo e MediaMarkt da noi ha molti negozi, ma non ci sono ancora un elenco di punti vendita italiani né un prezzo in euro. E, come fa notare Q-Gin, il fatto che le catene siano state nominate non vuol dire che il computer sarà in tutti i loro negozi.
 
-Sul sito ufficiale i prezzi sono in dollari. Per la nuova linea **64C Ultimate**, con il case slim ispirato al modello del 1986, si va dai 299,99 dollari della versione BASIC Beige ai 499,99 della Founder's Edition, passando per i 349,99 della Starlight Edition con scocca trasparente e luci LED.
+Sul sito ufficiale i prezzi sono in dollari. La nuova linea 64C Ultimate, con il case slim ispirato al modello del 1986, va dai 299,99 dollari della versione BASIC Beige ai 499,99 della Founder's Edition; in mezzo c'è la Starlight Edition da 349,99, con scocca trasparente e luci LED.
 
 ## Cos'è il Commodore 64 Ultimate
 
-Non è una mini console con i giochi preinstallati, ma una vera riedizione a grandezza naturale del computer più venduto della storia. Dentro c'è un chip **FPGA** che riproduce l'hardware originale invece di emularlo via software, con una compatibilità dichiarata superiore al 99,9%.
+È una riedizione a grandezza naturale del computer più venduto della storia, quindi niente mini console con i giochi preinstallati. Dentro c'è un chip FPGA che riproduce l'hardware originale invece di emularlo via software, con una compatibilità dichiarata superiore al 99,9%.
 
-La tastiera è completa e alle porte d'epoca, per cartucce, registratori a cassette e floppy, si aggiungono uscita **HDMI** e porte USB. Nella confezione c'è una chiavetta a forma di cassetta con oltre cento tra giochi, demo e programmi. Per il nuovo 64C, Commodore ha recuperato perfino gli stampi originali del 1986.
+La tastiera è completa, e alle porte d'epoca per cartucce, registratori a cassette e floppy si aggiungono un'uscita HDMI e porte USB. Nella confezione c'è una chiavetta a forma di cassetta con oltre cento tra giochi, demo e programmi. Per il nuovo 64C, Commodore ha recuperato perfino gli stampi originali del 1986.
 
-È l'ennesimo segnale di quanto il mercato dell'hardware retro sia vivo: basta pensare al [Mega95 di Hyperkin, il Mega Drive portatile](/articoli/hyperkin-mega95-mega-drive-portatile/) atteso da anni.
+Di hardware retro, insomma, se ne vede parecchio: pensate al [Mega95 di Hyperkin, il Mega Drive portatile](/articoli/hyperkin-mega95-mega-drive-portatile/) atteso da anni.
 
 ## Domande frequenti
 

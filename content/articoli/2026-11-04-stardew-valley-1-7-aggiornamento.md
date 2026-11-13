@@ -23,33 +23,33 @@ fonti:
     url: "https://www.reddit.com/r/StardewValley/comments/1xfk9xp/concernedape_at_red_rocks_symphony_of_seasons/"
 ---
 
-**Stardew Valley 1.7** sarà l'aggiornamento più grande nella storia del gioco. Lo ha detto **Eric Barone**, il creatore conosciuto come **ConcernedApe**, salendo sul palco di un concerto dedicato alla sua fattoria più famosa. E ha dato anche un'indicazione sui tempi: l'update dovrebbe arrivare probabilmente "l'anno prossimo", quindi nel 2027.
+**Stardew Valley 1.7** sarà l'aggiornamento più grande nella storia del gioco. Lo ha detto **Eric Barone**, il creatore conosciuto come **ConcernedApe**, sul palco di un concerto dedicato alla sua fattoria più famosa, e ha dato anche un'indicazione sui tempi: l'update dovrebbe arrivare probabilmente "l'anno prossimo", quindi nel 2027.
 
 ## Cosa ha detto ConcernedApe su Stardew Valley 1.7
 
-Le parole di Barone arrivano dalla **Stardew Valley: Symphony of Seasons**, il tour di concerti con le musiche del gioco, durante la tappa al **Red Rocks Amphitheatre** in Colorado. Un fan presente ha caricato il video dell'intervento su Reddit, e da lì la notizia ha fatto il giro delle testate di mezzo mondo.
+Barone ha parlato durante la tappa al Red Rocks Amphitheatre, in Colorado, di Stardew Valley: Symphony of Seasons, il tour di concerti con le musiche del gioco. Un fan presente ha caricato il video dell'intervento su Reddit, e da lì la notizia ha fatto il giro delle testate di mezzo mondo.
 
-Barone ha confermato che sta ancora lavorando all'aggiornamento e ha spiegato che il pacchetto sarà più ricco dei precedenti, compreso il gigantesco **1.6** del 2024. Ha descritto l'update come zeppo di contenuti e ha chiuso con una promessa ai fan, che li aspetta una vera sorpresa.
+Barone ha confermato che sta ancora lavorando all'aggiornamento e che sarà più ricco dei precedenti, compreso il gigantesco 1.6 del 2024. Lo ha descritto come zeppo di contenuti e ha chiuso con una promessa: ai fan aspetta una vera sorpresa.
 
 ## Cosa c'è già di confermato nell'aggiornamento 1.7
 
-Alcune novità del 1.7 erano già note da tempo e sono le più richieste dalla community:
+Alcune novità del 1.7 erano note da tempo e sono anche le più richieste dalla community:
 
-- **Clint e Sandy diventano sposabili**: il fabbro del villaggio e la commerciante del deserto di Calico entrano finalmente tra i personaggi da corteggiare;
-- **un nuovo tipo di fattoria**, che si aggiunge alle mappe già disponibili;
-- **altre funzioni sociali**, non ancora descritte nel dettaglio.
+- Clint e Sandy diventano sposabili: il fabbro del villaggio e la commerciante del deserto di Calico entrano finalmente tra i personaggi da corteggiare;
+- un nuovo tipo di fattoria, che si aggiunge alle mappe già disponibili;
+- altre funzioni sociali, non ancora descritte nel dettaglio.
 
-Secondo ConcernedApe, però, Clint e Sandy sono solo la punta dell'iceberg. Tutto il resto è ancora segreto, e i fan stanno già facendo ipotesi su nuove zone, festival e personaggi. Per ora sono solo speculazioni: nessuno di questi contenuti è stato annunciato.
+Secondo ConcernedApe, però, Clint e Sandy sono solo la punta dell'iceberg. Il resto è ancora segreto e i fan stanno già ipotizzando nuove zone, festival e personaggi, ma nessuno di questi contenuti è stato annunciato.
 
 ## Quando esce Stardew Valley 1.7 e su quali piattaforme
 
-Una data non c'è. ConcernedApe ha parlato di un'uscita probabile nel corso dell'anno prossimo, senza impegnarsi oltre: è il suo stile, visto che lavora quasi da solo e preferisce non fissare scadenze. Anche per la 1.6 i tempi si erano allungati rispetto alle prime previsioni. Non è il solo progetto atteso a slittare nel 2027: è successo anche a un titolo ben più grande come [The Duskbloods di FromSoftware](/articoli/the-duskbloods-rinvio-2027/).
+Una data non c'è. ConcernedApe ha parlato di un'uscita probabile nel corso dell'anno prossimo, senza impegnarsi oltre. Fa sempre così: lavora quasi da solo e preferisce non fissare scadenze, e anche per la 1.6 i tempi si erano allungati rispetto alle prime previsioni. Non è il solo progetto atteso a slittare nel 2027: è successo anche a un titolo ben più grande come [The Duskbloods di FromSoftware](/articoli/the-duskbloods-rinvio-2027/).
 
-Come i precedenti, anche il 1.7 dovrebbe essere **gratuito** e arrivare prima su **PC** per poi raggiungere console e smartphone, ma su questo Barone non ha dato conferme. Nel frattempo continua a lavorare anche al suo prossimo gioco, **Haunted Chocolatier**.
+Come i precedenti, anche il 1.7 dovrebbe essere gratuito e arrivare prima su PC per poi raggiungere console e smartphone, ma su questo Barone non ha dato conferme. Nel frattempo continua a lavorare anche al suo prossimo gioco, Haunted Chocolatier.
 
 ## Perché il nuovo update di Stardew Valley fa notizia
 
-A dieci anni dall'uscita, **Stardew Valley** resta uno dei giochi più amati e venduti tra gli indie, anche in Italia. Ogni aggiornamento gratuito riporta in gioco milioni di persone: dopo la 1.6 il gioco era tornato tra i più giocati su Steam. L'idea di un update ancora più grande, a costo zero, basta da sola a far impazzire i social.
+A dieci anni dall'uscita, Stardew Valley resta uno degli indie più amati e venduti, anche in Italia. Ogni aggiornamento gratuito riporta in gioco milioni di persone, e dopo la 1.6 il gioco era tornato tra i più giocati su Steam. Un update ancora più grande, a costo zero: per far impazzire i social basta questo.
 
 ## Domande frequenti
 

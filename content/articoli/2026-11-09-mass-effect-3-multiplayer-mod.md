@@ -25,33 +25,33 @@ fonti:
     url: "https://www.nexusmods.com/masseffectlegendaryedition/mods/2009"
 ---
 
-Il **multiplayer di Mass Effect 3** è tornato, e non grazie a **Electronic Arts**. Il 7 novembre, in occasione dell'N7 Day, il gruppo di modder **ME3Tweaks** ha pubblicato gratis su Nexus Mods la sua mod per **Mass Effect Legendary Edition** su PC: riporta in vita la cooperativa online che la raccolta del 2021 aveva tagliato, con nuove modalità e server gestiti dalla community.
+Il **multiplayer di Mass Effect 3** è tornato, e stavolta Electronic Arts non c'entra. Il 7 novembre, in occasione dell'N7 Day, il gruppo di modder **ME3Tweaks** ha pubblicato gratis su Nexus Mods la sua mod per **Mass Effect Legendary Edition** su PC, che riporta in vita la cooperativa online tagliata dalla raccolta del 2021, con nuove modalità e server gestiti dalla community.
 
 ## Come funziona la mod multiplayer di Mass Effect 3 per Legendary Edition
 
-Il progetto, nato con il nome in codice **Project Milan**, non è un semplice trapianto del vecchio codice. Secondo il team è una vera rimasterizzazione della modalità a ondate di Mass Effect 3: si combatte in squadre fino a quattro giocatori contro Cerberus, Geth, Razziatori e Collettori, sulle mappe che molti ricordano dal 2012.
+Il progetto è nato con il nome in codice Project Milan e, secondo il team, rimasterizza da capo la modalità a ondate di Mass Effect 3 invece di trapiantare il vecchio codice. Si combatte in squadre fino a quattro giocatori contro Cerberus, Geth, Razziatori e Collettori, sulle mappe che molti ricordano dal 2012.
 
 Le novità principali, secondo quanto riportato da Kotaku e Nerdly:
 
-- due nuovi tipi di partita: **Coalition**, che cambia fazione nemica a ogni ondata, e **Unified**, che le mescola tutte insieme;
+- due nuovi tipi di partita: Coalition, che cambia fazione nemica a ogni ondata, e Unified, che le mescola tutte insieme;
 - supporto al controller, campo visivo regolabile, opzioni per la mira assistita e armi pesanti;
 - menu ridisegnati, con il ping dei giocatori e chi è a terra in bella vista;
 - illuminazione rifatta, texture migliorate e mappe con piccoli ritocchi (su Hazard Giant, ad esempio, ci sono le torce);
 - una progressione meno faticosa, con opzioni per ridurre il "grinding" degli sblocchi.
 
-Soprattutto, la mod **non dipende dai server di BioWare**: chi vuole può collegarsi a quelli di ME3Tweaks o ospitarne uno privato per gli amici. L'installazione multiplayer resta separata da salvataggi e mod della campagna in singolo.
+La cosa più importante è che la mod non dipende dai server di BioWare: chi vuole può collegarsi a quelli di ME3Tweaks o ospitarne uno privato per gli amici. L'installazione multiplayer resta separata da salvataggi e mod della campagna in singolo.
 
 ## Tre anni di lavoro e un tempismo che fa rumore
 
-Il team ci ha lavorato a fasi alterne per circa tre anni: il primo prototipo funzionante risale a dicembre 2023. Uno dei modder, Mgamerz, ha raccontato a Kotaku che il progetto è partito quasi per scherzo, con l'idea di "fare qualcosa di stupido" e portare il multiplayer. Il gruppo tiene anche a precisare che quasi tutto è stato fatto a mano, senza strumenti di intelligenza artificiale.
+Il team ci ha lavorato a fasi alterne per circa tre anni, e il primo prototipo funzionante risale a dicembre 2023. Uno dei modder, Mgamerz, ha raccontato a Kotaku che il progetto è partito quasi per scherzo, con l'idea di "fare qualcosa di stupido" e portare il multiplayer. Il gruppo precisa anche di aver fatto quasi tutto a mano, senza strumenti di intelligenza artificiale.
 
-L'uscita arriva in un momento delicato. A fine ottobre EA ha chiuso BioWare e cancellato il nuovo capitolo, come vi avevamo raccontato parlando della [chiusura di BioWare e della scommessa su Battlefront 3](/articoli/bioware-chiusa-battlefront-3/). Per molti fan, che hanno trasformato l'[N7 Day 2026 in una protesta](/articoli/n7-day-mass-effect-2026/), questa mod è il regalo che l'editore non ha fatto. Tra i dettagli più commentati ci sono i nuovi banner del negozio, che usano immagini del **Mass Effect** cancellato.
+E l'uscita cade in un momento delicato. A fine ottobre EA ha chiuso BioWare e cancellato il nuovo capitolo, come vi avevamo raccontato parlando della [chiusura di BioWare e della scommessa su Battlefront 3](/articoli/bioware-chiusa-battlefront-3/). Molti fan, che hanno trasformato l'[N7 Day 2026 in una protesta](/articoli/n7-day-mass-effect-2026/), vedono in questa mod il regalo che l'editore non ha fatto. Tra i dettagli più commentati ci sono i nuovi banner del negozio, con immagini del Mass Effect cancellato.
 
 Secondo Everyeye, nelle prime ore la mod è stata scaricata da circa 3.000 giocatori.
 
 ## Cosa arriverà dopo il lancio
 
-ME3Tweaks ha già elencato i prossimi passi: il ritorno del pacchetto di mappe Redemption ricostruito, la fazione nemica Rejection, un negozio con acquisti diretti di equipaggiamento, lobby di dimensioni configurabili e una nuova schermata delle sfide. Il team vuole anche creare una base stabile per mod future. Non ci sono date.
+ME3Tweaks ha già elencato i prossimi passi: il pacchetto di mappe Redemption ricostruito, la fazione nemica Rejection, un negozio con acquisti diretti di equipaggiamento, lobby di dimensioni configurabili e una nuova schermata delle sfide. Il team vuole anche creare una base stabile per mod future. Date, per ora, nessuna.
 
 ## Domande frequenti
 
