@@ -25,27 +25,27 @@ fonti:
     url: "https://www.switchitalia.it/2026/11/05/nintendo-switch-2-nessun-ulteriore-aumento-di-prezzo-e-attualmente-previsto-dallazienda"
 ---
 
-Niente nuovo **aumento di prezzo per Switch 2**, almeno per ora. Lo ha detto **Nintendo** il 5 novembre, presentando i risultati dei sei mesi chiusi a settembre: l'azienda si è assicurata abbastanza memoria per i prossimi mesi e non ha in programma altri rincari. Nello stesso giorno, però, i numeri hanno mostrato un rallentamento: le vendite di **Nintendo Switch 2** nel semestre sono calate del 37% rispetto all'anno scorso.
+Niente nuovo **aumento di prezzo per Switch 2**, almeno per ora. Lo ha detto **Nintendo** il 5 novembre, presentando i risultati dei sei mesi chiusi a settembre: l'azienda si è assicurata abbastanza memoria per i prossimi mesi e non ha in programma altri rincari. Gli stessi conti, però, mostrano un rallentamento: nel semestre le vendite di Nintendo Switch 2 sono calate del 37% rispetto all'anno scorso.
 
 ## Switch 2 non aumenta di prezzo: cosa ha detto Nintendo
 
-Secondo quanto riportato da VGC, Everyeye e Switch Italia, il presidente **Shuntaro Furukawa** ha spiegato che Nintendo ha scorte sufficienti di componenti per tenere fermo il prezzo nel prossimo periodo. È una rassicurazione importante, perché il problema di fondo non è sparito: la carenza di memoria RAM che sta facendo salire i prezzi dell'elettronica, e che secondo VGC dovrebbe proseguire nel 2027.
+Secondo quanto riportato da VGC, Everyeye e Switch Italia, il presidente Shuntaro Furukawa ha spiegato che Nintendo ha scorte di componenti sufficienti per tenere fermo il prezzo nel prossimo periodo. Una buona notizia, anche se il problema di fondo resta: la carenza di memoria RAM sta facendo salire i prezzi dell'elettronica e, secondo VGC, dovrebbe proseguire nel 2027.
 
-Nei suoi documenti per gli investitori Nintendo quantifica il peso di questa crisi: l'aumento del costo dei componenti, soprattutto della memoria, insieme ai dazi, pesa per circa 100 miliardi di yen sulle previsioni dell'anno.
+Nei documenti per gli investitori Nintendo mette una cifra su questa crisi: l'aumento del costo dei componenti, soprattutto della memoria, insieme ai dazi, pesa per circa 100 miliardi di yen sulle previsioni dell'anno.
 
 ## Quanto costa oggi Switch 2 in Italia
 
-In Italia Switch 2 è già passata da 469,99 a **499,99 euro** con il primo rincaro deciso proprio a causa della memoria. Nintendo non è sola: **Sony** e **Microsoft** hanno alzato più volte i prezzi di **PS5** e **Xbox Series X|S**, e oggi tutte le console di questa generazione costano più che al lancio.
+In Italia Switch 2 è già passata da 469,99 a 499,99 euro con il primo rincaro, deciso proprio a causa della memoria. E Nintendo è in buona compagnia: Sony e Microsoft hanno alzato più volte i prezzi di PS5 e Xbox Series X|S, e oggi tutte le console di questa generazione costano più che al lancio.
 
-Resta aperta una questione: il prezzo dei giochi fisici. Everyeye segnala che un produttore di chip per cartucce ha lasciato il settore, e non è chiaro se questo avrà effetti sulle edizioni in scatola.
+Sul prezzo dei giochi fisici, invece, non ci sono certezze. Everyeye segnala che un produttore di chip per cartucce ha lasciato il settore, e non è chiaro se questo avrà effetti sulle edizioni in scatola.
 
 ## Vendite di Switch 2 in calo del 37%: è un problema?
 
-I numeri vanno letti con attenzione. Nel semestre aprile-settembre Nintendo ha venduto **6,49 milioni** di Switch 2, il 37,4% in meno dello stesso periodo del 2025, quello del lancio. Nel solo trimestre estivo le unità sono state 2,68 milioni, e il totale ha raggiunto **26,35 milioni** di console distribuite.
+Nel semestre aprile-settembre Nintendo ha venduto 6,49 milioni di Switch 2, il 37,4% in meno dello stesso periodo del 2025, che però era quello del lancio. Nel solo trimestre estivo le unità sono state 2,68 milioni, e il totale ha raggiunto 26,35 milioni di console distribuite.
 
-Il calo era atteso: Nintendo aveva già previsto vendite più basse nel secondo anno e conferma le sue stime. Switch 2, inoltre, resta avanti di oltre sei milioni di unità rispetto alla prima Switch e a PS5 nello stesso momento della loro vita, anche se va ricordato che entrambe avevano problemi di disponibilità. Il calo delle vendite hardware si riflette sui conti: secondo VGC l'utile è sceso del 16%.
+Il calo era atteso: Nintendo aveva già previsto vendite più basse nel secondo anno e conferma le sue stime. Switch 2 resta comunque avanti di oltre sei milioni di unità rispetto alla prima Switch e a PS5 nello stesso momento della loro vita, anche se entrambe avevano problemi di disponibilità. Sui conti il rallentamento dell'hardware si sente: secondo VGC l'utile è sceso del 16%.
 
-Il software va meglio: i giochi per Switch 2 venduti nel semestre sono cresciuti del 18,8%, trascinati da **Tomodachi Life: Living the Dream** e **Mario Kart World**. Questo mese, poi, è arrivato il [remake di Zelda Ocarina of Time](/articoli/zelda-ocarina-of-time-remake/), uno dei titoli su cui Nintendo punta per le feste.
+Il software va meglio: i giochi per Switch 2 venduti nel semestre sono cresciuti del 18,8%, trascinati da Tomodachi Life: Living the Dream e Mario Kart World. Questo mese, poi, è arrivato il [remake di Zelda Ocarina of Time](/articoli/zelda-ocarina-of-time-remake/), uno dei titoli su cui Nintendo punta per le feste.
 
 ## Domande frequenti
 

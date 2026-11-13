@@ -25,31 +25,31 @@ fonti:
     url: "https://multiplayer.it/notizie/mentre-steam-e-ancora-sommerso-dai-giochi-ia-itchio-elimina-terabyte-di-contenuti.html"
 ---
 
-**itch.io** dichiara guerra ai **giochi IA** di bassa qualità. Il negozio online dei videogiochi indipendenti ha annunciato il 3 novembre di aver cancellato "un paio di terabyte" di contenuti generati in serie con l'intelligenza artificiale, e ha esteso a tutto il sito il filtro che permette di nascondere i progetti realizzati con l'IA generativa. Una mossa che fa rumore anche perché, negli stessi giorni, **Valve** ha ammesso che le approvazioni su **Steam** sono in ritardo.
+**itch.io** dichiara guerra ai giochi IA di bassa qualità. Il 3 novembre il negozio online dei videogiochi indipendenti ha annunciato di aver cancellato "un paio di terabyte" di contenuti generati in serie con l'intelligenza artificiale, e ha esteso a tutto il sito il filtro che permette di nascondere i progetti fatti con l'IA generativa. La notizia fa ancora più rumore perché negli stessi giorni Valve ha ammesso che le approvazioni su **Steam** sono in ritardo.
 
 ## Cosa ha fatto itch.io contro i giochi generati con l'IA
 
 L'annuncio è arrivato direttamente dagli account ufficiali di itch.io, con un tono volutamente ironico. Oltre alla pulizia di massa, la piattaforma ha preso tre decisioni:
 
-- **filtro anti-IA nelle ricerche**: il filtro "no AI", che prima funzionava solo in alcune pagine di navigazione, ora vale anche per i risultati di ricerca. Si possono escludere del tutto o in parte i progetti con contenuti generati dall'IA;
-- **obbligo di dichiarazione più ampio**: da circa due anni chi vende asset per sviluppatori deve dire se ha usato l'IA generativa. Ora la regola si estende a fumetti, libri, giochi da tavolo e colonne sonore;
-- **linee guida sullo spam**: i progetti creati quasi interamente da algoritmi, senza un vero lavoro di design, o le decine di copie quasi identiche dello stesso prodotto possono sparire dalle pagine di ricerca.
+- il filtro "no AI", che prima funzionava solo in alcune pagine di navigazione, adesso vale anche per i risultati di ricerca, e permette di escludere del tutto o in parte i progetti con contenuti generati dall'IA;
+- l'obbligo di dichiarare l'uso dell'IA generativa, che da circa due anni riguarda chi vende asset per sviluppatori, si allarga a fumetti, libri, giochi da tavolo e colonne sonore;
+- le nuove linee guida sullo spam prevedono che i progetti creati quasi interamente da algoritmi, senza un vero lavoro di design, o le decine di copie quasi identiche dello stesso prodotto possano sparire dalle pagine di ricerca.
 
-itch.io non vieta l'IA in sé: le regole riconoscono che può dare risultati interessanti, ma vietano di usarla per riempire il negozio di pagine fotocopia.
+L'IA in sé su itch.io resta permessa: le regole riconoscono che può dare risultati interessanti, ma vietano di usarla per riempire il negozio di pagine fotocopia.
 
 ## Perché itch.io ha cancellato i giochi IA proprio ora
 
-Il motivo è nei numeri. Secondo la piattaforma, negli ultimi due mesi il numero di nuove pagine di giochi create ogni giorno è **raddoppiato**, mentre download e acquisti sono rimasti fermi. Più pagine, insomma, ma non più giocatori: il segnale tipico dello spam. Alla domanda di un utente su cosa ci fosse dietro questo boom, itch.io ha risposto invitandolo a indovinare, con tanto di emoji di un robot.
+Secondo la piattaforma, negli ultimi due mesi il numero di nuove pagine di giochi create ogni giorno è raddoppiato, mentre download e acquisti sono rimasti fermi. Più pagine e nessun giocatore in più: il segnale tipico dello spam. A un utente che chiedeva cosa ci fosse dietro questo boom, itch.io ha risposto di provare a indovinare, con tanto di emoji di un robot.
 
-Le reazioni della community sono state in gran parte positive, anche se una parte degli sviluppatori chiede di più: un divieto totale dell'IA generativa. È una strada complicata, perché bisognerebbe stabilire dove finisce un gioco "fatto con l'IA" e dove comincia un gioco che l'ha usata solo per una piccola parte dello sviluppo.
+La community ha reagito per lo più bene, anche se una parte degli sviluppatori vorrebbe di più, cioè un divieto totale dell'IA generativa. Sarebbe una strada complicata, perché bisognerebbe stabilire dove finisce un gioco "fatto con l'IA" e dove comincia uno che l'ha usata solo per una piccola parte dello sviluppo.
 
 ## Steam e i giochi IA: Valve in ritardo con le approvazioni
 
-Il confronto con Steam è inevitabile. Anche il negozio di Valve chiede agli sviluppatori di dichiarare l'uso dell'IA, ma non offre ai giocatori un filtro per escludere quei giochi. Durante l'ultimo **Steam Next Fest**, diversi sviluppatori indipendenti si sono lamentati di essere stati sommersi da titoli prodotti in serie.
+Viene naturale il confronto con Steam. Anche il negozio di Valve chiede agli sviluppatori di dichiarare l'uso dell'IA, ma non dà ai giocatori un filtro per escludere quei giochi. Durante l'ultimo Steam Next Fest diversi sviluppatori indipendenti si sono lamentati di essere stati sommersi da titoli prodotti in serie.
 
-Sempre il 3 novembre, Valve ha pubblicato un aggiornamento per gli sviluppatori in cui ammette di essere "un po' indietro" con le revisioni: il tempo tipico di 3-5 giorni lavorativi può arrivare a **12 giorni**, e alcuni studi dicono di aver aspettato fino a 20 giorni. Valve spiega il ritardo con la necessità di rivedere più volte gli stessi giochi e ha pubblicato nuove liste di controllo per superare l'esame al primo colpo. Non ha però collegato il problema all'IA: è un legame che fanno diverse testate, non l'azienda.
+Sempre il 3 novembre Valve ha pubblicato un aggiornamento per gli sviluppatori in cui ammette di essere "un po' indietro" con le revisioni: i 3-5 giorni lavorativi abituali possono diventare 12 giorni, e alcuni studi raccontano di aver aspettato fino a 20 giorni. Valve dà la colpa alla necessità di rivedere più volte gli stessi giochi e ha pubblicato nuove liste di controllo per passare l'esame al primo colpo. Il problema però non l'ha collegato all'IA: quel legame lo fanno diverse testate, non l'azienda.
 
-Non è l'unico scossone che sta attraversando l'industria in queste settimane: basti pensare alle voci sulla [chiusura di BioWare e sul futuro di Mass Effect](/articoli/bioware-chiusa-battlefront-3/).
+In queste settimane l'industria ha anche altro a cui pensare, a partire dalle voci sulla [chiusura di BioWare e sul futuro di Mass Effect](/articoli/bioware-chiusa-battlefront-3/).
 
 ## Domande frequenti
 

@@ -23,46 +23,46 @@ fonti:
     url: "https://www.windowscentral.com/gaming/blizzard/world-of-warcraft-forever-smoothest-launch-in-wow-history"
 ---
 
-**World of Warcraft: Forever** ha battuto ogni record. A pochi giorni dal debutto del 4 novembre, **Blizzard** ha annunciato sui social che si tratta del lancio più grande nella storia di **World of Warcraft**: il picco di giocatori connessi in contemporanea supera quello di espansioni storiche come **Wrath of the Lich King**, e nessun lancio aveva mai riportato in gioco così tanti ex abbonati.
+**World of Warcraft: Forever** è da record. A pochi giorni dal debutto del 4 novembre, **Blizzard** ha annunciato sui social che è il lancio più grande nella storia di World of Warcraft: il picco di giocatori connessi in contemporanea supera quello di espansioni storiche come Wrath of the Lich King, e nessun lancio aveva mai riportato in gioco così tanti ex abbonati.
 
-Blizzard non ha diffuso numeri precisi, ma il segnale è chiaro: il ritorno all'Azeroth delle origini funziona.
+Numeri precisi Blizzard non ne ha dati, ma a quanto pare tornare nell'Azeroth delle origini piace parecchio.
 
 ## Cos'è World of Warcraft Forever
 
-Non è una nuova espansione del WoW moderno né una semplice riedizione di **WoW Classic**. Forever è una versione permanente e reinventata dell'Azeroth originale, ambientata prima degli eventi del gioco del 2004: si sale dal livello 1 al 60 tra i **Regni Orientali** e **Kalimdor**, con molte novità.
+Forever non è un'espansione del WoW moderno e nemmeno una semplice riedizione di WoW Classic. È una versione permanente e reinventata dell'Azeroth originale, ambientata prima degli eventi del gioco del 2004: si sale dal livello 1 al 60 tra i Regni Orientali e Kalimdor, con parecchie novità.
 
 Secondo il [post ufficiale di lancio](https://worldofwarcraft.blizzard.com/news/24315820), le aggiunte principali sono:
 
-- oltre **1.000 nuove missioni**, nove nuovi dungeon per cinque giocatori e tre incursioni di livello 60, in arrivo il 9 dicembre;
-- zone nuove o rifatte, come **Monte Hyjal** e le Riverglades;
-- la nuova razza giocabile degli **Skyborne** e nuove combinazioni di razza e classe;
+- oltre 1.000 nuove missioni, nove nuovi dungeon per cinque giocatori e tre incursioni di livello 60, in arrivo il 9 dicembre;
+- zone nuove o rifatte, come Monte Hyjal e le Riverglades;
+- la nuova razza giocabile degli Skyborne e nuove combinazioni di razza e classe;
 - la scelta tra un'esperienza "Classic" e una "Enhanced", più un sistema di accampamenti e una progressione condivisa sull'account.
 
-Per giocare basta un normale abbonamento a World of Warcraft. Sbloccare gli Skyborne, invece, richiede l'acquisto di un pacchetto a parte.
+Per giocare basta il normale abbonamento a World of Warcraft. Gli Skyborne invece si sbloccano solo comprando un pacchetto a parte.
 
 ## Perché il lancio di WoW Forever è un record
 
-Il dato che colpisce di più è quello dei **giocatori di ritorno**: secondo Blizzard non erano mai stati così tanti in oltre vent'anni di storia del gioco. È la conferma di una tendenza già vista durante la beta, la più grande mai organizzata dallo studio, con quasi nove milioni di personaggi creati.
+Il dato più notevole riguarda i giocatori di ritorno: secondo Blizzard non erano mai stati così tanti in oltre vent'anni di storia del gioco. Già la beta lo lasciava intuire, visto che è stata la più grande mai organizzata dallo studio, con quasi nove milioni di personaggi creati.
 
-A rendere possibile il debutto anche la tecnica: i giocatori hanno parlato del lancio più fluido nella storia di WoW, con code di pochi minuti, poco lag e rare disconnessioni. Merito, secondo Windows Central, dell'architettura a **megaserver**, che regge molti più giocatori nello stesso spazio rispetto ai vecchi reami. La vicepresidente Holly Longdale l'ha commentato con ironia, definendolo un avvio "so far so goodish".
+Anche la parte tecnica ha retto. I giocatori parlano del lancio più fluido nella storia di WoW, con code di pochi minuti, poco lag e rare disconnessioni. Secondo Windows Central il merito è dell'architettura a megaserver, che regge molti più giocatori nello stesso spazio rispetto ai vecchi reami. La vicepresidente Holly Longdale ci ha scherzato su, definendolo un avvio "so far so goodish".
 
-Non tutto è perfetto: Blizzard ha già detto di voler rendere più vivaci le capitali, che ad alcuni sembrano vuote proprio perché i giocatori sono distribuiti su più copie delle città.
+Qualche problema c'è: Blizzard ha già detto di voler rendere più vivaci le capitali, che ad alcuni sembrano vuote proprio perché i giocatori sono distribuiti su più copie delle città.
 
 ## Cosa aspettarsi da WoW Forever nelle prossime settimane
 
-Il prossimo appuntamento è il **9 dicembre**, con l'apertura delle tre incursioni di fine gioco, tra cui una nuova versione della tana di Onyxia. Più avanti arriverà anche la modalità **Hardcore**, con una sola vita per personaggio.
+Il prossimo appuntamento è il 9 dicembre, quando apriranno le tre incursioni di fine gioco, tra cui una nuova versione della tana di Onyxia. Più avanti arriverà anche la modalità Hardcore, con una sola vita per personaggio.
 
-Per Microsoft, proprietaria di Blizzard, è un'ottima notizia in un periodo di grandi movimenti tra gli studi Xbox. Tra i ritorni più attesi del gruppo c'è anche **The Elder Scrolls VI**, di cui vi abbiamo parlato nell'articolo su [The Elder Scrolls 6 Sentinel](/articoli/elder-scrolls-6-sentinel/).
+Per Microsoft, proprietaria di Blizzard, è un'ottima notizia, in un periodo in cui tra gli studi Xbox si muove parecchio. Tra i ritorni più attesi del gruppo c'è anche The Elder Scrolls VI, di cui vi abbiamo parlato nell'articolo su [The Elder Scrolls 6 Sentinel](/articoli/elder-scrolls-6-sentinel/).
 
 ## Domande frequenti
 
 ### World of Warcraft Forever è gratis?
 
-No. WoW Forever è incluso nell'abbonamento a World of Warcraft o nel Game Time. I pacchetti Skyborne, con la nuova razza, si acquistano a parte.
+No. WoW Forever è incluso nell'abbonamento a World of Warcraft o nel Game Time. I pacchetti Skyborne, con la nuova razza, si comprano a parte.
 
 ### Quando è uscito World of Warcraft Forever?
 
-È uscito in tutto il mondo il 4 novembre 2026, alle 15:00 ora del Pacifico, cioè alla mezzanotte tra il 4 e il 5 novembre in Italia.
+È uscito in tutto il mondo il 4 novembre 2026 alle 15:00 ora del Pacifico, cioè alla mezzanotte tra il 4 e il 5 novembre in Italia.
 
 ### Che differenza c'è tra WoW Classic e WoW Forever?
 

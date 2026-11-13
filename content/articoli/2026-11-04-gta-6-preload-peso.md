@@ -23,34 +23,34 @@ fonti:
     url: "https://multiplayer.it/notizie/il-preload-di-gta-6-iniziera-prima-del-previsto-per-alcuni-utenti-confermato-anche-il-peso-del-gioco.html"
 ---
 
-Il **preload di GTA 6** comincerà il **10 novembre**, nove giorni prima dell'uscita del 19 novembre. Lo ha confermato **Rockstar Games** sul suo Newswire: chi ha comprato la versione digitale su **PS5** o **Xbox Series X|S** potrà scaricare il gioco in anticipo. Il dato che fa più discutere è il peso: circa **212 GB**.
+Il **preload di GTA 6** comincerà il 10 novembre, nove giorni prima dell'uscita del 19 novembre. Lo ha confermato **Rockstar Games** sul suo Newswire: chi ha comprato la versione digitale su PS5 o Xbox Series X|S potrà scaricare il gioco in anticipo. A far discutere, però, è il peso: circa 212 GB.
 
 ## Quando inizia il preload di GTA 6 in Italia
 
 Gli orari cambiano a seconda della console:
 
-- **PlayStation 5**: il preload si apre alla mezzanotte locale del 10 novembre, quindi in Italia alle 00:00 tra il 9 e il 10 novembre. Il sistema segue il fuso del proprio account, e come sempre i primi a partire saranno i giocatori in Nuova Zelanda.
-- **Xbox Series X|S**: il via è uguale per tutto il mondo, alle 00:00 GMT del 10 novembre. In Italia, con l'ora solare, corrisponde all'**01:00** del 10 novembre.
+- Su PlayStation 5 il preload si apre alla mezzanotte locale del 10 novembre, quindi in Italia alle 00:00 tra il 9 e il 10 novembre. Il sistema segue il fuso del proprio account e, come sempre, i primi a partire saranno i giocatori in Nuova Zelanda.
+- Su Xbox Series X|S il via è uguale per tutto il mondo, alle 00:00 GMT del 10 novembre, che in Italia, con l'ora solare, corrisponde all'01:00 del 10 novembre.
 
-Rispetto alle attese, è un regalo per chi ha preordinato in digitale: fino a poco tempo fa si pensava che il download anticipato sarebbe partito il 12 novembre, una settimana prima del lancio.
+Per chi ha preordinato in digitale è un bel regalo: fino a poco tempo fa si pensava che il download anticipato sarebbe partito il 12 novembre, una settimana prima del lancio.
 
 ## GTA 6 e le copie fisiche con codice nella scatola
 
-Chi ha scelto un'edizione fisica con il codice nella confezione dovrà invece aspettare: queste versioni arriveranno nei negozi dal **12 novembre**, e solo da quel momento sarà possibile riscattare il codice e iniziare a scaricare. Se il vostro negozio di fiducia vi consegna la copia in anticipo, conviene comunque tenere libero lo spazio sull'SSD per tempo.
+Chi ha scelto un'edizione fisica con il codice nella confezione dovrà invece aspettare. Queste versioni arriveranno nei negozi dal 12 novembre, e solo da quel momento si potrà riscattare il codice e iniziare a scaricare. Anche se il vostro negozio di fiducia vi consegna la copia in anticipo, conviene liberare lo spazio sull'SSD per tempo.
 
-Nel giorno di uscita, il 19 novembre, su PS5 il gioco si sbloccherà alla mezzanotte locale. Rockstar non ha ancora chiarito l'orario esatto di sblocco su Xbox.
+Il giorno dell'uscita, il 19 novembre, su PS5 il gioco si sbloccherà alla mezzanotte locale. Rockstar non ha ancora chiarito l'orario esatto di sblocco su Xbox.
 
 ## Quanto pesa GTA 6: 212 GB sull'SSD
 
-Il peso indicato è di **212 GB**, un numero vicino alle stime di circa 210 GB circolate nelle settimane scorse. Per fare un confronto, su una **Xbox Series S** da 512 GB, che ne lascia liberi circa 364, GTA 6 da solo occuperebbe più di metà dello spazio: molti dovranno fare pulizia.
+Il peso indicato è di 212 GB, vicino alle stime di circa 210 GB circolate nelle settimane scorse. Su una Xbox Series S da 512 GB, che ne lascia liberi circa 364, GTA 6 da solo occuperebbe più di metà dello spazio: molti dovranno fare pulizia.
 
-Va considerato anche che una patch del primo giorno potrebbe aggiungere altri gigabyte al totale. Il consiglio è di liberare un margine extra oltre ai 212 GB, specialmente per chi ha una PS5 del primo modello, con circa 667 GB utilizzabili.
+In più una patch del primo giorno potrebbe aggiungere altri gigabyte al totale, quindi meglio tenersi un margine oltre ai 212 GB, specialmente se avete una PS5 del primo modello, con circa 667 GB utilizzabili.
 
 ## Perché il preload di GTA 6 è così atteso
 
-Grand Theft Auto VI è il gioco più atteso del decennio e il suo arrivo ha spinto diversi editori a spostare le proprie uscite lontano da novembre. Nel suo annuncio **Rockstar** ricorda che c'è ancora tempo per preordinare, mentre i social sono pieni di giocatori che si organizzano per le notti del 9 e del 18 novembre.
+Grand Theft Auto VI è il gioco più atteso del decennio, e il suo arrivo ha spinto diversi editori a spostare le proprie uscite lontano da novembre. Nel suo annuncio Rockstar ricorda che c'è ancora tempo per preordinare, mentre sui social si moltiplicano i giocatori che si organizzano per le notti del 9 e del 18 novembre.
 
-Il gioco esce solo su console: per ora non è stata annunciata una versione PC. Restando in tema di grandi uscite rinviate o attese, vale la pena ricordare anche il recente [rinvio di The Duskbloods al 2027](/articoli/the-duskbloods-rinvio-2027/).
+Il gioco esce solo su console: per ora non è stata annunciata una versione PC. A proposito di grandi uscite attese e rinviate, c'è anche il recente [rinvio di The Duskbloods al 2027](/articoli/the-duskbloods-rinvio-2027/).
 
 ## Domande frequenti
 

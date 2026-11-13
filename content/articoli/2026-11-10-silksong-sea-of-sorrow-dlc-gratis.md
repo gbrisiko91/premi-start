@@ -25,25 +25,25 @@ fonti:
     url: "https://store.steampowered.com/app/1030300/"
 ---
 
-**Hollow Knight: Silksong** riceverà più di un'espansione gratuita. A rivelarlo non è un annuncio di **Team Cherry**, ma il libretto di istruzioni dell'edizione fisica, distribuita in questi giorni su **PS5**: una pagina descrive **Sea of Sorrow** come la "prima grande espansione" del gioco e promette altri pacchetti di contenuti gratuiti. Il dettaglio, condiviso su X il 9 novembre da un utente, è stato ripreso da diverse testate internazionali.
+**Hollow Knight: Silksong** riceverà più di un'espansione gratuita. **Team Cherry** non l'ha annunciato: lo dice il libretto di istruzioni dell'edizione fisica, distribuita in questi giorni su PS5, dove una pagina descrive **Sea of Sorrow** come la "prima grande espansione" del gioco e promette altri pacchetti di contenuti gratuiti. Il 9 novembre un utente ha condiviso la pagina su X e diverse testate internazionali l'hanno ripresa.
 
 ## Cosa dice il manuale di Silksong sulle espansioni
 
-Il testo del libretto è breve ma chiaro. Silksong, si legge, crescerà con **pacchetti di contenuti gratuiti** che porteranno nuove avventure, nuovi alleati, nuove abilità e nuovi nemici. Sea of Sorrow viene indicata come "in arrivo" e, soprattutto, come la prima di una serie.
+Il testo del libretto è breve. Si legge che Silksong crescerà con pacchetti di contenuti gratuiti, con nuove avventure, alleati, abilità e nemici. Sea of Sorrow è indicata come "in arrivo" e come la prima di una serie.
 
-È la prima volta che Team Cherry mette nero su bianco un piano che va oltre una singola espansione. Non sorprende troppo chi conosce lo studio australiano: il primo **Hollow Knight** ricevette ben quattro aggiornamenti gratuiti dopo l'uscita, tra cui Godmaster e The Grimm Troupe, che ne allungarono la vita per anni.
+È la prima volta che Team Cherry mette nero su bianco un piano che va oltre una singola espansione. Chi conosce lo studio australiano non si stupirà troppo: il primo Hollow Knight ricevette quattro aggiornamenti gratuiti dopo l'uscita, tra cui Godmaster e The Grimm Troupe, che lo tennero in vita per anni.
 
 ## Quando esce Silksong Sea of Sorrow
 
-Qui arriva la nota dolente. Sea of Sorrow è stata annunciata alla fine del 2025 come espansione gratuita a tema marino, con nuove avventure per **Hornet**, e con un'uscita prevista nel 2026. All'epoca Team Cherry aveva promesso di dare altre informazioni poco prima del lancio.
+E qui arriva la nota dolente. Sea of Sorrow è stata annunciata alla fine del 2025 come espansione gratuita a tema marino, con nuove avventure per Hornet e un'uscita prevista nel 2026. All'epoca Team Cherry aveva promesso altre informazioni poco prima del lancio.
 
-A meno di due mesi dalla fine dell'anno, però, una data non c'è ancora, e il manuale si limita a un generico "in arrivo". Se l'espansione non uscirà entro dicembre, slitterà di fatto al 2027. Lo studio, noto per comunicare pochissimo, non ha commentato.
+A meno di due mesi dalla fine dell'anno, però, la data ancora non c'è, e il manuale si ferma a un generico "in arrivo". Se l'espansione non esce entro dicembre, slitta di fatto al 2027. Lo studio, che comunica pochissimo, non ha commentato.
 
 ## L'edizione fisica di Silksong: cosa contiene
 
-L'edizione fisica è curata da **Fangamer** ed è disponibile per PS5, **Xbox Series X|S** e **Switch 2**. Nella confezione ci sono il gioco, una copertina reversibile, un manuale di 32 pagine e un piccolo poster. Sea of Sorrow non è sul disco: quando uscirà andrà scaricata, gratis come per chi ha la versione digitale.
+L'edizione fisica è curata da Fangamer ed è disponibile per PS5, Xbox Series X|S e Switch 2. Nella confezione ci sono il gioco, una copertina reversibile, un manuale di 32 pagine e un piccolo poster. Sea of Sorrow non è sul disco: quando uscirà si scaricherà gratis, come per chi ha la versione digitale.
 
-Un manuale cartaceo che anticipa i piani dello sviluppatore è ormai una rarità, e anche per questo la notizia ha fatto il giro dei fan. Il gioco del resto continua ad andare forte: su Steam ha oltre il 90% di recensioni positive a più di un anno dall'uscita. Chi ama i metroidvania può recuperare anche la nostra storia sul [port amatoriale di Castlevania: Symphony of the Night per SNES](/articoli/castlevania-symphony-of-the-night-snes/).
+Ormai capita di rado che un manuale cartaceo anticipi i piani di uno sviluppatore, e anche per questo la notizia ha fatto il giro dei fan. Il gioco intanto va ancora forte: su Steam ha oltre il 90% di recensioni positive a più di un anno dall'uscita. Se ti piacciono i metroidvania, recupera anche la nostra storia sul [port amatoriale di Castlevania: Symphony of the Night per SNES](/articoli/castlevania-symphony-of-the-night-snes/).
 
 ## Domande frequenti
 
@@ -53,10 +53,10 @@ Sì. Team Cherry ha confermato che Sea of Sorrow sarà un'espansione gratuita pe
 
 ### Quando esce Sea of Sorrow?
 
-Non c'è ancora una data. Team Cherry aveva indicato il 2026, ma il manuale dell'edizione fisica parla solo di "in arrivo".
+Non c'è ancora una data. Team Cherry aveva indicato il 2026, ma il manuale dell'edizione fisica dice solo "in arrivo".
 
 ### Silksong avrà altri DLC?
 
-Secondo il manuale dell'edizione fisica sì: dopo Sea of Sorrow sono previsti altri pacchetti di contenuti gratuiti, ancora senza nomi né date.
+Secondo il manuale dell'edizione fisica sì: dopo Sea of Sorrow sono previsti altri pacchetti di contenuti gratuiti, per ora senza nomi né date.
 
 <!-- NOTE PER LA REDAZIONE: il testo del manuale è riportato da Push Square e GamingBolt (fonte originale: post su X di Arfadoz, @arfa2706, 9 novembre); Team Cherry non ha fatto annunci ufficiali sui pacchetti successivi, quindi l'informazione va tenuta come "secondo il manuale". Data dell'edizione fisica incerta: Gematsu a maggio indicava il 16 ottobre, Push Square scrive che il disco PS5 è disponibile dal 10 novembre e un lettore parla del 27 novembre per l'Europa: verificare la data italiana prima di pubblicare (nel testo ho scritto "in questi giorni"). Le due citazioni tradotte ("prima grande espansione", "in arrivo") sono sotto le 15 parole. Verificare il dato Steam (93% positive al momento della ricerca). Immagine: pagina Steam ufficiale di Silksong (app 1030300); aprire la library_hero nel browser e, se non carica, usare la riserva (og:image). Il link interno a Castlevania SOTN per SNES è a tema metroidvania: sostituirlo se c'è un articolo più vicino. -->

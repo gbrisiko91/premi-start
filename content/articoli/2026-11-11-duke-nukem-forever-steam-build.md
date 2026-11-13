@@ -23,23 +23,23 @@ fonti:
     url: "https://www.pcgamer.com/the-leaked-2001-duke-nukem-forever-build-can-now-be-downloaded/"
 ---
 
-Il re è tornato a farsi vedere, almeno su Steam. La pagina di **Duke Nukem Forever** è stata aggiornata in silenzio con filmati e immagini che, secondo i fan, vengono dalle **build mai pubblicate del 2000 e del 2006**, le versioni del gioco rimaste chiuse nei cassetti durante i suoi quattordici anni di sviluppo. Tanto è bastato per far partire la voce: **2K** starebbe preparando l'uscita ufficiale di una vecchia versione. Ma per ora è solo un'ipotesi, senza alcuna conferma.
+Il re è tornato a farsi vedere, almeno su Steam. La pagina di **Duke Nukem Forever** è stata aggiornata in silenzio con filmati e immagini che, secondo i fan, vengono dalle build mai pubblicate del 2000 e del 2006, le versioni del gioco rimaste chiuse nei cassetti durante i suoi quattordici anni di sviluppo. Tanto è bastato per far partire la voce: **2K** starebbe preparando l'uscita ufficiale di una vecchia versione. Per ora è solo un'ipotesi, senza alcuna conferma.
 
 ## Cosa è cambiato sulla pagina Steam di Duke Nukem Forever
 
-Ad accorgersene sono stati gli appassionati, che sui social hanno segnalato un nuovo trailer e delle GIF tratte dalla build del 2006. La notizia è stata ripresa da **Time Extension**, che parla di materiale proveniente da versioni mai uscite del gioco.
+Ad accorgersene sono stati gli appassionati, che sui social hanno segnalato un nuovo trailer e delle GIF tratte dalla build del 2006. La notizia è stata ripresa da Time Extension, che parla di materiale proveniente da versioni mai uscite del gioco.
 
-Anche i dati pubblici di Steam confermano un intervento recente: secondo **SteamDB**, le risorse grafiche della [pagina Steam ufficiale](https://store.steampowered.com/app/57900/) sono state modificate il 10 novembre. Editore e sviluppatore restano 2K e **Gearbox Software**, oggi entrambe sotto l'ombrello di **Take-Two**.
+Che qualcosa sia cambiato da poco lo dicono anche i dati pubblici di Steam: secondo SteamDB, le risorse grafiche della [pagina Steam ufficiale](https://store.steampowered.com/app/57900/) sono state modificate il 10 novembre. Editore e sviluppatore restano 2K e **Gearbox Software**, oggi entrambe di proprietà di Take-Two.
 
 ## Perché le vecchie build fanno sognare i fan
 
-Duke Nukem Forever è la leggenda dei giochi in sviluppo infinito. Annunciato da **3D Realms** nel 1997 come seguito di **Duke Nukem 3D**, è passato per motori grafici diversi, ricominciato più volte da zero e, dopo la crisi dello studio nel 2009, completato da Gearbox. È uscito solo nel 2011, accolto da recensioni molto tiepide.
+Tra i giochi rimasti in sviluppo per un'eternità, Duke Nukem Forever è il caso più famoso. Annunciato da 3D Realms nel 1997 come seguito di Duke Nukem 3D, ha cambiato motore grafico, è ripartito più volte da zero e, dopo la crisi dello studio nel 2009, l'ha completato Gearbox. È uscito solo nel 2011, accolto da recensioni molto tiepide.
 
-Per molti fan il vero Duke Nukem Forever è quello che non hanno mai giocato: le versioni mostrate nei trailer di inizio anni 2000, che avevano poco a che fare con il gioco finale. Nel 2022 una build del 2001 è trapelata online ed è diventata un piccolo caso tra gli appassionati di sparatutto anni '90, con tanto di progetti amatoriali per renderla giocabile. Un'uscita ufficiale, magari a 30 anni dal debutto di Duke Nukem 3D, sarebbe un evento per il retro gaming. Se vi piacciono queste storie, non perdetevi la nostra [rimpatriata di Doom con Romero, Petersen e Carmack](/articoli/doom-deathmatch-romero-petersen-carmack/).
+Per molti fan il vero Duke Nukem Forever è quello che non hanno mai giocato: le versioni mostrate nei trailer di inizio anni 2000, che avevano poco a che fare con il gioco finale. Nel 2022 una build del 2001 è trapelata online ed è diventata un piccolo caso tra gli appassionati di sparatutto anni '90, con tanto di progetti amatoriali per renderla giocabile. Un'uscita ufficiale, magari a 30 anni dal debutto di Duke Nukem 3D, farebbe la gioia degli appassionati di retro gaming. Se vi piacciono queste storie, non perdetevi la nostra [rimpatriata di Doom con Romero, Petersen e Carmack](/articoli/doom-deathmatch-romero-petersen-carmack/).
 
-## Cosa aspettarsi: indiscrezione, non annuncio
+## Cosa aspettarsi: per ora è un'indiscrezione
 
-Va detto chiaramente: né 2K né Gearbox hanno annunciato nulla. L'aggiornamento della pagina potrebbe anche essere solo un rinnovo del materiale promozionale. Time Extension stessa definisce l'idea di una riedizione della vecchia build una pura speculazione dei fan. Seguiremo la vicenda e aggiorneremo l'articolo se arriveranno conferme.
+Né 2K né Gearbox hanno annunciato nulla, e l'aggiornamento della pagina potrebbe anche essere solo un rinnovo del materiale promozionale. La stessa Time Extension definisce l'idea di una riedizione della vecchia build una pura speculazione dei fan. Seguiremo la vicenda e aggiorneremo l'articolo se arriveranno conferme.
 
 ## Domande frequenti
 

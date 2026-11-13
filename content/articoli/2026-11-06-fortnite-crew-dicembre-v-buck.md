@@ -23,30 +23,30 @@ fonti:
     url: "https://insider-gaming.com/fortnite-crew-changes-take-effect-from-june-2026/"
 ---
 
-Il **Fortnite Crew** cambia faccia dal **5 dicembre**. **Epic Games** ha annunciato il 4 novembre che l'abbonamento mensile di **Fortnite** darà più **V-Buck**, fino a 1.600 al mese per chi resta iscritto a lungo, ma smetterà di regalare la skin esclusiva di ogni mese e perderà l'**OG Pass**. Un cambio di rotta che non accontenta tutti: chi colleziona costumi perde uno dei motivi principali per abbonarsi.
+Il **Fortnite Crew** cambia faccia dal 5 dicembre. **Epic Games** ha annunciato il 4 novembre che l'abbonamento mensile di Fortnite darà più V-Buck, fino a 1.600 al mese per chi resta iscritto a lungo, ma smetterà di regalare la skin esclusiva di ogni mese e perderà l'OG Pass. La novità non accontenta tutti, perché chi colleziona costumi perde uno dei motivi principali per abbonarsi.
 
 ## Quanti V-Buck dà il Fortnite Crew dal 5 dicembre
 
-La novità principale è un sistema a livelli legato alla fedeltà. Più mesi consecutivi si resta abbonati, più V-Buck arrivano ogni mese:
+Il cambiamento più grosso è un sistema a livelli legato alla fedeltà: più mesi consecutivi si resta abbonati, più V-Buck arrivano ogni mese.
 
-- **1-2 mesi**: 1.000 V-Buck
-- **3-5 mesi**: 1.200 V-Buck
-- **6-11 mesi**: 1.400 V-Buck
-- **12 mesi o più**: 1.600 V-Buck
+- 1-2 mesi: 1.000 V-Buck
+- 3-5 mesi: 1.200 V-Buck
+- 6-11 mesi: 1.400 V-Buck
+- 12 mesi o più: 1.600 V-Buck
 
-Conta anche l'anzianità già accumulata: chi è iscritto da più di un anno passa subito al livello più alto. Per molti è anche una retromarcia: a giugno 2026 Epic aveva ridotto la quota mensile da 1.000 a 800 V-Buck, una scelta che non era piaciuta. Il prezzo dell'abbonamento, secondo Beebom, resta invariato.
+Conta anche l'anzianità già accumulata: chi è iscritto da più di un anno passa subito al livello più alto. Per molti suona come una retromarcia, visto che a giugno 2026 Epic aveva ridotto la quota mensile da 1.000 a 800 V-Buck, una scelta che non era piaciuta. Il prezzo dell'abbonamento, secondo Beebom, resta invariato.
 
-Arriva anche un bonus del 20% sui punti esperienza per gli abbonati. Secondo Beebom, i compagni di squadra di un membro del Crew ricevono a loro volta un 10% in più.
+Gli abbonati avranno anche un bonus del 20% sui punti esperienza e, secondo Beebom, i compagni di squadra di un membro del Crew ricevono a loro volta un 10% in più.
 
 ## Fine delle skin mensili e dell'OG Pass: cosa si perde
 
-Il pacchetto del Crew di dicembre sarà l'**ultimo**: da gennaio niente più costume esclusivo ogni mese, che dal 2020 era il simbolo dell'abbonamento. Epic assicura che chi non ha ancora sbloccato tutti gli stili "Legacy" dei costumi del Crew li riceverà automaticamente.
+Il pacchetto del Crew di dicembre sarà l'ultimo: da gennaio sparisce il costume esclusivo mensile, che dal 2020 era il simbolo dell'abbonamento. Epic assicura che chi non ha ancora sbloccato tutti gli stili "Legacy" dei costumi del Crew li riceverà automaticamente.
 
-Anche l'OG Pass esce dall'abbonamento il 5 dicembre. La modalità **Fortnite OG** si chiuderà con un finale per la Stagione X del Capitolo 1, mentre la prossima era di OG è prevista per la fine del 2027. Restano invece inclusi il **Pass battaglia**, il **Pass musicale**, il **Pass LEGO** e il **Rocket Pass Premium** di Rocket League.
+Anche l'OG Pass esce dall'abbonamento il 5 dicembre. La modalità Fortnite OG si chiuderà con un finale per la Stagione X del Capitolo 1, mentre la prossima era di OG è prevista per la fine del 2027. Restano invece inclusi il Pass battaglia, il Pass musicale, il Pass LEGO e il Rocket Pass Premium di Rocket League.
 
 ## Conviene ancora abbonarsi al Fortnite Crew?
 
-Dipende da come si gioca. Per chi spende i V-Buck nel Negozio o vuole sbloccare i pass stagionali, il nuovo Crew è più generoso, soprattutto dopo un anno di iscrizione. Per chi si abbonava per le skin esclusive, invece, il valore cala: quei costumi erano disponibili solo tramite il Crew e non si potevano comprare altrimenti.
+Dipende da come si gioca. Per chi spende i V-Buck nel Negozio o vuole sbloccare i pass stagionali, il nuovo Crew è più generoso, soprattutto dopo un anno di iscrizione. Chi si abbonava per le skin esclusive, invece, ci perde: quei costumi si potevano avere solo tramite il Crew.
 
 Il cambiamento arriva in un periodo già movimentato per Fortnite, tra le polemiche sui prezzi delle skin e la caccia al [Gettone del Negozio pirata](/articoli/fortnite-gettone-negozio-pirata/) che ha fatto nascere un mercato nero di account. L'annuncio ufficiale completo si trova sul [sito di Fortnite](https://www.fortnite.com/news/big-changes-to-fortnite-crew-launching-december-5).
 

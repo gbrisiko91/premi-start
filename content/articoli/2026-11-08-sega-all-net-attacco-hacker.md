@@ -27,31 +27,31 @@ fonti:
     url: "https://multiplayer.it/notizie/hacker-hanno-colpito-le-reti-degli-arcade-giapponesi-sale-semivuote-e-macchine-offline.html"
 ---
 
-Da una settimana molte **sale giochi giapponesi** lavorano a metà. Il 1° novembre **Sega Fave**, la società del gruppo **Sega** che gestisce il business arcade, ha spento i servizi **ALL.Net** e **Aime** dopo un **attacco hacker** ai suoi server. Oggi, 8 novembre, è arrivata la prima buona notizia: alcuni giochi di **Bandai Namco** stanno tornando online in via sperimentale, mentre per i titoli Sega non c'è ancora una data.
+Da una settimana molte sale giochi giapponesi lavorano a metà. Il 1° novembre Sega Fave, la società del gruppo **Sega** che gestisce il business arcade, ha spento i servizi **ALL.Net** e Aime dopo un attacco hacker ai suoi server. Oggi, 8 novembre, è arrivata la prima buona notizia: alcuni giochi di **Bandai Namco** stanno tornando online in via sperimentale, mentre per i titoli Sega una data ancora non c'è.
 
 ## Cos'è successo ai server Sega ALL.Net
 
-ALL.Net è la rete che collega migliaia di cabinati in tutto il Giappone: gestisce classifiche, partite online, eventi e licenze. Aime è il sistema di tessere con cui i giocatori salvano i progressi. Entrambi sono usati non solo da Sega, ma anche da altri produttori, a partire da Bandai Namco.
+ALL.Net è la rete che collega migliaia di cabinati in tutto il Giappone e gestisce classifiche, partite online, eventi e licenze. Aime è il sistema di tessere con cui i giocatori salvano i progressi. Li usano sia Sega sia altri produttori, a partire da Bandai Namco.
 
-Secondo il [comunicato ufficiale di Sega Fave](https://www.segafave.co.jp/news/261102_1/), un soggetto esterno ha ottenuto accesso non autorizzato ad alcuni server. I servizi sono stati sospesi alle 15:00 del 1° novembre, ora giapponese, per indagare e mettere in sicurezza i sistemi. Già a fine ottobre la rete era rimasta ferma per alcuni giorni per correggere una vulnerabilità.
+Secondo il [comunicato ufficiale di Sega Fave](https://www.segafave.co.jp/news/261102_1/), un soggetto esterno è riuscito ad accedere senza autorizzazione ad alcuni server. I servizi sono stati sospesi alle 15:00 del 1° novembre, ora giapponese, per indagare e mettere in sicurezza i sistemi. Già a fine ottobre la rete era rimasta ferma per qualche giorno per correggere una vulnerabilità.
 
-Sul fronte dei dati, Sega Fave dice che finora non risultano fughe di informazioni su clienti o partner. I dati delle carte di credito, inoltre, non erano conservati sui server colpiti. L'indagine però non è conclusa.
+Quanto ai dati, Sega Fave dice che per ora non risultano fughe di informazioni su clienti o partner, e i dati delle carte di credito non erano conservati sui server colpiti. L'indagine però è ancora aperta.
 
 ## Quali giochi arcade sono stati colpiti dall'attacco
 
-Il blocco ha colpito soprattutto i giochi che vivono di partite online e tornei. Tra i titoli Sega più citati ci sono **Initial D The Arcade**, che ha cancellato diversi tornei regionali, e i rhythm game **CHUNITHM** e **maimai DX**, che stanno valutando di prolungare gli eventi in corso e di risarcire gli abbonati.
+Il blocco ha colpito soprattutto i giochi che vivono di partite online e tornei. Tra i titoli Sega più citati ci sono Initial D The Arcade, che ha cancellato diversi tornei regionali, e i rhythm game CHUNITHM e maimai DX, che stanno pensando di prolungare gli eventi in corso e di risarcire gli abbonati.
 
-Il caso più pesante riguarda però Bandai Namco. I suoi giochi collegati ad ALL.Net possono funzionare offline per un massimo di **72 ore**, poi la licenza scade. Così, dopo tre giorni di blocco, in diverse sale **Taiko no Tatsujin** ha smesso di avviarsi del tutto, anche in modalità offline. Coinvolti anche **Mobile Suit Gundam Extreme VS. 2 Infinite Boost**, **Wangan Midnight Maximum Tune 6RR PLUS**, **JoJo's Bizarre Adventure: Last Survivor** e **Mario Kart Arcade GP DX**.
+Il caso più pesante però è quello di Bandai Namco. I suoi giochi collegati ad ALL.Net possono funzionare offline per 72 ore al massimo, poi la licenza scade. Così, dopo tre giorni di blocco, in diverse sale Taiko no Tatsujin ha smesso del tutto di avviarsi, anche in modalità offline. Nella lista ci sono anche Mobile Suit Gundam Extreme VS. 2 Infinite Boost, Wangan Midnight Maximum Tune 6RR PLUS, JoJo's Bizarre Adventure: Last Survivor e Mario Kart Arcade GP DX.
 
-La catena **Taito Station** ha raccontato sui social di sale semivuote e macchine spente, in un post poi rimosso. I classici che non richiedono la rete, invece, continuano a funzionare come sempre.
+La catena Taito Station ha parlato sui social di sale semivuote e macchine spente, in un post poi rimosso. I classici che non hanno bisogno della rete, invece, funzionano come sempre.
 
 ## Quando tornano online ALL.Net e Aime
 
-Dall'8 novembre, come annunciato dall'account ufficiale ALL.Net, sei titoli Bandai Namco stanno ripartendo gradualmente, con gioco online e uso delle tessere: Taiko no Tatsujin, Gundam Extreme VS. 2 Infinite Boost, The Idolm@ster Tours, JoJo's Bizarre Adventure: Last Survivor, Wangan Midnight Maximum Tune 6RR PLUS e Gundam Arsenal Base.
+Dall'8 novembre, come ha annunciato l'account ufficiale ALL.Net, sei titoli Bandai Namco stanno ripartendo un po' alla volta, con gioco online e uso delle tessere: Taiko no Tatsujin, Gundam Extreme VS. 2 Infinite Boost, The Idolm@ster Tours, JoJo's Bizarre Adventure: Last Survivor, Wangan Midnight Maximum Tune 6RR PLUS e Gundam Arsenal Base.
 
-Per i giochi Sega, invece, la manutenzione continua senza una data di riapertura. Il prossimo aggiornamento è atteso il **10 novembre** alle 9:00 ora giapponese, l'1:00 di notte in Italia.
+Per i giochi Sega la manutenzione va avanti senza una data di riapertura. Il prossimo aggiornamento è atteso il 10 novembre alle 9:00 ora giapponese, cioè l'1:00 di notte in Italia.
 
-Per una rete arcade una settimana di blocco è lunghissima: tornei, eventi stagionali e abbonamenti si fermano, e le sale perdono incassi proprio nel fine settimana. Restando in casa Sega, ma su un fronte più nostalgico, vi abbiamo raccontato anche dei [prototipi del Mega Drive](/articoli/prototipi-mega-drive-sega-sti/).
+Per una rete arcade una settimana di stop è lunghissima: tornei, eventi stagionali e abbonamenti si fermano, e le sale perdono incassi proprio nel fine settimana. Sempre in casa Sega, ma sul versante nostalgia, vi abbiamo raccontato anche dei [prototipi del Mega Drive](/articoli/prototipi-mega-drive-sega-sti/).
 
 ## Domande frequenti
 

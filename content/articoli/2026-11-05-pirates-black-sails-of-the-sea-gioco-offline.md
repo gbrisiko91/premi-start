@@ -13,7 +13,7 @@ alt_immagine: "Menu e due scene di gioco di Pirates: Black Sails of the Sea, con
 crediti_immagine: "Immagini: Giancarlo Mennillo, materiale originale del gioco"
 ---
 
-**Pirates: Black Sails of the Sea** è un arcade di battaglie navali che ha un punto di forza preciso: si gioca **offline**, senza bisogno di connessione. Dietro il timone c'è **Giancarlo Mennillo**, un ragazzo della provincia di **Salerno** che l'ha creato da solo, e noi l'abbiamo visto in azione.
+**Pirates: Black Sails of the Sea** è un arcade di battaglie navali con un punto di forza preciso: si gioca offline, senza bisogno di connessione. Al timone c'è **Giancarlo Mennillo**, un ragazzo della provincia di Salerno che l'ha creato da solo, e noi l'abbiamo visto in azione.
 
 <figure class="immagine-testo"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Partita a Pirates: Black Sails of the Sea tra nebbia e pioggia" style="display:block;width:100%;max-width:22rem;margin:0 auto;border-radius:14px"></video><figcaption>Una partita tra nebbia e pioggia. Video: Giancarlo Mennillo</figcaption></figure>
 
@@ -21,34 +21,34 @@ crediti_immagine: "Immagini: Giancarlo Mennillo, materiale originale del gioco"
 
 La visuale è dall'alto, come negli sparatutto arcade di una volta. Si guida una nave pirata con un joystick virtuale e si combatte con due tasti d'azione, mentre in mare compaiono navi nemiche, ognuna con i suoi punti vita bene in vista sopra le vele.
 
-In cima allo schermo ci sono tre numeri da tenere d'occhio: le **monete d'oro**, le **palle di cannone** rimaste e la barra dei **danni** subiti. Le munizioni finiscono, quindi non si può sparare a vuoto: i forzieri che galleggiano tra le onde ricaricano oro e colpi. Gli scogli sparsi sulla mappa, invece, sono da evitare.
+In cima allo schermo ci sono tre numeri da tenere d'occhio: le monete d'oro, le palle di cannone rimaste e la barra dei danni subiti. Le munizioni finiscono, quindi meglio non sparare a vuoto; a ricaricare oro e colpi ci pensano i forzieri che galleggiano tra le onde. Gli scogli sparsi sulla mappa, invece, sono da evitare.
 
 ## Il meteo di Pirates: Black Sails of the Sea cambia il gameplay
 
-La parte più riuscita è il mare che cambia. Le prime fasi della partita si giocano con il cielo sereno, ma andando avanti, superati più o meno i 9.000 punti, il meteo inizia a cambiare. E non è solo una questione di atmosfera: ogni condizione modifica il modo di giocare.
+La parte più riuscita è il mare che cambia. Le prime fasi della partita si giocano con il cielo sereno, poi, superati più o meno i 9.000 punti, il meteo si guasta e ogni condizione cambia il modo di giocare.
 
-- La **neve** rallenta la nave.
-- La **nebbia** riduce la visibilità: nemici e ostacoli diventano sagome sbiadite e si vedono arrivare all'ultimo.
-- Il **vento** spinge forzieri, bombe e persino la propria nave nella direzione in cui soffia.
-- Le **tempeste** sono le più pericolose: durante i temporali un fulmine può colpire la nave e infliggere 40 punti di danno.
+- La neve rallenta la nave.
+- La nebbia riduce la visibilità: nemici e ostacoli diventano sagome sbiadite e si vedono arrivare all'ultimo.
+- Il vento spinge forzieri, bombe e persino la propria nave nella direzione in cui soffia.
+- Le tempeste sono le più pericolose, perché durante i temporali un fulmine può colpire la nave e infliggere 40 punti di danno.
 
-E poi c'è lui: un **megalodonte** che attraversa la scena e attacca chi capita a tiro.
+E poi c'è lui, un megalodonte che attraversa la scena e attacca chi capita a tiro.
 
 <figure class="immagine-testo"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Un megalodonte attacca durante una battaglia navale" style="display:block;width:100%;max-width:22rem;margin:0 auto;border-radius:14px"></video><figcaption>L'attacco del megalodonte. Video: Giancarlo Mennillo</figcaption></figure>
 
 ## Navi da collezionare e ricompense giornaliere
 
-Fuori dalla battaglia, la sezione **Le Mie Navi** raccoglie le imbarcazioni sbloccate. Ognuna ha quattro statistiche: velocità, potenza di fuoco, munizioni e punti vita. Alcune navi compaiono solo per un periodo limitato, come la **Pumpkin Phantom** di Halloween, con le vele arancioni a forma di zucca.
+Fuori dalla battaglia, la sezione Le Mie Navi raccoglie le imbarcazioni sbloccate, ognuna con quattro statistiche: velocità, potenza di fuoco, munizioni e punti vita. Alcune navi compaiono solo per un periodo limitato, come la Pumpkin Phantom di Halloween, con le vele arancioni a forma di zucca.
 
 <figure class="immagine-testo" style="display:flex;gap:1rem;justify-content:center"><img src="/media/pirates-black-sails/menu-principale.jpg" alt="Menu principale di Pirates: Black Sails of the Sea con i tasti Gioca, Negozio, Invita e Top Pirati" loading="lazy" decoding="async" style="width:48%;max-width:16rem;height:auto;max-height:none;object-fit:contain"><img src="/media/pirates-black-sails/pumpkin-phantom.jpg" alt="La nave Pumpkin Phantom con le sue statistiche nella schermata Le Mie Navi" loading="lazy" decoding="async" style="width:48%;max-width:16rem;height:auto;max-height:none;object-fit:contain"></figure>
 
-Dal menu principale si accede al **negozio**, alla classifica **Top Pirati** e alla funzione per invitare gli amici, e c'è anche un collegamento a **Discord**. Ogni giorno, aprendo il gioco, arriva una ricompensa di 500 monete d'oro.
+Dal menu principale si accede al negozio, alla classifica Top Pirati e alla funzione per invitare gli amici, e c'è anche un collegamento a Discord. Ogni giorno, aprendo il gioco, arriva una ricompensa di 500 monete d'oro.
 
 ## Perché il gioco offline conta
 
-Molti giochi per smartphone oggi chiedono una connessione costante, anche quando si gioca da soli. Pirates: Black Sails of the Sea va nella direzione opposta: si gioca in treno, in aereo o dove il segnale non arriva, senza attese e senza dipendere da un server.
+Molti giochi per smartphone oggi chiedono una connessione costante, anche quando si gioca da soli. Pirates: Black Sails of the Sea invece si gioca in treno, in aereo o dove il segnale non arriva, senza attese e senza dipendere da un server.
 
-È anche una bella storia italiana. Non c'è uno studio alle spalle, ma un ragazzo che ha costruito il suo gioco da zero. E la questione di chi crea i giochi, e come, è più attuale che mai, come dimostra [la pulizia di itch.io contro i giochi fatti in serie con l'IA](/articoli/itch-io-giochi-ia-eliminati/).
+È anche una bella storia italiana: un ragazzo che ha costruito il suo gioco da zero, senza uno studio alle spalle. Di chi crea i giochi, e come, si parla molto in questi giorni, per esempio con [la pulizia di itch.io contro i giochi fatti in serie con l'IA](/articoli/itch-io-giochi-ia-eliminati/).
 
 ## Domande frequenti
 

@@ -27,35 +27,35 @@ fonti:
     url: "https://www.everyeye.it/notizie/fortnite-x-one-piece-gettone-negozio-gratis-scatena-mercato-nero-illegale-909827.html"
 ---
 
-Da oggi, 7 novembre, la ciurma di Cappello di Paglia è al completo su **Fortnite**. **Zoro** e **Sanji** arrivano nel Negozio insieme a **Chopper**, che si unisce come Sidekick. È la seconda ondata della collaborazione con **One Piece**, la più attesa di sempre per i fan dell'anime e una delle più grandi mai costruite da **Epic Games**.
+Da oggi, 7 novembre, la ciurma di Cappello di Paglia su **Fortnite** è al completo: Zoro e Sanji arrivano nel Negozio insieme a Chopper, che si aggiunge come Sidekick. È la seconda ondata della collaborazione con **One Piece**, la più attesa di sempre per i fan dell'anime e una delle più grandi mai messe in piedi da Epic Games.
 
 ## Tutte le skin di One Piece su Fortnite
 
-La mini-stagione **Cacciatori di tesori** è partita il 1° novembre e porta i personaggi in due modi diversi:
+La mini-stagione Cacciatori di tesori è partita il 1° novembre e i personaggi arrivano in due modi:
 
-- **Pass battaglia:** Ace e Nico Robin.
-- **Negozio dal 1° novembre:** Rufy, Nami e Usopp.
-- **Negozio da oggi, 7 novembre:** Zoro, Sanji e Chopper come Sidekick.
+- nel Pass battaglia, Ace e Nico Robin;
+- nel Negozio dal 1° novembre, Rufy, Nami e Usopp;
+- nel Negozio da oggi, 7 novembre, Zoro, Sanji e Chopper come Sidekick.
 
-Nella collaborazione c'è anche Buggy. Epic non ha voluto un semplice pacchetto di skin: la **Going Merry**, la nave della ciurma, prende il posto del classico bus da battaglia, e la mappa si riempie di luoghi ispirati al mondo di One Piece.
+Nella collaborazione c'è anche Buggy. E Epic è andata oltre le skin: la Going Merry, la nave della ciurma, prende il posto del classico bus da battaglia, e la mappa si riempie di luoghi ispirati al mondo di One Piece.
 
 ## Il trailer di Fortnite x One Piece che sembra una sigla dell'anime
 
-Per il lancio **Toei Animation**, lo studio che produce l'anime, ha realizzato un trailer di due minuti che rende omaggio alla prima sigla della serie, **"We Are!"** di Hiroshi Kitadani. Rufy e compagni corrono accanto a personaggi storici di Fortnite come Jones, Peely e Fishstick, disegnati nello stile dell'anime. Il video esiste in inglese e in giapponese, ma in entrambi la canzone resta quella originale giapponese.
+Per il lancio Toei Animation, lo studio che produce l'anime, ha realizzato un trailer di due minuti che omaggia la prima sigla della serie, "We Are!" di Hiroshi Kitadani. Rufy e compagni corrono accanto a personaggi storici di Fortnite come Jones, Peely e Fishstick, disegnati nello stile dell'anime. Il video c'è sia in inglese sia in giapponese, ma in tutte e due le versioni la canzone resta quella originale giapponese.
 
-È un segnale chiaro: per Epic questa non è una collab qualunque, ma un evento da trattare come un episodio speciale.
+Epic, insomma, tratta la collab come un episodio speciale dell'anime.
 
 ## Il Gettone dei pirati e la corsa al tesoro
 
-La vera trovata della stagione resta il **Gettone del Negozio dei pirati**: un premio rarissimo nascosto nei forzieri che rende gratis quasi tutto il Negozio per 14 giorni, skin di One Piece comprese. La community stima che esca circa una volta su 700.000, e intorno al Gettone è già nato un mercato nero di account e "accompagnamenti" a pagamento. Abbiamo raccontato tutta la storia nel nostro [articolo sul Gettone del Negozio pirata](/articoli/fortnite-gettone-negozio-pirata/).
+La trovata più forte della stagione resta il Gettone del Negozio dei pirati, un premio rarissimo nascosto nei forzieri che rende gratis quasi tutto il Negozio per 14 giorni, skin di One Piece comprese. La community stima che esca circa una volta su 700.000, e intorno al Gettone è già nato un mercato nero di account e "accompagnamenti" a pagamento. Trovate tutta la storia nel nostro [articolo sul Gettone del Negozio pirata](/articoli/fortnite-gettone-negozio-pirata/).
 
-Da oggi la caccia ha un motivo in più: chi trova il Gettone può prendere gratis anche Zoro e Sanji appena arrivati.
+Da oggi c'è un motivo in più per cercarlo: chi trova il Gettone può prendersi gratis anche Zoro e Sanji, appena arrivati.
 
 ## Perché Epic punta così forte adesso
 
-Il tempismo non sembra casuale. Tra poche settimane esce **GTA VI**, e sia Kotaku sia Everyeye leggono le mosse di questa stagione come un modo per tenere i giocatori su Fortnite prima dell'arrivo del gigante di Rockstar. Una collaborazione con uno degli anime più seguiti al mondo, distribuita a ondate settimanali, è un ottimo motivo per tornare ogni giorno.
+Il tempismo non sembra casuale. Tra poche settimane esce GTA VI, e sia Kotaku sia Everyeye leggono le mosse di questa stagione come un modo per tenere i giocatori su Fortnite prima che arrivi il gigante di Rockstar. Una collaborazione con uno degli anime più seguiti al mondo, distribuita a ondate settimanali, dà parecchi motivi per tornare ogni giorno.
 
-La mini-stagione Cacciatori di tesori dura fino all'inizio di dicembre: dopo One Piece arriveranno altri ospiti, tra cui Hatsune Miku e Kasane Teto.
+La mini-stagione Cacciatori di tesori dura fino all'inizio di dicembre, e dopo One Piece arriveranno altri ospiti, tra cui Hatsune Miku e Kasane Teto.
 
 ## Domande frequenti
 

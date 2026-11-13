@@ -19,32 +19,32 @@ fonti:
     url: "https://multiplayer.it/notizie/dopo-29-anni-e-stato-scoperto-come-reclutare-un-personaggio-segreto-di-tales-of-destiny-su-ps1.html"
 ---
 
-**Tales of Destiny** custodiva un segreto da quasi trent'anni. Un gruppo di appassionati ha scoperto come reclutare **Lilith Aileros**, la sorella del protagonista **Stahn**, nella versione **PlayStation** originale del JRPG di **Namco**, dove fino a oggi si dava per scontato che fosse impossibile. Il metodo, mostrato in un video su YouTube, richiede 26 passaggi e un'attenzione quasi maniacale fin dalle prime ore di gioco.
+**Tales of Destiny** custodiva un segreto da quasi trent'anni. Un gruppo di appassionati ha scoperto come reclutare **Lilith Aileros**, la sorella del protagonista Stahn, nella versione PlayStation originale del JRPG di Namco, dove fino a oggi tutti lo davano per impossibile. Il metodo, mostrato in un video su YouTube, richiede 26 passaggi e un'attenzione quasi maniacale già dalle prime ore di gioco.
 
 ## Chi ha scoperto come reclutare Lilith in Tales of Destiny
 
-La scoperta porta la firma dello youtuber **Kevangelion**, che ha pubblicato il filmato della scena di reclutamento sulla versione americana del gioco, ringraziando gli utenti SymphoniaLauren, Mziab ed Ethanol per l'aiuto. Il punto di partenza è stato un vecchio post di un forum giapponese, che descriveva la procedura: Kevangelion l'ha messa alla prova, l'ha verificata e l'ha trasformata in una guida passo per passo.
+Dietro la scoperta c'è lo youtuber **Kevangelion**, che ha pubblicato il filmato della scena di reclutamento sulla versione americana del gioco, ringraziando gli utenti SymphoniaLauren, Mziab ed Ethanol per l'aiuto. Tutto è partito da un vecchio post su un forum giapponese che descriveva la procedura: Kevangelion l'ha provata, ha verificato che funzionasse e ne ha ricavato una guida passo per passo.
 
-Se Lilith non si era mai vista nel gruppo è proprio perché la procedura è lunghissima e piena di trappole. Molte delle condizioni vanno rispettate ore prima del momento in cui il personaggio può unirsi alla squadra, nella seconda parte dell'avventura, e basta un errore per perdere l'occasione per sempre.
+Lilith non si era mai vista nel gruppo perché la procedura è lunghissima e piena di trappole. Molte delle condizioni vanno rispettate ore prima del momento in cui il personaggio può unirsi alla squadra, nella seconda parte dell'avventura, e basta un errore per perdere l'occasione per sempre.
 
 ## Le condizioni per avere Lilith nel gruppo su PS1
 
 La guida completa conta 26 passaggi. Le regole più importanti, secondo le fonti, sono queste:
 
-- **non prendere oggetti nelle case** degli abitanti dei villaggi (il bottino nei dungeon invece va bene);
-- non raccogliere cibo né **Apple Gel** nelle prime zone;
-- **non cambiare a mano l'arma di Stahn** nella prima parte del gioco;
-- non vendere né buttare il **Silver Ladle**, il mestolo d'argento che è l'arma di Lilith;
-- non interrompere o saltare alcune conversazioni e non far arrabbiare i personaggi, per esempio facendosi rimproverare da **Rutee** o infastidendo alcuni mercanti;
-- **parlare con Lilith una sola volta** al villaggio di Leene.
+- non prendere oggetti nelle case degli abitanti dei villaggi (il bottino nei dungeon invece va bene);
+- non raccogliere cibo né Apple Gel nelle prime zone;
+- non cambiare a mano l'arma di Stahn nella prima parte del gioco;
+- non vendere né buttare il Silver Ladle, il mestolo d'argento che è l'arma di Lilith;
+- non interrompere o saltare alcune conversazioni e non far arrabbiare i personaggi, per esempio facendosi rimproverare da Rutee o infastidendo alcuni mercanti;
+- parlare con Lilith una sola volta al villaggio di Leene.
 
-In pratica bisogna giocare come un eroe impeccabile: niente furti dagli armadi, niente chiacchiere di troppo. Un'ironia notevole per un genere in cui frugare in ogni casa è quasi un'abitudine.
+In pratica bisogna giocare come un eroe impeccabile: niente furti dagli armadi, niente chiacchiere di troppo. Bella ironia, in un genere dove frugare in ogni casa è praticamente un rito.
 
 ## Perché il segreto di Tales of Destiny è rimasto nascosto così a lungo
 
-Tales of Destiny è uscito in Giappone nel dicembre del **1997** ed è arrivato in Nord America nel 1998: è il secondo capitolo della serie **Tales of**, oggi di **Bandai Namco**, e non è mai stato pubblicato ufficialmente in Europa su PS1. Nelle riedizioni successive per **PlayStation 2**, uscite solo in Giappone, Lilith ha avuto più spazio, ma nella versione originale nessuno era mai riuscito a portarla in squadra in modo documentato.
+Tales of Destiny è uscito in Giappone nel dicembre del 1997 ed è arrivato in Nord America nel 1998: è il secondo capitolo della serie Tales of, oggi di Bandai Namco, e non è mai stato pubblicato ufficialmente in Europa su PS1. Nelle riedizioni successive per PlayStation 2, uscite solo in Giappone, Lilith ha avuto più spazio, ma nella versione originale nessuno era mai riuscito a portarla in squadra in modo documentato.
 
-Il caso ricorda quanto i giochi degli anni '90 riescano ancora a sorprendere: tra codice mai esplorato e condizioni nascoste, la caccia ai segreti è una delle anime del retro gaming. Un po' come le storie sulle origini del multiplayer competitivo raccontate nel nostro articolo su [DOOM e la nascita del Deathmatch](/articoli/doom-deathmatch-romero-petersen-carmack/).
+I giochi degli anni '90 hanno ancora parecchio da nascondere, tra codice mai esplorato e condizioni segrete, e chi fa retro gaming quei segreti li va a cercare. Sempre da quegli anni arriva la storia delle origini del multiplayer competitivo, che abbiamo raccontato nell'articolo su [DOOM e la nascita del Deathmatch](/articoli/doom-deathmatch-romero-petersen-carmack/).
 
 ## Domande frequenti
 

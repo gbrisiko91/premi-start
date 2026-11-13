@@ -25,27 +25,27 @@ fonti:
     url: "https://www.playstation.com/sv-se/games/phantom-blade-zero"
 ---
 
-**Phantom Blade Zero** è il lancio dell'autunno. Lo studio cinese **S-GAME** ha annunciato il 2 novembre che il suo action ha superato i **4 milioni di copie vendute in 72 ore** tra **PS5** e PC. Su Steam il gioco ha toccato un picco di oltre 833.000 giocatori contemporanei nel primo weekend.
+**Phantom Blade Zero** è il lancio dell'autunno. Il 2 novembre lo studio cinese **S-GAME** ha annunciato che il suo action ha superato i 4 milioni di copie vendute in 72 ore tra PS5 e PC, e nel primo weekend su Steam il gioco ha toccato un picco di oltre 833.000 giocatori contemporanei.
 
 ## Phantom Blade Zero: i numeri delle vendite
 
-L'annuncio è arrivato dall'account ufficiale del gioco su X, alla fine del weekend di lancio. Phantom Blade Zero è uscito il 29 ottobre in Europa (il 28 sera negli Stati Uniti) su PS5 e PC, con supporto a PS5 Pro e Steam Deck, al prezzo di 59,99 dollari per l'edizione standard.
+L'annuncio è arrivato dall'account ufficiale del gioco su X, a fine weekend di lancio. Phantom Blade Zero è uscito il 29 ottobre in Europa (il 28 sera negli Stati Uniti) su PS5 e PC, con supporto a PS5 Pro e Steam Deck, a 59,99 dollari per l'edizione standard.
 
-Sul fronte dei giocatori i dati sono altrettanto impressionanti. Secondo le statistiche di SteamDB riportate da più testate, il gioco ha superato i 700.000 utenti contemporanei poche ore dopo l'uscita e ha raggiunto oltre **833.000** durante il weekend. È il picco più alto dell'anno per un gioco single player su Steam, sopra **Hollow Knight: Silksong** e **Subnautica 2**.
+Anche i numeri dei giocatori fanno impressione. Secondo le statistiche di SteamDB riprese da più testate, il gioco ha superato i 700.000 utenti contemporanei poche ore dopo l'uscita ed è arrivato a oltre 833.000 durante il weekend: è il picco più alto dell'anno su Steam per un gioco single player, sopra Hollow Knight: Silksong e Subnautica 2.
 
-Anche la critica è dalla sua parte: la media su Metacritic è di 88 su PC e 87 su PS5, mentre su Steam le recensioni degli utenti sono "Molto positive".
+La critica è dalla sua parte, con una media Metacritic di 88 su PC e 87 su PS5, e su Steam le recensioni degli utenti sono "Molto positive".
 
 ## Perché il successo di Phantom Blade Zero fa notizia
 
-Il confronto che tutti fanno è con **Black Myth: Wukong**, l'altro grande action cinese, che nel 2024 aveva superato i 10 milioni di copie nei primi tre giorni. Phantom Blade Zero resta lontano da quella cifra, ma conferma che il pubblico mondiale risponde in massa ai giochi d'azione prodotti in Cina, un fenomeno che due anni fa sembrava un caso isolato.
+Il confronto lo fanno tutti con Black Myth: Wukong, l'altro grande action cinese, che nel 2024 aveva superato i 10 milioni di copie nei primi tre giorni. Phantom Blade Zero è ancora lontano da quella cifra, ma conferma che il pubblico di tutto il mondo compra in massa i giochi d'azione prodotti in Cina, cosa che due anni fa sembrava un caso isolato.
 
-Il risultato pesa anche perché arriva da un team molto più piccolo dei grandi editori occidentali. La serie nasce come *Rainblood* nel 2010, è diventata **Phantom Blade** nel 2014 e si è fatta conoscere fuori dalla Cina con *Phantom Blade: Executioners* nel 2023. Zero era stato presentato al PlayStation Showcase del maggio 2023: tre anni di attesa che si sono trasformati in uno dei lanci più forti del 2026.
+Il risultato pesa anche perché arriva da un team molto più piccolo dei grandi editori occidentali. La serie nasce come *Rainblood* nel 2010, diventa Phantom Blade nel 2014 e si fa conoscere fuori dalla Cina con *Phantom Blade: Executioners* nel 2023. Zero era stato presentato al PlayStation Showcase del maggio 2023, e dopo tre anni di attesa è diventato uno dei lanci più forti del 2026.
 
-Il dato colpisce ancora di più se messo accanto ai grandi tripla A occidentali: mentre l'industria fa i conti con chiusure e tagli, come la [chiusura di BioWare da parte di EA](/articoli/bioware-chiusa-battlefront-3/), un'IP nuova per molti giocatori occidentali vende milioni di copie in un weekend.
+Mentre l'industria occidentale fa i conti con chiusure e tagli, come la [chiusura di BioWare da parte di EA](/articoli/bioware-chiusa-battlefront-3/), un'IP che molti giocatori occidentali non conoscevano vende milioni di copie in un weekend.
 
 ## Cosa aspettarsi ora da S-GAME
 
-Lo studio non ha ancora annunciato contenuti aggiuntivi o versioni per altre piattaforme. Per ora non sono state annunciate versioni per Xbox o Switch 2. Il prossimo traguardo da osservare è la tenuta delle vendite nelle settimane di **GTA 6**, che monopolizzerà l'attenzione dei giocatori per tutto novembre.
+Lo studio non ha ancora annunciato contenuti aggiuntivi né versioni per altre piattaforme, Xbox e Switch 2 comprese. La prossima cosa da guardare è come terranno le vendite nelle settimane di GTA 6, che si prenderà l'attenzione dei giocatori per tutto novembre.
 
 ## Domande frequenti
 

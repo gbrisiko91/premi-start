@@ -25,31 +25,31 @@ fonti:
     url: "https://www.absolutegamer.it/notizie-videogiochi-del-6-novembre-2026/"
 ---
 
-Le **recensioni di Zelda Ocarina of Time remake** sono arrivate e il verdetto è quasi unanime: il ritorno del classico **Nintendo** su **Switch 2**, uscito il 5 novembre, ha debuttato con una media di **96 su Metacritic**. È il voto più alto di tutto il 2026, anche se resta sotto il leggendario 99 dell'originale per **Nintendo 64**.
+Le **recensioni di Zelda Ocarina of Time remake** sono arrivate e il verdetto è quasi unanime: il ritorno del classico **Nintendo** su Switch 2, uscito il 5 novembre, ha debuttato con una media di 96 su Metacritic. È il voto più alto di tutto il 2026, anche se resta sotto il leggendario 99 dell'originale per Nintendo 64.
 
 ## Il voto di Zelda Ocarina of Time remake su Metacritic
 
-All'apertura dell'embargo, il 4 novembre, il remake ha raccolto una media di 96 sulle prime 42-48 recensioni, tutte positive e senza voti sotto l'8. Secondo GamesRadar+, 25 testate gli hanno assegnato il punteggio pieno. Con questo risultato supera gli altri pesi massimi dell'anno, da **Resident Evil Requiem** a **Phantom Blade Zero**, il gioco cinese di cui vi abbiamo raccontato [i numeri di vendita da record](/articoli/phantom-blade-zero-vendite/).
+All'apertura dell'embargo, il 4 novembre, il remake ha raccolto una media di 96 sulle prime 42-48 recensioni, tutte positive e senza voti sotto l'8. Secondo GamesRadar+, 25 testate gli hanno assegnato il punteggio pieno. Con questo risultato supera gli altri pesi massimi dell'anno, da Resident Evil Requiem a Phantom Blade Zero, il gioco cinese di cui vi abbiamo raccontato [i numeri di vendita da record](/articoli/phantom-blade-zero-vendite/).
 
-Il confronto con il passato, però, è impietoso solo per un motivo: l'Ocarina of Time del 1998 ha 99, il punteggio più alto mai registrato sull'aggregatore. Il remake per **3DS** del 2011 si era fermato a 94.
+Contro l'originale, però, non c'è partita: l'Ocarina of Time del 1998 ha 99, il punteggio più alto mai registrato sull'aggregatore. Il remake per 3DS del 2011 si era fermato a 94.
 
-In Giappone **Famitsu** ha dato 37 su 40 (tre voti da 9 e uno da 10): lo stesso punteggio della versione 3DS, tre punti in meno del 40 su 40 dell'originale, il primo voto perfetto nella storia della rivista.
+In Giappone Famitsu ha dato 37 su 40 (tre voti da 9 e uno da 10): lo stesso punteggio della versione 3DS, tre punti in meno del 40 su 40 dell'originale, il primo voto perfetto nella storia della rivista.
 
 ## Cosa piace del remake su Switch 2
 
-Il coro della critica si concentra su tre aspetti:
+Le lodi della critica tornano quasi sempre sugli stessi punti:
 
-- **la fedeltà**: struttura, dungeon e segreti sono quelli che ricordiamo, con un rispetto quasi filologico per il gioco di 25 anni fa;
-- **la grafica**: aggettivi come "splendido" e "mozzafiato" tornano in molte recensioni, e diverse testate lo indicano come il gioco più bello visto finora su Switch 2;
-- **i comandi modernizzati**: corsa, salto su un tasto, mira con i sensori di movimento e cambio rapido degli oggetti rendono l'avventura molto più scorrevole.
+- la fedeltà: struttura, dungeon e segreti sono quelli che ricordiamo, con un rispetto quasi filologico per il gioco di 25 anni fa;
+- la grafica: "splendido" e "mozzafiato" ricorrono in molte recensioni, e diverse testate lo indicano come il gioco più bello visto finora su Switch 2;
+- i comandi modernizzati: corsa, salto su un tasto, mira con i sensori di movimento e cambio rapido degli oggetti rendono l'avventura molto più scorrevole.
 
-Più di un recensore sottolinea anche la malinconia del racconto e il tema del tempo che passa, che a distanza di decenni colpisce in modo diverso chi era bambino nel 1998.
+Più di un recensore cita anche la malinconia del racconto e il tema del tempo che passa, che a distanza di decenni colpisce in modo diverso chi era bambino nel 1998.
 
 ## I difetti: salvataggio unico e salto "troppo facile"
 
-Le critiche sono poche ma ricorrenti. Il gioco offre **un solo slot di salvataggio**, una scelta che non è piaciuta a chi condivide la console in famiglia. La nuova telecamera libera, secondo alcuni, toglie atmosfera a zone come la Città del Castello in rovina, che nell'originale sfruttava inquadrature fisse inquietanti.
+Le critiche sono poche ma ricorrenti. Il gioco ha un solo slot di salvataggio, e la cosa non è piaciuta a chi condivide la console in famiglia. La nuova telecamera libera, secondo alcuni, toglie atmosfera a zone come la Città del Castello in rovina, che nell'originale sfruttava inquadrature fisse inquietanti.
 
-Il punto più discusso tra i giocatori è il **tasto del salto**, assente nel 1998: rende alcune trappole e alcuni scontri banali e divide i fan storici. Nintendo ha spiegato di voler rendere il gioco più piacevole da controllare, non semplicemente diverso. Fa discutere anche la scelta della voce inglese di Ganondorf, ora che i filmati sono interamente doppiati.
+Tra i giocatori si discute soprattutto del tasto del salto, che nel 1998 non c'era: rende banali alcune trappole e alcuni scontri, e i fan storici si sono divisi. Nintendo ha spiegato che voleva un gioco più piacevole da controllare, e non solo diverso dall'originale. Fa discutere anche la scelta della voce inglese di Ganondorf, ora che i filmati sono interamente doppiati.
 
 Se volete sapere quanto pesa, quanto costa e chi l'ha sviluppato, trovate tutto nella nostra [guida all'uscita di Zelda Ocarina of Time remake](/articoli/zelda-ocarina-of-time-remake/). La scheda ufficiale è sul [sito Nintendo](https://www.nintendo.com/en-gb/Games/Nintendo-Switch-2-games/The-Legend-of-Zelda-Ocarina-of-Time-3115664.html).
 

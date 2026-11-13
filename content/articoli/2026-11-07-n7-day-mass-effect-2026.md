@@ -27,43 +27,43 @@ fonti:
     url: "https://store.steampowered.com/app/1328670/"
 ---
 
-Oggi, 7 novembre, è l'**N7 Day**, la giornata che ogni anno celebra **Mass Effect** (la data richiama il grado N7 del comandante Shepard). Quella del 2026 però non somiglia a nessuna delle precedenti: è la prima senza **BioWare**, chiusa da **Electronic Arts** il 21 ottobre insieme alla cancellazione del nuovo capitolo. I fan hanno trasformato la festa in una protesta, mentre lo store ufficiale continua a vendere gadget.
+Oggi, 7 novembre, è l'**N7 Day**, la giornata che ogni anno celebra **Mass Effect** (la data richiama il grado N7 del comandante Shepard). Quest'anno però l'aria è diversa: è il primo senza **BioWare**, che Electronic Arts ha chiuso il 21 ottobre cancellando anche il nuovo capitolo. I fan hanno trasformato la festa in una protesta, e intanto lo store ufficiale continua a vendere gadget.
 
 ## Cosa fanno i fan per l'N7 Day di Mass Effect
 
-La community **We Are Mass Effect** ha chiesto a tutti di giocare a **Mass Effect Legendary Edition** oggi tra le 20 e le 23 ora italiana (14-17 della costa est americana), condividendo screenshot e clip con l'hashtag **#SaveMassEffect**. L'obiettivo è far vedere a EA, numeri alla mano, che la serie ha ancora un pubblico vivo.
+La community We Are Mass Effect ha chiesto a tutti di giocare a Mass Effect Legendary Edition oggi tra le 20 e le 23 ora italiana (14-17 della costa est americana) e di condividere screenshot e clip con l'hashtag #SaveMassEffect. L'idea è dimostrare a EA, numeri alla mano, che la serie ha ancora un pubblico vivo.
 
-La protesta è anche fisica. Il 6 novembre un camion pubblicitario a tema ha girato per circa quattro ore attorno alla sede di EA a **Redwood City**, in California, restando sulle strade pubbliche. A fine ottobre era già comparso un cartellone digitale a Times Square e una raccolta fondi ha superato i 5.000 dollari in meno di venti minuti per pagare altri cartelloni, anche durante i **The Game Awards** di dicembre. Il surplus andrà agli sviluppatori licenziati.
+La protesta si vede anche per strada. Il 6 novembre un camion pubblicitario a tema ha girato per circa quattro ore attorno alla sede di EA a Redwood City, in California, restando sulle strade pubbliche. A fine ottobre era già comparso un cartellone digitale a Times Square, e una raccolta fondi ha superato i 5.000 dollari in meno di venti minuti per pagare altri cartelloni, anche durante i The Game Awards di dicembre. Quello che avanza andrà agli sviluppatori licenziati.
 
 ## La petizione Save Mass Effect supera le 300.000 firme
 
-La petizione online lanciata dopo la chiusura ha superato le **300.000 firme**, secondo gli organizzatori. In Canada, dove aveva sede BioWare, una seconda petizione è stata presentata alla Camera dei Comuni: chiede al governo di valutare un sostegno economico perché gli ex sviluppatori possano rilevare lo studio e i suoi marchi da EA. Ha raccolto le firme necessarie per essere esaminata, ma non è un esito scontato.
+Secondo gli organizzatori, la petizione online lanciata dopo la chiusura ha superato le 300.000 firme. In Canada, dove aveva sede BioWare, ne è stata presentata una seconda alla Camera dei Comuni: chiede al governo di valutare un sostegno economico perché gli ex sviluppatori possano rilevare da EA lo studio e i suoi marchi. Ha raccolto le firme necessarie per essere esaminata, ma l'esito è tutt'altro che scontato.
 
-Il contesto lo avevamo raccontato qui: secondo Bloomberg [EA avrebbe chiuso BioWare per puntare su Star Wars Battlefront 3](/articoli/bioware-chiusa-battlefront-3/), una ricostruzione mai confermata dall'editore.
+Il contesto lo avevamo raccontato qui: secondo Bloomberg [EA avrebbe chiuso BioWare per puntare su Star Wars Battlefront 3](/articoli/bioware-chiusa-battlefront-3/), una ricostruzione che l'editore non ha mai confermato.
 
 ## Il merchandise dell'N7 Day che fa arrabbiare i fan
 
-A irritare la community è il **BioWare Gear Store**, ancora attivo: in vista dell'N7 Day ha messo in preordine un casco indossabile N7 Breather di Mass Effect 3 con LED che passano dal blu Paragon al rosso Renegade, oltre a magliette, pin e un gioco da tavolo. Molti l'hanno vissuto come un tentativo di monetizzare una serie appena messa in pausa.
+A far infuriare la community è il BioWare Gear Store, ancora aperto. In vista dell'N7 Day ha messo in preordine un casco indossabile N7 Breather di Mass Effect 3, con LED che passano dal blu Paragon al rosso Renegade, più magliette, pin e un gioco da tavolo. Molti ci hanno visto un tentativo di fare cassa con una serie appena messa in pausa.
 
-**Dark Horse** ha anticipato una nuova statuetta e **Youtooz** una linea di collezionabili. Alla domanda di un fan su X, Dark Horse ha risposto che l'annuncio era pianificato da molto prima della chiusura e che voleva comunque dare ai fan qualcosa da aspettare. A EA non sono arrivati commenti pubblici sul merchandise.
+Dark Horse ha anticipato una nuova statuetta e Youtooz una linea di collezionabili. A un fan che glielo chiedeva su X, Dark Horse ha risposto che l'annuncio era pianificato da molto prima della chiusura e che voleva comunque dare ai fan qualcosa da aspettare. EA non ha commentato pubblicamente il merchandise.
 
 ## Cosa aspettarsi per il futuro di Mass Effect
 
-Ad oggi EA non ha annunciato piani per riprendere il progetto o affidare la serie a un altro studio. Restano in piedi i diritti del marchio, il documentario *Massive Effect: The BioWare Story* previsto nel 2027 e la serie TV annunciata in passato, il cui destino è incerto. Se l'N7 Day avrà un effetto, lo scopriremo nei prossimi mesi.
+Per ora EA non ha annunciato piani per riprendere il progetto o affidare la serie a un altro studio. Restano i diritti del marchio, il documentario *Massive Effect: The BioWare Story* previsto nel 2027 e la serie TV annunciata in passato, che ha un destino incerto. Se l'N7 Day servirà a qualcosa lo vedremo nei prossimi mesi.
 
 ## Domande frequenti
 
 ### Cos'è l'N7 Day di Mass Effect?
 
-È la giornata dedicata a Mass Effect che si celebra ogni 7 novembre: il nome richiama N7, la designazione militare del comandante Shepard.
+È la giornata dedicata a Mass Effect che si celebra ogni 7 novembre. Il nome richiama N7, la designazione militare del comandante Shepard.
 
 ### BioWare è stata chiusa davvero?
 
-Sì. EA ha annunciato la chiusura dello studio il 21 ottobre 2026, cancellando il nuovo Mass Effect, con circa 400 posti di lavoro tagliati.
+Sì. EA ha annunciato la chiusura dello studio il 21 ottobre 2026 e ha cancellato il nuovo Mass Effect, con circa 400 posti di lavoro tagliati.
 
 ### Come partecipare all'N7 Day 2026?
 
-Giocando a Mass Effect Legendary Edition oggi tra le 20 e le 23 italiane e condividendo le proprie partite con l'hashtag #SaveMassEffect.
+Basta giocare a Mass Effect Legendary Edition oggi tra le 20 e le 23 italiane e condividere le proprie partite con l'hashtag #SaveMassEffect.
 
 <!-- NOTE PER LA REDAZIONE:
 - DATA CHIUSURA: Multiplayer.it dice 21 ottobre; la bozza dell'1/11 indicava 21-22 ottobre. Verificare sul comunicato EA.

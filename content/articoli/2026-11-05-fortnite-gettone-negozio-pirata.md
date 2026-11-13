@@ -25,27 +25,27 @@ fonti:
     url: "https://x.com/FortniteGame"
 ---
 
-Il **Gettone del Negozio pirata** di **Fortnite** è diventato l'oggetto più cercato del momento. Introdotto con la mini-stagione **Cacciatori di tesori**, quella del crossover con **One Piece**, sblocca gratis quasi tutto il Negozio per 14 giorni. È così raro che su eBay sono comparsi account in vendita fino a 10.000 dollari, e **Epic Games** è dovuta intervenire.
+Il **Gettone del Negozio pirata** di **Fortnite** è l'oggetto più cercato del momento. È arrivato con la mini-stagione Cacciatori di tesori, quella del crossover con One Piece, e sblocca gratis quasi tutto il Negozio per 14 giorni. È così raro che su eBay sono spuntati account in vendita fino a 10.000 dollari, tanto che **Epic Games** è dovuta intervenire.
 
 ## Cos'è il Gettone del Negozio pirata di Fortnite
 
-Il gettone si trova nei forzieri del tesoro, quelli segnati con il teschio, sparsi sulla mappa della Battaglia reale. Chi lo trova ottiene l'accesso al Negozio dei pirati: per due settimane può prendere gratis skin, emote e tutti gli oggetti che normalmente si comprano con i **V-Buck**, e li tiene per sempre.
+Il gettone si trova nei forzieri del tesoro, quelli segnati con il teschio, sparsi sulla mappa della Battaglia reale. Chi lo trova ottiene l'accesso al Negozio dei pirati: per due settimane può prendersi gratis skin, emote e tutti gli oggetti che di solito si comprano con i V-Buck, e se li tiene per sempre.
 
-Ci sono alcune esclusioni: niente regali agli amici, niente livelli del Pass battaglia e niente articoli acquistabili solo con denaro reale. Secondo Kotaku e Push Square, l'accesso è diviso in due periodi da 14 giorni, uno da usare nel 2026 e uno nel 2027. Un dettaglio che ha acceso le squadre: quando un giocatore trova il gettone, la ricompensa arriva anche ai compagni del gruppo.
+Qualche esclusione c'è: niente regali agli amici, niente livelli del Pass battaglia e niente articoli che si comprano solo con denaro reale. Secondo Kotaku e Push Square l'accesso è diviso in due periodi da 14 giorni, uno da usare nel 2026 e l'altro nel 2027. E c'è un dettaglio che ha acceso le squadre: quando un giocatore trova il gettone, la ricompensa arriva anche ai compagni del gruppo.
 
 ## Quanto è raro il gettone e perché vale così tanto
 
-Epic non ha pubblicato la probabilità ufficiale. La community stima che esca circa un gettone ogni **700.000 forzieri**, un numero non confermato ma sufficiente a trasformare la mini-stagione in una lotteria. Nessuno sa con certezza quanti giocatori lo abbiano già trovato.
+Epic non ha pubblicato la probabilità ufficiale. La community stima un gettone ogni 700.000 forzieri circa: il numero non è confermato, ma basta a trasformare la mini-stagione in una lotteria. Quanti giocatori lo abbiano già trovato, con certezza non lo sa nessuno.
 
-Da qui la corsa di questi giorni. C'è chi fa saltare i forzieri chiusi nei caveau con granate e palle di cannone, chi si organizza in gruppi per moltiplicare le possibilità, chi offre "accompagnamenti" a pagamento. Su forum e social circolano anche programmi per il farming automatico e overlay che mostrano i forzieri, tutti vietati dalle regole del gioco.
+Ecco spiegata la corsa di questi giorni. C'è chi fa saltare i forzieri chiusi nei caveau con granate e palle di cannone, chi si organizza in gruppo per avere più possibilità e chi vende "accompagnamenti" a pagamento. Su forum e social girano anche programmi per il farming automatico e overlay che mostrano i forzieri, tutti vietati dalle regole del gioco.
 
 ## Il mercato nero degli account e la risposta di Epic Games
 
-Siccome il gettone resta legato all'account che lo ha trovato, chi vuole guadagnarci vende l'intero profilo. Su eBay sono apparse inserzioni tra i mille e i 10.000 dollari, segnalate da Kotaku, Multiplayer.it ed Everyeye.
+Il gettone resta legato all'account che lo ha trovato, quindi chi vuole guadagnarci vende l'intero profilo. Su eBay sono comparse inserzioni tra i mille e i 10.000 dollari, segnalate da Kotaku, Multiplayer.it ed Everyeye.
 
-L'account ufficiale di Fortnite su X ha risposto il 3 novembre: comprare account con il gettone o usare strumenti per trovarlo è una truffa. Il gettone esce dai forzieri come qualsiasi altro bottino, quindi secondo Epic ogni giocatore ha le stesse possibilità. Ricordiamo che la compravendita di account viola i termini di servizio e può portare al ban, oltre al rischio concreto di pagare e non ricevere nulla.
+Il 3 novembre l'account ufficiale di Fortnite su X ha risposto che comprare account con il gettone o usare strumenti per trovarlo è una truffa. Il gettone esce dai forzieri come qualsiasi altro bottino, e per Epic ogni giocatore ha le stesse possibilità. Ricordiamo che la compravendita di account viola i termini di servizio e può costare il ban, senza contare il rischio molto concreto di pagare e non ricevere niente.
 
-La mini-stagione dura fino al 4 dicembre, quindi la caccia è appena cominciata. Il tema delle regole sui contenuti nei giochi è caldo anche altrove, come abbiamo visto con [itch.io che ha eliminato i giochi generati con l'IA](/articoli/itch-io-giochi-ia-eliminati/).
+La mini-stagione dura fino al 4 dicembre, quindi la caccia è appena cominciata. Di regole sui contenuti si parla parecchio anche altrove, come nel caso di [itch.io che ha eliminato i giochi generati con l'IA](/articoli/itch-io-giochi-ia-eliminati/).
 
 ## Domande frequenti
 

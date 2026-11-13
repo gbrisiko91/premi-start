@@ -27,37 +27,37 @@ fonti:
     url: "https://atari.com/products/thief-the-dark-project-remastered"
 ---
 
-**Thief: The Dark Project Remastered** ha una data di uscita: il **3 dicembre 2026**. Lo hanno annunciato **Nightdive Studios**, **Eidos-Montréal** e **Atari**, aprendo anche i preordini delle edizioni fisiche. Il classico stealth di **Looking Glass Studios** del 1998 torna così su PC e console a 28 anni di distanza, e porta con sé una campagna del tutto nuova.
+**Thief: The Dark Project Remastered** ha una data di uscita: il 3 dicembre 2026. L'hanno annunciata **Nightdive Studios**, Eidos-Montréal e Atari, che hanno aperto anche i preordini delle edizioni fisiche. Il classico stealth di Looking Glass Studios del 1998 torna quindi su PC e console dopo 28 anni, e con una campagna del tutto nuova.
 
 ## Quando esce Thief Remastered e su quali piattaforme
 
 L'uscita è fissata al 3 dicembre, come conferma anche la pagina ufficiale su Steam. Il gioco arriverà su:
 
-- **PC** tramite Steam, Epic Games Store e GOG;
-- **PS5** e PS4;
-- **Xbox Series X|S**, con supporto a Xbox Play Anywhere;
-- **Nintendo Switch 2** e Switch, con aggiornamento gratuito alla versione Switch 2 per chi parte dalla prima console.
+- PC tramite Steam, Epic Games Store e GOG;
+- PS5 e PS4;
+- Xbox Series X|S, con supporto a Xbox Play Anywhere;
+- Nintendo Switch 2 e Switch, con aggiornamento gratuito alla versione Switch 2 per chi parte dalla prima console.
 
-Il prezzo è di **29,99 euro** per l'edizione standard e di 34,99 euro per la Digital Deluxe, che aggiunge la colonna sonora, un diario illustrato dello sviluppo e un estratto di un romanzo in arrivo. Per PS5 e Switch 2 ci sono anche edizioni fisiche distribuite da Clear River Games, tra cui una con steelbook e una Deluxe che riproduce la scatola trapezoidale dell'originale, un oggetto che farà gola ai collezionisti.
+L'edizione standard costa 29,99 euro, la Digital Deluxe 34,99 euro e aggiunge la colonna sonora, un diario illustrato dello sviluppo e un estratto di un romanzo in arrivo. Per PS5 e Switch 2 Clear River Games distribuisce anche edizioni fisiche, tra cui una con steelbook e una Deluxe che riproduce la scatola trapezoidale dell'originale: ai collezionisti farà gola.
 
 ## Cosa c'è di nuovo in Thief: The Dark Project Remastered
 
-Nightdive, ormai specialista dei ritorni di classici come *System Shock* e *Quake*, ha rimesso a nuovo il gioco con il suo **motore KEX**. La rimasterizzazione include tutto *Thief Gold*, la riedizione del 1999 con tre missioni extra e cinque nuovi tipi di nemici, per un totale di 15 missioni con tre livelli di difficoltà ciascuna.
+Nightdive ha già riportato in vita classici come *System Shock* e *Quake*, e anche qui ha rimesso a nuovo il gioco con il suo motore KEX. La rimasterizzazione comprende tutto *Thief Gold*, la riedizione del 1999 con tre missioni extra e cinque nuovi tipi di nemici, quindi 15 missioni in tutto, ognuna con tre livelli di difficoltà.
 
-Tra le novità tecniche:
+Sul piano tecnico ci sono:
 
 - risoluzione fino al 4K e 120 fotogrammi al secondo, con texture, modelli e animazioni migliorati;
 - pieno supporto al controller, con vibrazione, giroscopio e una ruota per armi e oggetti;
-- selettore per rigiocare le missioni completate;
+- un selettore per rigiocare le missioni completate;
 - obiettivi e trofei;
-- una sezione Vault con materiali inediti dietro le quinte;
+- una sezione Vault con materiali inediti dal dietro le quinte;
 - supporto alle campagne create dai fan.
 
 ## The Tarnished Mirror, la nuova campagna
 
-La sorpresa più grande è **The Tarnished Mirror**, una campagna inedita di quattro missioni inclusa al lancio. La firma il team di **The Black Parade**, una delle mod più apprezzate dalla comunità di Thief, ed è ambientata tra il primo capitolo e *Thief II: The Metal Age*. Il ladro Garrett finisce in prigione dopo un colpo andato storto e deve fare i conti con alleanze scomode e una necropoli sommersa dalle atmosfere lovecraftiane.
+La sorpresa più grossa è **The Tarnished Mirror**, una campagna inedita di quattro missioni inclusa al lancio. L'ha realizzata il team di The Black Parade, una delle mod più amate dalla comunità di Thief, ed è ambientata tra il primo capitolo e *Thief II: The Metal Age*. Garrett finisce in prigione dopo un colpo andato storto e deve fare i conti con alleanze scomode e con una necropoli sommersa dalle atmosfere lovecraftiane.
 
-È un bel riconoscimento per una community che ha tenuto in vita il gioco per quasi trent'anni. E un esempio di come la storia dei giochi anni '90 continui ad appassionare, come dimostra anche la recente [lite tra Romero, Petersen e Carmack sulle origini del Deathmatch di DOOM](/articoli/doom-deathmatch-romero-petersen-carmack/).
+Per una community che tiene in vita il gioco da quasi trent'anni è un bel riconoscimento. Di giochi anni '90 si continua a parlare parecchio, basta vedere la recente [lite tra Romero, Petersen e Carmack sulle origini del Deathmatch di DOOM](/articoli/doom-deathmatch-romero-petersen-carmack/).
 
 ## Domande frequenti
 
@@ -71,7 +71,7 @@ Il 3 dicembre 2026 su PC, PS5, PS4, Xbox Series X|S, Nintendo Switch 2 e Switch.
 
 ### Thief Remastered è un remake?
 
-No, è una rimasterizzazione: il gioco originale del 1998 con grafica migliorata, controlli moderni e una nuova campagna, non un rifacimento da zero.
+No, è una rimasterizzazione: il gioco originale del 1998 con grafica migliorata, controlli moderni e una nuova campagna. Non è stato rifatto da zero.
 
 <!-- NOTE PER LA REDAZIONE:
 - DATA: Steam, Multiplayer.it, MonsterVine e PlayStation Universe dicono 3 dicembre; GamingBolt scrive 4 dicembre (probabilmente fuso orario). Ho usato il 3 dicembre, che è la data della pagina Steam ufficiale.

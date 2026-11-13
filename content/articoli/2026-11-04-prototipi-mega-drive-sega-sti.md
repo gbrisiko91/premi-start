@@ -21,33 +21,33 @@ fonti:
     url: "https://info.sonicretro.org/Treasure_Tails"
 ---
 
-Una scatola di vecchi floppy ha restituito ai fan di **Sega** un pezzo di storia del **Mega Drive**. **Ken Rose**, ex programmatore del **Sega Technical Institute** (STI), lo studio americano che negli anni '90 lavorava su Sonic, ha donato al gruppo di preservazione **The Hidden Palace** prototipi giocabili e codice sorgente di giochi mai usciti. Tra questi ci sono **Jester**, **Segapede** e **Treasure Tails**, un'avventura con protagonista Tails.
+Una scatola di vecchi floppy ha restituito ai fan di Sega un pezzo di storia del **Mega Drive**. Ken Rose, ex programmatore del **Sega Technical Institute** (STI), lo studio americano che negli anni '90 lavorava su Sonic, ha donato al gruppo di preservazione **The Hidden Palace** prototipi giocabili e codice sorgente di giochi mai usciti. Tra questi ci sono Jester, Segapede e Treasure Tails, un'avventura con protagonista Tails.
 
 ## Quali prototipi Mega Drive sono stati pubblicati
 
-Il materiale è stato presentato da The Hidden Palace nel suo tradizionale speciale di Halloween, dedicato quest'anno ai primi anni dello STI, dal 1991 al 1994. Rose aveva conservato i dischi per oltre trent'anni e li ha condivisi dopo un'intervista con il gruppo a dicembre 2025.
+The Hidden Palace ha presentato il materiale nel suo tradizionale speciale di Halloween, dedicato quest'anno ai primi anni dello STI, dal 1991 al 1994. Rose aveva conservato i dischi per oltre trent'anni e li ha condivisi dopo un'intervista con il gruppo a dicembre 2025.
 
 Nell'archivio ci sono build giocabili di:
 
-- **Jester**, prototipo del febbraio 1993;
-- **Treasure Tails**, build dell'aprile 1993;
-- **Segapede**, una versione del gennaio 1994 diversa da quella già nota, con livelli inediti;
-- **B-Bomb**, prototipo dell'ottobre 1992, più avanti nello sviluppo di quanto si pensasse;
-- una versione unica di **Kid Chameleon**.
+- Jester, prototipo del febbraio 1993;
+- Treasure Tails, build dell'aprile 1993;
+- Segapede, una versione del gennaio 1994 diversa da quella già nota, con livelli inediti;
+- B-Bomb, prototipo dell'ottobre 1992, più avanti nello sviluppo di quanto si pensasse;
+- una versione unica di Kid Chameleon.
 
-Non solo: per **Treasure Tails**, **Segapede** e **Dark Empires** è uscito anche il **codice sorgente**. Quello di Segapede contiene perfino un frammento del codice delle collisioni di **Sonic Spinball** e, grazie al lavoro del programmatore vladikcomper, è stato sistemato per poter essere compilato facilmente.
+Per Treasure Tails, Segapede e Dark Empires è uscito anche il codice sorgente. Quello di Segapede contiene perfino un frammento del codice delle collisioni di Sonic Spinball e, grazie al lavoro del programmatore vladikcomper, adesso si compila senza fatica.
 
 ## Jester, Segapede e Treasure Tails: i giochi perduti dello STI
 
-**Jester** era un platform presentato nel 1994 come uno dei titoli di punta del Mega Drive: il protagonista era un omino di creta che deformava il proprio corpo per superare trappole e ostacoli. Lo sviluppo si fermò quando lasciò Sega il suo programmatore principale, **Mark Cerny**, fondatore dello STI e oggi noto come architetto di PS4 e PS5. Il prototipo mostra meccaniche mai viste nelle riviste dell'epoca, come la trasformazione in palla rimbalzante.
+Jester era un platform presentato nel 1994 come uno dei titoli di punta del Mega Drive: il protagonista era un omino di creta che deformava il proprio corpo per superare trappole e ostacoli. Lo sviluppo si fermò quando lasciò Sega il suo programmatore principale, Mark Cerny, fondatore dello STI e oggi noto come architetto di PS4 e PS5. Nel prototipo ci sono meccaniche che le riviste dell'epoca non avevano mai mostrato, come la trasformazione in palla rimbalzante.
 
-**Segapede** era uno spin-off di Sonic in cui si controllava una delle creature meccaniche del **Dr. Robotnik**. Rinominato poi **Astropede**, fu cancellato dopo l'uscita di Rose dallo studio. Una sua versione era già circolata qualche anno fa, ma questa build è precedente e diversa.
+Segapede era uno spin-off di Sonic in cui si controllava una delle creature meccaniche del Dr. Robotnik. Rinominato poi Astropede, fu cancellato dopo l'uscita di Rose dallo studio. Una sua versione era già circolata qualche anno fa, ma questa build è precedente e diversa.
 
-**Treasure Tails** è forse la curiosità più grande: un puzzle-adventure isometrico con Tails, che Sega voleva pronto per il Natale del 1993. I tempi di produzione erano troppo lunghi e il team passò a **Sonic Spinball**. Fino a oggi ne esisteva solo un breve video.
+Treasure Tails è forse la curiosità più grande: un puzzle-adventure isometrico con Tails, che Sega voleva pronto per il Natale del 1993. I tempi di produzione erano troppo lunghi e il team passò a Sonic Spinball. Fino a oggi del gioco esisteva solo un breve video.
 
 ## Perché questi ritrovamenti contano per il retro gaming
 
-Ogni prototipo recuperato aggiunge un tassello alla storia di un'epoca in cui i documenti interni andavano spesso persi o distrutti. Avere anche il codice sorgente apre una strada in più: gli sviluppatori homebrew potrebbero studiarlo o perfino provare a portare a termine questi progetti come fan game. Se vi piacciono i segreti nascosti nei giochi di trent'anni fa, leggete anche la storia di [Lilith in Tales of Destiny su PS1](/articoli/tales-of-destiny-lilith-ps1/).
+Di quell'epoca i documenti interni andavano spesso persi o distrutti, quindi ogni prototipo recuperato racconta qualcosa che altrimenti non sapremmo. Con il codice sorgente, poi, gli sviluppatori homebrew potrebbero studiarlo o perfino provare a completare questi progetti come fan game. Se vi piacciono i segreti nascosti nei giochi di trent'anni fa, leggete anche la storia di [Lilith in Tales of Destiny su PS1](/articoli/tales-of-destiny-lilith-ps1/).
 
 ## Domande frequenti
 

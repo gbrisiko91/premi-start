@@ -25,27 +25,27 @@ fonti:
     url: "https://www.gematsu.com/2025/12/nagoshi-studio-announces-gang-of-dragon-for-pc"
 ---
 
-**Nagoshi Studio** non esiste più. Lo studio fondato da **Toshihiro Nagoshi**, il creatore della serie **Yakuza** (oggi *Like a Dragon*), è stato sciolto con delibera dei soci a partire dal 31 ottobre 2026. La conferma è arrivata il 2 novembre con un avviso sulla Kanpo, la gazzetta ufficiale del governo giapponese. Con lo studio se ne va anche **Gang of Dragon**, il suo primo e unico gioco, che a questo punto non vedrà mai la luce.
+**Nagoshi Studio** non esiste più. Lo studio fondato da Toshihiro Nagoshi, il creatore della serie Yakuza (oggi *Like a Dragon*), è stato sciolto con delibera dei soci a partire dal 31 ottobre 2026: lo ha reso noto il 2 novembre un avviso sulla Kanpo, la gazzetta ufficiale del governo giapponese. Insieme allo studio se ne va **Gang of Dragon**, il suo primo e unico gioco, che a questo punto non vedrà mai la luce.
 
 ## Perché Nagoshi Studio ha chiuso
 
-La crisi parte da **NetEase**, il colosso cinese che aveva finanziato lo studio fin dalla nascita, nel 2021. Il 9 marzo 2026 **Bloomberg** ha rivelato che NetEase avrebbe smesso di finanziare il progetto da maggio: per completare Gang of Dragon sarebbero serviti almeno altri 7 miliardi di yen, circa 44 milioni di dollari. Un portavoce dell'azienda aveva confermato la decisione.
+Tutto parte da **NetEase**, il colosso cinese che finanziava lo studio dalla nascita, nel 2021. Il 9 marzo 2026 Bloomberg ha rivelato che NetEase avrebbe chiuso i rubinetti da maggio: per completare Gang of Dragon sarebbero serviti almeno altri 7 miliardi di yen, circa 44 milioni di dollari. Un portavoce dell'azienda aveva confermato la decisione.
 
-Da lì in poi i segnali sono stati tutti negativi. Nagoshi ha cercato nuovi investitori senza trovarli; i profili social dello studio sono fermi da febbraio, a maggio sono spariti per qualche tempo il sito e il canale YouTube e molti sviluppatori se ne sono andati. Lo stesso co-fondatore **Daisuke Sato** oggi si presenta come "ex Nagoshi Studio".
+Da quel momento le cose sono solo peggiorate. Nagoshi ha cercato nuovi investitori senza trovarli, i profili social dello studio sono fermi da febbraio, a maggio il sito e il canale YouTube sono spariti per qualche tempo e molti sviluppatori se ne sono andati. Perfino il co-fondatore Daisuke Sato oggi si presenta come "ex Nagoshi Studio".
 
-La chiusura rientra nella ritirata di NetEase dagli investimenti all'estero. Il gruppo aveva già chiuso **Ouka Studio**, un altro team giapponese, alla fine del 2024, e secondo Bloomberg ha tagliato personale e chiuso studi in tutto il mondo.
+La chiusura fa parte della ritirata di NetEase dagli investimenti all'estero. Il gruppo aveva già chiuso Ouka Studio, un altro team giapponese, alla fine del 2024, e secondo Bloomberg ha tagliato personale e chiuso studi in tutto il mondo.
 
 ## Cos'era Gang of Dragon
 
-Gang of Dragon era stato presentato con un trailer ai **The Game Awards 2025**, a dicembre. Era un action ambientato a Kabukicho, il quartiere a luci rosse di Shinjuku a Tokyo: lo stesso tipo di città che i fan conoscono dai giochi Yakuza, con combattimenti a mani nude, spade, armi da fuoco e inseguimenti in auto.
+Gang of Dragon era stato presentato con un trailer ai The Game Awards 2025, a dicembre. Era un action ambientato a Kabukicho, il quartiere a luci rosse di Shinjuku, a Tokyo: il genere di città che i fan conoscono bene dai giochi Yakuza, con combattimenti a mani nude, spade, armi da fuoco e inseguimenti in auto.
 
-Il protagonista, Shin Ji-seong, è un boss di un'organizzazione criminale coreana, interpretato dall'attore **Ma Dong-seok** (noto in Occidente come Don Lee). Era stato annunciato per PC su Steam, dove la pagina risulta ancora "in arrivo", e si parlava anche di una versione PS5.
+Il protagonista, Shin Ji-seong, è il boss di un'organizzazione criminale coreana e ha il volto dell'attore Ma Dong-seok (in Occidente lo conoscete come Don Lee). Il gioco era stato annunciato per PC su Steam, dove la pagina risulta ancora "in arrivo", e si parlava anche di una versione PS5.
 
 ## Cosa succede adesso a Toshihiro Nagoshi
 
-Per ora né Nagoshi né NetEase hanno commentato la chiusura, e non si sa se i diritti di Gang of Dragon possano passare a un altro editore. Visto il costo stimato per finirlo, uno scenario simile appare improbabile.
+Per ora né Nagoshi né NetEase hanno commentato la chiusura, e non si sa se i diritti di Gang of Dragon possano passare a un altro editore. Visto il costo stimato per finirlo, è difficile che succeda.
 
-Per i fan è un altro colpo in un anno pesante per l'industria, dopo casi come la [chiusura di BioWare da parte di EA](/articoli/bioware-chiusa-battlefront-3/). E rende ancora più amara la storia di uno dei registi più riconoscibili del Giappone, che nel 2021 aveva lasciato **SEGA** e il Ryu Ga Gotoku Studio per ripartire da zero.
+Per i fan è l'ennesima brutta notizia in un anno già pesante per l'industria, dopo casi come la [chiusura di BioWare da parte di EA](/articoli/bioware-chiusa-battlefront-3/). E fa male soprattutto pensando a Nagoshi, uno dei registi più riconoscibili del Giappone, che nel 2021 aveva lasciato SEGA e il Ryu Ga Gotoku Studio per ripartire da zero.
 
 ## Domande frequenti
 

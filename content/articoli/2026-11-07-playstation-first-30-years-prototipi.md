@@ -23,27 +23,27 @@ fonti:
     url: "https://lastwordongaming.com/2026/10/29/playstation-book-prototype/"
 ---
 
-Una **PlayStation 2** viola, squadrata e a forma di trapezio. Un **DualShock** argentato con un probabile microfono incorporato. Sono alcuni dei prototipi mai visti che emergono da **PlayStation: The First 30 Years**, il volume celebrativo realizzato da **Read-Only Memory** insieme a **Sony**, che ha iniziato le spedizioni in questi giorni. Le prime pagine circolate online stanno facendo il giro della community retro.
+Una PlayStation 2 viola, squadrata e a forma di trapezio, e un DualShock argentato con quello che sembra un microfono incorporato: sono alcuni dei prototipi mai visti che spuntano da **PlayStation: The First 30 Years**, il volume celebrativo realizzato da **Read-Only Memory** insieme a **Sony**, che ha iniziato le spedizioni in questi giorni. Le prime pagine circolate online stanno facendo il giro della community retro.
 
 ## Cosa c'è in PlayStation: The First 30 Years
 
-Il libro è un mattone in senso letterale: **400 pagine**, formato 37,5 x 29,5 cm e circa cinque chili di peso. Raccoglie fotografie di prototipi di console, controller sperimentali, schizzi, modelli in resina e studi design industriale, dalla prima **PlayStation** del 1994 fino alla **PS5**.
+Il libro è un mattone in senso letterale: 400 pagine, formato 37,5 x 29,5 cm e circa cinque chili di peso. Dentro ci sono fotografie di prototipi di console, controller sperimentali, schizzi, modelli in resina e studi di design industriale, dalla prima PlayStation del 1994 fino alla PS5.
 
-A raccontare la storia ci sono tre nomi chiave dell'hardware Sony: **Ken Kutaragi**, considerato il padre della PlayStation, il designer **Teiyu Goto**, a cui si deve la prima console e il controller originale, e **Yujin Morisawa**, che ha disegnato PS5. Le foto sono di Benedict Redgrove, la direzione artistica di Michael C Place.
+A raccontare la storia sono tre persone che hanno fatto l'hardware Sony: Ken Kutaragi, considerato il padre della PlayStation, il designer Teiyu Goto, a cui si devono la prima console e il controller originale, e Yujin Morisawa, che ha disegnato PS5. Le foto sono di Benedict Redgrove, la direzione artistica di Michael C Place.
 
 ## La PS2 trapezoidale e gli altri prototipi Sony
 
-Tra le immagini più condivise c'è un prototipo iniziale di PS2: un corpo più cubico, una placca frontale alta, lunghe prese d'aria sui lati e un colore viola scuro. Niente a che vedere con il monolite nero, rettangolare e con il cassetto frontale che è arrivato nei negozi nel 2000 ed è diventato la console più venduta di sempre.
+Tra le immagini più condivise c'è un prototipo iniziale di PS2, viola scuro, con un corpo più cubico, una placca frontale alta e lunghe prese d'aria sui lati. Ben lontano dal monolite nero e rettangolare con il cassetto frontale arrivato nei negozi nel 2000, poi diventato la console più venduta di sempre.
 
-Fa discutere anche un concept di controller, probabilmente dell'epoca **PS3**: argentato, con il tasto PS, forme a metà tra curve e spigoli e quello che sembra un microfono. Time Extension lo definisce senza mezzi termini poco maneggevole rispetto al DualShock 3 che conosciamo. Nel libro c'è anche il celebre controller a "boomerang" mostrato ai tempi della presentazione di PS3.
+Fa discutere anche un concept di controller, probabilmente dell'epoca PS3: argentato, con il tasto PS, forme a metà tra curve e spigoli e quello che sembra un microfono. Time Extension lo definisce senza mezzi termini poco maneggevole rispetto al DualShock 3 che conosciamo. Nel libro c'è anche il celebre controller a "boomerang" mostrato ai tempi della presentazione di PS3.
 
-Per chi ama questo tipo di archeologia videoludica, è lo stesso fascino dei [prototipi Mega Drive riemersi dagli archivi SEGA](/articoli/prototipi-mega-drive-sega-sti/): vedere le strade che i produttori hanno scartato aiuta a capire perché le console sono diventate come le ricordiamo.
+Chi ama questo tipo di archeologia videoludica ci ritroverà il fascino dei [prototipi Mega Drive riemersi dagli archivi SEGA](/articoli/prototipi-mega-drive-sega-sti/): guardando le strade scartate dai produttori si capisce meglio perché le console sono diventate come le ricordiamo.
 
 ## Quanto costa il libro PlayStation e dove comprarlo
 
-Si acquista solo sul [sito ufficiale di Read-Only Memory](https://readonlymemory.com/pages/playstation-the-first-30-years). L'edizione standard costa **95 sterline** (circa 111 euro secondo Time Extension), con custodia in rilievo, scritte metallizzate e quattro segnalibri in tessuto. L'edizione Deluxe da 245 sterline, limitata a 1.994 copie, è già esaurita.
+Si acquista solo sul [sito ufficiale di Read-Only Memory](https://readonlymemory.com/pages/playstation-the-first-30-years). L'edizione standard costa 95 sterline (circa 111 euro secondo Time Extension), con custodia in rilievo, scritte metallizzate e quattro segnalibri in tessuto. L'edizione Deluxe da 245 sterline, limitata a 1.994 copie, è già esaurita.
 
-La spedizione era prevista inizialmente per la primavera 2026 ed è slittata di qualche mese per completare produzione e trasporto: ora la pagina ufficiale indica che il libro è in consegna.
+La spedizione era prevista per la primavera 2026, poi è slittata di qualche mese per completare produzione e trasporto. Adesso la pagina ufficiale indica che il libro è in consegna.
 
 ## Domande frequenti
 

@@ -25,27 +25,27 @@ fonti:
     url: "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-2-games/The-Legend-of-Zelda-Ocarina-of-Time-3115664.html"
 ---
 
-La **Master Quest** di **Ocarina of Time** potrebbe tornare anche sul remake per **Nintendo Switch 2**, ma non è ancora ufficiale. Alcuni dataminer hanno trovato nei file del gioco, uscito il 5 novembre, diversi riferimenti alla versione "difficile" del classico **Nintendo 64**, con controlli che fanno pensare a un contenuto scaricabile a pagamento. **Nintendo** per ora non ha annunciato nulla.
+La **Master Quest** di **Ocarina of Time** potrebbe tornare anche sul remake per **Nintendo Switch 2**, ma non è ancora ufficiale. Alcuni dataminer hanno trovato nei file del gioco, uscito il 5 novembre, diversi riferimenti alla versione "difficile" del classico Nintendo 64, con controlli che fanno pensare a un contenuto scaricabile a pagamento. Nintendo per ora non ha annunciato nulla.
 
 ## Cosa hanno trovato i dataminer nei file di Ocarina of Time
 
-Secondo quanto riportato da Multiplayer.it e My Nintendo News, l'eseguibile del remake contiene diverse voci legate alla sigla "MQ", come **HasMQ**, **IsMQModeExist**, **NewGameMQ** e **ReleaseMQ**. I riferimenti compaiono accanto ai file di dungeon, salvataggi e completamento del gioco.
+Secondo quanto riportato da Multiplayer.it e My Nintendo News, l'eseguibile del remake contiene diverse voci legate alla sigla "MQ", come HasMQ, IsMQModeExist, NewGameMQ e ReleaseMQ. I riferimenti compaiono accanto ai file di dungeon, salvataggi e completamento del gioco.
 
-Il dataminer **OatmealDome**, che ha condiviso le analisi su X partendo dal lavoro di MrCheeze, sostiene che alcune di queste funzioni verificano se si possiede un DLC prima di sbloccare la modalità. Nei file ci sarebbero anche tracce di un mondo speculare e di dungeon modificati, mentre la mappa di Hyrule non sembra cambiare.
+Il dataminer OatmealDome, che ha condiviso le analisi su X partendo dal lavoro di MrCheeze, sostiene che alcune di queste funzioni verificano se si possiede un DLC prima di sbloccare la modalità. Nei file ci sarebbero anche tracce di un mondo speculare e di dungeon modificati, mentre la mappa di Hyrule non sembra cambiare.
 
-Va detto chiaramente: un riferimento nel codice non è un annuncio. Potrebbe trattarsi di un contenuto in arrivo, di un'idea scartata o di una funzione che non vedrà mai la luce.
+Restiamo comunque nel campo delle indiscrezioni. Quelle righe di codice potrebbero indicare un contenuto in arrivo, ma anche un'idea scartata o una funzione che non vedrà mai la luce.
 
 ## Cos'è la Master Quest di Zelda e perché i fan la vogliono
 
-La Master Quest è nata come versione alternativa di Ocarina of Time, con gli stessi luoghi ma dungeon ridisegnati, enigmi diversi e nemici più agguerriti. Debuttò su **GameCube** tra il 2002 e il 2003, su un disco bonus legato all'uscita di The Wind Waker, e tornò nel 2011 nella versione per **Nintendo 3DS**, che la rese ancora più difficile con il mondo a specchio.
+La Master Quest è nata come versione alternativa di Ocarina of Time, con gli stessi luoghi ma dungeon ridisegnati, enigmi diversi e nemici più agguerriti. Debuttò su GameCube tra il 2002 e il 2003, su un disco bonus legato all'uscita di The Wind Waker, e tornò nel 2011 nella versione per Nintendo 3DS, che la rese ancora più difficile con il mondo a specchio.
 
-Al lancio del remake per Switch 2 la modalità mancava, e molti fan lo avevano notato. In un'intervista a IGN il produttore **Eiji Aonuma** non ha confermato né smentito: ha detto che il team vuole tenersi aperte delle possibilità per il futuro, ma che non c'è nulla di specifico da annunciare ora. Una risposta che, letta insieme al datamine, alimenta le speranze.
+Al lancio del remake per Switch 2 la modalità mancava, e molti fan se ne sono accorti subito. In un'intervista a IGN il produttore Eiji Aonuma non ha confermato né smentito: il team vuole tenersi aperte delle possibilità per il futuro, ma per ora non c'è nulla di specifico da annunciare. Messa accanto al datamine, una risposta così basta a tenere vive le speranze.
 
 Se non avete ancora deciso se comprarlo, nella nostra [guida all'uscita di Zelda Ocarina of Time remake](/articoli/zelda-ocarina-of-time-remake/) trovate prezzo, peso e novità, mentre qui c'è il riepilogo delle [recensioni e del voto su Metacritic](/articoli/zelda-ocarina-of-time-recensioni/).
 
 ## Ocarina of Time remake vola nelle vendite nel Regno Unito
 
-Intanto il gioco va bene nei negozi. Secondo i dati sulle copie fisiche nel Regno Unito diffusi dal giornalista Christopher Dring e ripresi da My Nintendo News, il remake ha debuttato al primo posto e ha venduto circa il 33% in più di **Breath of the Wild** al lancio, pur restando sotto la metà di **Tears of the Kingdom**. Sarebbe il secondo miglior debutto di sempre per uno Zelda nel Paese e il più grande lancio fisico del 2026 finora. I dati italiani non sono ancora disponibili.
+Intanto il gioco va bene nei negozi. Secondo i dati sulle copie fisiche nel Regno Unito diffusi dal giornalista Christopher Dring e ripresi da My Nintendo News, il remake ha debuttato al primo posto e ha venduto circa il 33% in più di Breath of the Wild al lancio, pur restando sotto la metà di Tears of the Kingdom. Sarebbe il secondo miglior debutto di sempre per uno Zelda nel Paese e il più grande lancio fisico del 2026 finora. I dati italiani non sono ancora disponibili.
 
 ## Domande frequenti
 

@@ -23,33 +23,33 @@ fonti:
     url: "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10"
 ---
 
-A undici giorni dall'uscita è comparsa online la prima **copia fisica di GTA 6**. Le foto, pubblicate su Reddit il 7 novembre da un utente tedesco che lavorerebbe in una catena di negozi, mostrano la confezione **PS5** di **Grand Theft Auto VI**. Il dettaglio che ha acceso le discussioni è sul retro: lo spazio richiesto è di **230 GB**, 18 in più dei 212 indicati finora da **Rockstar Games**.
+A undici giorni dall'uscita è comparsa online la prima **copia fisica di GTA 6**. Le foto, pubblicate su Reddit il 7 novembre da un utente tedesco che lavorerebbe in una catena di negozi, mostrano la confezione PS5 di Grand Theft Auto VI. A scatenare le discussioni è il retro: lo spazio richiesto è di 230 GB, 18 in più dei 212 indicati finora da **Rockstar Games**.
 
-Si tratta di immagini non ufficiali, ma il materiale è stato analizzato da più testate, tra cui Multiplayer.it, Everyeye.it e il sito di fan Rockstar Intel, e coincide con quanto Rockstar ha già detto sulle edizioni fisiche.
+Le immagini non sono ufficiali, ma le hanno analizzate più testate, tra cui Multiplayer.it, Everyeye.it e il sito di fan Rockstar Intel, e quello che mostrano coincide con quanto Rockstar ha già detto sulle edizioni fisiche.
 
 ## Cosa c'è nella confezione fisica di GTA 6
 
-La scatola è una normale custodia di plastica con copertina interna, non un voucher di cartone. Dentro però non c'è un disco: come già annunciato, le edizioni fisiche contengono un **codice per il download**. È una scelta che a giugno aveva fatto molto discutere i collezionisti e che ora diventa concreta.
+La scatola è una normale custodia di plastica con copertina interna, non un voucher di cartone. Dentro però il disco non c'è: come già annunciato, le edizioni fisiche contengono un codice per il download. A giugno la scelta aveva fatto storcere il naso a molti collezionisti, e adesso eccola nero su bianco.
 
 Dalle foto emergono altri dettagli:
 
-- la confezione indica un gioco **per un giocatore**;
+- la confezione indica un gioco per un giocatore;
 - sul retro compare un'icona delle funzioni online, il cui significato non è chiaro: potrebbe riferirsi a un nuovo GTA Online o all'acquisto dell'upgrade alla Ultimate Edition;
-- sulla scatola ci sono tre immagini mai viste prima, con **Jason**, **Lucia** e un aereo sopra le isole.
+- sulla scatola ci sono tre immagini mai viste prima, con Jason, Lucia e un aereo sopra le isole.
 
-La catena tedesca MediaMarkt ha inoltre mostrato un **poster stampato su entrambi i lati**, che secondo il negozio sarà incluso in tutte le copie con codice. La mappa del mondo di gioco, invece, non sarebbe nella scatola.
+La catena tedesca MediaMarkt ha poi mostrato un poster stampato su entrambi i lati che, secondo il negozio, sarà incluso in tutte le copie con codice. La mappa del mondo di gioco, invece, nella scatola non ci sarebbe.
 
 ## GTA 6 pesa 212 o 230 GB?
 
-Il numero ufficiale comunicato da Rockstar per il preload è di circa 212 GB. I 230 GB stampati sulla confezione potrebbero includere lo spazio extra necessario per estrarre i pacchetti durante l'installazione, oppure tenere conto di una patch del primo giorno. Nessuna delle due ipotesi è stata confermata.
+Il numero ufficiale comunicato da Rockstar per il preload è di circa 212 GB. I 230 GB stampati sulla confezione potrebbero includere lo spazio extra che serve per estrarre i pacchetti durante l'installazione, oppure tenere conto di una patch del primo giorno. Nessuna delle due ipotesi è stata confermata.
 
-Il consiglio pratico non cambia: meglio liberare almeno 230 GB sull'SSD. Su una **Xbox Series S** da 512 GB vuol dire dedicare a GTA 6 quasi due terzi dello spazio disponibile. Tutti i dettagli su orari e download anticipato sono nel nostro articolo sul [preload di GTA 6 e lo spazio da liberare](/articoli/gta-6-preload-peso/).
+In pratica, meglio liberare almeno 230 GB sull'SSD. Su una Xbox Series S da 512 GB vuol dire dedicare a GTA 6 quasi due terzi dello spazio disponibile. Orari e dettagli sul download anticipato li trovate nel nostro articolo sul [preload di GTA 6 e lo spazio da liberare](/articoli/gta-6-preload-peso/).
 
 ## Quando arrivano nei negozi le copie fisiche di GTA 6
 
-Le foto confermano che le scatole stanno già arrivando ai rivenditori. La vendita delle edizioni fisiche con codice è prevista dal **12 novembre**: da quel momento sarà possibile riscattare il codice e iniziare a scaricare. Chi ha comprato in digitale può invece fare il preload dal **10 novembre**, come annunciato sul [Rockstar Newswire](https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10).
+Le foto confermano che le scatole stanno già arrivando ai rivenditori. La vendita delle edizioni fisiche con codice è prevista dal 12 novembre, e da quel momento si potrà riscattare il codice e iniziare a scaricare. Chi ha comprato in digitale può invece fare il preload dal 10 novembre, come annunciato sul [Rockstar Newswire](https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10).
 
-L'uscita resta fissata al **19 novembre 2026** su PS5 e **Xbox Series X|S**. Nessuna data, per ora, per la versione PC.
+L'uscita resta fissata al 19 novembre 2026 su PS5 e Xbox Series X|S. Per la versione PC, per ora, nessuna data.
 
 ## Domande frequenti
 

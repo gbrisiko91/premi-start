@@ -25,25 +25,25 @@ fonti:
     url: "https://store.steampowered.com/app/1774580"
 ---
 
-**Star Wars Jedi 3** è in fase avanzata di sviluppo e dovrebbe essere annunciato a breve. Lo ha scritto il 30 ottobre **Jason Schreier** di Bloomberg, rispondendo alle domande dei lettori dopo la sua inchiesta sulla chiusura di **BioWare**. Nella stessa occasione ha aggiunto che **Star Wars Battlefront 3**, il progetto che secondo Bloomberg **EA** ha preferito al nuovo Mass Effect, non è ancora entrato in produzione.
+**Star Wars Jedi 3** è in fase avanzata di sviluppo e dovrebbe essere annunciato a breve. Lo ha scritto il 30 ottobre **Jason Schreier** di Bloomberg, rispondendo alle domande dei lettori dopo la sua inchiesta sulla chiusura di BioWare. Nella stessa occasione ha aggiunto che **Star Wars Battlefront 3**, il progetto che secondo Bloomberg EA ha preferito al nuovo Mass Effect, non è ancora entrato in produzione.
 
-Non è un annuncio ufficiale: EA e **Respawn Entertainment** non hanno commentato.
+Per ora è solo un'indiscrezione: EA e Respawn Entertainment non hanno commentato.
 
 ## Cosa ha detto Jason Schreier su Star Wars Jedi 3
 
 A chi gli chiedeva se la chiusura di BioWare mettesse a rischio il terzo Jedi, Schreier ha risposto che il gioco "è ancora in arrivo" e che dovrebbe essere presentato presto. Alla domanda se Jedi 3 potesse entrare in concorrenza interna con Battlefront 3, ha spiegato che il primo è molto avanti nello sviluppo, mentre il secondo non è nemmeno cominciato.
 
-Che un terzo capitolo esista non è una novità. A settembre 2024, durante l'investor day di EA, **Laura Miele** aveva confermato che Respawn stava lavorando al capitolo finale della storia di **Cal Kestis**, iniziata con **Star Wars Jedi: Fallen Order** nel 2019 e proseguita con **Star Wars Jedi: Survivor** nel 2023. Mancano ancora titolo, piattaforme e data d'uscita.
+Del terzo capitolo si sapeva già. A settembre 2024, durante l'investor day di EA, Laura Miele aveva confermato che Respawn stava lavorando al capitolo finale della storia di Cal Kestis, iniziata con Star Wars Jedi: Fallen Order nel 2019 e proseguita con Star Wars Jedi: Survivor nel 2023. Mancano ancora titolo, piattaforme e data d'uscita.
 
 ## Perché se ne parla: BioWare chiusa per un gioco che non esiste ancora
 
-La frase di Schreier ha riacceso la polemica sulla [chiusura di BioWare e la scelta di Battlefront 3](/articoli/bioware-chiusa-battlefront-3/). Secondo Bloomberg, EA ha confrontato due progetti di fantascienza molto costosi, Battlefront 3 e il prossimo Mass Effect, e ha scelto Star Wars. Scoprire che quel gioco non è ancora in sviluppo ha fatto arrabbiare ancora di più i fan della saga di Shepard.
+La frase di Schreier ha riacceso la polemica sulla [chiusura di BioWare e la scelta di Battlefront 3](/articoli/bioware-chiusa-battlefront-3/). Secondo Bloomberg, EA ha confrontato due progetti di fantascienza molto costosi, Battlefront 3 e il prossimo Mass Effect, e ha scelto Star Wars. Scoprire che quel gioco non è ancora in sviluppo ha fatto infuriare ancora di più i fan della saga di Shepard.
 
-EA, dal canto suo, il 30 ottobre ha ribadito che la decisione è arrivata dopo mesi di pianificazione e analisi, senza però rispondere sul confronto con Star Wars. La rabbia della comunità è arrivata anche per strada: secondo Multiplayer.it, gli uffici EA di Madrid sarebbero stati imbrattati con scritte "Save Mass Effect".
+EA il 30 ottobre ha ribadito che la decisione è arrivata dopo mesi di pianificazione e analisi, senza però rispondere sul confronto con Star Wars. La rabbia della comunità è arrivata anche per strada: secondo Multiplayer.it, gli uffici EA di Madrid sarebbero stati imbrattati con scritte "Save Mass Effect".
 
 ## Quando potrebbe essere annunciato Star Wars Jedi 3
 
-Schreier non ha indicato date né eventi. Tra i fan circola l'ipotesi dei **The Game Awards** di dicembre, una vetrina tradizionale per i grandi annunci, ma per ora si tratta solo di una supposizione. Il ritorno di **Cameron Monaghan** nel ruolo di Cal, dato per scontato da molti, non è stato confermato ufficialmente.
+Schreier non ha indicato date né eventi. Tra i fan circola l'ipotesi dei The Game Awards di dicembre, la serata dove arrivano di solito i grandi annunci, ma per ora è solo una supposizione. Il ritorno di Cameron Monaghan nel ruolo di Cal, dato per scontato da molti, non è stato confermato ufficialmente.
 
 Per chi vuole recuperare la serie prima del terzo capitolo, Star Wars Jedi: Survivor è disponibile su PS5, Xbox Series X|S e PC, anche sulla [pagina Steam ufficiale](https://store.steampowered.com/app/1774580).
 
@@ -55,7 +55,7 @@ Non ancora con un trailer o un titolo. EA ha confermato nel 2024 che il capitolo
 
 ### Quando esce Star Wars Jedi 3?
 
-Non c'è una data. Il gioco non ha ancora una finestra di lancio ufficiale.
+Non c'è una data, e nemmeno una finestra di lancio ufficiale.
 
 ### Star Wars Battlefront 3 è in sviluppo?
 

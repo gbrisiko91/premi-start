@@ -25,34 +25,34 @@ fonti:
     url: "https://www.rockstargames.com/VI/gtavi-thefestival"
 ---
 
-A nove giorni dall'uscita, i **preordini di GTA 6** stanno andando meglio di quanto la stessa **Take-Two Interactive** si aspettasse. Lo ha detto il CEO **Strauss Zelnick** il 9 novembre, presentando i conti del trimestre: le prenotazioni di **Grand Theft Auto VI** continuano a raggiungere, parole sue, "livelli senza precedenti". Il gioco di **Rockstar Games** arriva il 19 novembre su **PS5** e **Xbox Series X|S**.
+A nove giorni dall'uscita, i preordini di **GTA 6** vanno meglio di quanto si aspettasse la stessa **Take-Two Interactive**. Lo ha detto il CEO Strauss Zelnick il 9 novembre, presentando i conti del trimestre: le prenotazioni di Grand Theft Auto VI continuano a toccare, parole sue, "livelli senza precedenti". Il gioco di **Rockstar Games** arriva il 19 novembre su PS5 e Xbox Series X|S.
 
-Nello stesso giorno l'editore ha confermato che **GTA 5** è arrivato a circa 235 milioni di copie vendute, e Rockstar ha annunciato un festival musicale dal vivo a Miami per festeggiare il lancio.
+Lo stesso giorno l'editore ha confermato che GTA 5 è arrivato a circa 235 milioni di copie vendute, e Rockstar ha annunciato un festival musicale dal vivo a Miami per festeggiare il lancio.
 
 ## Quanti preordini ha GTA 6: cosa sappiamo davvero
 
-Take-Two non ha comunicato un numero ufficiale di preordini. Zelnick, intervistato anche da Variety, ha preferito restare prudente: l'azienda non dichiara mai un successo prima che arrivi, e i numeri, ha spiegato, parleranno da soli tra pochi giorni.
+Un numero ufficiale di preordini Take-Two non l'ha dato. Zelnick, intervistato anche da Variety, è rimasto prudente: l'azienda non dichiara mai un successo prima che arrivi e, ha spiegato, tra pochi giorni parleranno i numeri.
 
-Le cifre che circolano sono quindi **stime di terze parti**. Secondo la società di analisi Sensor Tower, ripresa da più testate, i preordini digitali sarebbero circa 7,7 milioni, per un valore vicino ai 750 milioni di dollari, con PS5 nettamente davanti a Xbox. Sempre secondo queste stime, la maggior parte dei giocatori avrebbe scelto l'edizione più costosa, la Ultimate da 100 dollari. Sono numeri da prendere con cautela finché Take-Two non li confermerà.
+Le cifre che girano sono quindi stime di terze parti. Secondo la società di analisi Sensor Tower, ripresa da più testate, i preordini digitali sarebbero circa 7,7 milioni, per un valore vicino ai 750 milioni di dollari, con PS5 nettamente davanti a Xbox. Sempre secondo queste stime, la maggior parte dei giocatori avrebbe preso l'edizione più cara, la Ultimate da 100 dollari. Finché Take-Two non li conferma, sono numeri da prendere con le pinze.
 
 ## Take-Two: trimestre in calo, ma l'anno di GTA 6 resta da record
 
-Il paradosso è che il trimestre appena chiuso è stato debole. Secondo il [comunicato ufficiale di Take-Two](https://www.sec.gov/Archives/edgar/data/0000946581/000162828026072175/ttwo2q27earningsrelease.htm), le prenotazioni nette (net bookings) sono scese del 18%, da 1,96 a 1,6 miliardi di dollari, con una perdita netta di 54 milioni.
+Il trimestre appena chiuso, curiosamente, è stato debole. Secondo il [comunicato ufficiale di Take-Two](https://www.sec.gov/Archives/edgar/data/0000946581/000162828026072175/ttwo2q27earningsrelease.htm), le prenotazioni nette (net bookings) sono scese del 18%, da 1,96 a 1,6 miliardi di dollari, con una perdita netta di 54 milioni.
 
-Gli investitori però guardano avanti. Take-Two ha confermato le previsioni per l'intero anno fiscale, che si chiude a marzo 2027: tra **8 e 8,2 miliardi di dollari** di prenotazioni nette. Solo per il trimestre ottobre-dicembre, quello del lancio di GTA 6, l'azienda prevede tra 3,35 e 3,5 miliardi, più del doppio del trimestre precedente.
+Gli investitori però guardano più in là. Take-Two ha confermato le previsioni per l'intero anno fiscale, che si chiude a marzo 2027: tra 8 e 8,2 miliardi di dollari di prenotazioni nette. Solo per il trimestre ottobre-dicembre, quello del lancio di GTA 6, l'azienda prevede tra 3,35 e 3,5 miliardi, più del doppio del trimestre precedente.
 
-Intanto GTA 5 non si ferma: a tredici anni dall'uscita vende ancora circa cinque milioni di copie a trimestre ed è a quota **235 milioni**, il secondo gioco più venduto di sempre dopo Minecraft.
+GTA 5 intanto non si ferma: a tredici anni dall'uscita vende ancora circa cinque milioni di copie a trimestre ed è a quota 235 milioni, il secondo gioco più venduto di sempre dopo Minecraft.
 
 ## GTA 6 uscita e preload: le date da segnare
 
 Il calendario dei prossimi giorni è fitto:
 
-- **10 novembre**: parte il preload digitale su PS5 e Xbox Series X|S. Tutti i dettagli sono nel nostro articolo su [quanto pesa GTA 6 e quanto spazio liberare](/articoli/gta-6-preload-peso/);
-- **12 novembre**: le edizioni fisiche con codice di download arrivano nei negozi;
-- **19 novembre**: GTA 6 si sblocca in tutto il mondo;
-- **21 novembre**: a Miami va in scena **Grand Theft Auto VI: The Festival**, concerto organizzato da Rockstar con PlayStation al Mana Wynwood, con Travis Scott, Cardi B, Metro Boomin e i Justice, autori della colonna sonora del gioco. I biglietti si assegnano con una lotteria che si chiude oggi, 10 novembre, alle 22 italiane.
+- 10 novembre, parte il preload digitale su PS5 e Xbox Series X|S (tutti i dettagli nel nostro articolo su [quanto pesa GTA 6 e quanto spazio liberare](/articoli/gta-6-preload-peso/));
+- 12 novembre, arrivano nei negozi le edizioni fisiche con codice di download;
+- 19 novembre, GTA 6 si sblocca in tutto il mondo;
+- 21 novembre, a Miami va in scena Grand Theft Auto VI: The Festival, il concerto organizzato da Rockstar con PlayStation al Mana Wynwood, con Travis Scott, Cardi B, Metro Boomin e i Justice, autori della colonna sonora del gioco. I biglietti si assegnano con una lotteria che chiude oggi, 10 novembre, alle 22 italiane.
 
-Sulla versione PC, invece, Take-Two non ha detto nulla di nuovo: eventuali annunci, ha ribadito Zelnick, spettano a Rockstar.
+Sulla versione PC Take-Two non ha detto niente di nuovo: eventuali annunci, ha ribadito Zelnick, spettano a Rockstar.
 
 ## Domande frequenti
 

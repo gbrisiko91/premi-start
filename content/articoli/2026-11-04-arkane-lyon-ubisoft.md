@@ -23,33 +23,33 @@ fonti:
     url: "https://kotaku.com/arkane-devs-say-blade-is-nearly-finished-but-if-it-cant-find-a-buyer-soon-the-studio-will-close-2000749096"
 ---
 
-**Arkane Lyon** potrebbe avere un nuovo proprietario francese. Secondo un'indiscrezione di **Bloomberg**, **Ubisoft** ha fatto un'offerta a **Xbox** per acquistare lo studio di **Dishonored**, che Microsoft sta cercando di cedere. Non è l'unica: almeno altre due aziende del settore avrebbero presentato proposte. Nessuna delle parti ha ancora confermato.
+**Arkane Lyon** potrebbe avere un nuovo proprietario francese. Secondo un'indiscrezione di Bloomberg, **Ubisoft** ha fatto un'offerta a Xbox per acquistare lo studio di Dishonored, che Microsoft sta cercando di cedere. E non sarebbe la sola: almeno altre due aziende del settore avrebbero presentato proposte. Nessuna delle parti ha ancora confermato.
 
 ## Arkane Lyon e Ubisoft: cosa dice il report di Bloomberg
 
-La notizia arriva da **Jason Schreier**, giornalista di Bloomberg tra i più affidabili quando si parla di industria. Ubisoft è l'unico acquirente citato per nome, mentre gli altri due offerenti restano anonimi. Le condizioni dell'eventuale accordo non sono state definite.
+La notizia arriva da Jason Schreier, giornalista di Bloomberg tra i più affidabili quando si parla di industria. Ubisoft è l'unico acquirente citato per nome, gli altri due offerenti restano anonimi e le condizioni dell'eventuale accordo non sono state definite.
 
-Secondo lo stesso report, Microsoft starebbe valutando anche una strada diversa: vendere lo studio ai suoi stessi dirigenti, facendolo diventare indipendente. È quello che è già successo con **Double Fine** e **Compulsion Games** negli ultimi mesi.
+Secondo lo stesso report, Microsoft starebbe valutando anche un'altra strada: vendere lo studio ai suoi stessi dirigenti e renderlo indipendente, come è già successo negli ultimi mesi con Double Fine e Compulsion Games.
 
 Un portavoce di Xbox ha detto a Windows Central che l'azienda sta esplorando attivamente le opzioni in vista di una scadenza fissata a dicembre, senza commentare le singole trattative.
 
 ## Perché Xbox vuole vendere Arkane Lyon
 
-Tutto nasce dal "reset" degli studi voluto dalla nuova CEO di Xbox, **Asha Sharma**, per tagliare i costi: licenziamenti, fusioni e la decisione, annunciata a luglio, di separarsi da cinque studi interni. Arkane Lyon è entrato in un periodo di consultazione previsto dalla legge francese sul lavoro.
+Tutto parte dal "reset" degli studi voluto dalla nuova CEO di Xbox, Asha Sharma, per tagliare i costi: licenziamenti, fusioni e la decisione, annunciata a luglio, di separarsi da cinque studi interni. Arkane Lyon è entrato in un periodo di consultazione previsto dalla legge francese sul lavoro.
 
-Nelle scorse settimane era emersa una scadenza a metà novembre: senza un compratore, lo studio avrebbe rischiato la chiusura, con circa **217 posti di lavoro** in pericolo. Successivamente è stato riportato che Xbox avrebbe concesso più tempo, fino a metà dicembre.
+Nelle scorse settimane era emersa una scadenza a metà novembre: senza un compratore lo studio avrebbe rischiato la chiusura, con circa 217 posti di lavoro in pericolo. In seguito è stato riportato che Xbox avrebbe concesso più tempo, fino a metà dicembre.
 
 ## Che fine fa Marvel's Blade
 
-Il progetto in ballo è **Marvel's Blade**, l'action dedicato al cacciatore di vampiri annunciato ai **The Game Awards 2023**. Secondo quanto raccontato a Kotaku da persone dello studio, il gioco sarebbe vicino al completamento: una vendita permetterebbe ad Arkane Lyon di finirlo, una chiusura lo cancellerebbe quasi certamente.
+Il progetto in ballo è **Marvel's Blade**, l'action sul cacciatore di vampiri annunciato ai The Game Awards 2023. Secondo quanto raccontato a Kotaku da persone dello studio, il gioco sarebbe vicino al completamento. Con una vendita Arkane Lyon potrebbe finirlo, con una chiusura verrebbe quasi certamente cancellato.
 
-Resta da capire anche il destino delle serie dello studio, **Dishonored** e **Deathloop**: non è chiaro se i diritti seguirebbero il team o resterebbero a Microsoft.
+C'è poi la questione delle serie dello studio, Dishonored e Deathloop: non è chiaro se i diritti seguirebbero il team o resterebbero a Microsoft.
 
 ## Perché Ubisoft avrebbe senso
 
-Ubisoft ha sede in Francia e una rete di studi già molto presente nel paese, quindi un'acquisizione a Lione sarebbe logisticamente naturale. Non sarebbe nemmeno la prima volta che le due aziende fanno affari: nel 2023 Microsoft ha ceduto a Ubisoft per 15 anni i diritti di streaming cloud dei giochi Activision Blizzard, per ottenere il via libera dalle autorità britanniche.
+Ubisoft ha sede in Francia e ha già molti studi nel paese, quindi comprarne uno a Lione sarebbe logisticamente naturale. Le due aziende hanno anche già fatto affari insieme: nel 2023 Microsoft ha ceduto a Ubisoft per 15 anni i diritti di streaming cloud dei giochi Activision Blizzard, per ottenere il via libera dalle autorità britanniche.
 
-Il momento per Ubisoft però non è dei più semplici, tra licenziamenti e progetti cancellati come il remake di **Prince of Persia: Le Sabbie del Tempo**. Per questo la mossa sorprende molti osservatori. Il caso ricorda quello di un altro studio storico in bilico, come abbiamo raccontato parlando della [possibile chiusura di BioWare da parte di EA](/articoli/bioware-chiusa-battlefront-3/).
+Il momento per Ubisoft però non è dei più semplici, tra licenziamenti e progetti cancellati come il remake di Prince of Persia: Le Sabbie del Tempo, e per questo la mossa sorprende molti osservatori. Il caso ricorda quello di un altro studio storico in bilico, come abbiamo raccontato parlando della [possibile chiusura di BioWare da parte di EA](/articoli/bioware-chiusa-battlefront-3/).
 
 ## Domande frequenti
 

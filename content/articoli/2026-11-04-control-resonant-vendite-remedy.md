@@ -23,32 +23,32 @@ fonti:
     url: "https://store.steampowered.com/app/3669870/CONTROL_Resonant/"
 ---
 
-**Control Resonant** è il gioco che ha venduto più in fretta nella storia di **Remedy Entertainment**. Lo studio finlandese di **Alan Wake** e **Max Payne** lo ha confermato il 3 novembre nella sua relazione sul terzo trimestre 2026: il seguito di Control ha superato il **milione di copie** in tre settimane e ha fatto salire i ricavi del periodo del **226%**.
+**Control Resonant** è il gioco che ha venduto più in fretta nella storia di **Remedy Entertainment**. Lo studio finlandese di Alan Wake e Max Payne lo ha confermato il 3 novembre nella relazione sul terzo trimestre 2026: il seguito di Control ha superato il milione di copie in tre settimane e ha fatto salire i ricavi del periodo del 226%.
 
 ## Le vendite di Control Resonant in numeri
 
-Control Resonant è uscito in digitale il **24 settembre** su PC, PS5 e Xbox Series X|S, e in versione fisica il 15 ottobre. Proprio il 15 ottobre ha tagliato il traguardo del milione di copie. Secondo il CEO **Jean-Charles Gaudechon**, arrivato alla guida dello studio quest'anno, circa la **metà dei giocatori** è nuova alla serie: un dato importante per un marchio che, per sua stessa ammissione, finora aveva venduto meno di quanto meritasse.
+Control Resonant è uscito in digitale il 24 settembre su PC, PS5 e Xbox Series X|S, e in versione fisica il 15 ottobre, lo stesso giorno in cui ha tagliato il traguardo del milione di copie. Secondo il CEO Jean-Charles Gaudechon, arrivato alla guida dello studio quest'anno, circa la metà dei giocatori è nuova alla serie. Per un marchio che, per sua stessa ammissione, finora aveva venduto meno di quanto meritasse, non è poco.
 
-È anche il primo gioco di questa portata che Remedy pubblica da sola, senza un editore esterno, su una proprietà intellettuale tutta sua. Gaudechon lo ha definito un traguardo decisivo per l'azienda.
+È anche il primo gioco di questa portata che Remedy pubblica da sola, senza editore esterno e su una proprietà intellettuale tutta sua, e Gaudechon lo ha definito un traguardo decisivo per l'azienda.
 
 ## Remedy, i conti del terzo trimestre 2026
 
-I numeri del trimestre luglio-settembre raccontano bene l'effetto Resonant:
+Nel trimestre luglio-settembre l'effetto Resonant si vede in tutte le voci:
 
-- **ricavi**: 39,6 milioni di euro, contro i 12,2 milioni dello stesso periodo del 2025;
-- **vendite di giochi e royalty**: 35,3 milioni, erano 6 milioni un anno fa;
-- **utile operativo**: 0,6 milioni, dopo una perdita di 16,4 milioni nel terzo trimestre 2025, appesantito dalla svalutazione di **FBC: Firebreak**;
-- **EBITDA**: 6,8 milioni, contro 0,7.
+- ricavi: 39,6 milioni di euro, contro i 12,2 milioni dello stesso periodo del 2025;
+- vendite di giochi e royalty: 35,3 milioni, erano 6 milioni un anno fa;
+- utile operativo: 0,6 milioni, dopo una perdita di 16,4 milioni nel terzo trimestre 2025, appesantito dalla svalutazione di FBC: Firebreak;
+- EBITDA: 6,8 milioni, contro 0,7.
 
 In nove mesi Remedy ha già incassato 62,9 milioni, più dei 59,5 di tutto il 2025, anche se il risultato operativo dei nove mesi resta in leggera perdita. Lo studio conferma che si aspetta ricavi ed EBITDA del 2026 in crescita rispetto all'anno scorso.
 
 ## Perché il successo di Control Resonant conta
 
-Il risultato arriva in un autunno affollatissimo, a poche settimane da **GTA 6**, e in un periodo in cui tanti studi chiudono o tagliano personale, come dimostra la recente [chiusura di BioWare](/articoli/bioware-chiusa-battlefront-3/). Dopo il flop di FBC: Firebreak, Remedy aveva bisogno di un successo per dimostrare che può reggersi sulle proprie gambe come editore.
+Il risultato arriva in un autunno affollatissimo, a poche settimane da GTA 6, e mentre tanti studi chiudono o tagliano personale, come nel caso della recente [chiusura di BioWare](/articoli/bioware-chiusa-battlefront-3/). Dopo il flop di FBC: Firebreak, Remedy aveva bisogno di un successo per dimostrare che può reggersi sulle proprie gambe come editore.
 
 ## Cosa aspettarsi da Remedy
 
-Il prossimo grande progetto è il **remake di Max Payne 1 e 2**, pubblicato da Rockstar Games e ora in piena produzione. Una data non c'è ancora, ma i conti in ordine danno allo studio più margine per lavorare sui prossimi giochi.
+Il prossimo grande progetto è il remake di Max Payne 1 e 2, pubblicato da Rockstar Games e ora in piena produzione. Una data non c'è ancora, ma i conti in ordine danno allo studio più margine per lavorare sui prossimi giochi.
 
 ## Domande frequenti
 

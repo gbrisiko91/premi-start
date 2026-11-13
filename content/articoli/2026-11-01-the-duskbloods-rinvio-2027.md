@@ -24,27 +24,27 @@ fonti:
     url: "https://www.levelup.com/en/news/the-duskbloods-returns-with-a-new-trailer-but-fans-are-disappointed-its-getting-delayed-to-next-year/"
 ---
 
-**The Duskbloods** è stato rinviato al **2027**. Lo ha annunciato **FromSoftware** il 29 ottobre: l'esclusiva per **Nintendo Switch 2**, attesa genericamente nel 2026, avrà bisogno di qualche mese in più. Non c'è ancora un giorno né un mese di uscita.
+**The Duskbloods** è stato rinviato al 2027. Lo ha annunciato **FromSoftware** il 29 ottobre: l'esclusiva per **Nintendo Switch 2**, attesa genericamente nel 2026, avrà bisogno di qualche mese in più. Un giorno o un mese di uscita, per ora, non ci sono.
 
 ## Perché The Duskbloods è stato rinviato
 
-L'annuncio è arrivato con un messaggio sull'account X ufficiale del gioco. Lo studio spiega che il progetto è nella fase di rifinitura finale e che, dopo aver raccolto i commenti dei giocatori durante il **network test di agosto**, vuole dedicare più tempo alle regole di gioco e al bilanciamento.
+L'annuncio è arrivato con un messaggio sull'account X ufficiale del gioco. Lo studio spiega che il progetto è nella fase di rifinitura finale e che, dopo aver raccolto i commenti dei giocatori durante il network test di agosto, vuole lavorare ancora sulle regole di gioco e sul bilanciamento.
 
-Gli obiettivi dichiarati sono tre: un combattimento migliore, più profondità strategica e più libertà per i giocatori di esprimere il proprio stile.
+Lo scopo dichiarato è avere un combattimento migliore, più profondità strategica e più libertà per i giocatori di esprimere il proprio stile.
 
 ## Quando esce The Duskbloods su Switch 2
 
-La finestra ufficiale ora è il 2027, come conferma anche la [scheda del gioco sul Nintendo eShop](https://www.nintendo.com/us/store/products/the-duskbloods-switch-2/). FromSoftware e Nintendo non hanno indicato un mese: è probabile che la data precisa arrivi nei prossimi mesi, magari durante un Nintendo Direct.
+La finestra ufficiale adesso è il 2027, come conferma anche la [scheda del gioco sul Nintendo eShop](https://www.nintendo.com/us/store/products/the-duskbloods-switch-2/). FromSoftware e Nintendo non hanno indicato un mese. La data precisa probabilmente arriverà nei prossimi mesi, magari durante un Nintendo Direct.
 
 ## Cos'è The Duskbloods
 
-Annunciato ad aprile 2025 durante il Nintendo Direct dedicato a Switch 2, The Duskbloods è un action **PvPvE** con il gioco online al centro: le partite arrivano fino a **otto giocatori**, che vestono i panni dei "Bloodsworn", persone diventate più forti degli esseri umani grazie a un sangue speciale. È sviluppato da FromSoftware, lo studio presieduto da **Hidetaka Miyazaki** e famoso per Dark Souls, Bloodborne ed Elden Ring. Essendo il primo progetto dello studio costruito attorno al multiplayer fin dall'inizio, si capisce perché il test online di agosto abbia pesato così tanto.
+Annunciato ad aprile 2025 durante il Nintendo Direct dedicato a Switch 2, The Duskbloods è un action PvPvE costruito attorno al gioco online. Le partite arrivano fino a otto giocatori, che vestono i panni dei "Bloodsworn", persone diventate più forti degli esseri umani grazie a un sangue speciale. Lo sviluppa FromSoftware, lo studio presieduto da Hidetaka Miyazaki e famoso per Dark Souls, Bloodborne ed Elden Ring. È il primo progetto dello studio pensato per il multiplayer fin dall'inizio, quindi non stupisce che il test online di agosto abbia pesato così tanto.
 
 ## Perché il rinvio fa discutere
 
-The Duskbloods è il primo gioco di FromSoftware pensato in esclusiva per una console Nintendo e, fin dal primo trailer, molti fan lo hanno paragonato a un erede spirituale di **Bloodborne**. Nelle settimane scorse i timori di un rinvio erano cresciuti, anche perché fino a pochi mesi fa lo studio e la capogruppo Kadokawa avevano ribadito l'uscita nel 2026.
+The Duskbloods è il primo gioco di FromSoftware pensato in esclusiva per una console Nintendo, e dal primo trailer in poi molti fan lo hanno paragonato a un erede spirituale di Bloodborne. Nelle ultime settimane la paura di un rinvio era cresciuta, anche perché fino a pochi mesi fa lo studio e la capogruppo Kadokawa avevano ribadito l'uscita nel 2026.
 
-Lo slittamento toglie a Switch 2 uno dei titoli più attesi della sua seconda stagione natalizia. C'è però anche un segnale positivo: il riferimento esplicito al test di agosto fa pensare che i commenti della community abbiano davvero inciso sul lavoro dello studio. Sul fronte console resta caldo anche il caso di [Modern Warfare 4 e dei filmati di Itaewon](/articoli/modern-warfare-4-filmati-itaewon/).
+Con lo slittamento Switch 2 perde uno dei titoli più attesi della sua seconda stagione natalizia. Il riferimento esplicito al test di agosto, almeno, fa pensare che i commenti della community abbiano davvero inciso sul lavoro dello studio. Sul fronte console resta caldo anche il caso di [Modern Warfare 4 e dei filmati di Itaewon](/articoli/modern-warfare-4-filmati-itaewon/).
 
 ## Domande frequenti
 

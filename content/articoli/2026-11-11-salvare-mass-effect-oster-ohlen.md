@@ -23,25 +23,25 @@ fonti:
     url: "https://news.instant-gaming.com/it/articoli/22955-il-cofondatore-di-bioware-e-il-direttore-di-star-wars-kotor-vogliono-collaborare-per-salvare-mass-effect-e-dragon-age"
 ---
 
-C'è chi prova davvero a **salvare Mass Effect**. **Trent Oster**, tra i fondatori di **BioWare** e oggi a capo di **Beamdog**, sta studiando un piano per riportare in vita **Mass Effect** e **Dragon Age** dopo la chiusura dello studio decisa da **Electronic Arts**. E il primo nome che ha fatto per "riunire la band" è quello di **James Ohlen**, il director di **Star Wars: Knights of the Old Republic**, che ha risposto subito di sì.
+C'è chi prova davvero a **salvare Mass Effect**. **Trent Oster**, tra i fondatori di BioWare e oggi a capo di Beamdog, sta studiando un piano per riportare in vita Mass Effect e Dragon Age dopo la chiusura dello studio decisa da Electronic Arts. Il primo nome che ha fatto per "riunire la band" è quello di **James Ohlen**, il director di Star Wars: Knights of the Old Republic, che ha risposto subito di sì.
 
-Per ora è un progetto sulla carta, senza fondi né accordi con EA. Ma è la prima risposta concreta, da parte di chi quei giochi li ha creati, alla campagna dei fan #SaveMassEffect.
+Per ora è un progetto sulla carta, senza fondi né accordi con EA, ma è la prima risposta concreta alla campagna dei fan #SaveMassEffect arrivata da chi quei giochi li ha creati.
 
 ## Il piano di Trent Oster per salvare Mass Effect e Dragon Age
 
-Oster ne ha parlato in una serie di post su X a partire dal 4 novembre. Il cofondatore di BioWare dice di stare costruendo scenari finanziari su un foglio Excel, arrivato alla trentesima revisione, e di avere un obiettivo chiaro: uno studio che faccia i giochi per cui la community ama BioWare, senza inseguire le mode del momento nei modelli di business.
+Oster ne ha parlato in una serie di post su X a partire dal 4 novembre. Il cofondatore di BioWare dice di stare costruendo scenari finanziari su un foglio Excel, arrivato alla trentesima revisione, e di avere in mente uno studio che faccia i giochi per cui la community ama BioWare, senza inseguire le mode del momento nei modelli di business.
 
-Il nodo sono i soldi. Oster stima che un Mass Effect di livello tripla A costerebbe oltre **200 milioni di dollari**, anche se secondo lui un team esperto e disciplinato potrebbe spendere meno. Soprattutto, servirebbero i **diritti sulle serie**, oggi nelle mani di EA: senza la proprietà intellettuale, ha spiegato, si finirebbe solo per far guadagnare l'editore.
+Il problema sono i soldi. Oster stima che un Mass Effect di livello tripla A costerebbe oltre 200 milioni di dollari, anche se secondo lui un team esperto e disciplinato potrebbe spendere meno. E poi servirebbero i diritti sulle serie, oggi nelle mani di EA: senza la proprietà intellettuale, ha spiegato, si finirebbe solo per far guadagnare l'editore.
 
 ## James Ohlen: «Tornare su Dragon Age è un sogno»
 
-La risposta di Ohlen è arrivata l'8 novembre, sempre su X. Il designer, che in BioWare ha lavorato per 22 anni tra **Baldur's Gate**, **Neverwinter Nights**, KOTOR e **Dragon Age: Origins**, ha detto che avere di nuovo la possibilità di lavorare a Dragon Age sarebbe «un mio sogno».
+La risposta di Ohlen è arrivata l'8 novembre, sempre su X. Il designer, che in BioWare ha lavorato per 22 anni tra Baldur's Gate, Neverwinter Nights, KOTOR e Dragon Age: Origins, ha detto che avere di nuovo la possibilità di lavorare a Dragon Age sarebbe «un mio sogno».
 
-È bastato questo per far esplodere l'entusiasmo dei fan: Oster e Ohlen sono due dei nomi legati all'età d'oro dello studio canadese, quella dei giochi di ruolo che hanno definito un genere.
+Tanto è bastato per accendere l'entusiasmo dei fan, perché Oster e Ohlen sono due dei nomi più legati all'età d'oro dello studio canadese e dei suoi giochi di ruolo.
 
 ## Il Canada, la petizione e cosa serve davvero
 
-Il piano ha anche un lato politico. Oster ha scritto al deputato canadese **Don Davies**, che aveva chiesto di dare ai dipendenti di BioWare la prima possibilità di rilevare lo studio, e ha detto che accoglierebbe volentieri un sostegno del governo: Beamdog ha sede a Edmonton, proprio come BioWare. Intanto la petizione dei fan ha superato le 210.000 firme.
+Il piano ha anche un lato politico. Oster ha scritto al deputato canadese Don Davies, che aveva chiesto di dare ai dipendenti di BioWare la prima possibilità di rilevare lo studio, e ha detto che accoglierebbe volentieri un sostegno del governo: Beamdog ha sede a Edmonton, proprio come BioWare. Intanto la petizione dei fan ha superato le 210.000 firme.
 
 Restano però molti dubbi. Beamdog è uno studio piccolo, noto soprattutto per le Enhanced Edition di Baldur's Gate, e un'operazione del genere richiederebbe un grande investitore e un accordo con EA, che non ha commentato. Per capire come si è arrivati fin qui, leggete il nostro articolo su [BioWare chiusa per fare Battlefront 3](/articoli/bioware-chiusa-battlefront-3/).
 

@@ -25,35 +25,35 @@ fonti:
     url: "https://store.steampowered.com/app/4530370/Football_Manager_27"
 ---
 
-**Football Manager 27** è disponibile da oggi, 10 novembre, in tutto il mondo. Il nuovo manageriale di **Sports Interactive** e **SEGA** esce insieme su PC, su **PS5** e **Xbox Series X|S** e su smartphone tramite **Netflix**, ed è incluso dal primo giorno in **Xbox Game Pass**. Per lo studio inglese è un'uscita delicata: deve far dimenticare un'edizione precedente che aveva diviso i fan.
+**Football Manager 27** è disponibile da oggi, 10 novembre, in tutto il mondo. Il nuovo manageriale di **Sports Interactive** e **SEGA** esce in contemporanea su PC, su PS5 e Xbox Series X|S e su smartphone tramite Netflix, ed è incluso dal primo giorno in Xbox Game Pass. Per lo studio inglese è un'uscita delicata, perché deve far dimenticare un'edizione precedente che aveva diviso i fan.
 
 ## Dove giocare Football Manager 27: PC, console e mobile
 
 Come annunciato da Sports Interactive sul [sito ufficiale di Football Manager](https://www.footballmanager.com/node/1106), le versioni disponibili oggi sono tre:
 
-- **Football Manager 27** per PC e Mac, su Steam, Epic Games Store e Microsoft Store, compresa l'app Xbox per PC con Game Pass;
-- **Football Manager 27 Console** per PS5 e Xbox Series X|S;
-- **Football Manager 27 Mobile** per iOS e Android, incluso nell'abbonamento Netflix.
+- Football Manager 27 per PC e Mac, su Steam, Epic Games Store e Microsoft Store, compresa l'app Xbox per PC con Game Pass;
+- Football Manager 27 Console per PS5 e Xbox Series X|S;
+- Football Manager 27 Mobile per iOS e Android, incluso nell'abbonamento Netflix.
 
-Su PC il prezzo di listino in Italia è di 59,99 euro. Chi ha già Game Pass può invece scaricarlo senza costi aggiuntivi.
+Su PC il prezzo di listino in Italia è di 59,99 euro, mentre chi ha già Game Pass può scaricarlo senza costi aggiuntivi.
 
 ## Le novità di Football Manager 27 rispetto a FM26
 
-Il cuore del nuovo capitolo è l'**interfaccia**, il punto più criticato di FM26, la prima edizione costruita sul nuovo motore dopo la cancellazione di FM25. Sports Interactive promette meno clic, una navigazione più rapida con i menu in alto e una schermata a tutto schermo più pulita, oltre a scorciatoie, segnalibri e riquadri personalizzabili.
+Gran parte del lavoro è andata sull'interfaccia, il punto più criticato di FM26, la prima edizione costruita sul nuovo motore dopo la cancellazione di FM25. Sports Interactive promette meno clic, una navigazione più rapida con i menu in alto e una schermata a tutto schermo più pulita, oltre a scorciatoie, segnalibri e riquadri personalizzabili.
 
-Tornano anche alcune funzioni molto richieste dalla community:
+Tornano anche alcune funzioni che la community chiedeva da tempo:
 
-- i **sorteggi delle coppe** seguiti in diretta;
-- il **giorno di chiusura del mercato**, con le trattative dell'ultimo minuto;
-- un **feed di notizie** rinnovato e statistiche più ricche, con mappe di calore e di passaggi.
+- i sorteggi delle coppe seguiti in diretta;
+- il giorno di chiusura del mercato, con le trattative dell'ultimo minuto;
+- un feed di notizie rinnovato e statistiche più ricche, con mappe di calore e di passaggi.
 
-Secondo la recensione di Multiplayer.it c'è poi una modalità inedita, **Shuffle Draft**, sviluppata con la FIFAe: una sorta di torneo a draft da 2 a 32 partecipanti, pensato per partite più brevi.
+Secondo la recensione di Multiplayer.it c'è poi una modalità inedita, Shuffle Draft, sviluppata con la FIFAe: una sorta di torneo a draft da 2 a 32 partecipanti, pensato per partite più brevi.
 
 ## Football Manager 27 recensioni: com'è andato all'esordio
 
-Le prime valutazioni sono positive. Su Metacritic, al momento dell'uscita, la media è di **82** su un piccolo numero di recensioni, tutte favorevoli. Multiplayer.it gli ha dato 7,5: il nuovo sistema tattico, con istruzioni più precise per gli inserimenti in area, convince, mentre il motore delle partite mostra ancora difensori poco reattivi e l'interfaccia, pur migliorata, resta lenta nelle operazioni di tutti i giorni.
+Le prime valutazioni sono positive. Su Metacritic, al momento dell'uscita, la media è di 82 su un piccolo numero di recensioni, tutte favorevoli. Multiplayer.it gli ha dato 7,5: convince il nuovo sistema tattico, con istruzioni più precise per gli inserimenti in area, mentre il motore delle partite mostra ancora difensori poco reattivi e l'interfaccia, pur migliorata, resta lenta nelle operazioni di tutti i giorni.
 
-Il giudizio che emerge è quello di un passo avanti netto rispetto a FM26, ma non ancora al livello di FM24, considerato da molti fan l'ultimo grande capitolo. Sarà decisivo vedere come reagiranno i giocatori nelle prime settimane, dopo un'edizione che su Steam aveva raccolto molte critiche. Per SEGA, che negli ultimi giorni ha già fatto parlare di sé per [l'attacco hacker ai servizi ALL.Net](/articoli/sega-all-net-attacco-hacker/), è un lancio importante.
+Nel complesso ne esce un netto passo avanti rispetto a FM26, anche se non ancora al livello di FM24, che molti fan considerano l'ultimo grande capitolo. Adesso conterà la reazione dei giocatori nelle prime settimane, dopo un'edizione che su Steam aveva raccolto molte critiche. Per SEGA, che negli ultimi giorni ha già fatto parlare di sé per [l'attacco hacker ai servizi ALL.Net](/articoli/sega-all-net-attacco-hacker/), è un lancio importante.
 
 ## Domande frequenti
 
