@@ -27,38 +27,38 @@ fonti:
     url: "https://www.nintendolife.com/news/2026/09/zelda-ocarina-of-time-switch-2-price-and-box-art-revealed"
 ---
 
-Il **remake di Zelda Ocarina of Time** arriva su **Nintendo Switch 2** giovedì 5 novembre 2026, in tutto il mondo. A due giorni dal lancio **Nintendo** ha svelato chi c'è dietro il progetto, sono emerse le prime copie digitali in Giappone e perfino **Google** ha preparato un omaggio al classico del 1998. Ecco tutto quello che c'è da sapere prima di riprendere in mano l'ocarina.
+Il **remake di Zelda Ocarina of Time** arriva su **Nintendo Switch 2** giovedì 5 novembre 2026, in tutto il mondo. A due giorni dal lancio **Nintendo** ha svelato chi c'è dietro il progetto, in Giappone sono spuntate le prime copie digitali e perfino Google ha preparato un omaggio al classico del 1998. Qui sotto data, prezzo, team, novità e peso, prima di riprendere in mano l'ocarina.
 
 ## Quando esce Zelda Ocarina of Time remake e quanto costa
 
-La data è confermata dalla pagina ufficiale Nintendo: **5 novembre 2026**, in esclusiva per Switch 2. Era stata annunciata l'8 settembre durante il Nintendo Direct per i 40 anni della serie, presentato dal produttore **Eiji Aonuma**, dopo il primo teaser di giugno.
+La data è confermata dalla pagina ufficiale Nintendo: 5 novembre 2026, in esclusiva per Switch 2. Era stata annunciata l'8 settembre durante il Nintendo Direct per i 40 anni della serie, presentato dal produttore Eiji Aonuma, dopo il primo teaser di giugno.
 
-Sul Nintendo eShop europeo il prezzo indicato al momento della presentazione è di **59,99 euro**. La versione fisica contiene il gioco completo sulla cartuccia (non una semplice chiave di download) e, finché durano le scorte, ha una copertina speciale in rilievo. Diversi negozi la propongono già a prezzo scontato.
+Sul Nintendo eShop europeo il prezzo indicato al momento della presentazione è di 59,99 euro. La versione fisica contiene il gioco completo sulla cartuccia (non una semplice chiave di download) e, finché durano le scorte, ha una copertina speciale in rilievo. Diversi negozi la propongono già a prezzo scontato.
 
 ## Chi sviluppa il remake: il team di Tears of the Kingdom
 
-Il remake è fatto in casa. Nelle prime due parti dell'intervista *Chiedilo agli sviluppatori* pubblicate da Nintendo, si scopre che il lavoro è di **Nintendo EPD**, il gruppo interno che cura i capitoli principali di Zelda da oltre vent'anni, smentendo le voci su uno studio esterno.
+Il remake è fatto in casa. Le prime due parti dell'intervista *Chiedilo agli sviluppatori* pubblicate da Nintendo rivelano che il lavoro è di Nintendo EPD, il gruppo interno che cura i capitoli principali di Zelda da oltre vent'anni. Le voci su uno studio esterno erano quindi sbagliate.
 
-La regia è affidata a **HokWai Ng**, al debutto come director dopo aver lavorato a **Tears of the Kingdom**. Con lui ci sono Aya Shida alla direzione artistica, Hiroki Taguchi alla programmazione e Masato Ohashi alla musica, mentre Aonuma e **Hidemaro Fujibayashi** firmano come produttori. Le parti tre e quattro dell'intervista sono attese proprio in questi giorni.
+La regia è di HokWai Ng, al debutto come director dopo aver lavorato a Tears of the Kingdom. Con lui ci sono Aya Shida alla direzione artistica, Hiroki Taguchi alla programmazione e Masato Ohashi alla musica, mentre Aonuma e Hidemaro Fujibayashi firmano come produttori. Le parti tre e quattro dell'intervista dovrebbero uscire in questi giorni.
 
 ## Le novità di Ocarina of Time su Switch 2
 
-Non è una semplice rimasterizzazione: Nintendo parla di grafica reinventata, colonna sonora rinnovata e gameplay modernizzato. Le aggiunte principali confermate:
+Nintendo parla di grafica reinventata, colonna sonora rinnovata e gameplay modernizzato, quindi siamo oltre la rimasterizzazione. Queste le aggiunte principali confermate:
 
-- **scatto e salto** con un tasto per superare ostacoli e voragini;
-- un **destriero** da cavalcare più avanti nell'avventura;
+- scatto e salto con un tasto per superare ostacoli e voragini;
+- un destriero da cavalcare più avanti nell'avventura;
 - il tempo scorre in ogni zona e di notte compaiono personaggi e nemici nuovi;
-- il menu **Threads of Time** riassume la storia e gli obiettivi;
+- il menu Threads of Time riassume la storia e gli obiettivi;
 - cambio rapido di armi e oggetti, mira con i sensori di movimento;
-- **filmati completamente doppiati** e nuovi dialoghi;
+- filmati completamente doppiati e nuovi dialoghi;
 - le canzoni dell'ocarina si suonano con i tasti, canticchiando nel microfono della console o con una vera ocarina;
 - supporto agli amiibo per sbloccare maschere.
 
-Ce n'è anche per chi ama i numeri: il gioco pesa **24,5 GB** secondo la scheda ufficiale Nintendo, più di Breath of the Wild. La cartuccia originale per **Nintendo 64** occupava appena 32 MB. Intanto un'altra esclusiva molto attesa per la console ha cambiato programma: ecco [perché The Duskbloods di FromSoftware è stato rinviato al 2027](/articoli/the-duskbloods-rinvio-2027/).
+Per chi ama i numeri: secondo la scheda ufficiale Nintendo il gioco pesa 24,5 GB, più di Breath of the Wild, mentre la cartuccia originale per Nintendo 64 occupava appena 32 MB. Intanto un'altra esclusiva molto attesa per la console ha cambiato programma: ecco [perché The Duskbloods di FromSoftware è stato rinviato al 2027](/articoli/the-duskbloods-rinvio-2027/).
 
 ## L'easter egg di Google per Ocarina of Time
 
-Il remake è diventato virale anche fuori dal mondo dei videogiochi. Cercando "zelda" su Google compare la **Spada Suprema** sul piedistallo del Tempio del Tempo: cliccandola parte l'effetto del viaggio nel tempo e la pagina dei risultati torna con l'aspetto del 1998, l'anno dell'originale. Un modo simpatico per ricordare quanto tempo è passato.
+Il remake è diventato virale anche fuori dal mondo dei videogiochi. Se cercate "zelda" su Google compare la Spada Suprema sul piedistallo del Tempio del Tempo: cliccandola parte l'effetto del viaggio nel tempo e la pagina dei risultati torna con l'aspetto del 1998, l'anno dell'originale. Un modo simpatico per ricordarci quanti anni sono passati.
 
 ## Domande frequenti
 

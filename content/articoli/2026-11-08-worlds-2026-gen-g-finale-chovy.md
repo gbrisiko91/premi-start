@@ -29,7 +29,7 @@ fonti:
     url: "https://www.hotspawn.com/league-of-legends/news/blg-vs-t1-worlds-2026-preview"
 ---
 
-Sette Mondiali, sette eliminazioni. Al suo ottavo tentativo **Chovy** ce l'ha fatta: **Gen.G** ha battuto **Invictus Gaming** 3-0 nella prima semifinale dei **Worlds 2026** di **League of Legends** e si è presa il primo posto in finale. Per il mid laner considerato da molti il più forte del mondo senza un titolo mondiale, è la prima finale della carriera. L'avversaria esce stanotte da **Bilibili Gaming** contro **T1**.
+Sette Mondiali, sette eliminazioni. Al suo ottavo tentativo **Chovy** ce l'ha fatta: **Gen.G** ha battuto Invictus Gaming 3-0 nella prima semifinale dei **Worlds 2026** di League of Legends e si è presa il primo posto in finale. Per il mid laner considerato da molti il più forte del mondo senza un titolo mondiale, è la prima finale della carriera. L'avversaria uscirà stanotte da Bilibili Gaming contro T1.
 
 ## La maledizione di Chovy ai Worlds
 
@@ -45,27 +45,27 @@ Chovy in Corea ha vinto quasi tutto: nel 2026 si è preso LCK Cup, campionato co
 | 2020 | DRX | DAMWON Gaming, 0-3 | Quarti |
 | 2019 | Griffin | Invictus Gaming, 1-3 | Quarti |
 
-Tre semifinali perse in quattro anni. E il primo Mondiale, nel 2019, era finito proprio contro Invictus Gaming: sette anni dopo, la stessa squadra gli ha aperto la porta della finale.
+In quattro anni sono tre semifinali perse. E il primo Mondiale, nel 2019, era finito proprio contro Invictus Gaming: sette anni dopo è stata la stessa squadra ad aprirgli la porta della finale.
 
 ## Gen.G-Invictus Gaming 3-0: com'è andata
 
 Non c'è stata storia. Gen.G ha vinto gara 1 in 34 minuti e gara 2 in 29, entrambe dal lato blu. Gara 3 è stata la più lunga, 40 minuti dal lato rosso, ma il risultato non è cambiato.
 
-Il migliore è stato **Ruler**: 23 uccisioni, 8 morti e 33 assist in tre partite. Per l'ADC di Gen.G è la prima finale mondiale da quella vinta nel 2017 con Samsung Galaxy, nove anni fa. Dall'altra parte il più positivo è stato **Rookie**, con 15 uccisioni, ma non è bastato a IG, che non arrivava tra le prime quattro del Mondiale dal 2019.
+Il migliore è stato Ruler: 23 uccisioni, 8 morti e 33 assist in tre partite. Per l'ADC di Gen.G è la prima finale mondiale da quella vinta nel 2017 con Samsung Galaxy, nove anni fa. Dall'altra parte il più positivo è stato Rookie, con 15 uccisioni, ma non è bastato a IG, che non arrivava tra le prime quattro del Mondiale dal 2019.
 
 Gen.G arriva così in finale senza aver ancora perso una serie: imbattuta nella fase Swiss, 3-0 a LYON nei quarti e 3-0 a IG in semifinale.
 
 ## Stanotte BLG-T1: le due finali possibili
 
-La seconda semifinale si gioca stanotte ad Allen, in Texas. Entrambi i risultati regalano una finale da raccontare.
+La seconda semifinale si gioca stanotte ad Allen, in Texas, e comunque vada la finale avrà una bella storia dietro.
 
-**Se passa T1** è finale tutta coreana, ed è la rivincita di due anni fa: nel 2024 fu proprio T1 a eliminare Gen.G in semifinale, 3-1. **Faker** cerca il quarto Mondiale consecutivo, un traguardo che nessuno ha mai raggiunto. Chovy cerca il primo. Ve lo avevamo raccontato nel nostro [articolo sui quarti di finale](/articoli/worlds-2026-t1-karmine-semifinali/).
+Se passa T1 è finale tutta coreana, nonché la rivincita di due anni fa: nel 2024 fu proprio T1 a eliminare Gen.G in semifinale, 3-1. Faker cerca il quarto Mondiale consecutivo, un traguardo che nessuno ha mai raggiunto. Chovy cerca il primo. Ve lo avevamo raccontato nel nostro [articolo sui quarti di finale](/articoli/worlds-2026-t1-karmine-semifinali/).
 
-**Se passa Bilibili Gaming** è Corea contro Cina. BLG ha perso la finale mondiale del 2024 contro T1 e quella dell'MSI di luglio contro Hanwha Life, entrambe per 3-2. Arriva in semifinale dopo aver spazzato via Dplus KIA, con **Knight** in forma straordinaria. Batterla vorrebbe dire chiudere la stagione con la doppietta MSI-Mondiale per la Corea.
+Se passa Bilibili Gaming è Corea contro Cina. BLG ha perso la finale mondiale del 2024 contro T1 e quella dell'MSI di luglio contro Hanwha Life, entrambe per 3-2. Arriva in semifinale dopo aver spazzato via Dplus KIA, con Knight in forma straordinaria. Batterla vorrebbe dire chiudere la stagione con la doppietta MSI-Mondiale per la Corea.
 
 ## Quando si gioca la finale dei Worlds 2026
 
-La finale è **sabato 14 novembre** al **Barclays Center** di Brooklyn, a New York, alle 20:00 ora italiana. Si gioca al meglio delle cinque con Fearless Draft e si guarda gratis sui canali [Twitch e YouTube di LoL Esports](https://lolesports.com/). Alla squadra campione va 1 milione di dollari, su un montepremi di 5 milioni.
+La finale è sabato 14 novembre al Barclays Center di Brooklyn, a New York, alle 20:00 ora italiana. Si gioca al meglio delle cinque con Fearless Draft e si guarda gratis sui canali [Twitch e YouTube di LoL Esports](https://lolesports.com/). Alla squadra campione va 1 milione di dollari, su un montepremi di 5 milioni.
 
 ## Domande frequenti
 

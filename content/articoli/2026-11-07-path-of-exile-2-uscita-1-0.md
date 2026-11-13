@@ -25,29 +25,29 @@ fonti:
     url: "https://www.poe-vault.com/poe2/news/path-of-exile-2-launches-free-to-play-on-december-11"
 ---
 
-**Path of Exile 2** ha una data d'uscita definitiva e un volto quasi completo. Durante l'**ExileCon 2026**, la convention di **Grinding Gear Games** che si è aperta il 6 novembre, lo studio ha mostrato la versione 1.0 che arriverà l'**11 dicembre**: nuova classe **Shadow**, ultimi due atti della campagna e una lega costruita attorno ad assedi ed eserciti.
+**Path of Exile 2** ha una data d'uscita definitiva e un volto quasi completo. Durante l'**ExileCon 2026**, la convention di **Grinding Gear Games** che si è aperta il 6 novembre, lo studio ha mostrato la versione 1.0 che arriverà l'11 dicembre: nuova classe Shadow, ultimi due atti della campagna e una lega costruita attorno ad assedi ed eserciti.
 
 ## Quando esce Path of Exile 2 e quanto costa
 
-La data dell'11 dicembre 2026 (ora del Pacifico, quindi nella serata italiana o nella notte tra l'11 e il 12) era stata annunciata ad agosto alla Gamescom ed è ora confermata. Con la 1.0 il gioco lascia l'accesso anticipato, iniziato a dicembre 2024, e diventa **free-to-play per tutti**: niente più pacchetto d'ingresso.
+La data dell'11 dicembre 2026 (ora del Pacifico, quindi nella serata italiana o nella notte tra l'11 e il 12) era stata annunciata ad agosto alla Gamescom ed è ora confermata. Con la 1.0 il gioco lascia l'accesso anticipato, iniziato a dicembre 2024, e diventa free-to-play per tutti, quindi senza più il pacchetto d'ingresso da comprare.
 
-Le piattaforme sono quelle già note: PC (sito ufficiale, Steam ed Epic Games Store), **PlayStation 5** e **Xbox Series X|S**. Chi si registra sul sito ufficiale entro il 10 dicembre riceverà ricompense cosmetiche legate ai traguardi della community.
+Le piattaforme sono quelle già note: PC (sito ufficiale, Steam ed Epic Games Store), PlayStation 5 e Xbox Series X|S. Chi si registra sul sito ufficiale entro il 10 dicembre riceverà ricompense cosmetiche legate ai traguardi della community.
 
 ## Le novità della versione 1.0: Shadow, Duelist e due nuovi atti
 
-La campagna arriva finalmente a sei atti. Gli **atti 5 e 6** aggiungono 24 nuove aree e 18 boss inediti; il quinto è ambientato a Oriath, luogo caro a chi ha giocato il primo capitolo.
+La campagna arriva finalmente a sei atti: il 5 e il 6 aggiungono 24 nuove aree e 18 boss inediti; il quinto è ambientato a Oriath, luogo caro a chi ha giocato il primo capitolo.
 
-La star della presentazione è la **Shadow**, classe con pugnali e trappole costruita attorno alla furtività: uccidere un nemico ricarica lo stato di occultamento e le trappole piazzate di nascosto esplodono solo quando ci si rivela. Si aggiunge al **Duelist**, il guerriero con le spade mostrato in estate, che con l'Ascendancy del Cavaliere porta con sé uno scudiero equipaggiabile e uno stendardo di guerra.
+La star della presentazione è la Shadow, classe con pugnali e trappole costruita attorno alla furtività: uccidere un nemico ricarica lo stato di occultamento e le trappole piazzate di nascosto esplodono solo quando ci si rivela. Si aggiunge al Duelist, il guerriero con le spade mostrato in estate, che con l'Ascendancy del Cavaliere porta con sé uno scudiero equipaggiabile e uno stendardo di guerra.
 
-C'è però un rovescio della medaglia: delle 12 classi promesse ne arriveranno 10, e le ultime due saranno aggiunte dopo il lancio. Il director **Jonathan Rogers** si è scusato con i giocatori, assicurando che lo sviluppo continuerà.
+C'è però un rovescio della medaglia: delle 12 classi promesse ne arriveranno 10, e le ultime due saranno aggiunte dopo il lancio. Il director Jonathan Rogers si è scusato con i giocatori e ha assicurato che lo sviluppo continuerà.
 
 Completano il pacchetto un albero passivo rivisto, circa 60 nuove abilità attive, oltre 40 oggetti unici inediti, 25 nuove mappe per l'endgame e prestazioni della CPU nettamente migliorate rispetto all'inizio dell'accesso anticipato.
 
 ## Conquerors of Wraeclast, la lega con castelli e assedi
 
-La lega di lancio si chiama **Conquerors of Wraeclast** ed è la più ambiziosa mai vista nella serie: si reclutano mercenari, si guidano truppe in battaglie in tempo reale e si costruisce una roccaforte in uno di tre stili (Ezomyte, Maraketh o Karui), con oltre 20 edifici. Nell'endgame le fazioni si contendono cento fortezze sulla mappa dell'Atlante, che danno bonus a tutto lo schieramento.
+La lega di lancio si chiama Conquerors of Wraeclast ed è la più ambiziosa mai vista nella serie: si reclutano mercenari, si guidano truppe in battaglie in tempo reale e si costruisce una roccaforte in uno di tre stili (Ezomyte, Maraketh o Karui), con oltre 20 edifici. Nell'endgame le fazioni si contendono cento fortezze sulla mappa dell'Atlante, che danno bonus a tutto lo schieramento.
 
-Non si dimentica il primo capitolo: **Path of Exile** riceverà la lega **Covens of Umbra** il 13 novembre, con un Atlante ridisegnato e nuove regole per il bottino. Tra le uscite di fine anno è uno dei titoli PC da segnare in calendario, insieme ad altri grandi action del 2026 come [Phantom Blade Zero, partito con vendite da record](/articoli/phantom-blade-zero-vendite/).
+C'è spazio anche per il primo capitolo: Path of Exile riceverà la lega Covens of Umbra il 13 novembre, con un Atlante ridisegnato e nuove regole per il bottino. Tra le uscite di fine anno è uno dei titoli PC da segnare in calendario, insieme ad altri grandi action del 2026 come [Phantom Blade Zero, partito con vendite da record](/articoli/phantom-blade-zero-vendite/).
 
 ## Domande frequenti
 

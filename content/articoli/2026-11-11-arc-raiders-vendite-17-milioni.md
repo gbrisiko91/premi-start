@@ -23,23 +23,23 @@ fonti:
     url: "https://www.pcgamesn.com/arc-raiders/17-million-sales"
 ---
 
-**ARC Raiders** ha superato i **17 milioni di copie vendute**. Lo ha annunciato **Nexon** il 10 novembre, presentando i conti del terzo trimestre 2026: a poco più di un anno dal lancio, lo sparatutto extraction di **Embark Studios** continua a vendere, spinto dal grande aggiornamento **Frozen Trail** di ottobre. Ma l'editore avverte già che i ricavi di fine anno saranno più bassi di quelli del 2025.
+**ARC Raiders** ha superato i 17 milioni di copie vendute. Lo ha annunciato **Nexon** il 10 novembre, presentando i conti del terzo trimestre 2026: a poco più di un anno dal lancio, lo sparatutto extraction di **Embark Studios** continua a vendere, spinto dal grande aggiornamento Frozen Trail di ottobre. L'editore però avverte già che i ricavi di fine anno saranno più bassi di quelli del 2025.
 
 ## ARC Raiders vendite: i numeri ufficiali di Nexon
 
-Nel [comunicato ufficiale](https://www.gamespress.com/en-US/Nexon-Releases-Earnings-for-Third-Quarter-2026) Nexon scrive che il gioco ha superato i 17 milioni di unità vendute dall'uscita, avvenuta il 30 ottobre 2025 su **PC**, **PS5** e **Xbox Series X|S**. A maggio il contatore era a 16 milioni: secondo le stime riportate da VGTimes, nell'ultimo trimestre si sono aggiunte circa 700.000 copie.
+Nel [comunicato ufficiale](https://www.gamespress.com/en-US/Nexon-Releases-Earnings-for-Third-Quarter-2026) Nexon scrive che il gioco ha superato i 17 milioni di unità vendute dall'uscita, avvenuta il 30 ottobre 2025 su PC, PS5 e Xbox Series X|S. A maggio il contatore era a 16 milioni: secondo le stime riportate da VGTimes, nell'ultimo trimestre si sono aggiunte circa 700.000 copie.
 
-Il merito, secondo Nexon, è di **Frozen Trail**, uscito l'8 ottobre: il più grande aggiornamento dal lancio, che ha riportato in gioco molti giocatori che avevano smesso e ha generato nuove vendite. Per l'editore coreano-giapponese il terzo trimestre si è chiuso in linea con le attese, con ricavi totali di 138,4 miliardi di yen, il 17% in più rispetto a un anno fa.
+Secondo Nexon il merito è di Frozen Trail, uscito l'8 ottobre: è il più grande aggiornamento dal lancio, ha riportato in gioco molti giocatori che avevano smesso e ha portato nuove vendite. Per l'editore coreano-giapponese il terzo trimestre si è chiuso in linea con le attese, con ricavi totali di 138,4 miliardi di yen, il 17% in più rispetto a un anno fa.
 
 ## Perché Nexon prevede un calo a fine 2026
 
-Il confronto con il 2025 però è impietoso. Un anno fa ARC Raiders era appena uscito ed era uno dei giochi più venduti del momento. Per questo Nexon prevede per il quarto trimestre ricavi tra 107,7 e 118,9 miliardi di yen, in calo dal 4 al 13% su base annua, e un contributo di ARC Raiders più basso dell'anno scorso ma stabile rispetto all'estate.
+Il confronto con il 2025 però è impietoso, perché un anno fa ARC Raiders era appena uscito ed era uno dei giochi più venduti del momento. Nexon prevede quindi per il quarto trimestre ricavi tra 107,7 e 118,9 miliardi di yen, in calo dal 4 al 13% su base annua, e un contributo di ARC Raiders più basso dell'anno scorso ma stabile rispetto all'estate.
 
-A tenere su i conti ci pensa **MapleStory**, che ha segnato il trimestre migliore di sempre con ricavi in crescita del 72%. Il CEO Junghun Lee ha sottolineato che puntare su più serie riduce la dipendenza da un singolo franchise.
+A tenere su i conti ci pensa MapleStory, che ha fatto il trimestre migliore di sempre con ricavi in crescita del 72%. Il CEO Junghun Lee ha spiegato che puntare su più serie riduce la dipendenza da un singolo franchise.
 
 ## Il futuro di ARC Raiders
 
-Diciassette milioni restano un risultato enorme per un gioco nuovo, non legato a una serie famosa. La sfida ora è tenere viva la community nel secondo anno, con aggiornamenti regolari come Frozen Trail. Sono in lavorazione anche adattamenti per cinema e TV, mentre secondo GamesRadar+ Embark ha già avviato lo sviluppo di due nuovi progetti. Per un altro caso di vendite che fanno discutere, leggete il nostro articolo sulle [vendite di Control Resonant e i conti di Remedy](/articoli/control-resonant-vendite-remedy/).
+Diciassette milioni restano un risultato enorme per un gioco nuovo, non legato a una serie famosa. Ora bisogna tenere viva la community nel secondo anno, con aggiornamenti regolari come Frozen Trail. Sono in lavorazione anche adattamenti per cinema e TV, mentre secondo GamesRadar+ Embark ha già avviato lo sviluppo di due nuovi progetti. Per un altro caso di vendite che fanno discutere, leggete il nostro articolo sulle [vendite di Control Resonant e i conti di Remedy](/articoli/control-resonant-vendite-remedy/).
 
 ## Domande frequenti
 

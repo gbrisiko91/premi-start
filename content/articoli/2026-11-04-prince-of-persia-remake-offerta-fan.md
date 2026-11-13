@@ -23,7 +23,7 @@ fonti:
     url: "https://www.timeextension.com/news/2026/04/following-prince-of-persia-remakes-cancellation-fans-are-now-trying-to-do-what-ubisoft-couldnt"
 ---
 
-Il **remake di Prince of Persia: Le Sabbie del Tempo** potrebbe avere un finanziatore inatteso. Un fan, che non ha rivelato il proprio nome, ha scritto una lettera aperta a **Ubisoft** offrendo **oltre 5 milioni di euro** per riprendere e completare il progetto, cancellato a gennaio 2026. L'offerta è rimbalzata da X e Reddit alle testate di mezzo mondo, ma Ubisoft per ora non ha risposto.
+Il **remake di Prince of Persia: Le Sabbie del Tempo** potrebbe avere un finanziatore inatteso. Un fan, che non ha rivelato il proprio nome, ha scritto una lettera aperta a **Ubisoft** offrendo oltre 5 milioni di euro per riprendere e completare il progetto, cancellato a gennaio 2026. L'offerta è rimbalzata da X e Reddit alle testate di mezzo mondo, ma Ubisoft per ora non ha risposto.
 
 ## Cosa offre il fan per il remake di Prince of Persia
 
@@ -31,23 +31,23 @@ Nella lettera, diffusa dal profilo di appassionati PoP Universe su X e poi discu
 
 La parte più sorprendente riguarda ciò che chiede in cambio: niente. Il fan sostiene di non volere profitti, una quota sulle vendite né diritti sulla proprietà intellettuale. Il suo unico obiettivo, scrive, è "aiutare questo videogioco ad arrivare ai giocatori". Chiede anche se esista un canale ufficiale a cui inviare la proposta e precisa di non voler interferire con le scelte creative.
 
-Va detto chiaramente: **l'identità del fan non è nota** e nessuno ha potuto verificare che i fondi esistano davvero. Al momento è una proposta pubblica, non una trattativa.
+Attenzione però: l'identità del fan non è nota e nessuno ha potuto verificare che i fondi esistano davvero. Per ora c'è solo una proposta pubblica, nessuna trattativa in corso.
 
 ## Perché Ubisoft aveva cancellato il remake di Le Sabbie del Tempo
 
 Il rifacimento del classico del 2003 era stato annunciato a settembre 2020, con uscita prevista a gennaio 2021. Il primo trailer fu accolto malissimo per la grafica, e da lì sono arrivati rinvii, un cambio di studio e anni di silenzio.
 
-A gennaio 2026 Ubisoft ha messo la parola fine, dopo più di cinque anni di sviluppo. La motivazione ufficiale: il gioco non aveva raggiunto la qualità attesa e finirlo avrebbe richiesto più tempo e investimenti di quanti l'azienda potesse permettersi in modo responsabile. Una decisione arrivata in un periodo di tagli e riorganizzazioni per l'editore francese.
+A gennaio 2026 Ubisoft ha messo la parola fine, dopo più di cinque anni di sviluppo. Secondo la motivazione ufficiale il gioco non aveva raggiunto la qualità attesa, e finirlo avrebbe richiesto più tempo e investimenti di quanti l'azienda potesse permettersi in modo responsabile. La decisione è arrivata mentre l'editore francese era alle prese con tagli e riorganizzazioni.
 
 ## Perché l'offerta fa discutere
 
-La saga di **Prince of Persia** non vive un momento felice. **The Lost Crown** del 2024 è stato apprezzato dalla critica ma non ha venduto quanto sperato, e il suo seguito è stato cancellato. **The Rogue Prince of Persia** del 2025 è stato sviluppato da uno studio esterno, Evil Empire. I fan hanno quindi accolto la lettera come l'ennesimo segnale di quanto la serie sia ancora amata.
+La saga di Prince of Persia non se la passa bene. The Lost Crown del 2024 è stato apprezzato dalla critica ma non ha venduto quanto sperato, e il suo seguito è stato cancellato. The Rogue Prince of Persia del 2025 è stato sviluppato da uno studio esterno, Evil Empire. Per molti fan la lettera dimostra una volta di più quanto la serie sia ancora amata.
 
 Le reazioni però sono divise. C'è chi parla di un bel gesto, chi di soldi buttati e chi dubita che la storia sia vera. Su Reddit molti fanno notare che 5 milioni sono pochi rispetto ai costi di un gioco moderno, e che un progetto cancellato potrebbe essere già stato svalutato a bilancio. Tanti chiedono piuttosto a Ubisoft di vendere la licenza a qualcuno che voglia usarla. Le chiusure e le cancellazioni non riguardano solo Ubisoft: in questi giorni si è parlato molto anche della [chiusura di BioWare e del destino di Mass Effect](/articoli/bioware-chiusa-battlefront-3/).
 
 ## Cosa aspettarsi adesso
 
-È molto improbabile che Ubisoft accetti un finanziamento da un privato anonimo per un gioco già cancellato: servirebbero accordi legali, uno studio disponibile e un piano di sviluppo. Più realistico che la lettera resti un gesto simbolico. Se Ubisoft dovesse commentare, aggiorneremo l'articolo.
+È molto improbabile che Ubisoft accetti i soldi di un privato anonimo per un gioco già cancellato: servirebbero accordi legali, uno studio disponibile e un piano di sviluppo. Con ogni probabilità la lettera resterà un gesto simbolico. Se Ubisoft dovesse commentare, aggiorneremo l'articolo.
 
 ## Domande frequenti
 

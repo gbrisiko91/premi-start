@@ -23,29 +23,29 @@ fonti:
     url: "https://hothardware.com/news/hyperkin-mega-95-reveal"
 ---
 
-L'**Hyperkin Mega95** sta per diventare realtà. Il produttore americano di accessori retro ha annunciato che il suo **Mega Drive** portatile, capace di leggere le cartucce originali, ha completato sviluppo e test ed è entrato in **produzione di massa**. I dettagli sui preordini, promette l'azienda, arriveranno presto.
+L'**Hyperkin Mega95** è quasi pronto. Il produttore americano di accessori retro ha annunciato che il suo **Mega Drive** portatile, che legge le cartucce originali, ha finito sviluppo e test ed è entrato in produzione di massa. I dettagli sui preordini, promette l'azienda, arriveranno presto.
 
 ## Hyperkin Mega95: cosa ha annunciato l'azienda
 
-L'aggiornamento è arrivato con un post ufficiale di **Hyperkin** su X, rilanciato in questi giorni da Time Extension ed Everyeye. Secondo l'azienda, la fase di ricerca e sviluppo e i test con la community sono conclusi, la produzione è partita e la confezione è in via di definizione.
+L'aggiornamento è arrivato con un post ufficiale di Hyperkin su X, rilanciato in questi giorni da Time Extension ed Everyeye. Secondo l'azienda, la fase di ricerca e sviluppo e i test con la community sono conclusi, la produzione è partita e la confezione è in via di definizione.
 
-Nel video che accompagna l'annuncio si vede la console sia in modalità portatile sia collegata alla TV tramite il dock. Restano però fuori le informazioni che tutti aspettano: **prezzo** e **data di uscita** non sono ancora stati comunicati.
+Nel video che accompagna l'annuncio si vede la console sia in modalità portatile sia collegata alla TV tramite il dock. Mancano però le due informazioni che tutti aspettano: prezzo e data di uscita non sono ancora stati comunicati.
 
 ## Specifiche del Mega95: schermo, dock e cartucce
 
-Il Mega95 era stato presentato a gennaio 2024 con un'idea semplice: un **Sega Mega Drive** (Genesis negli Stati Uniti) da portare in giro, che usa le vere cartucce invece delle ROM precaricate delle mini console. Le caratteristiche annunciate allora:
+Il Mega95 era stato presentato a gennaio 2024 con un'idea semplice: un Sega Mega Drive (Genesis negli Stati Uniti) da portare in giro, che usa le vere cartucce invece delle ROM precaricate delle mini console. Le caratteristiche annunciate allora:
 
-- schermo panoramico da **5 pollici**, con selettore tra formato 4:3 e 16:9;
-- comandi ispirati al pad a **sei tasti** del Mega Drive;
-- **dock** USB-C con uscita HDMI e due porte per i controller originali.
+- schermo panoramico da 5 pollici, con selettore tra formato 4:3 e 16:9;
+- comandi ispirati al pad a sei tasti del Mega Drive;
+- dock USB-C con uscita HDMI e due porte per i controller originali.
 
 Hyperkin non ha ancora detto se queste specifiche siano rimaste invariate nella versione finale: lo scopriremo con l'apertura dei preordini. Anche sulla batteria e sull'autonomia, per ora, non ci sono numeri ufficiali.
 
 ## Perché il Mega Drive portatile ci ha messo così tanto
 
-La strada è stata lunga. Dopo l'annuncio del 2024, il lancio è slittato più volte per problemi di produzione. A inizio 2026 Hyperkin aveva spiegato pubblicamente il ritardo, dicendo di preferire arrivare tardi piuttosto che vendere un prodotto non all'altezza dei collezionisti.
+Dopo l'annuncio del 2024 il lancio è slittato più volte per problemi di produzione. A inizio 2026 Hyperkin aveva spiegato pubblicamente il ritardo, dicendo di preferire arrivare tardi piuttosto che vendere un prodotto non all'altezza dei collezionisti.
 
-Il nome è un omaggio al **Nomad**, il Mega Drive portatile che Sega lanciò nel 1995 solo in Nord America. Per chi in Italia ha ancora la propria collezione di cartucce, il Mega95 potrebbe essere un modo comodo per rigiocarle senza emulazione. E l'interesse per la console Sega resta altissimo, come dimostrano i [prototipi del Mega Drive recuperati da un ex sviluppatore Sega](/articoli/prototipi-mega-drive-sega-sti/).
+Il nome è un omaggio al Nomad, il Mega Drive portatile che Sega lanciò nel 1995 solo in Nord America. Per chi in Italia ha ancora la propria collezione di cartucce, il Mega95 potrebbe essere un modo comodo per rigiocarle senza emulazione. Del resto l'interesse per la console Sega è ancora altissimo: basta vedere il clamore intorno ai [prototipi del Mega Drive recuperati da un ex sviluppatore Sega](/articoli/prototipi-mega-drive-sega-sti/).
 
 ## Domande frequenti
 

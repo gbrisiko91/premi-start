@@ -23,25 +23,25 @@ fonti:
     url: "https://www.japantimes.co.jp/business/2026/11/11/zelda-remake-sales/"
 ---
 
-Le **vendite di Zelda Ocarina of Time** remake sono da record: **Nintendo** ha annunciato l'11 novembre che il gioco ha superato i **5,2 milioni di copie** nel mondo nei primi quattro giorni dopo l'uscita del 5 novembre. Nessun altro gioco pubblicato da Nintendo su **Switch 2** era partito così forte.
+Le **vendite di Zelda Ocarina of Time** remake sono da record: **Nintendo** ha annunciato l'11 novembre che il gioco ha superato i 5,2 milioni di copie nel mondo nei primi quattro giorni dopo l'uscita del 5 novembre. Nessun altro gioco pubblicato da Nintendo su **Switch 2** era partito così forte.
 
 ## Ocarina of Time vendite: i dati del comunicato Nintendo
 
-Il [comunicato ufficiale di Nintendo](https://www.nintendo.co.jp/corporate/release/en/2026/261111.html) parla di oltre 5,2 milioni di unità tra copie fisiche e digitali, di cui **810.000 in Giappone**. Per la casa di Kyoto è il miglior debutto di sempre per un suo gioco su Switch 2, calcolato sui primi quattro giorni.
+Il [comunicato ufficiale di Nintendo](https://www.nintendo.co.jp/corporate/release/en/2026/261111.html) parla di oltre 5,2 milioni di unità tra copie fisiche e digitali, di cui 810.000 in Giappone. Per la casa di Kyoto è il miglior debutto di sempre per un suo gioco su Switch 2, calcolato sui primi quattro giorni.
 
-Il risultato arriva dopo un'accoglienza della critica quasi perfetta: come vi abbiamo raccontato, il remake ha esordito con [96 su Metacritic, il voto più alto del 2026](/articoli/zelda-ocarina-of-time-recensioni/). Una combinazione di voti e nostalgia che, evidentemente, ha convinto anche chi il classico del 1998 per **Nintendo 64** non l'aveva mai giocato.
+Il risultato arriva dopo un'accoglienza della critica quasi perfetta: come vi abbiamo raccontato, il remake ha esordito con [96 su Metacritic, il voto più alto del 2026](/articoli/zelda-ocarina-of-time-recensioni/). Tra voti e nostalgia, evidentemente si è convinto anche chi il classico del 1998 per Nintendo 64 non l'aveva mai giocato.
 
 ## Il confronto con Mario Kart World e Pokopia
 
-Secondo i calcoli di GamesRadar+, Ocarina of Time ha venduto in quattro giorni più del doppio di **Pokémon Pokopia**, che nello stesso periodo si era fermato a 2,2 milioni. In quattro giorni ha già superato anche il totale di **Donkey Kong Bananza**, fermo a 5,05 milioni a fine settembre.
+Secondo i calcoli di GamesRadar+, Ocarina of Time ha venduto in quattro giorni più del doppio di Pokémon Pokopia, che nello stesso periodo si era fermato a 2,2 milioni. Ha già superato anche il totale di Donkey Kong Bananza, fermo a 5,05 milioni a fine settembre.
 
-Davanti resta solo **Mario Kart World**, il gioco di lancio della console: 5,63 milioni nel primo mese e 16,48 milioni a fine settembre, aiutato però dai bundle con la console. Nel Regno Unito, secondo i dati riportati dalle testate inglesi, il remake è già il lancio fisico più grande del 2026 e il secondo miglior debutto di sempre per un Zelda, con un ampio margine su **Breath of the Wild**.
+Davanti resta solo Mario Kart World, il gioco di lancio della console: 5,63 milioni nel primo mese e 16,48 milioni a fine settembre, aiutato però dai bundle con la console. Nel Regno Unito, secondo i dati riportati dalle testate inglesi, il remake è già il lancio fisico più grande del 2026 e il secondo miglior debutto di sempre per un Zelda, con un ampio margine su Breath of the Wild.
 
 ## Cosa significa per Nintendo e per i remake
 
-Il successo conferma una tendenza: i grandi classici rifatti da zero vendono quanto, se non più, di molti giochi nuovi. E arriva in un periodo in cui la serie festeggia i 40 anni, con Nintendo che ha già annunciato contenuti aggiuntivi come la [Master Quest in arrivo come DLC](/articoli/ocarina-of-time-master-quest-dlc/).
+È l'ennesima conferma che i grandi classici rifatti da zero vendono quanto molti giochi nuovi, se non di più. E il successo arriva mentre la serie festeggia i 40 anni, con Nintendo che ha già annunciato contenuti aggiuntivi come la [Master Quest in arrivo come DLC](/articoli/ocarina-of-time-master-quest-dlc/).
 
-Il prossimo dato ufficiale arriverà con la trimestrale di febbraio, che dirà se Ocarina of Time può davvero insidiare Mario Kart World. Una cosa però è chiara: per molti giocatori questo è il motivo per comprare Switch 2 a Natale.
+Il prossimo dato ufficiale arriverà con la trimestrale di febbraio, che dirà se Ocarina of Time può davvero insidiare Mario Kart World. Nel frattempo, per molti giocatori questo è già il motivo per comprare Switch 2 a Natale.
 
 ## Domande frequenti
 
