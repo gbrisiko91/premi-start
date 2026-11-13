@@ -11,6 +11,7 @@ import path from "node:path";
 import matter from "gray-matter";
 import { marked } from "marked";
 import config from "./sito.config.mjs";
+import { validaArticolo, rimuoviNote } from "./strumenti/verifica-editoriale.mjs";
 import { LINGUE, PRINCIPALE, T } from "./lingue.mjs";
 import { U } from "./novita.mjs";
 import { QUIZ } from "./quiz.mjs";
@@ -83,7 +84,11 @@ function leggiOriginali() {
   const articoli = fs.readdirSync(CONTENUTI)
     .filter((f) => f.endsWith(".md"))
     .map((file) => {
-      const { data: d, content } = matter(fs.readFileSync(path.join(CONTENUTI, file), "utf8"));
+      const originale = fs.readFileSync(path.join(CONTENUTI, file), "utf8");
+      const { data: d, content } = matter(originale);
+      const verifica = validaArticolo(file, originale, { categorie: Object.keys(config.categorie), bozza: d.bozza === true });
+      for (const problema of verifica.errori) errori.push(`${file}: ${problema}`);
+      for (const avviso of verifica.avvisi) console.warn(`Avviso ${file}: ${avviso}`);
       const slug = file.replace(/\.md$/, "").replace(/^\d{4}-\d{2}-\d{2}-/, "");
       const dataPub = leggiDataFm(d.data);
       if (!d.titolo) errori.push(`${file}: manca "titolo"`);
@@ -109,7 +114,7 @@ function leggiOriginali() {
         titoloSeo: d.titolo_seo || "",
         aggiornato: d.aggiornato ? leggiDataFm(d.aggiornato) : null,
         minuti: minutiLettura(PRINCIPALE, content),
-        html: marked.parse(content).replace(/<p>\s*<\/p>/g, ""),
+        html: marked.parse(rimuoviNote(content)).replace(/<p>\s*<\/p>/g, ""),
         url: P.articolo(PRINCIPALE, slug),
       };
     });
@@ -152,7 +157,7 @@ function leggiTraduzioni(originali) {
         tag: Array.isArray(d.tag) ? d.tag : base.tag,
         parolaChiave: d.parola_chiave || "",
         minuti: minutiLettura(l, content),
-        html: marked.parse(content).replace(/<p>\s*<\/p>/g, ""),
+        html: marked.parse(rimuoviNote(content)).replace(/<p>\s*<\/p>/g, ""),
         url: P.articolo(l, slug),
         originale: base,
       });
