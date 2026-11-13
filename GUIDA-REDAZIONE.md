@@ -68,6 +68,7 @@ Ogni bozza deve essere ottimizzata prima ancora di essere scritta. Parti dalla *
   - verbi semplici ("è", "ha") invece di "rappresenta", "si configura come", "vanta";
   - frasi di lunghezza varia, attacchi diversi, qualche reazione da appassionato quando ci sta (senza inventare opinioni sui fatti).
   - Prima di salvare, rileggi la bozza cercando proprio questi schemi e riscrivi le frasi che li contengono.
+- **Revisione finale con la skill Humanizer (obbligatoria).** Quando la bozza è completa, carica con lo strumento Skill la skill `humanizer` (nome completo `anthropic-skills:humanizer`) e passaci il testo di ogni bozza, e ogni didascalia Instagram, seguendo la sua modalità file. Cambia solo la prosa: intestazione YAML, link, tabelle di dati, numeri, date, nomi, citazioni e note per la redazione restano identici. Poi ricontrolla che non sia sparito o cambiato nessun fatto e che la revisione non abbia aggiunto dettagli senza fonte. Se la skill non è disponibile nella sessione, fai la stessa revisione a mano con le regole qui sopra e scrivilo nelle note per la redazione ("revisione humanizer manuale").
 - Struttura consigliata:
   1. Primo paragrafo: la notizia in due o tre frasi (chi, cosa, quando).
   2. Due o tre sezioni `##` con titoli cercabili: i dettagli verificati, perché se ne parla (reazioni, numeri, contesto), cosa aspettarsi (date, cosa resta da chiarire).
