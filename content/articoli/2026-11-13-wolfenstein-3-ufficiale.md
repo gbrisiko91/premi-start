@@ -23,29 +23,29 @@ fonti:
     url: "https://multiplayer.it/articoli/pc-windows/notizie/"
 ---
 
-Dopo nove anni di attesa, **Wolfenstein 3** è finalmente ufficiale. Il 12 novembre, durante la serata conclusiva dei festeggiamenti per i **25 anni di Xbox** a Seattle, la CEO di Xbox **Asha Sharma** ha confermato che il nuovo capitolo è in produzione presso **MachineGames**, lo studio svedese che ha riportato in vita la serie con The New Order. Torneranno **Brian Bloom** nei panni di BJ Blazkowicz e **Debra Wilson** come Grace Walker.
+Dopo nove anni di attesa, **Wolfenstein 3** è finalmente ufficiale. Il 12 novembre, durante la serata conclusiva dei festeggiamenti per i 25 anni di **Xbox** a Seattle, la CEO di Xbox Asha Sharma ha confermato che il nuovo capitolo è in produzione da **MachineGames**, lo studio svedese che ha riportato in vita la serie con The New Order. Tornano Brian Bloom nei panni di BJ Blazkowicz e Debra Wilson come Grace Walker.
 
-Niente trailer e niente data: per ora c'è solo la conferma, accompagnata da un paio di foto dal dietro le quinte.
+Trailer e data non ci sono: per ora abbiamo la conferma e un paio di foto dal dietro le quinte.
 
 ## Wolfenstein 3 è in produzione: cosa ha annunciato Xbox
 
-L'annuncio è arrivato con un post su X di Sharma, subito ripreso dall'account di MachineGames con un messaggio a tema: la reputazione di BJ, scrive lo studio, lo precede. Il riepilogo ufficiale pubblicato su [XBOX Wire](https://news.xbox.com/en-us/2026/11/12/xbox-25th-anniversary-news-recap/) conferma che il gioco è in produzione e che Bloom e Wilson riprendono i loro ruoli.
+Sharma ha dato l'annuncio con un post su X, subito ripreso dall'account di MachineGames con un messaggio a tema: la reputazione di BJ, scrive lo studio, lo precede. Il riepilogo ufficiale pubblicato su [XBOX Wire](https://news.xbox.com/en-us/2026/11/12/xbox-25th-anniversary-news-recap/) conferma che il gioco è in produzione e che Bloom e Wilson riprendono i loro ruoli.
 
-Le immagini condivise sono due: la pagina di un copione e uno scatto da una sessione di motion capture in cui, secondo diverse testate, si riconoscono proprio i due attori. Alcuni hanno letto sul copione il nome del primo capitolo, ma si tratta di un'interpretazione dei fan, non di un'informazione ufficiale.
+Le immagini condivise sono due: la pagina di un copione e uno scatto da una sessione di motion capture in cui, secondo diverse testate, si riconoscono proprio i due attori. Alcuni fan hanno letto sul copione il nome del primo capitolo, ma è una loro interpretazione e non c'è nulla di ufficiale.
 
 ## Quando esce Wolfenstein 3 e su quali piattaforme
 
-Su questo punto Xbox non si è sbilanciata: **non ci sono data d'uscita, finestra di lancio né piattaforme**. Considerando i giochi Bethesda più recenti, è ragionevole aspettarsi un'uscita su PC e Xbox Series X|S, con una possibile versione PS5, ma per ora è solo un'ipotesi.
+Su questo Xbox non si è sbilanciata: non ci sono data d'uscita, finestra di lancio né piattaforme. Guardando ai giochi Bethesda più recenti è ragionevole aspettarsi un'uscita su PC e Xbox Series X|S, magari con una versione PS5, ma per ora è solo un'ipotesi.
 
 A febbraio un presunto casting trapelato in rete parlava di un nuovo personaggio, un orfano ucraino, e di un'uscita non prima del 2027. L'annuncio ufficiale non conferma nessuno dei due dettagli, che vanno quindi trattati come indiscrezioni.
 
 ## Perché il ritorno di BJ Blazkowicz fa così rumore
 
-L'ultimo capitolo numerato, **Wolfenstein II: The New Colossus**, è uscito nel 2017 e si chiudeva con una trama lasciata aperta, in un'America anni Sessanta dominata dal regime nazista. Da allora MachineGames ha pubblicato lo spin-off cooperativo **Youngblood** (2019), con protagoniste le figlie gemelle di BJ, e poi si è dedicata a **Indiana Jones e l'Antico Cerchio**. Il capo dello studio aveva promesso più volte di voler chiudere la trilogia: ora la promessa ha una conferma.
+L'ultimo capitolo numerato, Wolfenstein II: The New Colossus, è uscito nel 2017 e si chiudeva con una trama lasciata aperta, in un'America anni Sessanta dominata dal regime nazista. Da allora MachineGames ha pubblicato lo spin-off cooperativo Youngblood (2019), con protagoniste le figlie gemelle di BJ, e poi si è dedicata a Indiana Jones e l'Antico Cerchio. Il capo dello studio aveva detto più volte di voler chiudere la trilogia, e adesso il terzo capitolo è confermato.
 
-Non tutti però hanno apprezzato la forma. Una parte della stampa internazionale ha fatto notare che un post sui social e una foto del copione sono poca cosa rispetto a un trailer sul palco, e che non dicono nulla su quanto sia avanzato lo sviluppo.
+Non a tutti è piaciuto il modo in cui è arrivato l'annuncio. Una parte della stampa internazionale ha fatto notare che un post sui social e una foto del copione sono poca cosa rispetto a un trailer sul palco, e non dicono nulla su quanto sia avanzato lo sviluppo.
 
-Nella stessa giornata Sharma ha confermato anche che **id Software** è al lavoro su un nuovo progetto, mentre **DOOM: The Dark Ages** riceverà la modalità Slaughter il 16 novembre. Se vi incuriosisce la storia di id, rileggete il nostro pezzo sulla [rimpatriata di Romero, Petersen e Carmack in deathmatch](/articoli/doom-deathmatch-romero-petersen-carmack/).
+Nella stessa giornata Sharma ha confermato anche che id Software è al lavoro su un nuovo progetto, mentre DOOM: The Dark Ages riceverà la modalità Slaughter il 16 novembre. Se vi incuriosisce la storia di id, rileggete il nostro pezzo sulla [rimpatriata di Romero, Petersen e Carmack in deathmatch](/articoli/doom-deathmatch-romero-petersen-carmack/).
 
 ## Domande frequenti
 

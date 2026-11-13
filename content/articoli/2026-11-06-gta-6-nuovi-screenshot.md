@@ -23,29 +23,29 @@ fonti:
     url: "https://tbreak.com/gta-6-new-screenshots-launch-gallery/"
 ---
 
-**Rockstar Games** ha pubblicato una nuova raccolta di **screenshot di GTA 6**: si chiama **Launch Gallery** ed è online dal 5 novembre sul sito ufficiale di **Grand Theft Auto VI**. Le immagini sono quasi 40 (il conteggio delle testate va da 35 a 39) e mostrano **Jason**, **Lucia**, diversi personaggi secondari e molti angoli dello stato di **Leonida**. Mancano due settimane all'uscita del 19 novembre su **PS5** e **Xbox Series X|S**.
+**Rockstar Games** ha pubblicato una nuova raccolta di screenshot di GTA 6: si chiama **Launch Gallery** ed è online dal 5 novembre sul sito ufficiale di **Grand Theft Auto VI**. Le immagini sono quasi 40 (il conteggio delle testate va da 35 a 39) e mostrano Jason, Lucia, diversi personaggi secondari e molti angoli dello stato di Leonida. All'uscita del 19 novembre su PS5 e Xbox Series X|S mancano due settimane.
 
 ## Dove vedere i nuovi screenshot di GTA 6
 
-La galleria si trova sulla [pagina ufficiale di Grand Theft Auto VI](https://www.rockstargames.com/VI/launch-gallery), annunciata da un post del Rockstar Newswire. Rockstar non ha indicato un numero preciso di immagini né ha aggiunto didascalie: per questo VGC parla di "quasi 40" screenshot, mentre TweakTown e PC Gamer ne contano 39.
+La galleria si trova sulla [pagina ufficiale di Grand Theft Auto VI](https://www.rockstargames.com/VI/launch-gallery), annunciata da un post del Rockstar Newswire. Rockstar non ha indicato un numero preciso di immagini né ha aggiunto didascalie, e così VGC parla di "quasi 40" screenshot, mentre TweakTown e PC Gamer ne contano 39.
 
 Le immagini sono pensate per essere guardate a tutto schermo e, secondo diverse testate, sono disponibili anche nella sezione media del sito di Rockstar.
 
 ## Cosa mostrano le immagini: Jason, Lucia e Leonida
 
-Le nuove immagini sono soprattutto **cinematografiche**: inquadrature curate, più vicine a un poster che a una schermata di gioco. Al centro ci sono ancora i due protagonisti, ritratti tra rapine, inseguimenti ad alta velocità, retate della polizia, locali notturni e bar di periferia.
+Gran parte delle nuove immagini ha un taglio cinematografico, con inquadrature curate che sembrano più poster che schermate di gioco. Al centro ci sono ancora i due protagonisti, ritratti tra rapine, inseguimenti ad alta velocità, retate della polizia, locali notturni e bar di periferia.
 
-Non mancano i momenti più tranquilli, che raccontano la varietà della mappa: immersioni subacquee, tramonti sui prati, un alligatore immancabile per un gioco ambientato in una versione della Florida. Tra gli scatti che hanno fatto più discutere sui social c'è un Jason in tenuta tattica che scende da un aereo militare, un'immagine che fa pensare a missioni ben diverse dai classici colpi in città.
+Ci sono anche momenti più tranquilli che fanno vedere quanto è varia la mappa: immersioni subacquee, tramonti sui prati e l'immancabile alligatore, visto che siamo in una versione della Florida. Tra gli scatti che hanno fatto più discutere sui social c'è un Jason in tenuta tattica che scende da un aereo militare, un'immagine che fa pensare a missioni ben diverse dai classici colpi in città.
 
-Chi sperava in nuovi dettagli sul gameplay resterà a bocca asciutta. Senza didascalie, nomi delle missioni e contesto della storia restano un mistero fino al lancio. Per vedere il gioco in movimento bisogna ancora tornare alla presentazione del gameplay trasmessa ad agosto.
+Chi sperava in nuovi dettagli sul gameplay resterà a bocca asciutta: senza didascalie, nomi delle missioni e contesto della storia restano un mistero fino al lancio. Per vedere il gioco in movimento c'è ancora solo la presentazione del gameplay trasmessa ad agosto.
 
 ## Quando esce GTA 6 e cosa succede da qui al lancio
 
-Il calendario è ormai fitto. Il **preload** delle copie digitali parte il **10 novembre**, mentre le edizioni fisiche con codice arrivano nei negozi dal 12 novembre: abbiamo spiegato orari e spazio necessario nel nostro articolo sul [preload di GTA 6 e i 212 GB da liberare](/articoli/gta-6-preload-peso/). L'uscita è fissata al **19 novembre 2026**, solo su console.
+Il calendario ormai è fitto. Il preload delle copie digitali parte il 10 novembre, mentre le edizioni fisiche con codice arrivano nei negozi dal 12 novembre: abbiamo spiegato orari e spazio necessario nel nostro articolo sul [preload di GTA 6 e i 212 GB da liberare](/articoli/gta-6-preload-peso/). L'uscita è fissata al 19 novembre 2026, solo su console.
 
-Per la versione PC non c'è ancora una data: VGC si aspetta un'uscita qualche tempo dopo quella console. Nel frattempo, secondo VGC, Rockstar dovrebbe pubblicare un trailer nel giorno del lancio, seguendo l'abitudine dei suoi grandi giochi.
+La versione PC non ha ancora una data, e VGC si aspetta che arrivi qualche tempo dopo quella console. Sempre secondo VGC, Rockstar dovrebbe pubblicare un trailer nel giorno del lancio, seguendo l'abitudine dei suoi grandi giochi.
 
-La strategia della Launch Gallery è tipica di Rockstar: mostrare tanto, spiegare poco. È una scelta che ha già funzionato con le precedenti ondate di immagini, analizzate fotogramma per fotogramma dai fan a caccia di dettagli sulla mappa e sui personaggi.
+Con la Launch Gallery Rockstar fa quello che fa di solito: tante immagini e pochissime spiegazioni. Era successo anche con le precedenti ondate di immagini, che i fan hanno analizzato fotogramma per fotogramma a caccia di dettagli sulla mappa e sui personaggi.
 
 ## Domande frequenti
 

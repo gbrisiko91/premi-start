@@ -23,35 +23,35 @@ fonti:
     url: "https://multiplayer.it/notizie/the-elder-scrolls-vi-sentinel-e-ancora-lontano-potrebbe-uscire-tra-piu-di-due-anni.html"
 ---
 
-**The Elder Scrolls 6** ha finalmente un nome: si chiama **The Elder Scrolls VI: Sentinel**. Lo ha svelato **Bethesda Game Studios** il 3 novembre, in chiusura del video celebrativo per i 40 anni dello studio. Dopo otto anni dal primo teaser, i fan ora sanno anche dove si andrà: nella provincia di **Hammerfell**.
+**The Elder Scrolls 6** ha finalmente un nome: si chiama The Elder Scrolls VI: Sentinel. Lo ha svelato **Bethesda Game Studios** il 3 novembre, in chiusura del video celebrativo per i 40 anni dello studio. A otto anni dal primo teaser, i fan sanno anche dove si andrà: nella provincia di **Hammerfell**.
 
 ## The Elder Scrolls 6 Sentinel: come è arrivato l'annuncio
 
-La rivelazione è arrivata senza conferenze né eventi dedicati. Il video "Celebrating 40 Years of Bethesda Game Studios", narrato da **Todd Howard**, ripercorre la storia dello studio e nei secondi finali mostra una breve clip: niente gameplay, solo sabbia mossa dal vento che scopre un Elder Scroll, accompagnata da una citazione attribuita a un sacerdote al servizio dell'Alta Regina di Hammerfell.
+Nessuna conferenza, nessun evento dedicato. Il video "Celebrating 40 Years of Bethesda Game Studios", narrato da Todd Howard, ripercorre la storia dello studio e nei secondi finali mostra una breve clip senza gameplay: sabbia mossa dal vento che scopre un Elder Scroll, con una citazione attribuita a un sacerdote al servizio dell'Alta Regina di Hammerfell.
 
-Il messaggio di Bethesda che accompagna il video si chiude con un augurio semplice: "Here's to 40 more", cioè altri quarant'anni. Lo studio ha aggiunto di essere contento di poter finalmente svelare nome e ambientazione, ma ha avvertito che servirà tempo prima di mostrare altro.
+Il messaggio di Bethesda che accompagna il video si chiude con "Here's to 40 more", cioè altri quarant'anni. Lo studio si è detto contento di poter finalmente svelare nome e ambientazione, ma ha avvertito che servirà tempo prima di mostrare altro.
 
-Il nome non è una sorpresa totale: a fine ottobre diverse indiscrezioni avevano già indicato "Sentinel" come sottotitolo e un annuncio a novembre. Ora però è ufficiale.
+Il nome non è proprio una sorpresa, visto che a fine ottobre diverse indiscrezioni avevano già indicato "Sentinel" come sottotitolo e un annuncio a novembre. Adesso c'è la conferma ufficiale.
 
 ## Perché Sentinel significa Hammerfell
 
-Per chi non mastica la geografia di Tamriel: **Sentinel** è una delle città e dei regni più importanti di Hammerfell, la terra dei **Redguard**, a ovest di Skyrim. È considerata la capitale della regione desertica dell'Alik'r, e non a caso il teaser mostra solo dune di sabbia.
+Per chi non mastica la geografia di Tamriel: Sentinel è una delle città e dei regni più importanti di Hammerfell, la terra dei Redguard, a ovest di Skyrim. È considerata la capitale della regione desertica dell'Alik'r, ed ecco perché il teaser mostra solo dune di sabbia.
 
-Hammerfell è stata visitata in passato in **The Elder Scrolls II: Daggerfall** (1996) e, più di recente, in alcune zone di **The Elder Scrolls Online** come il deserto dell'Alik'r. Secondo PC Gamer, una citazione nel filmato colloca la storia nell'anno 4E 206 dell'Era Quarta, quindi almeno cinque anni dopo gli eventi di **Skyrim**.
+I giocatori hanno già visitato Hammerfell in The Elder Scrolls II: Daggerfall (1996) e, più di recente, in alcune zone di The Elder Scrolls Online come il deserto dell'Alik'r. Secondo PC Gamer, una citazione nel filmato colloca la storia nell'anno 4E 206 dell'Era Quarta, quindi almeno cinque anni dopo gli eventi di Skyrim.
 
-Il deserto è solo una parte della provincia: Hammerfell ha anche coste, montagne e zone verdeggianti, quindi è presto per dire che sarà un gioco interamente "sabbioso".
+Il deserto però è solo una parte della provincia. Hammerfell ha anche coste, montagne e zone verdeggianti, quindi è presto per dire che sarà un gioco tutto "sabbioso".
 
 ## Quando esce The Elder Scrolls 6 Sentinel
 
-Qui le notizie sono meno buone. Bethesda non ha indicato né una data né un anno, e non ha confermato ufficialmente le piattaforme. Il giornalista di Bloomberg **Jason Schreier** ha commentato che il gioco sarebbe ancora lontano "più di due anni": si tratta però di una sua stima, non di un'informazione dell'editore.
+Qui le notizie sono meno buone. Bethesda non ha indicato né una data né un anno, e non ha confermato ufficialmente le piattaforme. Secondo il giornalista di Bloomberg Jason Schreier il gioco sarebbe ancora lontano "più di due anni", ma è una sua stima e l'editore non ha detto nulla in merito.
 
-Visto che Bethesda fa parte di **Xbox**, è lecito aspettarsi almeno le versioni per Xbox e PC, ma la questione PlayStation resta aperta: negli ultimi anni Microsoft ha portato diversi suoi giochi anche su PS5.
+Visto che Bethesda fa parte di Xbox, è lecito aspettarsi almeno le versioni per Xbox e PC, ma la questione PlayStation resta aperta: negli ultimi anni Microsoft ha portato diversi suoi giochi anche su PS5.
 
 ## Perché se ne parla così tanto
 
-The Elder Scrolls VI era stato annunciato all'**E3 2018** con un teaser di pochi secondi, e da allora non si era visto praticamente nulla. Skyrim, uscito nel novembre 2011, resta uno dei giochi di ruolo più venduti e rigiocati di sempre, anche in Italia, dove continua a girare tra remaster e mod.
+The Elder Scrolls VI era stato annunciato all'E3 2018 con un teaser di pochi secondi, e da allora non si era visto praticamente nulla. Skyrim, uscito nel novembre 2011, resta uno dei giochi di ruolo più venduti e rigiocati di sempre, anche in Italia, dove continua a girare tra remaster e mod.
 
-Il nome è finito tra le tendenze di X in poche ore, diviso tra chi festeggia il ritorno nel deserto e chi teme un'altra lunga attesa. Per Bethesda è un anniversario importante: nelle stesse settimane si è parlato anche degli altri studi della famiglia Xbox, come id Software, la casa di DOOM, finita al centro della [lite tra Romero, Petersen e Carmack sulle origini del deathmatch](/articoli/doom-deathmatch-romero-petersen-carmack/).
+In poche ore il nome è finito tra le tendenze di X, con i fan divisi tra chi festeggia il ritorno nel deserto e chi teme un'altra lunga attesa. Nelle stesse settimane si è parlato anche di altri studi della famiglia Xbox, come id Software, la casa di DOOM, finita al centro della [lite tra Romero, Petersen e Carmack sulle origini del deathmatch](/articoli/doom-deathmatch-romero-petersen-carmack/).
 
 ## Domande frequenti
 

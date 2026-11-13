@@ -21,30 +21,30 @@ fonti:
     url: "https://insider-gaming.com/assassins-creed-rome-game/"
 ---
 
-**Assassin's Creed** potrebbe tornare a **Roma**, questa volta quella antica. Secondo un'indiscrezione non confermata, diffusa il 7 novembre dal content creator francese **J0nathan**, **Ubisoft** avrebbe approvato lo sviluppo di due nuovi giochi della serie: uno, chiamato internamente **Mars**, sarebbe ambientato nell'antica Roma; l'altro, **Pocket**, sarebbe un titolo per smartphone ambientato a Gerusalemme.
+**Assassin's Creed** potrebbe tornare a Roma, questa volta quella antica. Secondo un'indiscrezione non confermata, diffusa il 7 novembre dal content creator francese J0nathan, **Ubisoft** avrebbe approvato lo sviluppo di due nuovi giochi della serie. Il primo, chiamato internamente **Mars**, sarebbe ambientato nell'antica Roma; il secondo, Pocket, sarebbe un titolo per smartphone ambientato a Gerusalemme.
 
-Ubisoft non ha commentato. Il rumor è stato ripreso da diverse testate italiane e internazionali, ma nessuna è riuscita a verificarlo fino in fondo.
+Ubisoft non ha commentato. Diverse testate italiane e internazionali hanno ripreso il rumor, ma nessuna è riuscita a verificarlo fino in fondo.
 
 ## Cosa dice il rumor su Assassin's Creed Mars
 
-J0nathan, che in passato ha avuto contatti dentro Ubisoft, sostiene di avere due fonti con accesso ai sistemi interni dell'azienda. Entrambe gli avrebbero confermato l'esistenza dei due progetti:
+J0nathan, che in passato ha avuto contatti dentro Ubisoft, sostiene di avere due fonti con accesso ai sistemi interni dell'azienda. Entrambe gli avrebbero confermato che i due progetti esistono:
 
-- **Assassin's Creed Mars**: un capitolo nell'antica Roma, di cui non si conoscono piattaforme, periodo storico o studio di sviluppo;
-- **Assassin's Creed Pocket**: un gioco per iOS e Android ambientato a Gerusalemme, la città del primo Assassin's Creed.
+- Assassin's Creed Mars, un capitolo nell'antica Roma di cui non si conoscono piattaforme, periodo storico o studio di sviluppo;
+- Assassin's Creed Pocket, un gioco per iOS e Android ambientato a Gerusalemme, la città del primo Assassin's Creed.
 
-Il nome in codice non è casuale: **Marte** era il dio romano della guerra. Secondo J0nathan, la scelta dell'ambientazione potrebbe essere legata alla serie TV di Assassin's Creed in lavorazione per Netflix, che da tempo si dice possa svolgersi proprio nell'antichità romana.
+Il nome in codice non è casuale, visto che Marte era il dio romano della guerra. Secondo J0nathan, l'ambientazione potrebbe dipendere dalla serie TV di Assassin's Creed in lavorazione per Netflix, che da tempo si dice possa svolgersi proprio nell'antichità romana.
 
 ## Quanto è affidabile l'indiscrezione su Assassin's Creed a Roma
 
-Qui serve prudenza. **Tom Henderson** di Insider Gaming, uno dei giornalisti più seguiti sui leak Ubisoft, ha detto di aver già sentito i nomi Mars e Pocket dalle sue fonti, ma di non poter confermare le nuove affermazioni secondo i propri standard. Il motivo, spiega, è che la gestione della serie è cambiata molto negli ultimi tempi.
+Qui serve prudenza. Tom Henderson di Insider Gaming, uno dei giornalisti più seguiti sui leak Ubisoft, ha detto di aver già sentito i nomi Mars e Pocket dalle sue fonti, ma di non poter confermare le nuove affermazioni secondo i propri standard. Il motivo, spiega, è che negli ultimi tempi la gestione della serie è cambiata molto.
 
-In altre parole: i nomi in codice sembrano esistere, mentre i dettagli sulle ambientazioni restano da verificare. E un progetto approvato oggi può cambiare forma, o sparire, prima di arrivare sugli scaffali.
+Quindi i nomi in codice sembrano esistere, mentre i dettagli sulle ambientazioni restano da verificare. E un progetto approvato oggi può cambiare forma, o sparire, prima di arrivare sugli scaffali.
 
 ## Quando potrebbe uscire un Assassin's Creed nell'antica Roma
 
-Se il progetto esiste, non lo vedremo presto. Il prossimo grande capitolo è **Assassin's Creed Hexe**, ambientato nel Sacro Romano Impero durante la caccia alle streghe: secondo Insider Gaming avrebbe avuto problemi di sviluppo e sarebbe slittato internamente di un anno, probabilmente al 2028. Un gioco a Roma arriverebbe quindi dopo, verso la fine del decennio.
+Se il progetto esiste, non lo vedremo presto. Il prossimo grande capitolo è Assassin's Creed Hexe, ambientato nel Sacro Romano Impero durante la caccia alle streghe: secondo Insider Gaming avrebbe avuto problemi di sviluppo e sarebbe slittato internamente di un anno, probabilmente al 2028. Un gioco a Roma arriverebbe quindi dopo, verso la fine del decennio.
 
-Per i fan italiani sarebbe comunque un ritorno a casa: Roma è già stata protagonista di **Assassin's Creed Brotherhood** nel 2010, ma nella sua versione rinascimentale, con Ezio Auditore. L'antichità romana è da anni una delle ambientazioni più richieste dalla community, ed è anche uno dei motivi per cui il rumor si è diffuso così velocemente.
+Per i fan italiani sarebbe comunque un ritorno a casa: Roma era già protagonista di Assassin's Creed Brotherhood nel 2010, ma nella sua versione rinascimentale, con Ezio Auditore. La community chiede l'antica Roma da anni, e anche per questo il rumor ha girato così in fretta.
 
 Ubisoft, intanto, si muove anche fuori dalla serie: secondo Bloomberg ha fatto un'offerta per lo studio di Dishonored, come abbiamo raccontato nell'articolo su [Ubisoft e l'acquisto di Arkane Lyon](/articoli/arkane-lyon-ubisoft/).
 

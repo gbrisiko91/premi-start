@@ -25,34 +25,34 @@ fonti:
     url: "https://godisageek.com/2026/10/xbox-nano-controller-price-features-release/"
 ---
 
-L'**Xbox Nano Controller**, il controller più piccolo mai fatto da **Microsoft**, arriva nei negozi questa settimana, a partire dal 4 novembre secondo diverse testate. In Italia costa **49,99 euro**. E a pochi giorni dal lancio è spuntata una sorpresa: una funzione chiamata **Cloud connect** che permette di collegarlo direttamente a **Xbox Cloud Gaming** via Wi-Fi, proprio come faceva il controller di **Google Stadia**.
+L'**Xbox Nano Controller**, il controller più piccolo mai fatto da **Microsoft**, arriva nei negozi questa settimana, a partire dal 4 novembre secondo diverse testate. In Italia costa 49,99 euro. A pochi giorni dal lancio è anche spuntata una funzione chiamata **Cloud connect**, che permette di collegarlo direttamente a Xbox Cloud Gaming via Wi-Fi, proprio come faceva il controller di Google Stadia.
 
 ## Xbox Nano Controller: prezzo e uscita in Italia
 
-Microsoft ha presentato il Nano Controller il 14 ottobre su Xbox Wire, aprendo subito i preordini. Il prezzo ufficiale è di 49,99 dollari negli Stati Uniti, e in Italia viene proposto a 49,99 euro. L'Italia è tra i paesi in cui arriva fin dal lancio di novembre, insieme a gran parte dell'Europa, Stati Uniti, Giappone e Brasile.
+Microsoft ha presentato il Nano Controller il 14 ottobre su Xbox Wire, aprendo subito i preordini. Negli Stati Uniti il prezzo ufficiale è di 49,99 dollari, da noi 49,99 euro. L'Italia è tra i paesi dove arriva già dal lancio di novembre, insieme a gran parte dell'Europa, Stati Uniti, Giappone e Brasile.
 
-Costa quindi meno di un controller wireless Xbox standard, e punta a un pubblico preciso: chi ha mani piccole, i bambini, chi viaggia e chi gioca in cloud da telefono, tablet o TV.
+Costa meno di un controller wireless Xbox standard ed è pensato per chi ha mani piccole, per i bambini, per chi viaggia e per chi gioca in cloud da telefono, tablet o TV.
 
 ## Quanto è piccolo il nuovo controller Xbox
 
-Le misure spiegano il nome: è lungo circa **12 centimetri** e pesa sui **100 grammi**, meno della maggior parte degli smartphone moderni. Nonostante questo, mantiene tutti i **18 comandi** di un controller Xbox classico con la disposizione tradizionale.
+Il nome è meritato: è lungo circa 12 centimetri e pesa sui 100 grammi, meno della maggior parte degli smartphone di oggi. Eppure ha tutti i 18 comandi di un controller Xbox classico, disposti nel modo tradizionale.
 
-Le altre caratteristiche confermate da Microsoft:
+Microsoft ha confermato anche:
 
-- **batteria ricaricabile integrata**, niente pile AA (l'autonomia non è stata comunicata);
-- connessione **Xbox Wireless** e **Bluetooth**, per console Xbox, PC, smartphone e tablet;
-- un **tasto Azione programmabile**, ad esempio per screenshot e registrazioni;
-- pensato anche per il multiplayer locale, con Microsoft che cita **Minecraft Dungeons II** e **Forza Horizon 6**.
+- una batteria ricaricabile integrata al posto delle pile AA (l'autonomia non è stata comunicata);
+- la connessione Xbox Wireless e Bluetooth, per console Xbox, PC, smartphone e tablet;
+- un tasto Azione programmabile, ad esempio per screenshot e registrazioni;
+- l'uso nel multiplayer locale, con Microsoft che cita come esempi Minecraft Dungeons II e Forza Horizon 6.
 
 ## Cloud connect, la funzione "alla Stadia"
 
-La novità che ha fatto parlare di più non era nell'annuncio. Come scoperto da The Verge e ripreso da 9to5Google, nelle impostazioni compare **Cloud connect**: il controller può connettersi da solo alla rete Wi-Fi e ai server di Xbox Cloud Gaming, senza passare dal Bluetooth del dispositivo su cui si guarda il gioco.
+La novità che ha fatto parlare di più non era nell'annuncio. L'ha scoperta The Verge, e 9to5Google l'ha ripresa: nelle impostazioni compare Cloud connect, e il controller può connettersi da solo alla rete Wi-Fi e ai server di Xbox Cloud Gaming, senza passare dal Bluetooth del dispositivo su cui si guarda il gioco.
 
-È lo stesso trucco del controller di Stadia, che riduceva la latenza perché parlava direttamente con il cloud. Microsoft però la presenta come un'**anteprima ancora in sviluppo**, che potrebbe cambiare: non è chiaro quando sarà disponibile per tutti né su quali dispositivi funzionerà.
+È lo stesso trucco del controller di Stadia, che riduceva la latenza perché parlava direttamente con il cloud. Microsoft però la presenta come un'anteprima ancora in sviluppo, che potrebbe cambiare, e non è chiaro quando arriverà per tutti né su quali dispositivi funzionerà.
 
 ## Perché se ne parla
 
-Il Nano arriva in un momento in cui Microsoft spinge molto sul gioco su più schermi, dalle smart TV ai visori. Negli Stati Uniti alcune TV Samsung e i Meta Quest lo includeranno in offerte con due mesi di **Game Pass Ultimate**. Per chi ama l'hardware da collezione e le uscite fisiche, vale la pena dare un'occhiata anche al [Nintendo Pop-Up Store di Milano](/articoli/nintendo-pop-up-store-milano/).
+Il Nano arriva mentre Microsoft spinge molto sul gioco su più schermi, dalle smart TV ai visori. Negli Stati Uniti alcune TV Samsung e i Meta Quest lo includeranno in offerte con due mesi di Game Pass Ultimate. Chi ama l'hardware da collezione e le uscite fisiche può fare un salto anche al [Nintendo Pop-Up Store di Milano](/articoli/nintendo-pop-up-store-milano/).
 
 ## Domande frequenti
 

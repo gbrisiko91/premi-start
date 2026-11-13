@@ -21,40 +21,40 @@ fonti:
     url: "https://multiplayer.it/notizie/con-la-manovra-2027-arrivano-tasse-salate-anche-per-sale-lan-e-simulatori.html"
 ---
 
-La **Manovra 2027** porta una **tassa sulle sale LAN**. Secondo la bozza della legge di bilancio circolata il 31 ottobre, ogni postazione di gioco nei locali pubblici pagherà 1.200 euro l'anno di imposta sugli intrattenimenti, che salgono a 2.000 per i grandi simulatori di guida. In più servirà un'autorizzazione dell'**Agenzia delle Dogane e dei Monopoli (ADM)**, con costi a parte e un minimo di 20 postazioni per sala.
+La **Manovra 2027** porta una **tassa sulle sale LAN**. Secondo la bozza della legge di bilancio circolata il 31 ottobre, ogni postazione di gioco nei locali pubblici pagherà 1.200 euro l'anno di imposta sugli intrattenimenti, 2.000 se si tratta di un grande simulatore di guida. Servirà anche un'autorizzazione dell'**Agenzia delle Dogane e dei Monopoli (ADM)**, che si paga a parte, e ogni sala dovrà avere almeno 20 postazioni.
 
-Si tratta ancora di una bozza: il testo può cambiare durante l'esame in Parlamento.
+Per ora è solo una bozza, e il testo può cambiare durante l'esame in Parlamento.
 
 ## Come funziona la tassa sulle sale LAN
 
-La norma è l'**articolo 25** della bozza e modifica l'articolo 110 del TULPS, la legge di pubblica sicurezza che regola anche slot e apparecchi da intrattenimento. Viene creata una nuova categoria per i videogiochi di sola abilità, senza vincite in denaro, giocati su PC, console o simulatori installati in sale dedicate. Il gioco in casa non è toccato.
+La norma è l'articolo 25 della bozza e modifica l'articolo 110 del TULPS, la legge di pubblica sicurezza che regola anche slot e apparecchi da intrattenimento. Crea una nuova categoria per i videogiochi di sola abilità, senza vincite in denaro, giocati su PC, console o simulatori installati in sale dedicate. Chi gioca a casa non è coinvolto.
 
-L'imposta non dipende dagli incassi reali. Lo Stato fissa un imponibile forfettario di 15.000 euro l'anno per postazione (25.000 per i simulatori più grandi) e ci applica l'aliquota dell'8%. Il risultato:
+L'imposta non dipende dagli incassi reali. Lo Stato fissa un imponibile forfettario di 15.000 euro l'anno per postazione (25.000 per i simulatori più grandi) e ci applica l'aliquota dell'8%. In pratica:
 
-- **1.200 euro l'anno** per ogni PC o console;
-- **2.000 euro l'anno** per ogni grande simulatore;
-- per una sala con il minimo di 20 postazioni, **24.000 euro l'anno** solo di imposta.
+- 1.200 euro l'anno per ogni PC o console;
+- 2.000 euro l'anno per ogni grande simulatore;
+- 24.000 euro l'anno di sola imposta per una sala con il minimo di 20 postazioni.
 
 ## Quanto costa aprire una sala LAN con le nuove regole
 
-All'imposta si sommano i costi dell'autorizzazione ADM, che dura due anni: 200 euro per apparecchio, 1.000 euro per sala, 2.000 euro per ogni gioco offerto e 10.000 euro per ogni piattaforma online usata. Su quest'ultimo punto il testo andrà chiarito: una sala tipica ha decine di giochi e più launcher, e i conti potrebbero salire in fretta.
+All'imposta si sommano i costi dell'autorizzazione ADM, che dura due anni: 200 euro per apparecchio, 1.000 euro per sala, 2.000 euro per ogni gioco offerto e 10.000 euro per ogni piattaforma online usata. Quest'ultima voce andrà chiarita, perché una sala tipica ha decine di giochi e più launcher e il conto rischia di salire in fretta.
 
-La bozza aggiunge altri obblighi:
+La bozza prevede anche altri obblighi:
 
 - ogni apparecchio va identificato in modo univoco e le piattaforme devono conservare i registri di attività per almeno cinque anni;
-- i minori possono entrare, ma solo per giochi adatti alla loro età secondo la classificazione **PEGI**;
-- vietata ogni forma di scommessa;
+- i minori possono entrare, ma solo per giochi adatti alla loro età secondo la classificazione PEGI;
+- le scommesse sono vietate in ogni forma;
 - per i tornei l'ADM fisserà quote d'iscrizione e premi massimi, con un contributo di controllo fino all'8% delle iscrizioni.
 
 ## Perché la tassa sulle sale LAN fa discutere
 
-Il problema principale è il calcolo forfettario: una piccola sala di provincia paga quanto un centro esports pieno tutte le sere. Per molti gestori, che lavorano con margini ridotti, 24.000 euro l'anno più le licenze possono voler dire chiudere.
+Il nodo è il calcolo forfettario: una piccola sala di provincia paga quanto un centro esports pieno tutte le sere. Molti gestori lavorano con margini ridotti, e per loro 24.000 euro l'anno più le licenze possono voler dire chiudere.
 
-C'è poi un dubbio sui numeri. La relazione tecnica ammette che non esistono dati affidabili su quante sale LAN ci siano in Italia: per il 2027 ipotizza circa 200 locali e 4.000 postazioni, con un gettito di circa 5,9 milioni di euro. Dal 2028 immagina invece circa 2.300 sale, una per ogni comune sopra i 5.000 abitanti, e un incasso di circa 66 milioni. Una crescita difficile da immaginare proprio mentre si alzano i costi.
+Anche i numeri lasciano perplessi. La relazione tecnica ammette che non esistono dati affidabili su quante sale LAN ci siano in Italia: per il 2027 ipotizza circa 200 locali e 4.000 postazioni, con un gettito di circa 5,9 milioni di euro. Dal 2028 immagina invece circa 2.300 sale, una per ogni comune sopra i 5.000 abitanti, e un incasso di circa 66 milioni: una crescita che si fa fatica a immaginare proprio nel momento in cui i costi salgono.
 
 Le sale già aperte avranno 60 giorni dall'entrata in vigore per presentare una dichiarazione e continuare a lavorare in via provvisoria, pagando l'imposta. L'ADM avrà otto mesi per scrivere le regole attuative. Secondo AGIMEG, l'attuale regime transitorio per questi locali scade il 31 dicembre 2026.
 
-Non è la prima decisione del settore a far discutere in queste settimane: anche la [chiusura di BioWare da parte di EA](/articoli/bioware-chiusa-battlefront-3/) ha mostrato quanto i conti stiano cambiando il mondo dei videogiochi.
+In queste settimane non è l'unica decisione che fa discutere nel settore: anche la [chiusura di BioWare da parte di EA](/articoli/bioware-chiusa-battlefront-3/) ha mostrato quanto i conti stiano cambiando i videogiochi.
 
 ## Domande frequenti
 

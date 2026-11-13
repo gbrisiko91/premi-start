@@ -25,25 +25,25 @@ fonti:
     url: "https://vandal.elespanol.com/noticia/2026314042/playstation-cancela-fairgames-su-nuevo-juego-como-servicio-tras-fracasar-en-una-prueba-con-miles-de-jugadores/"
 ---
 
-**Fairgames** è stato cancellato. **PlayStation** ha fermato lo sviluppo dello sparatutto multigiocatore di **Haven Studios**, lo studio di Montréal fondato da Jade Raymond: la notizia è stata anticipata il 10 novembre da Bloomberg e poi confermata da Sony. Il motivo è un test con i giocatori che non ha dato i risultati sperati.
+**Fairgames** è stato cancellato. **PlayStation** ha fermato lo sviluppo dello sparatutto multigiocatore di **Haven Studios**, lo studio di Montréal fondato da Jade Raymond. La notizia l'aveva anticipata Bloomberg il 10 novembre, poi è arrivata la conferma di Sony. A decidere è stato un test con i giocatori che non ha dato i risultati sperati.
 
 ## Perché Fairgames è stato cancellato
 
-Secondo l'email interna inviata ai dipendenti dai dirigenti **Sean Decker** e **John Doyle**, riportata da Bloomberg e da diverse testate, l'ultimo test pubblico ha funzionato bene sul piano tecnico e della gestione dei server. Il problema sono stati i giocatori: i loro giudizi e il tempo passato in partita sono rimasti, in sintesi, sotto gli obiettivi fissati. A pesare anche un mercato degli sparatutto competitivi descritto come difficile.
+Secondo l'email interna inviata ai dipendenti dai dirigenti Sean Decker e John Doyle, riportata da Bloomberg e da diverse testate, l'ultimo test pubblico ha funzionato bene sul piano tecnico e della gestione dei server. Il problema sono stati i giocatori: i loro giudizi e il tempo passato in partita sono rimasti, in sintesi, sotto gli obiettivi fissati. L'email cita anche un mercato degli sparatutto competitivi descritto come difficile.
 
-Nella dichiarazione ufficiale, PlayStation parla di una "decisione difficile" e precisa che al momento non sono previsti tagli al personale. Una scelta che pesa, perché il gioco era in lavorazione da circa tre anni ed era l'unico progetto annunciato dello studio.
+Nella dichiarazione ufficiale, PlayStation parla di una "decisione difficile" e precisa che al momento non sono previsti tagli al personale. Per Haven è un colpo duro: il gioco era in lavorazione da circa tre anni ed era l'unico progetto annunciato dello studio.
 
 ## Cosa succede ora a Haven Studios
 
-Haven non chiude. Lo studio collaborerà con altri team di **PlayStation Studios** ed esplorerà nuove idee, ma Sony non ha detto su quali giochi lavorerà. Di fatto, a cinque anni dalla fondazione, Haven passa da studio con un proprio progetto di punta a squadra di supporto.
+Haven non chiude. Lo studio collaborerà con altri team di PlayStation Studios ed esplorerà nuove idee, ma Sony non ha detto su quali giochi lavorerà. Di fatto, a cinque anni dalla fondazione, Haven passa da studio con un proprio progetto di punta a squadra di supporto.
 
-Fairgames era stato presentato nel maggio 2023 sul [PlayStation Blog](https://blog.playstation.com/?p=379942) come un'esperienza competitiva di rapine per **PS5** e **PC**: squadre di giocatori a caccia dei soldi dei ricchi, in partite che mescolavano scontri tra giocatori e nemici controllati dal computer. Dopo quel trailer il gioco era sparito dai radar, tra cambi di direzione, l'addio della fondatrice Jade Raymond nel 2025 e voci di cancellazione già smentite l'anno scorso.
+Fairgames era stato presentato nel maggio 2023 sul [PlayStation Blog](https://blog.playstation.com/?p=379942) come un'esperienza competitiva di rapine per PS5 e PC: squadre di giocatori a caccia dei soldi dei ricchi, in partite che mescolavano scontri tra giocatori e nemici controllati dal computer. Dopo quel trailer il gioco era sparito dai radar, tra cambi di direzione, l'addio della fondatrice Jade Raymond nel 2025 e voci di cancellazione già smentite l'anno scorso.
 
 ## L'ennesimo stop per i giochi come servizio di Sony
 
-La cancellazione si aggiunge a una lista lunga. Negli ultimi anni Sony ha fermato il multiplayer di **The Last of Us**, ha chiuso dopo pochi giorni **Concord** e ha rinunciato a diversi progetti mai annunciati, ridimensionando il piano che prevedeva oltre dieci giochi come servizio. In parallelo, l'azienda continua a puntare sui grandi giochi per giocatore singolo, come abbiamo raccontato parlando del [futuro delle esclusive PlayStation](/articoli/esclusive-playstation-marchio/).
+La cancellazione si aggiunge a una lista lunga. Negli ultimi anni Sony ha fermato il multiplayer di The Last of Us, ha chiuso Concord dopo pochi giorni e ha rinunciato a diversi progetti mai annunciati, ridimensionando il piano che prevedeva oltre dieci giochi come servizio. Intanto l'azienda continua a puntare sui grandi giochi per giocatore singolo, come abbiamo raccontato parlando del [futuro delle esclusive PlayStation](/articoli/esclusive-playstation-marchio/).
 
-La buona notizia, almeno per chi lavora a Haven, è l'assenza di licenziamenti. Quella meno buona è che la strategia dei giochi online di PlayStation continua a perdere pezzi.
+Almeno chi lavora a Haven non perde il posto. La strategia dei giochi online di PlayStation, invece, continua a perdere pezzi.
 
 ## Domande frequenti
 

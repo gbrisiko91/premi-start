@@ -25,29 +25,29 @@ fonti:
     url: "https://www.playstation.com/it-ch/accessories/pulse-elevate-wireless-speakers/"
 ---
 
-Il **rinvio dei Pulse Elevate** è ufficiale: **Sony** ha fermato gli altoparlanti wireless per **PS5** e PC a meno di una settimana dall'uscita, prevista il 12 novembre. Con un breve aggiornamento sul **PlayStation Blog**, l'azienda ha spiegato che i controlli di qualità hanno rivelato un problema di produzione. Una nuova data non c'è.
+Il rinvio dei **Pulse Elevate** è ufficiale: **Sony** ha fermato gli altoparlanti wireless per PS5 e PC a meno di una settimana dall'uscita, prevista il 12 novembre. In un breve aggiornamento sul PlayStation Blog l'azienda ha spiegato che i controlli di qualità hanno fatto emergere un problema di produzione, e per ora non c'è una nuova data.
 
 ## Perché Sony ha rinviato i Pulse Elevate
 
-La spiegazione ufficiale è stringata. Sony parla di un difetto emerso durante i test di qualità e dice di voler usare il tempo in più per garantire l'esperienza che aveva promesso ai giocatori. Non è stato chiarito di che problema si tratti né quante unità siano coinvolte, e l'azienda si è scusata con chi aspettava il prodotto.
+La spiegazione ufficiale è stringata. Sony parla di un difetto emerso durante i test di qualità e dice di voler usare il tempo in più per garantire l'esperienza che aveva promesso ai giocatori. Non ha chiarito di che problema si tratti né quante unità siano coinvolte, e si è scusata con chi aspettava il prodotto.
 
-Il tempismo ha sorpreso tutti: diverse testate e creator avevano già ricevuto le unità per la recensione, alcuni pubblicando le prime impressioni pochi giorni prima dello stop. Secondo Multiplayer.it, la pagina ufficiale PlayStation indica ora una data provvisoria al 1° gennaio 2027, che sembra più un segnaposto che una promessa.
+Il tempismo ha sorpreso tutti. Diverse testate e creator avevano già ricevuto le unità per la recensione, e alcuni avevano pubblicato le prime impressioni pochi giorni prima dello stop. Secondo Multiplayer.it, la pagina ufficiale PlayStation indica ora una data provvisoria al 1° gennaio 2027, che sembra più un segnaposto che una promessa.
 
 ## Prezzo e caratteristiche dei Pulse Elevate in Italia
 
-In Italia gli speaker erano proposti a **219,99 euro**, e alcuni negozi online risultavano ancora pronti a consegnarli il 12 novembre anche dopo l'annuncio. Chi li ha prenotati farebbe bene a controllare lo stato dell'ordine.
+In Italia gli speaker costavano 219,99 euro, e alcuni negozi online risultavano ancora pronti a consegnarli il 12 novembre anche dopo l'annuncio. Chi li ha prenotati farebbe bene a controllare lo stato dell'ordine.
 
-Presentati a settembre 2025, i Pulse Elevate sono i primi altoparlanti da scrivania di Sony pensati per il gaming. Ecco cosa promettono:
+Presentati a settembre 2025, i Pulse Elevate sono i primi altoparlanti da scrivania di Sony pensati per il gaming. Sulla carta offrono:
 
 - driver magnetici planari con woofer integrati;
-- supporto al **Tempest 3D AudioTech** di PS5 per un audio posizionale più preciso;
-- connessione **PlayStation Link** a bassa latenza e senza perdita di qualità con PS5, PC, Mac e **PlayStation Portal**, più il Bluetooth in contemporanea;
+- supporto al Tempest 3D AudioTech di PS5 per un audio posizionale più preciso;
+- connessione PlayStation Link a bassa latenza e senza perdita di qualità con PS5, PC, Mac e PlayStation Portal, più il Bluetooth in contemporanea;
 - microfono nell'altoparlante destro con riduzione del rumore tramite intelligenza artificiale;
 - batteria ricaricabile per usarli anche lontano dalla scrivania.
 
 ## Il secondo accessorio PlayStation fermato nel 2026
 
-Non è la prima volta quest'anno. A fine luglio Sony aveva rinviato a tempo indeterminato anche **FlexStrike**, il controller arcade per i picchiaduro, citando ritardi di produzione imprevisti: da allora non sono arrivate novità. Due accessori bloccati in pochi mesi fanno discutere i fan sulla gestione dell'hardware di PlayStation, proprio mentre la concorrenza spinge sui propri periferici, come il [controller Xbox Nano di cui vi abbiamo parlato](/articoli/xbox-nano-controller-uscita/).
+Non è la prima volta quest'anno. A fine luglio Sony aveva rinviato a tempo indeterminato anche FlexStrike, il controller arcade per i picchiaduro, citando ritardi di produzione imprevisti, e da allora non si è saputo più nulla. Con due accessori bloccati in pochi mesi, tra i fan si discute di come PlayStation gestisce l'hardware, proprio mentre la concorrenza spinge sui propri periferici, come il [controller Xbox Nano di cui vi abbiamo parlato](/articoli/xbox-nano-controller-uscita/).
 
 ## Domande frequenti
 
