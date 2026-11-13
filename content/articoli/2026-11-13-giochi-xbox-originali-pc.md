@@ -7,7 +7,7 @@ data: 2026-11-13
 categoria: retro
 tag: [xbox, retrocompatibilita, star-wars-kotor, morrowind, timesplitters]
 viralita: 74
-bozza: true
+bozza: false
 immagine: "https://xboxwire.thesourcemediaassets.com/sites/2/2026/11/111226_XBOX-Wire_PCBackCompat-JPG-6d6dbed266e723ed4c62.jpg"
 immagine_riserva: "https://xboxwire.thesourcemediaassets.com/sites/2/2026/11/111226_XBOX-Wire_PCBackCompat-JPG-6d6dbed266e723ed4c62-1600x900.jpg"
 alt_immagine: "Immagine ufficiale XBOX Wire dedicata ai giochi Xbox originali giocabili su PC"
