@@ -7,7 +7,7 @@ data: 2026-11-13
 categoria: industria
 tag: [the-witcher-3, songs-of-the-past, cd-projekt-red, intelligenza-artificiale]
 viralita: 66
-bozza: true
+bozza: false
 immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292030/library_hero.jpg"
 immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292030/header.jpg"
 alt_immagine: "Immagine ufficiale di The Witcher 3 Wild Hunt con Geralt di Rivia"
