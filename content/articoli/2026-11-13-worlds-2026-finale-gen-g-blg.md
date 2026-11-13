@@ -31,27 +31,35 @@ fonti:
     url: "https://en.wikipedia.org/wiki/Chovy_(gamer)"
 ---
 
-Domani sera alle 20 si gioca la finale dei **Worlds 2026** di **League of Legends**: **Gen.G** contro **Bilibili Gaming**, al Barclays Center di Brooklyn. Da una parte la squadra che ha perso una sola partita in tutto il torneo, dall'altra quella che ha fatto fuori **T1** e il sogno del quarto Mondiale di fila di **Faker**. In mezzo, due mid laner che non hanno mai vinto un titolo mondiale: **Chovy** e **Knight**. Domani uno dei due lo vincerà.
+Domani alle 20 si gioca la finale dei **Worlds 2026** di **League of Legends** al Barclays Center di Brooklyn: **Gen.G** contro **Bilibili Gaming**. Gen.G ha perso una sola partita in tutto il torneo. BLG in semifinale ha eliminato T1 e ha chiuso il sogno di Faker di vincere il quarto Mondiale di fila. Nessuno dei due mid laner, Chovy e Knight, ha mai vinto un titolo mondiale.
 
-## Come BLG ha eliminato T1 e fatto la storia
+## Come BLG ha eliminato T1
 
-Domenica ad Allen, in Texas, BLG ha battuto T1 3-1. Knight ha deciso gara 1 con un Orianna da 8 uccisioni e nessuna morte. T1 ha pareggiato in gara 2 con Faker su Syndra, 4/0/13. Poi BLG ha chiuso con due partite da più di 37 minuti, trascinata da Viper su Ezreal e da Bin su Renekton.
+Domenica ad Allen, in Texas, BLG ha battuto T1 3-1. Knight ha deciso gara 1 con un Orianna da 8 uccisioni e nessuna morte. In gara 2 T1 ha pareggiato con Faker su Syndra, 4/0/13. Le ultime due partite sono durate entrambe più di 37 minuti e le ha vinte BLG, con Viper su Ezreal e Bin su Renekton tra i migliori.
 
-È un risultato che pesa. In 13 anni nessuna squadra cinese aveva mai battuto T1 in una serie al meglio delle cinque nella fase a eliminazione diretta dei Mondiali. T1, campione nel 2023, nel 2024 e nel 2025, chiude il 2026 senza trofei e dopo quattro finali consecutive stavolta non ci arriva.
+Secondo Sports Kyunghyang, in 13 anni nessuna squadra cinese aveva battuto T1 in una serie al meglio delle cinque nella fase a eliminazione diretta dei Mondiali. T1 aveva vinto il titolo nel 2023, nel 2024 e nel 2025 e aveva giocato le ultime quattro finali. Quest'anno resta fuori e chiude il 2026 senza trofei.
 
-Per BLG è anche una rivincita: due anni fa, a Londra, aveva perso proprio contro T1 la finale mondiale, 3-2.
+Due anni fa, a Londra, BLG aveva perso la finale mondiale proprio contro T1, 3-2.
 
 ## Gen.G-BLG, le storie della finale
 
-**Chovy contro Knight.** Sono i due mid laner più forti della loro generazione senza un Mondiale. Chovy ci arriva per la prima volta dopo sette eliminazioni. Knight c'era già arrivato nel 2024 e aveva perso contro T1. Hotspawn la chiama la finale dei "due principi": domani solo uno avrà la corona.
+### Chovy e Knight cercano il primo Mondiale
 
-**Gen.G, la macchina perfetta.** Ha battuto LYON 3-0 nei quarti e Invictus Gaming 3-0 in semifinale, e in tutto il torneo ha perso una sola partita. Non ha mai dovuto giocare una gara 4, quindi BLG non ha ancora visto tutto quello che sa fare.
+Chovy arriva in finale per la prima volta, dopo sette Mondiali finiti con un'eliminazione. Knight ci era già arrivato nel 2024 con BLG e aveva perso contro T1. Hotspawn l'ha chiamata la finale dei "due principi".
 
-**BLG, la grande seconda.** Ha perso le ultime due finali importanti, i Worlds 2024 contro T1 e l'MSI di luglio contro Hanwha Life, entrambe per 3-2. Nel 2023 però era stata proprio BLG a eliminare Gen.G e Chovy ai quarti, 3-2.
+### Gen.G ha perso una sola partita
 
-**Un coreano con la Cina.** Il tiratore di BLG è Viper, coreano, campione del mondo nel 2021 con EDward Gaming: fu l'ultima volta che il titolo andò in Cina. Gen.G risponde con due ex campioni, Ruler (2017) e Canyon (2020).
+Nei quarti ha battuto LYON 3-0 e in semifinale Invictus Gaming 3-0. In tutto il torneo non ha mai dovuto giocare una gara 4: secondo Hotspawn, BLG non ha ancora visto tutto quello che Gen.G sa fare.
 
-## I giocatori che decidono la finale
+### BLG ha perso le ultime due finali
+
+Ha perso la finale dei Worlds 2024 contro T1 e quella dell'MSI di luglio contro Hanwha Life, entrambe 3-2. Nel 2023 però era stata BLG a eliminare Gen.G e Chovy ai quarti, sempre 3-2.
+
+### Un campione coreano nella squadra cinese
+
+Il tiratore di BLG è il coreano Viper, che nel 2021 ha vinto il Mondiale con EDward Gaming: da allora nessuna squadra cinese ha più vinto il titolo. In Gen.G ci sono due ex campioni del mondo, Ruler (2017) e Canyon (2020).
+
+## Le formazioni della finale
 
 | Ruolo | Gen.G | Bilibili Gaming |
 | --- | --- | --- |
@@ -61,15 +69,15 @@ Per BLG è anche una rivincita: due anni fa, a Londra, aveva perso proprio contr
 | Bot | Ruler | Viper |
 | Supporto | Duro | ON |
 
-Secondo Hotspawn la sfida chiave è tra le coppie giungla-mid, Canyon e Chovy contro Xun e Knight. Il bot lane di BLG, Viper e ON, è cresciuto partita dopo partita ed è arrivato al massimo proprio contro T1. Il pronostico di Hotspawn è BLG 3-2, ma Gen.G resta la squadra che finora non ha sbagliato niente.
+Hotspawn vede la sfida decisiva tra giungla e mid, Canyon e Chovy contro Xun e Knight, e ritiene che Viper e ON siano migliorati partita dopo partita fino alla semifinale con T1. Il suo pronostico è BLG 3-2.
 
 ## Orario e dove vedere la finale dei Worlds 2026
 
-La finale si gioca **sabato 14 novembre alle 20:00 ora italiana** al Barclays Center di Brooklyn, a New York. È la prima finale mondiale sulla costa est degli Stati Uniti. Si gioca al meglio delle cinque con Fearless Draft: nessun campione può essere usato due volte nella serie.
+La finale è **sabato 14 novembre alle 20:00 ora italiana** al Barclays Center di Brooklyn, a New York, la prima finale mondiale sulla costa est degli Stati Uniti. Si gioca al meglio delle cinque con Fearless Draft, quindi ogni campione si può usare una sola volta nella serie.
 
-Si guarda gratis sui canali [Twitch e YouTube di LoL Esports](https://lolesports.com/). Prima della partita c'è la cerimonia d'apertura, con Coco Jones e Vic Mensa, Sofía Reyes e Jeon Soyeon, e l'inno del torneo, "Know My Name" dei True Damage. Alla squadra campione va 1 milione di dollari.
+La diretta è gratis sui canali [Twitch e YouTube di LoL Esports](https://lolesports.com/). Prima della partita c'è la cerimonia d'apertura con Coco Jones e Vic Mensa, Sofía Reyes e Jeon Soyeon, e l'inno del torneo, "Know My Name" dei True Damage. Alla squadra campione va 1 milione di dollari.
 
-Per ripassare il cammino di Gen.G c'è il nostro [articolo sulla semifinale di Chovy](/articoli/worlds-2026-gen-g-finale-chovy/).
+Il cammino di Gen.G fino alla finale l'abbiamo raccontato nell'[articolo sulla semifinale di Chovy](/articoli/worlds-2026-gen-g-finale-chovy/).
 
 ## Domande frequenti
 
