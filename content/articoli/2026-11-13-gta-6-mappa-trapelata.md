@@ -7,7 +7,7 @@ data: 2026-11-13
 categoria: console
 tag: [gta-6, rockstar-games, leonida, ps5, xbox-series-x]
 viralita: 89
-bozza: true
+bozza: false
 immagine: "https://image.api.playstation.com/vulcan/ap/rnd/202606/1819/f73cd287d6bbf6a95aa5a93f5a294a2614288a00af4dcdba.png"
 immagine_riserva: "https://image.api.playstation.com/vulcan/ap/rnd/202606/1818/9f51f0ccdb65bd29c36a0907a738c2902a712f03e2fd6470.png"
 alt_immagine: "Immagine ufficiale di GTA 6 dalla pagina PlayStation dedicata al gioco"
