@@ -1,12 +1,13 @@
 ---
 titolo: "Chovy rompe la maledizione: dopo 7 Mondiali Gen.G lo porta in finale"
 titolo_seo: "Worlds 2026: Gen.G in finale, Chovy rompe la maledizione"
-sommario: "Gen.G batte Invictus Gaming 3-0 e va in finale ai Worlds 2026: per Chovy è la prima volta dopo sette Mondiali. Stanotte BLG-T1 decide l'avversaria."
+sommario: "Gen.G batte Invictus Gaming 3-0 e va in finale ai Worlds 2026: per Chovy è la prima volta dopo sette Mondiali. In finale trova BLG, che ha eliminato T1."
 parola_chiave: "worlds 2026 finale"
 data: 2026-11-08
 categoria: pc
 tag: [league-of-legends, worlds-2026, esports, gen-g, t1]
 viralita: 84
+aggiornato: 2026-11-13
 bozza: false
 immagine: ""
 immagine_riserva: ""
@@ -29,7 +30,7 @@ fonti:
     url: "https://www.hotspawn.com/league-of-legends/news/blg-vs-t1-worlds-2026-preview"
 ---
 
-Sette Mondiali, sette eliminazioni. Al suo ottavo tentativo **Chovy** ce l'ha fatta: **Gen.G** ha battuto Invictus Gaming 3-0 nella prima semifinale dei **Worlds 2026** di League of Legends e si è presa il primo posto in finale. Per il mid laner considerato da molti il più forte del mondo senza un titolo mondiale, è la prima finale della carriera. L'avversaria uscirà stanotte da Bilibili Gaming contro T1.
+Sette Mondiali, sette eliminazioni. Al suo ottavo tentativo **Chovy** ce l'ha fatta: **Gen.G** ha battuto Invictus Gaming 3-0 nella prima semifinale dei **Worlds 2026** di League of Legends e si è presa il primo posto in finale. Per il mid laner considerato da molti il più forte del mondo senza un titolo mondiale, è la prima finale della carriera. In finale, sabato 14 novembre, troverà Bilibili Gaming, che ha eliminato T1 3-1.
 
 ## La maledizione di Chovy ai Worlds
 
@@ -55,9 +56,11 @@ Il migliore è stato Ruler: 23 uccisioni, 8 morti e 33 assist in tre partite. Pe
 
 Gen.G arriva così in finale senza aver ancora perso una serie: imbattuta nella fase Swiss, 3-0 a LYON nei quarti e 3-0 a IG in semifinale.
 
-## Stanotte BLG-T1: le due finali possibili
+## BLG-T1: com'è finita
 
-La seconda semifinale si gioca stanotte ad Allen, in Texas, e comunque vada la finale avrà una bella storia dietro.
+**Aggiornamento del 13 novembre:** ha vinto Bilibili Gaming, 3-1. La finale è Gen.G-BLG: trovate orario e storie nel nostro [articolo sulla finale dei Worlds 2026](/articoli/worlds-2026-finale-gen-g-blg/).
+
+Prima della semifinale, le due finali possibili erano queste.
 
 Se passa T1 è finale tutta coreana, nonché la rivincita di due anni fa: nel 2024 fu proprio T1 a eliminare Gen.G in semifinale, 3-1. Faker cerca il quarto Mondiale consecutivo, un traguardo che nessuno ha mai raggiunto. Chovy cerca il primo. Ve lo avevamo raccontato nel nostro [articolo sui quarti di finale](/articoli/worlds-2026-t1-karmine-semifinali/).
 
@@ -71,7 +74,7 @@ La finale è sabato 14 novembre al Barclays Center di Brooklyn, a New York, alle
 
 ### Chi è in finale ai Worlds 2026 di League of Legends?
 
-Gen.G, che ha battuto Invictus Gaming 3-0. L'avversaria esce dalla semifinale tra Bilibili Gaming e T1.
+Gen.G, che ha battuto Invictus Gaming 3-0, e Bilibili Gaming, che ha eliminato T1 3-1.
 
 ### Chovy ha mai vinto un Mondiale?
 
