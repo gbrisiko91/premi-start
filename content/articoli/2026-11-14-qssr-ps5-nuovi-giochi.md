@@ -7,7 +7,7 @@ data: 2026-11-14
 categoria: console
 tag: [qssr, playstation-5, marvels-spider-man-2, arc-raiders, control-resonant]
 viralita: 66
-bozza: true
+bozza: false
 immagine: "https://blog.playstation.com/tachyon/2026/11/84a6eb5f0831acb87ad7b548df366dcf10547aaf-scaled.jpg"
 immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2651280/header.jpg"
 alt_immagine: "Immagine ufficiale del PlayStation Blog dedicata al QSSR su PS5 e ai nuovi giochi"
