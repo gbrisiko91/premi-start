@@ -7,7 +7,7 @@ data: 2026-11-14
 categoria: industria
 tag: [the-game-awards, gta-6, geoff-keighley, rockstar-games]
 viralita: 84
-bozza: true
+bozza: false
 immagine: "https://assets.thegameawards.com/2026/08/56601a04-2026_tga_keyart_16x9-copy-scaled-1.webp"
 immagine_riserva: ""
 alt_immagine: "Key art ufficiale dei The Game Awards 2026, la cerimonia del 10 dicembre"
