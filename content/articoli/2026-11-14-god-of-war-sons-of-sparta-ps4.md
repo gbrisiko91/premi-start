@@ -7,7 +7,7 @@ data: 2026-11-14
 categoria: console
 tag: [god-of-war-sons-of-sparta, santa-monica-studio, mega-cat-studios, playstation-4, playstation-5]
 viralita: 58
-bozza: true
+bozza: false
 immagine: "https://blog.playstation.com/tachyon/2026/02/6cce0478459b4f47549fa59e9168f04924295731-scaled.jpg"
 immagine_riserva: "https://image.api.playstation.com/vulcan/ap/rnd/202602/0519/7260437aae9056d5bd34225e4fce98ca8bb0ef1cd8e6471f.png"
 alt_immagine: "Immagine ufficiale di God of War Sons of Sparta, il platform 2D con Kratos giovane"
