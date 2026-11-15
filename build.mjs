@@ -12,6 +12,7 @@ import matter from "gray-matter";
 import { marked } from "marked";
 import config from "./sito.config.mjs";
 import { validaArticolo, rimuoviNote } from "./strumenti/verifica-editoriale.mjs";
+import { selezionaCorrelati } from "./strumenti/articoli-correlati.mjs";
 import { LINGUE, PRINCIPALE, T } from "./lingue.mjs";
 import { U } from "./novita.mjs";
 import { QUIZ } from "./quiz.mjs";
@@ -463,7 +464,7 @@ function paginaArticolo(a, stessaLingua, versioni) {
   const l = a.lingua;
   const t = T[l];
   const u = U[l];
-  const correlati = stessaLingua.filter((x) => x !== a && x.categoria === a.categoria).slice(0, 3);
+  const correlati = selezionaCorrelati(a, stessaLingua);
   const fonti = a.fonti.length
     ? `<section class="fonti" aria-labelledby="t-fonti"><div class="fonti-testa"><h2 id="t-fonti">${esc(t.fonti)}</h2><span class="fonti-contatore">${a.fonti.length} ${esc(u.sourcesConsulted)}</span></div><ul>${a.fonti
         .map((f) => `<li><a href="${esc(f.url)}" rel="noopener" target="_blank">${esc(f.titolo || f.url)}</a></li>`)
