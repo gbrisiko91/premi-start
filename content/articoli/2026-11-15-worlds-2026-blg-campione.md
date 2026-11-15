@@ -8,10 +8,10 @@ categoria: pc
 tag: [league-of-legends, worlds-2026, esports, bilibili-gaming, gen-g]
 viralita: 90
 bozza: false
-immagine: ""
-immagine_riserva: ""
-alt_immagine: ""
-crediti_immagine: ""
+immagine: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/a57a2226c2721c242aaf53c771ad13d4e505962f-1920x1080.jpg"
+immagine_riserva: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/95c442f921caa882ba8f86f9854ee37030c2af4c-7201x3326.jpg"
+alt_immagine: "Key art ufficiale dei Worlds 2026 di League of Legends, con New York vista dall'alto"
+crediti_immagine: "Immagine: Riot Games, lolesports.com"
 fonti:
   - titolo: "GosuGamers – Bilibili Gaming defeat Gen.G to be crowned Worlds 2026 champions"
     url: "https://www.gosugamers.net/lol/news/79501-bilibili-gaming-defeat-gen-g-to-be-crowned-worlds-2026-champions"
@@ -68,12 +68,3 @@ EDward Gaming, nel 2021. Nella sua squadra c'era già Viper, che con BLG vince i
 ### Quanto ha vinto BLG ai Worlds 2026?
 
 1 milione di dollari, su un montepremi totale di 5 milioni. Gen.G, seconda, ha ricevuto 800.000 dollari.
-
-<!-- NOTE PER LA REDAZIONE:
-- Risultato 3-1 confermato da GosuGamers (dettagli partita per partita) e Insider Gaming (titolo; la pagina non si è aperta). Gara 1 confermata anche da Korea Daily (38:59), gare 1 e 2 da LoLNow.
-- Durate, campioni e KDA da GosuGamers. GosuGamers scrive per errore che BLG ha "spazzato via" T1 in semifinale: il risultato era 3-1 (Strafe, GGRecon, Sports Kyunghyang).
-- MVP della finale: nessuna fonte letta lo indica. Aggiungerlo appena Riot lo annuncia.
-- Revisione humanizer fatta con la skill.
-- First Stand 2026 vinto da BLG su G2 3-1 (Sheep Esports): corregge la frase "BLG ha perso le ultime due finali" dell'articolo del 13 novembre.
-- Immagine mancante: serve una foto ufficiale Riot/LoL Esports senza giocatori riconoscibili, per esempio la Summoner's Cup.
--->
