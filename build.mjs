@@ -47,6 +47,7 @@ const P = {
   categoria: (l, k) => `${pre(l)}/${T[l].seg.categoria}/${k}/`,
   archivio: (l) => `${pre(l)}/${T[l].seg.archivio}/`,
   indie: (l) => `${pre(l)}/indie/`,
+  autore: (l) => `${pre(l)}/autore/gianmarco-buono/`,
   rss: (l) => `${pre(l)}/rss.xml`,
   quiz: (l) => `${pre(l)}/quiz/`,
   uscite: (l) => `${pre(l)}/${R[l].seg.uscite}/`,
@@ -308,7 +309,7 @@ function pagina({ l, titolo, titoloSeo = "", descrizione, percorso, corpo, tipo 
   const nastro = ticker.length
     ? `<div class="ticker" aria-label="${esc(t.ultimeNotizie)}"><span class="ticker-etichetta">${esc(t.live)}</span><div class="ticker-finestra"><div class="ticker-nastro">${vociTicker}<span class="ticker-copia" aria-hidden="true">${vociTicker.replace(/<a /g, '<a tabindex="-1" ')}</span></div></div></div>`
     : "";
-  const linkPiede = [`<a href="${P.archivio(l)}">${esc(t.archivio)}</a>`, `<a href="${P.indie(l)}">${esc(U[l].indieTitle)}</a>`, `<a href="${P.uscite(l)}">${esc(R[l].uscite.nome)}</a>`, `<a href="${P.sondaggio(l)}">${esc(R[l].poll.nome)}</a>`, ...pagineDi(l).map((p) => `<a href="${p.url}">${esc(p.menu)}</a>`), `<a href="${P.rss(l)}">${esc(t.feedRss)}</a>`].join("");
+  const linkPiede = [`<a href="${P.archivio(l)}">${esc(t.archivio)}</a>`, `<a href="${P.autore(l)}">${esc(config.autore)}</a>`, `<a href="${P.indie(l)}">${esc(U[l].indieTitle)}</a>`, `<a href="${P.uscite(l)}">${esc(R[l].uscite.nome)}</a>`, `<a href="${P.sondaggio(l)}">${esc(R[l].poll.nome)}</a>`, ...pagineDi(l).map((p) => `<a href="${p.url}">${esc(p.menu)}</a>`), `<a href="${P.rss(l)}">${esc(t.feedRss)}</a>`].join("");
   return `<!doctype html>
 <html lang="${LINGUE[l].hreflang}">
 <head>
@@ -483,7 +484,7 @@ function paginaArticolo(a, stessaLingua, versioni) {
       inLanguage: LINGUE[l].intl, articleSection: nomeCat(l, a.categoria),
       keywords: [a.parolaChiave, ...a.tag].filter(Boolean).join(", "),
       ...(a.immagine ? { image: [urlImmagine(a.immagine)] } : {}),
-      author: { "@type": "Person", name: config.autore, url: urlAssoluto(urlPaginaFissa(l, "chi-siamo")) },
+      author: { "@type": "Person", name: config.autore, url: urlAssoluto(P.autore(l)) },
       publisher: editore, mainEntityOfPage: { "@type": "WebPage", "@id": urlAssoluto(a.url) },
       ...(a.originale ? { translationOfWork: { "@id": urlAssoluto(a.originale.url) } } : {}),
       ...(a.fonti.length ? { citation: a.fonti.map((f) => f.url) } : {}),
@@ -506,7 +507,7 @@ function paginaArticolo(a, stessaLingua, versioni) {
     <h1>${esc(a.titolo)}</h1>
     ${a.sommario ? `<p class="occhiello">${esc(a.sommario)}</p>` : ""}
     <div class="articolo-trasparenza">
-      <p class="articolo-firma">${esc(u.byline)} <a href="${urlPaginaFissa(l, "chi-siamo")}" rel="author">${esc(config.autore)}</a></p>
+      <p class="articolo-firma">${esc(u.byline)} <a href="${P.autore(l)}" rel="author">${esc(config.autore)}</a></p>
       ${a.aggiornato && a.aggiornato.getTime() > a.data.getTime() ? `<p class="articolo-aggiornato">${esc(u.updatedLabel)} <time datetime="${a.aggiornato.toISOString()}">${data(l,a.aggiornato,"lunga")}</time></p>` : ""}
     </div>
     <div class="eroe-azioni-articolo">${hype(l, a.viralita)}${tastoLike(a)}${a.bozza ? "" : `<button type="button" hidden class="bottone-salva" data-salva-articolo="${esc(a.id)}" data-salva="${esc(u.save)}" data-salvato="${esc(u.saved)}" aria-pressed="false">${esc(u.save)}</button>`}${a.bozza ? "" : `<a class="tasto-vai-condividi" href="#condividi">${icona("condividi")}<span>${esc(t.condividi)}</span></a>`}</div>
@@ -723,6 +724,36 @@ ${lista.length
   return pagina({ l, titolo, descrizione, percorso, corpo, alternative });
 }
 
+// Profilo autore: solo dati verificabili e articoli effettivamente pubblicati.
+function paginaAutore(l, lista) {
+  const u = U[l];
+  const percorso = P.autore(l);
+  const opere = lista.filter((a) => !a.bozza);
+  const datiStrutturati = {
+    "@context": "https://schema.org", "@type": "ProfilePage",
+    mainEntity: {
+      "@type": "Person",
+      name: config.autore,
+      url: urlAssoluto(percorso),
+      worksFor: { "@type": "Organization", name: config.nome, url: config.url },
+    },
+  };
+  const corpo = `<section class="profilo-autore">
+    <header class="intestazione-elenco profilo-autore-testa">
+      <span class="eyebrow">${esc(u.authorTitle)} / ${esc(config.nome)}</span>
+      <h1>${esc(config.autore)}</h1>
+      <p>${esc(u.authorIntro)}</p>
+      <a class="intro-link" href="${urlPaginaFissa(l, "chi-siamo")}">${esc(config.nome)} ↗</a>
+    </header>
+    <section aria-labelledby="t-autore-articoli">
+      <h2 id="t-autore-articoli" class="titolo-sezione">${esc(u.authorAll)}</h2>
+      <div class="griglia">${opere.map(scheda).join("")}</div>
+    </section>
+    <script type="application/ld+json">${JSON.stringify(datiStrutturati).replace(/</g, "\\u003c")}</script>
+  </section>`;
+  return pagina({ l, titolo: `${config.autore} — ${u.authorTitle}`, descrizione: u.authorIntro, percorso, corpo, alternative: tuttePerLingua(P.autore) });
+}
+
 // Segnaposto utilizzabili nelle pagine fisse
 function sostituisci(testo, l, stessaLingua) {
   const conteggio = (k) => stessaLingua.filter((a) => a.categoria === k && !a.bozza).length;
@@ -842,6 +873,7 @@ for (const l of CODICI) {
   scriviPagina(P.quiz(l), paginaQuiz(l));
   scriviPagina(P.uscite(l), paginaUscite(l, lista));
   scriviPagina(P.sondaggio(l), paginaSondaggio(l));
+  scriviPagina(P.autore(l), paginaAutore(l, lista));
   scriviPagina(P.indie(l), paginaElenco({ l, titolo: U[l].indieTitle, descrizione: U[l].indieLead, percorso: P.indie(l), lista: pubblicati(lista).filter(a => a.tag.some(x => String(x).toLowerCase() === "indie")), alternative: tuttePerLingua(P.indie) }));
   scrivi(`indice-${l}.json`, JSON.stringify(pubblicati(lista).map((a)=>({id:a.id,url:a.url,titolo:a.titolo,sommario:a.sommario,categoria:nomeCat(l,a.categoria),tag:a.tag,data:a.data.toISOString(),dataBreve:data(l,a.data,"breve")}))));
   for (const a of lista) scriviPagina(a.url, paginaArticolo(a, lista, versioniDi(a.id)));
@@ -869,6 +901,7 @@ gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.quiz(l) })
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.uscite(l) })) });
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.sondaggio(l) })) });
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.indie(l) })) });
+gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.autore(l) })) });
 scriviPagina(P.newsletterGrazie, paginaGrazie());
 scriviPagina(PERCORSO_INSTAGRAM, paginaInstagram(perLingua[PRINCIPALE]));
 scriviPagina(P.newsletterConfermata, paginaConfermata());
