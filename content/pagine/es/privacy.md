@@ -29,15 +29,15 @@ La base jurídica es nuestro interés legítimo en ofrecer el sitio de forma seg
 
 ## El botón "Me gusta"
 
-Cuando pulsas "Me gusta" en un artículo, para evitar que un mismo visitante vote varias veces guardamos una **huella anónima**: un código calculado a partir de tu dirección IP y del artículo, del que no es posible recuperar la propia dirección IP. Junto a la huella solo guardamos que ese artículo te ha gustado. El dato se conserva en los servidores de Netlify mientras el artículo esté publicado y se borra si quitas tu "Me gusta".
+Cuando pulsas «Me gusta», guardamos un **identificador técnico seudónimo** derivado de tu IP y del artículo para limitar los votos duplicados. Los votos antiguos utilizaban un hash sin clave; los identificadores nuevos emplean HMAC con una clave secreta conservada en el servidor. No consideramos estos identificadores completamente anónimos. Si retiras tu «Me gusta», se actualiza el estado para mantener el recuento. Los datos se almacenan en Netlify mientras sean necesarios para gestionar los votos del artículo.
 
-La base jurídica es nuestro interés legítimo en mostrar un recuento fiable. Si no pulsas el botón, no se guarda nada.
+La base jurídica declarada para este tratamiento es el interés legítimo en evitar votos duplicados y mostrar resultados fiables (art. 6.1.f del RGPD); el responsable debe revisar esta valoración.
 
 ## La encuesta de la semana
 
-Cuando votas en la encuesta, para evitar votos duplicados guardamos una **huella anónima** calculada a partir de tu dirección IP y de la encuesta, que no permite averiguar la dirección, junto con la respuesta elegida. Los datos se conservan en los servidores de Netlify mientras la encuesta siga en el sitio; solo publicamos el total de votos. Además, tu navegador recuerda tu respuesta en su almacenamiento local (*localStorage*) para mostrarte los resultados al momento.
+Al votar en una encuesta, guardamos un **identificador técnico seudónimo** derivado de tu IP y de la encuesta, junto con la respuesta elegida, para limitar los votos duplicados. Los registros anteriores usan un hash sin clave; los nuevos, HMAC con clave del servidor. No los consideramos totalmente anónimos. Los registros permanecen en Netlify para gestionar el historial; solo publicamos resultados agregados. El navegador también conserva tu respuesta en *localStorage*.
 
-La base jurídica es nuestro interés legítimo en mostrar resultados fiables. Si no votas, no se guarda nada.
+La base jurídica declarada para este tratamiento es el interés legítimo en evitar votos duplicados y mostrar resultados fiables (art. 6.1.f del RGPD); el responsable debe revisar esta valoración.
 
 ## Imágenes y enlaces a otros sitios
 

@@ -1,7 +1,7 @@
 name: Verify Soffia Cartuccia 2.0
 on:
   push:
-    branches: [feat/soffiacartuccia-fase1]
+    branches: [main, 'fix/**', 'feat/**']
   pull_request:
     branches: [main]
 permissions:
