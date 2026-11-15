@@ -7,7 +7,7 @@ data: 2026-11-15
 categoria: industria
 tag: [take-two, gta-6, intelligenza-artificiale, anthropic, openai]
 viralita: 70
-bozza: true
+bozza: false
 immagine: "https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg?akim=1&imdensity=1&imwidth=3840"
 immagine_riserva: "https://www.rockstargames.com/VI/_next/static/media/meta.0t8ty~nlmxq2s.jpg?yvw8ZozOI7a7Kz1war9qe"
 alt_immagine: "Poster ufficiale di Grand Theft Auto VI, il gioco di punta di Take-Two"
