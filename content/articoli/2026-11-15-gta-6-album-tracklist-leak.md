@@ -1,9 +1,10 @@
 ---
-titolo: "GTA 6 The Album, trapelata la tracklist: Dua Lipa, Lana Del Rey e altri 32 brani"
-titolo_seo: "GTA 6 album tracklist: i 34 brani trapelati"
-sommario: "La tracklist di GTA 6 The Album sarebbe trapelata da un vinile: 34 brani con Dua Lipa, Lana Del Rey e Jennie. Rockstar tace, l'album esce il 19 novembre."
+titolo: "GTA 6, la tracklist dell'album trapela online: Dua Lipa e Lana Del Rey, ma nessuna conferma"
+titolo_seo: "GTA 6 The Album: tracklist trapelata, cosa è confermato"
+sommario: "Il presunto vinile di GTA 6 mostra 34 brani con Dua Lipa, Lana Del Rey e Jennie. Rockstar conferma l'album, ma non la tracklist: ecco cosa sappiamo."
 parola_chiave: "gta 6 album tracklist"
 data: 2026-11-15
+aggiornato: 2026-11-15
 categoria: console
 tag: [gta-6, rockstar-games, colonna-sonora]
 viralita: 84
@@ -13,55 +14,50 @@ immagine_riserva: "https://www.rockstargames.com/VI/_next/static/media/meta.0t8t
 alt_immagine: "Copertina ufficiale di Grand Theft Auto VI The Album dalla pagina musica di Rockstar"
 crediti_immagine: "Immagine: Rockstar Games, sito ufficiale di GTA VI"
 fonti:
-  - titolo: "Dexerto – GTA 6 album leak reveals 34-song tracklist"
+  - titolo: "Rockstar Games – Annuncio ufficiale di GTA VI: The Album, 17 settembre 2026"
+    url: "https://www.rockstargames.com/newswire/article/7599a881942544/announcing-grand-theft-auto-vi-the-album-coming-november-19"
+  - titolo: "Rockstar Games – Original Score dei Justice, 29 ottobre 2026"
+    url: "https://www.rockstargames.com/it/newswire/article/39ak8a12395591/grand-theft-auto-vi-original-score-by-justice"
+  - titolo: "RockstarINTEL – Presunto leak della tracklist, 14 novembre 2026"
+    url: "https://rockstarintel.com/full-gta-vi-the-album-track-list-leaked/"
+  - titolo: "Dexerto – GTA 6 album leak reveals 34-song tracklist, 14 novembre 2026"
     url: "https://www.dexerto.com/gta/gta-6-album-leak-reveals-34-song-tracklist-featuring-travis-scott-dua-lipa-morgan-wallen-and-more-3428203/"
-  - titolo: "Dork – GTA 6: The Album's 34-song tracklist has seemingly leaked"
-    url: "https://readdork.com/gaming/gta-6-albums-34-song-tracklist-seemingly"
-  - titolo: "Rockstar Games – Grand Theft Auto VI, pagina musica ufficiale"
-    url: "https://www.rockstargames.com/VI/es-ES/music"
+  - titolo: "NME – La tracklist non confermata e gli artisti citati, 15 novembre 2026"
+    url: "https://www.nme.com/news/music/lana-del-rey-dua-lipa-zara-larsson-gta-vi-the-album-full-tracklist-3975990"
+  - titolo: "Record Store Day – Edizione vinile: data commerciale indicata 20 novembre 2026"
+    url: "https://recordstoreday.com/UPC/075678576454"
 ---
 
-A cinque giorni dall'uscita di **GTA 6**, la tracklist completa di **Grand Theft Auto VI: The Album** è finita online. Secondo un leak circolato il 14 novembre, i 34 brani inediti includono Dua Lipa, Lana Del Rey, Jennie dei Blackpink e Zara Larsson, accanto ai nomi che **Rockstar Games** aveva già annunciato. La casa di GTA non ha confermato nulla.
+A quattro giorni dall'uscita di **Grand Theft Auto VI**, una presunta tracklist di **GTA VI: The Album** sta circolando online. Le immagini del retro di un vinile, rilanciate il 14 novembre da account dedicati a GTA e da siti come RockstarINTEL e Dexerto, elencano **34 canzoni** e artisti come **Dua Lipa, Lana Del Rey e Jennie**. È un'indiscrezione: **Rockstar Games non ha confermato la scaletta completa né tutti i nomi riportati**.
 
-## Da dove arriva la tracklist di GTA 6 The Album
+## Da dove arriva il presunto elenco dei 34 brani
 
-Il materiale viene da un video che sarebbe stato girato in un negozio di dischi: mostra fronte e retro del vinile, con l'elenco dei brani diviso su quattro facciate. Lo hanno rilanciato su X alcuni account dedicati a GTA 6, e da lì l'hanno ripreso Dexerto, Dork e diverse altre testate.
+Secondo [RockstarINTEL](https://rockstarintel.com/full-gta-vi-the-album-track-list-leaked/), il materiale sarebbe stato diffuso da un addetto a un negozio di dischi che ha filmato il retro di una copia in vinile. La lista è divisa in quattro facciate. Il filmato è stato ripreso online, ma l'origine del supporto e l'autenticità dell'intera stampa **non sono state confermate da Rockstar o Atlantic Records**.
 
-A rendere credibile il leak è un dettaglio: i singoli già pubblicati da Rockstar compaiono nelle stesse posizioni già note per quei brani, "RHYNO" di Travis Scott al numero 4, "That's It" di Yung Lean al 2, "Bright Lights, Big City" di Keith Richards al 32. Finché Rockstar non pubblica la scaletta, però, resta un'indiscrezione.
+Alcuni titoli della lista corrispondono a brani già resi pubblici da Rockstar, tra cui *That's It* di Yung Lean e *RHYNO* di Travis Scott. La coincidenza rende il documento plausibile, ma **non dimostra che tutti gli altri nomi siano corretti**.
 
-## Gli artisti dell'album di GTA 6 secondo il leak
+## Dua Lipa, Lana Del Rey e gli altri nomi citati nel leak
 
-Tra i 34 brani elencati ci sono, tra gli altri:
+Tra gli artisti che compaiono nel presunto elenco figurano:
 
-- Justice, presenti due volte: con Michael McDonald in apertura e con Tame Impala, SZA e King Gizzard & The Lizard Wizard in "Flower in a Hurricane"
-- Dua Lipa con "Go Easy" e Lana Del Rey con "Crazy for You"
-- Jennie con "Power Trip", Camila Cabello, Tove Lo, Zara Larsson e Rina Sawayama
-- Playboi Carti, Cardi B, Gunna, Young Thug, Don Toliver e Burna Boy
-- Morgan Wallen, Rauw Alejandro, Fuerza Regida, Kali Uchis e Arca
-- Keith Richards e, in chiusura, Stanley Clarke con Yussef Dayes e Robert Glasper
+- **Dua Lipa** con *Go Easy* e **Lana Del Rey** con *Crazy for You*;
+- **Jennie** con *Power Trip*, oltre a **Camila Cabello**, **Zara Larsson** e **Rina Sawayama**;
+- **Playboi Carti**, **Cardi B**, **Gunna**, **Young Thug** e **Burna Boy**;
+- **Justice**, che comparirebbero anche con Michael McDonald e in una collaborazione con Tame Impala, SZA e King Gizzard & The Lizard Wizard;
+- **Keith Richards** e un brano attribuito a Stanley Clarke, Yussef Dayes e Robert Glasper.
 
-Nello stesso disco ci sarebbero pop, rap, reggaeton, country e jazz fusion. Per un gioco ambientato in una Vice City ispirata a Miami, tutta quella musica latina accanto all'hip hop ci sta benissimo, e chi ha passato ore sulle radio di Vice City e San Andreas lo apprezzerà.
+Sono **attribuzioni presenti nella tracklist trapelata**, non conferme ufficiali della partecipazione di ciascun artista. Fra le diverse trascrizioni online compaiono anche piccole differenze nei titoli, un altro motivo per attendere l'elenco definitivo.
 
-## Quando esce GTA 6 The Album e in quali formati
+## Che cosa ha annunciato davvero Rockstar
 
-Rockstar ha annunciato l'album a settembre e sulla pagina musica del sito di GTA VI indica l'uscita al **19 novembre 2026**, lo stesso giorno del gioco. Sarà disponibile in digitale sulle piattaforme di streaming e in formato fisico, su vinile (edizione standard ed esclusiva) e CD.
+Nell'[annuncio del 17 settembre](https://www.rockstargames.com/newswire/article/7599a881942544/announcing-grand-theft-auto-vi-the-album-coming-november-19), Rockstar ha confermato che *Grand Theft Auto VI: The Album* contiene **34 brani originali**, prodotti in collaborazione con Atlantic Records. In quell'occasione aveva presentato sei singoli, tra cui quelli di Travis Scott, Yung Lean, Morgan Wallen, Rauw Alejandro e Keith Richards.
 
-L'album è separato dalle stazioni radio del gioco e dalla colonna sonora originale. Quest'ultima, firmata dai Justice, avrà un album a parte di 30 tracce in uscita l'11 dicembre, secondo Dexerto.
+La data **annunciata da Rockstar è il 19 novembre 2026**, insieme al gioco. Per le versioni fisiche, però, le schede di alcuni rivenditori indicano il **20 novembre**: per esempio quella del vinile su [Record Store Day](https://recordstoreday.com/UPC/075678576454). Questa differenza nelle disponibilità commerciali non dimostra, da sola, uno slittamento ufficiale della pubblicazione digitale.
 
-Per chi aspetta GTA 6 su PS5 o Xbox Series X|S è l'ennesimo leak di questo periodo, dopo quelli sulla mappa e sulle edizioni fisiche. Sul fronte download, abbiamo spiegato perché [la copia fisica di GTA 6 pesa 230 GB](/articoli/gta-6-copia-fisica-230-gb/).
+L'album è distinto dalle radio ascoltabili nel gioco e dalla colonna sonora strumentale. Quest'ultima, **Grand Theft Auto VI: Original Score**, è composta dai **Justice**: [Rockstar ha confermato direttamente](https://www.rockstargames.com/it/newswire/article/39ak8a12395591/grand-theft-auto-vi-original-score-by-justice) **30 tracce e l'uscita l'11 dicembre 2026**.
 
-## Domande frequenti
+## Quando conosceremo la tracklist definitiva?
 
-### Quanti brani ha GTA 6 The Album?
+L'elenco completo potrà essere considerato ufficiale quando sarà pubblicato da Rockstar, Atlantic Records o dai servizi musicali attraverso schede verificabili. Fino ad allora i nomi emersi dal vinile vanno trattati come **non confermati**, anche quando sono riportati da più testate.
 
-Rockstar ha confermato 34 brani originali inediti. La tracklist trapelata ne elenca 34, ma i titoli non sono ancora ufficiali.
-
-### Quando esce l'album di GTA 6?
-
-Il 19 novembre 2026, insieme al gioco, in digitale, su vinile e su CD.
-
-### Le canzoni dell'album saranno nelle radio di GTA 6?
-
-L'album è un progetto separato dalle radio del gioco: Rockstar non ha detto quali brani si sentiranno anche nelle stazioni di Vice City.
-
-<!-- NOTE PER LA REDAZIONE: tracklist NON confermata da Rockstar, è un leak da foto/video di un vinile; tenere "trapelata" nel titolo. Non trovate testate italiane che abbiano già ripreso il leak al momento della bozza. Il dato sull'album della colonna sonora dei Justice (30 tracce, 11 dicembre) viene solo da Dexerto: verificarlo su Rockstar Newswire prima di pubblicare. Immagine: copertina dell'album dalla pagina ufficiale rockstargames.com/VI/music; gli indirizzi _next/static possono cambiare se Rockstar aggiorna il sito, controllare che si veda. Non è stato possibile testare il caricamento delle immagini dalla sessione. -->
+Per altre informazioni sul lancio del gioco, abbiamo raccolto i dettagli delle [edizioni fisiche e dello spazio d'installazione di GTA 6](/articoli/gta-6-copia-fisica-230-gb/).
