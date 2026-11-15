@@ -1,7 +1,7 @@
 ---
 titolo: "Карта Леониды из GTA 6 утекла из Selfridges за неделю до релиза"
 titolo_seo: "Карта GTA 6 утекла: локации Леониды"
-sommario: "Фото сувенирной карты Леониды из коллекционного набора GTA 6 появились после выставки в Selfridges. Rockstar подтвердила постер, но не подлинность полной утечки."
+sommario: "Фото карты Леониды из коллекционного набора GTA 6 появились в Selfridges. Rockstar подтвердила постер, но не подлинность полного изображения."
 slug: "gta-6-map-leak-leonida-selfridges"
 alt_immagine: "Официальное изображение GTA 6 со страницы игры на сайте PlayStation"
 crediti_immagine: "Изображение: Rockstar Games / Sony Interactive Entertainment, официальная страница PlayStation"
