@@ -35,6 +35,15 @@ for (const lingua of Object.keys(LINGUE)) {
   assert.ok(home.includes("mondi-griglia"), `Categorie assenti: ${lingua}`);
   assert.ok(home.includes("classifica-nota"), `Spiegazione Hype mancante: ${lingua}`);
   assert.ok(home.includes('id="t-indie"'), `Scoperta indie non presente in homepage: ${lingua}`);
+  const indiePercorso = `${prefix}indie/index.html`;
+  assert.ok(fs.existsSync(`dist/${indiePercorso}`), `Hub indie mancante: ${lingua}`);
+  const indieHtml = fs.readFileSync(`dist/${indiePercorso}`, "utf8");
+  assert.ok(indieHtml.includes('class="intestazione-elenco"'), `Hub indie senza intestazione: ${lingua}`);
+  assert.ok(home.includes(`href="/${prefix}indie/"`), `Link homepage verso hub indie mancante: ${lingua}`);
+  for (const item of indice.filter(a => a.tag.some(x => String(x).toLowerCase() === 'indie'))) {
+    assert.ok(indieHtml.includes(`href="${item.url}"`), `Articolo indie assente nell'hub: ${lingua}: ${item.url}`);
+  }
+
   assert.ok(home.indexOf('id="t-ultime"') < home.indexOf('id="t-indie"'), `Scoperta indie prima delle notizie: ${lingua}`);
   assert.ok(home.includes("quiz-richiamo"), `Richiamo quiz assente: ${lingua}`);
   assert.ok(home.includes(`href="${prefix ? "/" + prefix : "/"}quiz/"`), `Link quiz assente: ${lingua}`);
