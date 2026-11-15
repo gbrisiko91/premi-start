@@ -1,6 +1,6 @@
 # Guida redazionale per le bozze di Soffia Cartuccia
 
-Questa guida è il "cervello" dell'algoritmo: ogni mattina l'attività pianificata la segue per trovare le notizie più virali e scrivere le bozze. Se vuoi cambiare il comportamento dell'algoritmo, cambia questo file (anche la copia salvata nel Progetto claude.ai "Sito blog gaming").
+Questa guida orienta l'attività pianificata che seleziona le notizie e prepara le **bozze**, non la pubblicazione automatica. Le informazioni devono essere verificate e approvate da Gianmarco Buono prima di impostare `bozza: false`. Se cambia la guida, occorre **aggiornare anche la copia** salvata nel Progetto claude.ai "Sito blog gaming": la sincronizzazione non è automatica.
 
 ## 1. Dove cercare
 
@@ -46,8 +46,8 @@ Ogni bozza deve essere ottimizzata prima ancora di essere scritta. Parti dalla *
 - Paragrafi brevi (2-4 frasi). Grassetto solo alla prima menzione dei 2-3 nomi protagonisti dell'articolo (di solito il gioco e lo studio o la console); mai su date, numeri, prezzi o nomi secondari.
 - Usa sinonimi e termini correlati (nomi delle console, dello studio, del genere) invece di ripetere la parola chiave: niente keyword stuffing.
 - Almeno un **link interno** a un altro articolo di Soffia Cartuccia pertinente (cerca in `content/articoli/`), con testo del link descrittivo, e un link alla **fonte ufficiale** quando esiste.
-- Chiudi con una sezione `## Domande frequenti` con 2-3 domande che le persone cercano davvero su Google (controlla le "Altre domande" nei risultati), ognuna come `### Domanda?` seguita da una risposta di 1-2 frasi.
-- Lunghezza: 450-800 parole. Meglio completo che lungo.
+- Le **FAQ sono facoltative**: aggiungile solo se rispondono a domande reali e aggiungono informazioni non già presenti nel testo. Non inventare domande solo per riempire lo schema.
+- **Lunghezza commisurata al contenuto**: una notizia breve può richiedere 200-350 parole, una notizia articolata 350-700, un approfondimento originale quanto necessario. Nessuna soglia fissa deve indurre a ripetizioni o aggiunte senza fonte.
 
 **Viralità sui social**
 - Il titolo deve funzionare anche da solo in un'anteprima su WhatsApp, Telegram o X.
@@ -57,7 +57,9 @@ Ogni bozza deve essere ottimizzata prima ancora di essere scritta. Parti dalla *
 
 - Lingua italiana, tono diretto e informato, da appassionati per appassionati.
 - **Scrivi sempre con parole tue.** Non copiare frasi dagli articoli delle fonti; al massimo una citazione breve (meno di 15 parole) tra virgolette, attribuita.
-- Ogni fatto importante deve essere confermato da almeno due fonti, oppure da una fonte ufficiale. Le indiscrezioni vanno dichiarate come tali nel titolo o nel primo paragrafo ("secondo un leak", "non ancora confermato").
+- Ogni fatto importante richiede **una fonte primaria verificabile** (annuncio, documento, intervista raccolta davvero, dichiarazione diretta dello sviluppatore) oppure **due fonti indipendenti** attendibili. Una notizia ripresa da più testate che citano la stessa fonte non è automaticamente confermata da più fonti indipendenti. Distingui fatti, dichiarazioni, opinioni e indiscrezioni.
+- Le indiscrezioni non vanno trasformate in annunci: scrivi "secondo...", attribuisci la fonte fin dal titolo o dal primo paragrafo e indica chiaramente l'assenza di conferma ufficiale.
+- Il materiale fornito direttamente da uno sviluppatore (come nel caso di *Pirates: Black Sails of the Sea*) è **materiale originale e fonte primaria**, con attribuzione precisa e consenso per le immagini. Non presentarlo come una "intervista" se non esistono domande e risposte effettivamente raccolte.
 - **Scrivi come una persona, non come un'IA** (regole della skill Humanizer, la stessa usata per revisionare gli articoli il 13 novembre 2026):
   - niente contrasti costruiti del tipo "non è solo X, ma Y", "non X, bensì Y", "per ora è un indizio, non un annuncio": dici direttamente cosa è successo;
   - niente frasi di chiusura che ripetono il punto o lo "commentano" ("Il messaggio è chiaro", "Una cosa però è chiara", "Resta da vedere", "Una frenata che pesa"), niente frasi a effetto di una riga;
@@ -69,11 +71,29 @@ Ogni bozza deve essere ottimizzata prima ancora di essere scritta. Parti dalla *
   - frasi di lunghezza varia, attacchi diversi, qualche reazione da appassionato quando ci sta (senza inventare opinioni sui fatti).
   - Prima di salvare, rileggi la bozza cercando proprio questi schemi e riscrivi le frasi che li contengono.
 - **Revisione finale con la skill Humanizer (obbligatoria).** Quando la bozza è completa, carica con lo strumento Skill la skill `humanizer` (nome completo `anthropic-skills:humanizer`) e passaci il testo di ogni bozza, e ogni didascalia Instagram, seguendo la sua modalità file. Cambia solo la prosa: intestazione YAML, link, tabelle di dati, numeri, date, nomi, citazioni e note per la redazione restano identici. Poi ricontrolla che non sia sparito o cambiato nessun fatto e che la revisione non abbia aggiunto dettagli senza fonte. Se la skill non è disponibile nella sessione, fai la stessa revisione a mano con le regole qui sopra e scrivilo nelle note per la redazione ("revisione humanizer manuale").
-- Struttura consigliata:
-  1. Primo paragrafo: la notizia in due o tre frasi (chi, cosa, quando).
-  2. Due o tre sezioni `##` con titoli cercabili: i dettagli verificati, perché se ne parla (reazioni, numeri, contesto), cosa aspettarsi (date, cosa resta da chiarire).
-  3. `## Domande frequenti`.
-  4. In fondo, un commento `<!-- NOTE PER LA REDAZIONE: ... -->` con dubbi da verificare, spunti per il pezzo finale e la verifica delle immagini.
+- **Struttura flessibile:** apri con il fatto principale verificato, usa sottotitoli solo quando servono e non imporre a tutti i pezzi lo stesso numero di sezioni.
+- Nelle **bozze** puoi usare commenti `<!-- NOTE PER LA REDAZIONE: ... -->` per registrare dubbi e richieste di verifica. **Prima di pubblicare**, risolvi tutti i dubbi, elimina le note dal file pubblico e registra eventuali questioni residue in un documento redazionale separato. Il controllo del repository blocca gli articoli pubblicati nuovi o modificati che contengono note interne.
+- Se una verifica non può essere completata, circoscrivi l'articolo ai soli fatti confermati oppure mantienilo in bozza. Non rimuovere un dubbio soltanto per far passare i test.
+
+## 4-bis. Tre formati editoriali, senza stampi uguali per tutti
+
+**A. Notizia breve e verificata**
+- Il fatto principale subito, fonte attribuita e conseguenza concreta. Se è una semplice dichiarazione, attribuirla al soggetto che l'ha fatta.
+- Bastano 200-350 parole quando la notizia non ne giustifica altre. Una o due sezioni solo se aggiungono contesto.
+- Per rumor o indiscrezioni: cosa è confermato, cosa non lo è, e perché l'affidabilità della fonte conta.
+
+**B. Scoperta indie e storia originale**
+- Parti da ciò che hai davvero visto, ricevuto o verificato: gioco, piattaforme, materiali, contatto con lo sviluppatore e link ufficiali.
+- Differenzia con cura le **dichiarazioni dello sviluppatore** dai **fatti osservati direttamente**; non inventare citazioni né prove sul campo.
+- Le parole "intervista" e "esclusiva" richiedono fatti che le giustifichino: risposte reali e, se si parla di esclusiva, controllo effettivo dell'esclusività.
+- Una buona scoperta indie risponde anche alla domanda pratica: dove si gioca e dove si scarica, se già disponibile.
+
+**C. Approfondimento retro o evergreen**
+- Scegli una domanda che rimanga utile nel tempo e confronta documentazione storica, fonti primarie ed eventuali testimonianze.
+- Racconta il contesto, le differenze tra versioni e le informazioni accertate; cita le incertezze invece di colmarle con supposizioni.
+- Aggiorna i dettagli se cambiano e inserisci `aggiornato: AAAA-MM-GG` solo per modifiche effettive.
+
+**Il punteggio Hype resta una valutazione editoriale**, non una prova che il fatto sia vero né un voto del pubblico. La scelta degli argomenti non deve premiare il rumor sensazionale a scapito di una buona storia originale.
 
 ## 5. Immagini
 
@@ -137,6 +157,8 @@ Prima di salvare esegui `npm run build`: segnala in giallo titoli o sommari trop
 
 ## 7. Dalla bozza all'articolo
 
-1. Leggi la bozza, verifica le note per la redazione e riscrivi dove serve con la tua voce.
-2. Controlla che l'immagine si veda (apri l'indirizzo nel browser) e che i crediti siano corretti.
-3. Cambia `bozza: true` in `bozza: false` e salva: dopo un minuto è online.
+1. Leggi la bozza, scegli il formato corretto, verifica date, numeri, piattaforme, citazioni e collegamenti, poi riscrivi con una voce riconoscibile.
+2. Controlla tutte le fonti indicate e i diritti/crediti delle immagini. Se la fonte è una comunicazione originale dello sviluppatore, attribuiscila senza inventare un link inesistente.
+3. Risolvi le **note per la redazione**: nessuna nota o marcatore di lavoro deve restare in un articolo pubblicato. Le questioni aperte vanno nel registro interno e il testo pubblico non deve affermare ciò che non è provato.
+4. Esegui `npm run audit:editoriale` per avere il riepilogo dei pezzi che richiedono un controllo. È un report indicativo, non un fact-check automatico.
+5. Esegui `npm test`; solo dopo il controllo finale umano di Gianmarco Buono imposta `bozza: false` e pubblica. **Il verde dei test non certifica da solo la verità delle notizie.**
