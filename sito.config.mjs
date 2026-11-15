@@ -7,6 +7,8 @@ export default {
   lingua: "it",
   // Per la pagina privacy: nome e cognome (o ragione sociale) di chi gestisce il sito, e un'email di contatto.
   titolare: "Gianmarco Buono",
+  // Firma degli articoli e autore nei dati strutturati. Distinto dall’editore (Soffia Cartuccia).
+  autore: "Gianmarco Buono",
   emailContatto: "redazione@soffiacartuccia.it",
   privacyAggiornata: "2026-11-15",
   // Newsletter "Il Soffio della settimana".
