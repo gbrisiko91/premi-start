@@ -89,3 +89,27 @@ main { min-height: 65vh; }
 @media (prefers-reduced-motion: reduce) { .mondo-link { transition: none; } }
 
 .checkpoint .blocco-heading .bottone-salva { align-self: center; flex: none; }
+
+/* Homepage 3.0: lettura e attualità hanno la priorità sulle rubriche */
+.homepage-ultime { margin: 1rem 0 3.25rem; scroll-margin-top: 7rem; }
+.homepage-ultime .blocco-heading { margin-bottom: 1.25rem; }
+.homepage-ultime .scheda { min-width: 0; }
+.homepage-archivio { margin: 3.5rem 0; }
+.homepage-ultime .titolo-scheda { text-wrap: pretty; }
+.homepage-ultime .scheda .sommario { -webkit-line-clamp: 2; }
+@media (max-width: 620px) {
+  .homepage-ultime { margin-top: .5rem; }
+  .homepage-ultime .griglia { gap: .9rem; }
+  .homepage-ultime .scheda { display: grid; grid-template-columns: minmax(0, 38%) minmax(0, 1fr); border-radius: 13px; }
+  .homepage-ultime .scheda .copertina { aspect-ratio: auto; min-height: 100%; }
+  .homepage-ultime .scheda .copertina img { height: 100%; object-fit: cover; }
+  .homepage-ultime .scheda .copertina-nome { font-size: 2.2rem; }
+  .homepage-ultime .scheda-corpo { padding: .85rem; }
+  .homepage-ultime .titolo-scheda { font-size: clamp(1rem, 4vw, 1.2rem); line-height: 1.2; }
+  .homepage-ultime .meta { font-size: .7rem; gap: .25rem; }
+  .homepage-ultime .sommario, .homepage-ultime .hype { display: none; }
+}
+@media (max-width: 380px) {
+  .homepage-ultime .scheda { grid-template-columns: minmax(0, 33%) minmax(0, 1fr); }
+  .homepage-ultime .scheda-corpo { padding: .7rem; }
+}
