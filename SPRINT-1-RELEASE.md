@@ -2,6 +2,13 @@
 
 Questa modifica NON deve essere unita a `main` finché non è stata convalidata in staging e la chiave Netlify non è stata configurata.
 
+## Verifica dopo la configurazione della variabile Netlify
+
+- È necessario un **nuovo deploy della Deploy Preview** dopo il salvataggio delle variabili: i deploy già esistenti non acquisiscono i nuovi valori.
+- Per il test usa esclusivamente `https://deploy-preview-4--cute-bublanina-801681.netlify.app/`, non il dominio principale.
+- La Deploy Preview usa un archivio isolato per i nuovi voti: i conteggi potrebbero partire da zero, ed è previsto. Non copiare i dati di prova in produzione.
+- Verifica in anteprima prima un Mi piace e la sua rimozione, poi un voto al sondaggio e il doppio invio. Non condividere le chiavi.
+
 ## Prima del merge
 
 1. Vai in Netlify → **Project configuration → Environment variables**.
