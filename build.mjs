@@ -99,6 +99,7 @@ function leggiOriginali() {
         categoria: config.categorie[d.categoria] ? d.categoria : "industria",
         tag: Array.isArray(d.tag) ? d.tag : [],
         viralita: Number(d.viralita) || 0,
+        newsletter: d.newsletter !== false, // newsletter: false = escluso dalla newsletter (es. anteprime superate)
         bozza: d.bozza === true,
         fonti: Array.isArray(d.fonti) ? d.fonti.filter((f) => f && f.url) : [],
         immagine: d.immagine || null,
@@ -865,7 +866,7 @@ fs.writeFileSync(
 // Articoli pubblicati per l'invio automatico della newsletter della domenica (netlify/functions/newsletter-domenica.mjs)
 fs.writeFileSync(
   path.join(ROOT, "netlify", "dati", "newsletter.mjs"),
-  `// File generato da build.mjs: non modificarlo a mano.\nexport default ${JSON.stringify(originali.filter((a) => !a.bozza).map((a) => ({ titolo: a.titolo, titolo_seo: a.titoloSeo, sommario: a.sommario, slug: a.slug, giorno: a.data.toISOString().slice(0, 10), viralita: a.viralita, bozza: false })))};\n`
+  `// File generato da build.mjs: non modificarlo a mano.\nexport default ${JSON.stringify(originali.filter((a) => !a.bozza).map((a) => ({ titolo: a.titolo, titolo_seo: a.titoloSeo, sommario: a.sommario, slug: a.slug, giorno: a.data.toISOString().slice(0, 10), viralita: a.viralita, newsletter: a.newsletter, bozza: false })))};\n`
 );
 scrivi("robots.txt", `User-agent: *\nAllow: /\nSitemap: ${urlAssoluto("/sitemap.xml")}\n`);
 

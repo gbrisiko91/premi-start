@@ -9,6 +9,7 @@ tag: [league-of-legends, worlds-2026, esports, gen-g, bilibili-gaming]
 viralita: 85
 aggiornato: 2026-11-15
 bozza: false
+newsletter: false
 immagine: ""
 immagine_riserva: ""
 alt_immagine: ""

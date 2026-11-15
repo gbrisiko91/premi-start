@@ -12,12 +12,13 @@ const breve = (a) => (a.titolo_seo || a.titolo).split(/[:,]/)[0].trim();
 
 export const oggiRoma = () => new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Rome" }).format(new Date());
 
-// articoli: [{ titolo, titolo_seo, sommario, slug, giorno: "AAAA-MM-GG", viralita, bozza }]
+// articoli: [{ titolo, titolo_seo, sommario, slug, giorno: "AAAA-MM-GG", viralita, bozza, newsletter }]
+// newsletter: false nell'intestazione esclude l'articolo (es. anteprime di eventi già passati)
 // fine: ultimo giorno della settimana ("AAAA-MM-GG", di solito la domenica)
 export function componi(articoli, fine = oggiRoma()) {
   const inizio = new Date(new Date(`${fine}T00:00:00Z`).getTime() - 6 * 864e5).toISOString().slice(0, 10);
   const notizie = articoli
-    .filter((a) => a.bozza === false && a.giorno >= inizio && a.giorno <= fine)
+    .filter((a) => a.bozza === false && a.newsletter !== false && a.giorno >= inizio && a.giorno <= fine)
     .sort((a, b) => (b.viralita || 0) - (a.viralita || 0))
     .slice(0, 5);
   if (!notizie.length) return null;
