@@ -55,6 +55,9 @@ for (const lingua of Object.keys(LINGUE)) {
   const paginaArticolo = fs.readFileSync(`dist${urlArticolo}index.html`, "utf8");
   assert.ok(paginaArticolo.includes('class="articolo-trasparenza"'), `Firma redazionale assente: ${lingua}`);
   assert.ok(paginaArticolo.includes('class="articolo-firma"'), `Attribuzione articolo assente: ${lingua}`);
+  assert.ok(paginaArticolo.includes('rel="author">Gianmarco Buono</a>'), `Firma Gianmarco Buono assente: ${lingua}`);
+  assert.ok(paginaArticolo.includes('"@type":"Person","name":"Gianmarco Buono"'), `Autore Person nel JSON-LD non corretto: ${lingua}`);
+  assert.ok(paginaArticolo.includes('"@type":"Organization","name":"Soffia Cartuccia"'), `Editore Organization nel JSON-LD mancante: ${lingua}`);
   assert.ok(paginaArticolo.includes('class="articolo-verifica"'), `Link metodo di verifica assente: ${lingua}`);
   assert.ok(paginaArticolo.includes('come-lavoriamo') || lingua !== 'it', `Metodo di verifica italiano non collegato`);
     assert.ok(Array.isArray(indice), `Indice invalido: ${lingua}`);
