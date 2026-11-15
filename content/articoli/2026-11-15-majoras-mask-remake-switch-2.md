@@ -7,7 +7,7 @@ data: 2026-11-15
 categoria: retro
 tag: [majoras-mask, the-legend-of-zelda, nintendo, nintendo-switch-2]
 viralita: 67
-bozza: true
+bozza: false
 immagine: "https://assets.nintendo.com/image/upload/q_auto/f_auto/c_fill,w_813/dpr_2.0/ncom/en_US/articles/2022/the-legend-of-zelda-majoras-mask-now-available-for-nintendo-switch/1280x720_Switch_News_FebUpdate_2022-MM_TRL_Thumb_720"
 immagine_riserva: "https://assets.nintendo.com/image/upload/v1643742733/ncom/global/social-share.jpg"
 alt_immagine: "Immagine ufficiale di The Legend of Zelda Majora's Mask per Nintendo Switch Online"
