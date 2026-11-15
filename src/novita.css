@@ -132,3 +132,19 @@ main { min-height: 65vh; }
   .indie-focus-copy { padding:1.2rem; }
   .indie-focus-copy h3 { font-size:1.6rem; }
 }
+
+/* Profilo autore — archivio editoriale verificabile */
+.profilo-autore { margin: 1.5rem auto 4rem; }
+.profilo-autore-testa { margin-bottom: 2.5rem; }
+.profilo-autore-testa .eyebrow { display: block; margin-bottom: .8rem; }
+.profilo-autore-testa .intro-link { display: inline-flex; margin-top: .5rem; }
+.profilo-autore > section > .titolo-sezione { margin: 0 0 1.25rem; }
+@media (max-width:620px) {
+  .profilo-autore { margin: .5rem auto 2.5rem; }
+  .profilo-autore-testa { margin-bottom: 1.6rem; }
+}
+
+.profilo-autore-biografia { max-width:68ch; margin:1.3rem 0 1.2rem; padding:1.4rem 1.6rem; border-left:3px solid var(--giallo); border-radius:0 14px 14px 0; background:var(--pannello); color:var(--testo); text-align:left; }
+.profilo-autore-biografia p { font-size:1rem; line-height:1.8; margin:0 0 .95rem; }
+.profilo-autore-biografia p:last-child { margin-bottom:0; }
+@media (max-width:620px) { .profilo-autore-biografia { padding:1.1rem; } .profilo-autore-biografia p { font-size:.96rem; line-height:1.7; } }
