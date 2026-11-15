@@ -45,9 +45,9 @@ export function inMarkdown(voci) {
   const critici=voci.filter(x=>x.notePendenti).length;
   const segnalati=voci.filter(x=>x.flag.length).length;
   const oggi=new Date().toISOString().slice(0,10);
-  const rows=voci.filter(x=>x.flag.length).map(a=>`| \${escapeTab(a.data)} | \${escapeTab(a.file)} | \${a.fonti} | \${escapeTab(a.flag.join("; "))} |`).join("\n");
-  return `# Report redazionale (generato il \${oggi})\n\n`+
-    `**Articoli pubblicati esaminati:** \${voci.length}. **Con segnalazioni:** \${segnalati}. **Con note da riesaminare:** \${critici}.\n\n`+
+  const rows=voci.filter(x=>x.flag.length).map(a=>`| ${escapeTab(a.data)} | ${escapeTab(a.file)} | ${a.fonti} | ${escapeTab(a.flag.join("; "))} |`).join("\n");
+  return `# Report redazionale (generato il ${oggi})\n\n`+
+    `**Articoli pubblicati esaminati:** ${voci.length}. **Con segnalazioni:** ${segnalati}. **Con note da riesaminare:** ${critici}.\n\n`+
     "Questo report fotografa il contenuto Markdown, non verifica l'esattezza dei fatti. Le fonti dirette possono essere valide anche senza URL; non cancellare note senza risolverle.\n\n"+
     "| Data | File | Fonti URL | Segnalazioni |\n|---|---|---:|---|\n"+
     (rows||"| — | Nessuna segnalazione | — | — |")+"\n";
