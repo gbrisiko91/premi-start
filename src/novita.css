@@ -113,3 +113,22 @@ main { min-height: 65vh; }
   .homepage-ultime .scheda { grid-template-columns: minmax(0, 33%) minmax(0, 1fr); }
   .homepage-ultime .scheda-corpo { padding: .7rem; }
 }
+
+/* Identità editoriale: una vera scoperta indie, non uno sponsor */
+.classifica-nota { color:var(--tenue); font-size:.78rem; line-height:1.5; margin:.2rem 0 .85rem; }
+.classifica-nota a { color:var(--giallo); text-decoration:underline; text-underline-offset:2px; }
+.indie-focus-card { display:grid; grid-template-columns:minmax(0,46%) minmax(0,1fr); overflow:hidden; border-radius:20px; background:linear-gradient(110deg,#28233f,var(--pannello)); border:1px solid rgba(177,156,255,.28); }
+.indie-focus-cover { position:relative; display:block; min-height:16rem; background:var(--pannello-2); overflow:hidden; }
+.indie-focus-cover img { display:block; width:100%; height:100%; object-fit:cover; }
+.indie-focus-fallback { display:flex; justify-content:center; align-items:center; height:100%; padding:2rem; text-align:center; color:var(--giallo); font:italic 900 2rem/1.1 var(--display); }
+.indie-focus-copy { padding:clamp(1.2rem,3vw,2.3rem); display:flex; flex-direction:column; align-items:flex-start; justify-content:center; }
+.indie-focus-copy h3 { margin:.6rem 0 1rem; font:italic 900 clamp(1.5rem,3vw,2.4rem)/1.1 var(--display); text-wrap:balance; }
+.indie-focus-copy h3 a { color:var(--testo); text-decoration:none; }
+.indie-focus-copy h3 a:hover { color:var(--giallo); }
+.indie-focus-copy > p:not(.meta) { color:var(--tenue); line-height:1.6; margin:0 0 1.3rem; }
+@media (max-width:620px) {
+  .indie-focus-card { grid-template-columns:minmax(0,1fr); }
+  .indie-focus-cover { aspect-ratio:16/9; min-height:0; }
+  .indie-focus-copy { padding:1.2rem; }
+  .indie-focus-copy h3 { font-size:1.6rem; }
+}
