@@ -16,6 +16,17 @@ for (const lingua of Object.keys(LINGUE)) {
   assert.ok(home.includes("data-checkpoint-toggle"), `Consenso Checkpoint assente: ${lingua}`);
   assert.ok(home.includes("data-ricerca-apri"), `Pulsante ricerca assente: ${lingua}`);
   assert.ok(home.includes("digest-griglia"), `Digest assente: ${lingua}`);
+
+  if (lingua === "it") {
+    const takeTwo = indice.find(a => a.id === "take-two-ia-cloni-giochi");
+    assert.ok(takeTwo, "Articolo Take-Two mancante dall'indice");
+    const paginaTakeTwo = fs.readFileSync(`dist${takeTwo.url}index.html`, "utf8");
+    assert.ok(paginaTakeTwo.includes("openai.com/policies/usage-policies/"), "Fonti ufficiali OpenAI assenti dall'articolo Take-Two");
+    assert.ok(paginaTakeTwo.includes("diritti di proprietà intellettuale altrui"), "Chiarimento su tutela copyright assente");
+    assert.ok(!paginaTakeTwo.includes("restrizioni simili"), "Rimane una generalizzazione sulle regole OpenAI");
+    assert.ok(!paginaTakeTwo.includes("NOTE PER LA REDAZIONE"), "Note interne visibili nell'articolo Take-Two");
+  }
+
   assert.ok(home.includes('class="flusso homepage-ultime"'), `Ultime notizie non evidenziate in homepage: ${lingua}`);
   assert.ok(home.indexOf('class="flusso homepage-ultime"') < home.indexOf('id="t-digest"'), `Ultime notizie troppo in basso: ${lingua}`);
   assert.ok(home.indexOf('class="flusso homepage-ultime"') < home.indexOf('id="t-uscite"'), `Calendario prima delle notizie: ${lingua}`);
