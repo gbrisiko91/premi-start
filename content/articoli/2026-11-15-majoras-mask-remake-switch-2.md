@@ -1,9 +1,10 @@
 ---
-titolo: "Majora's Mask remake su Switch 2? Due ex Nintendo lo danno per scontato"
-titolo_seo: "Majora's Mask remake: due ex Nintendo lo danno per certo"
-sommario: "Due ex marketing di Nintendo of America danno per scontato il remake di Majora's Mask su Switch 2 dopo Ocarina of Time. Un leaker però lo smentisce."
+titolo: "Majora's Mask su Switch 2: ex Nintendo ipotizzano il remake, insider frena"
+titolo_seo: "Majora's Mask Switch 2: il remake è un'ipotesi"
+sommario: "Kit Ellis e Krysta Yang ipotizzano un remake di Majora's Mask su Switch 2, ma un insider dice che non è in sviluppo. Nintendo non ha annunciato nulla."
 parola_chiave: "majora's mask remake"
 data: 2026-11-15
+aggiornato: 2026-11-15
 categoria: retro
 tag: [majoras-mask, the-legend-of-zelda, nintendo, nintendo-switch-2]
 viralita: 67
@@ -20,43 +21,43 @@ fonti:
   - titolo: "GameSource – Zelda Majora's Mask: secondo un leaker, un remake non è in lavorazione"
     url: "https://www.gamesource.it/notizie/zelda-majoras-mask-non-in-sviluppo/"
   - titolo: "Nintendo – The Legend of Zelda: Majora's Mask now available for Nintendo Switch"
-    url: "https://nintendo.com/whatsnew/the-legend-of-zelda-majoras-mask-now-available-for-nintendo-switch"
+    url: "https://www.nintendo.com/us/whatsnew/the-legend-of-zelda-majoras-mask-now-available-for-nintendo-switch/"
+  - titolo: "Nintendo – Vendite di Ocarina of Time Switch 2, 11 novembre 2026"
+    url: "https://www.nintendo.co.jp/corporate/release/en/2026/261111.html"
+  - titolo: "Nintendo – Iwata Asks, lo sviluppo e le date originali di Majora's Mask"
+    url: "https://www.nintendo.com/en-gb/Iwata-Asks/Iwata-Asks-The-Legend-of-Zelda-Majora-s-Mask-3D/The-Legend-of-Zelda-Majora-s-Mask-3D/1-Make-it-in-a-Year/1-Make-it-in-a-Year-959667.html"
+  - titolo: "Insider Gaming – L'indiscrezione di Shpeshal Nick, 11 novembre 2026"
+    url: "https://insider-gaming.com/the-legend-of-zelda-majoras-mask-remake-not-in-development-its-claimed/"
 ---
 
-Il remake di **The Legend of Zelda: Majora's Mask** su **Nintendo Switch 2** è "una conclusione scontata". Lo pensano Kit Ellis e Krysta Yang, ex responsabili marketing e PR di **Nintendo** of America, che ne hanno parlato nell'ultima puntata del loro podcast. Nintendo non ha annunciato niente, e pochi giorni fa un leaker ha detto il contrario.
+Kit Ellis e Krysta Yang, ex responsabili marketing e pubbliche relazioni di **Nintendo of America**, ritengono plausibile un remake di **The Legend of Zelda: Majora's Mask** per **Nintendo Switch 2** dopo il successo di *Ocarina of Time*. È una loro previsione, non un annuncio di Nintendo né un'informazione interna confermata. A complicare il quadro c'è l'indiscrezione opposta di Shpeshal Nick, secondo cui il progetto non sarebbe attualmente in produzione.
 
-## Perché il remake di Majora's Mask sarebbe già in lavorazione
+## Perché due ex Nintendo considerano probabile un remake di Majora's Mask
 
-Il ragionamento parte da come è nato l'originale. Majora's Mask uscì su Nintendo 64 nel 2000, meno di due anni dopo Ocarina of Time, e venne sviluppato in tempi brevi riciclando motore, modelli dei personaggi e sistemi di gioco del predecessore. Secondo Ellis, con il remake di Ocarina of Time uscito il 5 novembre su Switch 2 gran parte del lavoro di base è di nuovo pronto.
+Secondo il resoconto di GamesRadar+ della puntata del podcast *Kit & Krysta*, Yang ritiene che Nintendo possa aver già avviato i lavori, perché il remake di *Ocarina of Time* ha creato una base tecnica potenzialmente riutilizzabile. Ellis è più prudente: anche se un nuovo *Majora's Mask* arrivasse, non sarebbe necessariamente il prossimo capitolo della serie e potrebbe richiedere ancora tempo. Si tratta delle loro valutazioni personali; non hanno presentato documenti o annunci che dimostrino l'esistenza del progetto.
 
-Yang si spinge oltre: per lei Nintendo probabilmente ci sta già lavorando. "Non avrebbe senso non farlo", ha detto. Ellis è più cauto sui tempi: il remake potrebbe non essere il prossimo Zelda e arrivare anche tra uno o due anni.
+L'ipotesi nasce anche dalla storia dei due giochi originali. *Majora's Mask* uscì su Nintendo 64 nel 2000, meno di due anni dopo *Ocarina of Time*. Nella serie ufficiale di interviste *Iwata Asks*, Eiji Aonuma racconta che lo sviluppo poté riutilizzare modelli e risorse realizzati per il predecessore. Questo precedente spiega il ragionamento di Ellis e Yang, ma non prova che Nintendo stia ripetendo la stessa strategia su Switch 2.
 
-I due immaginano anche un ritmo di uscite annuale per la serie, che alterni Zelda 2D, Zelda 3D e remake. Anche qui Nintendo non ha detto nulla.
+## La versione contraria di Shpeshal Nick, ancora da confermare
 
-## La smentita del leaker Shpeshal Nick
+Il 10 novembre l'insider **Shpeshal Nick** ha scritto su X che, secondo una sua fonte, un remake di *Majora's Mask* non sarebbe in alcuna fase di produzione. Ha sostenuto che la fonte è la stessa che gli aveva fornito dettagli sul remake di *Ocarina of Time*. È un'affermazione dell'insider, **non una smentita ufficiale di Nintendo**, e non può essere verificata indipendentemente attraverso le informazioni pubbliche disponibili.
 
-L'11 novembre l'insider Shpeshal Nick, che aveva anticipato il remake di Ocarina of Time con largo anticipo, ha scritto su X che un remake di Majora's Mask non è in sviluppo. Le sue fonti, ha detto, sono le stesse che gli avevano passato le informazioni su Ocarina.
+La discussione era già alimentata da possibili riferimenti alle maschere nel nuovo *Ocarina of Time* e dalle ipotesi del creator Austin John Plays. Nick sostiene inoltre che un terzo amiibo previsto rappresenterebbe Ganondorf, non un personaggio di *Majora's Mask*. Anche questo dettaglio rimane un'indiscrezione: nessuno degli elementi citati conferma lo sviluppo o la cancellazione di un remake.
 
-Prima di lui, un video dello youtuber Austin John Plays aveva acceso le speranze. Nel remake di Ocarina c'è un dialogo che sembra riferirsi a una terza maschera sbloccabile con un amiibo non ancora annunciato, e il venditore di maschere di Hyrule ha un ruolo molto più grande proprio in Majora's Mask. Shpeshal Nick sostiene che il terzo amiibo sarà Ganondorf.
+## Che cosa è confermato: vendite, storia e versioni disponibili
 
-## Come giocare oggi a Majora's Mask
+Il remake di *The Legend of Zelda: Ocarina of Time* per Switch 2 è uscito il **5 novembre 2026**. Secondo il [comunicato ufficiale di Nintendo](https://www.nintendo.co.jp/corporate/release/en/2026/261111.html) dell'11 novembre, ha venduto **oltre 5,2 milioni di copie nel mondo nei primi quattro giorni**, contando copie fisiche e digitali. È un dato reale, ma non costituisce una conferma di un eventuale seguito.
 
-Il capitolo più cupo della serie, con la luna che cade su Termina in tre giorni, oggi si gioca in due modi ufficiali. C'è la versione Nintendo 64 nel catalogo di Nintendo Switch Online + Pacchetto aggiuntivo, arrivata il 25 febbraio 2022, e c'è Majora's Mask 3D, il remake per Nintendo 3DS del 2015.
+Per quanto riguarda *Majora's Mask*, Nintendo conferma nelle interviste *Iwata Asks* che l'originale uscì in **Giappone nell'aprile 2000** e in **Europa nel novembre 2000**. Oggi la versione Nintendo 64 è inclusa nel catalogo **Nintendo Switch Online + Pacchetto aggiuntivo**, dove è disponibile dal **25 febbraio 2022**; esiste inoltre *Majora's Mask 3D*, remake uscito per Nintendo 3DS nel 2015.
 
-Su 3DS era già successo: Ocarina of Time 3D (2011) fu seguito da Majora's Mask 3D. E il nuovo Ocarina va forte, con oltre 5 milioni di copie vendute nei primi quattro giorni, numeri di cui abbiamo parlato nel pezzo sulle [vendite del remake di Zelda: Ocarina of Time](/articoli/zelda-ocarina-of-time-vendite/).
+Abbiamo già approfondito i risultati commerciali del nuovo *Ocarina of Time* nell'articolo sulle [vendite del remake di Zelda: Ocarina of Time](/articoli/zelda-ocarina-of-time-vendite/).
 
 ## Domande frequenti
 
-### Nintendo ha annunciato il remake di Majora's Mask?
+### Nintendo ha annunciato un remake di Majora's Mask per Switch 2?
 
-No. Per ora ci sono solo le opinioni di due ex dipendenti di Nintendo of America e la smentita di un leaker.
+No. Al 15 novembre 2026 ci sono le opinioni di Ellis e Yang e un'indiscrezione contraria di Shpeshal Nick, ma nessun annuncio ufficiale di Nintendo.
 
-### Su cosa si può giocare Majora's Mask oggi?
+### Dove si può giocare oggi a Majora's Mask?
 
-Su Switch e Switch 2 con Nintendo Switch Online + Pacchetto aggiuntivo, oppure su Nintendo 3DS con Majora's Mask 3D.
-
-### Quando è uscito Majora's Mask?
-
-Su Nintendo 64 nel 2000, in Giappone ad aprile e in Europa a novembre.
-
-<!-- NOTE PER LA REDAZIONE: notizia di pura speculazione, nessuna conferma Nintendo; il titolo lo dice con il punto di domanda. Citazione di Krysta Yang tradotta dall'inglese ("It just doesn't make sense for them not to do it"). Le date di uscita dell'originale N64 (2000, Giappone aprile, Europa novembre) sono note ma non vengono dalle fonti lette oggi: verificare su Wikipedia. "Oltre 5 milioni in quattro giorni" da GamesRadar+ e TheGamer (altre fonti dicono 5,2 milioni). Nome del leaker scritto come da GameSource: Shpeshal Nick. Immagine: thumbnail ufficiale del post Nintendo del 25/02/2022 su Majora's Mask per Switch Online; riserva generica di Nintendo. Controllare che si veda: dalla sessione non è stato possibile testarla. -->
+L'originale Nintendo 64 è nel catalogo Nintendo Switch Online + Pacchetto aggiuntivo. Esiste anche la versione *Majora's Mask 3D* per Nintendo 3DS.

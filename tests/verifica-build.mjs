@@ -13,6 +13,17 @@ for (const lingua of Object.keys(LINGUE)) {
   const indice = JSON.parse(fs.readFileSync(`dist/indice-${lingua}.json`, "utf8"));
   assert.ok(home.includes("data-ricerca-dialog"), `Ricerca assente: ${lingua}`);
   assert.ok(home.includes("data-checkpoint"), `Checkpoint assente: ${lingua}`);
+
+  if (lingua === "it") {
+    const majora = indice.find(a => a.id === "majoras-mask-remake-switch-2");
+    assert.ok(majora, "Articolo Majora's Mask mancante dall'indice");
+    const paginaMajora = fs.readFileSync(`dist${majora.url}index.html`, "utf8");
+    assert.ok(paginaMajora.includes("oltre 5,2 milioni"), "Vendite Nintendo non aggiornate nell'articolo Majora's Mask");
+    assert.ok(paginaMajora.includes("nintendo.co.jp/corporate/release/en/2026/261111.html"), "Fonte primaria Nintendo assente");
+    assert.ok(paginaMajora.includes("non una smentita ufficiale di Nintendo"), "Rumor non distinto dalla smentita ufficiale");
+    assert.ok(!paginaMajora.includes("NOTE PER LA REDAZIONE"), "Note interne visibili nell'articolo Majora's Mask");
+  }
+
   assert.ok(home.includes("data-checkpoint-toggle"), `Consenso Checkpoint assente: ${lingua}`);
   assert.ok(home.includes("data-ricerca-apri"), `Pulsante ricerca assente: ${lingua}`);
   assert.ok(home.includes("digest-griglia"), `Digest assente: ${lingua}`);
