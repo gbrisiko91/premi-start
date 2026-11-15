@@ -8,15 +8,23 @@ Responsabile della revisione e delle firme: **Gianmarco Buono**. Editore: **Soff
 - Nel repository risultano 71 file Markdown in `content/articoli/`. La quantità, da sola, non prova la qualità o la crescita del pubblico.
 - La `GUIDA-REDAZIONE.md` suggerisce 450-800 parole e le FAQ per ogni articolo: utile come schema di partenza, ma rischia di rendere tutte le notizie troppo simili.
 - Diverse bozze pubblicate includono ancora commenti `NOTE PER LA REDAZIONE` su dettagli da verificare. Il build li esclude dall'HTML pubblico, ma questo non equivale alla verifica dei fatti.
-- `2026-11-05-pirates-black-sails-of-the-sea-gioco-offline.md` chiede conferma di piattaforma, disponibilità, prezzo, portata dell'offline e dettagli del gameplay. L'articolo è pubblicato: **priorità alta**.
+- `2026-11-05-pirates-black-sails-of-the-sea-gioco-offline.md`: **fonte primaria già disponibile**. Gianmarco Buono ha confermato di conoscere personalmente lo sviluppatore Giancarlo Mennillo e di aver ricevuto direttamente da lui informazioni e materiale originale. Questo è un punto di forza editoriale, non una fonte assente. La nota interna contiene tuttavia una lista di dettagli da confrontare con quanto già comunicato (piattaforme/store, eventuale prezzo, data d'uscita, funzioni che richiedono Internet, comandi, soglia del meteo). **Non richiedere di nuovo informazioni già acquisite**; distinguere i dati presenti nei materiali da quelli non ancora specificati.
 - `2026-11-15-majoras-mask-remake-switch-2.md` riporta una speculazione e suggerisce una verifica di dati storici. Va mantenuta ben distinta da un annuncio ufficiale.
 - `2026-11-15-take-two-ia-cloni-giochi.md` segnala in nota una fonte originale non consultata e una FAQ da verificare. La verifica deve precedere qualsiasi ulteriore rilancio.
 
 Queste sono **segnalazioni interne da risolvere**, non dimostrazioni che le informazioni siano necessariamente false. Controllare sempre il testo effettivamente visibile online, non soltanto le note.
 
+## Chiarimento sulla fonte diretta: Pirates
+
+La redazione conferma che **le informazioni e gli screenshot/video pubblicati provengono direttamente dallo sviluppatore**, amico personale del titolare. Non si deve più descrivere questo articolo come privo di fonti solo perché il gioco non è indicizzato sul web. Una testimonianza di prima mano e materiali originali possono essere fonti primarie, con attribuzione trasparente.
+
+Azioni: (1) confrontare l'articolo con il materiale e i messaggi originali già ricevuti; (2) valutare una breve indicazione editoriale del tipo «Informazioni e materiali di gioco forniti direttamente dallo sviluppatore Giancarlo Mennillo», purché corrisponda a quanto effettivamente ricevuto e alla sua autorizzazione all'uso; (3) **solo** se restano dettagli non chiariti, chiedere un breve riscontro mirato su store/piattaforme, condizioni offline, prezzo o uscita. Il fatto che sia un amico non è di per sé una garanzia di accuratezza su aspetti tecnici e commerciali: l'attribuzione deve restare precisa.
+
+**Non presentare il contenuto come un'intervista** senza una sessione di domande e risposte realmente avvenuta. Non attribuire citazioni tra virgolette non raccolte. Non esporre pubblicamente il rapporto personale di amicizia senza una ragione editoriale e consenso.
+
 ## Priorità immediata: controllo qualità degli articoli già pubblicati
 
-1. Partire dagli articoli indicati sopra. Aprire la fonte primaria o contattare il soggetto interessato, quando possibile.
+1. Partire dagli articoli indicati sopra. Per Pirates la fonte primaria è già disponibile: controllare prima comunicazioni e materiali dello sviluppatore, contattandolo soltanto per i dettagli davvero mancanti. Per gli altri articoli cercare conferme nelle fonti originali.
 2. Per ogni affermazione dubbia: registrare la prova, correggere il testo oppure rimuovere il dettaglio non confermato.
 3. Se cambia sostanzialmente il significato dell'articolo, segnalarlo chiaramente ai lettori secondo la pagina «Come lavoriamo»; indicare la data reale della correzione.
 4. Non cancellare le note di controllo per far diventare verde un test: chiudere ogni punto soltanto dopo la verifica.
@@ -52,7 +60,7 @@ Queste sono **segnalazioni interne da risolvere**, non dimostrazioni che le info
 |---|---|---|
 | Settimana 1 | Verifica delle note aperte negli articoli prioritari; audit degli ultimi 10 pubblicati | Registro delle verifiche, correzioni motivate |
 | Settimana 2 | Riscrivere la guida operativa con tre formati e FAQ facoltative; preparare una notizia breve ben documentata | 1 pezzo verificato e un modello riutilizzabile |
-| Settimana 3 | Approfondimento su uno sviluppatore indie, iniziando dal dossier Pirates | Intervista **solo se** ottenute risposte reali; altrimenti aggiornamento documentato |
+| Settimana 3 | Valorizzare il dossier originale Pirates, già basato su materiale dello sviluppatore | Aggiornamento documentato e attribuito; intervista **solo se** svolta realmente |
 | Settimana 4 | Pubblicare un approfondimento retro o evergreen verificato; misurare l'utilità dei nuovi formati | 1 approfondimento e valutazione dei risultati |
 
 Il calendario è una proposta, non un'automazione né una promessa di pubblicazione.
