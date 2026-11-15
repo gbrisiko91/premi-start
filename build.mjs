@@ -417,6 +417,10 @@ function home(l, articoli) {
   const tendenza = inTendenza(articoli);
   const ultime = resto.slice(0, 6);
   const mostrati = new Set([apertura.id, ...ultime.map(a=>a.id)]);
+  // La scoperta indie è un articolo autentico già pubblicato, scelto tra
+  // i contenuti marcati editorialmente con il tag 'indie'.
+  const scopertaIndie = resto.find(a => a.tag.includes("indie") && !mostrati.has(a.id));
+  if (scopertaIndie) mostrati.add(scopertaIndie.id);
   const digest = resto.filter(a=>!mostrati.has(a.id)).slice(0,3);
   for (const a of digest) mostrati.add(a.id);
   const retro = resto.filter(a=>a.categoria === "retro" && !mostrati.has(a.id)).slice(0,3);
@@ -434,16 +438,18 @@ function home(l, articoli) {
     <div class="eroe-azioni"><a class="tasto-start" href="${apertura.url}">${esc(t.leggi)}</a>${hype(l, apertura.viralita)}</div>
   </div>
   <aside class="classifica" aria-labelledby="t-classifica">
-    <h2 id="t-classifica">${esc(t.classifica)}</h2>
+    <h2 id="t-classifica">${esc(u.editorialHype)}</h2>
+    <p class="classifica-nota">${esc(u.editorialHypeHelp)} <a href="${urlPaginaFissa(l, "come-lavoriamo")}">${esc(u.viewAll)} ↗</a></p>
     <ol>${tendenza.map((a) => `<li data-colore="${colore(a.categoria)}"><a href="${a.url}">${esc(a.titolo)}</a><span class="punti">${a.viralita || "–"}</span></li>`).join("")}</ol>
   </aside>
 </section>
 ${ultime.length ? `<section class="flusso homepage-ultime" aria-labelledby="t-ultime"><div class="blocco-heading"><div><span class="eyebrow">01 / ${esc(config.nome)}</span><h2 id="t-ultime" class="titolo-sezione">${esc(t.ultime)}</h2></div><a class="intro-link" href="${P.archivio(l)}">${esc(u.viewAll)} ↗</a></div><div class="griglia">${ultime.map(scheda).join("")}</div></section>` : ""}
 ${digest.length ? `<section class="blocco-novita" aria-labelledby="t-digest"><div class="blocco-heading"><div><span class="eyebrow">02 / ${esc(u.digest)}</span><h2 id="t-digest" class="titolo-sezione">${esc(u.digest)}</h2><p>${esc(u.digestLead)}</p></div></div><div class="digest-griglia">${digest.map((a,i)=>`<article class="digest-voce"><span class="digest-numero" aria-hidden="true">0${i+1}</span><h3><a href="${a.url}">${esc(a.titolo)}</a></h3><p>${esc(a.sommario)}</p></article>`).join("")}</div></section>` : ""}
-${retro.length ? `<section class="blocco-novita" aria-labelledby="t-retro"><div class="blocco-heading"><div><span class="eyebrow">03 / Retro</span><h2 id="t-retro" class="titolo-sezione">${esc(u.retro)}</h2><p>${esc(u.retroLead)}</p></div><a class="intro-link" href="${P.categoria(l,"retro")}">${esc(u.viewAll)} ↗</a></div><div class="griglia">${retro.map(scheda).join("")}</div></section>` : ""}
+${scopertaIndie ? `<section class="blocco-novita indie-focus" aria-labelledby="t-indie"><div class="blocco-heading"><div><span class="eyebrow">03 / Indie</span><h2 id="t-indie" class="titolo-sezione">${esc(u.indieTitle)}</h2><p>${esc(u.indieLead)}</p></div></div><article class="indie-focus-card" data-colore="${colore(scopertaIndie.categoria)}"><a class="indie-focus-cover" href="${scopertaIndie.url}" aria-label="${esc(scopertaIndie.titolo)}">${scopertaIndie.immagine ? img({src:scopertaIndie.immagine,riserva:scopertaIndie.immagineRiserva,alt:scopertaIndie.altImmagine}) : `<span class="indie-focus-fallback">${esc(u.indieTitle)}</span>`}</a><div class="indie-focus-copy"><p class="meta">${etichettaCat(l,scopertaIndie.categoria)}<time datetime="${scopertaIndie.data.toISOString()}">${data(l,scopertaIndie.data,"breve")}</time></p><h3><a href="${scopertaIndie.url}">${esc(scopertaIndie.titolo)}</a></h3><p>${esc(scopertaIndie.sommario)}</p><a class="intro-link" href="${scopertaIndie.url}">${esc(t.leggi)} ↗</a></div></article></section>` : ""}
+${retro.length ? `<section class="blocco-novita" aria-labelledby="t-retro"><div class="blocco-heading"><div><span class="eyebrow">04 / Retro</span><h2 id="t-retro" class="titolo-sezione">${esc(u.retro)}</h2><p>${esc(u.retroLead)}</p></div><a class="intro-link" href="${P.categoria(l,"retro")}">${esc(u.viewAll)} ↗</a></div><div class="griglia">${retro.map(scheda).join("")}</div></section>` : ""}
 <section class="blocco-novita checkpoint" id="checkpoint" data-checkpoint data-prima="${esc(u.checkpointFirst)}" data-nuovi="${esc(u.checkpointFresh)}" data-aggiornato="${esc(u.checkpointNoNew)}" data-vuoto="${esc(u.checkpointNoNew)}" data-nessun-salvato="${esc(u.savedEmpty)}" data-errore="${esc(u.searchError)}" data-attiva="${esc(u.checkpointOn)}" data-disattiva="${esc(u.checkpointOff)}" data-spento="${esc(u.checkpointOffText)}" aria-labelledby="t-checkpoint"><div class="blocco-heading"><div><span class="eyebrow">04 / Checkpoint</span><h2 id="t-checkpoint" class="titolo-sezione">${esc(u.checkpoint)}</h2><p>${esc(u.checkpointLead)}</p></div><button type="button" class="bottone-salva" data-checkpoint-toggle aria-pressed="false">${esc(u.checkpointOn)}</button></div><div class="checkpoint-layout"><div class="checkpoint-gruppo"><h3>${esc(u.checkpointFresh)}</h3><p class="checkpoint-stato" data-checkpoint-stato aria-live="polite"></p><ul class="checkpoint-lista" data-checkpoint-news></ul></div><div class="checkpoint-gruppo"><h3>${esc(u.checkpointSaved)}</h3><ul class="checkpoint-lista" data-checkpoint-salvati></ul></div></div></section>
-<section class="blocco-novita" aria-labelledby="t-mondi"><div class="blocco-heading"><div><span class="eyebrow">05 / ${esc(u.world)}</span><h2 id="t-mondi" class="titolo-sezione">${esc(u.world)}</h2><p>${esc(u.worldLead)}</p></div></div><div class="mondi-griglia">${mondi}</div></section>
-<section class="blocco-novita quiz-richiamo" aria-labelledby="t-quiz"><div><span class="eyebrow">06 / Daily Quest</span><h2 id="t-quiz" class="titolo-sezione">${esc(QUIZ[l].nome)}</h2><p>${esc(QUIZ[l].intro)}</p></div><a class="tasto-start" href="${P.quiz(l)}">${esc(QUIZ[l].data)}</a></section>
+<section class="blocco-novita" aria-labelledby="t-mondi"><div class="blocco-heading"><div><span class="eyebrow">06 / ${esc(u.world)}</span><h2 id="t-mondi" class="titolo-sezione">${esc(u.world)}</h2><p>${esc(u.worldLead)}</p></div></div><div class="mondi-griglia">${mondi}</div></section>
+<section class="blocco-novita quiz-richiamo" aria-labelledby="t-quiz"><div><span class="eyebrow">07 / Daily Quest</span><h2 id="t-quiz" class="titolo-sezione">${esc(QUIZ[l].nome)}</h2><p>${esc(QUIZ[l].intro)}</p></div><a class="tasto-start" href="${P.quiz(l)}">${esc(QUIZ[l].data)}</a></section>
 ${bloccoUscite(l, articoli)}
 ${bloccoSondaggio(l)}
 ${boxNewsletter(l)}
