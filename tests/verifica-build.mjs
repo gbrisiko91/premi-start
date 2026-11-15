@@ -38,6 +38,20 @@ for (const lingua of Object.keys(LINGUE)) {
   assert.ok(home.includes("data-checkpoint"), `Checkpoint assente: ${lingua}`);
 
   if (lingua === "it") {
+    const popup = indice.find(a => a.id === "nintendo-pop-up-store-milano");
+    assert.ok(popup, "Pagina Nintendo Pop-Up Store Milano assente");
+    const paginaPopup = fs.readFileSync(`dist${popup.url}index.html`, "utf8");
+    assert.ok(paginaPopup.includes("experience.nintendo.com/#/events/10859"),
+      "Link diretto alle prenotazioni Nintendo assente");
+    assert.ok(paginaPopup.includes("Nintendo-POP-UP-STORE-in-MILAN-3223712.html"),
+      "Fonte Nintendo Italia sulle regole di accesso assente");
+    assert.ok(paginaPopup.includes("almeno 18 anni"),
+      "Requisito di età per la prenotazione non presente");
+    assert.ok(!paginaPopup.includes("NOTE PER LA REDAZIONE"),
+      "Note redazionali esposte sulla pagina Nintendo");
+  }
+
+  if (lingua === "it") {
     const album = indice.find(a => a.id === "gta-6-album-tracklist-leak");
     assert.ok(album, "Articolo GTA VI The Album assente dall'indice");
     const paginaAlbum = fs.readFileSync(`dist${album.url}index.html`, "utf8");

@@ -13,6 +13,8 @@ immagine_riserva: ""
 alt_immagine: ""
 crediti_immagine: ""
 fonti:
+  - titolo: "Nintendo Italia – POP-UP STORE in MILAN: date, ingresso e regolamento ufficiale"
+    url: "https://www.nintendo.com/it-it/Notizie/2026/Ottobre-/Nintendo-POP-UP-STORE-in-MILAN-3223712.html"
   - titolo: "Nintendo Experience – Prenotazioni Nintendo POP-UP STORE Milano"
     url: "https://experience.nintendo.com/#/events/10859"
   - titolo: "Multiplayer.it – Nintendo annuncia il suo nuovo pop-up store a Milano"
@@ -39,13 +41,14 @@ Le date coprono tutta la corsa ai regali di Natale, Black Friday compreso.
 
 ## Come prenotare l'ingresso al Nintendo Pop-Up Store
 
-Nel primo weekend, dal 20 al 22 novembre, entra solo chi ha prenotato. I pass si richiedono dal 9 novembre sul sito **Nintendo Experience** e serve un account Nintendo. Le regole principali sono queste:
+Nel primo weekend, dal 20 al 22 novembre, entra solo chi ha prenotato. Le prenotazioni sono state aperte il 9 novembre alle 09:00. **Per richiedere il biglietto, visita [Nintendo Experience – POP-UP STORE Milano](https://experience.nintendo.com/#/events/10859)**. Le regole ufficiali sono riportate anche nel [comunicato Nintendo Italia](https://www.nintendo.com/it-it/Notizie/2026/Ottobre-/Nintendo-POP-UP-STORE-in-MILAN-3223712.html):
 
-- i bambini fino a 6 anni non devono prenotare;
+- la persona che effettua la prenotazione deve avere **almeno 18 anni** e un account Nintendo;
+- i bambini fino a 6 anni compiuti non necessitano di un biglietto personale, ma devono essere accompagnati da un adulto con prenotazione;
 - nei gruppi di due o più persone, compresi i ragazzi tra i 7 e i 17 anni, ognuno deve avere un account Nintendo collegato allo stesso gruppo famiglia;
 - dal 23 novembre l'ingresso è libero, senza prenotazione, fino al raggiungimento della capienza massima.
 
-Visto l'entusiasmo che accompagna ogni apertura di questo tipo all'estero, conviene muoversi in fretta: i posti del primo weekend saranno i primi ad andare esauriti.
+**Non è possibile confermare qui la disponibilità dei biglietti in tempo reale**: controlla il portale Nintendo Experience per gli eventuali posti ancora prenotabili. Dal **23 novembre** fino al 20 dicembre l'accesso non richiede prenotazione, nel rispetto della capienza del negozio.
 
 ## Cosa si trova nel Nintendo Pop-Up Store
 
@@ -61,10 +64,8 @@ Dal 20 novembre al 20 dicembre 2026, tutti i giorni dalle 10:00 alle 20:00, in p
 
 ### Serve la prenotazione per entrare?
 
-Solo dal 20 al 22 novembre: le prenotazioni aprono il 9 novembre su Nintendo Experience e serve un account Nintendo. Dal 23 novembre l'ingresso è libero, capienza permettendo.
+Solo dal 20 al 22 novembre: le prenotazioni sono aperte dal 9 novembre tramite [Nintendo Experience](https://experience.nintendo.com/#/events/10859). Serve un account Nintendo e chi prenota deve avere almeno 18 anni. Dal 23 novembre l'ingresso non richiede biglietto, capienza permettendo.
 
 ### Si possono comprare console e giochi nel pop-up store?
 
 Il negozio è dedicato soprattutto al merchandising ufficiale. Alcune testate parlano anche di console e giochi, quindi prima della visita conviene controllare sul sito ufficiale.
-
-<!-- NOTE PER LA REDAZIONE: non ho trovato il comunicato ufficiale di Nintendo Italia su nintendo.com/it-it; l'unica fonte ufficiale è la pagina di prenotazione Nintendo Experience (che non ho potuto leggere perché è un'app). I dettagli (date, orari, indirizzo, regole delle prenotazioni) coincidono su Multiplayer.it, Everyeye, Adnkronos e altre testate. Da verificare: se nel negozio si vendono anche console e giochi (Multiplayer.it lo cita, Everyeye no), e dove si è tenuto il primo pop-up italiano (Lucca Comics?). Immagine: nessuna fonte ufficiale trovata e Wikimedia Commons non era raggiungibile; se Nintendo Italia pubblica una foto o un visual nel comunicato, usare quello. -->
