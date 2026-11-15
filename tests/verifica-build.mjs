@@ -59,6 +59,9 @@ for (const lingua of Object.keys(LINGUE)) {
   assert.ok(paginaArticolo.includes('"@type":"Person","name":"Gianmarco Buono"'), `Autore Person nel JSON-LD non corretto: ${lingua}`);
   assert.ok(paginaArticolo.includes('"@type":"Organization","name":"Soffia Cartuccia"'), `Editore Organization nel JSON-LD mancante: ${lingua}`);
   assert.ok(paginaArticolo.includes('class="articolo-verifica"'), `Link metodo di verifica assente: ${lingua}`);
+  const intestazioneArticolo = paginaArticolo.slice(paginaArticolo.indexOf('<header class="eroe-articolo">'), paginaArticolo.indexOf('</header>', paginaArticolo.indexOf('<header class="eroe-articolo">')));
+  assert.ok(!intestazioneArticolo.includes('class="articolo-verifica"'), `Il link del metodo di verifica non deve comparire vicino alla firma: ${lingua}`);
+  assert.ok(paginaArticolo.includes('class="metodo-fonti"'), `Link di verifica non spostato in fondo all'articolo: ${lingua}`);
   assert.ok(paginaArticolo.includes('come-lavoriamo') || lingua !== 'it', `Metodo di verifica italiano non collegato`);
     assert.ok(Array.isArray(indice), `Indice invalido: ${lingua}`);
   const uscite = fs.readFileSync(`dist/${prefix}${R[lingua].seg.uscite}/index.html`, "utf8");
