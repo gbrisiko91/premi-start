@@ -1,7 +1,7 @@
 ---
 titolo: "GTA 6: Leonida map leaks from Selfridges a week before launch"
 titolo_seo: "GTA 6 map leak: the Leonida locations revealed"
-sommario: "Photos of a Leonida poster from GTA 6's Collector's Box surfaced at Selfridges. Rockstar confirms the souvenir poster, not the full leaked image shared online."
+sommario: "Photos of a Leonida poster from GTA 6's Collector's Box appeared at Selfridges. Rockstar confirms the poster, not the full leaked image shared online."
 slug: "gta-6-map-leak-leonida-selfridges"
 alt_immagine: "Official GTA 6 image from the game's PlayStation page"
 crediti_immagine: "Image: Rockstar Games / Sony Interactive Entertainment, official PlayStation page"
