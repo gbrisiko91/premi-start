@@ -9,6 +9,15 @@ crediti_immagine: "Imágenes: Giancarlo Mennillo, material original del juego"
 
 **Pirates: Black Sails of the Sea** es un arcade de batallas navales con un punto fuerte muy claro: se juega **sin conexión**, sin necesidad de internet. Al timón está **Giancarlo Mennillo**, un chico de la provincia de **Salerno** que lo ha creado él solo, y nosotros lo hemos visto en acción.
 
+## Dónde descargar Pirates: Black Sails of the Sea
+
+El juego ya está disponible para descargar gratis en Android, iPhone y iPad:
+
+- [Google Play para Android](https://play.google.com/store/apps/details?id=com.pirates.bsos.game)
+- [App Store para iPhone y iPad](https://apps.apple.com/it/app/pirates-black-sails-of-the-sea/id6745219811)
+
+El desarrollador Giancarlo Mennillo proporcionó directamente a Soffia Cartuccia la información, las capturas de pantalla y los vídeos utilizados en este artículo.
+
 <figure class="immagine-testo"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Partida de Pirates: Black Sails of the Sea entre niebla y lluvia" style="display:block;width:100%;max-width:22rem;margin:0 auto;border-radius:14px"></video><figcaption>Una partida entre niebla y lluvia. Vídeo: Giancarlo Mennillo</figcaption></figure>
 
 ## Cómo se juega a Pirates: Black Sails of the Sea

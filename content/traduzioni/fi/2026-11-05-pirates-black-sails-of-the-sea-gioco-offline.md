@@ -9,6 +9,15 @@ crediti_immagine: "Kuvat: Giancarlo Mennillo, pelin alkuperäinen materiaali"
 
 **Pirates: Black Sails of the Sea** on meritaisteluiden arcade-peli, jolla on selkeä vahvuus: sitä pelataan **offline**, ilman nettiyhteyttä. Ruorissa on **Giancarlo Mennillo**, nuori mies **Salernon** maakunnasta, joka teki pelin yksin, ja me näimme sen toiminnassa.
 
+## Mistä Pirates: Black Sails of the Sea -pelin voi ladata
+
+Peli on jo ladattavissa ilmaiseksi Androidille, iPhonelle ja iPadille:
+
+- [Google Play Androidille](https://play.google.com/store/apps/details?id=com.pirates.bsos.game)
+- [App Store iPhonelle ja iPadille](https://apps.apple.com/it/app/pirates-black-sails-of-the-sea/id6745219811)
+
+Kehittäjä Giancarlo Mennillo toimitti tässä artikkelissa käytetyt pelitiedot, kuvakaappaukset ja videot suoraan Soffia Cartuccialle.
+
 <figure class="immagine-testo"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Pirates: Black Sails of the Sea -pelikerta sumussa ja sateessa" style="display:block;width:100%;max-width:22rem;margin:0 auto;border-radius:14px"></video><figcaption>Pelikerta sumussa ja sateessa. Video: Giancarlo Mennillo</figcaption></figure>
 
 ## Miten Pirates: Black Sails of the Sea -peliä pelataan
