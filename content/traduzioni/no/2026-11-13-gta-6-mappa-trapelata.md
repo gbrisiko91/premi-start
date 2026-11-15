@@ -1,7 +1,7 @@
 ---
 titolo: "GTA 6: kartet over Leonida lekker fra Selfridges en uke før lansering"
 titolo_seo: "GTA 6-kart lekket: stedene i Leonida"
-sommario: "Bilder av Leonida-plakaten fra GTA 6-samlerboksen sirkulerer etter en utstilling hos Selfridges. Rockstar bekrefter plakaten, men ikke hele det lekkede kartet."
+sommario: "Bilder av Leonida-plakaten fra GTA 6-boksen sirkulerer etter en visning hos Selfridges. Rockstar bekrefter plakaten, men ikke hele det lekkede kartet."
 slug: "gta-6-kart-lekket-leonida"
 alt_immagine: "Offisielt bilde av GTA 6 fra PlayStations side om spillet"
 crediti_immagine: "Bilde: Rockstar Games / Sony Interactive Entertainment, offisiell PlayStation-side"
