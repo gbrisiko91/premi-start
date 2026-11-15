@@ -29,15 +29,15 @@ Käsittelyn oikeusperuste on oikeutettu etumme tarjota sivusto turvallisesti (GD
 
 ## ”Tykkää”-painike
 
-Kun painat artikkelissa ”Tykkää”, tallennamme **anonyymin sormenjäljen**, jotta sama kävijä ei voi äänestää useaan kertaan: koodin, joka lasketaan IP-osoitteestasi ja artikkelista ja josta IP-osoitetta ei voi palauttaa. Sormenjäljen lisäksi tallennamme vain sen, että pidit artikkelista. Tieto säilytetään Netlifyn palvelimilla niin kauan kuin artikkeli on julkaistuna, ja se poistetaan, jos perut tykkäyksesi.
+Kun painat ”Tykkää”, tallennamme **pseudonyymin teknisen tunnisteen**, joka perustuu IP-osoitteeseesi ja artikkeliin, jotta päällekkäisiä ääniä voidaan rajoittaa. Vanhat äänet käyttivät avaimetonta tiivistettä; uudet tunnisteet lasketaan HMAC-menetelmällä palvelimella säilytettävän avaimen avulla. Tunnisteet eivät ole täysin anonyymejä. Jos perut tykkäyksen, äänestystila päivitetään laskennan säilyttämiseksi. Tiedot säilyvät Netlifyssä niin kauan kuin niitä tarvitaan artikkelin äänien hallintaan.
 
-Käsittelyn oikeusperuste on oikeutettu etumme näyttää luotettava määrä. Jos et paina painiketta, mitään ei tallenneta.
+Ilmoitettu käsittelyperuste on oikeutettu etu estää päällekkäiset äänet ja näyttää luotettavia tuloksia (GDPR 6 artiklan 1 kohdan f alakohta); rekisterinpitäjän on arvioitava peruste.
 
 ## Viikon kysely
 
-Kun äänestät kyselyssä, tallennamme kaksoisäänien estämiseksi **nimettömän tunnisteen**, joka lasketaan IP-osoitteestasi ja kyselystä ja josta osoitetta ei voi päätellä, sekä valitsemasi vastauksen. Tiedot säilytetään Netlifyn palvelimilla niin kauan kuin kysely on sivustolla; julkaisemme vain äänten kokonaismäärät. Selaimesi muistaa lisäksi vastauksesi paikallisessa tallennustilassa (*localStorage*), jotta näet tulokset heti.
+Kun äänestät kyselyssä, tallennamme **pseudonyymin teknisen tunnisteen** IP-osoitteen ja kyselyn perusteella sekä valitsemasi vastauksen päällekkäisten äänten rajoittamiseksi. Vanhat tunnisteet käyttävät avaimetonta tiivistettä, uudet palvelimen HMAC-avainta. Emme pidä tunnisteita täysin anonyymeinä. Tietoja säilytetään Netlifyssä kyselyn historiaa varten; julkaisemme vain yhteenvedot. Selain tallentaa vastauksen myös *localStorage*-tilaan.
 
-Käsittelyperuste on oikeutettu etumme näyttää luotettavia tuloksia. Jos et äänestä, mitään ei tallenneta.
+Ilmoitettu käsittelyperuste on oikeutettu etu estää päällekkäiset äänet ja näyttää luotettavia tuloksia (GDPR 6 artiklan 1 kohdan f alakohta); rekisterinpitäjän on arvioitava peruste.
 
 ## Kuvat ja linkit muille sivustoille
 
