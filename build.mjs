@@ -46,6 +46,7 @@ const P = {
   articolo: (l, slug) => `${pre(l)}/${T[l].seg.articoli}/${slug}/`,
   categoria: (l, k) => `${pre(l)}/${T[l].seg.categoria}/${k}/`,
   archivio: (l) => `${pre(l)}/${T[l].seg.archivio}/`,
+  indie: (l) => `${pre(l)}/indie/`,
   rss: (l) => `${pre(l)}/rss.xml`,
   quiz: (l) => `${pre(l)}/quiz/`,
   uscite: (l) => `${pre(l)}/${R[l].seg.uscite}/`,
@@ -307,7 +308,7 @@ function pagina({ l, titolo, titoloSeo = "", descrizione, percorso, corpo, tipo 
   const nastro = ticker.length
     ? `<div class="ticker" aria-label="${esc(t.ultimeNotizie)}"><span class="ticker-etichetta">${esc(t.live)}</span><div class="ticker-finestra"><div class="ticker-nastro">${vociTicker}<span class="ticker-copia" aria-hidden="true">${vociTicker.replace(/<a /g, '<a tabindex="-1" ')}</span></div></div></div>`
     : "";
-  const linkPiede = [`<a href="${P.archivio(l)}">${esc(t.archivio)}</a>`, `<a href="${P.uscite(l)}">${esc(R[l].uscite.nome)}</a>`, `<a href="${P.sondaggio(l)}">${esc(R[l].poll.nome)}</a>`, ...pagineDi(l).map((p) => `<a href="${p.url}">${esc(p.menu)}</a>`), `<a href="${P.rss(l)}">${esc(t.feedRss)}</a>`].join("");
+  const linkPiede = [`<a href="${P.archivio(l)}">${esc(t.archivio)}</a>`, `<a href="${P.indie(l)}">${esc(U[l].indieTitle)}</a>`, `<a href="${P.uscite(l)}">${esc(R[l].uscite.nome)}</a>`, `<a href="${P.sondaggio(l)}">${esc(R[l].poll.nome)}</a>`, ...pagineDi(l).map((p) => `<a href="${p.url}">${esc(p.menu)}</a>`), `<a href="${P.rss(l)}">${esc(t.feedRss)}</a>`].join("");
   return `<!doctype html>
 <html lang="${LINGUE[l].hreflang}">
 <head>
@@ -445,7 +446,7 @@ function home(l, articoli) {
 </section>
 ${ultime.length ? `<section class="flusso homepage-ultime" aria-labelledby="t-ultime"><div class="blocco-heading"><div><span class="eyebrow">01 / ${esc(config.nome)}</span><h2 id="t-ultime" class="titolo-sezione">${esc(t.ultime)}</h2></div><a class="intro-link" href="${P.archivio(l)}">${esc(u.viewAll)} ↗</a></div><div class="griglia">${ultime.map(scheda).join("")}</div></section>` : ""}
 ${digest.length ? `<section class="blocco-novita" aria-labelledby="t-digest"><div class="blocco-heading"><div><span class="eyebrow">02 / ${esc(u.digest)}</span><h2 id="t-digest" class="titolo-sezione">${esc(u.digest)}</h2><p>${esc(u.digestLead)}</p></div></div><div class="digest-griglia">${digest.map((a,i)=>`<article class="digest-voce"><span class="digest-numero" aria-hidden="true">0${i+1}</span><h3><a href="${a.url}">${esc(a.titolo)}</a></h3><p>${esc(a.sommario)}</p></article>`).join("")}</div></section>` : ""}
-${scopertaIndie ? `<section class="blocco-novita indie-focus" aria-labelledby="t-indie"><div class="blocco-heading"><div><span class="eyebrow">03 / Indie</span><h2 id="t-indie" class="titolo-sezione">${esc(u.indieTitle)}</h2><p>${esc(u.indieLead)}</p></div></div><article class="indie-focus-card" data-colore="${colore(scopertaIndie.categoria)}"><a class="indie-focus-cover" href="${scopertaIndie.url}" aria-label="${esc(scopertaIndie.titolo)}">${scopertaIndie.immagine ? img({src:scopertaIndie.immagine,riserva:scopertaIndie.immagineRiserva,alt:scopertaIndie.altImmagine}) : `<span class="indie-focus-fallback">${esc(u.indieTitle)}</span>`}</a><div class="indie-focus-copy"><p class="meta">${etichettaCat(l,scopertaIndie.categoria)}<time datetime="${scopertaIndie.data.toISOString()}">${data(l,scopertaIndie.data,"breve")}</time></p><h3><a href="${scopertaIndie.url}">${esc(scopertaIndie.titolo)}</a></h3><p>${esc(scopertaIndie.sommario)}</p><a class="intro-link" href="${scopertaIndie.url}">${esc(t.leggi)} ↗</a></div></article></section>` : ""}
+${scopertaIndie ? `<section class="blocco-novita indie-focus" aria-labelledby="t-indie"><div class="blocco-heading"><div><span class="eyebrow">03 / Indie</span><h2 id="t-indie" class="titolo-sezione">${esc(u.indieTitle)}</h2><p>${esc(u.indieLead)}</p></div><a class="intro-link" href="${P.indie(l)}">${esc(u.viewAll)} ↗</a></div><article class="indie-focus-card" data-colore="${colore(scopertaIndie.categoria)}"><a class="indie-focus-cover" href="${scopertaIndie.url}" aria-label="${esc(scopertaIndie.titolo)}">${scopertaIndie.immagine ? img({src:scopertaIndie.immagine,riserva:scopertaIndie.immagineRiserva,alt:scopertaIndie.altImmagine}) : `<span class="indie-focus-fallback">${esc(u.indieTitle)}</span>`}</a><div class="indie-focus-copy"><p class="meta">${etichettaCat(l,scopertaIndie.categoria)}<time datetime="${scopertaIndie.data.toISOString()}">${data(l,scopertaIndie.data,"breve")}</time></p><h3><a href="${scopertaIndie.url}">${esc(scopertaIndie.titolo)}</a></h3><p>${esc(scopertaIndie.sommario)}</p><a class="intro-link" href="${scopertaIndie.url}">${esc(t.leggi)} ↗</a></div></article></section>` : ""}
 ${retro.length ? `<section class="blocco-novita" aria-labelledby="t-retro"><div class="blocco-heading"><div><span class="eyebrow">04 / Retro</span><h2 id="t-retro" class="titolo-sezione">${esc(u.retro)}</h2><p>${esc(u.retroLead)}</p></div><a class="intro-link" href="${P.categoria(l,"retro")}">${esc(u.viewAll)} ↗</a></div><div class="griglia">${retro.map(scheda).join("")}</div></section>` : ""}
 <section class="blocco-novita checkpoint" id="checkpoint" data-checkpoint data-prima="${esc(u.checkpointFirst)}" data-nuovi="${esc(u.checkpointFresh)}" data-aggiornato="${esc(u.checkpointNoNew)}" data-vuoto="${esc(u.checkpointNoNew)}" data-nessun-salvato="${esc(u.savedEmpty)}" data-errore="${esc(u.searchError)}" data-attiva="${esc(u.checkpointOn)}" data-disattiva="${esc(u.checkpointOff)}" data-spento="${esc(u.checkpointOffText)}" aria-labelledby="t-checkpoint"><div class="blocco-heading"><div><span class="eyebrow">04 / Checkpoint</span><h2 id="t-checkpoint" class="titolo-sezione">${esc(u.checkpoint)}</h2><p>${esc(u.checkpointLead)}</p></div><button type="button" class="bottone-salva" data-checkpoint-toggle aria-pressed="false">${esc(u.checkpointOn)}</button></div><div class="checkpoint-layout"><div class="checkpoint-gruppo"><h3>${esc(u.checkpointFresh)}</h3><p class="checkpoint-stato" data-checkpoint-stato aria-live="polite"></p><ul class="checkpoint-lista" data-checkpoint-news></ul></div><div class="checkpoint-gruppo"><h3>${esc(u.checkpointSaved)}</h3><ul class="checkpoint-lista" data-checkpoint-salvati></ul></div></div></section>
 <section class="blocco-novita" aria-labelledby="t-mondi"><div class="blocco-heading"><div><span class="eyebrow">06 / ${esc(u.world)}</span><h2 id="t-mondi" class="titolo-sezione">${esc(u.world)}</h2><p>${esc(u.worldLead)}</p></div></div><div class="mondi-griglia">${mondi}</div></section>
@@ -841,6 +842,7 @@ for (const l of CODICI) {
   scriviPagina(P.quiz(l), paginaQuiz(l));
   scriviPagina(P.uscite(l), paginaUscite(l, lista));
   scriviPagina(P.sondaggio(l), paginaSondaggio(l));
+  scriviPagina(P.indie(l), paginaElenco({ l, titolo: U[l].indieTitle, descrizione: U[l].indieLead, percorso: P.indie(l), lista: pubblicati(lista).filter(a => a.tag.some(x => String(x).toLowerCase() === "indie")), alternative: tuttePerLingua(P.indie) }));
   scrivi(`indice-${l}.json`, JSON.stringify(pubblicati(lista).map((a)=>({id:a.id,url:a.url,titolo:a.titolo,sommario:a.sommario,categoria:nomeCat(l,a.categoria),tag:a.tag,data:a.data.toISOString(),dataBreve:data(l,a.data,"breve")}))));
   for (const a of lista) scriviPagina(a.url, paginaArticolo(a, lista, versioniDi(a.id)));
   for (const k of Object.keys(config.categorie)) {
@@ -866,6 +868,7 @@ gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.home(l) })
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.quiz(l) })) });
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.uscite(l) })) });
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.sondaggio(l) })) });
+gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.indie(l) })) });
 scriviPagina(P.newsletterGrazie, paginaGrazie());
 scriviPagina(PERCORSO_INSTAGRAM, paginaInstagram(perLingua[PRINCIPALE]));
 scriviPagina(P.newsletterConfermata, paginaConfermata());
