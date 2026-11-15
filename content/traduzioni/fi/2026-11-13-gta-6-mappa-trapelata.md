@@ -1,7 +1,7 @@
 ---
 titolo: "GTA 6:n Leonida-kartta vuoti Selfridgesiltä viikkoa ennen julkaisua"
 titolo_seo: "GTA 6 kartta vuoti: Leonidan paikat paljastuivat"
-sommario: "GTA 6:n Leonida-julisteesta levisi kuvia Selfridges-tavaratalosta. Rockstar vahvistaa julisteen olemassaolon, mutta ei verkossa levinnyttä kokonaista karttakuvaa."
+sommario: "GTA 6:n Leonida-julisteesta levisi kuvia Selfridgesistä. Rockstar vahvistaa julisteen, mutta ei verkossa levinneen koko karttakuvan aitoutta."
 slug: "gta-6-kartta-vuoto-leonida"
 alt_immagine: "Virallinen GTA 6 -kuva pelin PlayStation-sivulta"
 crediti_immagine: "Kuva: Rockstar Games / Sony Interactive Entertainment, virallinen PlayStation-sivu"
