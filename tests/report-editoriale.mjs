@@ -1,6 +1,9 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { analizzaArticolo, analizzaCartella, inMarkdown } from "../strumenti/report-editoriale.mjs";
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
 
 const articolo=(front,testo)=>"---\ntitolo: Test articolo\nsommario: Sintesi\ncategoria: industria\ndata: 2026-11-15\n"+front+"\n---\n"+testo+"\n";
 
@@ -17,10 +20,16 @@ test("Una fonte primaria senza URL non viene erroneamente dichiarata inesistente
   assert.ok(!x.flag.some(f=>f.includes("nessuna fonte disponibile")));
 });
 test("Le bozze non entrano nel report delle pubblicazioni",()=>{
-  const [d]=analizzaCartella();
-  assert.ok(d && typeof d.file==="string");
-  const x=analizzaArticolo("bozza.md",articolo("bozza: true","Appunti."));
-  assert.equal(x.bozza,true);
+  const folder=fs.mkdtempSync(path.join(os.tmpdir(),"soffia-report-"));
+  try {
+    fs.writeFileSync(path.join(folder,"pubblicato.md"),articolo("bozza: false","Testo."));
+    fs.writeFileSync(path.join(folder,"bozza.md"),articolo("bozza: true","Appunti."));
+    const r=analizzaCartella(folder);
+    assert.equal(r.length,1);
+    assert.equal(r[0].file,"pubblicato.md");
+  } finally {
+    fs.rmSync(folder,{recursive:true,force:true});
+  }
 });
 test("Il report Markdown espone gli avvisi senza certificare i fatti",()=>{
   const rows=[analizzaArticolo("articolo.md",articolo("bozza: false","Testo."))];
