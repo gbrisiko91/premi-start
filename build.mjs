@@ -463,7 +463,7 @@ function paginaArticolo(a, stessaLingua, versioni) {
   const u = U[l];
   const correlati = stessaLingua.filter((x) => x !== a && x.categoria === a.categoria).slice(0, 3);
   const fonti = a.fonti.length
-    ? `<section class="fonti" aria-labelledby="t-fonti"><h2 id="t-fonti">${esc(t.fonti)}</h2><ul>${a.fonti
+    ? `<section class="fonti" aria-labelledby="t-fonti"><div class="fonti-testa"><h2 id="t-fonti">${esc(t.fonti)}</h2><span class="fonti-contatore">${a.fonti.length} ${esc(u.sourcesConsulted)}</span></div><ul>${a.fonti
         .map((f) => `<li><a href="${esc(f.url)}" rel="noopener" target="_blank">${esc(f.titolo || f.url)}</a></li>`)
         .join("")}</ul></section>`
     : "";
@@ -504,6 +504,11 @@ function paginaArticolo(a, stessaLingua, versioni) {
     <p class="meta">${etichettaCat(l, a.categoria)}<time datetime="${a.data.toISOString()}">${data(l, a.data, "lunga")}</time><span>${esc(t.minuti(a.minuti))}</span>${segnoBozza(a)}</p>
     <h1>${esc(a.titolo)}</h1>
     ${a.sommario ? `<p class="occhiello">${esc(a.sommario)}</p>` : ""}
+    <div class="articolo-trasparenza">
+      <p class="articolo-firma">${esc(u.byline)} <a href="${urlPaginaFissa(l, "chi-siamo")}">${esc(t.redazione)} ${esc(config.nome)}</a></p>
+      <a class="articolo-verifica" href="${urlPaginaFissa(l, "come-lavoriamo")}">${esc(u.verificationLink)} ↗</a>
+      ${a.aggiornato && a.aggiornato.getTime() > a.data.getTime() ? `<p class="articolo-aggiornato">${esc(u.updatedLabel)} <time datetime="${a.aggiornato.toISOString()}">${data(l,a.aggiornato,"lunga")}</time></p>` : ""}
+    </div>
     <div class="eroe-azioni-articolo">${hype(l, a.viralita)}${tastoLike(a)}${a.bozza ? "" : `<button type="button" hidden class="bottone-salva" data-salva-articolo="${esc(a.id)}" data-salva="${esc(u.save)}" data-salvato="${esc(u.saved)}" aria-pressed="false">${esc(u.save)}</button>`}${a.bozza ? "" : `<a class="tasto-vai-condividi" href="#condividi">${icona("condividi")}<span>${esc(t.condividi)}</span></a>`}</div>
   </header>
   ${immagine}
