@@ -506,7 +506,6 @@ function paginaArticolo(a, stessaLingua, versioni) {
     ${a.sommario ? `<p class="occhiello">${esc(a.sommario)}</p>` : ""}
     <div class="articolo-trasparenza">
       <p class="articolo-firma">${esc(u.byline)} <a href="${urlPaginaFissa(l, "chi-siamo")}" rel="author">${esc(config.autore)}</a></p>
-      <a class="articolo-verifica" href="${urlPaginaFissa(l, "come-lavoriamo")}">${esc(u.verificationLink)} ↗</a>
       ${a.aggiornato && a.aggiornato.getTime() > a.data.getTime() ? `<p class="articolo-aggiornato">${esc(u.updatedLabel)} <time datetime="${a.aggiornato.toISOString()}">${data(l,a.aggiornato,"lunga")}</time></p>` : ""}
     </div>
     <div class="eroe-azioni-articolo">${hype(l, a.viralita)}${tastoLike(a)}${a.bozza ? "" : `<button type="button" hidden class="bottone-salva" data-salva-articolo="${esc(a.id)}" data-salva="${esc(u.save)}" data-salvato="${esc(u.saved)}" aria-pressed="false">${esc(u.save)}</button>`}${a.bozza ? "" : `<a class="tasto-vai-condividi" href="#condividi">${icona("condividi")}<span>${esc(t.condividi)}</span></a>`}</div>
@@ -519,6 +518,7 @@ function paginaArticolo(a, stessaLingua, versioni) {
   ${condivisione(a)}
   ${a.bozza ? "" : boxNewsletter(l)}
   ${fonti}
+  <p class="metodo-fonti"><a class="articolo-verifica" href="${urlPaginaFissa(l, "come-lavoriamo")}">${esc(u.verificationLink)} ↗</a></p>
   ${altreLingue.length ? `<nav class="altre-lingue" aria-label="${esc(t.altreLingue)}"><p>${icona("globo")}${esc(t.altreLingue)}</p><ul>${altreLingue.map((v) => `<li><a href="${v.url}" hreflang="${LINGUE[v.lingua].hreflang}" lang="${LINGUE[v.lingua].hreflang}">${esc(LINGUE[v.lingua].nome)}</a></li>`).join("")}</ul></nav>` : ""}
 </article>
 ${a.bozza ? "" : `<script src="/like.js" defer></script>\n<script src="/condividi.js" defer></script>`}
