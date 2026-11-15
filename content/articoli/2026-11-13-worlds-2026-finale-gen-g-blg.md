@@ -7,6 +7,7 @@ data: 2026-11-13
 categoria: pc
 tag: [league-of-legends, worlds-2026, esports, gen-g, bilibili-gaming]
 viralita: 85
+aggiornato: 2026-11-15
 bozza: false
 immagine: ""
 immagine_riserva: ""
@@ -31,6 +32,8 @@ fonti:
     url: "https://en.wikipedia.org/wiki/Chovy_(gamer)"
 ---
 
+**Aggiornamento del 15 novembre:** ha vinto Bilibili Gaming, 3-1. Tutti i dettagli nel nostro [articolo su BLG campione del mondo](/articoli/worlds-2026-blg-campione/).
+
 Domani alle 20 si gioca la finale dei **Worlds 2026** di **League of Legends** al Barclays Center di Brooklyn: **Gen.G** contro **Bilibili Gaming**. Gen.G ha perso una sola partita in tutto il torneo. BLG in semifinale ha eliminato T1 e ha chiuso il sogno di Faker di vincere il quarto Mondiale di fila. Nessuno dei due mid laner, Chovy e Knight, ha mai vinto un titolo mondiale.
 
 ## Come BLG ha eliminato T1
@@ -51,9 +54,9 @@ Chovy arriva in finale per la prima volta, dopo sette Mondiali finiti con un'eli
 
 Nei quarti ha battuto LYON 3-0 e in semifinale Invictus Gaming 3-0. In tutto il torneo non ha mai dovuto giocare una gara 4: secondo Hotspawn, BLG non ha ancora visto tutto quello che Gen.G sa fare.
 
-### BLG ha perso le ultime due finali
+### BLG cerca il primo Mondiale
 
-Ha perso la finale dei Worlds 2024 contro T1 e quella dell'MSI di luglio contro Hanwha Life, entrambe 3-2. Nel 2023 però era stata BLG a eliminare Gen.G e Chovy ai quarti, sempre 3-2.
+Ha perso 3-2 la finale dei Worlds 2024 contro T1 e quella dell'MSI di luglio contro Hanwha Life. A marzo però aveva vinto il First Stand, battendo G2 3-1. Nel 2023 però era stata BLG a eliminare Gen.G e Chovy ai quarti, sempre 3-2.
 
 ### Un campione coreano nella squadra cinese
 
