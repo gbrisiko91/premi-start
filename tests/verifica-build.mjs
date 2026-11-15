@@ -84,6 +84,13 @@ for (const lingua of Object.keys(LINGUE)) {
   assert.ok(paginaArticolo.includes('class="metodo-fonti"'), `Link di verifica non spostato in fondo all'articolo: ${lingua}`);
   assert.ok(paginaArticolo.includes('come-lavoriamo') || lingua !== 'it', `Metodo di verifica italiano non collegato`);
     assert.ok(Array.isArray(indice), `Indice invalido: ${lingua}`);
+  const pirates = indice.find(x => x.id === "pirates-black-sails-of-the-sea-gioco-offline");
+  assert.ok(pirates, `Pirates mancante dall'indice: ${lingua}`);
+  const pirateHtml = fs.readFileSync(`dist${pirates.url}index.html`, "utf8");
+  assert.ok(pirateHtml.includes("com.pirates.bsos.game"), `Google Play non collegato nell'articolo Pirates: ${lingua}`);
+  assert.ok(pirateHtml.includes("id6745219811"), `App Store non collegato nell'articolo Pirates: ${lingua}`);
+  assert.ok(!pirateHtml.includes("NOTE PER LA REDAZIONE"), `Note interne di Pirates presenti in HTML: ${lingua}`);
+
   const uscite = fs.readFileSync(`dist/${prefix}${R[lingua].seg.uscite}/index.html`, "utf8");
   assert.ok(uscite.includes("data-conto") && uscite.includes("data-uscita="), `Calendario uscite incompleto: ${lingua}`);
   assert.ok(home.includes("uscite-box") && home.includes("data-sondaggio"), `Uscite o sondaggio assenti dalla home: ${lingua}`);

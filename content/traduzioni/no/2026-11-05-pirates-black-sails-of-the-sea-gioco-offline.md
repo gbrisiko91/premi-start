@@ -9,6 +9,15 @@ crediti_immagine: "Bilder: Giancarlo Mennillo, originalmateriale fra spillet"
 
 **Pirates: Black Sails of the Sea** er et arkadespill med sjøslag som har én klar styrke: det spilles **offline**, uten behov for nettforbindelse. Ved roret står **Giancarlo Mennillo**, en ung mann fra provinsen **Salerno** som har laget det helt alene, og vi har sett det i aksjon.
 
+## Hvor kan du laste ned Pirates: Black Sails of the Sea
+
+Spillet er allerede tilgjengelig som gratis nedlasting for Android, iPhone og iPad:
+
+- [Google Play for Android](https://play.google.com/store/apps/details?id=com.pirates.bsos.game)
+- [App Store for iPhone og iPad](https://apps.apple.com/it/app/pirates-black-sails-of-the-sea/id6745219811)
+
+Utvikleren Giancarlo Mennillo har gitt Soffia Cartuccia informasjonen, skjermbildene og videoene som brukes i denne artikkelen, direkte.
+
 <figure class="immagine-testo"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Et parti Pirates: Black Sails of the Sea i tåke og regn" style="display:block;width:100%;max-width:22rem;margin:0 auto;border-radius:14px"></video><figcaption>Et parti i tåke og regn. Video: Giancarlo Mennillo</figcaption></figure>
 
 ## Slik spiller man Pirates: Black Sails of the Sea

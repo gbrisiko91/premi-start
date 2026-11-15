@@ -9,6 +9,15 @@ crediti_immagine: "Изображения: Giancarlo Mennillo, оригинал�
 
 **Pirates: Black Sails of the Sea** — аркада о морских сражениях с чётким козырем: в неё можно играть **офлайн**, без подключения к сети. У штурвала стоит **Giancarlo Mennillo**, парень из провинции **Салерно**, который создал игру в одиночку, а мы увидели её в деле.
 
+## Где скачать Pirates: Black Sails of the Sea
+
+Игра уже доступна для бесплатного скачивания на Android, iPhone и iPad:
+
+- [Google Play для Android](https://play.google.com/store/apps/details?id=com.pirates.bsos.game)
+- [App Store для iPhone и iPad](https://apps.apple.com/it/app/pirates-black-sails-of-the-sea/id6745219811)
+
+Информацию об игре, скриншоты и видео для этой статьи разработчик Giancarlo Mennillo предоставил Soffia Cartuccia напрямую.
+
 <figure class="immagine-testo"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Партия в Pirates: Black Sails of the Sea в тумане и под дождём" style="display:block;width:100%;max-width:22rem;margin:0 auto;border-radius:14px"></video><figcaption>Партия в тумане и под дождём. Видео: Giancarlo Mennillo</figcaption></figure>
 
 ## Как играть в Pirates: Black Sails of the Sea

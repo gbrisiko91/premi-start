@@ -9,6 +9,15 @@ crediti_immagine: "画像：Giancarlo Mennillo、ゲームのオリジナル素�
 
 **Pirates: Black Sails of the Sea**は、はっきりとした強みを持つ海戦アーケードゲームだ。**オフライン**で、通信なしで遊べるのである。舵を握るのは**サレルノ**県の若者**Giancarlo Mennillo**氏。たったひとりでこのゲームを作り上げた。私たちは実際に動いているところを見せてもらった。
 
+## Pirates: Black Sails of the Seaのダウンロード方法
+
+本作はAndroid、iPhone、iPad向けに無料でダウンロードできます。
+
+- [Android版Google Play](https://play.google.com/store/apps/details?id=com.pirates.bsos.game)
+- [iPhone・iPad版App Store](https://apps.apple.com/it/app/pirates-black-sails-of-the-sea/id6745219811)
+
+この記事で使用したゲーム情報、スクリーンショット、動画は、開発者のGiancarlo Mennillo氏からSoffia Cartucciaへ直接提供されたものです。
+
 <figure class="immagine-testo"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="霧と雨の中で遊ぶPirates: Black Sails of the Seaのプレイ" style="display:block;width:100%;max-width:22rem;margin:0 auto;border-radius:14px"></video><figcaption>霧と雨の中でのプレイ。動画：Giancarlo Mennillo</figcaption></figure>
 
 ## Pirates: Black Sails of the Seaの遊び方

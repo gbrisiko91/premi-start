@@ -4,6 +4,7 @@ titolo_seo: "Pirates: Black Sails of the Sea, gioco pirata offline"
 sommario: "Pirates: Black Sails of the Sea è un arcade di battaglie navali che si gioca senza connessione, creato da Giancarlo Mennillo in provincia di Salerno."
 parola_chiave: "pirates black sails of the sea"
 data: 2026-11-05
+aggiornato: 2026-11-15
 categoria: industria
 tag: [pirates-black-sails-of-the-sea, giochi-mobile, sviluppatori-italiani, indie]
 bozza: false
@@ -11,9 +12,25 @@ immagine: "/media/pirates-black-sails/copertina.jpg"
 immagine_riserva: "/media/pirates-black-sails/menu-principale.jpg"
 alt_immagine: "Menu e due scene di gioco di Pirates: Black Sails of the Sea, con navi pirata in mare"
 crediti_immagine: "Immagini: Giancarlo Mennillo, materiale originale del gioco"
+fonti:
+  - titolo: "Google Play - scheda ufficiale del gioco"
+    url: "https://play.google.com/store/apps/details?id=com.pirates.bsos.game"
+  - titolo: "App Store - scheda ufficiale del gioco"
+    url: "https://apps.apple.com/it/app/pirates-black-sails-of-the-sea/id6745219811"
+  - titolo: "Giancarlo Mennillo - portfolio dello sviluppatore"
+    url: "https://iamgiancarlomennillo.de/portfolio/"
 ---
 
 **Pirates: Black Sails of the Sea** è un arcade di battaglie navali con un punto di forza preciso: si gioca offline, senza bisogno di connessione. Al timone c'è **Giancarlo Mennillo**, un ragazzo della provincia di Salerno che l'ha creato da solo, e noi l'abbiamo visto in azione.
+
+## Dove scaricare Pirates: Black Sails of the Sea
+
+Il gioco è già disponibile per il download gratuito su Android e su iPhone e iPad:
+
+- [Google Play per Android](https://play.google.com/store/apps/details?id=com.pirates.bsos.game)
+- [App Store per iPhone e iPad](https://apps.apple.com/it/app/pirates-black-sails-of-the-sea/id6745219811)
+
+Le informazioni sul gioco, gli screenshot e i video utilizzati per questo approfondimento sono stati forniti direttamente dallo sviluppatore Giancarlo Mennillo.
 
 <figure class="immagine-testo"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Partita a Pirates: Black Sails of the Sea tra nebbia e pioggia" style="display:block;width:100%;max-width:22rem;margin:0 auto;border-radius:14px"></video><figcaption>Una partita tra nebbia e pioggia. Video: Giancarlo Mennillo</figcaption></figure>
 
@@ -66,6 +83,4 @@ Dopo le prime fasi della partita il meteo cambia, e ogni condizione ha un effett
 
 ### Su cosa si gioca Pirates: Black Sails of the Sea?
 
-È un gioco per smartphone con controlli touch: joystick virtuale e tasti a schermo.
-
-<!-- NOTE PER LA REDAZIONE: articolo scritto dal materiale originale fornito (2 screenshot, 3 video) e dalle informazioni date dalla redazione; nessuna fonte web: il gioco non risulta indicizzato. DA COMPLETARE PRIMA DI PUBBLICARE: 1) nome esatto (nel logo c'è "Black Sails of the Sea", nel messaggio "Blackout sails": ho usato quello del logo); 2) piattaforma (Android? iOS?) e link allo store, da aggiungere nel testo e in una FAQ "Dove scaricarlo"; 3) prezzo (gratis? acquisti in-app nel negozio?); 4) data di uscita; 5) la classifica Top Pirati e gli inviti richiedono la connessione? Se sì, precisarlo nella sezione sull'offline; 6) i due tasti d'azione: cosa fanno esattamente (cannoni a sinistra e a destra?). Il meteo cambia dopo circa 9.000 punti (dato indicato dalla redazione come approssimativo, da confermare con lo sviluppatore). Categoria "industria" scelta perché parla della persona dietro al gioco. Video ridotti per il web (480 px, senza audio): il video Fog_and_Rain di oltre 2 minuti è stato tagliato a 30 secondi (nebbia + pioggia). Copertina 1600x900 composta da menu e due fotogrammi di gioco. -->
+È disponibile per Android e iOS (iPhone e iPad). Si gioca con controlli touch: joystick virtuale e tasti a schermo.
