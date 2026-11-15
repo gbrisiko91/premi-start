@@ -1,8 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import fs from "node:fs";
+import { createHash } from "node:crypto";
 import { validaArticolo, rimuoviNote } from "../strumenti/verifica-editoriale.mjs";
-import { LEGACY_NOTES } from "../strumenti/note-pregresse.mjs";
 import { secretValid, tokenVoter, deltaLike, effectiveLike, sumDeltas, countBallots } from "../netlify/voti-sicuri.mjs";
 
 const categoria=["console","pc","retro","industria"];
@@ -25,14 +24,16 @@ test("Bozze consentono note redazionali, ma non credenziali",()=>{
   const text=baseArticle("Testo.\n\n<!-- NOTE PER LA REDAZIONE: verifica -->");
   assert.deepEqual(validaArticolo("bozza.md",text,{categorie:categoria,bozza:true}).errori,[]);
 });
-test("Un vecchio articolo intatto non blocca la build",()=>{
-  const filename="2026-11-05-pirates-black-sails-of-the-sea-gioco-offline.md";
-  const content=fs.readFileSync(`content/articoli/${filename}`,"utf8");
-  assert.ok(LEGACY_NOTES[filename]);
-  const current=validaArticolo(filename,content,{categorie:categoria});
+test("Una nota storica invariata è tollerata, ma una modifica richiede revisione",()=>{
+  const filename="legacy-test.md";
+  const content=baseArticle("Testo storico.\\n\\n<!-- NOTE PER LA REDAZIONE: revisione pendente -->");
+  const bytes=Buffer.from(content,"utf8");
+  const sha=createHash("sha1").update(`blob ${bytes.length}\\0`).update(bytes).digest("hex");
+  const base={ [filename]: sha };
+  const current=validaArticolo(filename,content,{categorie:categoria,base});
   assert.deepEqual(current.errori,[]);
   assert.ok(current.avvisi.length);
-  const changed=validaArticolo(filename,content+"\nmodifica necessaria",{categorie:categoria});
+  const changed=validaArticolo(filename,content+"\\nmodifica necessaria",{categorie:categoria,base});
   assert.ok(changed.errori.length);
 });
 test("Metadati incompleti bloccano nuove pubblicazioni",()=>{
