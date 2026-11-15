@@ -743,6 +743,10 @@ function paginaAutore(l, lista) {
       <span class="eyebrow">${esc(u.authorTitle)} / ${esc(config.nome)}</span>
       <h1>${esc(config.autore)}</h1>
       <p>${esc(u.authorIntro)}</p>
+      <div class="profilo-autore-biografia">
+        <p>${esc(u.authorBio1)}</p>
+        <p>${esc(u.authorBio2)}</p>
+      </div>
       <a class="intro-link" href="${urlPaginaFissa(l, "chi-siamo")}">${esc(config.nome)} ↗</a>
     </header>
     <section aria-labelledby="t-autore-articoli">
