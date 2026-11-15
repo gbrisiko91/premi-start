@@ -11,6 +11,29 @@ for (const lingua of Object.keys(LINGUE)) {
   const prefix = lingua === "it" ? "" : lingua + "/";
   const home = fs.readFileSync(`dist/${prefix}index.html`, "utf8");
   const indice = JSON.parse(fs.readFileSync(`dist/indice-${lingua}.json`, "utf8"));
+
+  // Verifica multilingua: nessuna traduzione deve presentare come confermata
+  // la mappa integrale del poster o il numero non documentato di città/isole.
+  const mappa = indice.find(a => a.id === "gta-6-mappa-trapelata");
+  assert.ok(mappa, `Articolo GTA 6 mappa mancante: ${lingua}`);
+  const paginaMappa = fs.readFileSync(`dist${mappa.url}index.html`, "utf8");
+  assert.ok(paginaMappa.includes("store.rockstargames.com/merchandise/gtavi-goodtime-state-vice-city-collection"),
+    `Fonte ufficiale Collector's Box assente: ${lingua}`);
+  assert.ok(paginaMappa.includes("labs.invenglobal.com/articles/28517/"),
+    `Fonte originale Corea del Sud assente: ${lingua}`);
+  assert.ok(paginaMappa.includes("Goose Key") && paginaMappa.includes("Pelican Valley"),
+    `Dettagli coerenti sul poster assenti: ${lingua}`);
+  const originaleMappa = lingua === "it"
+    ? "content/articoli/2026-11-13-gta-6-mappa-trapelata.md"
+    : `content/traduzioni/${lingua}/2026-11-13-gta-6-mappa-trapelata.md`;
+  const sorgenteMappa = fs.readFileSync(originaleMappa, "utf8");
+  const metaMappa = matter(sorgenteMappa).data;
+  assert.ok(metaMappa.sommario.length >= (lingua === "ja" ? 60 : 140)
+    && metaMappa.sommario.length <= (lingua === "ja" ? 90 : 155),
+    `Sommario GTA 6 mappa non valido: ${lingua}: ${metaMappa.sommario.length}`);
+  assert.ok(!/five main counties|fünf Hauptbezirke|cinco condados|fem hovedfylker|fem huvudsakliga counties|pääpiirikuntia on viisi|主要な郡が5つ|пять основных округов/i.test(sorgenteMappa),
+    `Conteggi non confermati ancora nel testo: ${lingua}`);
+
   assert.ok(home.includes("data-ricerca-dialog"), `Ricerca assente: ${lingua}`);
   assert.ok(home.includes("data-checkpoint"), `Checkpoint assente: ${lingua}`);
 
