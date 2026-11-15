@@ -26,14 +26,14 @@ test("Bozze consentono note redazionali, ma non credenziali",()=>{
 });
 test("Una nota storica invariata è tollerata, ma una modifica richiede revisione",()=>{
   const filename="legacy-test.md";
-  const content=baseArticle("Testo storico.\\n\\n<!-- NOTE PER LA REDAZIONE: revisione pendente -->");
+  const content=baseArticle("Testo storico.\n\n<!-- NOTE PER LA REDAZIONE: revisione pendente -->");
   const bytes=Buffer.from(content,"utf8");
-  const sha=createHash("sha1").update(`blob ${bytes.length}\\0`).update(bytes).digest("hex");
+  const sha=createHash("sha1").update(`blob ${bytes.length}\0`).update(bytes).digest("hex");
   const base={ [filename]: sha };
   const current=validaArticolo(filename,content,{categorie:categoria,base});
   assert.deepEqual(current.errori,[]);
   assert.ok(current.avvisi.length);
-  const changed=validaArticolo(filename,content+"\\nmodifica necessaria",{categorie:categoria,base});
+  const changed=validaArticolo(filename,content+"\nmodifica necessaria",{categorie:categoria,base});
   assert.ok(changed.errori.length);
 });
 test("Metadati incompleti bloccano nuove pubblicazioni",()=>{
