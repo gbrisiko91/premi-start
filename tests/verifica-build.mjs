@@ -65,7 +65,16 @@ for (const lingua of Object.keys(LINGUE)) {
   assert.ok(paginaArticolo.includes('class="articolo-trasparenza"'), `Firma redazionale assente: ${lingua}`);
   assert.ok(paginaArticolo.includes('class="articolo-firma"'), `Attribuzione articolo assente: ${lingua}`);
   assert.ok(paginaArticolo.includes('rel="author">Gianmarco Buono</a>'), `Firma Gianmarco Buono assente: ${lingua}`);
+  const percorsoProfilo = `/${prefix}autore/gianmarco-buono/`;
+  assert.ok(paginaArticolo.includes(`href="${percorsoProfilo}" rel="author"`), `Firma non collegata al profilo corretto: ${lingua}`);
+  const profiloAutore = fs.readFileSync(`dist${percorsoProfilo}index.html`, "utf8");
+  assert.ok(profiloAutore.includes('<h1>Gianmarco Buono</h1>'), `Titolo autore assente: ${lingua}`);
+  assert.ok(profiloAutore.includes('"@type":"ProfilePage"'), `Dati strutturati profilo mancanti: ${lingua}`);
+  assert.ok(profiloAutore.includes(`href="${primo.url}"`), `Articolo recente non presente nel profilo: ${lingua}`);
+  assert.ok(home.includes(`href="${percorsoProfilo}"`), `Footer senza link al profilo autore: ${lingua}`);
+
   assert.ok(paginaArticolo.includes('"@type":"Person","name":"Gianmarco Buono"'), `Autore Person nel JSON-LD non corretto: ${lingua}`);
+  assert.ok(paginaArticolo.includes(`"url":"https://soffiacartuccia.it${percorsoProfilo}"`), `URL autore JSON-LD non aggiornato: ${lingua}`);
   assert.ok(paginaArticolo.includes('"@type":"Organization","name":"Soffia Cartuccia"'), `Editore Organization nel JSON-LD mancante: ${lingua}`);
   assert.ok(paginaArticolo.includes('class="articolo-verifica"'), `Link metodo di verifica assente: ${lingua}`);
   const intestazioneArticolo = paginaArticolo.slice(paginaArticolo.indexOf('<header class="eroe-articolo">'), paginaArticolo.indexOf('</header>', paginaArticolo.indexOf('<header class="eroe-articolo">')));
