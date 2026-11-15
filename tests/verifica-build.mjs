@@ -33,6 +33,9 @@ for (const lingua of Object.keys(LINGUE)) {
   }
   assert.ok(new Set(collegamentiHome).size === collegamentiHome.length, `Articoli duplicati in homepage: ${lingua}`);
   assert.ok(home.includes("mondi-griglia"), `Categorie assenti: ${lingua}`);
+  assert.ok(home.includes("classifica-nota"), `Spiegazione Hype mancante: ${lingua}`);
+  assert.ok(home.includes('id="t-indie"'), `Scoperta indie non presente in homepage: ${lingua}`);
+  assert.ok(home.indexOf('id="t-ultime"') < home.indexOf('id="t-indie"'), `Scoperta indie prima delle notizie: ${lingua}`);
   assert.ok(home.includes("quiz-richiamo"), `Richiamo quiz assente: ${lingua}`);
   assert.ok(home.includes(`href="${prefix ? "/" + prefix : "/"}quiz/"`), `Link quiz assente: ${lingua}`);
   const quizHtml = fs.readFileSync(`dist/${prefix}quiz/index.html`, "utf8");
