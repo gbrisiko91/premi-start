@@ -15,6 +15,19 @@ for (const lingua of Object.keys(LINGUE)) {
   assert.ok(home.includes("data-checkpoint"), `Checkpoint assente: ${lingua}`);
 
   if (lingua === "it") {
+    const album = indice.find(a => a.id === "gta-6-album-tracklist-leak");
+    assert.ok(album, "Articolo GTA VI The Album assente dall'indice");
+    const paginaAlbum = fs.readFileSync(`dist${album.url}index.html`, "utf8");
+    assert.ok(paginaAlbum.includes("announcing-grand-theft-auto-vi-the-album-coming-november-19"), "Fonte ufficiale Rockstar su The Album assente");
+    assert.ok(paginaAlbum.includes("grand-theft-auto-vi-original-score-by-justice"), "Fonte ufficiale Rockstar sul disco dei Justice assente");
+    assert.ok(paginaAlbum.includes("Rockstar Games non ha confermato la scaletta completa"), "Manca l'avvertenza sulla tracklist non confermata");
+    assert.ok(paginaAlbum.includes("A quattro giorni dall"), "Differenza giorni GTA VI album non corretta");
+    assert.ok(!paginaAlbum.includes("A cinque giorni dall"), "Rimane il conteggio errato dei giorni");
+    assert.ok(!paginaAlbum.includes("NOTE PER LA REDAZIONE"), "Note redazionali visibili nell'articolo sull'album");
+  }
+
+
+  if (lingua === "it") {
     const majora = indice.find(a => a.id === "majoras-mask-remake-switch-2");
     assert.ok(majora, "Articolo Majora's Mask mancante dall'indice");
     const paginaMajora = fs.readFileSync(`dist${majora.url}index.html`, "utf8");
