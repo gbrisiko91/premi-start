@@ -482,7 +482,7 @@ function paginaArticolo(a, stessaLingua, versioni) {
       inLanguage: LINGUE[l].intl, articleSection: nomeCat(l, a.categoria),
       keywords: [a.parolaChiave, ...a.tag].filter(Boolean).join(", "),
       ...(a.immagine ? { image: [urlImmagine(a.immagine)] } : {}),
-      author: { "@type": "Organization", name: `${t.redazione} ${config.nome}`, url: urlAssoluto(urlPaginaFissa(l, "chi-siamo")) },
+      author: { "@type": "Person", name: config.autore, url: urlAssoluto(urlPaginaFissa(l, "chi-siamo")) },
       publisher: editore, mainEntityOfPage: { "@type": "WebPage", "@id": urlAssoluto(a.url) },
       ...(a.originale ? { translationOfWork: { "@id": urlAssoluto(a.originale.url) } } : {}),
       ...(a.fonti.length ? { citation: a.fonti.map((f) => f.url) } : {}),
@@ -505,7 +505,7 @@ function paginaArticolo(a, stessaLingua, versioni) {
     <h1>${esc(a.titolo)}</h1>
     ${a.sommario ? `<p class="occhiello">${esc(a.sommario)}</p>` : ""}
     <div class="articolo-trasparenza">
-      <p class="articolo-firma">${esc(u.byline)} <a href="${urlPaginaFissa(l, "chi-siamo")}">${esc(t.redazione)} ${esc(config.nome)}</a></p>
+      <p class="articolo-firma">${esc(u.byline)} <a href="${urlPaginaFissa(l, "chi-siamo")}" rel="author">${esc(config.autore)}</a></p>
       <a class="articolo-verifica" href="${urlPaginaFissa(l, "come-lavoriamo")}">${esc(u.verificationLink)} ↗</a>
       ${a.aggiornato && a.aggiornato.getTime() > a.data.getTime() ? `<p class="articolo-aggiornato">${esc(u.updatedLabel)} <time datetime="${a.aggiornato.toISOString()}">${data(l,a.aggiornato,"lunga")}</time></p>` : ""}
     </div>
