@@ -1,7 +1,7 @@
 ---
 titolo: "GTA 6: el mapa de Leonida se filtra desde Selfridges a una semana del lanzamiento"
 titolo_seo: "Mapa de GTA 6 filtrado: los lugares de Leonida"
-sommario: "Circulan fotos del póster de Leonida incluido en la caja coleccionista de GTA 6. Rockstar confirma el póster, pero no autentifica el mapa completo filtrado."
+sommario: "Circulan fotos del póster de Leonida incluido en la caja coleccionista de GTA 6. Rockstar confirma el póster, pero no valida el mapa completo filtrado."
 slug: "gta-6-mapa-filtrado-leonida"
 alt_immagine: "Imagen oficial de GTA 6 de la página de PlayStation dedicada al juego"
 crediti_immagine: "Imagen: Rockstar Games / Sony Interactive Entertainment, página oficial de PlayStation"
