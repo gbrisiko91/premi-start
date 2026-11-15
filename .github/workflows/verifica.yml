@@ -16,3 +16,5 @@ jobs:
           node-version: '22'
       - run: npm install --no-audit --no-fund
       - run: npm test
+      - name: Report editoriale (solo segnalazioni, non blocca il deploy)
+        run: npm run audit:editoriale >> "$GITHUB_STEP_SUMMARY"
