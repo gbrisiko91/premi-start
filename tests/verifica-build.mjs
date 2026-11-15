@@ -16,6 +16,22 @@ for (const lingua of Object.keys(LINGUE)) {
   assert.ok(home.includes("data-checkpoint-toggle"), `Consenso Checkpoint assente: ${lingua}`);
   assert.ok(home.includes("data-ricerca-apri"), `Pulsante ricerca assente: ${lingua}`);
   assert.ok(home.includes("digest-griglia"), `Digest assente: ${lingua}`);
+  assert.ok(home.includes('class="flusso homepage-ultime"'), `Ultime notizie non evidenziate in homepage: ${lingua}`);
+  assert.ok(home.indexOf('class="flusso homepage-ultime"') < home.indexOf('id="t-digest"'), `Ultime notizie troppo in basso: ${lingua}`);
+  assert.ok(home.indexOf('class="flusso homepage-ultime"') < home.indexOf('id="t-uscite"'), `Calendario prima delle notizie: ${lingua}`);
+  const sezioniHome = ['homepage-ultime','t-digest','t-retro','t-archivio'];
+  const collegamentiHome = [];
+  for (let j = 0; j < sezioniHome.length; j++) {
+    const marker = sezioniHome[j] === 'homepage-ultime' ? 'class="flusso homepage-ultime"' : `id="${sezioniHome[j]}"`;
+    const pos = home.indexOf(marker);
+    if (pos < 0) continue;
+    const next = sezioniHome.slice(j + 1).map(x => home.indexOf(x === 'homepage-ultime' ? 'class="flusso homepage-ultime"' : `id="${x}"`, pos + marker.length)).filter(x=>x > pos);
+    const end = next.length ? Math.min(...next) : home.indexOf('</main>',pos);
+    const snippet = home.slice(pos,end > 0 ? end : undefined);
+    const matches = [...snippet.matchAll(/<a href="(\/[^"]*\/)"[^>]*>/g)].map(m=>m[1]).filter(x=>x.includes('/articoli/'));
+    collegamentiHome.push(...matches);
+  }
+  assert.ok(new Set(collegamentiHome).size === collegamentiHome.length, `Articoli duplicati in homepage: ${lingua}`);
   assert.ok(home.includes("mondi-griglia"), `Categorie assenti: ${lingua}`);
   assert.ok(home.includes("quiz-richiamo"), `Richiamo quiz assente: ${lingua}`);
   assert.ok(home.includes(`href="${prefix ? "/" + prefix : "/"}quiz/"`), `Link quiz assente: ${lingua}`);

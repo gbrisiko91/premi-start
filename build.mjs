@@ -415,8 +415,13 @@ function home(l, articoli) {
   }
   const [apertura, ...resto] = articoli;
   const tendenza = inTendenza(articoli);
-  const digest = articoli.slice(0, 3);
-  const retro = articoli.filter((a) => a.categoria === "retro").slice(0,3);
+  const ultime = resto.slice(0, 6);
+  const mostrati = new Set([apertura.id, ...ultime.map(a=>a.id)]);
+  const digest = resto.filter(a=>!mostrati.has(a.id)).slice(0,3);
+  for (const a of digest) mostrati.add(a.id);
+  const retro = resto.filter(a=>a.categoria === "retro" && !mostrati.has(a.id)).slice(0,3);
+  for (const a of retro) mostrati.add(a.id);
+  const archivio = resto.filter(a=>!mostrati.has(a.id)).slice(0,config.articoliPerPagina);
   const mondi = Object.keys(config.categorie).map((k)=>`<a class="mondo-link" data-colore="${colore(k)}" href="${P.categoria(l,k)}"><strong>${esc(nomeCat(l,k))}</strong><span>${esc(T[l].categorie[k]?.descrizione || config.categorie[k].descrizione)}</span></a>`).join("");
   const corpo = `
 <div class="intro-ritmo"><div><span class="eyebrow">${esc(config.nome)}</span><p>${esc(t.motto)}</p></div><a class="intro-link" href="${P.archivio(l)}">${esc(u.viewArchive)} ↗</a></div>
@@ -433,16 +438,16 @@ function home(l, articoli) {
     <ol>${tendenza.map((a) => `<li data-colore="${colore(a.categoria)}"><a href="${a.url}">${esc(a.titolo)}</a><span class="punti">${a.viralita || "–"}</span></li>`).join("")}</ol>
   </aside>
 </section>
-<section class="blocco-novita" aria-labelledby="t-digest"><div class="blocco-heading"><div><span class="eyebrow">01 / ${esc(u.digest)}</span><h2 id="t-digest" class="titolo-sezione">${esc(u.digest)}</h2><p>${esc(u.digestLead)}</p></div></div><div class="digest-griglia">${digest.map((a,i)=>`<article class="digest-voce"><span class="digest-numero" aria-hidden="true">0${i+1}</span><h3><a href="${a.url}">${esc(a.titolo)}</a></h3><p>${esc(a.sommario)}</p></article>`).join("")}</div></section>
-${bloccoUscite(l, articoli)}
-<section class="blocco-novita" aria-labelledby="t-mondi"><div class="blocco-heading"><div><span class="eyebrow">03 / ${esc(u.world)}</span><h2 id="t-mondi" class="titolo-sezione">${esc(u.world)}</h2><p>${esc(u.worldLead)}</p></div></div><div class="mondi-griglia">${mondi}</div></section>
+${ultime.length ? `<section class="flusso homepage-ultime" aria-labelledby="t-ultime"><div class="blocco-heading"><div><span class="eyebrow">01 / ${esc(config.nome)}</span><h2 id="t-ultime" class="titolo-sezione">${esc(t.ultime)}</h2></div><a class="intro-link" href="${P.archivio(l)}">${esc(u.viewAll)} ↗</a></div><div class="griglia">${ultime.map(scheda).join("")}</div></section>` : ""}
+${digest.length ? `<section class="blocco-novita" aria-labelledby="t-digest"><div class="blocco-heading"><div><span class="eyebrow">02 / ${esc(u.digest)}</span><h2 id="t-digest" class="titolo-sezione">${esc(u.digest)}</h2><p>${esc(u.digestLead)}</p></div></div><div class="digest-griglia">${digest.map((a,i)=>`<article class="digest-voce"><span class="digest-numero" aria-hidden="true">0${i+1}</span><h3><a href="${a.url}">${esc(a.titolo)}</a></h3><p>${esc(a.sommario)}</p></article>`).join("")}</div></section>` : ""}
+${retro.length ? `<section class="blocco-novita" aria-labelledby="t-retro"><div class="blocco-heading"><div><span class="eyebrow">03 / Retro</span><h2 id="t-retro" class="titolo-sezione">${esc(u.retro)}</h2><p>${esc(u.retroLead)}</p></div><a class="intro-link" href="${P.categoria(l,"retro")}">${esc(u.viewAll)} ↗</a></div><div class="griglia">${retro.map(scheda).join("")}</div></section>` : ""}
 <section class="blocco-novita checkpoint" id="checkpoint" data-checkpoint data-prima="${esc(u.checkpointFirst)}" data-nuovi="${esc(u.checkpointFresh)}" data-aggiornato="${esc(u.checkpointNoNew)}" data-vuoto="${esc(u.checkpointNoNew)}" data-nessun-salvato="${esc(u.savedEmpty)}" data-errore="${esc(u.searchError)}" data-attiva="${esc(u.checkpointOn)}" data-disattiva="${esc(u.checkpointOff)}" data-spento="${esc(u.checkpointOffText)}" aria-labelledby="t-checkpoint"><div class="blocco-heading"><div><span class="eyebrow">04 / Checkpoint</span><h2 id="t-checkpoint" class="titolo-sezione">${esc(u.checkpoint)}</h2><p>${esc(u.checkpointLead)}</p></div><button type="button" class="bottone-salva" data-checkpoint-toggle aria-pressed="false">${esc(u.checkpointOn)}</button></div><div class="checkpoint-layout"><div class="checkpoint-gruppo"><h3>${esc(u.checkpointFresh)}</h3><p class="checkpoint-stato" data-checkpoint-stato aria-live="polite"></p><ul class="checkpoint-lista" data-checkpoint-news></ul></div><div class="checkpoint-gruppo"><h3>${esc(u.checkpointSaved)}</h3><ul class="checkpoint-lista" data-checkpoint-salvati></ul></div></div></section>
-${retro.length ? `<section class="blocco-novita" aria-labelledby="t-retro"><div class="blocco-heading"><div><span class="eyebrow">05 / Retro</span><h2 id="t-retro" class="titolo-sezione">${esc(u.retro)}</h2><p>${esc(u.retroLead)}</p></div><a class="intro-link" href="${P.categoria(l,"retro")}">${esc(u.viewAll)} ↗</a></div><div class="griglia">${retro.map(scheda).join("")}</div></section>` : ""}
+<section class="blocco-novita" aria-labelledby="t-mondi"><div class="blocco-heading"><div><span class="eyebrow">05 / ${esc(u.world)}</span><h2 id="t-mondi" class="titolo-sezione">${esc(u.world)}</h2><p>${esc(u.worldLead)}</p></div></div><div class="mondi-griglia">${mondi}</div></section>
 <section class="blocco-novita quiz-richiamo" aria-labelledby="t-quiz"><div><span class="eyebrow">06 / Daily Quest</span><h2 id="t-quiz" class="titolo-sezione">${esc(QUIZ[l].nome)}</h2><p>${esc(QUIZ[l].intro)}</p></div><a class="tasto-start" href="${P.quiz(l)}">${esc(QUIZ[l].data)}</a></section>
+${bloccoUscite(l, articoli)}
 ${bloccoSondaggio(l)}
 ${boxNewsletter(l)}
-${resto.length ? `<section class="flusso" aria-labelledby="t-ultime"><h2 id="t-ultime" class="titolo-sezione">${esc(t.ultime)}</h2><div class="griglia">${resto.slice(0, config.articoliPerPagina).map((a) => scheda(a)).join("")}</div>
-${resto.length > config.articoliPerPagina ? `<p class="altro"><a class="tasto-start" href="${P.archivio(l)}">${esc(t.tutti)}</a></p>` : ""}</section>` : ""}`;
+${archivio.length ? `<section class="flusso homepage-archivio" aria-labelledby="t-archivio"><div class="blocco-heading"><div><h2 id="t-archivio" class="titolo-sezione">${esc(t.archivio)}</h2></div><a class="intro-link" href="${P.archivio(l)}">${esc(u.viewAll)} ↗</a></div><div class="griglia">${archivio.map(scheda).join("")}</div></section>` : ""}`;
   return pagina({ l, percorso: P.home(l), corpo, ticker: articoli.slice(0, 8), alternative });
 }
 
