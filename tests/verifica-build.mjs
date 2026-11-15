@@ -49,7 +49,7 @@ for (const lingua of Object.keys(LINGUE)) {
     assert.equal(options.length, 4, `Risposte non valide: ${lingua}`);
     assert.equal(new Set(options).size, 4, `Opzioni duplicate: ${lingua}`);
   }
-  const primo = indice.find(a=>a.url && a.url.includes('/articoli/'));
+  const primo = indice.find(a=>a.url && a.url.startsWith('/') && a.url.endsWith('/'));
   assert.ok(primo, `Nessun articolo disponibile per test redazionali: ${lingua}`);
   const urlArticolo = new URL(primo.url, 'https://soffiacartuccia.it').pathname;
   const paginaArticolo = fs.readFileSync(`dist${urlArticolo}index.html`, "utf8");
