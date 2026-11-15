@@ -132,3 +132,14 @@ main { min-height: 65vh; }
   .indie-focus-copy { padding:1.2rem; }
   .indie-focus-copy h3 { font-size:1.6rem; }
 }
+
+/* Profilo autore — archivio editoriale verificabile */
+.profilo-autore { margin: 1.5rem auto 4rem; }
+.profilo-autore-testa { margin-bottom: 2.5rem; }
+.profilo-autore-testa .eyebrow { display: block; margin-bottom: .8rem; }
+.profilo-autore-testa .intro-link { display: inline-flex; margin-top: .5rem; }
+.profilo-autore > section > .titolo-sezione { margin: 0 0 1.25rem; }
+@media (max-width:620px) {
+  .profilo-autore { margin: .5rem auto 2.5rem; }
+  .profilo-autore-testa { margin-bottom: 1.6rem; }
+}
