@@ -49,6 +49,7 @@ export default async () => {
       subject: n.oggetto,
       previewText: n.anteprima,
       sender: { name: nl.nomeMittente || sito.nome, email: nl.mittente || "newsletter@soffiacartuccia.it" },
+      replyTo: nl.rispondiA || sito.emailContatto || "redazione@soffiacartuccia.it",
       htmlContent: n.html,
       recipients: { listIds: [lista] },
     });

@@ -28,6 +28,7 @@ export default {
     invioAutomatico: true,
     mittente: "newsletter@soffiacartuccia.it",
     nomeMittente: "Soffia Cartuccia",
+    rispondiA: "redazione@soffiacartuccia.it", // indirizzo a cui arrivano le risposte alla newsletter
     brevo: { lista: 3, modello: 2, confermata: "https://soffiacartuccia.it/newsletter/confermata/" },
   },
   // Codice di verifica di Google Search Console (solo se scegli il metodo "tag HTML"), es. "abc123..."
