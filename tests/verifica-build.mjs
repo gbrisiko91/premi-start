@@ -49,7 +49,21 @@ for (const lingua of Object.keys(LINGUE)) {
     assert.equal(options.length, 4, `Risposte non valide: ${lingua}`);
     assert.equal(new Set(options).size, 4, `Opzioni duplicate: ${lingua}`);
   }
-  assert.ok(Array.isArray(indice), `Indice invalido: ${lingua}`);
+  const primo = indice.find(a=>a.url && a.url.startsWith('/') && a.url.endsWith('/'));
+  assert.ok(primo, `Nessun articolo disponibile per test redazionali: ${lingua}`);
+  const urlArticolo = new URL(primo.url, 'https://soffiacartuccia.it').pathname;
+  const paginaArticolo = fs.readFileSync(`dist${urlArticolo}index.html`, "utf8");
+  assert.ok(paginaArticolo.includes('class="articolo-trasparenza"'), `Firma redazionale assente: ${lingua}`);
+  assert.ok(paginaArticolo.includes('class="articolo-firma"'), `Attribuzione articolo assente: ${lingua}`);
+  assert.ok(paginaArticolo.includes('rel="author">Gianmarco Buono</a>'), `Firma Gianmarco Buono assente: ${lingua}`);
+  assert.ok(paginaArticolo.includes('"@type":"Person","name":"Gianmarco Buono"'), `Autore Person nel JSON-LD non corretto: ${lingua}`);
+  assert.ok(paginaArticolo.includes('"@type":"Organization","name":"Soffia Cartuccia"'), `Editore Organization nel JSON-LD mancante: ${lingua}`);
+  assert.ok(paginaArticolo.includes('class="articolo-verifica"'), `Link metodo di verifica assente: ${lingua}`);
+  const intestazioneArticolo = paginaArticolo.slice(paginaArticolo.indexOf('<header class="eroe-articolo">'), paginaArticolo.indexOf('</header>', paginaArticolo.indexOf('<header class="eroe-articolo">')));
+  assert.ok(!intestazioneArticolo.includes('class="articolo-verifica"'), `Il link del metodo di verifica non deve comparire vicino alla firma: ${lingua}`);
+  assert.ok(paginaArticolo.includes('class="metodo-fonti"'), `Link di verifica non spostato in fondo all'articolo: ${lingua}`);
+  assert.ok(paginaArticolo.includes('come-lavoriamo') || lingua !== 'it', `Metodo di verifica italiano non collegato`);
+    assert.ok(Array.isArray(indice), `Indice invalido: ${lingua}`);
   const uscite = fs.readFileSync(`dist/${prefix}${R[lingua].seg.uscite}/index.html`, "utf8");
   assert.ok(uscite.includes("data-conto") && uscite.includes("data-uscita="), `Calendario uscite incompleto: ${lingua}`);
   assert.ok(home.includes("uscite-box") && home.includes("data-sondaggio"), `Uscite o sondaggio assenti dalla home: ${lingua}`);

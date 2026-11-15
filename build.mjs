@@ -463,7 +463,7 @@ function paginaArticolo(a, stessaLingua, versioni) {
   const u = U[l];
   const correlati = stessaLingua.filter((x) => x !== a && x.categoria === a.categoria).slice(0, 3);
   const fonti = a.fonti.length
-    ? `<section class="fonti" aria-labelledby="t-fonti"><h2 id="t-fonti">${esc(t.fonti)}</h2><ul>${a.fonti
+    ? `<section class="fonti" aria-labelledby="t-fonti"><div class="fonti-testa"><h2 id="t-fonti">${esc(t.fonti)}</h2><span class="fonti-contatore">${a.fonti.length} ${esc(u.sourcesConsulted)}</span></div><ul>${a.fonti
         .map((f) => `<li><a href="${esc(f.url)}" rel="noopener" target="_blank">${esc(f.titolo || f.url)}</a></li>`)
         .join("")}</ul></section>`
     : "";
@@ -482,7 +482,7 @@ function paginaArticolo(a, stessaLingua, versioni) {
       inLanguage: LINGUE[l].intl, articleSection: nomeCat(l, a.categoria),
       keywords: [a.parolaChiave, ...a.tag].filter(Boolean).join(", "),
       ...(a.immagine ? { image: [urlImmagine(a.immagine)] } : {}),
-      author: { "@type": "Organization", name: `${t.redazione} ${config.nome}`, url: urlAssoluto(urlPaginaFissa(l, "chi-siamo")) },
+      author: { "@type": "Person", name: config.autore, url: urlAssoluto(urlPaginaFissa(l, "chi-siamo")) },
       publisher: editore, mainEntityOfPage: { "@type": "WebPage", "@id": urlAssoluto(a.url) },
       ...(a.originale ? { translationOfWork: { "@id": urlAssoluto(a.originale.url) } } : {}),
       ...(a.fonti.length ? { citation: a.fonti.map((f) => f.url) } : {}),
@@ -504,6 +504,10 @@ function paginaArticolo(a, stessaLingua, versioni) {
     <p class="meta">${etichettaCat(l, a.categoria)}<time datetime="${a.data.toISOString()}">${data(l, a.data, "lunga")}</time><span>${esc(t.minuti(a.minuti))}</span>${segnoBozza(a)}</p>
     <h1>${esc(a.titolo)}</h1>
     ${a.sommario ? `<p class="occhiello">${esc(a.sommario)}</p>` : ""}
+    <div class="articolo-trasparenza">
+      <p class="articolo-firma">${esc(u.byline)} <a href="${urlPaginaFissa(l, "chi-siamo")}" rel="author">${esc(config.autore)}</a></p>
+      ${a.aggiornato && a.aggiornato.getTime() > a.data.getTime() ? `<p class="articolo-aggiornato">${esc(u.updatedLabel)} <time datetime="${a.aggiornato.toISOString()}">${data(l,a.aggiornato,"lunga")}</time></p>` : ""}
+    </div>
     <div class="eroe-azioni-articolo">${hype(l, a.viralita)}${tastoLike(a)}${a.bozza ? "" : `<button type="button" hidden class="bottone-salva" data-salva-articolo="${esc(a.id)}" data-salva="${esc(u.save)}" data-salvato="${esc(u.saved)}" aria-pressed="false">${esc(u.save)}</button>`}${a.bozza ? "" : `<a class="tasto-vai-condividi" href="#condividi">${icona("condividi")}<span>${esc(t.condividi)}</span></a>`}</div>
   </header>
   ${immagine}
@@ -514,6 +518,7 @@ function paginaArticolo(a, stessaLingua, versioni) {
   ${condivisione(a)}
   ${a.bozza ? "" : boxNewsletter(l)}
   ${fonti}
+  <p class="metodo-fonti"><a class="articolo-verifica" href="${urlPaginaFissa(l, "come-lavoriamo")}">${esc(u.verificationLink)} ↗</a></p>
   ${altreLingue.length ? `<nav class="altre-lingue" aria-label="${esc(t.altreLingue)}"><p>${icona("globo")}${esc(t.altreLingue)}</p><ul>${altreLingue.map((v) => `<li><a href="${v.url}" hreflang="${LINGUE[v.lingua].hreflang}" lang="${LINGUE[v.lingua].hreflang}">${esc(LINGUE[v.lingua].nome)}</a></li>`).join("")}</ul></nav>` : ""}
 </article>
 ${a.bozza ? "" : `<script src="/like.js" defer></script>\n<script src="/condividi.js" defer></script>`}
