@@ -69,6 +69,8 @@ for (const lingua of Object.keys(LINGUE)) {
   assert.ok(paginaArticolo.includes(`href="${percorsoProfilo}" rel="author"`), `Firma non collegata al profilo corretto: ${lingua}`);
   const profiloAutore = fs.readFileSync(`dist${percorsoProfilo}index.html`, "utf8");
   assert.ok(profiloAutore.includes('<h1>Gianmarco Buono</h1>'), `Titolo autore assente: ${lingua}`);
+  assert.ok(profiloAutore.includes('class="profilo-autore-biografia"'), `Biografia personale assente: ${lingua}`);
+  assert.ok(profiloAutore.includes('Soffia Cartuccia'), `Biografia priva del riferimento alla testata: ${lingua}`);
   assert.ok(profiloAutore.includes('"@type":"ProfilePage"'), `Dati strutturati profilo mancanti: ${lingua}`);
   assert.ok(profiloAutore.includes(`href="${primo.url}"`), `Articolo recente non presente nel profilo: ${lingua}`);
   assert.ok(home.includes(`href="${percorsoProfilo}"`), `Footer senza link al profilo autore: ${lingua}`);
