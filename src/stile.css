@@ -362,3 +362,15 @@ main { max-width: 78rem; margin: 0 auto; padding: 0 1rem 5rem; }
   .testata-destra .categorie { min-width: 0; width: auto; flex: 1 1 auto; }
   .lingue { flex: none; }
 }
+
+/* Identità editoriale: firma verificabile e chiarezza sulle fonti */
+.articolo-trasparenza { display:flex; flex-wrap:wrap; align-items:center; gap:.4rem 1.15rem; margin:0 0 1.4rem; padding:.9rem 0; border-top:1px solid var(--pannello-2); border-bottom:1px solid var(--pannello-2); font-size:.9rem; line-height:1.55; }
+.articolo-trasparenza p { margin:0; }
+.articolo-firma { font-weight:650; color:var(--testo); }
+.articolo-firma a { color:inherit; text-decoration:underline; text-decoration-color:var(--giallo); text-underline-offset:.2rem; }
+.articolo-verifica { color:var(--giallo); text-underline-offset:.2rem; }
+.articolo-aggiornato { color:var(--tenue); }
+.fonti-testa { display:flex; flex-wrap:wrap; align-items:baseline; gap:.4rem 1rem; justify-content:space-between; margin-bottom:.7rem; }
+.fonti-testa h2 { margin:0; }
+.fonti-contatore { color:var(--tenue); font-size:.82rem; font-weight:600; }
+@media(max-width:620px) { .articolo-trasparenza { align-items:flex-start; flex-direction:column; gap:.4rem; } }
