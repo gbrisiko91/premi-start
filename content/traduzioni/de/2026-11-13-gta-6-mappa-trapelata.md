@@ -1,7 +1,7 @@
 ---
 titolo: "GTA 6: Karte von Leonida eine Woche vor Release bei Selfridges geleakt"
 titolo_seo: "GTA 6 Karte geleakt: die Orte von Leonida"
-sommario: "Fotos eines Leonida-Posters aus der GTA-6-Sammlerbox kursieren nach einer Ausstellung bei Selfridges. Rockstar bestätigt das Poster, nicht die vollständige Leak-Karte."
+sommario: "Fotos eines Leonida-Posters aus der GTA-6-Sammlerbox kursieren nach einer Selfridges-Ausstellung. Rockstar bestätigt das Poster, nicht die gesamte Leak-Karte."
 slug: "gta-6-karte-geleakt-leonida"
 alt_immagine: "Offizielles Bild von GTA 6 von der PlayStation-Seite zum Spiel"
 crediti_immagine: "Bild: Rockstar Games / Sony Interactive Entertainment, offizielle PlayStation-Seite"
