@@ -7,7 +7,7 @@ data: 2026-11-15
 categoria: console
 tag: [gta-6, rockstar-games, colonna-sonora]
 viralita: 84
-bozza: true
+bozza: false
 immagine: "https://www.rockstargames.com/VI/_next/static/media/GTAVI_MusicPage_AlbumArt.05qucexa8vzgb.jpg?akim=1&imdensity=1&imwidth=3840"
 immagine_riserva: "https://www.rockstargames.com/VI/_next/static/media/meta.0t8ty~nlmxq2s.jpg?yvw8ZozOI7a7Kz1war9qe"
 alt_immagine: "Copertina ufficiale di Grand Theft Auto VI The Album dalla pagina musica di Rockstar"
