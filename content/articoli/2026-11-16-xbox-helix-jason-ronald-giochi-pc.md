@@ -15,6 +15,8 @@ crediti_immagine: "Immagine: Microsoft, Xbox Wire"
 fonti:
   - titolo: "Xbox Wire – XBOX: The 25th Anniversary Magazine"
     url: "https://news.xbox.com/en-us/2026/11/15/xbox-25th-anniversary-the-magazine/"
+  - titolo: "Xbox Wire – From GDC: Building the Next Generation of Xbox"
+    url: "https://news.xbox.com/en-us/2026/03/11/project-helix-building-next-generation-of-xbox/"
   - titolo: "Wccftech – Xbox's Jason Ronald confirms Project Helix is a console that plays PC games"
     url: "https://wccftech.com/xbox-project-helix-console-pc-games-neural-rendering/"
   - titolo: "Multiplayer.it – Xbox Helix avrà un prezzo accessibile? Il neural rendering aiuterà a contenere i costi"
@@ -26,6 +28,8 @@ fonti:
 ## Xbox Helix e i giochi PC
 
 Ronald ha tenuto a chiarire il rapporto tra console e PC. Secondo la citazione riportata da Wccftech, Helix è "progettata per essere una console" in grado di far girare anche i giochi del tuo PC, e non un PC che esegue i giochi console. L'obiettivo dichiarato è togliere quelli che lui chiama vincoli "arbitrari" tra le due piattaforme.
+
+Non è una novità assoluta: Microsoft aveva presentato Helix a marzo 2026 come la sua prossima console capace di far girare giochi Xbox e PC, e alla GDC Ronald aveva annunciato che i primi kit di sviluppo arriveranno agli sviluppatori nel 2027. Le citazioni della rivista le conosciamo attraverso Wccftech e Multiplayer.it.
 
 Mancano però i dettagli pratici. Ronald non ha detto quali negozi digitali saranno supportati, quindi non sappiamo se su Helix arriveranno Steam o altri store per PC.
 
@@ -40,5 +44,3 @@ Ronald si è anche sbilanciato sul futuro: secondo lui nei prossimi tre-cinque a
 ## Dove leggere la rivista dei 25 anni di Xbox
 
 La rivista è stata stampata per la XBOX FanFest di Seattle e distribuita ai partecipanti. Chi non c'era può sfogliarla gratis su Xbox Wire, in un visualizzatore integrato nella pagina. Oltre all'intervista contiene ricordi e retroscena sulla storia di Xbox e qualche novità sui giochi in arrivo, come la capitale di Fable, Bowerstone, a pagina 38.
-
-<!-- NOTE PER LA REDAZIONE: non ho potuto leggere il testo dell'intervista nella rivista (visualizzatore issuu non accessibile dalla sessione): le citazioni vengono da Wccftech (Alessio Palumbo, 15/11, citazioni in inglese: "Helix is designed to be a console that is also capable of playing games from your PC", "remove the arbitrary constraints between console and PC games", "making things accessible and affordable", "an entirely new way to generate a frame without requiring more computational horsepower, additional memory") e da Multiplayer.it (Stefano Paglia, 15/11, citazioni già tradotte in italiano). Due fonti che leggono lo stesso documento: verificare le frasi sulla rivista prima di pubblicare. Il titolo "VP of Next Generation" è da Multiplayer.it/Wccftech. "Informazioni ufficiali attese il prossimo anno" è un'affermazione di Multiplayer.it, non di Microsoft: valutare se tenerla. Non ho verificato quando e come Helix è stato annunciato in origine: non aggiungere date senza fonte. Immagine: og:image della pagina Xbox Wire (mockup della rivista), caricamento non testato dalla sessione; nessuna immagine di riserva ufficiale trovata. Nessun link interno verificabile. Revisione humanizer eseguita con la skill anthropic-skills:humanizer (modalità file). -->

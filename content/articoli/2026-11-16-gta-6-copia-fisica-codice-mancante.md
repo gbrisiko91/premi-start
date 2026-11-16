@@ -17,11 +17,15 @@ fonti:
     url: "https://kotaku.com/some-gta-6-box-copies-reported-to-have-download-code-issues-2000756883"
   - titolo: "Notebookcheck – Some physical GTA 6 boxes are missing codes, with Rockstar refusing to help"
     url: "https://www.notebookcheck.net/Some-physical-GTA-6-boxes-are-missing-codes-with-Rockstar-refusing-to-help.1449998.0.html"
+  - titolo: "Rockstar Support – Grand Theft Auto VI Pre-Order Purchase Support FAQ"
+    url: "https://support.rockstargames.com/articles/40DHWEDBnq5jUuWJqKcH02/grand-theft-auto-vi-pre-order-purchase-support-faq"
+  - titolo: "PlayStation – Grand Theft Auto VI code support"
+    url: "https://www.playstation.com/en-ph/support/games/gta-vi-code/"
   - titolo: "Rockstar Games – Grand Theft Auto VI, sito ufficiale"
     url: "https://www.rockstargames.com/VI"
 ---
 
-Alcuni acquirenti della **copia fisica di GTA 6** dicono di aver aperto la scatola e di non aver trovato un codice valido: in certi casi la striscia è vuota, in altri il codice risulta già riscattato. Le segnalazioni sono comparse su Reddit e su X tra il 13 e il 14 novembre e sono state riprese da Kotaku e Notebookcheck. **Rockstar Games** non ha ancora rilasciato dichiarazioni.
+Alcuni acquirenti della **copia fisica di GTA 6** dicono di aver aperto la scatola e di non aver trovato un codice valido: in certi casi la striscia è vuota, in altri il codice risulta già riscattato. Le segnalazioni sono comparse su Reddit e su X nei giorni successivi al 12 novembre, quando le confezioni sono arrivate nei negozi, e sono state riprese da Kotaku e Notebookcheck. **Rockstar Games** non ha ancora rilasciato dichiarazioni. Al momento non abbiamo trovato casi segnalati in Italia.
 
 Il problema pesa più del solito perché le edizioni fisiche di **Grand Theft Auto VI** non contengono un disco. Nella confezione c'è soltanto un codice per scaricare il gioco, che esce il 19 novembre su PS5 e Xbox Series X|S. Chi trova la striscia vuota non ha altro modo per installare il gioco.
 
@@ -45,8 +49,8 @@ Online circola anche il "trucco della torcia": puntando una luce forte sul lato 
 
 ## Cosa fare se la tua copia di GTA 6 non ha il codice
 
-Sul suo sito Rockstar indica di rivolgersi al rivenditore per gli acquisti fatti in negozio. Conviene quindi fotografare subito la confezione e la striscia del codice, conservare lo scontrino e contattare il negozio prima possibile. Per i preordini fatti direttamente da Rockstar resta l'assistenza ufficiale.
+Nelle FAQ di assistenza Rockstar indica che per gli acquisti fatti in altri negozi bisogna rivolgersi al rivenditore. Anche la pagina di supporto PlayStation dedicata ai codici di GTA 6 dice la stessa cosa per i codici danneggiati o mancanti. Conviene quindi fotografare subito la confezione e la striscia del codice, conservare lo scontrino e contattare il negozio prima possibile. Per le copie fisiche comprate sul Rockstar Store, invece, le FAQ rimandano all'assistenza di Xsolla, che gestisce gli acquisti del negozio Rockstar.
+
+Se ti interessa sapere cosa c'è nella scatola e quanto spazio serve, abbiamo raccolto i dettagli delle [edizioni fisiche e dello spazio d'installazione di GTA 6](/articoli/gta-6-copia-fisica-230-gb/).
 
 Rockstar non ha ancora detto se sostituirà i codici. Aggiorneremo l'articolo quando arriverà una risposta.
-
-<!-- NOTE PER LA REDAZIONE: tutte le segnalazioni sono di utenti social, riportate da Kotaku (14/11, Zack Kotzer) e Notebookcheck (14/11, Adam Corsetti), che sono le due fonti indipendenti. Nessuna dichiarazione ufficiale Rockstar o Sony: ricontrollare prima di pubblicare se nel frattempo è arrivata. Nessun caso italiano verificato: se possibile cercare segnalazioni in Italia (Multiplayer.it, Everyeye, forum) prima di pubblicare. L'indicazione "rivolgersi al rivenditore" è riportata da Notebookcheck come contenuto del sito Rockstar: non ho aperto direttamente la pagina di supporto Rockstar, verificarla e, se esiste, aggiungerla alle fonti. Le date "13 e 14 novembre" per i post social sono dedotte dalla data degli articoli: verificare. Link interno possibile alla bozza "gta-6-copia-fisica-230-gb" (8/11) solo se è stata pubblicata: non ho potuto controllare content/articoli/. Immagini: og:image e poster dal sito rockstargames.com/VI (letti il 16/11); dalla sessione non è stato possibile testare il caricamento, gli indirizzi contengono codici che possono cambiare. Revisione humanizer eseguita con la skill anthropic-skills:humanizer (modalità file). -->
