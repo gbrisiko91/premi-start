@@ -7,7 +7,7 @@ data: 2026-11-16
 categoria: console
 tag: [gta-6, rockstar-games, ps5, xbox-series-x]
 viralita: 80
-bozza: true
+bozza: false
 immagine: "https://www.rockstargames.com/VI/_next/static/media/meta.0t8ty~nlmxq2s.jpg"
 immagine_riserva: "https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg"
 alt_immagine: "Immagine ufficiale di Grand Theft Auto VI dal sito di Rockstar Games"
