@@ -7,7 +7,7 @@ data: 2026-11-16
 categoria: retro
 tag: [pokemon, nintendo-ds, pokepark, preservazione]
 viralita: 59
-bozza: true
+bozza: false
 immagine: ""
 immagine_riserva: ""
 alt_immagine: ""
