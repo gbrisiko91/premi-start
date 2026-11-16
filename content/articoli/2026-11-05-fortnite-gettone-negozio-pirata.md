@@ -1,7 +1,7 @@
 ---
 titolo: "Gettone del Negozio pirata di Fortnite, è caccia: account fino a 10.000 dollari"
-titolo_seo: "Fortnite Gettone Negozio pirata: account a 10.000 dollari"
-sommario: "Il Gettone del Negozio pirata di Fortnite regala lo shop per 14 giorni ed è rarissimo: su eBay account fino a 10.000 dollari. Epic avverte: è una truffa."
+titolo_seo: "Fortnite Pirate Shop Token: rarità, come trovarlo e rischi"
+sommario: "Come trovare il Pirate Shop Token di Fortnite, quanto è raro e perché comprare account con il gettone comporta rischi e violazioni delle regole."
 parola_chiave: "gettone negozio pirata fortnite"
 data: 2026-11-05
 categoria: pc
@@ -27,6 +27,8 @@ fonti:
 
 Il **Gettone del Negozio pirata** di **Fortnite** è l'oggetto più cercato del momento. È arrivato con la mini-stagione Cacciatori di tesori, quella del crossover con One Piece, e sblocca gratis quasi tutto il Negozio per 14 giorni. È così raro che su eBay sono spuntati account in vendita fino a 10.000 dollari, tanto che **Epic Games** è dovuta intervenire.
 
+**In breve:** il *Pirate Shop Token* (Gettone del Negozio pirata) è una ricompensa molto rara ottenibile casualmente nei forzieri del tesoro. **Epic non ha comunicato una probabilità ufficiale**: i numeri diffusi dalla community non sono confermati. Gli annunci di account con il gettone **non sono un modo sicuro per ottenerlo** e la compravendita di account viola le regole di Epic.
+
 ## Cos'è il Gettone del Negozio pirata di Fortnite
 
 Il gettone si trova nei forzieri del tesoro, quelli segnati con il teschio, sparsi sulla mappa della Battaglia reale. Chi lo trova ottiene l'accesso al Negozio dei pirati: per due settimane può prendersi gratis skin, emote e tutti gli oggetti che di solito si comprano con i V-Buck, e se li tiene per sempre.
@@ -35,7 +37,7 @@ Qualche esclusione c'è: niente regali agli amici, niente livelli del Pass batta
 
 ## Quanto è raro il gettone e perché vale così tanto
 
-Epic non ha pubblicato la probabilità ufficiale. La community stima un gettone ogni 700.000 forzieri circa: il numero non è confermato, ma basta a trasformare la mini-stagione in una lotteria. Quanti giocatori lo abbiano già trovato, con certezza non lo sa nessuno.
+Epic non ha pubblicato la probabilità ufficiale. Circola una stima non verificata di circa un gettone ogni 700.000 forzieri: **non è una percentuale ufficiale e non permette di calcolare le probabilità reali**. Quanti giocatori lo abbiano già trovato, con certezza non lo sa nessuno.
 
 Ecco spiegata la corsa di questi giorni. C'è chi fa saltare i forzieri chiusi nei caveau con granate e palle di cannone, chi si organizza in gruppo per avere più possibilità e chi vende "accompagnamenti" a pagamento. Su forum e social girano anche programmi per il farming automatico e overlay che mostrano i forzieri, tutti vietati dalle regole del gioco.
 
@@ -56,6 +58,14 @@ Si trova aprendo i forzieri del tesoro con il simbolo del teschio nella Battagli
 ### Quanto dura il Negozio pirata gratis?
 
 L'accesso dura 14 giorni dall'attivazione. Gli oggetti riscattati in quel periodo restano nell'armadietto per sempre.
+
+### Qual è la probabilità di trovare il Pirate Shop Token?
+
+**Non è nota una probabilità ufficiale.** La cifra di un gettone ogni 700.000 forzieri circola nella community, ma non è verificata da Epic Games. Non va quindi presentata come tasso di drop certo.
+
+### Si può comprare o vendere un account Fortnite con il Pirate Shop Token?
+
+Esistono annunci online, ma **la compravendita di account viola le regole di Epic Games** e può esporre a truffe, perdita dell’accesso o provvedimenti sull’account. Non esiste un acquisto del gettone tramite canali ufficiali indicato in questo articolo.
 
 ### Conviene comprare un account con il gettone?
 
