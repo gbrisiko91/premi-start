@@ -37,11 +37,11 @@ Le automazioni girano su Claude. **Nessuna fa merge, pubblica articoli (`bozza: 
 | Ora (Europe/Rome) | Attività | Dove scrive | Stato al 16/11 |
 |---|---|---|---|
 | 06:34 | **Bozze mattutine**: ricerca notizie, 3-5 bozze con `bozza: true` | Solo nel Progetto Claude (`bozze/`), niente GitHub | Attiva |
-| 07:20 | **Sincronizzazione**: copia le bozze nel repository, traduzioni degli articoli già pubblicati, calendario, sondaggi, newsletter domenicale, kit Instagram | Branch `contenuti/AAAA-MM-GG` + PR verso `main` | Da riattivare con le nuove regole (vedi nota) |
+| 07:20 | **Sincronizzazione**: copia le bozze nel repository, traduzioni degli articoli già pubblicati, calendario, sondaggi, newsletter domenicale, kit Instagram | Branch `contenuti/AAAA-MM-GG` + PR verso `main` | Attiva dal 17/11, ricorrente ogni giorno (vedi nota) |
 | 07:47 | **Traduzioni degli ordini**: traduce gli `ordini/` del Progetto | Solo nel Progetto Claude (`traduzioni/`), niente GitHub | Attiva |
 | Domenica 10:00 | **Newsletter "Il Soffio della settimana"**: funzione Netlify `newsletter-domenica` (09:00 UTC) | Brevo | Attiva; si sospende con la variabile Netlify `NEWSLETTER_AUTOMATICA=no` |
 
-Nota sulla sincronizzazione delle 07:20: fino al 16/11 faceva commit diretti su `main` e si riprogrammava da sola un giorno alla volta. L'esecuzione del 16/11 non ha programmato quella del 17/11. Viene sostituita da un'attività ricorrente che lavora solo su branch e PR.
+Nota sulla sincronizzazione delle 07:20: fino al 16/11 faceva commit diretti su `main` e si riprogrammava da sola un giorno alla volta. L'esecuzione del 16/11 non ha programmato quella del 17/11. Dal 17/11 è sostituita da un'attività ricorrente che lavora solo su branch e PR e non fa mai merge.
 
 ---
 
