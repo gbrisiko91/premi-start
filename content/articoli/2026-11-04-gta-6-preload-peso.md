@@ -23,7 +23,9 @@ fonti:
     url: "https://multiplayer.it/notizie/il-preload-di-gta-6-iniziera-prima-del-previsto-per-alcuni-utenti-confermato-anche-il-peso-del-gioco.html"
 ---
 
-Il **preload di GTA 6** comincerà il 10 novembre, nove giorni prima dell'uscita del 19 novembre. Lo ha confermato **Rockstar Games** sul suo Newswire: chi ha comprato la versione digitale su PS5 o Xbox Series X|S potrà scaricare il gioco in anticipo. A far discutere, però, è il peso: circa 212 GB.
+Il **preload di GTA 6** è disponibile dal 10 novembre, nove giorni prima dell'uscita del 19 novembre. Lo ha confermato **Rockstar Games** sul suo Newswire: chi ha comprato la versione digitale su PS5 o Xbox Series X|S potrà scaricare il gioco in anticipo. A far discutere, però, è il peso: circa 212 GB.
+
+**In breve (aggiornamento del 16 novembre):** Rockstar conferma il lancio il **19 novembre 2026** su PS5 e Xbox Series X|S. Il precaricamento è disponibile dal **10 novembre**: su PS5 dalle **00:00 locali**, su Xbox dalle **01:00 italiane** (00:00 GMT). Il file richiede **fino a 212 GB a seconda del dispositivo**; non è una dimensione definitiva identica per ogni console. [Fonte ufficiale Rockstar in italiano](https://www.rockstargames.com/it/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10).
 
 ## Quando inizia il preload di GTA 6 in Italia
 
@@ -42,7 +44,7 @@ Il giorno dell'uscita, il 19 novembre, su PS5 il gioco si sbloccherà alla mezza
 
 ## Quanto pesa GTA 6: 212 GB sull'SSD
 
-Il peso indicato è di 212 GB, vicino alle stime di circa 210 GB circolate nelle settimane scorse. Su una Xbox Series S da 512 GB, che ne lascia liberi circa 364, GTA 6 da solo occuperebbe più di metà dello spazio: molti dovranno fare pulizia.
+Rockstar indica **fino a 212 GB per il file di precaricamento, a seconda del dispositivo**. Il download effettivo e lo spazio richiesto per l'installazione possono differire; non è corretto indicare 212 GB come dimensione definitiva identica su tutte le console. Su una Xbox Series S da 512 GB, che ne lascia liberi circa 364, GTA 6 da solo occuperebbe più di metà dello spazio: molti dovranno fare pulizia.
 
 In più una patch del primo giorno potrebbe aggiungere altri gigabyte al totale, quindi meglio tenersi un margine oltre ai 212 GB, specialmente se avete una PS5 del primo modello, con circa 667 GB utilizzabili.
 
@@ -60,7 +62,7 @@ Dal 10 novembre 2026: a mezzanotte ora italiana su PS5, all'01:00 ora italiana s
 
 ### Quanto pesa GTA 6 su PS5 e Xbox?
 
-Circa 212 GB. Conviene liberare qualche gigabyte in più per l'eventuale aggiornamento del primo giorno.
+Il file di precaricamento richiede fino a 212 GB, secondo Rockstar, a seconda del dispositivo. Conviene liberare qualche gigabyte in più per l'eventuale aggiornamento del primo giorno.
 
 ### A che ora esce GTA 6 in Italia?
 

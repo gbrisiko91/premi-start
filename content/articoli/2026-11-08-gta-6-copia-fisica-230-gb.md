@@ -1,6 +1,6 @@
 ---
 titolo: "GTA 6, spunta la prima copia fisica: sulla scatola servono 230 GB, non 212"
-titolo_seo: "GTA 6 copia fisica: la scatola chiede 230 GB"
+titolo_seo: "GTA 6: copia fisica, 230 GB sulla scatola e 212 GB ufficiali"
 sommario: "GTA 6 copia fisica: le foto della confezione PS5 arrivata a un negozio tedesco mostrano 230 GB richiesti, codice di download e un poster. Cosa sappiamo."
 parola_chiave: "gta 6 copia fisica"
 data: 2026-11-08
@@ -39,9 +39,11 @@ Dalle foto emergono altri dettagli:
 
 La catena tedesca MediaMarkt ha poi mostrato un poster stampato su entrambi i lati che, secondo il negozio, sarà incluso in tutte le copie con codice. La mappa del mondo di gioco, invece, nella scatola non ci sarebbe.
 
+**Aggiornamento del 16 novembre:** la cifra di **230 GB** proviene dalle fotografie di una confezione circolate online; **non è una dimensione d'installazione confermata da Rockstar**. Rockstar indica ufficialmente **fino a 212 GB per il precaricamento, a seconda del dispositivo**. [Comunicato Rockstar in italiano](https://www.rockstargames.com/it/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10).
+
 ## GTA 6 pesa 212 o 230 GB?
 
-Il numero ufficiale comunicato da Rockstar per il preload è di circa 212 GB. I 230 GB stampati sulla confezione potrebbero includere lo spazio extra che serve per estrarre i pacchetti durante l'installazione, oppure tenere conto di una patch del primo giorno. Nessuna delle due ipotesi è stata confermata.
+Il numero ufficiale comunicato da Rockstar per il file di preload è **fino a 212 GB, a seconda del dispositivo**. I 230 GB stampati sulla confezione potrebbero includere lo spazio extra che serve per estrarre i pacchetti durante l'installazione, oppure tenere conto di una patch del primo giorno. Nessuna delle due ipotesi è stata confermata.
 
 In pratica, meglio liberare almeno 230 GB sull'SSD. Su una Xbox Series S da 512 GB vuol dire dedicare a GTA 6 quasi due terzi dello spazio disponibile. Orari e dettagli sul download anticipato li trovate nel nostro articolo sul [preload di GTA 6 e lo spazio da liberare](/articoli/gta-6-preload-peso/).
 
@@ -59,7 +61,7 @@ No. Le edizioni fisiche di GTA 6 contengono un codice per scaricare il gioco, se
 
 ### Quanto spazio serve per GTA 6?
 
-Rockstar indica circa 212 GB, ma la confezione fisica riporta 230 GB. Per stare tranquilli conviene liberarne almeno 230.
+Rockstar indica fino a 212 GB per il precaricamento; fotografie non ufficiali di una confezione mostrano 230 GB. Se possibile, tenere più spazio libero è prudente, ma 230 GB non è un requisito ufficiale confermato.
 
 ### Quando escono le copie fisiche di GTA 6?
 
