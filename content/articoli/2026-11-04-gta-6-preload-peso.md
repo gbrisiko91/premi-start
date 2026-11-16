@@ -72,4 +72,3 @@ Su PS5 si sblocca alla mezzanotte tra il 18 e il 19 novembre 2026. L'orario su X
 
 No, al lancio GTA 6 è disponibile solo su PS5 e Xbox Series X|S.
 
-<!-- NOTE PER LA REDAZIONE: il dato dei 212 GB è riportato da Shacknews, VGC, Multiplayer.it e altri come confermato da Rockstar, ma la pagina del Newswire che ho letto non mostra il numero: verificare sulla FAQ di Rockstar Support o sul PlayStation Store e controllare se cambia tra PS5 e Xbox. Verificare anche l'orario di sblocco su Xbox del 19 novembre e i dati sullo spazio utile di Series S (364 GB) e PS5 primo modello (667 GB). Immagine: og:image del post ufficiale del Rockstar Newswire; riserva dalla pagina ufficiale rockstargames.com/VI. Non ho potuto verificare che si carichino. -->
