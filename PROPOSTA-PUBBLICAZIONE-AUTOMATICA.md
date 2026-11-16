@@ -71,7 +71,7 @@ verifica:
 | G4 | Nessuna nota interna o marcatore (`NOTE PER LA REDAZIONE`, `DA VERIFICARE`, `TODO`…): si riusa `validaArticolo` con `bozza: false` |
 | G5 | Metadati SEO completi: `titolo`, `titolo_seo` ≤ 60, `sommario` 120-160, `parola_chiave`, `categoria` valida, data di oggi o di ieri |
 | G6 | Immagine con `alt_immagine` e `crediti_immagine`, URL da dominio consentito (press kit, store ufficiali, siti degli editori) |
-| G7 | **Niente doppioni**: nessun articolo con stesso slug, stessa `parola_chiave` o titolo molto simile negli ultimi 7 giorni; nessuna sovrapposizione con PR aperte (es. GTA 6 finché la #23 è aperta) |
+| G7 | **Niente doppioni**: nessun articolo con stesso slug, stessa `parola_chiave` o titolo molto simile negli ultimi 7 giorni; nessuna sovrapposizione con PR aperte (es. un articolo GTA 6 mentre è aperta una PR di ChatGPT su GTA 6) |
 | G8 | **Contenuto sicuro**: nessun `<script`, `<iframe`, `<style`, attributi `on*=`, link `javascript:` o `data:`. Il Markdown passa da `marked`, che lascia passare l'HTML grezzo, quindi questo controllo previene XSS sul sito pubblico |
 | G9 | Limiti: al massimo 5 articoli italiani e 45 traduzioni per PR, ogni file sotto 60 KB |
 | G10 | Ogni traduzione corrisponde a un articolo italiano presente nella stessa PR o già pubblicato, con link e numeri identici all'originale (controllo già presente in `strumenti/traduzioni.mjs`) |

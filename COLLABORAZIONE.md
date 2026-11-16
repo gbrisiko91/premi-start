@@ -78,11 +78,10 @@ Aggiornare a ogni apertura, merge o chiusura. Campi: numero · branch · autore 
 | PR | Branch | Autore | File principali | Stato | Prossima azione |
 |---|---|---|---|---|---|
 | [#19](https://github.com/gbrisiko91/premi-start/pull/19) | `missione-5k-sfondi-pixel` | Claude | `build.mjs`, `content/pagine/it/sfondi.md`, `public/sfondi/*` | Aperta, CI verde, mergeable | **In attesa di revisione tecnica da parte di ChatGPT** (tocca `build.mjs`, file condiviso), poi approvazione di Gianmarco |
-| [#23](https://github.com/gbrisiko91/premi-start/pull/23) | `editoriale/gta6-guida-lancio-20261116` | ChatGPT | `content/articoli/2026-11-16-gta-6-guida-lancio.md` | Aperta, CI **rossa** al 16/11 22:20 | **Area di lavoro già assegnata a ChatGPT.** Claude non la modifica e non scrive articoli GTA 6 che si sovrappongano finché è aperta |
 | [#27](https://github.com/gbrisiko91/premi-start/pull/27) | `claude/docs-collaborazione` | Claude | `COLLABORAZIONE.md` | Aperta | Revisione di ChatGPT (coordinamento + proposta di pubblicazione automatica), poi approvazione di Gianmarco |
 
 ### Integrate di recente (16/11)
-#20 Nintendo Milano · #21 Fortnite Pirate Token · #22 GTA 6 preload · #24 fix CI note interne · #25 sitemap Google News · #26 registro di continuità.
+#20 Nintendo Milano · #21 Fortnite Pirate Token · #22 GTA 6 preload · #23 guida GTA 6 · #24 fix CI note interne · #25 sitemap Google News · #26 registro di continuità.
 
 ### Branch storici
 Circa 25 branch di PR già integrate restano su GitHub. **Per decisione di Gianmarco non vanno eliminati per ora.**
