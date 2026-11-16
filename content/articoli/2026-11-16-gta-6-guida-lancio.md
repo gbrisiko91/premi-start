@@ -17,6 +17,10 @@ fonti:
     url: "https://www.rockstargames.com/VI"
   - titolo: "Rockstar Newswire – Pre-load begins on November 10"
     url: "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10"
+  - titolo: "Rockstar Support – Orari ufficiali del lancio su PS5 e Xbox"
+    url: "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s"
+  - titolo: "Rockstar Support – Requisiti di installazione"
+    url: "https://support.rockstargames.com/articles/M6h7B5fJZMwG1dnzQkt4Z/grand-theft-auto-vi-installation-requirements"
   - titolo: "Rockstar Games – Launch Gallery"
     url: "https://www.rockstargames.com/VI/launch-gallery"
 ---
@@ -25,7 +29,7 @@ fonti:
 
 ## Quando esce GTA 6 in Italia?
 
-La data annunciata da Rockstar è **giovedì 19 novembre 2026**. Su PS5 lo sblocco è previsto alla **mezzanotte locale**, tra il 18 e il 19 novembre in Italia. Per Xbox, prima di indicare un orario definitivo, è necessario verificare le informazioni aggiornate sul negozio digitale e i canali ufficiali.
+La data annunciata da Rockstar è **giovedì 19 novembre 2026**. Secondo il [supporto ufficiale Rockstar](https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s), **sia su PS5 sia su Xbox Series X|S** lo sblocco è previsto alla **mezzanotte locale del 19 novembre**: in Italia, nella notte tra il 18 e il 19 novembre.
 
 ## Preload GTA 6: data e orari
 
@@ -35,7 +39,7 @@ Abbiamo raccolto i dettagli nel nostro articolo sul [preload di GTA 6 e gli orar
 
 ## Quanto pesa GTA 6: 212 o 230 GB?
 
-Rockstar indica **fino a 212 GB per il file di precaricamento, a seconda del dispositivo**. Non significa che la dimensione installata sia identica su ogni console.
+Rockstar indica **fino a 212 GB di spazio disponibile richiesto per precaricare, installare e giocare**, a seconda del dispositivo, secondo le FAQ ufficiali. Il valore non va interpretato come dimensione esatta del download su ciascuna console.
 
 Alcune fotografie **non ufficiali** di confezioni fisiche mostrano **230 GB**: non è una conferma ufficiale del peso finale. Per prudenza conviene mantenere ulteriore spazio libero per installazione e aggiornamenti.
 
@@ -47,7 +51,7 @@ Per capire da dove arrivano i due numeri, leggi l'approfondimento sulla [copia f
 
 ## Copie fisiche e codici di download
 
-Le edizioni fisiche descritte nelle notizie pre-lancio contengono un **codice di download** anziché un disco. Conserva lo scontrino e controlla la validità del codice. Abbiamo spiegato cosa fare nelle [segnalazioni sulle copie fisiche con codice mancante](/articoli/gta-6-copia-fisica-codice-mancante/).
+Rockstar conferma che le confezioni fisiche disponibili dal **12 novembre** contengono un **codice di download**, non un disco. Conserva lo scontrino e controlla la validità del codice. Abbiamo spiegato cosa fare nelle [segnalazioni sulle copie fisiche con codice mancante](/articoli/gta-6-copia-fisica-codice-mancante/).
 
 ## Screenshot ufficiali di GTA 6
 
