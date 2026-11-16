@@ -7,7 +7,7 @@ data: 2026-11-16
 categoria: pc
 tag: [super-meat-boy, team-meat, steam, indie]
 viralita: 50
-bozza: true
+bozza: false
 immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4269060/library_hero.jpg"
 immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4269060/d7872dd69d4ba43d2673bc0e6b4ddda9dd467e25/capsule_616x353.jpg?t=1794632244"
 alt_immagine: "Immagine ufficiale di Super Meat Boy Again+ dalla pagina Steam di Team Meat"
