@@ -2,7 +2,7 @@
 
 Documento vivo di coordinamento. **È la fonte unica sullo stato del lavoro in corso**: chi interviene sul repository lo legge prima di iniziare e lo aggiorna quando finisce.
 
-Ultimo aggiornamento: 16/11/2026 22:30 (Europe/Rome) — Claude, PR di introduzione del documento.
+Ultimo aggiornamento: 16/11/2026 23:00 (Europe/Rome) — Claude, PR #27: aggiunta la proposta di pubblicazione automatica (§8, non attiva).
 
 ---
 
@@ -43,9 +43,18 @@ Le automazioni girano su Claude. **Nessuna fa merge, pubblica articoli (`bozza: 
 
 Nota sulla sincronizzazione delle 07:20: fino al 16/11 faceva commit diretti su `main` e si riprogrammava da sola un giorno alla volta. L'esecuzione del 16/11 non ha programmato quella del 17/11. Dal 17/11 è sostituita da un'attività ricorrente che lavora solo su branch e PR e non fa mai merge.
 
+Verifica delle dipendenze (dettagli in `PROPOSTA-PUBBLICAZIONE-AUTOMATICA.md` §1):
+- l'attività delle 07:47 è inattiva nei fatti dal 06/11, perché le traduzioni le fa la sincronizzazione delle 07:20;
+- le 06:34 non lasciano un segnale di "concluso";
+- le traduzioni partono solo per gli articoli già pubblicati.
+
+La proposta corregge tutti e tre i punti.
+
 ---
 
 ## 3. Protocollo di sincronizzazione giornaliera
+
+> In vigore **fino all'attivazione** della pubblicazione automatica (§8). Dopo l'attivazione, il passaggio 6 e il merge manuale valgono solo per le PR non editoriali e per i casi bloccati dal gate.
 
 1. Alle 07:20 Claude parte dall'ultimo `main` remoto e controlla le PR aperte.
 2. Crea il branch `contenuti/AAAA-MM-GG`. Se esiste già, lo riprende senza riscriverne la storia.
@@ -70,7 +79,7 @@ Aggiornare a ogni apertura, merge o chiusura. Campi: numero · branch · autore 
 |---|---|---|---|---|---|
 | [#19](https://github.com/gbrisiko91/premi-start/pull/19) | `missione-5k-sfondi-pixel` | Claude | `build.mjs`, `content/pagine/it/sfondi.md`, `public/sfondi/*` | Aperta, CI verde, mergeable | **In attesa di revisione tecnica da parte di ChatGPT** (tocca `build.mjs`, file condiviso), poi approvazione di Gianmarco |
 | [#23](https://github.com/gbrisiko91/premi-start/pull/23) | `editoriale/gta6-guida-lancio-20261116` | ChatGPT | `content/articoli/2026-11-16-gta-6-guida-lancio.md` | Aperta, CI **rossa** al 16/11 22:20 | **Area di lavoro già assegnata a ChatGPT.** Claude non la modifica e non scrive articoli GTA 6 che si sovrappongano finché è aperta |
-| [#27](https://github.com/gbrisiko91/premi-start/pull/27) | `claude/docs-collaborazione` | Claude | `COLLABORAZIONE.md` | Aperta | Revisione di ChatGPT, poi approvazione di Gianmarco |
+| [#27](https://github.com/gbrisiko91/premi-start/pull/27) | `claude/docs-collaborazione` | Claude | `COLLABORAZIONE.md` | Aperta | Revisione di ChatGPT (coordinamento + proposta di pubblicazione automatica), poi approvazione di Gianmarco |
 
 ### Integrate di recente (16/11)
 #20 Nintendo Milano · #21 Fortnite Pirate Token · #22 GTA 6 preload · #24 fix CI note interne · #25 sitemap Google News · #26 registro di continuità.
@@ -125,3 +134,26 @@ Vale per le notizie da mettere online in poche ore: annunci a sorpresa, risultat
 | 16/11/2026 | Opzione A: una PR al giorno (`contenuti/AAAA-MM-GG`) per articoli e traduzioni; anche la pubblicazione passa dalla PR | Gianmarco |
 | 16/11/2026 | Restano le automazioni delle 06:34 e delle 07:47 | Gianmarco |
 | 16/11/2026 | I branch storici non si eliminano per ora | Gianmarco |
+| 16/11/2026 | Obiettivo: pubblicazione automatica degli articoli con controlli; modifiche tecniche sempre manuali. Proposta in revisione, **non attiva** | Gianmarco (obiettivo) · in attesa di revisione ChatGPT |
+
+---
+
+## 8. Proposta: pubblicazione automatica controllata (NON ATTIVA)
+
+Proposta tecnica completa: **[`PROPOSTA-PUBBLICAZIONE-AUTOMATICA.md`](PROPOSTA-PUBBLICAZIONE-AUTOMATICA.md)**. In attesa di revisione di ChatGPT e approvazione di Gianmarco. **Nessun auto-merge è implementato.**
+
+In sintesi:
+- **Flusso**: 06:34 bozze verificate con scheda `verifica` e segnale di completamento → 07:20 gate editoriale, traduzioni prima della PR, PR `contenuti/…` con etichetta `editoriale-auto` → auto-merge se tutti i controlli sono verdi → deploy Netlify → controllo dopo la pubblicazione. La 07:47 viene disattivata.
+- **Gate editoriale (G1-G10)**: fonte primaria o 2 fonti indipendenti, niente indiscrezioni, niente note aperte, SEO e immagini complete, niente doppioni o sovrapposizioni con PR aperte, niente HTML pericoloso, limiti di quantità.
+- **Auto-merge (S1-S9)**: solo branch `contenuti/…`, solo file **nuovi** in `content/articoli/` e `content/traduzioni/<lingua>/`, CI + gate + anteprima Netlify verdi, PR aggiornata, interruttore `AUTO_PUBBLICAZIONE`, una PR alla volta. Qualsiasi altro file (codice, config, SEO tecnico, template, workflow, `rubriche.mjs`) resta a **merge manuale**.
+- **Bozze private**: su GitHub (repository pubblico) arrivano solo gli articoli pronti. Le bozze non pronte restano nel Progetto Claude.
+- **Blocchi**: se un controllo fallisce la PR resta aperta con l'etichetta `blocco-editoriale` e parte una segnalazione. Un articolo bloccato non ferma gli altri.
+- **Attivazione per fasi (0-5)**, con 5 giorni di prova a secco prima dell'auto-merge vero.
+- **Da decidere (Gianmarco)**: indiscrezioni, limite giornaliero, seconda tornata delle 13:20, repository privato, account bot.
+
+### Revisione richiesta a ChatGPT
+- Funzionamento tecnico del gate e dei workflow (§2-3 della proposta).
+- Condizioni di sicurezza S1-S9 e il limite di identità dell'account unico (§3.3).
+- Sistema di pubblicazione automatica e criteri editoriali (§2).
+- Prevenzione di doppioni e conflitti (§5).
+- Rischi per Netlify e per il sito pubblico (§6), in particolare deploy da merge con `GITHUB_TOKEN`, minuti di build e sitemap News.
