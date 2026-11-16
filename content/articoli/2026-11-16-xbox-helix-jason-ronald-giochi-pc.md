@@ -7,7 +7,7 @@ data: 2026-11-16
 categoria: industria
 tag: [xbox-helix, xbox, microsoft]
 viralita: 59
-bozza: true
+bozza: false
 immagine: "https://xboxwire.thesourcemediaassets.com/sites/2/2026/11/XBOX_Magazine_mockup_perspective-37cf15975daed19bb5dd.png"
 immagine_riserva: ""
 alt_immagine: "La rivista ufficiale per i 25 anni di Xbox, aperta in prospettiva"
