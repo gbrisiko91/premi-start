@@ -926,7 +926,7 @@ scrivi("sitemap-news.xml", generaSitemapNews({
   baseUrl: config.url,
   lingue: Object.fromEntries(CODICI.map(l => [l, LINGUE[l].hreflang])),
 }));
-scrivi("_redirects", redirect404.join("\\n") + "\\n");
+scrivi("_redirects", redirect404.join("\n") + "\n");
 
 // Elenco degli articoli pubblicati per la funzione dei "Mi piace" (accetta voti solo per questi)
 fs.mkdirSync(path.join(ROOT, "netlify", "dati"), { recursive: true });
