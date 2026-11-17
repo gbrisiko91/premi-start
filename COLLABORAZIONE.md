@@ -77,7 +77,7 @@ Aggiornare a ogni apertura, merge o chiusura. Campi: numero · branch · autore 
 
 | PR | Branch | Autore | File principali | Stato | Prossima azione |
 |---|---|---|---|---|---|
-| In apertura | `chatgpt/sitemap-news-freshness-20261117` | ChatGPT | `netlify/edge-functions/sitemap-news-freshness.js`, test e documentazione | Filtro runtime per la sitemap News durante i giorni senza build | CI/preview e controllo risposta XML prima del merge |
+| [#39](https://github.com/gbrisiko91/premi-start/pull/39) | `chatgpt/sitemap-news-freshness-20261117` | ChatGPT | funzione Edge, test e documentazione | Sitemap News aggiornata senza rebuild, in verifica | CI/preview e verifica XML Edge prima del merge |
 
 ### PR del 17 novembre integrate
 #32 articoli Grammy/Miyamoto/DualStation · #34 percorsi GTA 6 e Indie · #35 guide Quiz/Sondaggio · #36 rettifica GTA 6 già integrate.
