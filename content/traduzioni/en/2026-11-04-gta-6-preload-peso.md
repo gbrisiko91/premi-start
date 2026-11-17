@@ -22,7 +22,7 @@ Compared with expectations, it is a gift for those who pre-ordered digitally: un
 
 Those who chose a physical edition with a code in the box will have to wait instead: these versions will reach shops from **12 November**, and only from then will it be possible to redeem the code and start downloading. Even if your usual shop hands you your copy early, it is still worth freeing up space on your SSD in good time.
 
-On release day, 19 November, the game will unlock on PS5 at local midnight. Rockstar has not yet clarified the exact unlock time on Xbox.
+On release day, 19 November 2026, **both PS5 and Xbox Series X|S unlock at midnight local time**. Rockstar confirms this in its [official regional release schedule](https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s).
 
 ## How big is GTA 6: 212 GB on your SSD
 
@@ -48,7 +48,7 @@ Around 212 GB. It is worth freeing up a few extra gigabytes for any day-one upda
 
 ### What time does GTA 6 come out in Italy?
 
-On PS5 it unlocks at midnight between 18 and 19 November 2026. The Xbox time has not yet been announced.
+On **PS5 and Xbox Series X|S**, GTA 6 unlocks at **midnight local time on 19 November 2026**, according to Rockstar.
 
 ### Is GTA 6 coming to PC?
 

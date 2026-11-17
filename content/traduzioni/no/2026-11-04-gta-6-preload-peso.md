@@ -22,7 +22,7 @@ Sammenlignet med forventningene er dette en gave til dem som har forhåndsbestil
 
 De som har valgt en fysisk utgave med kode i esken, må derimot vente: disse versjonene kommer i butikkene fra **12. november**, og først da blir det mulig å løse inn koden og begynne nedlastingen. Selv om favorittbutikken din leverer kopien tidlig, lønner det seg uansett å frigjøre plass på SSD-en i god tid.
 
-På lanseringsdagen, 19. november, låses spillet opp ved lokal midnatt på PS5. Rockstar har ennå ikke avklart det nøyaktige opplåsingstidspunktet på Xbox.
+På lanseringsdagen 19. november 2026 låses GTA 6 opp ved **lokal midnatt på både PS5 og Xbox Series X|S**. Rockstar bekrefter dette i sin [offisielle oversikt over regionale tider](https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s).
 
 ## Hvor stort er GTA 6: 212 GB på SSD-en
 
@@ -48,7 +48,7 @@ Rundt 212 GB. Det lønner seg å frigjøre noen gigabyte ekstra for en eventuell
 
 ### Når kommer GTA 6 ut i Italia?
 
-På PS5 låses det opp ved midnatt natt til 19. november 2026. Tidspunktet på Xbox er ennå ikke kunngjort.
+GTA 6 låses opp ved **lokal midnatt 19. november 2026 på både PS5 og Xbox Series X|S**, ifølge Rockstar.
 
 ### Kommer GTA 6 til PC?
 

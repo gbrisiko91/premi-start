@@ -22,7 +22,7 @@ Respecto a lo esperado, es un regalo para quienes han reservado en digital: hast
 
 Quienes hayan elegido una edición física con el código dentro de la caja tendrán que esperar: estas versiones llegarán a las tiendas a partir del **12 de noviembre**, y solo desde ese momento se podrá canjear el código y empezar a descargar. Si vuestra tienda de confianza os entrega la copia por adelantado, conviene igualmente dejar espacio libre en el SSD con tiempo.
 
-El día del lanzamiento, el 19 de noviembre, el juego se desbloqueará en PS5 a la medianoche local. Rockstar todavía no ha aclarado la hora exacta de desbloqueo en Xbox.
+El 19 de noviembre de 2026, GTA 6 se desbloqueará a las **00:00 hora local tanto en PS5 como en Xbox Series X|S**. Rockstar lo confirma en su [página oficial de horarios regionales](https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s).
 
 ## Cuánto ocupa GTA 6: 212 GB en el SSD
 
@@ -48,7 +48,7 @@ Unos 212 GB. Conviene liberar algunos gigas más para la posible actualización 
 
 ### ¿A qué hora sale GTA 6 en Italia?
 
-En PS5 se desbloquea a la medianoche entre el 18 y el 19 de noviembre de 2026. La hora en Xbox todavía no se ha comunicado.
+En **PS5 y Xbox Series X|S**, GTA 6 se desbloquea a la **medianoche local del 19 de noviembre de 2026**, según Rockstar.
 
 ### ¿Sale GTA 6 en PC?
 

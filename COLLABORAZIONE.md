@@ -77,7 +77,7 @@ Aggiornare a ogni apertura, merge o chiusura. Campi: numero · branch · autore 
 
 | PR | Branch | Autore | File principali | Stato | Prossima azione |
 |---|---|---|---|---|---|
-| [#35](https://github.com/gbrisiko91/premi-start/pull/35) | `chatgpt/guide-quiz-sondaggio-20261117` | ChatGPT | `build.mjs`, guide e test | In verifica: quiz e sondaggi in nove lingue | GitHub Actions e Netlify sull\'ultimo SHA |
+| Rettifica GTA 6 | `chatgpt/gta6-orari-rockstar-20261117` | ChatGPT | 9 Markdown, test, fonti Rockstar | In preparazione: orario Xbox aggiornato nelle nove lingue | CI, Netlify e controllo fonte ufficiale |
 
 ### PR del 17 novembre integrate
 #33: template title e meta description, test canonical/sitemap, integrata e test su main superati. #19: pagina Sfondi pixel e 3 PNG, integrata; #27: protocollo collaborazione e proposta controllata integrati; #28: 48 traduzioni integrate; #29: gate editoriale diagnostico (dry-run) integrato. **Quattro bozze del 17/11 escluse**: verifiche editoriali ancora aperte, non pubblicate.

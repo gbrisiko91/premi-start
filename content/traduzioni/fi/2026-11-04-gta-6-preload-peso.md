@@ -22,7 +22,7 @@ Odotuksiin nähden tämä on lahja digitaalisesti ennakkotilanneille: vielä vä
 
 Ne, jotka valitsivat fyysisen version, jonka paketissa on latauskoodi, joutuvat sen sijaan odottamaan: nämä versiot saapuvat kauppoihin **12. marraskuuta**, ja vasta silloin koodin voi lunastaa ja latauksen aloittaa. Vaikka oma kauppasi toimittaisi kopion etuajassa, SSD-levylle kannattaa silti vapauttaa tilaa ajoissa.
 
-Julkaisupäivänä 19. marraskuuta peli avautuu PS5:llä paikallista aikaa keskiyöllä. Rockstar ei ole vielä kertonut tarkkaa avautumisaikaa Xboxilla.
+GTA 6 avautuu **19. marraskuuta 2026 paikallista aikaa keskiyöllä sekä PS5:llä että Xbox Series X|S:llä**. Rockstar vahvistaa tämän [virallisessa alueellisten aikojen ohjeessaan](https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s).
 
 ## Paljonko GTA 6 vie tilaa: 212 Gt SSD:llä
 
@@ -48,7 +48,7 @@ Noin 212 Gt. Muutama gigatavu ylimääräistä kannattaa vapauttaa mahdollista j
 
 ### Mihin aikaan GTA 6 julkaistaan Italiassa?
 
-PS5:llä peli avautuu 18. ja 19. marraskuuta 2026 välisenä keskiyönä. Xboxin kellonaikaa ei ole vielä kerrottu.
+GTA 6 avautuu **19. marraskuuta 2026 paikallista aikaa keskiyöllä sekä PS5:llä että Xbox Series X|S:llä**, Rockstarin mukaan.
 
 ### Julkaistaanko GTA 6 PC:lle?
 

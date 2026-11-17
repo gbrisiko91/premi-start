@@ -22,7 +22,7 @@ Gemessen an den Erwartungen ist das ein Geschenk für alle, die digital vorbeste
 
 Wer sich für eine physische Edition mit Code in der Verpackung entschieden hat, muss dagegen warten: Diese Versionen kommen ab dem **12. November** in die Läden, und erst ab dann kann man den Code einlösen und den Download starten. Falls euch euer Stammhändler das Spiel früher aushändigt, solltet ihr trotzdem rechtzeitig Platz auf der SSD schaffen.
 
-Am Erscheinungstag, dem 19. November, wird das Spiel auf der PS5 um Mitternacht Ortszeit freigeschaltet. Die genaue Freischaltzeit auf Xbox hat Rockstar noch nicht bekanntgegeben.
+Am 19. November 2026 wird GTA 6 auf **PS5 und Xbox Series X|S jeweils um Mitternacht Ortszeit** freigeschaltet. Rockstar bestätigt das auf der [offiziellen Supportseite mit den regionalen Zeiten](https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s).
 
 ## Wie groß ist GTA 6: 212 GB auf der SSD
 
@@ -48,7 +48,7 @@ Rund 212 GB. Es lohnt sich, ein paar Gigabyte mehr für ein mögliches Day-One-U
 
 ### Um wie viel Uhr erscheint GTA 6 in Italien?
 
-Auf PS5 wird es um Mitternacht in der Nacht vom 18. auf den 19. November 2026 freigeschaltet. Die Uhrzeit für Xbox wurde noch nicht bekanntgegeben.
+Auf **PS5 und Xbox Series X|S** wird GTA 6 am **19. November 2026 um Mitternacht Ortszeit** freigeschaltet, wie Rockstar bestätigt.
 
 ### Erscheint GTA 6 für PC?
 
