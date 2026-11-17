@@ -32,7 +32,7 @@ Il gioco è già disponibile per il download gratuito su Android e su iPhone e i
 
 Le informazioni sul gioco, gli screenshot e i video utilizzati per questo approfondimento sono stati forniti direttamente dallo sviluppatore Giancarlo Mennillo.
 
-<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Partita a Pirates: Black Sails of the Sea tra nebbia e pioggia"></video><figcaption>Una partita tra nebbia e pioggia. Video: Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline controls preload="metadata" aria-label="Partita a Pirates: Black Sails of the Sea tra nebbia e pioggia"></video><figcaption>Una partita tra nebbia e pioggia. Video: Giancarlo Mennillo</figcaption></figure>
 
 ## Come si gioca a Pirates: Black Sails of the Sea
 
@@ -51,7 +51,7 @@ La parte più riuscita è il mare che cambia. Le prime fasi della partita si gio
 
 E poi c'è lui, un megalodonte che attraversa la scena e attacca chi capita a tiro.
 
-<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Un megalodonte attacca durante una battaglia navale"></video><figcaption>L'attacco del megalodonte. Video: Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" autoplay muted loop playsinline controls preload="metadata" aria-label="Un megalodonte attacca durante una battaglia navale"></video><figcaption>L'attacco del megalodonte. Video: Giancarlo Mennillo</figcaption></figure>
 
 ## Navi da collezionare e ricompense giornaliere
 

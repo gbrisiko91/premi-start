@@ -18,7 +18,7 @@ Spelet finns redan att ladda ner gratis till Android, iPhone och iPad:
 
 Utvecklaren Giancarlo Mennillo har själv försett Soffia Cartuccia med informationen, skärmbilderna och filmerna som används i den här artikeln.
 
-<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="En match i Pirates: Black Sails of the Sea i dimma och regn"></video><figcaption>En match i dimma och regn. Video: Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline controls preload="metadata" aria-label="En match i Pirates: Black Sails of the Sea i dimma och regn"></video><figcaption>En match i dimma och regn. Video: Giancarlo Mennillo</figcaption></figure>
 
 ## Så spelar man Pirates: Black Sails of the Sea
 
@@ -37,7 +37,7 @@ Det bäst lyckade inslaget är havet som förändras. Matchens första faser spe
 
 Och så har vi honom: en **megalodon** som korsar scenen och attackerar den som kommer inom räckhåll.
 
-<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="En megalodon attackerar under ett sjöslag"></video><figcaption>Megalodonens attack. Video: Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" autoplay muted loop playsinline controls preload="metadata" aria-label="En megalodon attackerar under ett sjöslag"></video><figcaption>Megalodonens attack. Video: Giancarlo Mennillo</figcaption></figure>
 
 ## Skepp att samla och dagliga belöningar
 
