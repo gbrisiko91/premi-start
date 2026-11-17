@@ -1,179 +1,107 @@
-# Soffia Cartuccia — Collaborazione Claude · ChatGPT · Gianmarco
+# Soffia Cartuccia 2.0 — Collaborazione, stato e decisioni
 
-Documento vivo di coordinamento. **È la fonte unica sullo stato del lavoro in corso**: chi interviene sul repository lo legge prima di iniziare e lo aggiorna quando finisce.
+> **Documento centrale e unico registro operativo** per Gianmarco, Claude e ChatGPT. Prima di qualsiasi intervento, leggere qui, controllare GitHub/CI/Netlify e aggiornare i fatti che sono cambiati. `STATO-PROGETTO.md` è soltanto la sintesi di passaggio fra chat: non mantiene un secondo registro autonomo.
+>
+> **Snapshot del 17 novembre 2026 (Europe/Rome)**. Stato verificato su GitHub: repository `gbrisiko91/premi-start`, ultimo commit tecnico verificato su `main` prima del consolidamento: `3937a65d6370cb9c2059f20141eb9eb364685dbf` (PR #43), GitHub Actions `44181472714` completata con successo. **Nessuna PR tecnica aperta**, la PR documentale #42 è il presente consolidamento. Dopo il suo merge il commit di `main` avanza; ricontrollare GitHub prima di agire.
 
-Ultimo aggiornamento: 17/11/2026 — PR #32–#37 integrate; nuovo flusso Claude 06:34 → 07:20 dichiarato, prima esecuzione 18/11 da verificare. Auto-merge NON attivo.
+## 1. Missione e riferimenti
 
----
+- Sito pubblico: https://soffiacartuccia.it · codice: https://github.com/gbrisiko91/premi-start
+- Obiettivo: testata gaming italiana e multilingue (9 lingue), orientata a notizie **verificabili**, GTA 6 e grandi eventi, scoperte indie, retrogaming, guida al lettore e crescita organica misurabile; la qualità prevale sulla quantità.
+- Regole redazionali: [GUIDA-REDAZIONE.md](GUIDA-REDAZIONE.md). La **copia del Progetto privato Claude** è quella letta dalle automazioni; Claude deve mantenerla coerente con GitHub (la sincronizzazione dei due documenti non è automatica).
+- Disegno tecnico dell'autopubblicazione, **non attivo**: [PROPOSTA-PUBBLICAZIONE-AUTOMATICA.md](PROPOSTA-PUBBLICAZIONE-AUTOMATICA.md).
+- Continuità fra conversazioni: [STATO-PROGETTO.md](STATO-PROGETTO.md); rilievi SEO: [SEO-INDICIZZAZIONE-AUDIT.md](SEO-INDICIZZAZIONE-AUDIT.md).
 
-## 1. Ruoli e responsabilità
+## 2. Ruoli, autorizzazioni e aree del repository
 
-| Chi | Si occupa di | Branch |
+| Responsabile | Ambito e limiti |
+|---|---|
+| **Gianmarco** | Decide priorità, strategia, approvazione editoriale e autorizzazione dei rilasci. **Non deve operare manualmente su GitHub**. |
+| **Claude** | Notizie, verifica fonti, articoli, traduzioni, guida editoriale nel Progetto, kit social, newsletter e sincronizzazione PR. Non esegue push diretto su `main` né merge non autorizzati. |
+| **ChatGPT** | Architettura, sicurezza, SEO tecnico, indicizzazione, audit, test, revisione delle PR, verifiche e **merge autorizzati**. |
+
+Aree: `content/articoli/`, `content/traduzioni/`, `content/pagine/` e `GUIDA-REDAZIONE.md` prevalentemente Claude. `tests/`, `.github/workflows/`, `netlify/`, strumenti SEO e sicurezza prevalentemente ChatGPT. `build.mjs`, `src/`, `rubriche.mjs`, `sito.config.mjs`, `lingue.mjs`, `novita.mjs` sono **condivisi/delicati**: segnalare la modifica prima di una PR. Non modificare il medesimo file in due PR concorrenti. Non eliminare i branch storici senza nuova decisione di Gianmarco.
+
+**Rilascio:** il proprietario autorizza, un assistente può eseguire il merge per suo conto dopo verifica di fatti, diff, SHA, CI, gate e preview Netlify. L'autorizzazione generale al lavoro tecnico non equivale ad approvazione automatica di nuovi articoli. Non modificare segreti, produzione, newsletter/Brevo, protezione branch o automazioni senza autorizzazione appropriata.
+
+## 3. Flusso giornaliero: programma del 18 novembre
+
+Le attività sono configurate **nel Progetto privato Claude**, non in GitHub. Claude ha **riferito** il 17/11 di aver aggiornato le istruzioni; l'effettivo funzionamento **non è ancora collaudato**.
+
+| Ora Europe/Rome | Comportamento previsto | Criterio di successo |
 |---|---|---|
-| **Gianmarco Buono** | Supervisione, priorità, approvazione finale. **Approva e autorizza i merge. Non deve eseguirli manualmente: un assistente autorizzato può effettuare il merge per suo conto; l'eventuale bot editoriale richiede attivazione separata.** | — |
-| **ChatGPT** | SEO tecnico, architettura, prestazioni, audit, verifica dei rilasci, revisione tecnica delle PR di Claude che toccano file condivisi. | `chatgpt/…` (le PR già aperte mantengono il loro nome) |
-| **Claude** | Funzionalità concordate, contenuti editoriali, articoli, traduzioni, newsletter, kit social, miglioramenti assegnati. | `contenuti/AAAA-MM-GG` per i contenuti del giorno · `claude/feat-<nome>` · `claude/fix-<nome>` · `claude/docs-<nome>` |
+| **06:34** | Ricerca privata, verifica del fatto principale, fonti e diritti immagini; classifica ogni articolo `pronto`, `non_pronto`, `revisione_umana`. Scrive segnale `bozze/_stato/AAAA-MM-GG.md` alla fine. | Data del giorno, identificativo univoco **per singola esecuzione** (anche ripetuta), `completato: true`, inizio/fine coerenti, elenco articoli/stati, fonti e motivi. Nessuna bozza su GitHub. |
+| **07:20** | Attende il segnale valido; ritenta ogni 10 minuti fino a 60 minuti; se manca interrompe e avvisa. Crea/aggiorna `contenuti/AAAA-MM-GG` e una sola PR con **solo articoli pronti e traduzioni verificate**. | Verifica che l'ID non sia già elaborato, che ogni file pronto sia integro, test/preview; nessuna modifica diretta di `main`, nessun merge autonomo. |
+| **07:47** | Vecchia attività separata di traduzioni in Progetto. Risulta ancora attiva, ma senza esecuzioni utili segnalate dal 6/11. | **Non disattivarla ancora**: verificare prima che le 07:20 producano correttamente anche le traduzioni degli articoli nuovi, senza duplicazioni. |
+| **Domenica 10:00** | Newsletter tramite Netlify/Brevo (come da configurazione preesistente). | Controllo separato; la variabile `NEWSLETTER_AUTOMATICA=no` è documentata come interruttore. Nessun cambiamento senza approvazione. |
 
-### Aree dei file
+Per il primo giro del **18/11/2026** chiedere: ID e orari, conferma segnale, titolo e fonti per ciascun pronto, numero e ragioni dei non pronti e dei revisioni umane, traduzioni/languages, URL della PR, esiti CI/gate/Netlify e problemi di accesso o traduzione. Se la ricerca non riesce a leggere GitHub, la 07:20 ricontrolla i link sul repository; nessun link interno inventato.
 
-| Area | Responsabile | Altri possono modificarla? |
+**Stati:** `pronto` = `bozza: false`, fatto principale verificato, scheda `verifica` con `dubbi: []`; `non_pronto` = bozza privata con dubbi aperti; `revisione_umana` = bozza privata anche se fonti confermate. Il mero punteggio di fonti non certifica i fatti. Contenuti delicati su persone reali, interviste, recensioni, indiscrezioni, leak, rettifiche e prove soggettive non entrano nel flusso automatico.
+
+**Immagini:** facoltative; con immagine, URL HTTPS, alt, crediti e verifica effettiva dei diritti. Senza diritti chiari, niente immagine (copertina di categoria). **Link interni:** solo pertinenti e verso pagine già pubblicate. Il repository pubblico non deve ricevere bozze private incompiute.
+
+## 4. Controllo delle PR e sicurezza (stato reale)
+
+Il **gate editoriale è solo diagnostico**: un job GitHub verde non significa che la notizia sia vera o sia pronta per il merge. Controllare il **report** per G1–G10 e la natura dei contenuti, non solo la conclusione del job. Le PR tecniche hanno test GitHub + preview Netlify sull'ultimo HEAD SHA, poi merge autorizzato e nuova CI su `main`.
+
+Le protezioni integrate comprendono: sanitizer HTML dopo `marked` (PR #31), gate dry-run (PR #29), immagini opzionali e controllo su natura sensibile (PR #37), controllo del flag esplicito `verifica.revisione_umana` anche su notizie `ufficiale` (PR #40), test SEO per canonical/robots/sitemap (PR #33). La PR #41 ripristina layout immagini usando classi CSS; la PR #43 recupera i video Pirates con `controls` e `video.src` consentito soltanto per protocolli sicuri. Gli altri controlli XSS restano attivi. Il gate non verifica diritti immagini, la verità delle fonti né il segnale salvato nel Progetto privato.
+
+**Auto-merge: NON ATTIVO.** La proposta richiede: identità GitHub App/bot indipendente, controlli read-only separati dal workflow privilegiato, protezioni di `main`, fonte primaria/evidenze verificabili, XSS protetto, protezioni anti-concorrenza, verifica SHA e deploy finale, kill switch, **almeno 5 giorni consecutivi di dry-run documentati** e una nuova autorizzazione specifica di Gianmarco. Nessun merge automatico di urgenze, rettifiche, recensioni o codice.
+
+## 5. Registro PR — snapshot GitHub 17/11
+
+**PR tecniche aperte: nessuna dopo le integrazioni #41 e #43.** La PR #42 contiene questo stesso consolidamento ed è in corso di verifica/merge. Ultimo `main` tecnico prima del consolidamento `3937a65d`, CI `44181472714` verde. Il merge della #42 modifica nuovamente il commit `main`.
+
+| PR | Intervento verificato | Stato |
 |---|---|---|
-| `content/articoli/`, `content/traduzioni/` | Claude | Sì, con PR e citando la PR in questo documento |
-| `content/pagine/` | Claude | Sì, con PR |
-| `rubriche.mjs` (calendario `USCITE`, `SONDAGGI`) | Claude | Avvisare prima |
-| `strumenti/newsletter*.mjs`, `strumenti/instagram.mjs`, `strumenti/traduzioni.mjs` | Claude | Avvisare prima |
-| `GUIDA-REDAZIONE.md` | Claude + Gianmarco | Solo con approvazione di Gianmarco |
-| `build.mjs`, `src/`, `lingue.mjs`, `sito.config.mjs`, `novita.mjs` | **Condivisi / delicati** | Chi li modifica lo segnala nel registro *prima* di aprire la PR |
-| `strumenti/sitemap-news.mjs`, `strumenti/articoli-correlati.mjs`, `strumenti/report-editoriale.mjs`, `strumenti/verifica-editoriale.mjs` | ChatGPT | Avvisare prima |
-| `netlify.toml`, `netlify/functions/`, `.github/workflows/`, `tests/` | ChatGPT | Avvisare prima; nessuna variabile di produzione senza Gianmarco |
-| `STATO-PROGETTO.md`, `SPRINT-*.md`, `REDAZIONE-*.md` | ChatGPT | Avvisare prima |
+| #19 | Pagina `/sfondi/` e 3 PNG pixel art | Integrata |
+| #20–#26 | Notizie, guida GTA 6, fix CI, sitemap Google News, registro | Integrate |
+| #27 | Protocollo di collaborazione e proposta auto-pubblicazione **non attiva** | Integrata |
+| #28 | **Solo 48 traduzioni** di 6 articoli già online; 4 bozze escluse prima del merge | Integrata |
+| #29–#30 | Gate dry-run e aggiornamento registro | Integrate |
+| #31 | Sanitizzazione HTML Markdown | Integrata |
+| #32 | 3 articoli: Grammy 2027, Miyamoto Legend Award, DualStation | Integrata |
+| #33 | SEO: titoli duplicati, meta-description homepage 9 lingue, test indicizzabilità | Integrata |
+| #34–#35 | Percorsi GTA 6/Indie; guide Quiz/Sondaggi 9 lingue | Integrate |
+| #36 | Rettifica GTA 6 orario Xbox, 9 lingue, basata sulla fonte ufficiale | Integrata |
+| #37 | Gate immagini opzionali/revisione umana | Integrata |
+| #38 | Guida redazionale allineata; ID segnale non riutilizzabile e controlli di sincronizzazione | Integrata |
+| #39 | Netlify Edge Function filtro in tempo reale degli URL scaduti nella sitemap Google News | Integrata |
+| #40 | Gate G3: `verifica.revisione_umana` esplicito non ignorato | Integrata |
+| #41 | Hotfix media: ripristino foto Dragone7/IFreddo e screenshot Pirates con CSS senza stili inline, nove lingue | Integrata; verifica visiva live non confermata |
+| #43 | Video Pirates: `controls` e sorgente `src` sicura nel sanitizer, test nove lingue e anti-XSS | Integrata; CI `44181472714` verde, prova browser live non confermata |
+| #42 | Consolidamento di `COLLABORAZIONE.md` e `STATO-PROGETTO.md` | **Questa PR**; ricontrollare il suo stato dopo il merge |
 
----
+**Conservare la distinzione storica:** nella PR #28 quattro bozze del 17/11 erano presenti nel ramo pubblico e poi rimosse dal diff prima del merge. In seguito **tre** di quelle notizie sono uscite con la #32; **Craig Houston** resta in revisione umana e non va pubblicato automaticamente. La cronologia pubblica della #28 potrebbe ancora esporre i vecchi contenuti: non ripetere l'errore con bozze future.
 
-## 2. Attività automatiche
+## 6. SEO, rilascio e misurazione
 
-Le automazioni girano su Claude; la loro configurazione privata non è direttamente verificabile qui. **Nessuna esegue merge o push diretto su main**. Articoli pronti con bozza: false possono essere proposti su PR, ma non vengono pubblicati senza autorizzazione.
+- **Search Console (18/10–14/11, dati verificati):** 60 clic e 3.492 impressioni, CTR circa 1,72%. Alcune lingue estere portano clic, specie Fortnite. Google ha scansionato ma **non indicizzato** vari articoli campionati; homepage indicizzata. Calo delle impressioni dal 12/11 da approfondire; **non è dimostrata alcuna penalizzazione**.
+- **Audit OpenSEO 15/11, campione 50 pagine:** 4 titoli duplicati, 27 segnalazioni di pagine leggere, 37 meta-description brevi. Le correzioni mirate ai template e agli hub sono state integrate; non garantiscono indicizzazione.
+- **News sitemap:** PR #25 generazione statica, PR #39 Edge Function che filtra le voci scadute anche senza rebuild. Test GitHub e anteprima Netlify verdi, **ma il comportamento live della funzione Edge e gli header di produzione non sono stati verificati** (ambiente di controllo non raggiunge il dominio). Non inventare una conferma di deploy pubblico.
+- **Priorità:** verifica pubblica Netlify/sitemap e **resa reale della pagina Dragone7/Pirates**, 18/11 primo ciclo Claude con evidenze, controllo traduzioni, successiva analisi Google Search Console. Migliorare qualità, originalità, link interni e intenti dei lettori, non aumentare gli articoli indiscriminatamente.
 
-| Ora (Europe/Rome) | Attività | Dove scrive | Stato al 16/11 |
-|---|---|---|---|
-| 06:34 | **Ricerca privata**: scheda verifica, articolo pronto/non pronto/revisione umana; produce segnale con data e identificativo del giorno | Solo Progetto Claude privato | Aggiornamento comunicato da Claude, primo giro da verificare il 18/11 |
-| 07:20 | **Sincronizzazione**: attende segnale 06:34, riprova ogni 10 minuti per massimo un'ora; solo articoli pronti e traduzioni già pubblicate | Branch e PR su GitHub, niente main | Segnale assente/scaduto: interrompere e notificare; primo giro da verificare il 18/11 |
-| 07:47 | **Traduzioni degli ordini**: traduce gli `ordini/` del Progetto | Solo nel Progetto Claude (`traduzioni/`), niente GitHub | Attiva |
-| Domenica 10:00 | **Newsletter "Il Soffio della settimana"**: funzione Netlify `newsletter-domenica` (09:00 UTC) | Brevo | Attiva; si sospende con la variabile Netlify `NEWSLETTER_AUTOMATICA=no` |
+## 7. Regole operative permanenti
 
-Nota sulla sincronizzazione delle 07:20: fino al 16/11 faceva commit diretti su `main` e si riprogrammava da sola un giorno alla volta. L'esecuzione del 16/11 non ha programmato quella del 17/11. Dal 17/11 è sostituita da un'attività ricorrente che lavora solo su branch e PR e non fa mai merge.
+1. Prima di ogni lavoro: leggere questo documento, `STATO-PROGETTO.md` e l'eventuale guida specifica; poi **controllare live** branch `main`, PR, commit, CI e preview. I documenti sono snapshot, non una prova di aggiornamento del repository.
+2. Nessun push diretto su `main`. PR piccole, un solo obiettivo, e file condivisi annunciati. Se un altro assistente ha modificato `main`, sincronizzare e ripetere i test sull'HEAD corrente. Non forzare branch altrui.
+3. Le approvazioni riguardano il contenuto e l'ambito dichiarati. Gianmarco non fa merge manuali. Nessun invio newsletter, modifica segreti, deploy alternativo, aumento costi o abilitazione auto-merge senza consenso.
+4. Notizie urgenti e rettifiche: PR separata con verifica fonti e revisione umana; tempi rapidi non eliminano i controlli.
+5. A fine sessione aggiornare **questo registro centrale** (PR, decisioni, blocchi, prossima azione). Tenere `STATO-PROGETTO.md` come **breve handoff**, senza copia del registro o informazioni contraddittorie; non eliminare vecchi branch.
+6. La produzione Netlify va verificata separatamente dalla CI e dalla Deploy Preview: un merge riuscito non prova da solo che l'articolo sia servito dal dominio.
 
-Verifica delle dipendenze (dettagli in `PROPOSTA-PUBBLICAZIONE-AUTOMATICA.md` §1):
-- l'attività delle 07:47 è inattiva nei fatti dal 06/11, perché le traduzioni le fa la sincronizzazione delle 07:20;
-- la dipendenza 06:34 → 07:20 è stata dichiarata aggiornata da Claude il 17/11; verificare segnale del giorno, ID ed esito reale prima di considerarla collaudata;
-- le traduzioni partono solo per gli articoli già pubblicati.
+## 8. Decisioni registrate e prossima sessione
 
-La proposta corregge tutti e tre i punti.
-
----
-
-## 3. Protocollo di sincronizzazione giornaliera
-
-> In vigore **fino all'attivazione** della pubblicazione automatica (§8). Dopo l'attivazione, il passaggio 6 e il merge manuale valgono solo per le PR non editoriali e per i casi bloccati dal gate.
-
-1. Alle 07:20 Claude parte dall'ultimo `main` remoto e controlla le PR aperte.
-2. Crea il branch `contenuti/AAAA-MM-GG`. Se esiste già, lo riprende senza riscriverne la storia.
-3. Sincronizza **solo gli articoli pronti** (bozza: false, verifica completa) e le traduzioni degli articoli già pubblicati. Bozze non pronte e revisioni umane restano nel Progetto privato, mai nel repository pubblico. Aggiorna rubriche.mjs solo se necessario.
-4. Esegue `npm run audit:editoriale`, `npm test`, `node build.mjs --bozze` e `node build.mjs`. Se i test falliscono, non apre la PR e lo segnala.
-5. Apre (o aggiorna) **una sola PR al giorno** con il titolo `Contenuti AAAA-MM-GG`. Nella descrizione elenca:
-   - gli articoli pronti proposti e i file toccati;
-   - le traduzioni per lingua;
-   - l'esito di test e audit;
-   - il numero dei contenuti trattenuti nel Progetto privato e i motivi, senza riversarne il testo su GitHub.
-6. **Pubblicazione**: gli articoli pronti nella PR restano soggetti a verifica editoriale, test e preview Netlify. Gianmarco autorizza il merge; ChatGPT/Claude può eseguirlo per suo conto. Nessun auto-merge attivo.
-7. Gianmarco approva o autorizza il rilascio; ChatGPT/Claude può eseguire il merge consentito. Dopo il merge, ChatGPT può verificare il rilascio (deploy Netlify, sitemap, pagine). Un push o una CI verde **non** vuol dire che il deploy sia andato a buon fine.
-8. Se la PR del giorno prima non è ancora stata unita, quella nuova parte comunque da `main` e non la tocca. Gli articoli in sospeso restano nella loro PR.
-
----
-
-## 4. Registro delle PR aperte
-
-Aggiornare a ogni apertura, merge o chiusura. Campi: numero · branch · autore · file principali · stato · chi deve agire.
-
-| PR | Branch | Autore | File principali | Stato | Prossima azione |
-|---|---|---|---|---|---|
-| [#38](https://github.com/gbrisiko91/premi-start/pull/38) | `claude/docs-guida-redazione` | Claude | `GUIDA-REDAZIONE.md` | In revisione: identificativo segnale univoco | Claude aggiorna §8–9, poi controlli |
-| [#40](https://github.com/gbrisiko91/premi-start/pull/40) | `chatgpt/gate-revisione-umana-esplicita-20261117` | ChatGPT | Gate G3 e test | Protezione del campo `verifica.revisione_umana` | CI/Netlify sull'ultimo SHA e merge dopo verifica |
-
-### PR del 17 novembre integrate
-#32 articoli Grammy/Miyamoto/DualStation · #34 percorsi GTA 6 e Indie · #35 guide Quiz/Sondaggio · #36 rettifica GTA 6 già integrate.
-#33: template title e meta description, test canonical/sitemap, integrata e test su main superati. #19: pagina Sfondi pixel e 3 PNG, integrata; #27: protocollo collaborazione e proposta controllata integrati; #28: 48 traduzioni integrate; #29: gate editoriale diagnostico (dry-run) integrato. **Quattro bozze del 17/11 escluse**: verifiche editoriali ancora aperte, non pubblicate.
-
-### Integrate di recente (16/11)
-#19 Sfondi pixel (17/11) · #20 Nintendo Milano · #21 Fortnite Pirate Token · #22 GTA 6 preload · #23 guida GTA 6 · #24 fix CI note interne · #25 sitemap Google News · #26 registro di continuità · #27 coordinamento e proposta · #28 48 traduzioni (17/11) · #29 gate dry-run.
-
-### Branch storici
-Circa 25 branch di PR già integrate restano su GitHub. **Per decisione di Gianmarco non vanno eliminati per ora.**
-
----
-
-## 5. Regole per evitare conflitti
-
-1. **Prima di iniziare**: `git fetch`, leggere questo file, controllare le PR aperte e i file che toccano.
-2. **Nessuna modifica diretta a `main`**, per nessun motivo: né pubblicazioni né correzioni di un refuso.
-3. **Un file, un responsabile alla volta.** Se un file compare già in una PR aperta di un altro, non lo si modifica: si commenta la PR o si aspetta il merge.
-4. **File condivisi o delicati** (vedi tabella al §1): chi li modifica li elenca nel registro *prima* di aprire la PR e chiede la revisione dell'altro.
-5. **PR piccole e con un solo scopo.** Niente modifiche "già che c'ero" fuori dallo scopo.
-6. **Branch sempre da `main` aggiornato.** Per riallinearsi si usa rebase o merge di `main`, mai `push --force` su branch altrui.
-7. **Fonti**: si distinguono sempre conferme ufficiali e indiscrezioni (vedi `GUIDA-REDAZIONE.md`). Una CI verde non certifica che i fatti siano veri.
-8. **Nessuna operazione su produzione** (variabili Netlify, Brevo, social, invii) senza ok esplicito di Gianmarco.
-
----
-
-## 6. Procedura di emergenza per notizie urgenti
-
-Vale per le notizie da mettere online in poche ore: annunci a sorpresa, risultati di eventi, rettifiche di errori già pubblicati.
-
-1. Claude crea il branch `contenuti/AAAA-MM-GG-urgente-<parola-chiave>` da `main`, con un solo articolo (ed eventualmente la sua riga in `rubriche.mjs`).
-2. Verifica le fonti come al solito, poi esegue `npm test` e `node build.mjs`.
-3. Apre la PR con il titolo `URGENTE: <titolo>` e avvisa Gianmarco in chat, con link alla PR e un riassunto di una riga.
-4. **Gianmarco autorizza il merge**, che un assistente può eseguire per suo conto; l'urgenza riduce i tempi, non la verifica e l'autorizzazione.
-5. Dopo il merge, ChatGPT o Claude controlla che la pagina sia online e annota l'esito nel registro.
-6. **Rettifiche**: se un articolo pubblicato contiene un errore di fatto, si segue la stessa procedura con il titolo `URGENTE rettifica: …`, e nell'articolo si aggiunge una riga di aggiornamento con la data.
-7. Le traduzioni dell'articolo urgente arrivano con la sincronizzazione del giorno dopo.
-
----
-
-## 7. Come si aggiorna questo documento
-
-- **Chi apre, unisce o chiude una PR** aggiorna il registro (§4) nella stessa PR o nella PR successiva.
-- **Claude** aggiorna lo stato delle automazioni (§2) e il registro dentro la PR `Contenuti AAAA-MM-GG` di ogni giorno.
-- **ChatGPT** aggiorna le sezioni su architettura, file delicati e verifiche di rilascio quando cambiano.
-- Le **decisioni** vanno nel registro qui sotto, con data e chi le ha approvate. Solo Gianmarco approva una decisione.
-- Si tiene il documento corto: le PR integrate da più di 7 giorni escono dal registro e restano nella cronologia di GitHub.
-- `STATO-PROGETTO.md` resta la sintesi di passaggio fra chat e rimanda a questo documento per il registro operativo; lo stato effettivo va sempre verificato su GitHub, non ricostruito da un testo datato.
-
-### Registro delle decisioni
-
-| Data | Decisione | Approvata da |
+| Data | Decisione approvata | Stato |
 |---|---|---|
-| 16/11/2026 | GitHub è la fonte unica del progetto; si lavora con branch e PR separati | Gianmarco |
-| 16/11/2026 | Ruoli: ChatGPT SEO tecnico/architettura/audit; Claude funzionalità e contenuti; Gianmarco supervisione e merge | Gianmarco |
-| 16/11/2026 | Opzione A: una PR al giorno (`contenuti/AAAA-MM-GG`) per articoli e traduzioni; anche la pubblicazione passa dalla PR | Gianmarco |
-| 16/11/2026 | Restano le automazioni delle 06:34 e delle 07:47 | Gianmarco |
-| 16/11/2026 | I branch storici non si eliminano per ora | Gianmarco |
-| 16/11/2026 | Obiettivo: pubblicazione automatica degli articoli con controlli; modifiche tecniche sempre manuali. Proposta in revisione, **non attiva** | Gianmarco (obiettivo) · in attesa di revisione ChatGPT |
+| 16/11 | GitHub fonte persistente del progetto, PR per ogni cambiamento; `COLLABORAZIONE.md` documento principale, `STATO-PROGETTO.md` handoff | In vigore |
+| 16/11 | Claude contenuti, ChatGPT SEO/tecnica/audit, Gianmarco responsabile approvazioni; assistenti possono eseguire merge autorizzati | In vigore |
+| 16/11 | Una PR editoriale giornaliera; niente bozze private incomplete nel repository pubblico | In vigore |
+| 16/11 | Conservare i branch storici fino a successiva decisione | In vigore |
+| 17/11 | Avvio controllo editoriale diagnostico, **non auto-merge**. Automatizzare pubblicazione solo dopo requisiti di sicurezza, dry-run e ulteriore approvazione | Proposta non attiva |
+| 17/11 | Claude dichiara aggiornato flusso 06:34 → 07:20; 07:47 da disattivare **solo dopo verifica** delle traduzioni nel primo ciclo | Configurato secondo Claude, **collaudo 18/11 pendente** |
 
----
+**Prossima azione:** il 18 novembre verificare evidenze del ciclo 06:34 → 07:20, classi editoriali, segnale unico, test/preview e traduzioni; poi valutare eventuale PR giornaliera con autorizzazione editoriale di Gianmarco. In parallelo controllare dal vivo sitemap News, risposte HTTP e indicizzazione con strumenti che possano accedere al dominio.
 
-## 8. Proposta: pubblicazione automatica controllata (NON ATTIVA)
-
-Proposta tecnica completa: **[`PROPOSTA-PUBBLICAZIONE-AUTOMATICA.md`](PROPOSTA-PUBBLICAZIONE-AUTOMATICA.md)**. In attesa di revisione di ChatGPT e approvazione di Gianmarco. **Nessun auto-merge è implementato.**
-
-In sintesi:
-- **Flusso**: 06:34 bozze verificate con scheda `verifica` e segnale di completamento → 07:20 gate editoriale, traduzioni prima della PR, PR `contenuti/…` con etichetta `editoriale-auto` → auto-merge se tutti i controlli sono verdi → deploy Netlify → controllo dopo la pubblicazione. La 07:47 viene disattivata.
-- **Gate editoriale (G1-G10)**: fonte primaria o 2 fonti indipendenti, niente indiscrezioni, niente note aperte, SEO e immagini complete, niente doppioni o sovrapposizioni con PR aperte, niente HTML pericoloso, limiti di quantità.
-- **Auto-merge (S1-S9, NON ATTIVO)**: da progettare con identità bot/App separata e distinta autorizzazione dopo 5 giorni di prova; solo branch `contenuti/…`, solo file **nuovi** in `content/articoli/` e `content/traduzioni/<lingua>/`, CI + gate + anteprima Netlify verdi, PR aggiornata, interruttore `AUTO_PUBBLICAZIONE`, una PR alla volta. Qualsiasi altro file (codice, config, SEO tecnico, template, workflow, `rubriche.mjs`) resta a **merge manuale**.
-- **Bozze private**: su GitHub (repository pubblico) arrivano solo gli articoli pronti. Le bozze non pronte restano nel Progetto Claude.
-- **Blocchi**: se un controllo fallisce la PR resta aperta con l'etichetta `blocco-editoriale` e parte una segnalazione. Un articolo bloccato non ferma gli altri.
-- **Attivazione per fasi (0-5)**, con 5 giorni di prova a secco prima dell'auto-merge vero.
-- **Da decidere (Gianmarco)**: indiscrezioni, limite giornaliero, seconda tornata delle 13:20, repository privato, account bot.
-
-### Revisione richiesta a ChatGPT
-- Funzionamento tecnico del gate e dei workflow (§2-3 della proposta).
-- Condizioni di sicurezza S1-S9 e il limite di identità dell'account unico (§3.3).
-- Sistema di pubblicazione automatica e criteri editoriali (§2).
-- Prevenzione di doppioni e conflitti (§5).
-- Rischi per Netlify e per il sito pubblico (§6), in particolare deploy da merge con `GITHUB_TOKEN`, minuti di build e sitemap News.
-
-
----
-
-## 9. Esito della revisione tecnica ChatGPT (17/11)
-
-La PR #27 documenta il disegno, **non autorizza né implementa l'auto-merge**. L'adozione della proposta richiede una PR di implementazione distinta e controlli in prova a secco (almeno cinque giorni), poi un'autorizzazione esplicita di Gianmarco per l'attivazione.
-
-Condizioni da soddisfare prima della fase 4:
-- Identità GitHub App/bot distinta: oggi account unico = nessuna indipendenza reale fra autore, revisore, e approvatore; CODEOWNERS da solo non basta.
-- Gate editoriale deterministico + evidenze verificabili per le affermazioni principali, con revisione umana per casi sensibili. Un contatore di fonti inserito dall'agente non certifica la verità.
-- Sanitizzazione o escaping sicuro dell'HTML generato da `marked`; blacklist regexp non sufficiente contro XSS.
-- Workflow PR read-only separato da un workflow privilegiato trusted su `main`, mai eseguire codice della PR con segreti o token di scrittura.
-- Verificare stati, SHA corrente, diff completo, protezione di `main`, deploy Netlify atteso, idempotenza, lock, possibilità di arresto e allarme in caso di mancata pubblicazione. Non fare affidamento su eventi GitHub Actions generati da `GITHUB_TOKEN` per attivare altri workflow.
-- Nessun auto-merge di bozze, rettifiche, urgenze, modifiche tecniche o revert nella fase iniziale. Le quattro bozze del 17/11 restano in revisione.
-
-Stato attuale: la #28 conteneva originariamente bozze nel repository pubblico; esse non sono state integrate su `main`, ma la cronologia della PR pubblica è già stata visibile. Le bozze future restano nel progetto privato fino al completamento dei controlli.
+**Ripresa in una nuova chat:** «Riprendiamo Soffia Cartuccia 2.0. Controlla `COLLABORAZIONE.md` e `STATO-PROGETTO.md` in `gbrisiko91/premi-start`; verifica stato GitHub, PR, CI e Netlify prima di agire. Non riaprire attività completate. Prosegui dalla prima priorità aperta senza auto-merge non autorizzato.»
