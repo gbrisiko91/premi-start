@@ -16,9 +16,13 @@ Ultimo aggiornamento: 17 novembre 2026 (Europe/Rome).
 - PR #28: 48 traduzioni di sei articoli pubblicati il 16/11, merge 17/11 (commit dd5c9d1ae0994ff0f406cf5a90a51b4a0105a252); quattro bozze con verifiche aperte rimosse dal diff prima del merge.
 
 ## Aperte e prossime azioni
-- PR #27: documentazione di coordinamento e proposta auto-pubblicazione, con revisione tecnica ChatGPT. Solo documentazione, nessun auto-merge attivo. Controllare test/preview sul commit finale, poi unire.
+- PR #27: documentazione di coordinamento, proposta e revisione di sicurezza **integrata** il 17/11 (commit 481b7ac5a86128dacc243a41449cf2988ebe2eee).
+- PR #29: gate diagnostico in sola lettura **integrato** il 17/11 (commit 338caff0cd0a42909fcf2706d2e9bd6872dd693a). Workflow GitHub Actions e test superati; non pubblica articoli e non esegue merge automatici.
+- Al controllo del 17/11 non risultano PR aperte.
 - Quattro bozze del 17/11: rimangono non pubblicate; completare verifica fonti, immagini e link, successivamente una PR editoriale distinta.
-- Automatizzazione sitemap News con aggiornamento anche nei giorni senza build: miglioramento tecnico futuro.
+- Avviare cinque giorni di osservazione del gate dry-run sulle nuove PR editoriali: registrare esiti ed eventuali falsi positivi; nessuna auto-pubblicazione senza esplicito nuovo via libera.
+- Claude: verificare le quattro bozze del 17/11 rimaste fuori dalla PR #28 (fonti primarie, diritti immagini, dati) e produrre scheda `verifica` con evidenze prima di proporle.
+- Hardening HTML/Markdown del renderer e controllo aggiornamento sitemap News nei giorni senza build: interventi tecnici separati.
 - Verificare Search Console, indicizzazione, performance e traffico con dati reali, senza garantire risultati.
 
 ## Regole operative

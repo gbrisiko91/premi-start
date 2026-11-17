@@ -2,7 +2,7 @@
 
 Documento vivo di coordinamento. **È la fonte unica sullo stato del lavoro in corso**: chi interviene sul repository lo legge prima di iniziare e lo aggiorna quando finisce.
 
-Ultimo aggiornamento: 17/11/2026 (Europe/Rome) — revisione tecnica ChatGPT: ruoli, stato delle PR e condizioni di sicurezza (auto-merge NON attivo).
+Ultimo aggiornamento: 17/11/2026 (Europe/Rome) — PR #19/#27/#28/#29 integrate e registro sincronizzato; auto-merge NON attivo.
 
 ---
 
@@ -77,13 +77,13 @@ Aggiornare a ogni apertura, merge o chiusura. Campi: numero · branch · autore 
 
 | PR | Branch | Autore | File principali | Stato | Prossima azione |
 |---|---|---|---|---|---|
-| [#27](https://github.com/gbrisiko91/premi-start/pull/27) | `claude/docs-collaborazione` | Claude + ChatGPT | Documentazione e stato operativo | Aperta: revisione tecnica incorporata, **nessuna automazione attiva** | Verifica CI/Netlify e merge documentale |
+| — | — | — | — | **Nessuna PR aperta** al 17/11/2026 | Avviare solo attività necessarie e versionate |
 
 ### PR del 17 novembre integrate
-#19: pagina Sfondi pixel e 3 PNG, integrata; #28: solo 48 traduzioni di sei articoli del 16/11, integrata. **Quattro bozze del 17/11 escluse**: verifiche editoriali ancora aperte, non pubblicate.
+#19: pagina Sfondi pixel e 3 PNG, integrata; #27: protocollo collaborazione e proposta controllata integrati; #28: 48 traduzioni integrate; #29: gate editoriale diagnostico (dry-run) integrato. **Quattro bozze del 17/11 escluse**: verifiche editoriali ancora aperte, non pubblicate.
 
 ### Integrate di recente (16/11)
-#19 Sfondi pixel (17/11) · #20 Nintendo Milano · #21 Fortnite Pirate Token · #22 GTA 6 preload · #23 guida GTA 6 · #24 fix CI note interne · #25 sitemap Google News · #26 registro di continuità · #28 48 traduzioni (17/11).
+#19 Sfondi pixel (17/11) · #20 Nintendo Milano · #21 Fortnite Pirate Token · #22 GTA 6 preload · #23 guida GTA 6 · #24 fix CI note interne · #25 sitemap Google News · #26 registro di continuità · #27 coordinamento e proposta · #28 48 traduzioni (17/11) · #29 gate dry-run.
 
 ### Branch storici
 Circa 25 branch di PR già integrate restano su GitHub. **Per decisione di Gianmarco non vanno eliminati per ora.**
