@@ -77,7 +77,7 @@ Aggiornare a ogni apertura, merge o chiusura. Campi: numero · branch · autore 
 
 | PR | Branch | Autore | File principali | Stato | Prossima azione |
 |---|---|---|---|---|---|
-| Da attribuire alla PR SEO | `chatgpt/seo-indexabilita-20261117` | ChatGPT | `build.mjs`, `tests/seo-indexabilita.mjs`, SEO audit | Revisione tecnica: canonical/sitemap e template title/description | CI e preview Netlify, poi merge se verdi |
+| [#33](https://github.com/gbrisiko91/premi-start/pull/33) | `chatgpt/seo-indexabilita-20261117` | ChatGPT | `build.mjs`, `tests/seo-indexabilita.mjs`, SEO audit | In verifica: title unici, meta homepage, test canonical/sitemap | Verifica GitHub Actions e Netlify sull'ultimo commit |
 
 ### PR del 17 novembre integrate
 #19: pagina Sfondi pixel e 3 PNG, integrata; #27: protocollo collaborazione e proposta controllata integrati; #28: 48 traduzioni integrate; #29: gate editoriale diagnostico (dry-run) integrato. **Quattro bozze del 17/11 escluse**: verifiche editoriali ancora aperte, non pubblicate.
