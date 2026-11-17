@@ -18,7 +18,7 @@ crediti_immagine: "Изображения: Giancarlo Mennillo, оригинал�
 
 Информацию об игре, скриншоты и видео для этой статьи разработчик Giancarlo Mennillo предоставил Soffia Cartuccia напрямую.
 
-<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" controls muted loop playsinline preload="metadata" aria-label="Партия в Pirates: Black Sails of the Sea в тумане и под дождём"></video><figcaption>Партия в тумане и под дождём. Видео: Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline controls preload="metadata" aria-label="Партия в Pirates: Black Sails of the Sea в тумане и под дождём"></video><figcaption>Партия в тумане и под дождём. Видео: Giancarlo Mennillo</figcaption></figure>
 
 ## Как играть в Pirates: Black Sails of the Sea
 
@@ -37,7 +37,7 @@ crediti_immagine: "Изображения: Giancarlo Mennillo, оригинал�
 
 А ещё есть он: **мегалодон**, который пересекает сцену и атакует всех, кто попадётся.
 
-<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" controls muted loop playsinline preload="metadata" aria-label="Мегалодон атакует во время морского сражения"></video><figcaption>Атака мегалодона. Видео: Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" autoplay muted loop playsinline controls preload="metadata" aria-label="Мегалодон атакует во время морского сражения"></video><figcaption>Атака мегалодона. Видео: Giancarlo Mennillo</figcaption></figure>
 
 ## Корабли для коллекции и ежедневные награды
 

@@ -17,7 +17,8 @@ for (const lingua of ["it", "en", "de", "es", "no", "sv", "fi", "ja", "ru"]) {
       assert.match(tag, /\scontrols(?:\s|>)/, path + ": comando Riproduci mancante");
       assert.match(tag, /\ssrc="\/media\/pirates-black-sails\/[^"]+\.mp4"/);
       assert.match(tag, /\sposter="\/media\/pirates-black-sails\/[^"]+\.jpg"/);
-      assert.doesNotMatch(tag, /\sautoplay(?:\s|>)/);
+      assert.match(tag, /\sautoplay(?:\s|>)/, path + ": autoplay muto autorizzato mancante");
+      assert.match(tag, /\smuted(?:\s|>)/, path + ": autoplay vietato senza muted");
       assert.doesNotMatch(tag, /\son(?:error|load|click)=/i);
     }
   });

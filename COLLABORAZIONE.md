@@ -101,6 +101,7 @@ Le protezioni integrate comprendono: sanitizer HTML dopo `marked` (PR #31), gate
 | 16/11 | Conservare i branch storici fino a successiva decisione | In vigore |
 | 17/11 | Avvio controllo editoriale diagnostico, **non auto-merge**. Automatizzare pubblicazione solo dopo requisiti di sicurezza, dry-run e ulteriore approvazione | Proposta non attiva |
 | 17/11 | Claude dichiara aggiornato flusso 06:34 → 07:20; 07:47 da disattivare **solo dopo verifica** delle traduzioni nel primo ciclo | Configurato secondo Claude, **collaudo 18/11 pendente** |
+| 17/11 | **Gianmarco autorizza l’avvio automatico dei video solo se muti**, con controlli manuali disponibili; nessuna deroga a XSS o avvio con audio | Approvato; implementazione nella PR #44, da verificare CI e Netlify |
 
 **Prossima azione:** il 18 novembre verificare evidenze del ciclo 06:34 → 07:20, classi editoriali, segnale unico, test/preview e traduzioni; poi valutare eventuale PR giornaliera con autorizzazione editoriale di Gianmarco. In parallelo controllare dal vivo sitemap News, risposte HTTP e indicizzazione con strumenti che possano accedere al dominio.
 

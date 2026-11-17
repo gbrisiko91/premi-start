@@ -18,7 +18,7 @@ El juego ya está disponible para descargar gratis en Android, iPhone y iPad:
 
 El desarrollador Giancarlo Mennillo proporcionó directamente a Soffia Cartuccia la información, las capturas de pantalla y los vídeos utilizados en este artículo.
 
-<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" controls muted loop playsinline preload="metadata" aria-label="Partida de Pirates: Black Sails of the Sea entre niebla y lluvia"></video><figcaption>Una partida entre niebla y lluvia. Vídeo: Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline controls preload="metadata" aria-label="Partida de Pirates: Black Sails of the Sea entre niebla y lluvia"></video><figcaption>Una partida entre niebla y lluvia. Vídeo: Giancarlo Mennillo</figcaption></figure>
 
 ## Cómo se juega a Pirates: Black Sails of the Sea
 
@@ -37,7 +37,7 @@ Lo más logrado es el mar cambiante. Las primeras fases de la partida se juegan 
 
 Y luego está él: un **megalodón** que cruza la escena y ataca a quien se le ponga a tiro.
 
-<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" controls muted loop playsinline preload="metadata" aria-label="Un megalodón ataca durante una batalla naval"></video><figcaption>El ataque del megalodón. Vídeo: Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" autoplay muted loop playsinline controls preload="metadata" aria-label="Un megalodón ataca durante una batalla naval"></video><figcaption>El ataque del megalodón. Vídeo: Giancarlo Mennillo</figcaption></figure>
 
 ## Barcos coleccionables y recompensas diarias
 

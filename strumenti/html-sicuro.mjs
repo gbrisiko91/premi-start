@@ -16,7 +16,7 @@ const ATTR = {
   th: ["colspan", "rowspan", "scope"],
   ol: ["start", "type"],
   time: ["datetime"],
-  video: ["src", "controls", "preload", "poster", "width", "height", "playsinline", "muted", "loop"],
+  video: ["src", "controls", "preload", "poster", "width", "height", "playsinline", "muted", "loop", "autoplay"],
   audio: ["controls", "preload"],
   source: ["src", "type", "media"],
 };
@@ -42,6 +42,14 @@ export function sanificaHtml(html) {
     allowProtocolRelative: false,
     nonTextTags: ["script", "style", "textarea", "option", "iframe", "svg", "math", "template"],
     transformTags: {
+      // Avvio automatico ammesso (decisione di Gianmarco, 17/11/2026) solo per video muti:
+      // senza muted l'attributo autoplay viene rimosso. Con autoplay si aggiunge playsinline.
+      video: (tagName, attribs) => {
+        const out = { ...attribs };
+        if ("autoplay" in out && !("muted" in out)) delete out.autoplay;
+        if ("autoplay" in out && !("playsinline" in out)) out.playsinline = "";
+        return { tagName, attribs: out };
+      },
       a: (tagName, attribs) => ({
         tagName,
         attribs: attribs.target === "_blank" ? { ...attribs, rel: "noopener noreferrer" } : attribs,

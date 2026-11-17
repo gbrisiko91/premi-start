@@ -18,7 +18,7 @@ Das Spiel steht bereits kostenlos für Android, iPhone und iPad zum Download ber
 
 Die Informationen zum Spiel sowie die Screenshots und Videos für diesen Artikel hat Entwickler Giancarlo Mennillo Soffia Cartuccia direkt zur Verfügung gestellt.
 
-<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" controls muted loop playsinline preload="metadata" aria-label="Eine Partie Pirates: Black Sails of the Sea in Nebel und Regen"></video><figcaption>Eine Partie in Nebel und Regen. Video: Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline controls preload="metadata" aria-label="Eine Partie Pirates: Black Sails of the Sea in Nebel und Regen"></video><figcaption>Eine Partie in Nebel und Regen. Video: Giancarlo Mennillo</figcaption></figure>
 
 ## So spielt man Pirates: Black Sails of the Sea
 
@@ -37,7 +37,7 @@ Am gelungensten ist das wechselhafte Meer. Die ersten Phasen einer Partie spiele
 
 Und dann ist da noch er: ein **Megalodon**, der durch die Szene zieht und jeden angreift, der ihm in die Quere kommt.
 
-<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" controls muted loop playsinline preload="metadata" aria-label="Ein Megalodon greift während einer Seeschlacht an"></video><figcaption>Der Angriff des Megalodons. Video: Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" autoplay muted loop playsinline controls preload="metadata" aria-label="Ein Megalodon greift während einer Seeschlacht an"></video><figcaption>Der Angriff des Megalodons. Video: Giancarlo Mennillo</figcaption></figure>
 
 ## Schiffe zum Sammeln und tägliche Belohnungen
 

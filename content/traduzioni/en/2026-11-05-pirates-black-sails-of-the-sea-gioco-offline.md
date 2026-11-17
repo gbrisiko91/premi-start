@@ -17,7 +17,7 @@ The game is already available as a free download for Android, iPhone and iPad:
 
 Developer Giancarlo Mennillo provided the game information, screenshots and videos used in this article directly to Soffia Cartuccia.
 
-<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" controls muted loop playsinline preload="metadata" aria-label="A match of Pirates: Black Sails of the Sea in fog and rain"></video><figcaption>A match in fog and rain. Video: Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline controls preload="metadata" aria-label="A match of Pirates: Black Sails of the Sea in fog and rain"></video><figcaption>A match in fog and rain. Video: Giancarlo Mennillo</figcaption></figure>
 
 ## How to play Pirates: Black Sails of the Sea
 
@@ -36,7 +36,7 @@ The most successful part is the changing sea. The early stages of a match are pl
 
 And then there's him: a **megalodon** that crosses the scene and attacks whoever happens to be in range.
 
-<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" controls muted loop playsinline preload="metadata" aria-label="A megalodon attacks during a naval battle"></video><figcaption>The megalodon attack. Video: Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" autoplay muted loop playsinline controls preload="metadata" aria-label="A megalodon attacks during a naval battle"></video><figcaption>The megalodon attack. Video: Giancarlo Mennillo</figcaption></figure>
 
 ## Ships to collect and daily rewards
 
