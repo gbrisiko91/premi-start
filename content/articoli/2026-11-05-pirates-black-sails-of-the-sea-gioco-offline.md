@@ -32,7 +32,7 @@ Il gioco è già disponibile per il download gratuito su Android e su iPhone e i
 
 Le informazioni sul gioco, gli screenshot e i video utilizzati per questo approfondimento sono stati forniti direttamente dallo sviluppatore Giancarlo Mennillo.
 
-<figure class="immagine-testo"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Partita a Pirates: Black Sails of the Sea tra nebbia e pioggia" style="display:block;width:100%;max-width:22rem;margin:0 auto;border-radius:14px"></video><figcaption>Una partita tra nebbia e pioggia. Video: Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" controls muted loop playsinline preload="metadata" aria-label="Partita a Pirates: Black Sails of the Sea tra nebbia e pioggia"></video><figcaption>Una partita tra nebbia e pioggia. Video: Giancarlo Mennillo</figcaption></figure>
 
 ## Come si gioca a Pirates: Black Sails of the Sea
 
@@ -51,13 +51,13 @@ La parte più riuscita è il mare che cambia. Le prime fasi della partita si gio
 
 E poi c'è lui, un megalodonte che attraversa la scena e attacca chi capita a tiro.
 
-<figure class="immagine-testo"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Un megalodonte attacca durante una battaglia navale" style="display:block;width:100%;max-width:22rem;margin:0 auto;border-radius:14px"></video><figcaption>L'attacco del megalodonte. Video: Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" controls muted loop playsinline preload="metadata" aria-label="Un megalodonte attacca durante una battaglia navale"></video><figcaption>L'attacco del megalodonte. Video: Giancarlo Mennillo</figcaption></figure>
 
 ## Navi da collezionare e ricompense giornaliere
 
 Fuori dalla battaglia, la sezione Le Mie Navi raccoglie le imbarcazioni sbloccate, ognuna con quattro statistiche: velocità, potenza di fuoco, munizioni e punti vita. Alcune navi compaiono solo per un periodo limitato, come la Pumpkin Phantom di Halloween, con le vele arancioni a forma di zucca.
 
-<figure class="immagine-testo" style="display:flex;gap:1rem;justify-content:center"><img src="/media/pirates-black-sails/menu-principale.jpg" alt="Menu principale di Pirates: Black Sails of the Sea con i tasti Gioca, Negozio, Invita e Top Pirati" loading="lazy" decoding="async" style="width:48%;max-width:16rem;height:auto;max-height:none;object-fit:contain"><img src="/media/pirates-black-sails/pumpkin-phantom.jpg" alt="La nave Pumpkin Phantom con le sue statistiche nella schermata Le Mie Navi" loading="lazy" decoding="async" style="width:48%;max-width:16rem;height:auto;max-height:none;object-fit:contain"></figure>
+<figure class="immagine-testo immagine-coppia"><img src="/media/pirates-black-sails/menu-principale.jpg" alt="Menu principale di Pirates: Black Sails of the Sea con i tasti Gioca, Negozio, Invita e Top Pirati" loading="lazy" decoding="async"><img src="/media/pirates-black-sails/pumpkin-phantom.jpg" alt="La nave Pumpkin Phantom con le sue statistiche nella schermata Le Mie Navi" loading="lazy" decoding="async"></figure>
 
 Dal menu principale si accede al negozio, alla classifica Top Pirati e alla funzione per invitare gli amici, e c'è anche un collegamento a Discord. Ogni giorno, aprendo il gioco, arriva una ricompensa di 500 monete d'oro.
 

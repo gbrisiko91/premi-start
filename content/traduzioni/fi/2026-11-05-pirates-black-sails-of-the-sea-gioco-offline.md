@@ -18,7 +18,7 @@ Peli on jo ladattavissa ilmaiseksi Androidille, iPhonelle ja iPadille:
 
 Kehittäjä Giancarlo Mennillo toimitti tässä artikkelissa käytetyt pelitiedot, kuvakaappaukset ja videot suoraan Soffia Cartuccialle.
 
-<figure class="immagine-testo"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Pirates: Black Sails of the Sea -pelikerta sumussa ja sateessa" style="display:block;width:100%;max-width:22rem;margin:0 auto;border-radius:14px"></video><figcaption>Pelikerta sumussa ja sateessa. Video: Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" controls muted loop playsinline preload="metadata" aria-label="Pirates: Black Sails of the Sea -pelikerta sumussa ja sateessa"></video><figcaption>Pelikerta sumussa ja sateessa. Video: Giancarlo Mennillo</figcaption></figure>
 
 ## Miten Pirates: Black Sails of the Sea -peliä pelataan
 
@@ -37,13 +37,13 @@ Onnistunein osa on muuttuva meri. Pelin alkuvaiheet pelataan kirkkaalla sääll�
 
 Ja sitten on vielä hän: **megalodon**, joka ui näyttämön halki ja hyökkää kenen tahansa kimppuun, joka sattuu kohdalle.
 
-<figure class="immagine-testo"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Megalodon hyökkää meritaistelun aikana" style="display:block;width:100%;max-width:22rem;margin:0 auto;border-radius:14px"></video><figcaption>Megalodonin hyökkäys. Video: Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" controls muted loop playsinline preload="metadata" aria-label="Megalodon hyökkää meritaistelun aikana"></video><figcaption>Megalodonin hyökkäys. Video: Giancarlo Mennillo</figcaption></figure>
 
 ## Kerättävät laivat ja päivittäiset palkinnot
 
 Taistelun ulkopuolella **Le Mie Navi** (Omat laivat) -osio kokoaa avatut alukset. Jokaisella on neljä ominaisuutta: nopeus, tulivoima, ammukset ja kestopisteet. Jotkin laivat ovat saatavilla vain rajoitetun ajan, kuten Halloweenin **Pumpkin Phantom**, jonka oranssit purjeet ovat kurpitsan muotoiset.
 
-<figure class="immagine-testo" style="display:flex;gap:1rem;justify-content:center"><img src="/media/pirates-black-sails/menu-principale.jpg" alt="Pirates: Black Sails of the Sean päävalikko, jossa painikkeet Gioca, Negozio, Invita ja Top Pirati" loading="lazy" decoding="async" style="width:48%;max-width:16rem;height:auto;max-height:none;object-fit:contain"><img src="/media/pirates-black-sails/pumpkin-phantom.jpg" alt="Pumpkin Phantom -laiva ominaisuuksineen Le Mie Navi -näkymässä" loading="lazy" decoding="async" style="width:48%;max-width:16rem;height:auto;max-height:none;object-fit:contain"></figure>
+<figure class="immagine-testo immagine-coppia"><img src="/media/pirates-black-sails/menu-principale.jpg" alt="Pirates: Black Sails of the Sean päävalikko, jossa painikkeet Gioca, Negozio, Invita ja Top Pirati" loading="lazy" decoding="async"><img src="/media/pirates-black-sails/pumpkin-phantom.jpg" alt="Pumpkin Phantom -laiva ominaisuuksineen Le Mie Navi -näkymässä" loading="lazy" decoding="async"></figure>
 
 Päävalikosta pääsee **kauppaan**, **Top Pirati** -tulostaululle ja ystävien kutsumistoimintoon, ja mukana on myös linkki **Discordiin**. Joka päivä peliä avatessa saa 500 kultakolikon palkinnon.
 

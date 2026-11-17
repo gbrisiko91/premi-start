@@ -18,7 +18,7 @@ crediti_immagine: "Изображения: Giancarlo Mennillo, оригинал�
 
 Информацию об игре, скриншоты и видео для этой статьи разработчик Giancarlo Mennillo предоставил Soffia Cartuccia напрямую.
 
-<figure class="immagine-testo"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Партия в Pirates: Black Sails of the Sea в тумане и под дождём" style="display:block;width:100%;max-width:22rem;margin:0 auto;border-radius:14px"></video><figcaption>Партия в тумане и под дождём. Видео: Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" controls muted loop playsinline preload="metadata" aria-label="Партия в Pirates: Black Sails of the Sea в тумане и под дождём"></video><figcaption>Партия в тумане и под дождём. Видео: Giancarlo Mennillo</figcaption></figure>
 
 ## Как играть в Pirates: Black Sails of the Sea
 
@@ -37,13 +37,13 @@ crediti_immagine: "Изображения: Giancarlo Mennillo, оригинал�
 
 А ещё есть он: **мегалодон**, который пересекает сцену и атакует всех, кто попадётся.
 
-<figure class="immagine-testo"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Мегалодон атакует во время морского сражения" style="display:block;width:100%;max-width:22rem;margin:0 auto;border-radius:14px"></video><figcaption>Атака мегалодона. Видео: Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" controls muted loop playsinline preload="metadata" aria-label="Мегалодон атакует во время морского сражения"></video><figcaption>Атака мегалодона. Видео: Giancarlo Mennillo</figcaption></figure>
 
 ## Корабли для коллекции и ежедневные награды
 
 Вне боя в разделе **«Мои корабли»** собраны открытые суда. У каждого четыре характеристики: скорость, огневая мощь, боезапас и здоровье. Некоторые корабли доступны только ограниченное время, например хеллоуинский **Pumpkin Phantom** с оранжевыми парусами в форме тыквы.
 
-<figure class="immagine-testo" style="display:flex;gap:1rem;justify-content:center"><img src="/media/pirates-black-sails/menu-principale.jpg" alt="Главное меню Pirates: Black Sails of the Sea с кнопками «Играть», «Магазин», «Пригласить» и «Топ пиратов»" loading="lazy" decoding="async" style="width:48%;max-width:16rem;height:auto;max-height:none;object-fit:contain"><img src="/media/pirates-black-sails/pumpkin-phantom.jpg" alt="Корабль Pumpkin Phantom и его характеристики на экране «Мои корабли»" loading="lazy" decoding="async" style="width:48%;max-width:16rem;height:auto;max-height:none;object-fit:contain"></figure>
+<figure class="immagine-testo immagine-coppia"><img src="/media/pirates-black-sails/menu-principale.jpg" alt="Главное меню Pirates: Black Sails of the Sea с кнопками «Играть», «Магазин», «Пригласить» и «Топ пиратов»" loading="lazy" decoding="async"><img src="/media/pirates-black-sails/pumpkin-phantom.jpg" alt="Корабль Pumpkin Phantom и его характеристики на экране «Мои корабли»" loading="lazy" decoding="async"></figure>
 
 Из главного меню можно попасть в **магазин**, в таблицу лидеров **«Топ пиратов»** и к функции приглашения друзей, а ещё там есть ссылка на **Discord**. Каждый день при запуске игры начисляется награда в 500 золотых монет.
 

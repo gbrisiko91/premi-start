@@ -2,7 +2,7 @@
 
 > **Documento centrale e unico registro operativo** per Gianmarco, Claude e ChatGPT. Prima di qualsiasi intervento, leggere qui, controllare GitHub/CI/Netlify e aggiornare i fatti che sono cambiati. `STATO-PROGETTO.md` è soltanto la sintesi di passaggio fra chat: non mantiene un secondo registro autonomo.
 >
-> **Snapshot del 17 novembre 2026 (Europe/Rome)**. Stato verificato su GitHub: repository `gbrisiko91/premi-start`, branch `main` al commit `bb22a783cdafee5e56f43d9182a466c140900f1a`, **0 PR aperte**, ultima GitHub Actions `44178092807` completata con successo. Gli stati possono cambiare: verificarli sempre prima di agire.
+> **Snapshot del 17 novembre 2026 (Europe/Rome)**. Stato verificato su GitHub: repository `gbrisiko91/premi-start`, ultimo commit tecnico verificato su `main` prima del consolidamento: `3937a65d6370cb9c2059f20141eb9eb364685dbf` (PR #43), GitHub Actions `44181472714` completata con successo. **Nessuna PR tecnica aperta**, la PR documentale #42 è il presente consolidamento. Dopo il suo merge il commit di `main` avanza; ricontrollare GitHub prima di agire.
 
 ## 1. Missione e riferimenti
 
@@ -45,13 +45,13 @@ Per il primo giro del **18/11/2026** chiedere: ID e orari, conferma segnale, tit
 
 Il **gate editoriale è solo diagnostico**: un job GitHub verde non significa che la notizia sia vera o sia pronta per il merge. Controllare il **report** per G1–G10 e la natura dei contenuti, non solo la conclusione del job. Le PR tecniche hanno test GitHub + preview Netlify sull'ultimo HEAD SHA, poi merge autorizzato e nuova CI su `main`.
 
-Le protezioni integrate comprendono: sanitizer HTML dopo `marked` (PR #31), gate dry-run (PR #29), immagini opzionali e controllo su natura sensibile (PR #37), controllo del flag esplicito `verifica.revisione_umana` anche su notizie `ufficiale` (PR #40), test SEO per canonical/robots/sitemap (PR #33). Il gate non verifica diritti immagini, la verità delle fonti né il segnale salvato nel Progetto privato.
+Le protezioni integrate comprendono: sanitizer HTML dopo `marked` (PR #31), gate dry-run (PR #29), immagini opzionali e controllo su natura sensibile (PR #37), controllo del flag esplicito `verifica.revisione_umana` anche su notizie `ufficiale` (PR #40), test SEO per canonical/robots/sitemap (PR #33). La PR #41 ripristina layout immagini usando classi CSS; la PR #43 recupera i video Pirates con `controls` e `video.src` consentito soltanto per protocolli sicuri. Gli altri controlli XSS restano attivi. Il gate non verifica diritti immagini, la verità delle fonti né il segnale salvato nel Progetto privato.
 
 **Auto-merge: NON ATTIVO.** La proposta richiede: identità GitHub App/bot indipendente, controlli read-only separati dal workflow privilegiato, protezioni di `main`, fonte primaria/evidenze verificabili, XSS protetto, protezioni anti-concorrenza, verifica SHA e deploy finale, kill switch, **almeno 5 giorni consecutivi di dry-run documentati** e una nuova autorizzazione specifica di Gianmarco. Nessun merge automatico di urgenze, rettifiche, recensioni o codice.
 
 ## 5. Registro PR — snapshot GitHub 17/11
 
-**PR aperte: nessuna. Ultimo `main`: `bb22a783`, CI `44178092807` verde.**
+**PR tecniche aperte: nessuna dopo le integrazioni #41 e #43.** La PR #42 contiene questo stesso consolidamento ed è in corso di verifica/merge. Ultimo `main` tecnico prima del consolidamento `3937a65d`, CI `44181472714` verde. Il merge della #42 modifica nuovamente il commit `main`.
 
 | PR | Intervento verificato | Stato |
 |---|---|---|
@@ -69,6 +69,9 @@ Le protezioni integrate comprendono: sanitizer HTML dopo `marked` (PR #31), gate
 | #38 | Guida redazionale allineata; ID segnale non riutilizzabile e controlli di sincronizzazione | Integrata |
 | #39 | Netlify Edge Function filtro in tempo reale degli URL scaduti nella sitemap Google News | Integrata |
 | #40 | Gate G3: `verifica.revisione_umana` esplicito non ignorato | Integrata |
+| #41 | Hotfix media: ripristino foto Dragone7/IFreddo e screenshot Pirates con CSS senza stili inline, nove lingue | Integrata; verifica visiva live non confermata |
+| #43 | Video Pirates: `controls` e sorgente `src` sicura nel sanitizer, test nove lingue e anti-XSS | Integrata; CI `44181472714` verde, prova browser live non confermata |
+| #42 | Consolidamento di `COLLABORAZIONE.md` e `STATO-PROGETTO.md` | **Questa PR**; ricontrollare il suo stato dopo il merge |
 
 **Conservare la distinzione storica:** nella PR #28 quattro bozze del 17/11 erano presenti nel ramo pubblico e poi rimosse dal diff prima del merge. In seguito **tre** di quelle notizie sono uscite con la #32; **Craig Houston** resta in revisione umana e non va pubblicato automaticamente. La cronologia pubblica della #28 potrebbe ancora esporre i vecchi contenuti: non ripetere l'errore con bozze future.
 
@@ -77,7 +80,7 @@ Le protezioni integrate comprendono: sanitizer HTML dopo `marked` (PR #31), gate
 - **Search Console (18/10–14/11, dati verificati):** 60 clic e 3.492 impressioni, CTR circa 1,72%. Alcune lingue estere portano clic, specie Fortnite. Google ha scansionato ma **non indicizzato** vari articoli campionati; homepage indicizzata. Calo delle impressioni dal 12/11 da approfondire; **non è dimostrata alcuna penalizzazione**.
 - **Audit OpenSEO 15/11, campione 50 pagine:** 4 titoli duplicati, 27 segnalazioni di pagine leggere, 37 meta-description brevi. Le correzioni mirate ai template e agli hub sono state integrate; non garantiscono indicizzazione.
 - **News sitemap:** PR #25 generazione statica, PR #39 Edge Function che filtra le voci scadute anche senza rebuild. Test GitHub e anteprima Netlify verdi, **ma il comportamento live della funzione Edge e gli header di produzione non sono stati verificati** (ambiente di controllo non raggiunge il dominio). Non inventare una conferma di deploy pubblico.
-- **Priorità:** verifica pubblica Netlify/sitemap, 18/11 primo ciclo Claude con evidenze, controllo traduzioni, successiva analisi Google Search Console. Migliorare qualità, originalità, link interni e intenti dei lettori, non aumentare gli articoli indiscriminatamente.
+- **Priorità:** verifica pubblica Netlify/sitemap e **resa reale della pagina Dragone7/Pirates**, 18/11 primo ciclo Claude con evidenze, controllo traduzioni, successiva analisi Google Search Console. Migliorare qualità, originalità, link interni e intenti dei lettori, non aumentare gli articoli indiscriminatamente.
 
 ## 7. Regole operative permanenti
 
