@@ -2,7 +2,7 @@
 
 Documento vivo di coordinamento. **È la fonte unica sullo stato del lavoro in corso**: chi interviene sul repository lo legge prima di iniziare e lo aggiorna quando finisce.
 
-Ultimo aggiornamento: 17/11/2026 — PR #32–#36 integrate; nuovo flusso Claude 06:34 → 07:20 dichiarato, prima esecuzione 18/11 da verificare. Auto-merge NON attivo.
+Ultimo aggiornamento: 17/11/2026 — PR #32–#37 integrate; nuovo flusso Claude 06:34 → 07:20 dichiarato, prima esecuzione 18/11 da verificare. Auto-merge NON attivo.
 
 ---
 
@@ -77,7 +77,7 @@ Aggiornare a ogni apertura, merge o chiusura. Campi: numero · branch · autore 
 
 | PR | Branch | Autore | File principali | Stato | Prossima azione |
 |---|---|---|---|---|---|
-| [#37](https://github.com/gbrisiko91/premi-start/pull/37) | `chatgpt/gate-claude-allineamento-20261117` | ChatGPT | gate editoriale, test, protocollo | Immagini opzionali e revisione umana | CI e Netlify sull'ultimo SHA, poi merge |
+| In apertura | `chatgpt/sitemap-news-freshness-20261117` | ChatGPT | `netlify/edge-functions/sitemap-news-freshness.js`, test e documentazione | Filtro runtime per la sitemap News durante i giorni senza build | CI/preview e controllo risposta XML prima del merge |
 
 ### PR del 17 novembre integrate
 #32 articoli Grammy/Miyamoto/DualStation · #34 percorsi GTA 6 e Indie · #35 guide Quiz/Sondaggio · #36 rettifica GTA 6 già integrate.
