@@ -34,3 +34,6 @@ Ultimo aggiornamento: 17 novembre 2026 (Europe/Rome).
 
 ## Prompt di ripresa in nuova chat
 «Riprendiamo Soffia Cartuccia 2.0. Leggi `COLLABORAZIONE.md` e `STATO-PROGETTO.md` in `gbrisiko91/premi-start`, verifica PR, Actions e Netlify, poi procedi dal primo passo non completato. Non considerare l'auto-merge attivo senza un'attivazione esplicita.»
+
+## Allineamento operativo 17 novembre 2026
+PR #32–#36 integrate, tutti i test su main superati; Craig Houston resta a revisione umana. Claude ha dichiarato nuovo protocollo 06:34 (ricerca privata con segnale del giorno) → 07:20 (attesa fino a 60 minuti, soli articoli pronti in PR); testare il primo ciclo del 18/11 prima di considerarlo collaudato. Auto-merge inattivo. Nuova PR gate: immagine facoltativa senza diritti chiari, G3 manuale per rumor/interviste/recensioni.
