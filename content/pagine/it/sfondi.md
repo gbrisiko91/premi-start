@@ -15,15 +15,15 @@ Tocca **Scarica** sotto lo sfondo che preferisci. Sono immagini 1080×1920, adat
 <div class="sfondi-griglia">
   <figure>
     <img src="/sfondi/soffiacartuccia-sfondo-01-cartuccia.png" alt="Sfondo pixel: la cartuccia di Soffia Cartuccia tra le stelle, con il soffio sotto i contatti" width="1080" height="1920" loading="lazy">
-    <figcaption><strong>1 · La cartuccia</strong><br><a class="tasto-start" href="/sfondi/soffiacartuccia-sfondo-01-cartuccia.png" download>Scarica</a></figcaption>
+    <figcaption><strong>1 · La cartuccia</strong><br><a class="tasto-start" href="/sfondi/soffiacartuccia-sfondo-01-cartuccia.png" download="soffiacartuccia-sfondo-01-cartuccia.png">Scarica</a></figcaption>
   </figure>
   <figure>
     <img src="/sfondi/soffiacartuccia-sfondo-02-mappa.png" alt="Sfondo pixel: la mappa notturna del Mondo 2, con il sentiero dei livelli e il castello del boss" width="1080" height="1920" loading="lazy">
-    <figcaption><strong>2 · La mappa del Mondo 2</strong><br><a class="tasto-start" href="/sfondi/soffiacartuccia-sfondo-02-mappa.png" download>Scarica</a></figcaption>
+    <figcaption><strong>2 · La mappa del Mondo 2</strong><br><a class="tasto-start" href="/sfondi/soffiacartuccia-sfondo-02-mappa.png" download="soffiacartuccia-sfondo-02-mappa.png">Scarica</a></figcaption>
   </figure>
   <figure>
     <img src="/sfondi/soffiacartuccia-sfondo-03-press-start.png" alt="Sfondo pixel: tramonto a righe sopra una griglia al neon con la scritta Press Start" width="1080" height="1920" loading="lazy">
-    <figcaption><strong>3 · Press Start</strong><br><a class="tasto-start" href="/sfondi/soffiacartuccia-sfondo-03-press-start.png" download>Scarica</a></figcaption>
+    <figcaption><strong>3 · Press Start</strong><br><a class="tasto-start" href="/sfondi/soffiacartuccia-sfondo-03-press-start.png" download="soffiacartuccia-sfondo-03-press-start.png">Scarica</a></figcaption>
   </figure>
 </div>
 
