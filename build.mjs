@@ -403,13 +403,30 @@ function inTendenza(articoli) {
 }
 
 // ---------- pagine ----------
+// Meta descrizioni delle homepage, più utili del motto breve nei risultati di ricerca.
+const DESCRIZIONI_HOME = Object.freeze(  {
+    "it": "Notizie e approfondimenti su PS5, Xbox, Nintendo Switch 2, PC e retrogaming. Scopri il mondo indie e le storie dei videogiochi su Soffia Cartuccia.",
+    "en": "Video game news and analysis for PS5, Xbox, Nintendo Switch 2, PC and retro gaming. Discover indie games, new releases and source-backed stories on Soffia Cartuccia.",
+    "de": "Aktuelle Gaming-News zu PS5, Xbox, Nintendo Switch 2, PC und Retrospielen. Entdecke Indie-Games, neue Releases und Hintergründe auf Soffia Cartuccia.",
+    "es": "Noticias y análisis de videojuegos para PS5, Xbox, Nintendo Switch 2, PC y retro. Descubre juegos indie, lanzamientos y artículos con fuentes en Soffia Cartuccia.",
+    "no": "Spillnyheter om PS5, Xbox, Nintendo Switch 2, PC og retrospill. Les om nye spill, indiespill og historier med kilder hos Soffia Cartuccia.",
+    "sv": "Spelnyheter om PS5, Xbox, Nintendo Switch 2, PC och retrospel. Läs om nya spel, indiespel och artiklar med källor på Soffia Cartuccia.",
+    "fi": "Peliuutisia PS5:stä, Xboxista, Nintendo Switch 2:sta, PC:stä ja retropeleistä. Löydä indiepelit, uutuudet ja lähteistetyt jutut Soffia Cartuccialta.",
+    "ja": "PS5、Xbox、Nintendo Switch 2、PC、レトロゲームのニュースや解説を掲載。インディー作品、新作情報、ゲームの歴史を出典へのリンクとともにSoffia Cartucciaで紹介します。",
+    "ru": "Новости видеоигр для PS5, Xbox, Nintendo Switch 2, ПК и ретроигр. Инди-проекты, новинки и материалы со ссылками на источники на Soffia Cartuccia."
+  });
+// Titoli SEO distinti per lingue che avevano pagine con title identici nel crawl del 15/11.
+// I titoli visibili e le traduzioni non vengono alterati.
+const TITOLI_QUIZ_SEO = Object.freeze({ no: "Dagens spillquiz: test kunnskapene dine", sv: "Dagens spelquiz: testa dina kunskaper" });
+const TITOLI_AUTORE_SEO = Object.freeze({ de: "Gianmarco Buono: Gründer und Gaming-Autor", es: "Gianmarco Buono: creador y autor de videojuegos" });
+
 function home(l, articoli) {
   const t = T[l];
   const u = U[l];
   const alternative = tuttePerLingua(P.home);
   if (!articoli.length) {
     return pagina({
-      l, percorso: P.home(l), alternative,
+      l, percorso: P.home(l), alternative, descrizione: DESCRIZIONI_HOME[l],
       corpo: `<section class="schermata-titolo">
   <p class="schermata-sopra">${esc(t.vuotoSopra)}</p>
   <h1 class="schermata-logo"><span>Soffia</span><span>Cartuccia</span></h1>
@@ -459,7 +476,7 @@ ${bloccoUscite(l, articoli)}
 ${bloccoSondaggio(l)}
 ${boxNewsletter(l)}
 ${archivio.length ? `<section class="flusso homepage-archivio" aria-labelledby="t-archivio"><div class="blocco-heading"><div><h2 id="t-archivio" class="titolo-sezione">${esc(t.archivio)}</h2></div><a class="intro-link" href="${P.archivio(l)}">${esc(u.viewAll)} ↗</a></div><div class="griglia">${archivio.map(scheda).join("")}</div></section>` : ""}`;
-  return pagina({ l, percorso: P.home(l), corpo, ticker: articoli.slice(0, 8), alternative });
+  return pagina({ l, percorso: P.home(l), corpo, ticker: articoli.slice(0, 8), alternative, descrizione: DESCRIZIONI_HOME[l] });
 }
 
 function paginaArticolo(a, stessaLingua, versioni) {
@@ -553,7 +570,7 @@ function paginaQuiz(l) {
   </section>
   <script id="quiz-dati" type="application/json">${dati}</script>
   <script src="/quiz.js" defer></script>`;
-  return pagina({ l, titolo:q.nome, descrizione:q.intro, percorso:P.quiz(l),corpo,alternative:tuttePerLingua(P.quiz) });
+  return pagina({ l, titolo:q.nome, titoloSeo: TITOLI_QUIZ_SEO[l] || "", descrizione:q.intro, percorso:P.quiz(l),corpo,alternative:tuttePerLingua(P.quiz) });
 }
 
 // ---------- rubriche: calendario uscite, sondaggio, newsletter ----------
@@ -759,7 +776,7 @@ function paginaAutore(l, lista) {
     </section>
     <script type="application/ld+json">${JSON.stringify(datiStrutturati).replace(/</g, "\\u003c")}</script>
   </section>`;
-  return pagina({ l, titolo: `${config.autore} — ${u.authorTitle}`, descrizione: u.authorIntro, percorso, corpo, alternative: tuttePerLingua(P.autore) });
+  return pagina({ l, titolo: `${config.autore} — ${u.authorTitle}`, titoloSeo: TITOLI_AUTORE_SEO[l] || "", descrizione: u.authorIntro, percorso, corpo, alternative: tuttePerLingua(P.autore) });
 }
 
 // Segnaposto utilizzabili nelle pagine fisse
