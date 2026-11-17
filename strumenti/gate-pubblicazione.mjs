@@ -58,7 +58,13 @@ export function valutaCambiamenti(cambiamenti, { leggi, esiste, oggi = new Intl.
     if (d !== oggi && d !== yesterday.toISOString().slice(0, 10)) aggiungi(file, "G5", "Data non odierna/di ieri");
     const verifica = m.verifica;
     if (!verifica || verifica.stato !== "verificata" || !Array.isArray(verifica.dubbi) || verifica.dubbi.length) aggiungi(file, "G1", "Scheda verifica assente/incompleta o dubbi ancora aperti");
-    if (NATURA_REVISIONE_UMANA.has(String(verifica?.natura || "").toLowerCase().trim()) || verifica?.natura === "report" && SENSIBILI.test(m.titolo || "")) aggiungi(file, "G3", "Indiscrezioni, interviste e recensioni: revisione umana obbligatoria");
+    // Un motivo di revisione umana esplicito prevale anche su "natura: ufficiale".
+    // Il flag in YAML puo essere stringa non vuota oppure booleano true.
+    const motivoUmano = verifica?.revisione_umana;
+    const segnalatoUmano = motivoUmano === true || (typeof motivoUmano === "string" && motivoUmano.trim().length > 0);
+    const naturaUmano = NATURA_REVISIONE_UMANA.has(String(verifica?.natura || "").toLowerCase().trim());
+    if (segnalatoUmano || naturaUmano || verifica?.natura === "report" && SENSIBILI.test(m.titolo || ""))
+      aggiungi(file, "G3", "Contenuto riservato a revisione umana, senza idoneita automatica");
     if (SENSIBILI.test(String(m.titolo || "") + " " + String(m.sommario || ""))) aggiungi(file, "G3", "Tema sensibile: controllo umano obbligatorio");
     if (!Array.isArray(m.fonti) || !m.fonti.length) aggiungi(file, "G2", "Nessuna fonte");
     else {
