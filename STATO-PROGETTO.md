@@ -5,8 +5,8 @@
 ## Stato verificato a fine sessione
 
 - Repository: [gbrisiko91/premi-start](https://github.com/gbrisiko91/premi-start); sito https://soffiacartuccia.it.
-- `main`: **`3937a65d6370cb9c2059f20141eb9eb364685dbf`** prima dell’integrazione della presente PR di continuità #42; **nessuna PR tecnica aperta**, la sola #42 riguarda questi documenti. Ultimo workflow GitHub Actions: [44181472714](https://github.com/gbrisiko91/premi-start/actions/runs/44181472714), **success**. Dopo il merge #42, verificare il nuovo SHA su GitHub.
-- PR **#19–#41 e #43 integrate** (registro e dettagli in [COLLABORAZIONE.md §5](COLLABORAZIONE.md)); #42 è il presente consolidamento. Recenti fondamentali: #31 sanitizer HTML; #32 Grammy/Miyamoto/DualStation; #33 SEO e test; #34–#35 percorsi e guide multilingua; #36 rettifica GTA 6; #37 immagini opzionali; #38 guida redazionale; #39 sitemap News dinamica; #40 controllo `revisione_umana`; **#41 foto intere e #43 video Pirates riproducibili in markup**.
+- `main`: **`0eac3e9cd7895490c8f82a01d17a70b3281be329`** dopo il merge #44 e prima del presente aggiornamento dei documenti. **0 PR aperte** al controllo. Ultimo workflow GitHub Actions: [44182813602](https://github.com/gbrisiko91/premi-start/actions/runs/44182813602), **success**. La revisione documentale può avanzare ulteriormente `main`: verificare sempre il nuovo SHA.
+- PR **#19–#44 integrate** (registro e dettagli in [COLLABORAZIONE.md §5](COLLABORAZIONE.md)). Recenti fondamentali: #31 sanitizer HTML; #32 Grammy/Miyamoto/DualStation; #33 SEO e test; #34–#35 percorsi e guide multilingua; #36 rettifica GTA 6; #37 immagini opzionali; #38 guida redazionale; #39 sitemap News dinamica; #40 controllo `revisione_umana`; **#41 foto intere, #42 memoria consolidata, #43 controlli/sorgenti video e #44 autoplay muto autorizzato con controlli manuali**.
 - Nessuna pubblicazione automatica o auto-merge autorizzato/attivo. Gate editoriale **solo diagnostico**.
 
 ## Primo collaudo di domani: mercoledì 18 novembre 2026
@@ -20,7 +20,7 @@
 ## Lavori e limiti non risolti
 
 1. **Collaudo del ciclo Claude** del 18/11: segnale completo/anti-riuso, controlli fonti, traduzioni, nessuna bozza incompleta nel repo, PR, CI, gate, preview.
-2. **Verifica produzione Netlify:** la PR #39 filtro Edge per `/sitemap-news.xml` e le altre modifiche sono in `main`, con test e preview superati, ma **risposta e header live non confermati**. Verificare anche il layout di Dragone7/IFreddo (#41) e i video Pirates (#43) in browser: i test automatici verificano HTML e CSS, non l’interazione mobile. Non dichiarare che queste verifiche visive sono già completate.
+2. **Verifica produzione Netlify:** la PR #39 filtro Edge per `/sitemap-news.xml` e le altre modifiche sono in `main`, con test e preview superati, ma **risposta e header live non confermati**. Verificare anche il layout di Dragone7/IFreddo (#41) e i video Pirates (#43/#44) in browser: i test automatici verificano HTML e CSS, non l’interazione mobile. Non dichiarare che queste verifiche visive sono già completate.
 3. **SEO Search Console:** 60 clic/3.492 impressioni nel periodo 18/10–14/11; numerosi articoli scansionati ma non indicizzati, calo impressioni dal 12/11 senza causa dimostrata. Monitorare dopo nuovi dati e intervenire su qualità/intent/link, non garantire risultati.
 4. **Auto-merge**: NON ATTIVO; richiede bot/App separato, protezioni ed evidenze e almeno 5 giorni di dry-run, poi nuova approvazione di Gianmarco.
 5. Non cancellare vecchi branch; non scrivere su `main` senza PR; non duplicare lavori condivisi.
