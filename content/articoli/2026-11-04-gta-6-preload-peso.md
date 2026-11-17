@@ -4,6 +4,7 @@ titolo_seo: "GTA 6 preload: data, orari in Italia e peso di 212 GB"
 sommario: "Il preload di GTA 6 parte il 10 novembre su PS5 e Xbox Series X|S, nove giorni prima dell'uscita. Ecco gli orari italiani e quanto spazio serve."
 parola_chiave: "gta 6 preload"
 data: 2026-11-04
+aggiornato: 2026-11-17
 categoria: console
 tag: [gta-6, rockstar-games, ps5, xbox-series-x]
 viralita: 88
@@ -13,6 +14,8 @@ immagine_riserva: "https://www.rockstargames.com/VI/_next/static/media/meta.0t8t
 alt_immagine: "Immagine ufficiale di Grand Theft Auto VI per l'annuncio del preload su PS5 e Xbox"
 crediti_immagine: "Immagine: Rockstar Games, Rockstar Newswire ufficiale"
 fonti:
+  - titolo: "Rockstar Support – Grand Theft Auto VI regional pre-load and release times"
+    url: "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s"
   - titolo: "Rockstar Newswire – Grand Theft Auto VI pre-load begins on November 10"
     url: "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10"
   - titolo: "VGC – Rockstar details Grand Theft Auto 6 pre-load date and time, and file size"
@@ -25,7 +28,7 @@ fonti:
 
 Il **preload di GTA 6** è disponibile dal 10 novembre, nove giorni prima dell'uscita del 19 novembre. Lo ha confermato **Rockstar Games** sul suo Newswire: chi ha comprato la versione digitale su PS5 o Xbox Series X|S potrà scaricare il gioco in anticipo. A far discutere, però, è il peso: circa 212 GB.
 
-**In breve (aggiornamento del 16 novembre):** Rockstar conferma il lancio il **19 novembre 2026** su PS5 e Xbox Series X|S. Il precaricamento è disponibile dal **10 novembre**: su PS5 dalle **00:00 locali**, su Xbox dalle **01:00 italiane** (00:00 GMT). Il file richiede **fino a 212 GB a seconda del dispositivo**; non è una dimensione definitiva identica per ogni console. [Fonte ufficiale Rockstar in italiano](https://www.rockstargames.com/it/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10).
+**In breve (aggiornamento del 17 novembre):** Rockstar conferma il lancio il **19 novembre 2026 a mezzanotte locale** su PS5 e Xbox Series X|S. Il precaricamento è disponibile dal **10 novembre**: su PS5 dalle **00:00 locali**, su Xbox dalle **01:00 italiane** (00:00 GMT). Il file richiede **fino a 212 GB a seconda del dispositivo**; non è una dimensione definitiva identica per ogni console. [Fonte ufficiale Rockstar in italiano](https://www.rockstargames.com/it/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10).
 
 ## Quando inizia il preload di GTA 6 in Italia
 
@@ -40,7 +43,7 @@ Per chi ha preordinato in digitale è un bel regalo: fino a poco tempo fa si pen
 
 Chi ha scelto un'edizione fisica con il codice nella confezione dovrà invece aspettare. Queste versioni arriveranno nei negozi dal 12 novembre, e solo da quel momento si potrà riscattare il codice e iniziare a scaricare. Anche se il vostro negozio di fiducia vi consegna la copia in anticipo, conviene liberare lo spazio sull'SSD per tempo.
 
-Il giorno dell'uscita, il 19 novembre, su PS5 il gioco si sbloccherà alla mezzanotte locale. Rockstar non ha ancora chiarito l'orario esatto di sblocco su Xbox.
+Il 19 novembre 2026, su **PS5 e Xbox Series X|S**, GTA 6 si sbloccherà alle **00:00 locali**: Rockstar lo conferma nella [pagina ufficiale sugli orari di lancio](https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s).
 
 ## Quanto pesa GTA 6: 212 GB sull'SSD
 
@@ -66,7 +69,7 @@ Il file di precaricamento richiede fino a 212 GB, secondo Rockstar, a seconda de
 
 ### A che ora esce GTA 6 in Italia?
 
-Su PS5 si sblocca alla mezzanotte tra il 18 e il 19 novembre 2026. L'orario su Xbox non è stato ancora comunicato.
+Su **PS5 e Xbox Series X|S** GTA 6 si sblocca a **mezzanotte locale del 19 novembre 2026** (in Italia, nella notte tra il 18 e il 19 novembre).
 
 ### GTA 6 esce su PC?
 

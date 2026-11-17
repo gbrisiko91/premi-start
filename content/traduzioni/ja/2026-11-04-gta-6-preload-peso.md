@@ -22,7 +22,7 @@ crediti_immagine: "画像：Rockstar Games、公式Rockstar Newswireより"
 
 コードがパッケージに同梱されたパッケージ版を選んだ人は待つ必要があります。これらのエディションは**11月12日**から店頭に並び、その時点からコードの引き換えとダウンロードが可能になります。行きつけの店で早めに受け取れる場合でも、SSDの空き容量は早めに確保しておくのが得策です。
 
-発売日の11月19日、PS5では現地時間の午前0時にゲームがアンロックされます。Xboxでの正確なアンロック時刻はRockstarからまだ明らかにされていません。
+GTA 6は**2026年11月19日、PS5とXbox Series X|Sの両方で各地域の午前0時**にプレイ可能になります。Rockstarの[公式サポートページ](https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s)で確認できます。
 
 ## GTA 6の容量：SSDに212 GB
 
@@ -48,7 +48,7 @@ Grand Theft Auto VIはこの10年で最も期待されているゲームであ�
 
 ### イタリアではGTA 6は何時に発売されますか？
 
-PS5では2026年11月18日から19日にかけての深夜0時にアンロックされます。Xboxの時刻はまだ発表されていません。
+Rockstarによると、**PS5とXbox Series X|Sの両方で2026年11月19日の現地時間午前0時**にアンロックされます。
 
 ### GTA 6はPCで発売されますか？
 
