@@ -16,7 +16,7 @@ const ATTR = {
   th: ["colspan", "rowspan", "scope"],
   ol: ["start", "type"],
   time: ["datetime"],
-  video: ["controls", "preload", "poster", "width", "height", "playsinline", "muted", "loop"],
+  video: ["src", "controls", "preload", "poster", "width", "height", "playsinline", "muted", "loop"],
   audio: ["controls", "preload"],
   source: ["src", "type", "media"],
 };

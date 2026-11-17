@@ -18,7 +18,7 @@ crediti_immagine: "画像：Giancarlo Mennillo、ゲームのオリジナル素�
 
 この記事で使用したゲーム情報、スクリーンショット、動画は、開発者のGiancarlo Mennillo氏からSoffia Cartucciaへ直接提供されたものです。
 
-<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="霧と雨の中で遊ぶPirates: Black Sails of the Seaのプレイ"></video><figcaption>霧と雨の中でのプレイ。動画：Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" controls muted loop playsinline preload="metadata" aria-label="霧と雨の中で遊ぶPirates: Black Sails of the Seaのプレイ"></video><figcaption>霧と雨の中でのプレイ。動画：Giancarlo Mennillo</figcaption></figure>
 
 ## Pirates: Black Sails of the Seaの遊び方
 
@@ -37,7 +37,7 @@ crediti_immagine: "画像：Giancarlo Mennillo、ゲームのオリジナル素�
 
 そしてもうひとつ、画面を横切り、近くにいる船を襲う**メガロドン**も登場する。
 
-<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="海戦の最中に襲いかかるメガロドン"></video><figcaption>メガロドンの襲撃。動画：Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" controls muted loop playsinline preload="metadata" aria-label="海戦の最中に襲いかかるメガロドン"></video><figcaption>メガロドンの襲撃。動画：Giancarlo Mennillo</figcaption></figure>
 
 ## 集める船とデイリー報酬
 
