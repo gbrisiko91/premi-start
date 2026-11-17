@@ -27,7 +27,7 @@ test("preserva la struttura della galleria degli sfondi e i link di download", (
   const html = sanificaHtml(marked.parse(matter(raw).content));
   assert.match(html, /class="sfondi-griglia"/);
   assert.equal((html.match(/<figure>/g) ?? []).length, 3);
-  assert.equal((html.match(/download/g) ?? []).length, 3);
+  assert.equal((html.match(/\\sdownload="/g) ?? []).length, 3);
   assert.match(html, /src="\/sfondi\/soffiacartuccia-sfondo-01-cartuccia\.png"/);
   assert.doesNotMatch(html, /style=/);
 });
