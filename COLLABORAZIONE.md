@@ -77,7 +77,7 @@ Aggiornare a ogni apertura, merge o chiusura. Campi: numero · branch · autore 
 
 | PR | Branch | Autore | File principali | Stato | Prossima azione |
 |---|---|---|---|---|---|
-| SEO lettura | `chatgpt/percorsi-editoriali-20261117` | ChatGPT | `build.mjs`, `src/stile.css`, percorsi editoriali | In preparazione: collegamenti GTA 6 e raccolta indie | GitHub Actions e Netlify, poi merge se verdi |
+| [#34](https://github.com/gbrisiko91/premi-start/pull/34) | `chatgpt/percorsi-editoriali-20261117` | ChatGPT | `build.mjs`, `src/stile.css`, percorsi editoriali | In verifica: guida GTA 6 e hub indie in nove lingue | GitHub Actions e Netlify sull'ultimo SHA, poi merge |
 
 ### PR del 17 novembre integrate
 #33: template title e meta description, test canonical/sitemap, integrata e test su main superati. #19: pagina Sfondi pixel e 3 PNG, integrata; #27: protocollo collaborazione e proposta controllata integrati; #28: 48 traduzioni integrate; #29: gate editoriale diagnostico (dry-run) integrato. **Quattro bozze del 17/11 escluse**: verifiche editoriali ancora aperte, non pubblicate.
