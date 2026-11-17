@@ -694,6 +694,7 @@ function paginaInstagram(lista) {
   const voce = (a) => `<li><a class="bio-voce" href="${utm(a.url)}" data-colore="${colore(a.categoria)}">${copertina(a, false)}<span class="bio-voce-testo"><span class="meta">${etichettaCatSemplice(l, a.categoria)}<time datetime="${a.data.toISOString()}">${data(l, a.data, "breve")}</time></span><span class="bio-voce-titolo">${esc(a.titolo)}</span></span></a></li>`;
   const scorciatoie = [
     [P.quiz(l), `✦ ${QUIZ[l].nome}`],
+    ...(PAGINE_FISSE.some((p) => p.lingua === l && p.id === "sfondi") ? [[P.pagina(l, "sfondi"), "🎨 Sfondi pixel"]] : []),
     [P.sondaggio(l), R[l].poll.nome],
     [P.uscite(l), R[l].uscite.nome],
     ["#newsletter", "Newsletter"],
