@@ -1,41 +1,32 @@
-# Soffia Cartuccia 2.0 — Stato operativo del progetto
+# Soffia Cartuccia 2.0 — Stato di continuità
 
-Ultimo aggiornamento: 16 novembre 2026 (Europe/Rome).
+Ultimo aggiornamento: 17 novembre 2026 (Europe/Rome).
 
-## Regole di continuità
-- Questo documento è la fonte di riferimento per riprendere il lavoro da una nuova conversazione ChatGPT.
-- All'inizio di ogni sessione confrontare questo file con lo stato **effettivo** di GitHub (PR, commit, Actions) e con il deploy Netlify; non dare per completate operazioni solo perché descritte in chat.
-- Ogni modifica al sito va proposta in una PR, verificata e sottoposta ad approvazione prima del merge, salvo nuova istruzione esplicita del proprietario.
-- Al termine di ogni sessione aggiornare: PR integrate, PR aperte, controlli superati, verifiche manuali mancanti, decisioni editoriali, prossimo passo.
-- Non pubblicare affermazioni non verificate (specie GTA 6: date, pesi, preload, disponibilità, orari, versioni) e distinguere fonti ufficiali dalle indiscrezioni.
+## Documenti di riferimento
+- **Registro operativo e coordinamento corrente:** [COLLABORAZIONE.md](COLLABORAZIONE.md). Questo documento è la sintesi per riprendere una nuova conversazione; non è una seconda fonte in conflitto.
+- **Pubblicazione automatica:** [PROPOSTA-PUBBLICAZIONE-AUTOMATICA.md](PROPOSTA-PUBBLICAZIONE-AUTOMATICA.md). **Solo progetto, NON attiva**; 5 giorni di dry-run e un successivo via libera prima di eventuale auto-merge.
+- **Stato effettivo:** GitHub (PR, CI, commit) e Netlify (preview/produzione) prevalgono sui registri testuali datati.
 
-## Stato verificato al 16/11/2026
-- Repository: https://github.com/gbrisiko91/premi-start
-- PR #22 (GTA 6): integrata in main durante la sessione precedente.
-- PR #24 (correzione CI: commenti redazionali storici): **merged**; i contenuti visibili non sono stati cambiati. https://github.com/gbrisiko91/premi-start/pull/24
-- PR #25 (SEO News: sitemap dedicata nelle nove lingue): **open, draft, non merged**. https://github.com/gbrisiko91/premi-start/pull/25
-  - Implementazione dichiarata: `/sitemap-news.xml`, notizie fresche, aggiornamento a ogni build, integrazione `robots.txt`, preservata sitemap generale.
-  - Ultimo workflow GitHub Actions osservato: **success** (run https://github.com/gbrisiko91/premi-start/actions/runs/43952585159).
-  - Rimangono da verificare revisione tecnica finale e preview/deploy Netlify. Non interpretare CI verde come deploy avvenuto.
-- PR #23 (guida centrale al lancio di GTA 6): **open, non merged**. https://github.com/gbrisiko91/premi-start/pull/23
-  - Verificare fonti Rockstar, date/orari, spazio installazione, immagini, traduzioni, build e contenuti prima dell'approvazione.
-- PR #19 (Missione 5K — pagina Sfondi pixel): **open**, ancora da pianificare. https://github.com/gbrisiko91/premi-start/pull/19
+## Integrazioni verificate
+- PR #19: pagina `/sfondi/` + tre PNG, merge su `main` il 17/11 (commit d78c1ebc6aaa4c25dc14d9c567c96456910c7b0c), Actions success; deploy pubblico da verificare se non confermato.
+- PR #23: guida GTA 6, merge 16/11; Actions `main` success.
+- PR #24: risoluzione errori build per tre note editoriali, merge 16/11.
+- PR #25: sitemap News, merge 16/11; XML e `robots.txt` verificati pubblici dall'utente.
+- PR #26: precedente registro di continuità, merge 16/11.
+- PR #28: 48 traduzioni di sei articoli pubblicati il 16/11, merge 17/11 (commit dd5c9d1ae0994ff0f406cf5a90a51b4a0105a252); quattro bozze con verifiche aperte rimosse dal diff prima del merge.
 
-## Prossime azioni in ordine
-1. Revisionare la PR #25 (sitemap Google News), verificare test/CI e comportamento della sitemap nella preview Netlify, poi presentarla al proprietario per approvazione. **Non fare merge automaticamente.**
-2. Verificare il deploy Netlify reale e la presenza delle sitemap/robots dopo eventuale merge.
-3. Revisionare separatamente la PR #23 su GTA 6 (accuratezza editoriale, link interni, immagini, traduzioni, test) e presentare esiti e problemi.
-4. Valutare priorità della PR #19 e successivi interventi SEO/traffico, misurando risultati anziché promettere indicizzazione.
+## Aperte e prossime azioni
+- PR #27: documentazione di coordinamento e proposta auto-pubblicazione, con revisione tecnica ChatGPT. Solo documentazione, nessun auto-merge attivo. Controllare test/preview sul commit finale, poi unire.
+- Quattro bozze del 17/11: rimangono non pubblicate; completare verifica fonti, immagini e link, successivamente una PR editoriale distinta.
+- Automatizzazione sitemap News con aggiornamento anche nei giorni senza build: miglioramento tecnico futuro.
+- Verificare Search Console, indicizzazione, performance e traffico con dati reali, senza garantire risultati.
 
-## Checklist aggiornamento a ogni fine sessione
-- Data e fase:
-- PR integrate (numero, scopo):
-- PR aperte / in bozza (numero e motivo):
-- Stato CI:
-- Stato Netlify verificato (URL e data):
-- Decisioni approvate / ancora da approvare:
-- Problemi e rischi:
-- Primo passo della prossima sessione:
+## Regole operative
+1. Prima di ogni lavoro leggere `COLLABORAZIONE.md`, poi controllare lo stato effettivo del repository e dei deploy.
+2. Claude: contenuti, traduzioni, attività editoriali concordate. ChatGPT: architettura, sicurezza, SEO tecnico, audit, verifica e merge autorizzati. Gianmarco: supervisione, priorità, autorizzazioni.
+3. Un assistente può effettuare merge approvati, senza che Gianmarco debba operare manualmente su GitHub. Nessun auto-merge editoriale fino alla fase 4 e alla sua nuova autorizzazione.
+4. Non pubblicare automaticamente bozze, indiscrezioni, notizie su persone reali in ambiti sensibili, rettifiche o contenuti con fonti non verificate.
+5. Fine sessione: aggiornare registro, PR integrate/aperte, stato CI/Netlify, prossima azione.
 
-## Istruzione per nuova chat
-«Riprendiamo Soffia Cartuccia 2.0. Leggi `STATO-PROGETTO.md` nel repository `gbrisiko91/premi-start`, confrontalo con le PR aperte, GitHub Actions e il deploy Netlify; poi continua dal primo passo non completato senza ripetere lavori già fatti e senza effettuare merge non approvati.»
+## Prompt di ripresa in nuova chat
+«Riprendiamo Soffia Cartuccia 2.0. Leggi `COLLABORAZIONE.md` e `STATO-PROGETTO.md` in `gbrisiko91/premi-start`, verifica PR, Actions e Netlify, poi procedi dal primo passo non completato. Non considerare l'auto-merge attivo senza un'attivazione esplicita.»
