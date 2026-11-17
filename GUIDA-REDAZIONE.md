@@ -1,17 +1,35 @@
-# Guida redazionale per le bozze di Soffia Cartuccia
+# Guida redazionale di Soffia Cartuccia
 
-Questa guida orienta l'attività pianificata che seleziona le notizie e prepara le **bozze**, non la pubblicazione automatica. Le informazioni devono essere verificate e approvate da Gianmarco Buono prima di impostare `bozza: false`. Se cambia la guida, occorre **aggiornare anche la copia** salvata nel Progetto claude.ai "Sito blog gaming": la sincronizzazione non è automatica.
+Versione del 17/11/2026, allineata alle istruzioni di Gianmarco Buono e alla revisione di ChatGPT (gate editoriale, PR #29 e #37).
+
+Questa guida è letta ogni mattina dall'attività delle 06:34 (ricerca e preparazione articoli) e dalla sincronizzazione delle 07:20. La copia valida è quella nel Progetto claude.ai "Sito blog gaming"; la copia `GUIDA-REDAZIONE.md` nel repository GitHub va tenuta identica tramite PR.
+
+## 0. Obiettivo e flusso
+
+Lo scopo non è pubblicare il maggior numero possibile di articoli, ma contenuti **originali, affidabili e interessanti** che portino lettori su Soffia Cartuccia e migliorino indicizzazione e traffico misurabile (Google Search Console). Meglio tre articoli solidi che cinque deboli.
+
+Flusso quotidiano:
+
+1. **06:34, ricerca e preparazione** (solo nel Progetto privato): ogni articolo viene classificato in uno dei tre stati del §6 e salvato in `bozze/`. A fine lavoro viene scritto il segnale di completamento in `bozze/_stato/AAAA-MM-GG.md`.
+2. **07:20, sincronizzazione**: attende il segnale del giorno, porta su GitHub **solo gli articoli PRONTI** (più le traduzioni verificate) in una PR `contenuti/AAAA-MM-GG`. Non fa merge e non tocca `main`.
+3. **Rilascio**: Gianmarco è il responsabile editoriale e autorizza i rilasci; il merge può essere eseguito per suo conto da ChatGPT o da un assistente autorizzato, dopo aver controllato attendibilità e completezza editoriale, GitHub Actions, report del gate, anteprima Netlify sull'ultimo commit e assenza di conflitti con `main`.
+
+Il **gate editoriale** (`strumenti/gate-pubblicazione.mjs`) è diagnostico: segnala problemi ma non approva le notizie. L'auto-merge resta disattivato; la sua attivazione richiede cinque giorni di prove documentate, controlli di sicurezza e un'autorizzazione esplicita di Gianmarco.
+
+Il repository GitHub è **pubblico**: bozze incomplete, articoli con dubbi aperti e articoli in revisione umana non vanno mai nel repository.
 
 ## 1. Dove cercare
 
 Cerca le notizie delle ultime 24-36 ore su almeno tre di questi gruppi:
 
+- **Fonti ufficiali** (da cercare sempre per prime): blog PlayStation, Xbox Wire, Nintendo, Steam, siti e comunicati degli editori e degli sviluppatori, account ufficiali, comunicati stampa (PR Newswire, Business Wire).
 - **Testate italiane**: Multiplayer.it, Everyeye.it, IGN Italia, Spaziogames, Eurogamer.it, Game Experience.
-- **Testate internazionali**: IGN, VGC (Video Games Chronicle), Eurogamer, Kotaku, The Verge (sezione games), GamesIndustry.biz, Gematsu (Giappone).
-- **Segnali di viralità**: discussioni più votate su Reddit (r/Games, r/gaming, r/PS5, r/NintendoSwitch, r/XboxSeriesX, r/pcgaming, r/retrogaming), trailer in tendenza su YouTube, ricerche in crescita su Google Trends Italia (categoria giochi).
-- **Fonti ufficiali** per confermare: blog PlayStation, Xbox Wire, Nintendo, Steam, comunicati degli editori.
+- **Testate internazionali**: IGN, VGC (Video Games Chronicle), Eurogamer, Kotaku, The Verge (sezione games), GamesIndustry.biz, Gematsu (Giappone), Nintendo Life, Push Square.
+- **Segnali di interesse**: discussioni più votate su Reddit (r/Games, r/gaming, r/PS5, r/NintendoSwitch, r/XboxSeriesX, r/pcgaming, r/retrogaming), trailer in tendenza su YouTube, ricerche in crescita su Google Trends Italia (categoria giochi).
 
-## 2. Come misurare la viralità (punteggio 0-100)
+Se un indirizzo non si apre direttamente, trovalo con una ricerca e apri il risultato. Una fonte che non hai aperto non conta come verificata.
+
+## 2. Come scegliere le notizie (punteggio 0-100)
 
 Per ogni notizia candidata assegna un punteggio sommando:
 
@@ -21,110 +39,121 @@ Per ogni notizia candidata assegna un punteggio sommando:
 | Grande discussione social (post Reddit con migliaia di voti, trailer con milioni di visualizzazioni, trend) | fino a 25 |
 | Interesse per il pubblico italiano (uscita in Italia, prezzo in euro, studio italiano, giochi molto popolari da noi) | fino a 15 |
 | Freschezza (meno di 12 ore = massimo) | fino a 15 |
-| Effetto sorpresa o polemica (annuncio inatteso, leak, rinvio, licenziamenti, prezzi) | fino a 15 |
+| Effetto sorpresa o polemica (annuncio inatteso, rinvio, prezzi) | fino a 15 |
 
-Scegli le notizie con il punteggio più alto, **da 3 a 5**, preferendo una varietà di categorie. Una notizia dedicata al **retro gaming** va inclusa ogni volta che ce n'è una con almeno 50 punti: è il tema che distingue Soffia Cartuccia.
+Il punteggio è una valutazione editoriale, non una prova che il fatto sia vero.
 
-Scarta: notizie già coperte dalle bozze dei giorni precedenti (controlla la cartella `bozze/`), offerte e sconti puri, contenuti sponsorizzati, voci prive di qualsiasi fonte credibile.
+**Priorità**: notizie con interesse reale, fonti primarie, approfondimenti utili, **scoperte indie**, **retrogaming** (includine una ogni volta che ce n'è una con almeno 50 punti: è il tema che distingue Soffia Cartuccia) e i grandi argomenti gaming del momento. Preferisci una varietà di categorie.
 
-## 3. SEO: come scrivere per Google, Google Discover e i social
+**Scarta**: notizie già coperte negli ultimi 7 giorni (controlla `bozze/` e gli articoli pubblicati: se c'è una novità, è un aggiornamento, non un nuovo articolo), offerte e sconti puri, contenuti sponsorizzati, voci prive di fonti credibili, articoli ripetitivi o costruiti solo per riempire il calendario.
 
-Ogni bozza deve essere ottimizzata prima ancora di essere scritta. Parti dalla **parola chiave principale**: la frase che un lettore italiano scriverebbe su Google per trovare questa notizia (es. "the duskbloods rinvio", "gta 6 prezzo", "switch 2 nuovo modello"). Verifica con WebSearch come la cercano le persone e quali titoli usano i concorrenti in Italia, poi fai di meglio.
+## 3. SEO: Google, Google Discover e social
+
+Parti dalla **parola chiave principale**: la frase che un lettore italiano scriverebbe su Google (es. "the duskbloods rinvio", "gta 6 prezzo"). Verifica con una ricerca come la cercano le persone e quali titoli usano i concorrenti in Italia, poi fai di meglio.
 
 **Titoli**
-- `titolo` (H1, visibile sul sito e nelle anteprime social): 55-80 caratteri, contiene la parola chiave il più vicino possibile all'inizio, dice esattamente cosa è successo e dà un motivo per cliccare (un numero, una data, una conseguenza, una domanda a cui l'articolo risponde davvero). Mai promettere ciò che il testo non mantiene: il clickbait abbassa il tempo di lettura e Google Discover lo penalizza.
-- `titolo_seo` (il titolo della scheda di Google): massimo 60 caratteri, parola chiave all'inizio. Il sito aggiunge da solo " – Soffia Cartuccia".
-- Il nome del file (che diventa l'indirizzo della pagina) contiene la parola chiave: `AAAA-MM-GG-parola-chiave-breve.md`, 3-6 parole.
+- `titolo` (H1 e anteprime social): 55-80 caratteri, parola chiave vicino all'inizio, dice esattamente cosa è successo e dà un motivo per cliccare. Mai promettere ciò che il testo non mantiene.
+- `titolo_seo`: **massimo 60 caratteri**, parola chiave all'inizio. Il sito aggiunge " – Soffia Cartuccia".
+- Nome del file: `AAAA-MM-GG-parola-chiave-breve.md`, 3-6 parole, minuscole, trattini, niente accenti.
 
 **Sommario (meta description)**
-- 140-155 caratteri, contiene la parola chiave, riassume la notizia e incuriosisce. È il testo grigio sotto il titolo su Google e nelle condivisioni.
+- Ideale 140-155 caratteri, **obbligatorio tra 120 e 160** (il gate lo controlla). Contiene la parola chiave e riassume la notizia. Contalo prima di salvare.
 
 **Testo**
-- Parola chiave (o una sua variante naturale) nelle prime 100 parole e in almeno un sottotitolo `##`.
-- Primo paragrafo di 2-3 frasi che risponde subito a chi, cosa, quando: è quello che Google mostra come risposta.
-- Sottotitoli `##` che sono frasi cercabili, non etichette generiche. Al posto di "Cosa sappiamo" scrivi ad esempio "## Quando esce The Duskbloods su Switch 2".
-- Paragrafi brevi (2-4 frasi). Grassetto solo alla prima menzione dei 2-3 nomi protagonisti dell'articolo (di solito il gioco e lo studio o la console); mai su date, numeri, prezzi o nomi secondari.
-- Usa sinonimi e termini correlati (nomi delle console, dello studio, del genere) invece di ripetere la parola chiave: niente keyword stuffing.
-- Almeno un **link interno** a un altro articolo di Soffia Cartuccia pertinente (cerca in `content/articoli/`), con testo del link descrittivo, e un link alla **fonte ufficiale** quando esiste.
-- Le **FAQ sono facoltative**: aggiungile solo se rispondono a domande reali e aggiungono informazioni non già presenti nel testo. Non inventare domande solo per riempire lo schema.
-- **Lunghezza commisurata al contenuto**: una notizia breve può richiedere 200-350 parole, una notizia articolata 350-700, un approfondimento originale quanto necessario. Nessuna soglia fissa deve indurre a ripetizioni o aggiunte senza fonte.
+- Parola chiave (o una variante naturale) nelle prime 100 parole e in almeno un sottotitolo `##`.
+- Primo paragrafo di 2-3 frasi che risponde subito a chi, cosa, quando.
+- Sottotitoli `##` che sono frasi cercabili, non etichette generiche.
+- Paragrafi brevi (2-4 frasi). Grassetto solo alla prima menzione dei 2-3 nomi protagonisti; mai su date, numeri, prezzi o nomi secondari.
+- Sinonimi e termini correlati invece di ripetere la parola chiave.
+- **Almeno un link interno realmente utile** verso un articolo **già pubblicato** (`bozza: false` su `main`; puoi controllarlo in sola lettura su `https://raw.githubusercontent.com/gbrisiko91/premi-start/main/content/articoli/<file>`). Formato: `[testo descrittivo](/articoli/<nome-file-senza-data-e-senza-.md>/)`. Mai link a bozze o a URL inventati. Il link deve aiutare il lettore (stesso gioco, stessa serie, stesso tema), non essere messo a caso.
+- Un link alla **fonte ufficiale** quando esiste.
+- **FAQ facoltative**: solo se rispondono a domande reali con informazioni nuove.
+- **Lunghezza commisurata al contenuto**: notizia breve 200-350 parole, notizia articolata 350-700, approfondimento quanto serve. Nessuna soglia deve indurre a ripetizioni o aggiunte senza fonte.
 
-**Viralità sui social**
-- Il titolo deve funzionare anche da solo in un'anteprima su WhatsApp, Telegram o X.
-- L'immagine di copertina è obbligatoria quando possibile: le anteprime senza immagine vengono cliccate molto meno e Google Discover mostra quasi solo articoli con immagini grandi.
+**Social**: il titolo deve funzionare anche da solo in un'anteprima su WhatsApp, Telegram o X.
 
-## 4. Come scrivere
+## 4. Come scrivere e verificare
 
-- Lingua italiana, tono diretto e informato, da appassionati per appassionati.
-- **Scrivi sempre con parole tue.** Non copiare frasi dagli articoli delle fonti; al massimo una citazione breve (meno di 15 parole) tra virgolette, attribuita.
-- Ogni fatto importante richiede **una fonte primaria verificabile** (annuncio, documento, intervista raccolta davvero, dichiarazione diretta dello sviluppatore) oppure **due fonti indipendenti** attendibili. Una notizia ripresa da più testate che citano la stessa fonte non è automaticamente confermata da più fonti indipendenti. Distingui fatti, dichiarazioni, opinioni e indiscrezioni.
-- Le indiscrezioni non vanno trasformate in annunci: scrivi "secondo...", attribuisci la fonte fin dal titolo o dal primo paragrafo e indica chiaramente l'assenza di conferma ufficiale.
-- Il materiale fornito direttamente da uno sviluppatore (come nel caso di *Pirates: Black Sails of the Sea*) è **materiale originale e fonte primaria**, con attribuzione precisa e consenso per le immagini. Non presentarlo come una "intervista" se non esistono domande e risposte effettivamente raccolte.
-- **Scrivi come una persona, non come un'IA** (regole della skill Humanizer, la stessa usata per revisionare gli articoli il 13 novembre 2026):
-  - niente contrasti costruiti del tipo "non è solo X, ma Y", "non X, bensì Y", "per ora è un indizio, non un annuncio": dici direttamente cosa è successo;
-  - niente frasi di chiusura che ripetono il punto o lo "commentano" ("Il messaggio è chiaro", "Una cosa però è chiara", "Resta da vedere", "Una frenata che pesa"), niente frasi a effetto di una riga;
-  - niente aperture di lancio ("Va detto chiaramente:", "Ecco tutto quello che c'è da sapere", "Non solo:", "Il paradosso è che") e niente gonfiature ("segna la fine di un'epoca", "un momento storico", "dato impressionante", "ben quattro");
-  - niente elenchi di tre cose messi lì solo per ritmo: elenca quanti elementi ci sono davvero;
-  - niente lineette (— o –) nel testo: usa virgole, punti, due punti o parentesi;
-  - negli elenchi puntati niente etichette in grassetto con i due punti;
-  - verbi semplici ("è", "ha") invece di "rappresenta", "si configura come", "vanta";
-  - frasi di lunghezza varia, attacchi diversi, qualche reazione da appassionato quando ci sta (senza inventare opinioni sui fatti).
-  - Prima di salvare, rileggi la bozza cercando proprio questi schemi e riscrivi le frasi che li contengono.
-- **Revisione finale con la skill Humanizer (obbligatoria).** Quando la bozza è completa, carica con lo strumento Skill la skill `humanizer` (nome completo `anthropic-skills:humanizer`) e passaci il testo di ogni bozza, e ogni didascalia Instagram, seguendo la sua modalità file. Cambia solo la prosa: intestazione YAML, link, tabelle di dati, numeri, date, nomi, citazioni e note per la redazione restano identici. Poi ricontrolla che non sia sparito o cambiato nessun fatto e che la revisione non abbia aggiunto dettagli senza fonte. Se la skill non è disponibile nella sessione, fai la stessa revisione a mano con le regole qui sopra e scrivilo nelle note per la redazione ("revisione humanizer manuale").
-- **Struttura flessibile:** apri con il fatto principale verificato, usa sottotitoli solo quando servono e non imporre a tutti i pezzi lo stesso numero di sezioni.
-- Nelle **bozze** puoi usare commenti `<!-- NOTE PER LA REDAZIONE: ... -->` per registrare dubbi e richieste di verifica. **Prima di pubblicare**, risolvi tutti i dubbi, elimina le note dal file pubblico e registra eventuali questioni residue in un documento redazionale separato. Il controllo del repository blocca gli articoli pubblicati nuovi o modificati che contengono note interne.
-- Se una verifica non può essere completata, circoscrivi l'articolo ai soli fatti confermati oppure mantienilo in bozza. Non rimuovere un dubbio soltanto per far passare i test.
+- Lingua italiana, tono diretto e informato, da appassionati per appassionati. Testo giornalistico naturale.
+- **Scrivi sempre con parole tue.** Al massimo una citazione breve (meno di 15 parole) tra virgolette, attribuita, letta davvero in una fonte e tradotta fedelmente.
+- **Verifica del fatto principale**: serve **una fonte primaria verificabile** (annuncio, comunicato, documento, post dell'autore, dichiarazione diretta) oppure **due fonti indipendenti** attendibili. Più testate che riprendono la stessa fonte non sono fonti indipendenti. **Se il fatto principale non è confermato, l'articolo non è pronto.**
+- Verifica nomi, date (data dell'evento, non dell'articolo che lo riporta), orari con conversione in ora italiana, piattaforme, prezzi, numeri e citazioni.
+- **Dettagli secondari non verificabili** (statistiche di contorno, biografie non indispensabili, deduzioni, valutazioni come "nessun indie", dubbi su regolamenti): eliminali, mantenendo l'articolo accurato e completo. Non lasciarli nel testo con una nota.
+- Distingui fatti, dichiarazioni, opinioni e indiscrezioni. Le indiscrezioni non diventano annunci: "secondo...", fonte attribuita dal titolo o dal primo paragrafo, assenza di conferma ufficiale dichiarata. Sono sempre in **revisione umana** (§6).
+- Il materiale fornito direttamente da uno sviluppatore è fonte primaria, con attribuzione precisa. Non chiamarlo "intervista" se non esistono domande e risposte raccolte davvero.
+- Non inventare recensioni, prove dirette, interviste, esperienze o dichiarazioni personali di Gianmarco Buono.
 
-## 4-bis. Tre formati editoriali, senza stampi uguali per tutti
+**Scrivi come una persona, non come un'IA** (regole della skill Humanizer):
+- niente contrasti costruiti ("non è solo X, ma Y", "non X, bensì Y");
+- niente frasi di chiusura che ripetono o "commentano" il punto ("Il messaggio è chiaro", "Resta da vedere"), niente frasi a effetto di una riga;
+- niente aperture di lancio ("Va detto chiaramente:", "Ecco tutto quello che c'è da sapere") e niente gonfiature ("un momento storico", "dato impressionante");
+- niente elenchi di tre cose messi lì per ritmo;
+- niente lineette (— o –) nel testo: virgole, punti, due punti o parentesi;
+- negli elenchi puntati niente etichette in grassetto con i due punti;
+- verbi semplici ("è", "ha") invece di "rappresenta", "si configura come", "vanta";
+- frasi di lunghezza varia, qualche reazione da appassionato quando ci sta (senza inventare opinioni sui fatti).
 
-**A. Notizia breve e verificata**
-- Il fatto principale subito, fonte attribuita e conseguenza concreta. Se è una semplice dichiarazione, attribuirla al soggetto che l'ha fatta.
-- Bastano 200-350 parole quando la notizia non ne giustifica altre. Una o due sezioni solo se aggiungono contesto.
-- Per rumor o indiscrezioni: cosa è confermato, cosa non lo è, e perché l'affidabilità della fonte conta.
+**Revisione finale con la skill Humanizer** (`anthropic-skills:humanizer`, modalità file) su ogni articolo e didascalia Instagram. Cambia solo la prosa: YAML, link, dati, numeri, date, nomi e citazioni restano identici. Poi ricontrolla che nessun fatto sia cambiato o sparito e che non siano stati aggiunti dettagli senza fonte. Se la skill non è disponibile, revisione manuale con le regole qui sopra, indicata nel riepilogo.
 
-**B. Scoperta indie e storia originale**
-- Parti da ciò che hai davvero visto, ricevuto o verificato: gioco, piattaforme, materiali, contatto con lo sviluppatore e link ufficiali.
-- Differenzia con cura le **dichiarazioni dello sviluppatore** dai **fatti osservati direttamente**; non inventare citazioni né prove sul campo.
-- Le parole "intervista" e "esclusiva" richiedono fatti che le giustifichino: risposte reali e, se si parla di esclusiva, controllo effettivo dell'esclusività.
-- Una buona scoperta indie risponde anche alla domanda pratica: dove si gioca e dove si scarica, se già disponibile.
+**Struttura flessibile**: apri con il fatto principale verificato, sottotitoli solo quando servono.
 
-**C. Approfondimento retro o evergreen**
-- Scegli una domanda che rimanga utile nel tempo e confronta documentazione storica, fonti primarie ed eventuali testimonianze.
-- Racconta il contesto, le differenze tra versioni e le informazioni accertate; cita le incertezze invece di colmarle con supposizioni.
-- Aggiorna i dettagli se cambiano e inserisci `aggiornato: AAAA-MM-GG` solo per modifiche effettive.
+## 4-bis. Tre formati editoriali
 
-**Il punteggio Hype resta una valutazione editoriale**, non una prova che il fatto sia vero né un voto del pubblico. La scelta degli argomenti non deve premiare il rumor sensazionale a scapito di una buona storia originale.
+**A. Notizia breve e verificata**: fatto principale subito, fonte attribuita, conseguenza concreta. 200-350 parole quando bastano.
 
-## 5. Immagini
+**B. Scoperta indie e storia originale**: parti da ciò che hai davvero visto o verificato (gioco, piattaforme, materiali, link ufficiali). Distingui dichiarazioni dello sviluppatore e fatti osservati. "Intervista" ed "esclusiva" solo se giustificate. Rispondi anche a: dove si gioca, dove si scarica.
 
-Ogni bozza ha un'**immagine di copertina** e, se utile, **una sola immagine nel testo**. Le immagini non si scaricano: si inserisce il loro indirizzo web.
+**C. Approfondimento retro o evergreen**: una domanda utile nel tempo, documentazione storica e fonti primarie, incertezze dichiarate invece che colmate. `aggiornato: AAAA-MM-GG` solo per modifiche effettive.
 
-**Da dove prenderle, in ordine di preferenza**
-1. **Fonti ufficiali dell'annuncio**: il post sul blog di PlayStation, Xbox Wire, Nintendo, il sito o il press kit dell'editore. Apri la pagina con WebFetch e prendi l'indirizzo dell'immagine principale (il tag `og:image`).
-2. **Pagina Steam ufficiale del gioco**: trova la pagina con WebSearch ("nome gioco steam"), aprila con WebFetch e prendi il numero del gioco (dall'indirizzo `store.steampowered.com/app/NUMERO`) e l'indirizzo `og:image`. Poi usa:
-   - copertina: `https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/NUMERO/library_hero.jpg` (grande, senza scritte)
-   - `immagine_riserva`: l'indirizzo `og:image` della pagina (di solito `.../apps/NUMERO/header.jpg`)
-   Se il sito mostra la pagina Steam di un altro gioco o una versione diversa, non usarla.
-3. **Wikimedia Commons** per console, hardware e loghi, solo con licenza libera (CC0, CC BY, CC BY-SA): indica autore e licenza nei crediti.
+## 5. Immagini (facoltative)
 
-**Mai**
-- Immagini prese da altre testate giornalistiche (IGN, Multiplayer.it, VGC, Everyeye...), da Google Immagini, da Pinterest o dai social.
-- Foto di persone reali (sviluppatori, dirigenti, giocatori), anche se famose.
-- Immagini legate a tragedie, vittime o fatti di cronaca: per queste notizie usa il logo o la copertina ufficiale del gioco, oppure nessuna immagine.
-- Leak, materiale non ancora annunciato, immagini generate con l'IA presentate come reali.
+Le immagini sono **facoltative**. Usale **solo quando i diritti di riutilizzo sono chiari**; in caso contrario lascia che il sito usi la copertina della categoria.
 
-**Campi da compilare**
-- `immagine`: indirizzo completo `https://...` dell'immagine di copertina.
-- `immagine_riserva`: un secondo indirizzo ufficiale, usato se il primo non si carica.
-- `alt_immagine`: descrizione di cosa mostra l'immagine, 8-15 parole, con la parola chiave se è naturale (es. "Copertina ufficiale di The Duskbloods con il cacciatore nella città gotica").
-- `crediti_immagine`: chi possiede l'immagine e da dove viene (es. "Immagine: FromSoftware / Nintendo, press kit ufficiale" oppure "Immagine: Bethesda via Steam").
-- Immagine nel testo: `![descrizione dell'immagine](https://indirizzo "Crediti: Editore, fonte")`.
+**Ammesse**
+1. Press kit e pagine media ufficiali di editori o sviluppatori che ne consentono l'uso alla stampa.
+2. Wikimedia Commons con licenza libera (CC0, CC BY, CC BY-SA), con autore e licenza nei crediti.
+3. Materiale fornito direttamente dallo sviluppatore con consenso all'uso.
 
-Se non trovi un'immagine sicura, lascia vuoti i campi: il sito mostra la copertina colorata della categoria. Scrivilo nelle note per la redazione.
+**Non ammesse senza una verifica esplicita dei diritti**: asset delle pagine Steam, render e foto dei produttori, immagini delle pagine prodotto.
 
-## 6. Formato del file
+**Mai**: immagini di altre testate, Google Immagini, Pinterest o social; foto di persone reali; immagini legate a tragedie o cronaca; leak; immagini generate con l'IA presentate come reali.
 
-Un file Markdown per bozza, chiamato `AAAA-MM-GG-parola-chiave-breve.md` (minuscole, trattini, niente accenti), con questa intestazione:
+**Campi**
+- Con immagine: `immagine` (URL `https://`), facoltativa `immagine_riserva` (URL `https://`), `alt_immagine` (8-15 parole), `crediti_immagine` (proprietario e fonte, es. "Immagine: Editore, press kit ufficiale").
+- **Senza immagine**: ometti del tutto `immagine`, `immagine_riserva`, `alt_immagine` e `crediti_immagine`, oppure lasciali tutti vuoti. Non lasciare alt o crediti senza immagine (il gate lo segnala).
+
+## 6. I tre stati e la scheda di verifica
+
+Ogni articolo ha nell'intestazione YAML la **scheda di verifica**:
+
+```yaml
+verifica:
+  stato: verificata          # verificata | da_rivedere
+  natura: ufficiale          # ufficiale | dichiarazione | report | indiscrezione | intervista | recensione
+  fonti_primarie: 1          # fonti primarie realmente aperte
+  fonti_indipendenti: 2      # testate attendibili indipendenti realmente aperte
+  controllata_il: 2026-11-18T07:05+01:00
+  dubbi: []                  # dubbi ancora aperti
+```
+
+**PRONTO**
+- `bozza: false`, `verifica.stato: verificata`, `dubbi: []`.
+- Fatto principale confermato (§4), fonti pertinenti in `fonti`, SEO completa (§3), almeno un link interno utile a un articolo pubblicato.
+- **Nessuna nota interna** nel file: niente `<!-- -->`, NOTE PER LA REDAZIONE, DA VERIFICARE, TODO, FIXME, TBD. Le informazioni di lavoro vanno solo nel riepilogo.
+- Natura `ufficiale`, `dichiarazione` o `report` non sensibile.
+
+**NON PRONTO**
+- `bozza: true`, `verifica.stato: da_rivedere`, dubbi elencati in `verifica.dubbi`. Le note `<!-- NOTE PER LA REDAZIONE: ... -->` sono ammesse.
+- Resta esclusivamente nel Progetto privato.
+
+**REVISIONE UMANA** (anche se le fonti sono verificate)
+- `bozza: true` e `verifica.revisione_umana: "<motivo>"`.
+- Riguarda: indiscrezioni, leak e rumor; interviste; recensioni, prove dirette e testi in prima persona di Gianmarco; vicende delicate su persone reali (licenziamenti, accuse, cause, decessi, salute); rettifiche di articoli già pubblicati; altri contenuti che richiedono una valutazione editoriale specifica.
+- Resta nel Progetto privato. Non viene mai pubblicato automaticamente, neanche se arrivano ulteriori conferme: decide Gianmarco.
+
+## 7. Formato del file
+
+Un file Markdown per articolo, `bozze/AAAA-MM-GG-parola-chiave-breve.md`:
 
 ```markdown
 ---
@@ -132,33 +161,54 @@ titolo: "The Duskbloods rinviato al 2027: perché FromSoftware ha deciso di aspe
 titolo_seo: "The Duskbloods rinviato al 2027: cosa cambia"
 sommario: "FromSoftware rinvia The Duskbloods, l'esclusiva Switch 2, al 2027 per migliorare combattimento e bilanciamento dopo il network test di agosto."
 parola_chiave: "the duskbloods rinvio"
-data: 2026-11-01
+data: 2026-11-18
 categoria: console
 tag: [the-duskbloods, fromsoftware, nintendo-switch-2]
 viralita: 82
-bozza: true
-immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/NUMERO/library_hero.jpg"
-immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/NUMERO/header.jpg"
-alt_immagine: "Descrizione di cosa mostra l'immagine"
-crediti_immagine: "Immagine: Editore, fonte ufficiale"
+bozza: false
+verifica:
+  stato: verificata
+  natura: ufficiale
+  fonti_primarie: 1
+  fonti_indipendenti: 2
+  controllata_il: 2026-11-18T07:05+01:00
+  dubbi: []
 fonti:
-  - titolo: "Nome testata – titolo del pezzo"
+  - titolo: "Nintendo – comunicato ufficiale"
     url: "https://..."
-  - titolo: "..."
+  - titolo: "Nome testata – titolo del pezzo"
     url: "https://..."
 ---
 
 Testo dell'articolo in Markdown...
 ```
 
-Categorie ammesse: `console`, `pc`, `retro`, `industria`. I tag sono 3-5, in minuscolo con trattini: nomi di giochi, studi, console. Se in seguito l'articolo viene aggiornato, aggiungi `aggiornato: AAAA-MM-GG`.
+Categorie ammesse: `console`, `pc`, `retro`, `industria`. Tag 3-5, minuscolo con trattini. `data` = giorno di preparazione (il gate accetta oggi o ieri). Niente HTML grezzo nel testo. Per gli aggiornamenti, `aggiornato: AAAA-MM-GG`.
 
-Prima di salvare esegui `npm run build`: segnala in giallo titoli o sommari troppo lunghi e immagini senza crediti. Correggi finché non ci sono avvisi.
+## 8. Segnale di completamento (06:34)
 
-## 7. Dalla bozza all'articolo
+Al termine della ricerca, scrivi `bozze/_stato/AAAA-MM-GG.md`:
 
-1. Leggi la bozza, scegli il formato corretto, verifica date, numeri, piattaforme, citazioni e collegamenti, poi riscrivi con una voce riconoscibile.
-2. Controlla tutte le fonti indicate e i diritti/crediti delle immagini. Se la fonte è una comunicazione originale dello sviluppatore, attribuiscila senza inventare un link inesistente.
-3. Risolvi le **note per la redazione**: nessuna nota o marcatore di lavoro deve restare in un articolo pubblicato. Le questioni aperte vanno nel registro interno e il testo pubblico non deve affermare ciò che non è provato.
-4. Esegui `npm run audit:editoriale` per avere il riepilogo dei pezzi che richiedono un controllo. È un report indicativo, non un fact-check automatico.
-5. Esegui `npm test`; solo dopo il controllo finale umano di Gianmarco Buono imposta `bozza: false` e pubblica. **Il verde dei test non certifica da solo la verità delle notizie.**
+```yaml
+---
+data: 2026-11-18
+completato: true
+esecuzione: "ricerca-2026-11-18T06:34"   # identificativo univoco dell'esecuzione
+iniziata: 2026-11-18T06:34+01:00
+conclusa: 2026-11-18T06:49+01:00
+articoli:
+  - file: 2026-11-18-esempio.md
+    stato: pronto                        # pronto | non_pronto | revisione_umana
+    motivo: ""
+---
+```
+
+Il segnale è valido solo per la data indicata. Se l'esecuzione si interrompe prima della fine, il segnale non va scritto.
+
+## 9. Sincronizzazione e rilascio (07:20)
+
+1. La sincronizzazione legge il segnale di **oggi** e controlla che `data` corrisponda al giorno e che `completato: true`. Se manca o non è valido, riprova ogni 10 minuti per un'ora al massimo; se non arriva, **si interrompe e avvisa Gianmarco**.
+2. Porta su GitHub solo gli articoli che il segnale classifica come `pronto` e che rispettano ancora tutti i criteri del §6, più le traduzioni verificate degli articoli già pubblicati o di quelli pronti nella stessa PR.
+3. Esegue `npm run audit:editoriale`, `npm test`, i build e il gate diagnostico, e riporta gli esiti nella PR.
+4. Crea o aggiorna la PR `contenuti/AAAA-MM-GG`, senza merge e senza toccare `main`. Le modifiche a `rubriche.mjs` vanno in una PR separata.
+5. Il merge avviene per conto di Gianmarco dopo i controlli del §0. **Il verde dei test e del gate non certifica la verità delle notizie.**
