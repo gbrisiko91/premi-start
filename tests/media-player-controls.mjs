@@ -22,3 +22,14 @@ for (const lingua of ["it", "en", "de", "es", "no", "sv", "fi", "ja", "ru"]) {
     }
   });
 }
+
+test("il sanitizer conserva src video locale ma blocca protocolli attivi", () => {
+  const input = '<video src="/media/pirates-black-sails/nebbia-pioggia.mp4" controls></video>' +
+    '<video src="javascript:alert(1)" controls></video>' +
+    '<video src="data:text/html;base64,PHNjcmlwdD4=" controls></video>';
+  const html = sanificaHtml(input);
+  const tags = [...html.matchAll(/<video\b[^>]*>/g)].map(m => m[0]);
+  assert.equal(tags.length, 3);
+  assert.match(tags[0], /\ssrc="\/media\/pirates-black-sails\/nebbia-pioggia\.mp4"/);
+  for (const tag of tags.slice(1)) assert.doesNotMatch(tag, /\ssrc=/);
+});
