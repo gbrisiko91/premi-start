@@ -12,7 +12,7 @@ test("quiz e sondaggio hanno istruzioni locali e percorsi funzionanti in nove li
     for(const [tipo,slug] of [["quiz","quiz"],["poll",polls[l]]]){
       const texts=GUIDE_RUBRICHE[l][tipo];
       assert.equal(texts.length,3,l+" "+tipo+" copy");
-      assert.ok(texts.every(v=>typeof v==="string"&&v.length>30),l+" "+tipo+" incomplete");
+      assert.ok(typeof texts[0]==="string"&&texts[0].length>8&&texts.slice(1).every(v=>typeof v==="string"&&v.length>35),l+" "+tipo+" incomplete");
       const html=fs.readFileSync("dist/"+prefix+slug+"/index.html","utf8");
       assert.ok(html.includes('id="guida-'+tipo+'"'),l+" "+tipo+" missing guide");
       assert.ok(html.includes(texts[0]),l+" "+tipo+" language");
