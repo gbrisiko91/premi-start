@@ -11,6 +11,7 @@ const CATEGORIE = new Set(["console", "pc", "retro", "industria"]);
 const PENDENTI = /\b(?:DA VERIFICARE|NOTE PER LA REDAZIONE|TODO|FIXME|TBD)\b/i;
 const HTML = /<!--[\s\S]*?-->|<\/?[a-z][^>]*>/i;
 const SENSIBILI = /licenziat|accusat|denunciat|decedut|morto|arrestat|salute|malattia|suicid|molest/i;
+const NATURA_REVISIONE_UMANA = new Set(["indiscrezione", "rumor", "intervista", "recensione"]);
 
 export function leggiCambiamenti(testo) {
   return String(testo).split(/\r?\n/).filter(Boolean).map(line => {
@@ -57,7 +58,7 @@ export function valutaCambiamenti(cambiamenti, { leggi, esiste, oggi = new Intl.
     if (d !== oggi && d !== yesterday.toISOString().slice(0, 10)) aggiungi(file, "G5", "Data non odierna/di ieri");
     const verifica = m.verifica;
     if (!verifica || verifica.stato !== "verificata" || !Array.isArray(verifica.dubbi) || verifica.dubbi.length) aggiungi(file, "G1", "Scheda verifica assente/incompleta o dubbi ancora aperti");
-    if (verifica?.natura === "indiscrezione" || verifica?.natura === "report" && SENSIBILI.test(m.titolo || "")) aggiungi(file, "G3", "Rumor o notizia su persona reale: revisione manuale");
+    if (NATURA_REVISIONE_UMANA.has(String(verifica?.natura || "").toLowerCase().trim()) || verifica?.natura === "report" && SENSIBILI.test(m.titolo || "")) aggiungi(file, "G3", "Indiscrezioni, interviste e recensioni: revisione umana obbligatoria");
     if (SENSIBILI.test(String(m.titolo || "") + " " + String(m.sommario || ""))) aggiungi(file, "G3", "Tema sensibile: controllo umano obbligatorio");
     if (!Array.isArray(m.fonti) || !m.fonti.length) aggiungi(file, "G2", "Nessuna fonte");
     else {
@@ -65,7 +66,19 @@ export function valutaCambiamenti(cambiamenti, { leggi, esiste, oggi = new Intl.
       if (urls.some(u => !u)) aggiungi(file, "G2", "Fonte non HTTPS o URL non valido");
       if (new Set(urls.filter(Boolean).map(u => u.hostname)).size < 2 && !Number(verifica?.fonti_primarie)) aggiungi(file, "G2", "Una sola origine senza fonte primaria dichiarata");
     }
-    if (!m.immagine || !m.alt_immagine || !m.crediti_immagine || !/^https:\/\//.test(String(m.immagine))) aggiungi(file, "G6", "Immagine HTTPS, alt e crediti obbligatori");
+    // Senza permessi di riutilizzo immagini chiari è ammesso il fallback di categoria.
+    // Il gate controlla solo i metadati; non certifica la licenza del materiale.
+    const immagine = String(m.immagine ?? "").trim();
+    const riserva = String(m.immagine_riserva ?? "").trim();
+    const alt = String(m.alt_immagine ?? "").trim();
+    const crediti = String(m.crediti_immagine ?? "").trim();
+    const https = value => { try { const u = new URL(value); return u.protocol === "https:" && Boolean(u.hostname); } catch { return false; } };
+    if (immagine) {
+      if (!https(immagine) || !alt || !crediti) aggiungi(file, "G6", "Immagine presente: URL HTTPS valido, alt e crediti richiesti");
+      if (riserva && !https(riserva)) aggiungi(file, "G6", "Immagine di riserva non HTTPS o non valida");
+    } else if (riserva || alt || crediti) {
+      aggiungi(file, "G6", "Immagine assente: rimuovere alt, crediti e URL di riserva residui");
+    }
     if (PENDENTI.test(source)) aggiungi(file, "G4", "Note o marcatori editoriali ancora presenti");
     if (HTML.test(parsed.content) || /\b(?:javascript|data):/i.test(parsed.content)) aggiungi(file, "G8", "HTML grezzo o protocollo potenzialmente non sicuro: sanitizer mancante, revisione manuale");
     const key = String(m.parola_chiave || "").toLocaleLowerCase("it").trim();

@@ -56,3 +56,29 @@ test("traduzione richiede originale", () => {
   });
   assert.ok(r.problemi.some(p=>p.controllo==="G10"));
 });
+
+
+test("senza immagine la verifica meccanica non segnala G6", () => {
+  const testo = base.replace(/^immagine:.*\nalt_immagine:.*\ncrediti_immagine:.*\n/m, "");
+  const r = valutaCambiamenti([{stato:"A",file:art}],opts({[art]:testo}));
+  assert.equal(r.candidata,true,JSON.stringify(r.problemi));
+});
+test("immagini senza diritti descritti o con URL insicuri sono segnalate", () => {
+  for (const testo of [
+    base.replace(/^crediti_immagine:.*\n/m, ""),
+    base.replace("https://example.com/immagine.png","http://example.com/immagine.png"),
+    base.replace(/^immagine:.*\n/m, ""),
+    base.replace("alt_immagine:",'immagine_riserva: "javascript:alert(1)"\nalt_immagine:')
+  ]) {
+    const r=valutaCambiamenti([{stato:"A",file:art}],opts({[art]:testo}));
+    assert.ok(r.problemi.some(p=>p.controllo==="G6"));
+  }
+});
+test("interviste, recensioni e indiscrezioni sempre a revisione umana", () => {
+  for (const natura of ["intervista","recensione","indiscrezione"]) {
+    const testo=base.replace("natura: ufficiale", "natura: "+natura);
+    const r=valutaCambiamenti([{stato:"A",file:art}],opts({[art]:testo}));
+    assert.ok(r.problemi.some(p=>p.controllo==="G3"),natura);
+    assert.equal(r.autoMergeAbilitato,false);
+  }
+});

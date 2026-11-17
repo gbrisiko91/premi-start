@@ -2,7 +2,7 @@
 
 Documento vivo di coordinamento. **È la fonte unica sullo stato del lavoro in corso**: chi interviene sul repository lo legge prima di iniziare e lo aggiorna quando finisce.
 
-Ultimo aggiornamento: 17/11/2026 (Europe/Rome) — PR #19/#27/#28/#29 integrate e registro sincronizzato; auto-merge NON attivo.
+Ultimo aggiornamento: 17/11/2026 — PR #32–#36 integrate; nuovo flusso Claude 06:34 → 07:20 dichiarato, prima esecuzione 18/11 da verificare. Auto-merge NON attivo.
 
 ---
 
@@ -32,12 +32,12 @@ Ultimo aggiornamento: 17/11/2026 (Europe/Rome) — PR #19/#27/#28/#29 integrate 
 
 ## 2. Attività automatiche
 
-Le automazioni girano su Claude. **Nessuna fa merge, pubblica articoli (`bozza: false`) o scrive direttamente su `main`.**
+Le automazioni girano su Claude; la loro configurazione privata non è direttamente verificabile qui. **Nessuna esegue merge o push diretto su main**. Articoli pronti con bozza: false possono essere proposti su PR, ma non vengono pubblicati senza autorizzazione.
 
 | Ora (Europe/Rome) | Attività | Dove scrive | Stato al 16/11 |
 |---|---|---|---|
-| 06:34 | **Bozze mattutine**: ricerca notizie, 3-5 bozze con `bozza: true` | Solo nel Progetto Claude (`bozze/`), niente GitHub | Attiva |
-| 07:20 | **Sincronizzazione**: copia le bozze nel repository, traduzioni degli articoli già pubblicati, calendario, sondaggi, newsletter domenicale, kit Instagram | Branch `contenuti/AAAA-MM-GG` + PR verso `main` | Attiva dal 17/11, ricorrente ogni giorno (vedi nota) |
+| 06:34 | **Ricerca privata**: scheda verifica, articolo pronto/non pronto/revisione umana; produce segnale con data e identificativo del giorno | Solo Progetto Claude privato | Aggiornamento comunicato da Claude, primo giro da verificare il 18/11 |
+| 07:20 | **Sincronizzazione**: attende segnale 06:34, riprova ogni 10 minuti per massimo un'ora; solo articoli pronti e traduzioni già pubblicate | Branch e PR su GitHub, niente main | Segnale assente/scaduto: interrompere e notificare; primo giro da verificare il 18/11 |
 | 07:47 | **Traduzioni degli ordini**: traduce gli `ordini/` del Progetto | Solo nel Progetto Claude (`traduzioni/`), niente GitHub | Attiva |
 | Domenica 10:00 | **Newsletter "Il Soffio della settimana"**: funzione Netlify `newsletter-domenica` (09:00 UTC) | Brevo | Attiva; si sospende con la variabile Netlify `NEWSLETTER_AUTOMATICA=no` |
 
@@ -45,7 +45,7 @@ Nota sulla sincronizzazione delle 07:20: fino al 16/11 faceva commit diretti su 
 
 Verifica delle dipendenze (dettagli in `PROPOSTA-PUBBLICAZIONE-AUTOMATICA.md` §1):
 - l'attività delle 07:47 è inattiva nei fatti dal 06/11, perché le traduzioni le fa la sincronizzazione delle 07:20;
-- le 06:34 non lasciano un segnale di "concluso";
+- la dipendenza 06:34 → 07:20 è stata dichiarata aggiornata da Claude il 17/11; verificare segnale del giorno, ID ed esito reale prima di considerarla collaudata;
 - le traduzioni partono solo per gli articoli già pubblicati.
 
 La proposta corregge tutti e tre i punti.
@@ -58,14 +58,14 @@ La proposta corregge tutti e tre i punti.
 
 1. Alle 07:20 Claude parte dall'ultimo `main` remoto e controlla le PR aperte.
 2. Crea il branch `contenuti/AAAA-MM-GG`. Se esiste già, lo riprende senza riscriverne la storia.
-3. Aggiunge le nuove bozze (`bozza: true`) e le traduzioni degli articoli **già pubblicati**. Aggiorna `rubriche.mjs` solo se serve.
+3. Sincronizza **solo gli articoli pronti** (bozza: false, verifica completa) e le traduzioni degli articoli già pubblicati. Bozze non pronte e revisioni umane restano nel Progetto privato, mai nel repository pubblico. Aggiorna rubriche.mjs solo se necessario.
 4. Esegue `npm run audit:editoriale`, `npm test`, `node build.mjs --bozze` e `node build.mjs`. Se i test falliscono, non apre la PR e lo segnala.
 5. Apre (o aggiorna) **una sola PR al giorno** con il titolo `Contenuti AAAA-MM-GG`. Nella descrizione elenca:
-   - le bozze arrivate e i file toccati;
+   - gli articoli pronti proposti e i file toccati;
    - le traduzioni per lingua;
    - l'esito di test e audit;
-   - le note redazionali ancora aperte.
-6. **Pubblicazione**: quando Gianmarco indica quali bozze uscire, Claude le controlla, risolve le note e mette `bozza: false` **nella stessa PR del giorno**, con commit separati e riconoscibili.
+   - il numero dei contenuti trattenuti nel Progetto privato e i motivi, senza riversarne il testo su GitHub.
+6. **Pubblicazione**: gli articoli pronti nella PR restano soggetti a verifica editoriale, test e preview Netlify. Gianmarco autorizza il merge; ChatGPT/Claude può eseguirlo per suo conto. Nessun auto-merge attivo.
 7. Gianmarco approva o autorizza il rilascio; ChatGPT/Claude può eseguire il merge consentito. Dopo il merge, ChatGPT può verificare il rilascio (deploy Netlify, sitemap, pagine). Un push o una CI verde **non** vuol dire che il deploy sia andato a buon fine.
 8. Se la PR del giorno prima non è ancora stata unita, quella nuova parte comunque da `main` e non la tocca. Gli articoli in sospeso restano nella loro PR.
 
@@ -77,9 +77,10 @@ Aggiornare a ogni apertura, merge o chiusura. Campi: numero · branch · autore 
 
 | PR | Branch | Autore | File principali | Stato | Prossima azione |
 |---|---|---|---|---|---|
-| [#36](https://github.com/gbrisiko91/premi-start/pull/36) | `chatgpt/gta6-orari-rockstar-20261117` | ChatGPT | 9 Markdown, test, fonte Rockstar | Rettifica pronta: orario Xbox ufficiale 19/11 | CI e Netlify sull'ultimo SHA, poi merge |
+| [#37](https://github.com/gbrisiko91/premi-start/pull/37) | `chatgpt/gate-claude-allineamento-20261117` | ChatGPT | gate editoriale, test, protocollo | Immagini opzionali e revisione umana | CI e Netlify sull'ultimo SHA, poi merge |
 
 ### PR del 17 novembre integrate
+#32 articoli Grammy/Miyamoto/DualStation · #34 percorsi GTA 6 e Indie · #35 guide Quiz/Sondaggio · #36 rettifica GTA 6 già integrate.
 #33: template title e meta description, test canonical/sitemap, integrata e test su main superati. #19: pagina Sfondi pixel e 3 PNG, integrata; #27: protocollo collaborazione e proposta controllata integrati; #28: 48 traduzioni integrate; #29: gate editoriale diagnostico (dry-run) integrato. **Quattro bozze del 17/11 escluse**: verifiche editoriali ancora aperte, non pubblicate.
 
 ### Integrate di recente (16/11)
