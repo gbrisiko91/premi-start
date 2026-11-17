@@ -77,7 +77,8 @@ Aggiornare a ogni apertura, merge o chiusura. Campi: numero · branch · autore 
 
 | PR | Branch | Autore | File principali | Stato | Prossima azione |
 |---|---|---|---|---|---|
-| [#39](https://github.com/gbrisiko91/premi-start/pull/39) | `chatgpt/sitemap-news-freshness-20261117` | ChatGPT | funzione Edge, test e documentazione | Sitemap News aggiornata senza rebuild, in verifica | CI/preview e verifica XML Edge prima del merge |
+| [#38](https://github.com/gbrisiko91/premi-start/pull/38) | `claude/docs-guida-redazione` | Claude | `GUIDA-REDAZIONE.md` | In revisione: identificativo segnale univoco | Claude aggiorna §8–9, poi controlli |
+| [#40](https://github.com/gbrisiko91/premi-start/pull/40) | `chatgpt/gate-revisione-umana-esplicita-20261117` | ChatGPT | Gate G3 e test | Protezione del campo `verifica.revisione_umana` | CI/Netlify sull'ultimo SHA e merge dopo verifica |
 
 ### PR del 17 novembre integrate
 #32 articoli Grammy/Miyamoto/DualStation · #34 percorsi GTA 6 e Indie · #35 guide Quiz/Sondaggio · #36 rettifica GTA 6 già integrate.

@@ -82,3 +82,19 @@ test("interviste, recensioni e indiscrezioni sempre a revisione umana", () => {
     assert.equal(r.autoMergeAbilitato,false);
   }
 });
+
+test("il campo verifica.revisione_umana prevale anche su natura ufficiale", () => {
+  for (const flag of ['"Richiede consenso redazionale"', "true"]) {
+    const testo = base.replace("  natura: ufficiale", "  natura: ufficiale\n  revisione_umana: " + flag);
+    const r = valutaCambiamenti([{ stato: "A", file: art }], opts({ [art]: testo }));
+    assert.equal(r.autoMergeAbilitato, false);
+    assert.equal(r.candidata, false);
+    assert.ok(r.problemi.some(p => p.controllo === "G3"), "Flag ignorato: " + flag);
+  }
+});
+test("revisione_umana vuota non genera falsi positivi G3", () => {
+  const testo = base.replace("  natura: ufficiale", '  natura: ufficiale\n  revisione_umana: ""');
+  const r = valutaCambiamenti([{ stato: "A", file: art }], opts({ [art]: testo }));
+  assert.ok(!r.problemi.some(p => p.controllo === "G3"), JSON.stringify(r.problemi));
+  assert.equal(r.candidata, true, JSON.stringify(r.problemi));
+});
