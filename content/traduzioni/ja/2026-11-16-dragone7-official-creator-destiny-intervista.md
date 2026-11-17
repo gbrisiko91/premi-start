@@ -43,7 +43,7 @@ Destinyには苦しいシーズンもあり、彼もそれを隠さない。「B
 
 ## DestinyのOfficial Creatorになるには
 
-<figure class="immagine-testo"><img src="/media/dragone7/destiny-creator-hub.jpg" alt="Destinyのクリエイターコミュニティ、Creator Hubのネオンロゴ" loading="lazy" decoding="async" style="height:auto;max-height:none;object-fit:contain"><figcaption>DestinyのCreator Hubのロゴ。画像はDragone7gaming提供</figcaption></figure>
+<figure class="immagine-testo immagine-intera"><img src="/media/dragone7/destiny-creator-hub.jpg" alt="Destinyのクリエイターコミュニティ、Creator Hubのネオンロゴ" loading="lazy" decoding="async"><figcaption>DestinyのCreator Hubのロゴ。画像はDragone7gaming提供</figcaption></figure>
 
 本人いわく「燃えるような1年」の配信を経て、DragoneはBungieに申請を送った。申請は1か月後に承認された。Dragoneが以前から知り合いで、イタリアで最も優れたDestinyクリエイターの1人だと考えているIFreddoの後押しもあった。知らせが届いたときのことは「泣きました、たくさん、うれしくて」。それから友人たちに電話してすべてを話した。
 
@@ -51,7 +51,7 @@ Destinyには苦しいシーズンもあり、彼もそれを隠さない。「B
 
 それ以来、ゲームとコミュニティへの熱意は倍になったという。イタリア国内外の多くのクリエイターと配信やコラボを始め、Milan Games Week 2025には公認クリエイターとして参加し、友人やコミュニティのメンバーと会った。そこではIFreddoとの写真も撮っている。
 
-<figure class="immagine-testo"><img src="/media/dragone7/milan-games-week-2025-ifreddo.jpg" alt="Milan Games Week 2025のブースの間でポーズをとるDragone7とIFreddo" loading="lazy" decoding="async" style="width:100%;max-width:24rem;height:auto;max-height:none;object-fit:contain;display:block;margin:0 auto"><figcaption>Milan Games Week 2025でのDragone7（左）とIFreddo。写真：Dragone7gaming</figcaption></figure>
+<figure class="immagine-testo immagine-ritratto"><img src="/media/dragone7/milan-games-week-2025-ifreddo.jpg" alt="Milan Games Week 2025のブースの間でポーズをとるDragone7とIFreddo" loading="lazy" decoding="async"><figcaption>Milan Games Week 2025でのDragone7（左）とIFreddo。写真：Dragone7gaming</figcaption></figure>
 
 ## Dragone7の次の目標とコミュニティへのメッセージ
 

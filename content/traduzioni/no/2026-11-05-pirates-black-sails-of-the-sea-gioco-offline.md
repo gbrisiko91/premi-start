@@ -18,7 +18,7 @@ Spillet er allerede tilgjengelig som gratis nedlasting for Android, iPhone og iP
 
 Utvikleren Giancarlo Mennillo har gitt Soffia Cartuccia informasjonen, skjermbildene og videoene som brukes i denne artikkelen, direkte.
 
-<figure class="immagine-testo"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Et parti Pirates: Black Sails of the Sea i tåke og regn" style="display:block;width:100%;max-width:22rem;margin:0 auto;border-radius:14px"></video><figcaption>Et parti i tåke og regn. Video: Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Et parti Pirates: Black Sails of the Sea i tåke og regn"></video><figcaption>Et parti i tåke og regn. Video: Giancarlo Mennillo</figcaption></figure>
 
 ## Slik spiller man Pirates: Black Sails of the Sea
 
@@ -37,13 +37,13 @@ Det mest vellykkede er havet som forandrer seg. De første fasene av partiet spi
 
 Og så er det den: en **megalodon** som krysser skjermen og angriper den som kommer i veien.
 
-<figure class="immagine-testo"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="En megalodon angriper under et sjøslag" style="display:block;width:100%;max-width:22rem;margin:0 auto;border-radius:14px"></video><figcaption>Megalodonens angrep. Video: Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="En megalodon angriper under et sjøslag"></video><figcaption>Megalodonens angrep. Video: Giancarlo Mennillo</figcaption></figure>
 
 ## Skip å samle på og daglige belønninger
 
 Utenfor kampene samler delen **Le Mie Navi** («Mine skip») alle skipene man har låst opp. Hvert av dem har fire egenskaper: fart, ildkraft, ammunisjon og livspoeng. Noen skip dukker bare opp i en begrenset periode, som Halloween-skipet **Pumpkin Phantom**, med oransje seil formet som gresskar.
 
-<figure class="immagine-testo" style="display:flex;gap:1rem;justify-content:center"><img src="/media/pirates-black-sails/menu-principale.jpg" alt="Hovedmenyen i Pirates: Black Sails of the Sea med knappene Gioca, Negozio, Invita og Top Pirati" loading="lazy" decoding="async" style="width:48%;max-width:16rem;height:auto;max-height:none;object-fit:contain"><img src="/media/pirates-black-sails/pumpkin-phantom.jpg" alt="Skipet Pumpkin Phantom med egenskapene sine i skjermbildet Le Mie Navi" loading="lazy" decoding="async" style="width:48%;max-width:16rem;height:auto;max-height:none;object-fit:contain"></figure>
+<figure class="immagine-testo immagine-coppia"><img src="/media/pirates-black-sails/menu-principale.jpg" alt="Hovedmenyen i Pirates: Black Sails of the Sea med knappene Gioca, Negozio, Invita og Top Pirati" loading="lazy" decoding="async"><img src="/media/pirates-black-sails/pumpkin-phantom.jpg" alt="Skipet Pumpkin Phantom med egenskapene sine i skjermbildet Le Mie Navi" loading="lazy" decoding="async"></figure>
 
 Fra hovedmenyen kommer man til **butikken**, topplisten **Top Pirati** og funksjonen for å invitere venner, og det finnes også en lenke til **Discord**. Hver dag man åpner spillet, får man en belønning på 500 gullmynter.
 
