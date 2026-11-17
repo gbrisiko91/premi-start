@@ -56,5 +56,12 @@ test("i video di Pirates restano in avvio automatico, muti e in loop", () => {
   const html = sanificaHtml(marked.parse(matter(raw).content));
   const video = html.match(/<video[^>]*>/g) ?? [];
   assert.equal(video.length, 2);
-  for (const v of video) { assert.match(v, /\sautoplay/); assert.match(v, /\smuted/); assert.match(v, /\sloop/); }
+  for (const v of video) { assert.match(v, /\ssrc="\/media\/pirates-black-sails\/[a-z-]+\.mp4"/); assert.match(v, /\sautoplay/); assert.match(v, /\smuted/); assert.match(v, /\sloop/); }
+});
+test("il src dei video accetta solo percorsi e https, non javascript o data", () => {
+  const ok = sanificaHtml('<video src="/media/prova.mp4" muted autoplay></video><video src="https://example.org/v.mp4" muted></video>');
+  assert.match(ok, /src="\/media\/prova\.mp4"/);
+  assert.match(ok, /src="https:\/\/example\.org\/v\.mp4"/);
+  const ko = sanificaHtml('<video src="javascript:alert(1)" muted></video><video src="data:video/mp4;base64,AAAA" muted></video>');
+  assert.doesNotMatch(ko, /javascript:|data:/i);
 });
