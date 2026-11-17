@@ -1,6 +1,6 @@
 # Proposta: pubblicazione automatica controllata
 
-**Stato: PROPOSTA, NON ATTIVA.** Nessuna automazione di merge è implementata. Fino all'approvazione resta in vigore il protocollo manuale di `COLLABORAZIONE.md` §3.
+**Stato: PROPOSTA, NON ATTIVA, revisione tecnica del 17/11/2026.** Nessuna automazione di merge è implementata. Il merge del presente documento non abilita nulla. Fino all'approvazione resta in vigore il protocollo manuale di `COLLABORAZIONE.md` §3.
 
 Autore: Claude, 16/11/2026. Revisione richiesta: ChatGPT (tecnica e sicurezza). Approvazione: Gianmarco.
 
@@ -66,13 +66,13 @@ verifica:
 | # | Regola |
 |---|---|
 | G1 | `verifica.stato: verificata` e `verifica.dubbi` vuoto |
-| G2 | `fonti_primarie ≥ 1` **oppure** `fonti_indipendenti ≥ 2`, e altrettanti URL in `fonti` (https, domini diversi) |
+| G2 | Almeno una fonte primaria o due indipendenti con URL HTTPS realmente pertinenti e verificabili. Gli URL e i contatori inseriti dall'agente sono solo precondizioni meccaniche: le affermazioni principali richiedono riscontro documentato, non una semplice conta |
 | G3 | `natura` diversa da `indiscrezione` (le indiscrezioni vanno sempre a revisione manuale, vedi 2.3) |
 | G4 | Nessuna nota interna o marcatore (`NOTE PER LA REDAZIONE`, `DA VERIFICARE`, `TODO`…): si riusa `validaArticolo` con `bozza: false` |
 | G5 | Metadati SEO completi: `titolo`, `titolo_seo` ≤ 60, `sommario` 120-160, `parola_chiave`, `categoria` valida, data di oggi o di ieri |
 | G6 | Immagine con `alt_immagine` e `crediti_immagine`, URL da dominio consentito (press kit, store ufficiali, siti degli editori) |
 | G7 | **Niente doppioni**: nessun articolo con stesso slug, stessa `parola_chiave` o titolo molto simile negli ultimi 7 giorni; nessuna sovrapposizione con PR aperte (es. un articolo GTA 6 mentre è aperta una PR di ChatGPT su GTA 6) |
-| G8 | **Contenuto sicuro**: nessun `<script`, `<iframe`, `<style`, attributi `on*=`, link `javascript:` o `data:`. Il Markdown passa da `marked`, che lascia passare l'HTML grezzo, quindi questo controllo previene XSS sul sito pubblico |
+| G8 | **Contenuto sicuro**: proibire l'HTML grezzo non affidabile o sanificare l'HTML dopo `marked` con sanitizer robusto; URL con protocolli consentiti; test adversarial contro attributi, entità e schemi pericolosi. Una blacklist di stringhe è insufficiente contro XSS |
 | G9 | Limiti: al massimo 5 articoli italiani e 45 traduzioni per PR, ogni file sotto 60 KB |
 | G10 | Ogni traduzione corrisponde a un articolo italiano presente nella stessa PR o già pubblicato, con link e numeri identici all'originale (controllo già presente in `strumenti/traduzioni.mjs`) |
 
@@ -93,14 +93,14 @@ verifica:
 
 | # | Condizione |
 |---|---|
-| S1 | Branch sorgente `contenuti/AAAA-MM-GG` o `contenuti/AAAA-MM-GG-urgente-*`, base `main` |
-| S2 | Etichetta `editoriale-auto` messa dalla sincronizzazione |
+| S1 | Solo branch ordinario `contenuti/AAAA-MM-GG`, base `main`; PR urgenti sempre a merge esplicitamente autorizzato |
+| S2 | Etichetta `editoriale-auto` attribuita da identità bot attendibile e soggetta a controllo di provenienza; non basta da sola a concedere privilegi |
 | S3 | **Elenco di percorsi consentiti**: solo `content/articoli/*.md` **nuovi** (stato `added`) e `content/traduzioni/{en,de,es,no,sv,fi,ja,ru}/*.md` **nuovi**. Basta un file modificato, rinominato, cancellato o fuori elenco per bloccare l'auto-merge |
-| S4 | CI `build` verde (`npm test`) |
-| S5 | Nuovo job `gate-editoriale` verde (§2.2), eseguito sulla PR |
-| S6 | Anteprima Netlify (deploy preview) riuscita |
-| S7 | PR aggiornata con `main`. Se `main` è avanzato: rebase, nuovi controlli, nessun merge su controlli vecchi |
-| S8 | Interruttore generale: variabile del repository `AUTO_PUBBLICAZIONE` = `on`. Con `off` l'auto-merge è sospeso e tutto torna manuale |
+| S4 | CI `build` verde (`npm test`) riferita all'HEAD SHA corrente della PR e valida sul `main` corrente |
+| S5 | Nuovo job `gate-editoriale` verde (§2.2), eseguito sulla PR all'ultimo SHA; controlli fattuali supplementari e casi dubbi sempre manuali |
+| S6 | Anteprima Netlify (deploy preview) riuscita e attribuita all'ultimo HEAD SHA della PR, non a un commit precedente |
+| S7 | PR aggiornata con `main` e riesame di SHA, diff, protezioni e status *immediatamente prima* del merge; se `main` è avanzato, risincronizzazione e nuovi controlli |
+| S8 | Interruttore generale: `AUTO_PUBBLICAZIONE=off` per impostazione predefinita. Passa a `on` **solo dopo** prova a secco, identità bot separata, protezione di main e nuova autorizzazione esplicita del proprietario |
 | S9 | Una sola PR editoriale automatica alla volta (concurrency group nel workflow) |
 
 ### 3.2 Implementazione proposta (da fare dopo l'approvazione)
@@ -108,10 +108,10 @@ verifica:
 1. **Protezione di `main`** (impostazione GitHub, la fa Gianmarco): PR obbligatoria, check `build` + `gate-editoriale` obbligatori, niente push diretti, niente force push. Attivare "Allow auto-merge".
 2. **`strumenti/gate-pubblicazione.mjs`** con i test in `tests/gate-pubblicazione.mjs`: implementa G1-G10 e S3. Legge l'elenco dei file cambiati dalla API della PR. Lo scrive Claude, lo revisiona ChatGPT.
 3. **`.github/workflows/gate-editoriale.yml`**: esegue il gate su ogni PR verso `main`. Sulle PR non editoriali dà sempre esito positivo (non applicabile), così non le blocca. Lo scrive o revisiona ChatGPT, perché è la sua area.
-4. **`.github/workflows/auto-merge-editoriale.yml`**: se S1-S9 sono soddisfatte attiva l'auto-merge nativo di GitHub (squash). Permessi minimi: `contents: write`, `pull-requests: write`, solo su questo job. L'interruttore `AUTO_PUBBLICAZIONE` si controlla subito prima del merge.
-5. **Codeowners** (`.github/CODEOWNERS`): tutto ciò che è fuori da `content/` richiede l'approvazione di Gianmarco.
+4. **`.github/workflows/auto-merge-editoriale.yml`**: da implementare *solo nella fase 4*. Separare completamente il job privilegiato dal codice non attendibile della PR: workflow fidato su `main`, permessi minimi `contents: write` e `pull-requests: write`, nessun checkout/esecuzione di codice della PR nel contesto privilegiato. Ricontrollare HEAD SHA, base, percorsi e stati appena prima di abilitare il merge; `AUTO_PUBBLICAZIONE` disattivata per impostazione predefinita.
+5. **Codeowners** (`.github/CODEOWNERS`): protezione per tutte le aree tecniche; richiede repository rules/branch protection effettive. Con un solo account la revisione non è indipendente: introdurre un bot/App separato prima dell'automazione.
 
-Il deploy di produzione lo fa l'integrazione GitHub di Netlify quando cambia `main`, non GitHub Actions. Un merge eseguito con `GITHUB_TOKEN` quindi fa comunque partire il deploy Netlify. Da confermare in revisione.
+Il deploy di produzione è gestito dall'integrazione GitHub di Netlify quando cambia `main`: va verificato end-to-end prima dell'attivazione. Importante: gli eventi generati dal `GITHUB_TOKEN` **normalmente non avviano ulteriori workflow GitHub Actions** (salvo eccezioni documentate). Usare una GitHub App o strategia esplicita e controllare il deploy di produzione separatamente.
 
 ### 3.3 Limite di identità da conoscere
 
@@ -161,7 +161,7 @@ Il repository `gbrisiko91/premi-start` è **pubblico**. Le bozze con `bozza: tru
 
 ## 7. Ritiro e rettifiche
 
-- **Ritiro urgente**: PR di revert della PR editoriale. Siccome rimuove solo file aggiunti dall'automazione, può essere ammessa all'auto-merge, ma solo se il revert è esatto. Da decidere in revisione.
+- **Ritiro urgente**: PR di revert della PR editoriale, sempre con verifica e autorizzazione umana nella prima fase; **nessun auto-merge di revert**.
 - **Rettifica**: sempre manuale (§2.3), procedura urgente di `COLLABORAZIONE.md` §6.
 
 ---
@@ -174,7 +174,7 @@ Il repository `gbrisiko91/premi-start` è **pubblico**. Le bozze con `bozza: tru
 | 1 | Scheda `verifica` nelle bozze delle 06:34, segnale di completamento, traduzioni prima della PR, bozze non pronte trattenute nel Progetto | Claude | Manuale |
 | 2 | Script del gate, test, workflow `gate-editoriale`, CODEOWNERS | Claude (script e test) + ChatGPT (workflow e revisione) | Manuale |
 | 3 | **Prova a secco per 5 giorni**: il gate gira ed etichetta le PR come "sarebbe stata pubblicata", ma il merge lo fa ancora Gianmarco. Si confrontano gli esiti | Tutti | Manuale |
-| 4 | Protezione di `main`, interruttore `AUTO_PUBBLICAZIONE=on`, workflow di auto-merge, disattivazione della 07:47 | Gianmarco (impostazioni) + ChatGPT (workflow) | **Automatico solo per le PR editoriali** |
+| 4 | Solo dopo 5 giorni documentati di dry-run, identità bot separata, protezione di `main`, prove di deploy e nuova autorizzazione esplicita: `AUTO_PUBBLICAZIONE=on`. Disattivazione della 07:47 a migrazione completata | Gianmarco (decisione/impostazioni) + ChatGPT (workflow) + Claude (editoriale) | **Automatico solo per PR editoriali eleggibili, dopo nuovo via libera** |
 | 5 | Audit settimanale di ChatGPT: qualità tecnica, Core Web Vitals, sitemap, errori 404, esiti del gate | ChatGPT | — |
 
 ## 9. Decisioni richieste a Gianmarco
@@ -184,3 +184,21 @@ Il repository `gbrisiko91/premi-start` è **pubblico**. Le bozze con `bozza: tru
 3. Seconda tornata delle 13:20: sì o no.
 4. Repository privato: sì o no.
 5. Account bot dedicato per la sincronizzazione: sì o no.
+
+
+---
+
+## 10. Revisione tecnica e criteri di approvazione (17/11/2026)
+
+**Esito: disegno approvabile come documento di lavoro, NON come autorizzazione a pubblicare automaticamente.** Le fasi 1–3 richiedono un'implementazione separata, con validazione su PR e senza merge automatici. Il rilascio della fase 4 richiede una nuova decisione esplicita di Gianmarco, dopo almeno **5 giorni consecutivi** di dry-run documentati.
+
+**Metriche minime del dry-run:** data e SHA della PR; esiti G1–G10, CI e preview associati al medesimo SHA; diff/percorsi permessi; eventuali falsi positivi/negativi; numero di articoli validati e respinti; confronto fonti con revisione a campione; eventuali ritardi, failure, rollback simulato; stato finale del deploy Netlify. Qualsiasi errore editoriale significativo sospende l'avanzamento.
+
+**Sicurezza imprescindibile:** separazione read-only/privileged; dati da PR sempre non attendibili; codice di merge eseguito esclusivamente dal workflow fidato su `main`; indipendenza reale del bot/App; nessun merge con status mancanti o vecchi; sanitizer HTML con test; allarme post-deploy e kill switch. CODEOWNERS non sostituisce un'identità di revisione indipendente.
+
+Fonti tecniche ufficiali:
+- https://docs.github.com/en/actions/concepts/security/github_token
+- https://docs.github.com/en/actions/reference/security/securely-using-pull_request_target
+- https://docs.github.com/en/actions/reference/security/secure-use
+
+**Transizione dal sistema attuale:** la PR #28 del 17/11 ha originariamente caricato quattro bozze in un repository pubblico. La versione integrata su `main` contiene **solo 48 traduzioni**; le quattro bozze non sono state pubblicate e richiedono verifiche. Poiché la cronologia GitHub resta accessibile, le bozze future non devono essere mai caricate prima della verifica.
