@@ -19,6 +19,7 @@ import { generaSitemapNews } from "./strumenti/sitemap-news.mjs";
 import { LINGUE, PRINCIPALE, T } from "./lingue.mjs";
 import { U } from "./novita.mjs";
 import { QUIZ } from "./quiz.mjs";
+import { GUIDE_RUBRICHE } from "./strumenti/guide-rubriche.mjs";
 import { R, USCITE, SONDAGGI, NEWSLETTER } from "./rubriche.mjs";
 
 const ROOT = path.dirname(new URL(import.meta.url).pathname);
@@ -561,6 +562,13 @@ ${correlati.length ? `<section class="correlati" aria-labelledby="t-corr"><h2 id
   return pagina({ l, titolo: a.titolo, titoloSeo: a.titoloSeo, descrizione: a.sommario || t.motto, percorso: a.url, corpo, tipo: "article", articolo: a, alternative });
 }
 
+// Guide leggibili senza JavaScript, con collegamenti interni già esistenti.
+function guidaRubrica(l, tipo) {
+  const [titolo, testo, nota] = GUIDE_RUBRICHE[l][tipo];
+  const id = `guida-${tipo}`;
+  const links = tipo === "quiz" ? [[P.indie(l), U[l].indieTitle], [P.uscite(l), R[l].uscite.nome]] : [[P.archivio(l), T[l].archivio], [P.quiz(l), QUIZ[l].nome]];
+  return `<section class="blocco-novita guida-rubrica" aria-labelledby="${id}"><h2 id="${id}" class="titolo-sezione">${esc(titolo)}</h2><div class="testo"><p>${esc(testo)}</p><p>${esc(nota)}</p></div><div class="mondi-griglia">${links.map(([href,label]) => `<a class="mondo-link" href="${href}"><strong>${esc(label)}</strong></a>`).join("")}</div></section>`;
+}
 function paginaQuiz(l) {
   const q = QUIZ[l];
   const dati = JSON.stringify(q).replace(/</g, "\\u003c");
@@ -580,6 +588,7 @@ function paginaQuiz(l) {
     </div>
     <p class="quiz-torna"><a class="intro-link" href="${P.archivio(l)}">${esc(q.altro)} ↗</a></p>
   </section>
+  ${guidaRubrica(l, "quiz")}
   <script id="quiz-dati" type="application/json">${dati}</script>
   <script src="/quiz.js" defer></script>`;
   return pagina({ l, titolo:q.nome, titoloSeo: TITOLI_QUIZ_SEO[l] || "", descrizione:q.intro, percorso:P.quiz(l),corpo,alternative:tuttePerLingua(P.quiz) });
@@ -671,6 +680,7 @@ function paginaSondaggio(l) {
   <div class="sondaggio-box">${formSondaggio(l, sondaggioCorrente())}</div>
   <section class="sondaggi-passati" data-sondaggi-passati hidden aria-labelledby="t-passati"><h2 id="t-passati">${esc(p.passati)}</h2><div class="sondaggi-passati-lista" data-passati-lista></div></section>
 </section>
+${guidaRubrica(l, "poll")}
 ${datiSondaggi(l)}`;
   return pagina({ l, titolo: p.nome, descrizione: p.intro, percorso: P.sondaggio(l), corpo, alternative: tuttePerLingua(P.sondaggio) });
 }
