@@ -18,7 +18,7 @@ Peli on jo ladattavissa ilmaiseksi Androidille, iPhonelle ja iPadille:
 
 Kehittäjä Giancarlo Mennillo toimitti tässä artikkelissa käytetyt pelitiedot, kuvakaappaukset ja videot suoraan Soffia Cartuccialle.
 
-<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Pirates: Black Sails of the Sea -pelikerta sumussa ja sateessa"></video><figcaption>Pelikerta sumussa ja sateessa. Video: Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" controls muted loop playsinline preload="metadata" aria-label="Pirates: Black Sails of the Sea -pelikerta sumussa ja sateessa"></video><figcaption>Pelikerta sumussa ja sateessa. Video: Giancarlo Mennillo</figcaption></figure>
 
 ## Miten Pirates: Black Sails of the Sea -peliä pelataan
 
@@ -37,7 +37,7 @@ Onnistunein osa on muuttuva meri. Pelin alkuvaiheet pelataan kirkkaalla sääll�
 
 Ja sitten on vielä hän: **megalodon**, joka ui näyttämön halki ja hyökkää kenen tahansa kimppuun, joka sattuu kohdalle.
 
-<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Megalodon hyökkää meritaistelun aikana"></video><figcaption>Megalodonin hyökkäys. Video: Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" controls muted loop playsinline preload="metadata" aria-label="Megalodon hyökkää meritaistelun aikana"></video><figcaption>Megalodonin hyökkäys. Video: Giancarlo Mennillo</figcaption></figure>
 
 ## Kerättävät laivat ja päivittäiset palkinnot
 
