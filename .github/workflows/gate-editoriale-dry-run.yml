@@ -1,0 +1,32 @@
+name: Gate editoriale (dry-run, nessuna pubblicazione)
+on:
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  gate-editoriale-dry-run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-audit --no-fund
+      - name: Prepara elenco dei file modificati
+        shell: bash
+        run: git diff --name-status "${{ github.event.pull_request.base.sha }}" HEAD > "$RUNNER_TEMP/changed.txt"
+      - name: Controllo diagnostico senza merge e senza privilegi di scrittura
+        shell: bash
+        run: |
+          node strumenti/gate-pubblicazione.mjs "$RUNNER_TEMP/changed.txt" | tee "$RUNNER_TEMP/gate.txt"
+          {
+            echo "### Gate editoriale — dry run (non abilita auto-merge)"
+            echo '~~~json'
+            cat "$RUNNER_TEMP/gate.txt"
+            echo '~~~'
+          } >> "$GITHUB_STEP_SUMMARY"
