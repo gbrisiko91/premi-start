@@ -77,7 +77,7 @@ Aggiornare a ogni apertura, merge o chiusura. Campi: numero · branch · autore 
 
 | PR | Branch | Autore | File principali | Stato | Prossima azione |
 |---|---|---|---|---|---|
-| In preparazione | `chatgpt/gate-claude-allineamento-20261117` | ChatGPT | gate editoriale, test, protocollo | Immagini opzionali e revisione umana | CI e Netlify sull'ultimo SHA |
+| [#37](https://github.com/gbrisiko91/premi-start/pull/37) | `chatgpt/gate-claude-allineamento-20261117` | ChatGPT | gate editoriale, test, protocollo | Immagini opzionali e revisione umana | CI e Netlify sull'ultimo SHA, poi merge |
 
 ### PR del 17 novembre integrate
 #32 articoli Grammy/Miyamoto/DualStation · #34 percorsi GTA 6 e Indie · #35 guide Quiz/Sondaggio · #36 rettifica GTA 6 già integrate.
