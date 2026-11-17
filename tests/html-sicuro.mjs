@@ -42,3 +42,19 @@ test("link esterni target blank hanno noopener noreferrer", () => {
   const html=sanificaHtml('<a href="https://example.com" target="_blank">Vai</a>');
   assert.match(html, /rel="noopener noreferrer"/);
 });
+test("ammette autoplay solo sui video muti", () => {
+  const muto = sanificaHtml('<video src="/media/prova.mp4" autoplay muted loop playsinline></video>');
+  assert.match(muto, /\sautoplay/);
+  assert.match(muto, /\smuted/);
+  const conAudio = sanificaHtml('<video src="/media/prova.mp4" autoplay loop></video>');
+  assert.doesNotMatch(conAudio, /autoplay/);
+  const senzaInline = sanificaHtml('<video src="/media/prova.mp4" autoplay muted></video>');
+  assert.match(senzaInline, /playsinline/);
+});
+test("i video di Pirates restano in avvio automatico, muti e in loop", () => {
+  const raw = fs.readFileSync(new URL("../content/articoli/2026-11-05-pirates-black-sails-of-the-sea-gioco-offline.md", import.meta.url), "utf8");
+  const html = sanificaHtml(marked.parse(matter(raw).content));
+  const video = html.match(/<video[^>]*>/g) ?? [];
+  assert.equal(video.length, 2);
+  for (const v of video) { assert.match(v, /\sautoplay/); assert.match(v, /\smuted/); assert.match(v, /\sloop/); }
+});
