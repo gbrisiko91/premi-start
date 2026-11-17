@@ -10,6 +10,7 @@ import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
 import { marked } from "marked";
+import { sanificaHtml } from "./strumenti/html-sicuro.mjs";
 import config from "./sito.config.mjs";
 import { validaArticolo, rimuoviNote } from "./strumenti/verifica-editoriale.mjs";
 import { selezionaCorrelati } from "./strumenti/articoli-correlati.mjs";
@@ -119,7 +120,7 @@ function leggiOriginali() {
         titoloSeo: d.titolo_seo || "",
         aggiornato: d.aggiornato ? leggiDataFm(d.aggiornato) : null,
         minuti: minutiLettura(PRINCIPALE, content),
-        html: marked.parse(rimuoviNote(content)).replace(/<p>\s*<\/p>/g, ""),
+        html: sanificaHtml(marked.parse(rimuoviNote(content)).replace(/<p>\s*<\/p>/g, "")),
         url: P.articolo(PRINCIPALE, slug),
       };
     });
@@ -162,7 +163,7 @@ function leggiTraduzioni(originali) {
         tag: Array.isArray(d.tag) ? d.tag : base.tag,
         parolaChiave: d.parola_chiave || "",
         minuti: minutiLettura(l, content),
-        html: marked.parse(rimuoviNote(content)).replace(/<p>\s*<\/p>/g, ""),
+        html: sanificaHtml(marked.parse(rimuoviNote(content)).replace(/<p>\s*<\/p>/g, "")),
         url: P.articolo(l, slug),
         originale: base,
       });
@@ -786,7 +787,7 @@ function paginaFissa(p, stessaLingua) {
     <h1>${esc(p.titolo)}</h1>
     ${p.occhiello ? `<p class="occhiello">${esc(sostituisci(p.occhiello, p.lingua, stessaLingua))}</p>` : ""}
   </header>
-  <div class="testo">${marked.parse(sostituisci(p.corpo, p.lingua, stessaLingua))}</div>
+  <div class="testo">${sanificaHtml(marked.parse(sostituisci(p.corpo, p.lingua, stessaLingua)))}</div>
 </article>`;
   return pagina({ l: p.lingua, titolo: p.titolo, descrizione: p.descrizione, percorso: p.url, corpo, alternative });
 }

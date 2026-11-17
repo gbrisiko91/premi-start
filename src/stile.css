@@ -374,3 +374,8 @@ main { max-width: 78rem; margin: 0 auto; padding: 0 1rem 5rem; }
 .fonti-testa h2 { margin:0; }
 .fonti-contatore { color:var(--tenue); font-size:.82rem; font-weight:600; }
 @media(max-width:620px) { .articolo-trasparenza { align-items:flex-start; flex-direction:column; gap:.4rem; } }
+
+/* Griglia sfondi della Missione 5K: layout in CSS, senza style inline nel Markdown */
+.sfondi-griglia { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr)); gap: 24px; margin: 24px 0; }
+.sfondi-griglia figure { margin: 0; text-align: center; }
+.sfondi-griglia img { width: 100%; height: auto; border-radius: 18px; image-rendering: pixelated; }
