@@ -1,39 +1,34 @@
-# Soffia Cartuccia 2.0 — Stato di continuità
+# Soffia Cartuccia 2.0 — Handoff per nuova conversazione
 
-Ultimo aggiornamento: 17 novembre 2026 (Europe/Rome).
+> **Snapshot 17 novembre 2026, Europe/Rome.** Questo documento è una breve scheda di ripresa, **non** il registro principale. La fonte di verità operativa è [COLLABORAZIONE.md](COLLABORAZIONE.md); la verità sul codice e sul rilascio si verifica su GitHub e Netlify.
 
-## Documenti di riferimento
-- **Registro operativo e coordinamento corrente:** [COLLABORAZIONE.md](COLLABORAZIONE.md). Questo documento è la sintesi per riprendere una nuova conversazione; non è una seconda fonte in conflitto.
-- **Pubblicazione automatica:** [PROPOSTA-PUBBLICAZIONE-AUTOMATICA.md](PROPOSTA-PUBBLICAZIONE-AUTOMATICA.md). **Solo progetto, NON attiva**; 5 giorni di dry-run e un successivo via libera prima di eventuale auto-merge.
-- **Stato effettivo:** GitHub (PR, CI, commit) e Netlify (preview/produzione) prevalgono sui registri testuali datati.
+## Stato verificato a fine sessione
 
-## Integrazioni verificate
-- PR #19: pagina `/sfondi/` + tre PNG, merge su `main` il 17/11 (commit d78c1ebc6aaa4c25dc14d9c567c96456910c7b0c), Actions success; deploy pubblico da verificare se non confermato.
-- PR #23: guida GTA 6, merge 16/11; Actions `main` success.
-- PR #24: risoluzione errori build per tre note editoriali, merge 16/11.
-- PR #25: sitemap News, merge 16/11; XML e `robots.txt` verificati pubblici dall'utente.
-- PR #26: precedente registro di continuità, merge 16/11.
-- PR #28: 48 traduzioni di sei articoli pubblicati il 16/11, merge 17/11 (commit dd5c9d1ae0994ff0f406cf5a90a51b4a0105a252); quattro bozze con verifiche aperte rimosse dal diff prima del merge.
+- Repository: [gbrisiko91/premi-start](https://github.com/gbrisiko91/premi-start); sito https://soffiacartuccia.it.
+- `main`: **`bb22a783cdafee5e56f43d9182a466c140900f1a`**. **0 PR aperte** al controllo. Ultimo workflow GitHub Actions: [44178092807](https://github.com/gbrisiko91/premi-start/actions/runs/44178092807), **success**.
+- PR **#19–#40 integrate** (registro e dettagli in [COLLABORAZIONE.md §5](COLLABORAZIONE.md)). Recenti fondamentali: #31 sanitizer HTML; #32 Grammy/Miyamoto/DualStation; #33 SEO e test; #34–#35 percorsi e guide multilingua; #36 rettifica GTA 6; #37 immagini opzionali; #38 guida redazionale; #39 sitemap News dinamica; #40 controllo `revisione_umana`.
+- Nessuna pubblicazione automatica o auto-merge autorizzato/attivo. Gate editoriale **solo diagnostico**.
 
-## Aperte e prossime azioni
-- PR #27: documentazione di coordinamento, proposta e revisione di sicurezza **integrata** il 17/11 (commit 481b7ac5a86128dacc243a41449cf2988ebe2eee).
-- PR #29: gate diagnostico in sola lettura **integrato** il 17/11 (commit 338caff0cd0a42909fcf2706d2e9bd6872dd693a). Workflow GitHub Actions e test superati; non pubblica articoli e non esegue merge automatici.
-- Al controllo del 17/11 non risultano PR aperte.
-- Quattro bozze del 17/11: rimangono non pubblicate; completare verifica fonti, immagini e link, successivamente una PR editoriale distinta.
-- Avviare cinque giorni di osservazione del gate dry-run sulle nuove PR editoriali: registrare esiti ed eventuali falsi positivi; nessuna auto-pubblicazione senza esplicito nuovo via libera.
-- Claude: verificare le quattro bozze del 17/11 rimaste fuori dalla PR #28 (fonti primarie, diritti immagini, dati) e produrre scheda `verifica` con evidenze prima di proporle.
-- Hardening HTML/Markdown del renderer e controllo aggiornamento sitemap News nei giorni senza build: interventi tecnici separati.
-- Verificare Search Console, indicizzazione, performance e traffico con dati reali, senza garantire risultati.
+## Primo collaudo di domani: mercoledì 18 novembre 2026
 
-## Regole operative
-1. Prima di ogni lavoro leggere `COLLABORAZIONE.md`, poi controllare lo stato effettivo del repository e dei deploy.
-2. Claude: contenuti, traduzioni, attività editoriali concordate. ChatGPT: architettura, sicurezza, SEO tecnico, audit, verifica e merge autorizzati. Gianmarco: supervisione, priorità, autorizzazioni.
-3. Un assistente può effettuare merge approvati, senza che Gianmarco debba operare manualmente su GitHub. Nessun auto-merge editoriale fino alla fase 4 e alla sua nuova autorizzazione.
-4. Non pubblicare automaticamente bozze, indiscrezioni, notizie su persone reali in ambiti sensibili, rettifiche o contenuti con fonti non verificate.
-5. Fine sessione: aggiornare registro, PR integrate/aperte, stato CI/Netlify, prossima azione.
+- **06:34** — Claude nel Progetto privato cerca notizie verificate, le classifica `pronto`, `non_pronto`, `revisione_umana`, salva segnale del giorno con ID differente a ogni run.
+- **07:20** — Claude attende il segnale, massimo un'ora (10 minuti fra tentativi). Crea una PR con soli articoli pronti e traduzioni; nessun merge autonomo.
+- **07:47** — vecchia attività non disattivata: farlo **solo dopo aver visto** che le 07:20 traducono correttamente anche i nuovi articoli.
+- **Craig Houston** — in revisione umana, non pubblicazione automatica.
+- La copia `GUIDA-REDAZIONE.md` di GitHub è aggiornata via #38; **Claude deve confermare di aver allineato la copia privata** che le attività leggono davvero. La prima esecuzione è ancora da verificare: non anticipare esiti.
 
-## Prompt di ripresa in nuova chat
-«Riprendiamo Soffia Cartuccia 2.0. Leggi `COLLABORAZIONE.md` e `STATO-PROGETTO.md` in `gbrisiko91/premi-start`, verifica PR, Actions e Netlify, poi procedi dal primo passo non completato. Non considerare l'auto-merge attivo senza un'attivazione esplicita.»
+## Lavori e limiti non risolti
 
-## Allineamento operativo 17 novembre 2026
-PR #32–#36 integrate, tutti i test su main superati; Craig Houston resta a revisione umana. Claude ha dichiarato nuovo protocollo 06:34 (ricerca privata con segnale del giorno) → 07:20 (attesa fino a 60 minuti, soli articoli pronti in PR); testare il primo ciclo del 18/11 prima di considerarlo collaudato. Auto-merge inattivo. Nuova PR gate: immagine facoltativa senza diritti chiari, G3 manuale per rumor/interviste/recensioni.
+1. **Collaudo del ciclo Claude** del 18/11: segnale completo/anti-riuso, controlli fonti, traduzioni, nessuna bozza incompleta nel repo, PR, CI, gate, preview.
+2. **Verifica produzione Netlify:** la PR #39 filtro Edge per `/sitemap-news.xml` e le altre modifiche sono in `main`, con test e preview superati, ma **risposta e header live non confermati**. Non dichiarare che la funzione è attiva fino a test HTTP reale.
+3. **SEO Search Console:** 60 clic/3.492 impressioni nel periodo 18/10–14/11; numerosi articoli scansionati ma non indicizzati, calo impressioni dal 12/11 senza causa dimostrata. Monitorare dopo nuovi dati e intervenire su qualità/intent/link, non garantire risultati.
+4. **Auto-merge**: NON ATTIVO; richiede bot/App separato, protezioni ed evidenze e almeno 5 giorni di dry-run, poi nuova approvazione di Gianmarco.
+5. Non cancellare vecchi branch; non scrivere su `main` senza PR; non duplicare lavori condivisi.
+
+## Ruoli e decisioni
+
+Gianmarco decide e autorizza; **non deve fare merge manuali**. ChatGPT segue architettura, SEO tecnico, audit, verifiche e merge approvati. Claude segue notizie, fonti, traduzioni e operazioni nel Progetto privato. **`COLLABORAZIONE.md` è il registro unico**: aggiornare quello dopo ogni PR e mantenere questo documento come breve handoff, evitando informazioni concorrenti.
+
+## Prompt da incollare in una nuova chat
+
+> Riprendiamo Soffia Cartuccia 2.0 dal punto in cui ci siamo fermati. Leggi prima `COLLABORAZIONE.md` e `STATO-PROGETTO.md` nel repository `gbrisiko91/premi-start`; verifica dal vivo PR, commit `main`, GitHub Actions e Netlify perché i documenti potrebbero essere superati. Prosegui dal primo punto non completato: collaudo 06:34→07:20 del 18 novembre, traduzioni, verifica sitemap News in produzione, SEO Search Console. Non ripetere lavori già integrati, non pubblicare contenuti dubbi, non attivare auto-merge. Non chiedermi di fare merge manuali: esegui tu quelli che autorizzo, dopo controlli.
