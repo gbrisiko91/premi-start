@@ -193,7 +193,7 @@ Al termine della ricerca, scrivi `bozze/_stato/AAAA-MM-GG.md`:
 ---
 data: 2026-11-18
 completato: true
-esecuzione: "ricerca-2026-11-18T06:34"   # identificativo univoco dell'esecuzione
+esecuzione: "ricerca-2026-11-18T06:34-7F3A"  # esempio: suffisso diverso a ogni singola esecuzione
 iniziata: 2026-11-18T06:34+01:00
 conclusa: 2026-11-18T06:49+01:00
 articoli:
@@ -203,11 +203,11 @@ articoli:
 ---
 ```
 
-Il segnale è valido solo per la data indicata. Se l'esecuzione si interrompe prima della fine, il segnale non va scritto.
+Il segnale è valido solo per la data indicata. Il campo `esecuzione` deve essere **diverso a ogni avvio**, compresi i riavvii dello stesso giorno (identificativo nativo della run o timestamp con suffisso univoco). Salvare il segnale **solo dopo** che tutti i file e il riepilogo sono completi; se l'esecuzione si interrompe prima della fine, il segnale non va scritto. Se lo stesso giorno la ricerca viene ripetuta, la sincronizzazione deve usare soltanto il segnale più recente, completo e coerente con i file.
 
 ## 9. Sincronizzazione e rilascio (07:20)
 
-1. La sincronizzazione legge il segnale di **oggi** e controlla che `data` corrisponda al giorno e che `completato: true`. Se manca o non è valido, riprova ogni 10 minuti per un'ora al massimo; se non arriva, **si interrompe e avvisa Gianmarco**.
+1. La sincronizzazione legge il segnale di **oggi** e controlla `data`, `completato: true`, ID di `esecuzione` non vuoto e **non già elaborato**, `iniziata` e `conclusa` coerenti, presenza dell’elenco `articoli` e corrispondenza fra gli elementi pronti e i rispettivi file. Un segnale già consumato, scaduto o relativo a una precedente esecuzione non deve provocare una nuova PR né duplicare contenuti. Se manca un segnale valido, riprova ogni 10 minuti per un’ora al massimo; se non arriva, **si interrompe e avvisa Gianmarco**, senza copiare bozze incomplete.
 2. Porta su GitHub solo gli articoli che il segnale classifica come `pronto` e che rispettano ancora tutti i criteri del §6, più le traduzioni verificate degli articoli già pubblicati o di quelli pronti nella stessa PR.
 3. Esegue `npm run audit:editoriale`, `npm test`, i build e il gate diagnostico, e riporta gli esiti nella PR.
 4. Crea o aggiorna la PR `contenuti/AAAA-MM-GG`, senza merge e senza toccare `main`. Le modifiche a `rubriche.mjs` vanno in una PR separata.
