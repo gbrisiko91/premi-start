@@ -1,7 +1,7 @@
 ---
 titolo: "Nintendo Pop-Up Store a Milano: date, orari e come prenotare l'ingresso"
-titolo_seo: "Nintendo Pop-Up Store Milano: date, orari e prenotazioni"
-sommario: "Il Nintendo Pop-Up Store apre a Milano dal 20 novembre al 20 dicembre in piazza del Liberty. Prenotazioni dal 9 novembre, articoli esclusivi dal Giappone."
+titolo_seo: "Nintendo Pop-Up Store Milano 2026: orari, ingresso e prenotazioni"
+sommario: "Nintendo Pop-Up Store Milano 2026: dal 20 novembre al 20 dicembre in piazza del Liberty 8, ore 10-20. Prenotazione obbligatoria solo dal 20 al 22 novembre."
 parola_chiave: "nintendo pop up store milano"
 data: 2026-11-04
 categoria: console
@@ -26,6 +26,8 @@ fonti:
 ---
 
 Il **Nintendo Pop-Up Store** arriva a Milano. Dal 20 novembre al 20 dicembre 2026 la casa di Mario apre un negozio temporaneo in piazza del Liberty 8, a due passi dal Duomo, con merchandising ufficiale e alcuni articoli che di solito si trovano solo nei Nintendo Store giapponesi. Nei primi tre giorni si entra solo su prenotazione, e le prenotazioni aprono il 9 novembre.
+
+**In breve:** il Nintendo Pop-Up Store si trova in **piazza del Liberty 8, Milano**, ed è aperto **dal 20 novembre al 20 dicembre 2026, dalle 10:00 alle 20:00**. **Dal 20 al 22 novembre serve la prenotazione** tramite [Nintendo Experience](https://experience.nintendo.com/#/events/10859); **dal 23 novembre l’ingresso è libero**, fino a esaurimento della capienza. Per le regole complete consulta il [comunicato ufficiale Nintendo](https://www.nintendo.com/it-it/Notizie/2026/Ottobre-/Nintendo-POP-UP-STORE-in-MILAN-3223712.html).
 
 ## Quando apre il Nintendo Pop-Up Store di Milano e dove si trova
 

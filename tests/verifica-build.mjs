@@ -196,6 +196,26 @@ assert.ok(SONDAGGI.every((s, i) => i === 0 || s.dal > SONDAGGI[i - 1].dal), "Son
 assert.ok(USCITE.every((u) => (u.data ? /^\d{4}-\d{2}-\d{2}$/.test(u.data) : /^\d{4}$/.test(u.anno)) && u.piattaforme.length && /^https:\/\//.test(u.fonte)), "Uscita senza data, piattaforme o fonte");
 assert.ok(/data-netlify="true"|data-newsletter-esterna/.test(fs.readFileSync("dist/index.html", "utf8")), "Modulo newsletter assente");
 assert.ok(fs.existsSync("dist/newsletter/grazie/index.html") && fs.existsSync("dist/newsletter/confermata/index.html"), "Pagine della newsletter mancanti");
+// La sitemap News affianca quella tradizionale: contiene solo notizie recenti.
+const xmlNews = fs.readFileSync("dist/sitemap-news.xml", "utf8");
+assert.ok(xmlNews.includes('xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"'),
+  "Namespace Google News mancante");
+assert.ok(xmlNews.includes("<urlset ") && xmlNews.includes("</urlset>"),
+  "XML sitemap News incompleto");
+const todayNews = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Rome" }).format(new Date());
+const yesterdayDate = new Date(`${todayNews}T00:00:00Z`);
+yesterdayDate.setUTCDate(yesterdayDate.getUTCDate() - 1);
+const yesterdayNews = yesterdayDate.toISOString().slice(0, 10);
+const newsDates = [...xmlNews.matchAll(/<news:publication_date>([^<]+)<\/news:publication_date>/g)].map(m => m[1]);
+assert.ok(newsDates.every(d => d === todayNews || d === yesterdayNews),
+  "La sitemap News contiene notizie più vecchie di 48 ore o future");
+assert.ok(newsDates.length <= 1000, "Superato il limite di 1000 articoli News");
+const robotsNews = fs.readFileSync("dist/robots.txt", "utf8");
+assert.ok(robotsNews.includes("Sitemap: https://soffiacartuccia.it/sitemap.xml"),
+  "Sitemap generale non segnalata nei robots");
+assert.ok(robotsNews.includes("Sitemap: https://soffiacartuccia.it/sitemap-news.xml"),
+  "Sitemap News non segnalata nei robots");
+
 for (const f of ["dist/rubriche.css","dist/uscite.js","dist/sondaggio.js","dist/novita.css","dist/quiz.css","dist/quiz.js","dist/esperienza.js","dist/sitemap.xml","dist/rss.xml","dist/stile.css"]) {
   assert.ok(fs.existsSync(f), `File mancante: ${f}`);
 }

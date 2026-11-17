@@ -13,6 +13,7 @@ import { marked } from "marked";
 import config from "./sito.config.mjs";
 import { validaArticolo, rimuoviNote } from "./strumenti/verifica-editoriale.mjs";
 import { selezionaCorrelati } from "./strumenti/articoli-correlati.mjs";
+import { generaSitemapNews } from "./strumenti/sitemap-news.mjs";
 import { LINGUE, PRINCIPALE, T } from "./lingue.mjs";
 import { U } from "./novita.mjs";
 import { QUIZ } from "./quiz.mjs";
@@ -918,6 +919,14 @@ for (const a of pubblicati(perLingua[PRINCIPALE])) {
   gruppiSitemap.push({ versioni: versioniDi(a.id).filter((v) => !v.bozza), lastmod: (a.aggiornato || a.data).toISOString().slice(0, 10), immagine: a.immagine });
 }
 scrivi("sitemap.xml", sitemap(gruppiSitemap));
+// Una sitemap dedicata alle notizie recenti integra, non sostituisce, quella completa.
+scrivi("sitemap-news.xml", generaSitemapNews({
+  articoli: tutti.filter(a => !a.bozza),
+  oggi: OGGI,
+  nomePubblicazione: config.nome,
+  baseUrl: config.url,
+  lingue: Object.fromEntries(CODICI.map(l => [l, LINGUE[l].hreflang])),
+}));
 scrivi("_redirects", redirect404.join("\n") + "\n");
 
 // Elenco degli articoli pubblicati per la funzione dei "Mi piace" (accetta voti solo per questi)
@@ -931,7 +940,7 @@ fs.writeFileSync(
   path.join(ROOT, "netlify", "dati", "newsletter.mjs"),
   `// File generato da build.mjs: non modificarlo a mano.\nexport default ${JSON.stringify(originali.filter((a) => !a.bozza).map((a) => ({ titolo: a.titolo, titolo_seo: a.titoloSeo, sommario: a.sommario, slug: a.slug, giorno: a.data.toISOString().slice(0, 10), viralita: a.viralita, newsletter: a.newsletter, bozza: false })))};\n`
 );
-scrivi("robots.txt", `User-agent: *\nAllow: /\nSitemap: ${urlAssoluto("/sitemap.xml")}\n`);
+scrivi("robots.txt", `User-agent: *\nAllow: /\nSitemap: ${urlAssoluto("/sitemap.xml")}\nSitemap: ${urlAssoluto("/sitemap-news.xml")}\n`);
 
 const ultimoSondaggio = SONDAGGI.at(-1).dal;
 if (ultimoSondaggio <= new Date(Date.now() + 7 * 864e5).toISOString().slice(0, 10)) console.warn(`Avviso: l'ultimo sondaggio parte il ${ultimoSondaggio}: aggiungine di nuovi in rubriche.mjs.`);
