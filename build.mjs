@@ -14,6 +14,7 @@ import { sanificaHtml } from "./strumenti/html-sicuro.mjs";
 import config from "./sito.config.mjs";
 import { validaArticolo, rimuoviNote } from "./strumenti/verifica-editoriale.mjs";
 import { selezionaCorrelati } from "./strumenti/articoli-correlati.mjs";
+import { selezionaRimando, TESTI_PERCORSI } from "./strumenti/percorsi-editoriali.mjs";
 import { generaSitemapNews } from "./strumenti/sitemap-news.mjs";
 import { LINGUE, PRINCIPALE, T } from "./lingue.mjs";
 import { U } from "./novita.mjs";
@@ -484,6 +485,16 @@ function paginaArticolo(a, stessaLingua, versioni) {
   const t = T[l];
   const u = U[l];
   const correlati = selezionaCorrelati(a, stessaLingua);
+  const rimando = selezionaRimando(a, stessaLingua);
+  const testiRimando = TESTI_PERCORSI[l];
+  const rimandoUrl = rimando?.tipo === "gta6" ? rimando.url : rimando?.tipo === "indie" ? P.indie(l) : "";
+  const boxRimando = rimando
+    ? `<aside class="percorso-editoriale" aria-labelledby="percorso-editoriale-titolo">
+         <h2 id="percorso-editoriale-titolo">${esc(rimando.tipo === "gta6" ? testiRimando.gtaTitle : testiRimando.indieTitleBox)}</h2>
+         <p>${esc(rimando.tipo === "gta6" ? testiRimando.gtaDesc : testiRimando.indieDescBox)}</p>
+         <a href="${rimandoUrl}">${esc(rimando.tipo === "gta6" ? testiRimando.gtaCta : testiRimando.indieCta)} →</a>
+       </aside>`
+    : "";
   const fonti = a.fonti.length
     ? `<section class="fonti" aria-labelledby="t-fonti"><div class="fonti-testa"><h2 id="t-fonti">${esc(t.fonti)}</h2><span class="fonti-contatore">${a.fonti.length} ${esc(u.sourcesConsulted)}</span></div><ul>${a.fonti
         .map((f) => `<li><a href="${esc(f.url)}" rel="noopener" target="_blank">${esc(f.titolo || f.url)}</a></li>`)
@@ -535,6 +546,7 @@ function paginaArticolo(a, stessaLingua, versioni) {
   ${immagine}
   <div class="testo">${a.html}</div>
   ${notaTraduzione}
+  ${boxRimando}
   ${a.tag.length ? `<p class="tag">${a.tag.map((x) => `<span>#${esc(x)}</span>`).join("")}</p>` : ""}
   ${a.bozza ? "" : `<div class="like-fine"><p>${esc(t.tiPiaciuta)}</p>${tastoLike(a)}</div>`}
   ${condivisione(a)}
@@ -733,12 +745,25 @@ function paginaInstagram(lista) {
   return pagina({ l, titolo: "Le notizie dei post Instagram", descrizione: "Le ultime notizie di Soffia Cartuccia, dal link in bio di Instagram.", percorso: PERCORSO_INSTAGRAM, corpo, robots: "noindex, follow", alternative: {} });
 }
 
-function paginaElenco({ l, titolo, descrizione, percorso, lista, categoria, alternative }) {
+function introduzioneIndie(l) {
+  const t = TESTI_PERCORSI[l];
+  return `<section class="intro-indie" aria-labelledby="intro-indie-titolo">
+    <h2 id="intro-indie-titolo">${esc(t.indieTitle)}</h2>
+    <p>${esc(t.indieText)}</p>
+    <nav aria-label="${esc(t.indieTitle)}">
+      <a href="${P.archivio(l)}">${esc(U[l].viewArchive)} →</a>
+      <a href="${urlPaginaFissa(l, "come-lavoriamo")}">${esc(U[l].verificationLink)} →</a>
+    </nav>
+  </section>`;
+}
+
+function paginaElenco({ l, titolo, descrizione, percorso, lista, categoria, alternative, introduzione = "" }) {
   const corpo = `
 <header class="intestazione-elenco"${categoria ? ` data-colore="${colore(categoria)}"` : ""}>
   <h1>${esc(titolo)}</h1>
   ${descrizione ? `<p>${esc(descrizione)}</p>` : ""}
 </header>
+${introduzione}
 ${lista.length
     ? `<div class="griglia">${lista.map((a) => scheda(a)).join("")}</div>`
     : `<p class="vuoto-elenco">${esc(T[l].vuotoSezione)}</p>`}`;
@@ -899,7 +924,7 @@ for (const l of CODICI) {
   scriviPagina(P.uscite(l), paginaUscite(l, lista));
   scriviPagina(P.sondaggio(l), paginaSondaggio(l));
   scriviPagina(P.autore(l), paginaAutore(l, lista));
-  scriviPagina(P.indie(l), paginaElenco({ l, titolo: U[l].indieTitle, descrizione: U[l].indieLead, percorso: P.indie(l), lista: pubblicati(lista).filter(a => a.tag.some(x => String(x).toLowerCase() === "indie")), alternative: tuttePerLingua(P.indie) }));
+  scriviPagina(P.indie(l), paginaElenco({ l, titolo: U[l].indieTitle, descrizione: U[l].indieLead, percorso: P.indie(l), lista: pubblicati(lista).filter(a => a.tag.some(x => String(x).toLowerCase() === "indie")), introduzione: introduzioneIndie(l), alternative: tuttePerLingua(P.indie) }));
   scrivi(`indice-${l}.json`, JSON.stringify(pubblicati(lista).map((a)=>({id:a.id,url:a.url,titolo:a.titolo,sommario:a.sommario,categoria:nomeCat(l,a.categoria),tag:a.tag,data:a.data.toISOString(),dataBreve:data(l,a.data,"breve")}))));
   for (const a of lista) scriviPagina(a.url, paginaArticolo(a, lista, versioniDi(a.id)));
   for (const k of Object.keys(config.categorie)) {

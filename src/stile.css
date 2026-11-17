@@ -379,3 +379,17 @@ main { max-width: 78rem; margin: 0 auto; padding: 0 1rem 5rem; }
 .sfondi-griglia { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr)); gap: 24px; margin: 24px 0; }
 .sfondi-griglia figure { margin: 0; text-align: center; }
 .sfondi-griglia img { width: 100%; height: auto; border-radius: 18px; image-rendering: pixelated; }
+
+/* Percorsi editoriali: guide tematiche e raccolta indie */
+.percorso-editoriale, .intro-indie {
+  margin: 1.5rem 0;
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+  border: 1px solid var(--pannello-2);
+  border-left: 4px solid var(--giallo);
+  border-radius: .7rem;
+  background: var(--pannello);
+}
+.percorso-editoriale h2, .intro-indie h2 { margin: 0 0 .6rem; font-size: clamp(1.05rem, 2.6vw, 1.3rem); }
+.percorso-editoriale p, .intro-indie p { margin: 0 0 .9rem; color: var(--tenue); line-height: 1.65; }
+.percorso-editoriale a, .intro-indie a { color: var(--giallo); font-weight: 700; text-underline-offset: .25rem; }
+.intro-indie nav { display: flex; flex-wrap: wrap; gap: .6rem 1.3rem; }

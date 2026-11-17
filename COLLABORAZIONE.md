@@ -77,10 +77,10 @@ Aggiornare a ogni apertura, merge o chiusura. Campi: numero · branch · autore 
 
 | PR | Branch | Autore | File principali | Stato | Prossima azione |
 |---|---|---|---|---|---|
-| [#33](https://github.com/gbrisiko91/premi-start/pull/33) | `chatgpt/seo-indexabilita-20261117` | ChatGPT | `build.mjs`, `tests/seo-indexabilita.mjs`, SEO audit | In verifica: title unici, meta homepage, test canonical/sitemap | Verifica GitHub Actions e Netlify sull'ultimo commit |
+| [#34](https://github.com/gbrisiko91/premi-start/pull/34) | `chatgpt/percorsi-editoriali-20261117` | ChatGPT | `build.mjs`, `src/stile.css`, percorsi editoriali | In verifica: guida GTA 6 e hub indie in nove lingue | GitHub Actions e Netlify sull'ultimo SHA, poi merge |
 
 ### PR del 17 novembre integrate
-#19: pagina Sfondi pixel e 3 PNG, integrata; #27: protocollo collaborazione e proposta controllata integrati; #28: 48 traduzioni integrate; #29: gate editoriale diagnostico (dry-run) integrato. **Quattro bozze del 17/11 escluse**: verifiche editoriali ancora aperte, non pubblicate.
+#33: template title e meta description, test canonical/sitemap, integrata e test su main superati. #19: pagina Sfondi pixel e 3 PNG, integrata; #27: protocollo collaborazione e proposta controllata integrati; #28: 48 traduzioni integrate; #29: gate editoriale diagnostico (dry-run) integrato. **Quattro bozze del 17/11 escluse**: verifiche editoriali ancora aperte, non pubblicate.
 
 ### Integrate di recente (16/11)
 #19 Sfondi pixel (17/11) · #20 Nintendo Milano · #21 Fortnite Pirate Token · #22 GTA 6 preload · #23 guida GTA 6 · #24 fix CI note interne · #25 sitemap Google News · #26 registro di continuità · #27 coordinamento e proposta · #28 48 traduzioni (17/11) · #29 gate dry-run.
