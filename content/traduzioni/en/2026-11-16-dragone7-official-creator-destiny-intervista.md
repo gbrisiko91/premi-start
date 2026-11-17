@@ -43,7 +43,7 @@ How does he hold it all together? "The million-dollar question." Mornings are fo
 
 ## How you become a Destiny Official Creator
 
-<figure class="immagine-testo"><img src="/media/dragone7/destiny-creator-hub.jpg" alt="The neon logo of the Creator Hub, the community of Destiny creators" loading="lazy" decoding="async" style="height:auto;max-height:none;object-fit:contain"><figcaption>The Destiny Creator Hub logo. Image provided by Dragone7gaming</figcaption></figure>
+<figure class="immagine-testo immagine-intera"><img src="/media/dragone7/destiny-creator-hub.jpg" alt="The neon logo of the Creator Hub, the community of Destiny creators" loading="lazy" decoding="async"><figcaption>The Destiny Creator Hub logo. Image provided by Dragone7gaming</figcaption></figure>
 
 After what he calls "a year on fire" of livestreams, Dragone sent his application to Bungie. It was accepted a month later, thanks in part to IFreddo, whom Dragone already knew and considers one of the best Destiny creators we have in Italy. When the news arrived: "I cried, a lot, with joy". Then he called his friends to tell them everything.
 
@@ -51,7 +51,7 @@ For him the recognition means counting for something to the company that created
 
 Since then, he says, his commitment to the game and the community has doubled. He started doing streams and collaborations with many Italian and international creators, and he went to Milan Games Week 2025 as a recognised creator, meeting friends and community members. There he also had his photo taken with IFreddo.
 
-<figure class="immagine-testo"><img src="/media/dragone7/milan-games-week-2025-ifreddo.jpg" alt="Dragone7 and IFreddo posing among the stands at Milan Games Week 2025" loading="lazy" decoding="async" style="width:100%;max-width:24rem;height:auto;max-height:none;object-fit:contain;display:block;margin:0 auto"><figcaption>Dragone7 (left) and IFreddo at Milan Games Week 2025. Photo: Dragone7gaming</figcaption></figure>
+<figure class="immagine-testo immagine-ritratto"><img src="/media/dragone7/milan-games-week-2025-ifreddo.jpg" alt="Dragone7 and IFreddo posing among the stands at Milan Games Week 2025" loading="lazy" decoding="async"><figcaption>Dragone7 (left) and IFreddo at Milan Games Week 2025. Photo: Dragone7gaming</figcaption></figure>
 
 ## Dragone7's next goals and his message to the community
 

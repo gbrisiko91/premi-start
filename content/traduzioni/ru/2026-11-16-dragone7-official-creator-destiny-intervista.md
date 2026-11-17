@@ -42,7 +42,7 @@ Destiny вошла в его жизнь в 2017 году, в Day One второ�
 
 ## Как стать Official Creator Destiny
 
-<figure class="immagine-testo"><img src="/media/dragone7/destiny-creator-hub.jpg" alt="Неоновый логотип Creator Hub — сообщества авторов контента по Destiny" loading="lazy" decoding="async" style="height:auto;max-height:none;object-fit:contain"><figcaption>Логотип Creator Hub Destiny. Изображение предоставлено Dragone7gaming</figcaption></figure>
+<figure class="immagine-testo immagine-intera"><img src="/media/dragone7/destiny-creator-hub.jpg" alt="Неоновый логотип Creator Hub — сообщества авторов контента по Destiny" loading="lazy" decoding="async"><figcaption>Логотип Creator Hub Destiny. Изображение предоставлено Dragone7gaming</figcaption></figure>
 
 После того, что он называет «огненным годом» стримов, Dragone отправил заявку в Bungie. Её одобрили через месяц, в том числе благодаря IFreddo, которого Dragone уже знал и считает одним из лучших авторов контента по Destiny в Италии. Когда пришла новость: «Я плакал, много, от радости». Потом он обзвонил друзей, чтобы всё рассказать.
 
@@ -50,7 +50,7 @@ Destiny вошла в его жизнь в 2017 году, в Day One второ�
 
 С тех пор, рассказывает он, его вовлечённость в игру и сообщество удвоилась. Он начал проводить стримы и коллаборации со многими итальянскими и зарубежными авторами, а на Milan Games Week 2025 приехал уже как признанный автор, встретившись с друзьями и членами сообщества. Там он сфотографировался и с IFreddo.
 
-<figure class="immagine-testo"><img src="/media/dragone7/milan-games-week-2025-ifreddo.jpg" alt="Dragone7 и IFreddo позируют среди стендов Milan Games Week 2025" loading="lazy" decoding="async" style="width:100%;max-width:24rem;height:auto;max-height:none;object-fit:contain;display:block;margin:0 auto"><figcaption>Dragone7 (слева) и IFreddo на Milan Games Week 2025. Фото: Dragone7gaming</figcaption></figure>
+<figure class="immagine-testo immagine-ritratto"><img src="/media/dragone7/milan-games-week-2025-ifreddo.jpg" alt="Dragone7 и IFreddo позируют среди стендов Milan Games Week 2025" loading="lazy" decoding="async"><figcaption>Dragone7 (слева) и IFreddo на Milan Games Week 2025. Фото: Dragone7gaming</figcaption></figure>
 
 ## Следующие цели Dragone7 и послание сообществу
 

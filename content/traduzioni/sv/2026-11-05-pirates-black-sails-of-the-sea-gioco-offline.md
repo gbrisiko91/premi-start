@@ -18,7 +18,7 @@ Spelet finns redan att ladda ner gratis till Android, iPhone och iPad:
 
 Utvecklaren Giancarlo Mennillo har själv försett Soffia Cartuccia med informationen, skärmbilderna och filmerna som används i den här artikeln.
 
-<figure class="immagine-testo"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="En match i Pirates: Black Sails of the Sea i dimma och regn" style="display:block;width:100%;max-width:22rem;margin:0 auto;border-radius:14px"></video><figcaption>En match i dimma och regn. Video: Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="En match i Pirates: Black Sails of the Sea i dimma och regn"></video><figcaption>En match i dimma och regn. Video: Giancarlo Mennillo</figcaption></figure>
 
 ## Så spelar man Pirates: Black Sails of the Sea
 
@@ -37,13 +37,13 @@ Det bäst lyckade inslaget är havet som förändras. Matchens första faser spe
 
 Och så har vi honom: en **megalodon** som korsar scenen och attackerar den som kommer inom räckhåll.
 
-<figure class="immagine-testo"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="En megalodon attackerar under ett sjöslag" style="display:block;width:100%;max-width:22rem;margin:0 auto;border-radius:14px"></video><figcaption>Megalodonens attack. Video: Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="En megalodon attackerar under ett sjöslag"></video><figcaption>Megalodonens attack. Video: Giancarlo Mennillo</figcaption></figure>
 
 ## Skepp att samla och dagliga belöningar
 
 Utanför striderna samlar avsnittet **Le Mie Navi** (Mina skepp) de upplåsta fartygen. Vart och ett har fyra egenskaper: fart, eldkraft, ammunition och livspoäng. Vissa skepp finns bara under en begränsad period, som Halloween-skeppet **Pumpkin Phantom** med orange segel formade som pumpor.
 
-<figure class="immagine-testo" style="display:flex;gap:1rem;justify-content:center"><img src="/media/pirates-black-sails/menu-principale.jpg" alt="Huvudmenyn i Pirates: Black Sails of the Sea med knapparna Spela, Butik, Bjud in och Top Pirati" loading="lazy" decoding="async" style="width:48%;max-width:16rem;height:auto;max-height:none;object-fit:contain"><img src="/media/pirates-black-sails/pumpkin-phantom.jpg" alt="Skeppet Pumpkin Phantom med sina egenskaper på skärmen Le Mie Navi" loading="lazy" decoding="async" style="width:48%;max-width:16rem;height:auto;max-height:none;object-fit:contain"></figure>
+<figure class="immagine-testo immagine-coppia"><img src="/media/pirates-black-sails/menu-principale.jpg" alt="Huvudmenyn i Pirates: Black Sails of the Sea med knapparna Spela, Butik, Bjud in och Top Pirati" loading="lazy" decoding="async"><img src="/media/pirates-black-sails/pumpkin-phantom.jpg" alt="Skeppet Pumpkin Phantom med sina egenskaper på skärmen Le Mie Navi" loading="lazy" decoding="async"></figure>
 
 Från huvudmenyn når man **butiken**, topplistan **Top Pirati** och funktionen för att bjuda in vänner, och det finns även en länk till **Discord**. Varje dag när man öppnar spelet får man en belöning på 500 guldmynt.
 

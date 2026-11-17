@@ -18,7 +18,7 @@ crediti_immagine: "画像：Giancarlo Mennillo、ゲームのオリジナル素�
 
 この記事で使用したゲーム情報、スクリーンショット、動画は、開発者のGiancarlo Mennillo氏からSoffia Cartucciaへ直接提供されたものです。
 
-<figure class="immagine-testo"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="霧と雨の中で遊ぶPirates: Black Sails of the Seaのプレイ" style="display:block;width:100%;max-width:22rem;margin:0 auto;border-radius:14px"></video><figcaption>霧と雨の中でのプレイ。動画：Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="霧と雨の中で遊ぶPirates: Black Sails of the Seaのプレイ"></video><figcaption>霧と雨の中でのプレイ。動画：Giancarlo Mennillo</figcaption></figure>
 
 ## Pirates: Black Sails of the Seaの遊び方
 
@@ -37,13 +37,13 @@ crediti_immagine: "画像：Giancarlo Mennillo、ゲームのオリジナル素�
 
 そしてもうひとつ、画面を横切り、近くにいる船を襲う**メガロドン**も登場する。
 
-<figure class="immagine-testo"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="海戦の最中に襲いかかるメガロドン" style="display:block;width:100%;max-width:22rem;margin:0 auto;border-radius:14px"></video><figcaption>メガロドンの襲撃。動画：Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="海戦の最中に襲いかかるメガロドン"></video><figcaption>メガロドンの襲撃。動画：Giancarlo Mennillo</figcaption></figure>
 
 ## 集める船とデイリー報酬
 
 戦闘以外では、**Le Mie Navi**（マイシップ）のセクションでアンロックした船を見られる。各船には速度、火力、弾薬、体力の4つのステータスがある。ハロウィン限定の**Pumpkin Phantom**のように、期間限定で登場する船もあり、こちらはカボチャ型のオレンジ色の帆が特徴だ。
 
-<figure class="immagine-testo" style="display:flex;gap:1rem;justify-content:center"><img src="/media/pirates-black-sails/menu-principale.jpg" alt="Gioca、Negozio、Invita、Top Piratiのボタンが並ぶPirates: Black Sails of the Seaのメインメニュー" loading="lazy" decoding="async" style="width:48%;max-width:16rem;height:auto;max-height:none;object-fit:contain"><img src="/media/pirates-black-sails/pumpkin-phantom.jpg" alt="Le Mie Navi画面に表示されたPumpkin Phantomとそのステータス" loading="lazy" decoding="async" style="width:48%;max-width:16rem;height:auto;max-height:none;object-fit:contain"></figure>
+<figure class="immagine-testo immagine-coppia"><img src="/media/pirates-black-sails/menu-principale.jpg" alt="Gioca、Negozio、Invita、Top Piratiのボタンが並ぶPirates: Black Sails of the Seaのメインメニュー" loading="lazy" decoding="async"><img src="/media/pirates-black-sails/pumpkin-phantom.jpg" alt="Le Mie Navi画面に表示されたPumpkin Phantomとそのステータス" loading="lazy" decoding="async"></figure>
 
 メインメニューからは**ショップ**、ランキング**Top Pirati**、フレンド招待機能にアクセスでき、**Discord**へのリンクもある。毎日ゲームを開くと、500金貨のログインボーナスがもらえる。
 

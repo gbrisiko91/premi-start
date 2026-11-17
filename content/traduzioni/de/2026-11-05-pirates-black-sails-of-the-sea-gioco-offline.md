@@ -18,7 +18,7 @@ Das Spiel steht bereits kostenlos für Android, iPhone und iPad zum Download ber
 
 Die Informationen zum Spiel sowie die Screenshots und Videos für diesen Artikel hat Entwickler Giancarlo Mennillo Soffia Cartuccia direkt zur Verfügung gestellt.
 
-<figure class="immagine-testo"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Eine Partie Pirates: Black Sails of the Sea in Nebel und Regen" style="display:block;width:100%;max-width:22rem;margin:0 auto;border-radius:14px"></video><figcaption>Eine Partie in Nebel und Regen. Video: Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/nebbia-pioggia.mp4" poster="/media/pirates-black-sails/nebbia-pioggia-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Eine Partie Pirates: Black Sails of the Sea in Nebel und Regen"></video><figcaption>Eine Partie in Nebel und Regen. Video: Giancarlo Mennillo</figcaption></figure>
 
 ## So spielt man Pirates: Black Sails of the Sea
 
@@ -37,13 +37,13 @@ Am gelungensten ist das wechselhafte Meer. Die ersten Phasen einer Partie spiele
 
 Und dann ist da noch er: ein **Megalodon**, der durch die Szene zieht und jeden angreift, der ihm in die Quere kommt.
 
-<figure class="immagine-testo"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Ein Megalodon greift während einer Seeschlacht an" style="display:block;width:100%;max-width:22rem;margin:0 auto;border-radius:14px"></video><figcaption>Der Angriff des Megalodons. Video: Giancarlo Mennillo</figcaption></figure>
+<figure class="immagine-testo immagine-video"><video src="/media/pirates-black-sails/megalodonte.mp4" poster="/media/pirates-black-sails/megalodonte-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Ein Megalodon greift während einer Seeschlacht an"></video><figcaption>Der Angriff des Megalodons. Video: Giancarlo Mennillo</figcaption></figure>
 
 ## Schiffe zum Sammeln und tägliche Belohnungen
 
 Abseits der Schlacht versammelt der Bereich **Le Mie Navi** (Meine Schiffe) die freigeschalteten Schiffe. Jedes hat vier Werte: Geschwindigkeit, Feuerkraft, Munition und Lebenspunkte. Manche Schiffe sind nur für begrenzte Zeit verfügbar, etwa die **Pumpkin Phantom** zu Halloween mit ihren orangefarbenen Segeln in Kürbisform.
 
-<figure class="immagine-testo" style="display:flex;gap:1rem;justify-content:center"><img src="/media/pirates-black-sails/menu-principale.jpg" alt="Hauptmenü von Pirates: Black Sails of the Sea mit den Schaltflächen Gioca, Negozio, Invita und Top Pirati" loading="lazy" decoding="async" style="width:48%;max-width:16rem;height:auto;max-height:none;object-fit:contain"><img src="/media/pirates-black-sails/pumpkin-phantom.jpg" alt="Das Schiff Pumpkin Phantom mit seinen Werten im Bildschirm Le Mie Navi" loading="lazy" decoding="async" style="width:48%;max-width:16rem;height:auto;max-height:none;object-fit:contain"></figure>
+<figure class="immagine-testo immagine-coppia"><img src="/media/pirates-black-sails/menu-principale.jpg" alt="Hauptmenü von Pirates: Black Sails of the Sea mit den Schaltflächen Gioca, Negozio, Invita und Top Pirati" loading="lazy" decoding="async"><img src="/media/pirates-black-sails/pumpkin-phantom.jpg" alt="Das Schiff Pumpkin Phantom mit seinen Werten im Bildschirm Le Mie Navi" loading="lazy" decoding="async"></figure>
 
 Über das Hauptmenü gelangt man zum **Shop**, zur Bestenliste **Top Pirati** und zur Funktion, um Freunde einzuladen; außerdem gibt es einen Link zu **Discord**. Jeden Tag gibt es beim Öffnen des Spiels eine Belohnung von 500 Goldmünzen.
 

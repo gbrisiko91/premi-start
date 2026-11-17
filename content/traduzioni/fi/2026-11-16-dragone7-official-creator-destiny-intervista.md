@@ -43,7 +43,7 @@ Miten hän saa kaiken sovitettua yhteen? ”Miljoonan dollarin kysymys.” Aamul
 
 ## Miten Destinyn Official Creatoriksi tullaan
 
-<figure class="immagine-testo"><img src="/media/dragone7/destiny-creator-hub.jpg" alt="Creator Hubin, Destinyn sisällöntuottajayhteisön, neonlogo" loading="lazy" decoding="async" style="height:auto;max-height:none;object-fit:contain"><figcaption>Destinyn Creator Hubin logo. Kuva: Dragone7gaming</figcaption></figure>
+<figure class="immagine-testo immagine-intera"><img src="/media/dragone7/destiny-creator-hub.jpg" alt="Creator Hubin, Destinyn sisällöntuottajayhteisön, neonlogo" loading="lazy" decoding="async"><figcaption>Destinyn Creator Hubin logo. Kuva: Dragone7gaming</figcaption></figure>
 
 Livelähetysten ”tulisen vuoden”, kuten hän sitä kutsuu, jälkeen Dragone lähetti hakemuksen Bungielle. Se hyväksyttiin kuukauden kuluttua, osittain IFreddon ansiosta. Dragone tunsi IFreddon jo ennestään ja pitää häntä yhtenä Italian parhaista Destiny-sisällöntuottajista. Kun uutinen tuli: ”Itkin, paljon, ilosta.” Sitten hän soitti ystävilleen ja kertoi kaiken.
 
@@ -51,7 +51,7 @@ Hänelle tunnustus merkitsee sitä, että hän merkitsee jotain yritykselle, jok
 
 Siitä lähtien hänen sitoutumisensa peliin ja yhteisöön on hänen mukaansa kaksinkertaistunut. Hän alkoi tehdä lähetyksiä ja yhteistöitä monien italialaisten ja ulkomaisten sisällöntuottajien kanssa, ja Milan Games Week 2025 -tapahtumaan hän meni tunnustettuna tekijänä tapaamaan ystäviä ja yhteisön jäseniä. Siellä hän otatti kuvan myös IFreddon kanssa.
 
-<figure class="immagine-testo"><img src="/media/dragone7/milan-games-week-2025-ifreddo.jpg" alt="Dragone7 ja IFreddo poseeraamassa Milan Games Week 2025 -tapahtuman osastojen keskellä" loading="lazy" decoding="async" style="width:100%;max-width:24rem;height:auto;max-height:none;object-fit:contain;display:block;margin:0 auto"><figcaption>Dragone7 (vasemmalla) ja IFreddo Milan Games Week 2025 -tapahtumassa. Kuva: Dragone7gaming</figcaption></figure>
+<figure class="immagine-testo immagine-ritratto"><img src="/media/dragone7/milan-games-week-2025-ifreddo.jpg" alt="Dragone7 ja IFreddo poseeraamassa Milan Games Week 2025 -tapahtuman osastojen keskellä" loading="lazy" decoding="async"><figcaption>Dragone7 (vasemmalla) ja IFreddo Milan Games Week 2025 -tapahtumassa. Kuva: Dragone7gaming</figcaption></figure>
 
 ## Dragone7:n seuraavat tavoitteet ja viesti yhteisölle
 
