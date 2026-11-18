@@ -1,7 +1,7 @@
 ---
 titolo: "Sony vinner stämningen på 2 miljarder pund om priserna i PlayStation Store"
 titolo_seo: "PlayStation Store-stämningen: Sony vinner i Storbritannien"
-sommario: "Brittiska domstolen CAT avvisar grupptalan på nästan 2 miljarder pund om priserna i PlayStation Store: domarna anser att Sony inte är dominerande."
+sommario: "Brittiska domstolen CAT avvisar grupptalan på nästan 2 miljarder pund om priserna i PlayStation Store: Sonys dominans har inte bevisats."
 slug: "playstation-store-stamning-sony-vinner"
 ---
 
@@ -17,7 +17,7 @@ Rättegången pågick i ungefär tio veckor, mellan mars och maj 2026. Klarteckn
 
 Domen, som var enhällig, utgår från hur marknaden definieras. Neill räknade bara med spel och DLC som säljs till PlayStation; domstolen godtog i stället Sonys linje, att PlayStation konkurrerar med Xbox och Nintendo som ett helt system, konsol plus spel. I resonemanget väger även spel på skiva in, liksom att många spelare använder flera plattformar.
 
-På den grunden, skriver domarna, har Neill inte visat att Sony var dominerande "på den marknad hon definierat eller på någon annan relevant marknad". CAT underkände även de övriga anklagelserna: det alternativa scenariot med 20 % lägre priser bedömdes inte som trovärdigt, och Sonys marginaler, bedömda över hela PlayStation-systemet, befanns varken överdrivna eller oskäliga.
+På den grunden, skriver domarna, har Neill inte visat att Sony var dominerande "på den marknad hon definierat eller på någon annan relevant marknad". CAT underkände även de övriga anklagelserna: det alternativa scenariot med 20 % lägre priser bedömdes inte som trovärdigt, och med Sonys marginaler bedömda över hela PlayStation-systemet visades det inte att de var överdrivna, eller att de var oskäliga.
 
 ## Blir det ett överklagande?
 

@@ -1,7 +1,7 @@
 ---
 titolo: "Sony vince la causa da 2 miliardi di sterline sui prezzi del PlayStation Store"
 titolo_seo: "Causa PlayStation Store: Sony vince nel Regno Unito"
-sommario: "Il tribunale britannico CAT respinge la class action da quasi 2 miliardi di sterline sui prezzi del PlayStation Store: per i giudici Sony non è dominante."
+sommario: "Il tribunale britannico CAT respinge la class action da quasi 2 miliardi di sterline sui prezzi del PlayStation Store: dominio di Sony non dimostrato."
 parola_chiave: "causa playstation store sony"
 data: 2026-11-18
 categoria: industria
@@ -36,7 +36,7 @@ Il processo era durato una decina di settimane, tra marzo e maggio 2026. Il via 
 
 La sentenza, decisa all'unanimità, parte dalla definizione del mercato. Neill considerava solo i giochi e i DLC venduti per PlayStation; il tribunale ha invece accolto la tesi di Sony, secondo cui PlayStation compete con Xbox e Nintendo come sistema completo, console più giochi. Nel ragionamento pesano anche i giochi su disco e il fatto che molti giocatori usano più piattaforme.
 
-Su questa base, scrivono i giudici, Neill non ha dimostrato che Sony fosse dominante "nel mercato da lei definito né in alcun altro mercato rilevante". Il CAT ha bocciato anche le altre accuse: lo scenario alternativo con prezzi più bassi del 20% non è stato ritenuto credibile e i margini di Sony, valutati sull'intero sistema PlayStation, non sono risultati né eccessivi né iniqui.
+Su questa base, scrivono i giudici, Neill non ha dimostrato che Sony fosse dominante "nel mercato da lei definito né in alcun altro mercato rilevante". Il CAT ha bocciato anche le altre accuse: lo scenario alternativo con prezzi più bassi del 20% non è stato ritenuto credibile e, con i margini di Sony valutati sull'intero sistema PlayStation, non è stato dimostrato che fossero eccessivi, né che fossero iniqui.
 
 ## Ci sarà un appello?
 

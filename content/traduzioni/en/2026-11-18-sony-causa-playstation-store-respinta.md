@@ -1,7 +1,7 @@
 ---
 titolo: "Sony wins the £2 billion lawsuit over PlayStation Store prices"
 titolo_seo: "PlayStation Store lawsuit: Sony wins in the UK"
-sommario: "The UK's Competition Appeal Tribunal dismisses the nearly £2 billion class action over PlayStation Store prices: the judges find Sony is not dominant."
+sommario: "The UK's Competition Appeal Tribunal dismisses the nearly £2 billion class action over PlayStation Store prices: Sony's dominance was not proven."
 slug: "sony-playstation-store-lawsuit-dismissed"
 ---
 
@@ -17,7 +17,7 @@ The trial had lasted about ten weeks, between March and May 2026. The claim had 
 
 The ruling, reached unanimously, starts from the definition of the market. Neill considered only games and DLC sold for PlayStation; the tribunal instead accepted Sony's argument that PlayStation competes with Xbox and Nintendo as a complete system, console plus games. Disc-based games and the fact that many players use more than one platform also weigh in the reasoning.
 
-On this basis, the judges write, Neill did not prove that Sony was dominant "in the market she defined or in any other relevant market". The CAT also rejected the other allegations: the alternative scenario with prices 20% lower was not considered credible, and Sony's margins, assessed across the whole PlayStation system, were found to be neither excessive nor unfair.
+On this basis, the judges write, Neill did not prove that Sony was dominant "in the market she defined or in any other relevant market". The CAT also rejected the other allegations: the alternative scenario with prices 20% lower was not considered credible, and, with Sony's margins assessed across the whole PlayStation system, it was not shown that they were excessive, nor that they were unfair.
 
 ## Will there be an appeal?
 

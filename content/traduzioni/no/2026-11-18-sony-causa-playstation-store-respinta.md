@@ -1,7 +1,7 @@
 ---
 titolo: "Sony vinner søksmålet på 2 milliarder pund om prisene i PlayStation Store"
 titolo_seo: "PlayStation Store-søksmål: Sony vinner i Storbritannia"
-sommario: "Den britiske domstolen CAT avviser gruppesøksmålet på nesten 2 milliarder pund om prisene i PlayStation Store: dommerne mener Sony ikke er dominerende."
+sommario: "Den britiske domstolen CAT avviser gruppesøksmålet på nesten 2 milliarder pund om prisene i PlayStation Store: Sonys dominans ble ikke bevist."
 slug: "playstation-store-soksmal-sony-vinner"
 ---
 
@@ -17,7 +17,7 @@ Rettssaken hadde vart i rundt ti uker, mellom mars og mai 2026. Søksmålet hadd
 
 Dommen, som var enstemmig, tar utgangspunkt i definisjonen av markedet. Neill så bare på spill og DLC solgt til PlayStation; domstolen godtok derimot Sonys syn, nemlig at PlayStation konkurrerer med Xbox og Nintendo som et komplett system, konsoll pluss spill. I resonnementet veier også spill på plate tungt, i tillegg til at mange spillere bruker flere plattformer.
 
-På dette grunnlaget, skriver dommerne, har Neill ikke vist at Sony var dominerende «i markedet hun definerte eller i noe annet relevant marked». CAT avviste også de øvrige anklagene: det alternative scenariet med 20 % lavere priser ble ikke ansett som troverdig, og Sonys marginer, vurdert for hele PlayStation-systemet, ble verken funnet for høye eller urimelige.
+På dette grunnlaget, skriver dommerne, har Neill ikke vist at Sony var dominerende «i markedet hun definerte eller i noe annet relevant marked». CAT avviste også de øvrige anklagene: det alternative scenariet med 20 % lavere priser ble ikke ansett som troverdig, og med Sonys marginer vurdert for hele PlayStation-systemet ble det ikke vist at de var for høye, eller at de var urimelige.
 
 ## Blir det en anke?
 

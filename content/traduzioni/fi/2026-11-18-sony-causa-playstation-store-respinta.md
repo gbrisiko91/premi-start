@@ -1,7 +1,7 @@
 ---
 titolo: "Sony voitti 2 miljardin punnan oikeusjutun PlayStation Storen hinnoista"
 titolo_seo: "PlayStation Store -oikeusjuttu: Sony voitti Britanniassa"
-sommario: "Britannian CAT-tuomioistuin hylkäsi lähes 2 miljardin punnan ryhmäkanteen PlayStation Storen hinnoista: tuomareiden mukaan Sony ei ole määräävä toimija."
+sommario: "Britannian CAT-tuomioistuin hylkäsi lähes 2 miljardin punnan ryhmäkanteen PlayStation Storen hinnoista: Sonyn määräävää asemaa ei osoitettu."
 slug: "playstation-store-oikeusjuttu-sony-voitti"
 ---
 
@@ -17,7 +17,7 @@ Oikeudenkäynti kesti noin kymmenen viikkoa maaliskuun ja toukokuun 2026 välill
 
 Yksimielinen päätös lähtee markkinoiden määrittelystä. Neill tarkasteli vain PlayStationille myytyjä pelejä ja DLC-sisältöjä; tuomioistuin sen sijaan hyväksyi Sonyn näkemyksen, jonka mukaan PlayStation kilpailee Xboxin ja Nintendon kanssa kokonaisena järjestelmänä, konsoli ja pelit yhdessä. Päättelyssä painavat myös levyllä myytävät pelit ja se, että monet pelaajat käyttävät useita alustoja.
 
-Tämän perusteella tuomarit kirjoittavat, ettei Neill osoittanut Sonyn olleen määräävässä asemassa ”hänen määrittelemillään markkinoilla eikä millään muillakaan merkityksellisillä markkinoilla”. CAT hylkäsi myös muut syytökset: vaihtoehtoista skenaariota 20 % alemmista hinnoista ei pidetty uskottavana, eikä Sonyn katteita, joita arvioitiin koko PlayStation-järjestelmän tasolla, todettu liiallisiksi tai kohtuuttomiksi.
+Tämän perusteella tuomarit kirjoittavat, ettei Neill osoittanut Sonyn olleen määräävässä asemassa ”hänen määrittelemillään markkinoilla eikä millään muillakaan merkityksellisillä markkinoilla”. CAT hylkäsi myös muut syytökset: vaihtoehtoista skenaariota 20 % alemmista hinnoista ei pidetty uskottavana, eikä Sonyn katteiden, joita arvioitiin koko PlayStation-järjestelmän tasolla, osoitettu olleen liiallisia tai kohtuuttomia.
 
 ## Tuleeko valitus?
 

@@ -1,7 +1,7 @@
 ---
 titolo: "Sony gana la demanda de 2.000 millones de libras por los precios de PlayStation Store"
 titolo_seo: "Demanda PlayStation Store: Sony gana en el Reino Unido"
-sommario: "El tribunal británico CAT rechaza la demanda colectiva de casi 2.000 millones de libras por los precios de PlayStation Store: Sony no es dominante, dicen."
+sommario: "El tribunal británico CAT rechaza la demanda colectiva de casi 2.000 millones de libras por los precios de PlayStation Store: no se probó el dominio de Sony."
 slug: "demanda-playstation-store-sony-rechazada"
 ---
 
@@ -17,7 +17,7 @@ El juicio había durado unas diez semanas, entre marzo y mayo de 2026. La demand
 
 La sentencia, adoptada por unanimidad, parte de la definición del mercado. Neill solo tenía en cuenta los juegos y DLC vendidos para PlayStation; el tribunal, en cambio, aceptó la tesis de Sony, según la cual PlayStation compite con Xbox y Nintendo como sistema completo, consola más juegos. En el razonamiento también pesan los juegos en disco y el hecho de que muchos jugadores usan varias plataformas.
 
-Sobre esta base, escriben los jueces, Neill no demostró que Sony fuera dominante "en el mercado definido por ella ni en ningún otro mercado relevante". El CAT también rechazó las demás acusaciones: el escenario alternativo con precios un 20% más bajos no se consideró creíble y los márgenes de Sony, evaluados sobre todo el sistema PlayStation, no resultaron ni excesivos ni injustos.
+Sobre esta base, escriben los jueces, Neill no demostró que Sony fuera dominante "en el mercado definido por ella ni en ningún otro mercado relevante". El CAT también rechazó las demás acusaciones: el escenario alternativo con precios un 20% más bajos no se consideró creíble y, con los márgenes de Sony evaluados sobre todo el sistema PlayStation, no se demostró que fueran excesivos ni que fueran injustos.
 
 ## ¿Habrá recurso?
 

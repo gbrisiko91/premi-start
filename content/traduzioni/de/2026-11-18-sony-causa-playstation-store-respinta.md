@@ -1,7 +1,7 @@
 ---
 titolo: "Sony gewinnt die 2-Milliarden-Pfund-Klage um die Preise im PlayStation Store"
 titolo_seo: "PlayStation-Store-Klage: Sony gewinnt in Großbritannien"
-sommario: "Britisches Gericht CAT weist Sammelklage über fast 2 Milliarden Pfund zu PlayStation-Store-Preisen ab: Laut den Richtern ist Sony nicht marktbeherrschend."
+sommario: "Britisches Gericht CAT weist Sammelklage über fast 2 Milliarden Pfund zu PlayStation-Store-Preisen ab: Eine Marktbeherrschung durch Sony wurde nicht belegt."
 slug: "playstation-store-klage-sony-gewinnt"
 ---
 
@@ -17,7 +17,7 @@ Der Prozess hatte etwa zehn Wochen gedauert, zwischen März und Mai 2026. Grüne
 
 Das einstimmig gefällte Urteil geht von der Marktdefinition aus. Neill betrachtete nur die für PlayStation verkauften Spiele und DLCs; das Gericht folgte dagegen der Argumentation von Sony, wonach PlayStation als Gesamtsystem aus Konsole und Spielen mit Xbox und Nintendo konkurriert. In die Überlegungen flossen auch Spiele auf Disc ein sowie die Tatsache, dass viele Spieler mehrere Plattformen nutzen.
 
-Auf dieser Grundlage, so die Richter, habe Neill nicht nachgewiesen, dass Sony „in dem von ihr definierten Markt oder in einem anderen relevanten Markt“ marktbeherrschend sei. Das CAT wies auch die übrigen Vorwürfe zurück: Das alternative Szenario mit um 20 % niedrigeren Preisen wurde nicht als glaubwürdig angesehen, und die Margen von Sony, bewertet über das gesamte PlayStation-System, erwiesen sich weder als überhöht noch als unangemessen.
+Auf dieser Grundlage, so die Richter, habe Neill nicht nachgewiesen, dass Sony „in dem von ihr definierten Markt oder in einem anderen relevanten Markt“ marktbeherrschend sei. Das CAT wies auch die übrigen Vorwürfe zurück: Das alternative Szenario mit um 20 % niedrigeren Preisen wurde nicht als glaubwürdig angesehen, und bei einer Bewertung der Margen von Sony über das gesamte PlayStation-System wurde nicht nachgewiesen, dass sie überhöht oder unangemessen waren.
 
 ## Wird es eine Berufung geben?
 
