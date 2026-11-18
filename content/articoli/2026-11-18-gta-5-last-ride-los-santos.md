@@ -12,7 +12,7 @@ bozza: false
 verifica:
   stato: verificata
   natura: report
-  fonti_primarie: 0
+  fonti_primarie: 1
   fonti_indipendenti: 4
   controllata_il: 2026-11-18T11:20+01:00
   dubbi: []
@@ -27,6 +27,8 @@ fonti:
     url: "https://www.lemonde.fr/en/pixels/article/2026/11/18/gta-online-ahead-of-gta-vi-release-online-players-prep-for-last-ride_6783031_13.html"
   - titolo: "Rockstar Games – Grand Theft Auto VI è in arrivo il 19 novembre 2026 (conferma della data di GTA 6, non dell'evento fan)"
     url: "https://www.rockstargames.com/it/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026"
+  - titolo: "MattyRyoPlays su r/gta5 – invito diretto al convoglio PS5 delle 21:00 GMT (raduno di un gruppo, non orario generale)"
+    url: "https://www.reddit.com/r/gta5/comments/1xw1y5y/gta_online_the_last_ride_around_los_santos_nov/"
 ---
 
 Mercoledì **18 novembre 2026**, alla vigilia dell'uscita di **GTA 6**, i giocatori di **GTA Online** si organizzano per **The Last Ride**: un giro in auto per salutare simbolicamente Los Santos, la città virtuale di **GTA 5** che li accompagna da tredici anni.
@@ -51,6 +53,8 @@ Le regole suggerite sono semplici:
 **Non è stato annunciato un orario unico per tutte le piattaforme e per tutti i fusi orari.** Il 18 novembre è la giornata scelta per il saluto, ma ciascuna community può stabilire un'ora di partenza diversa.
 
 Per partecipare, conviene accordarsi con un gruppo di amici o con una community che organizza un convoglio su **GTA Online**, verificando piattaforma, versione del gioco e indicazioni del proprio raduno. Chi utilizza una **sessione su invito** dovrà ricevere l'invito del gruppo: entrare in una lobby pubblica a caso non garantisce di trovare The Last Ride.
+
+**Un esempio verificabile per PS5:** l'organizzatore **MattyRyoPlays** ha pubblicato [un invito al proprio convoglio su Reddit](https://www.reddit.com/r/gta5/comments/1xw1y5y/gta_online_the_last_ride_around_los_santos_nov/) per **mercoledì 18 novembre alle 21:00 GMT, cioè alle 22:00 in Italia (CET)**. Nel suo annuncio chiede di passare dal gruppo Discord per ottenere l'invito alla sessione PlayStation 5. **Quell'ora vale solo per il suo raduno**, non per tutte le community.
 
 Ogni sessione standard di GTA Online ospita fino a **30 giocatori**, perciò i raduni avvengono in gruppi separati e non in una grande lobby mondiale. Gfinity Esports segnala, per esempio, un ritrovo dedicato agli utenti **PS5** coordinato dal creator **All Eyez On Glitch**.
 
