@@ -2,7 +2,7 @@
 
 > **Documento centrale e unico registro operativo** per Gianmarco, Claude e ChatGPT. Prima di qualsiasi intervento, leggere qui, controllare GitHub/CI/Netlify e aggiornare i fatti che sono cambiati. `STATO-PROGETTO.md` è soltanto la sintesi di passaggio fra chat: non mantiene un secondo registro autonomo.
 >
-> **Snapshot del 17 novembre 2026 (Europe/Rome)**. Stato verificato su GitHub: repository `gbrisiko91/premi-start`, ultimo commit tecnico verificato su `main` prima del presente aggiornamento di continuità: `0eac3e9cd7895490c8f82a01d17a70b3281be329` (PR #44), GitHub Actions `44182813602` completata con successo. **0 PR aperte** al controllo, dopo il merge delle PR #41–#44. La documentazione di continuità fa avanzare nuovamente il commit: ricontrollare GitHub prima di agire.
+> **Snapshot del 18 novembre 2026 (Europe/Rome)**. Stato verificato su GitHub: `main` a `7ef4128d419453fc8641d8cb8b9c3b0ca247b36d` dopo il merge autorizzato della **PR #46**, GitHub Actions `44386380609` conclusa con successo, **0 PR aperte** al controllo. Il presente aggiornamento documentale produrrà un commit successivo; rileggere sempre GitHub prima di agire.
 
 ## 1. Missione e riferimenti
 
@@ -26,7 +26,7 @@ Aree: `content/articoli/`, `content/traduzioni/`, `content/pagine/` e `GUIDA-RED
 
 ## 3. Flusso giornaliero: programma del 18 novembre
 
-Le attività sono configurate **nel Progetto privato Claude**, non in GitHub. Claude ha **riferito** il 17/11 di aver aggiornato le istruzioni; l'effettivo funzionamento **non è ancora collaudato**.
+Le attività sono configurate **nel Progetto privato Claude**, non in GitHub. Il **primo ciclo del 18/11 è riuscito a produrre la PR #46**: segnale dichiarato `ricerca-2026-11-18T06:34-ali9`, 2 articoli pronti, 40 traduzioni in otto lingue, test/gate/preview verdi, approvazione esplicita del proprietario e merge effettuato da ChatGPT. **Restano non collaudati in prova ripetuta** il riuso dei segnali e le condizioni di guasto delle automazioni private; non proclamare collaudo completo o auto-merge.
 
 | Ora Europe/Rome | Comportamento previsto | Criterio di successo |
 |---|---|---|
@@ -51,7 +51,7 @@ Le protezioni integrate comprendono: sanitizer HTML dopo `marked` (PR #31), gate
 
 ## 5. Registro PR — snapshot GitHub 17/11
 
-**PR aperte: 0** al controllo successivo alla #44. Ultimo `main` tecnico `0eac3e9`, CI `44182813602` verde. Il presente aggiornamento documentale genera un commit successivo.
+**PR aperte: 0** al controllo successivo al merge #46. Ultimo `main` verificato `7ef4128`, CI `44386380609` verde. Il presente aggiornamento documentale genera un commit successivo.
 
 | PR | Intervento verificato | Stato |
 |---|---|---|
@@ -73,6 +73,11 @@ Le protezioni integrate comprendono: sanitizer HTML dopo `marked` (PR #31), gate
 | #43 | Video Pirates: `controls` e sorgente `src` sicura nel sanitizer, test nove lingue e anti-XSS | Integrata; CI `44181472714` verde, prova browser live non confermata |
 | #42 | Consolidamento di `COLLABORAZIONE.md` e `STATO-PROGETTO.md` | Integrata |
 | #44 | Autoplay muto dei video Pirates con controlli manuali e sanitizzazione sicura, autorizzato espressamente da Gianmarco | Integrata; test GitHub/Netlify Preview verdi; prova browser live pendente |
+| #45 | Stato di progetto aggiornato al termine del 17 novembre | Integrata |
+| #47 | Articolo GTA 5 The Last Ride, evento fan | Integrata il 18/11, controllo fonti effettuato |
+| #48 | Revisione del Last Ride: orari, raduno PS5, fonti e dettagli di partecipazione | Integrata il 18/11 |
+| #49 | GTA 6: recensioni e uscita in Nuova Zelanda, articolo urgente | Integrata il 18/11 |
+| #46 | 2 articoli (Sony PlayStation Store, Xbox Game Pass) e 40 traduzioni | **Integrata con approvazione di Gianmarco il 18/11**; commit `7ef4128`, CI success, deploy produzione da verificare |
 
 **Conservare la distinzione storica:** nella PR #28 quattro bozze del 17/11 erano presenti nel ramo pubblico e poi rimosse dal diff prima del merge. In seguito **tre** di quelle notizie sono uscite con la #32; **Craig Houston** resta in revisione umana e non va pubblicato automaticamente. La cronologia pubblica della #28 potrebbe ancora esporre i vecchi contenuti: non ripetere l'errore con bozze future.
 
@@ -80,8 +85,9 @@ Le protezioni integrate comprendono: sanitizer HTML dopo `marked` (PR #31), gate
 
 - **Search Console (18/10–14/11, dati verificati):** 60 clic e 3.492 impressioni, CTR circa 1,72%. Alcune lingue estere portano clic, specie Fortnite. Google ha scansionato ma **non indicizzato** vari articoli campionati; homepage indicizzata. Calo delle impressioni dal 12/11 da approfondire; **non è dimostrata alcuna penalizzazione**.
 - **Audit OpenSEO 15/11, campione 50 pagine:** 4 titoli duplicati, 27 segnalazioni di pagine leggere, 37 meta-description brevi. Le correzioni mirate ai template e agli hub sono state integrate; non garantiscono indicizzazione.
+- **Nuovo audit OpenSEO 18/11, campione 50 pagine:** 0 titoli duplicati, 8 pagine brevi, 28 meta-description brevi; 817 URL non scansionate per limite del crawl. Non confrontare campioni come se fossero l'intero sito. I dati GSC delle impressioni restano anomali dal 12/11, senza causa dimostrata. Dettagli in `SEO-INDICIZZAZIONE-AUDIT.md`.
 - **News sitemap:** PR #25 generazione statica, PR #39 Edge Function che filtra le voci scadute anche senza rebuild. Test GitHub e anteprima Netlify verdi, **ma il comportamento live della funzione Edge e gli header di produzione non sono stati verificati** (ambiente di controllo non raggiunge il dominio). Non inventare una conferma di deploy pubblico.
-- **Priorità:** verifica pubblica Netlify/sitemap e **resa reale della pagina Dragone7/Pirates**, 18/11 primo ciclo Claude con evidenze, controllo traduzioni, successiva analisi Google Search Console. Migliorare qualità, originalità, link interni e intenti dei lettori, non aumentare gli articoli indiscriminatamente.
+- **Priorità:** verifica pubblica Netlify/sitemap e **resa reale della pagina Dragone7/Pirates**; primo ciclo 18/11 riuscito fino alla PR #46 e al merge autorizzato (40 traduzioni); verificare il comportamento delle automazioni in casi ripetuti e dopo dati GSC consolidati. Migliorare qualità, originalità, link interni e intenti dei lettori senza aumentare gli articoli indiscriminatamente.
 
 ## 7. Regole operative permanenti
 
