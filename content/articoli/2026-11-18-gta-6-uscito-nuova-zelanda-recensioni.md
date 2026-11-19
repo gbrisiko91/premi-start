@@ -8,6 +8,10 @@ categoria: console
 tag: [gta-6, rockstar-games, recensioni, ps5, xbox-series-x]
 viralita: 97
 bozza: false
+immagine: "https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg?akim=1&imdensity=1&imwidth=3840"
+immagine_riserva: "https://www.rockstargames.com/VI/_next/static/media/meta.0t8ty~nlmxq2s.jpg"
+alt_immagine: "Artwork ufficiale di Grand Theft Auto VI con Jason, Lucia e Vice City"
+crediti_immagine: "Immagine: Rockstar Games, sito ufficiale di Grand Theft Auto VI"
 verifica:
   stato: verificata
   natura: report

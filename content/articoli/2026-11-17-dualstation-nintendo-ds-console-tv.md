@@ -8,6 +8,9 @@ categoria: retro
 tag: [nintendo-ds, dualstation, kouzex, mod, game-boy-advance]
 viralita: 55
 bozza: false
+immagine: "https://upload.wikimedia.org/wikipedia/commons/4/42/Nintendo-DS-Fat-Blue.jpg"
+alt_immagine: "Un Nintendo DS originale blu aperto, la console usata dal kit DualStation"
+crediti_immagine: "Immagine: Evan-Amos, Wikimedia Commons (pubblico dominio)"
 verifica:
   stato: verificata
   natura: ufficiale
