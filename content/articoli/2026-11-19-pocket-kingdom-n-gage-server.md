@@ -8,6 +8,9 @@ categoria: retro
 tag: [pocket-kingdom, nokia-n-gage, sega, preservazione]
 viralita: 55
 bozza: false
+immagine: "https://upload.wikimedia.org/wikipedia/commons/1/11/Nokia-NGage-LL.jpg"
+alt_immagine: "Primo piano del Nokia N-Gage, il telefono console di Pocket Kingdom"
+crediti_immagine: "Immagine: Evan-Amos, Wikimedia Commons (pubblico dominio)"
 verifica:
   stato: verificata
   natura: dichiarazione

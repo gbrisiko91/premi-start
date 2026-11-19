@@ -400,3 +400,33 @@ main { max-width: 78rem; margin: 0 auto; padding: 0 1rem 5rem; }
 .percorso-editoriale p, .intro-indie p { margin: 0 0 .9rem; color: var(--tenue); line-height: 1.65; }
 .percorso-editoriale a, .intro-indie a { color: var(--giallo); font-weight: 700; text-underline-offset: .25rem; }
 .intro-indie nav { display: flex; flex-wrap: wrap; gap: .6rem 1.3rem; }
+
+/* ---------- copertine illustrate (articoli senza immagine) ----------
+   Ogni categoria ha un'illustrazione pixel art originale di Soffia Cartuccia,
+   così le schede senza foto non restano un semplice riquadro a righe. */
+[data-colore="rosso"] [data-arte="1"], [data-colore="rosso"][data-arte="1"] { --arte: url("/copertine/console-1.png"); }
+[data-colore="rosso"] [data-arte="2"], [data-colore="rosso"][data-arte="2"] { --arte: url("/copertine/console-2.png"); }
+[data-colore="rosso"] [data-arte="3"], [data-colore="rosso"][data-arte="3"] { --arte: url("/copertine/console-3.png"); }
+[data-colore="blu"] [data-arte="1"], [data-colore="blu"][data-arte="1"] { --arte: url("/copertine/pc-1.png"); }
+[data-colore="blu"] [data-arte="2"], [data-colore="blu"][data-arte="2"] { --arte: url("/copertine/pc-2.png"); }
+[data-colore="blu"] [data-arte="3"], [data-colore="blu"][data-arte="3"] { --arte: url("/copertine/pc-3.png"); }
+[data-colore="giallo"] [data-arte="1"], [data-colore="giallo"][data-arte="1"] { --arte: url("/copertine/retro-1.png"); }
+[data-colore="giallo"] [data-arte="2"], [data-colore="giallo"][data-arte="2"] { --arte: url("/copertine/retro-2.png"); }
+[data-colore="giallo"] [data-arte="3"], [data-colore="giallo"][data-arte="3"] { --arte: url("/copertine/retro-3.png"); }
+[data-colore="verde"] [data-arte="1"], [data-colore="verde"][data-arte="1"] { --arte: url("/copertine/industria-1.png"); }
+[data-colore="verde"] [data-arte="2"], [data-colore="verde"][data-arte="2"] { --arte: url("/copertine/industria-2.png"); }
+[data-colore="verde"] [data-arte="3"], [data-colore="verde"][data-arte="3"] { --arte: url("/copertine/industria-3.png"); }
+.copertina, .bio-copertina {
+  background:
+    var(--arte, none) center / cover no-repeat,
+    linear-gradient(135deg, var(--c), color-mix(in srgb, var(--c) 40%, var(--notte)));
+  image-rendering: pixelated;
+}
+.copertina img, .bio-copertina img { image-rendering: auto; }
+.copertina > .copertina-nome.copertina-nome, .bio-copertina > .copertina-nome.copertina-nome {
+  left: .9rem; bottom: .75rem; font-size: 1rem; font-style: normal; font-stretch: 120%; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--notte); background: var(--c); padding: .2rem .6rem; border-radius: 8px; opacity: 1; line-height: 1.2;
+  box-shadow: 0 3px 0 var(--notte);
+}
+.copertina > .copertina-nome.copertina-nome, .bio-copertina:not(.bio-copertina-grande) > .copertina-nome.copertina-nome { display: none; }
+.homepage-ultime .scheda .copertina > .copertina-nome.copertina-nome { font-size: .85rem; }

@@ -8,6 +8,10 @@ categoria: console
 tag: [gta-6, rockstar-games, ps5, xbox-series-x]
 viralita: 98
 bozza: false
+immagine: "https://www.rockstargames.com/VI/_next/static/media/heroBackground.17_mn1qm8~f_4.jpg"
+immagine_riserva: "https://www.rockstargames.com/VI/_next/static/media/meta.0t8ty~nlmxq2s.jpg"
+alt_immagine: "Skyline ufficiale di Vice City al tramonto dal sito di GTA VI"
+crediti_immagine: "Immagine: Rockstar Games, sito ufficiale di Grand Theft Auto VI"
 verifica:
   stato: verificata
   natura: ufficiale

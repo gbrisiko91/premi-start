@@ -8,10 +8,9 @@ categoria: retro
 tag: [pokemon, nintendo-ds, pokepark, preservazione]
 viralita: 59
 bozza: false
-immagine: ""
-immagine_riserva: ""
-alt_immagine: ""
-crediti_immagine: ""
+immagine: "https://upload.wikimedia.org/wikipedia/commons/4/42/Nintendo-DS-Fat-Blue.jpg"
+alt_immagine: "Un Nintendo DS originale blu aperto, la console di PokéPark Fishing Rally DS"
+crediti_immagine: "Immagine: Evan-Amos, Wikimedia Commons (pubblico dominio)"
 fonti:
   - titolo: "Kotaku – Long lost self-deleting Pokémon fishing game for Nintendo DS resurfaces 20 years later"
     url: "https://kotaku.com/long-lost-self-deleting-pokemon-fishing-game-for-nintendo-ds-resurfaces-20-years-later-2000756876"

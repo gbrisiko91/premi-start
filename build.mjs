@@ -227,6 +227,13 @@ const urlImmagine = (u) => (!u ? "" : /^https?:\/\//.test(u) ? u : urlAssoluto(u
 
 // ---------- componenti ----------
 const colore = (cat) => config.categorie[cat].colore;
+// Illustrazione di copertina usata quando un articolo non ha una foto (public/copertine)
+const COPERTINA_CAT = { console: "console", pc: "pc", retro: "retro", industria: "industria" };
+// Tre varianti per categoria: la scelta dipende dall'articolo, così le schede vicine non sono identiche
+// (gli articoli consecutivi della stessa categoria ruotano tra le tre varianti; ARTE_VARIANTI si riempie dopo la lettura)
+const ARTE_VARIANTI = new Map();
+const varianteArte = (a) => ARTE_VARIANTI.get(a.id) || ((([...String(a.id || "")].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7)) % 3) + 1);
+const fileArte = (a) => `/copertine/${COPERTINA_CAT[a.categoria] || "console"}-${varianteArte(a)}.png`;
 const nomeCat = (l, cat) => T[l].categorie[cat]?.nome || config.categorie[cat].nome;
 const pallino = (cat) => `<span class="pallino" data-colore="${colore(cat)}" aria-hidden="true"></span>`;
 const etichettaCat = (l, cat) =>
@@ -299,7 +306,7 @@ function pagina({ l, titolo, titoloSeo = "", descrizione, percorso, corpo, tipo 
   descrizione ??= t.motto;
   alternative = errore ? {} : { ...alternative, [l]: percorso };
   const titoloCompleto = titolo ? `${titoloSeo || titolo} – ${config.nome}` : `${config.nome} – ${t.motto}`;
-  const immagineSocial = articolo?.immagine ? urlImmagine(articolo.immagine) : urlAssoluto("/condivisione.png");
+  const immagineSocial = articolo?.immagine ? urlImmagine(articolo.immagine) : urlAssoluto(articolo ? fileArte(articolo) : "/condivisione.png");
   const metaArticolo = articolo
     ? `\n<meta property="article:published_time" content="${articolo.data.toISOString()}">${articolo.aggiornato ? `\n<meta property="article:modified_time" content="${articolo.aggiornato.toISOString()}">` : ""}\n<meta property="article:section" content="${esc(nomeCat(l, articolo.categoria))}">${articolo.tag.map((x) => `\n<meta property="article:tag" content="${esc(x)}">`).join("")}`
     : "";
@@ -386,7 +393,7 @@ function scheda(a) {
   const copertina = `<span class="copertina-nome" aria-hidden="true">${esc(nomeCat(l, a.categoria))}</span>${
     a.immagine ? img({ src: a.immagine, riserva: a.immagineRiserva, alt: a.altImmagine }) : ""}`;
   return `<article class="scheda" data-colore="${colore(a.categoria)}">
-  <div class="copertina">${copertina}</div>
+  <div class="copertina" data-arte="${varianteArte(a)}">${copertina}</div>
   <div class="scheda-corpo">
     <p class="meta">${etichettaCat(l, a.categoria)}<time datetime="${a.data.toISOString()}">${data(l, a.data, "breve")}</time>${segnoBozza(a)}</p>
     <h2 class="titolo-scheda"><a href="${a.url}">${esc(a.titolo)}</a></h2>
@@ -730,7 +737,7 @@ function paginaInstagram(lista) {
   const utm = (u) => `${u}?utm_source=instagram&utm_medium=social&utm_campaign=link-in-bio`;
   const notizie = lista.filter((a) => !a.bozza).slice(0, 12);
   const [prima, ...altre] = notizie;
-  const copertina = (a, grande) => `<span class="bio-copertina${grande ? " bio-copertina-grande" : ""}" data-colore="${colore(a.categoria)}"><span class="copertina-nome" aria-hidden="true">${esc(nomeCat(l, a.categoria))}</span>${a.immagine ? img({ src: a.immagine, riserva: a.immagineRiserva, alt: "", lazy: !grande, priorita: grande }) : ""}</span>`;
+  const copertina = (a, grande) => `<span class="bio-copertina${grande ? " bio-copertina-grande" : ""}" data-colore="${colore(a.categoria)}" data-arte="${varianteArte(a)}"><span class="copertina-nome" aria-hidden="true">${esc(nomeCat(l, a.categoria))}</span>${a.immagine ? img({ src: a.immagine, riserva: a.immagineRiserva, alt: "", lazy: !grande, priorita: grande }) : ""}</span>`;
   const voce = (a) => `<li><a class="bio-voce" href="${utm(a.url)}" data-colore="${colore(a.categoria)}">${copertina(a, false)}<span class="bio-voce-testo"><span class="meta">${etichettaCatSemplice(l, a.categoria)}<time datetime="${a.data.toISOString()}">${data(l, a.data, "breve")}</time></span><span class="bio-voce-titolo">${esc(a.titolo)}</span></span></a></li>`;
   const scorciatoie = [
     [P.quiz(l), `✦ ${QUIZ[l].nome}`],
@@ -905,6 +912,13 @@ function preparaFont() {
 
 // ---------- build ----------
 const originali = leggiOriginali();
+{
+  const contatori = {};
+  for (const a of [...originali].sort((x, y) => y.data - x.data || String(x.id).localeCompare(String(y.id)))) {
+    contatori[a.categoria] = (contatori[a.categoria] || 0) + 1;
+    ARTE_VARIANTI.set(a.id, ((contatori[a.categoria] - 1) % 3) + 1);
+  }
+}
 const traduzioni = leggiTraduzioni(originali);
 const visibile = (a) => CON_BOZZE || !a.bozza;
 const tutti = [...originali, ...traduzioni].filter(visibile);
