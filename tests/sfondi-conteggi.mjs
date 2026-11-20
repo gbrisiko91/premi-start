@@ -1,4 +1,5 @@
 import test from "node:test";
+import { readFileSync } from "node:fs";
 import assert from "node:assert/strict";
 import { SFONDI, sfondoValido, giornoRoma, nuovaChiave, riassumiClic } from "../netlify/sfondi-conteggi.mjs";
 
@@ -32,4 +33,14 @@ test("conteggi aggregati per sfondo e per giorno senza attribuire persone uniche
   assert.equal(result.oggi, 2);
   assert.deepEqual(result.perSfondo, {"cartuccia":1, "mappa":2, "press-start":0});
   assert.equal(result.perGiorno["2026-11-21"], 1);
+});
+
+test("i tre download originali restano presenti e lo script è caricato solo nella pagina sfondi", () => {
+  const sfondi = readFileSync(new URL("../dist/sfondi/index.html", import.meta.url), "utf8");
+  const home = readFileSync(new URL("../dist/index.html", import.meta.url), "utf8");
+  assert.match(sfondi, /<script src="\/sfondi-contatore\.js" defer><\/script>/);
+  assert.doesNotMatch(home, /sfondi-contatore\.js/);
+  for (const nome of ["01-cartuccia", "02-mappa", "03-press-start"]) {
+    assert.ok(sfondi.includes("/sfondi/soffiacartuccia-sfondo-" + nome + ".png"), nome + " deve scaricarsi direttamente");
+  }
 });
