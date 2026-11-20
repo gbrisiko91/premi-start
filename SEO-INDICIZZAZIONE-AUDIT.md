@@ -41,3 +41,32 @@ Fonti ufficiali:
 2. Continuare il controllo di Search Console quando arrivano dati consolidati; distinguere indicizzazione, impressioni e posizione, e confrontare le stesse URL a parità di intervallo.
 3. Per quiz e sondaggi fi/no/ru/sv, valutare l'utilità per il lettore e aggiungere eventualmente istruzioni originali localizzate; **non applicare noindex indiscriminato**, non creare testo ripetitivo per raggiungere una soglia arbitraria.
 4. Evitare dichiarazioni di recupero del traffico prima che siano confermate da dati successivi; non ricorrere a modifiche tecniche speculative.
+
+
+## Controllo Google Search Console: 20 novembre 2026 (verifica diretta)
+
+**Fonte:** proprietà collegata `sc-domain:soffiacartuccia.it`, letta con OpenSEO il 20/11/2026. Dati di rendimento per ricerca web (orario e ritardo propri di Search Console), periodo 05–17 novembre, stato **final**. Gli ultimi giorni possono essere a zero perché i risultati pubblici sono quasi assenti, non perché Google abbia confermato una penalizzazione.
+
+### Cosa mostrano i dati
+- 11/11: **625 impressioni, 11 clic**. 12/11: **7 impressioni, 0 clic**. 13/11 e 14/11: **6 impressioni ciascuno, 0 clic**. 15/11: 0; 16/11: 1 impressione e 1 clic; 17/11: 0. Il brusco calo risulta confermato nel report consolidato ma **non se ne conosce la causa**.
+- Nelle ultime 28 giornate consolidate (21/10–17/11), fra le URL che hanno generato clic figurano Fortnite negozio pirata in russo (14 clic / 160 impressioni), inglese (11 / 365), spagnolo (7 / 150); Worlds T1/Karmine in italiano (3 / 95); Zelda Ocarina of Time remake in italiano (3 / 24). I conteggi sono per singola URL, non per dominio.
+- Il report delle *performance* è storico e diverso dall'ispezione di indicizzazione *corrente*: un URL può avere clic in un intervallo precedente e oggi essere non indicizzato.
+
+### Ispezione delle URL
+- `https://soffiacartuccia.it/`: **indicizzata**, crawl mobile del 16/11, canonical dichiarato e scelto coincidono.
+- `/articoli/gta-6-disponibile-italia/`: **URL sconosciuta a Google** al momento dell'ispezione; articolo pubblicato solo il 19/11, quindi non si può concludere che sia bloccato.
+- `/articoli/gta-6-guida-lancio/`: **scoperta, non indicizzata**; rilevata la sitemap.
+- `/en/articles/gta-6-preload-date-file-size/`: **scansionata, non indicizzata**; robots ammesso, fetch riuscito, canonical dichiarato/scelto coerente (ultimo crawl 15/11).
+- `/ru/articles/fortnite-pirate-shop-token/`: **scansionata, non indicizzata**; robots ammesso, fetch riuscito e canonical coerente (ultimo crawl 14/11).
+- `/articoli/fortnite-gettone-negozio-pirata/`: **scansionata, non indicizzata**; robots ammesso, fetch riuscito e canonical coerente (ultimo crawl 13/11).
+- `/articoli/worlds-2026-t1-karmine-semifinali/`: **scansionata, non indicizzata**; robots ammesso, fetch riuscito e canonical coerente (ultimo crawl 8/11).
+- `/sfondi/`: **scoperta, non indicizzata**, presente nella sitemap; pagina aggiornata dopo il traguardo 2.500 follower.
+
+### Priorità operative successive
+1. **Verificare produzione e link da Instagram:** landing `/instagram/` noindex voluta, premi e articoli collegati; controllare direttamente risposte HTTP della CDN/Netlify. Gli UTM presenti sui link non significano che GA4 o altra analisi siano installati.
+2. **Rafforzare poche pagine con domanda dimostrata:** Fortnite negozio pirata nelle lingue con impressioni, GTA 6 guida/preload, Worlds. Cercare lacune informative verificabili, aggiornamenti realmente nuovi e link contestuali; non aggiungere testo di riempimento o alterare versioni tradotte senza revisione.
+3. **Non cambiare indiscriminatamente robots, canonical o sitemap:** nei campioni di URL scansionate questi elementi risultano già coerenti; il problema attuale non è dimostrato essere di accessibilità.
+4. **Riesaminare GSC dopo il normale ritardo dati**, confrontando periodi identici e distinguendo le metriche Search Console (impressioni/clic) dallo stato di indicizzazione (ispezione).
+5. **Non proclamare recupero di traffico** finché GSC non mostri trend stabili; non è disponibile una causa verificata del crollo del 12/11.
+
+**Riferimenti:** [Google Search Console](https://search.google.com/search-console), [progetto OpenSEO](https://app.openseo.so/p/8d399ae4-3611-4c7e-a913-cb5fc1f49af0), [report precedente 18/11](https://app.openseo.so/p/8d399ae4-3611-4c7e-a913-cb5fc1f49af0).

@@ -113,3 +113,14 @@ Le protezioni integrate comprendono: sanitizer HTML dopo `marked` (PR #31), gate
 **Prossima azione:** il 18 novembre verificare evidenze del ciclo 06:34 → 07:20, classi editoriali, segnale unico, test/preview e traduzioni; poi valutare eventuale PR giornaliera con autorizzazione editoriale di Gianmarco. In parallelo controllare dal vivo sitemap News, risposte HTTP e indicizzazione con strumenti che possano accedere al dominio.
 
 **Ripresa in una nuova chat:** «Riprendiamo Soffia Cartuccia 2.0. Controlla `COLLABORAZIONE.md` e `STATO-PROGETTO.md` in `gbrisiko91/premi-start`; verifica stato GitHub, PR, CI e Netlify prima di agire. Non riaprire attività completate. Prosegui dalla prima priorità aperta senza auto-merge non autorizzato.»
+
+
+## Aggiornamento 20/11/2026 sera — Instagram e Search Console
+
+**Stato GitHub verificato prima della PR #58:** `main` a `1e3c330c0ad73e0d2eca4b17036c0f9d3d91464a`, PR #55 e #57 integrate, nessuna PR aperta al momento di partenza. La homepage pubblica mostrava i tre articoli del 20/11 e `/sfondi/` mostrava il traguardo 2.500 follower. GitHub Actions sull'ultimo merge #57 era verde; l'endpoint `/api/statistiche-sfondi` non è stato convalidato con una richiesta HTTP diretta, quindi non dichiarare la dashboard collaudata in produzione.
+
+**Nuova [PR #58](https://github.com/gbrisiko91/premi-start/pull/58):** landing `/instagram/` con il regalo dei 2.500 follower in primo piano, tre articoli GTA 6 realmente pubblicati senza doppioni, nuove uscite e rubriche, CSS per mobile e test automatici. Aggiunto un checkpoint SEO a `SEO-INDICIZZAZIONE-AUDIT.md` con dati Search Console verificati il 20/11. Nessun nuovo articolo, modifica a segreti o newsletter. **Il merge della PR #58 richiede autorizzazione del proprietario**; nuova build/preview da ricontrollare sull'ultimo commit, non confondere un job precedente con quello finale.
+
+**SEO:** la Search Console conferma un crollo delle impressioni dal 12/11; la homepage è indicizzata, ma articoli selezionati GTA 6/Fortnite/Worlds sono scoperti o scansionati senza indicizzazione. Su diversi URL scansionati robots e canonical risultano corretti: **nessuna penalizzazione dimostrata**. Prima modificare contenuti e link solo dopo revisione mirata di pagine con domanda reale; vedi report tecnico aggiornato.
+
+**Prossimo passo:** ottenere approvazione della #58 dopo CI/gate/Netlify e valutare in una PR successiva un intervento editoriale mirato sui contenuti con impressioni, coordinando Claude sulle traduzioni. Conservare separati indicatori GSC, clic sui wallpaper e potenziali dati analytics.

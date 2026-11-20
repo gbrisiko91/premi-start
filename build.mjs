@@ -730,37 +730,66 @@ function paginaConfermata() {
     corpo: `<section class="schermata-titolo"><p class="schermata-sopra">Newsletter</p><h1 class="schermata-logo"><span>Soffia</span><span>Cartuccia</span></h1><p class="schermata-sotto"><strong>${esc(n.confermataTitolo)}</strong> ${esc(n.confermataTesto)}</p><p class="confermata-azioni"><a class="tasto-start" href="${P.uscite(l)}">${esc(R[l].uscite.nome)}</a> <a class="tasto-start" href="${P.sondaggio(l)}">${esc(R[l].poll.nome)}</a> <a class="tasto-start" href="${P.home(l)}">${esc(n.torna)}</a></p></section>`,
   });
 }
-// Pagina per il link in bio di Instagram (solo italiano): le ultime notizie in grande, una per riquadro.
-// I link portano l'etichetta utm, così le statistiche separano chi arriva da Instagram.
+// Link in bio: ingresso rapido da Instagram verso regalo 2.500 follower, GTA 6 e ultime notizie.
+// UTM marcano i link condivisi: senza analytics attivi NON implicano misurazione delle visite.
 const PERCORSO_INSTAGRAM = "/instagram/";
 function paginaInstagram(lista) {
   const l = PRINCIPALE;
-  const utm = (u) => `${u}?utm_source=instagram&utm_medium=social&utm_campaign=link-in-bio`;
-  const notizie = lista.filter((a) => !a.bozza).slice(0, 12);
+  const utm = (u, campagna = "link-in-bio") =>
+    `${u}?utm_source=instagram&amp;utm_medium=social&amp;utm_campaign=${encodeURIComponent(campagna)}`;
+  const pubblici = lista.filter((a) => !a.bozza);
+  const gta6 = pubblici.filter((a) => a.tag.some((tag) => String(tag).toLowerCase() === "gta-6")).slice(0, 3);
+  // Gli approfondimenti GTA 6 evidenziati non si ripetono nell'elenco delle ultime.
+  const inPrimoPiano = new Set(gta6.map((a) => a.id));
+  const notizie = pubblici.filter((a) => !inPrimoPiano.has(a.id)).slice(0, 12);
   const [prima, ...altre] = notizie;
-  const copertina = (a, grande) => `<span class="bio-copertina${grande ? " bio-copertina-grande" : ""}" data-colore="${colore(a.categoria)}" data-arte="${varianteArte(a)}"><span class="copertina-nome" aria-hidden="true">${esc(nomeCat(l, a.categoria))}</span>${a.immagine ? img({ src: a.immagine, riserva: a.immagineRiserva, alt: "", lazy: !grande, priorita: grande }) : ""}</span>`;
-  const voce = (a) => `<li><a class="bio-voce" href="${utm(a.url)}" data-colore="${colore(a.categoria)}">${copertina(a, false)}<span class="bio-voce-testo"><span class="meta">${etichettaCatSemplice(l, a.categoria)}<time datetime="${a.data.toISOString()}">${data(l, a.data, "breve")}</time></span><span class="bio-voce-titolo">${esc(a.titolo)}</span></span></a></li>`;
+  const copertina = (a, grande) =>
+    `<span class="bio-copertina${grande ? " bio-copertina-grande" : ""}" data-colore="${colore(a.categoria)}" data-arte="${varianteArte(a)}"><span class="copertina-nome" aria-hidden="true">${esc(nomeCat(l, a.categoria))}</span>${a.immagine ? img({src: a.immagine, riserva: a.immagineRiserva, alt:"", lazy: !grande, priorita: grande}) : ""}</span>`;
+  const voce = (a) =>
+    `<li><a class="bio-voce" href="${utm(a.url)}" data-colore="${colore(a.categoria)}">${copertina(a, false)}<span class="bio-voce-testo"><span class="meta">${etichettaCatSemplice(l, a.categoria)}<time datetime="${a.data.toISOString()}">${data(l, a.data, "breve")}</time></span><span class="bio-voce-titolo">${esc(a.titolo)}</span></span></a></li>`;
   const scorciatoie = [
     [P.quiz(l), `✦ ${QUIZ[l].nome}`],
-    ...(PAGINE_FISSE.some((p) => p.lingua === l && p.id === "sfondi") ? [[P.pagina(l, "sfondi"), "🎨 Sfondi pixel"]] : []),
     [P.sondaggio(l), R[l].poll.nome],
     [P.uscite(l), R[l].uscite.nome],
     ["#newsletter", "Newsletter"],
   ].map(([u, t]) => `<a class="bio-scorciatoia" href="${u.startsWith("#") ? u : utm(u)}">${esc(t)}</a>`).join("");
+  const sfondiDisponibili = PAGINE_FISSE.some((p) => p.lingua === l && p.id === "sfondi");
+  const premio = sfondiDisponibili ? `
+    <section class="bio-premio" aria-labelledby="bio-premio-titolo">
+      <div class="bio-premio-contenuto">
+        <p class="bio-premio-eyebrow">🎮 MISSIONE 5K · LIVELLO 2.500 SBLOCCATO</p>
+        <h2 id="bio-premio-titolo">Il regalo promesso è qui.</h2>
+        <p>Tre wallpaper pixel art per il telefono. Gratis, senza registrazione: scegli il tuo preferito.</p>
+        <a class="bio-premio-azione" href="${utm(P.pagina(l,"sfondi"),"missione-5k-2500")}">🎁 Scarica i 3 sfondi gratuiti <span aria-hidden="true">→</span></a>
+      </div>
+      <img src="/sfondi/soffiacartuccia-sfondo-01-cartuccia.png"
+           width="1080" height="1920" alt="Wallpaper pixel art La cartuccia, uno dei tre regali della Missione 5K" loading="eager">
+    </section>` : "";
+  const sezioneGta = gta6.length ? `
+    <section class="bio-tema" aria-labelledby="bio-gta6-titolo">
+      <div class="bio-sezione-testa"><span class="eyebrow">SPECIALE GTA 6</span><h2 id="bio-gta6-titolo">Le notizie da non perdere</h2>
+      <p>Uscita, guide e aggiornamenti verificati: scegli cosa approfondire.</p></div>
+      <ol class="bio-lista">${gta6.map(voce).join("")}</ol>
+    </section>` : "";
   const corpo = `
 <section class="bio" aria-labelledby="t-bio">
   <header class="bio-testa">
-    <span class="eyebrow">Dal nostro Instagram</span>
-    <h1 id="t-bio">Le notizie dei post</h1>
-    <p>Tocca la notizia che hai visto su Instagram e leggila per intero.</p>
+    <span class="eyebrow">Benvenuto da Instagram</span>
+    <h1 id="t-bio">Scegli il tuo prossimo livello.</h1>
+    <p>Il premio della community, gli approfondimenti di GTA 6 e le ultime notizie gaming: tutto qui.</p>
   </header>
-  ${prima ? `<a class="bio-apertura" href="${utm(prima.url)}" data-colore="${colore(prima.categoria)}">${copertina(prima, true)}<span class="bio-apertura-testo"><span class="meta">${etichettaCatSemplice(l, prima.categoria)}<time datetime="${prima.data.toISOString()}">${data(l, prima.data, "breve")}</time></span><span class="bio-apertura-titolo">${esc(prima.titolo)}</span><span class="tasto-start">${esc(T[l].leggi || "Leggi l'articolo")}</span></span></a>` : ""}
-  <ol class="bio-lista">${altre.map(voce).join("")}</ol>
+  ${premio}
+  ${sezioneGta}
+  <section class="bio-ultime" aria-labelledby="bio-ultime-titolo">
+    <div class="bio-sezione-testa"><span class="eyebrow">ULTIME NOTIZIE</span><h2 id="bio-ultime-titolo">Leggi gli aggiornamenti</h2></div>
+    ${prima ? `<a class="bio-apertura" href="${utm(prima.url)}" data-colore="${colore(prima.categoria)}">${copertina(prima, true)}<span class="bio-apertura-testo"><span class="meta">${etichettaCatSemplice(l, prima.categoria)}<time datetime="${prima.data.toISOString()}">${data(l, prima.data, "breve")}</time></span><span class="bio-apertura-titolo">${esc(prima.titolo)}</span><span class="tasto-start">${esc(T[l].leggi || "Leggi l'articolo")}</span></span></a>` : ""}
+    <ol class="bio-lista">${altre.map(voce).join("")}</ol>
+  </section>
   <nav class="bio-scorciatoie" aria-label="Altro da Soffia Cartuccia">${scorciatoie}</nav>
   <div id="newsletter">${boxNewsletter(l)}</div>
   <p class="bio-tutte"><a class="intro-link" href="${utm(P.archivio(l))}">Tutte le notizie ↗</a></p>
 </section>`;
-  return pagina({ l, titolo: "Le notizie dei post Instagram", descrizione: "Le ultime notizie di Soffia Cartuccia, dal link in bio di Instagram.", percorso: PERCORSO_INSTAGRAM, corpo, robots: "noindex, follow", alternative: {} });
+  return pagina({ l, titolo: "Da Instagram: notizie GTA 6 e sfondi gratuiti", descrizione: "Il regalo Missione 5K da 2.500 follower, GTA 6, le ultime notizie e le rubriche di Soffia Cartuccia.", percorso: PERCORSO_INSTAGRAM, corpo, robots: "noindex, follow", alternative: {} });
 }
 
 function introduzioneIndie(l) {
