@@ -12,6 +12,13 @@ export const SFONDI = Object.freeze({
 
 export const sfondoValido = (id) => Object.hasOwn(SFONDI, id);
 
+// Firefox può omettere Origin su un sendBeacon same-origin. In tal caso
+// accettiamo solo Sec-Fetch-Site: same-origin (non richieste da altri siti).
+export const origineConsentita = (origin, site, expected) =>
+  (!site || site === "same-origin") &&
+  (origin === expected || (!origin && site === "same-origin"));
+
+
 export const giornoRoma = (d = new Date()) =>
   new Intl.DateTimeFormat("sv-SE", { timeZone: "Europe/Rome", year: "numeric", month: "2-digit", day: "2-digit" }).format(d);
 
