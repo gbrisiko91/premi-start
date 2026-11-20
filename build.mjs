@@ -736,7 +736,7 @@ const PERCORSO_INSTAGRAM = "/instagram/";
 function paginaInstagram(lista) {
   const l = PRINCIPALE;
   const utm = (u, campagna = "link-in-bio") =>
-    `${u}?utm_source=instagram&utm_medium=social&utm_campaign=${encodeURIComponent(campagna)}`;
+    `${u}?utm_source=instagram&amp;utm_medium=social&amp;utm_campaign=${encodeURIComponent(campagna)}`;
   const pubblici = lista.filter((a) => !a.bozza);
   const gta6 = pubblici.filter((a) => a.tag.some((tag) => String(tag).toLowerCase() === "gta-6")).slice(0, 3);
   // Gli approfondimenti GTA 6 evidenziati non si ripetono nell'elenco delle ultime.
