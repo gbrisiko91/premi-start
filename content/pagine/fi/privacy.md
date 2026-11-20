@@ -17,13 +17,15 @@ Rekisterinpitäjä on **{{TITOLARE}}**. Tietosuojaa koskevissa kysymyksissä voi
 ## Lyhyesti
 
 - {{NOME_SITO}} **ei käytä evästeitä** profilointiin eikä tilastointiin.
-- Emme käytä kävijäseurantaa emmekä mainontaa.
+- Emme käytä ulkoisia analytiikkapalveluja emmekä mainontaa. Laskemme vain kolmen taustakuvan latauspainikkeiden yhteenlasketut klikkaukset ilman evästeitä tai kävijätunnisteita.
 - Emme pyydä sinua rekisteröitymään emmekä kerää nimeäsi, sähköpostiasi tai muita henkilötietoja.
 - Fontit ovat omalla sivustollamme: käyntiäsi ei välitetä Google Fontsille.
 
 ## Selatessa kerättävät tiedot
 
 Sivuston palvelinympäristön tarjoaa **Netlify, Inc.**, joka palvelun toimimiseksi tallentaa automaattisesti joitakin pyyntöjen teknisiä tietoja, kuten IP-osoitteen, selaimen tyypin, pyydetyn sivun ja ajankohdan. Tietoja käytetään sivuston tarjoamiseen, sen turvallisuuden varmistamiseen ja teknisten ongelmien ratkaisemiseen, ja niitä säilytetään Netlifyn määrittämän ajan. Netlify voi käsitellä tietoja myös Yhdysvalloissa GDPR:n edellyttämin suojatoimin. Lisätietoja on [Netlifyn tietosuojaselosteessa](https://www.netlify.com/privacy/).
+
+**Taustakuvien klikkausten laskenta.** Kun painat **Lataa** taustakuvasivulla, Netlify-toiminto saa vain valitun taustakuvan tunnisteen. Tallennamme päivämäärän (Rooman aikavyöhyke) ja uuden satunnaisen koodin joka klikkaukselle, emme henkilölle. Laskentatietokanta ei tallenna IP-osoitteita, selaintietoja, evästeitä tai kävijätunnisteita. Päivä- ja kuvakohtaiset kokonaismäärät eivät tarkoita yksilöllisiä kävijöitä eivätkä vahvista latauksen valmistumista. Tietoja säilytetään niin kauan kuin niitä tarvitaan yhteisöpalkintojen arviointiin. Netlifyn yllä kuvatut tekniset lokit ovat erillisiä.
 
 Käsittelyn oikeusperuste on oikeutettu etumme tarjota sivusto turvallisesti (GDPR 6 artiklan 1 kohdan f alakohta).
 
