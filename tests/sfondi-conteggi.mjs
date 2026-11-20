@@ -1,7 +1,7 @@
 import test from "node:test";
 import { readFileSync } from "node:fs";
 import assert from "node:assert/strict";
-import { SFONDI, sfondoValido, giornoRoma, nuovaChiave, riassumiClic } from "../netlify/sfondi-conteggi.mjs";
+import { SFONDI, sfondoValido, origineConsentita, giornoRoma, nuovaChiave, riassumiClic } from "../netlify/sfondi-conteggi.mjs";
 
 test("accettiamo solo i tre sfondi esistenti", () => {
   assert.equal(Object.keys(SFONDI).length, 3);
@@ -43,4 +43,15 @@ test("i tre download originali restano presenti e lo script è caricato solo nel
   for (const nome of ["01-cartuccia", "02-mappa", "03-press-start"]) {
     assert.ok(sfondi.includes("/sfondi/soffiacartuccia-sfondo-" + nome + ".png"), nome + " deve scaricarsi direttamente");
   }
+});
+
+test("il beacon same-origin senza Origin è accettato con Fetch Metadata", () => {
+  const expected = "https://soffiacartuccia.it";
+  assert.equal(origineConsentita(null, "same-origin", expected), true);
+  assert.equal(origineConsentita(expected, "same-origin", expected), true);
+  assert.equal(origineConsentita(expected, null, expected), true);
+  assert.equal(origineConsentita(null, null, expected), false);
+  assert.equal(origineConsentita("https://maligno.example", "cross-site", expected), false);
+  assert.equal(origineConsentita(null, "cross-site", expected), false);
+  assert.equal(origineConsentita(expected, "same-site", expected), false);
 });
