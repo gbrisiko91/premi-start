@@ -17,13 +17,15 @@ The data controller is **{{TITOLARE}}**. For any privacy question you can write 
 ## In short
 
 - {{NOME_SITO}} **does not use cookies**, neither for profiling nor for statistics.
-- We don't use traffic analytics or advertising.
+- We do not use third-party traffic analytics or advertising. We only count aggregate clicks on the three wallpaper download buttons, without cookies or visitor identifiers.
 - We don't ask you to register and we don't collect your name, email or other personal data.
 - Our fonts are hosted on our own site: your visit is not shared with Google Fonts.
 
 ## Data collected while browsing
 
 The site is hosted by **Netlify, Inc.**, which automatically logs some technical data about requests in order to run the service, such as IP address, browser type, the page requested and the time. This data is used to provide the site, keep it secure and fix technical problems, and is kept for the period set by Netlify. Netlify may also process data in the United States, with the safeguards required by the GDPR for transfers to non-EU countries. More information in [Netlify's privacy policy](https://www.netlify.com/privacy/).
+
+**Wallpaper click counts.** When you press **Download** on the wallpapers page, a Netlify function receives only the selected wallpaper ID. We store the date (Rome time) and a new random event code for each click, not for each person. Our counting store does not record IP addresses, browser identifiers, cookies or visitor IDs. Results are aggregate counts by wallpaper and day: they do not identify unique visitors or prove a download completed. We retain these aggregate records while they are useful for assessing community rewards. Netlify's technical request logs, described above, are separate.
 
 The legal basis is our legitimate interest in making the site available securely (Art. 6(1)(f) GDPR).
 

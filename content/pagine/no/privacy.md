@@ -17,13 +17,15 @@ Behandlingsansvarlig er **{{TITOLARE}}**. Har du spørsmål om personvern, kan d
 ## Kort fortalt
 
 - {{NOME_SITO}} **bruker ikke informasjonskapsler (cookies)**, verken til profilering eller statistikk.
-- Vi bruker ikke trafikkanalyse eller reklame.
+- Vi bruker ikke eksterne analyseverktøy eller reklame. Vi teller bare samlede klikk på de tre knappene for nedlasting av bakgrunnsbilder, uten informasjonskapsler eller besøksidentifikatorer.
 - Vi ber deg ikke registrere deg og samler ikke inn navn, e-post eller andre personopplysninger.
 - Skrifttypene ligger på vårt eget nettsted: besøket ditt deles ikke med Google Fonts.
 
 ## Data som samles inn når du surfer
 
 Nettstedet driftes av **Netlify, Inc.**, som for å levere tjenesten automatisk logger enkelte tekniske data om forespørslene, som IP-adresse, nettlesertype, hvilken side som ble hentet og tidspunkt. Disse dataene brukes til å levere nettstedet, holde det sikkert og løse tekniske problemer, og lagres så lenge Netlify har fastsatt. Netlify kan også behandle data i USA, med de garantiene GDPR krever ved overføring til tredjeland. Mer informasjon i [Netlifys personvernerklæring](https://www.netlify.com/privacy/).
+
+**Klikktelling for bakgrunnsbilder.** Når du trykker **Last ned** på bakgrunnsbildesiden, mottar en Netlify-funksjon bare ID-en til bildet du valgte. Vi lagrer datoen (Roma-tid) og en tilfeldig kode for hvert klikk, ikke for hver person. Tellearkivet vårt lagrer ikke IP-adresser, nettleserinformasjon, informasjonskapsler eller besøksidentifikatorer. Tallene er summerte klikk per bilde og dag, ikke unike personer eller bekreftede nedlastinger. Vi oppbevarer oppføringene så lenge de er nyttige for å vurdere belønningene til fellesskapet. Netlifys tekniske logger som er beskrevet ovenfor, er separate.
 
 Behandlingsgrunnlaget er vår berettigede interesse i å gjøre nettstedet tilgjengelig på en sikker måte (GDPR art. 6 nr. 1 bokstav f).
 

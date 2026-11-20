@@ -17,13 +17,15 @@ Personuppgiftsansvarig är **{{TITOLARE}}**. Har du frågor om integritet kan du
 ## I korthet
 
 - {{NOME_SITO}} **använder inga kakor (cookies)**, varken för profilering eller statistik.
-- Vi använder inga verktyg för trafikanalys och ingen reklam.
+- Vi använder inga externa trafikanalysverktyg och ingen reklam. Vi räknar endast sammanlagda klick på de tre knapparna för att ladda ned bakgrundsbilder, utan cookies eller besökaridentifierare.
 - Vi ber dig inte registrera dig och samlar inte in namn, e-post eller andra personuppgifter.
 - Typsnitten ligger på vår egen sajt: ditt besök delas inte med Google Fonts.
 
 ## Uppgifter som samlas in när du surfar
 
 Sajten drivs av **Netlify, Inc.**, som för att kunna leverera tjänsten automatiskt loggar vissa tekniska uppgifter om förfrågningarna, till exempel IP-adress, webbläsartyp, begärd sida och tidpunkt. Uppgifterna används för att tillhandahålla sajten, hålla den säker och lösa tekniska problem, och sparas så länge Netlify har bestämt. Netlify kan även behandla uppgifter i USA, med de skyddsåtgärder som GDPR kräver vid överföring till tredjeland. Mer information finns i [Netlifys integritetspolicy](https://www.netlify.com/privacy/).
+
+**Klickräkning för bakgrundsbilder.** När du trycker på **Ladda ned** på bakgrundsbildssidan får en Netlify-funktion endast ID:t för vald bild. Vi lagrar datumet (romersk tidszon) och en slumpmässig kod för varje klick, inte för varje person. Vårt räknelager sparar inte IP-adresser, webbläsaruppgifter, cookies eller besökaridentifierare. Siffrorna är sammanlagda klick per bild och dag, inte unika personer eller bekräftade nedladdningar. Uppgifterna sparas så länge de behövs för att utvärdera community-belöningar. Netlifys tekniska begärandeloggar ovan är separata.
 
 Den rättsliga grunden är vårt berättigade intresse av att tillhandahålla sajten på ett säkert sätt (artikel 6.1 f i GDPR).
 
