@@ -3,7 +3,7 @@
  * Una chiave Blob per ogni clic impedisce di perdere incrementi concorrenti.
  */
 import { getStore, getDeployStore } from "@netlify/blobs";
-import { SFONDI, sfondoValido, giornoRoma, nuovaChiave, riassumiClic } from "../sfondi-conteggi.mjs";
+import { SFONDI, sfondoValido, origineConsentita, giornoRoma, nuovaChiave, riassumiClic } from "../sfondi-conteggi.mjs";
 
 const json = (data, code = 200) => new Response(JSON.stringify(data), {
   status: code,
@@ -44,7 +44,7 @@ export default async function sfondiStatistiche(req) {
     const origin = req.headers.get("origin");
     const site = req.headers.get("sec-fetch-site");
     // Limitazione anti-abuso best effort: una richiesta cross-site non deve incrementare il contatore.
-    if (origin !== url.origin || (site && site !== "same-origin")) return json({errore:"Origine non consentita"},403);
+    if (!origineConsentita(origin, site, url.origin)) return json({errore:"Origine non consentita"},403);
     const len = Number(req.headers.get("content-length") || 0);
     if (len > 80) return json({errore:"Richiesta troppo grande"},413);
     const id = (await req.text()).trim();
