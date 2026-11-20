@@ -10,7 +10,7 @@ export default {
   // Firma degli articoli e autore nei dati strutturati. Distinto dall’editore (Soffia Cartuccia).
   autore: "Gianmarco Buono",
   emailContatto: "redazione@soffiacartuccia.it",
-  privacyAggiornata: "2026-11-15",
+  privacyAggiornata: "2026-11-20",
   // Newsletter "Il Soffio della settimana".
   // Se "azione" è vuoto, le iscrizioni arrivano nel pannello di Netlify (Forms → newsletter).
   // Se usi un servizio di newsletter (es. Brevo), incolla qui l'indirizzo del suo modulo di iscrizione
