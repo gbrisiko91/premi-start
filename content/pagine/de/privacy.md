@@ -17,13 +17,15 @@ Verantwortlicher für die Datenverarbeitung ist **{{TITOLARE}}**. Bei Fragen zum
 ## Kurz gesagt
 
 - {{NOME_SITO}} **verwendet keine Cookies**, weder für Profiling noch für Statistiken.
-- Wir nutzen keine Reichweitenanalyse und keine Werbung.
+- Wir nutzen keine externen Analyse-Tools und keine Werbung. Wir zählen ausschließlich die aggregierten Klicks auf die drei Hintergrundbild-Downloads, ohne Cookies oder Besucherkennungen.
 - Wir verlangen keine Registrierung und erheben weder Namen noch E-Mail-Adresse noch andere personenbezogene Daten.
 - Die Schriftarten liegen direkt auf unserer Seite: Dein Besuch wird nicht an Google Fonts übermittelt.
 
 ## Beim Surfen erhobene Daten
 
 Die Seite wird von **Netlify, Inc.** gehostet, das für den Betrieb automatisch einige technische Daten der Anfragen protokolliert, etwa IP-Adresse, Browsertyp, aufgerufene Seite und Uhrzeit. Diese Daten dienen dazu, die Seite bereitzustellen, sie abzusichern und technische Probleme zu beheben, und werden so lange gespeichert, wie Netlify es vorsieht. Netlify kann Daten auch in den USA verarbeiten, mit den von der DSGVO vorgesehenen Garantien für Übermittlungen in Drittländer. Mehr dazu in der [Datenschutzerklärung von Netlify](https://www.netlify.com/privacy/).
+
+**Klickzählung für Hintergrundbilder.** Beim Klick auf **Herunterladen** erhält eine Netlify-Funktion nur die Kennung des ausgewählten Hintergrundbilds. Wir speichern das Datum (Zeitzone Rom) und einen zufälligen Code pro Klick, nicht pro Person. Unser Zählspeicher enthält weder IP-Adressen noch Browserdaten, Cookies oder Besucherkennungen. Die Zahlen sind nur aggregierte Klicks pro Bild und Tag; sie zeigen keine einzelnen Personen und bestätigen keinen abgeschlossenen Download. Die Einträge bleiben gespeichert, solange sie für die Auswertung der Community-Geschenke benötigt werden. Die oben erläuterten technischen Netlify-Protokolle sind davon unabhängig.
 
 Rechtsgrundlage ist unser berechtigtes Interesse, die Seite sicher bereitzustellen (Art. 6 Abs. 1 lit. f DSGVO).
 
