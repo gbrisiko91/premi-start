@@ -4,9 +4,11 @@ menu: "Sfondi pixel"
 slug: "sfondi"
 ordine: 50
 descrizione: "Tre sfondi pixel gratuiti di Soffia Cartuccia per lo smartphone, in formato 1080×1920: la cartuccia, la mappa del Mondo 2 e Press Start."
-sopratitolo: "Missione 5K · Sfondi pixel per la community"
-occhiello: "Un regalo per chi segue Soffia Cartuccia: tre sfondi in pixel art gratuiti da mettere sul telefono."
+sopratitolo: "Missione 5K · Livello 2.500 sbloccato!"
+occhiello: "Grazie per i 2.500 follower! Come promesso, sono sbloccati tre sfondi in pixel art gratuiti per il telefono."
 ---
+
+**2.500 FOLLOWER RAGGIUNTI! 🎮 Grazie a tutta la community di Soffia Cartuccia.** Avevamo promesso tre wallpaper gratuiti al traguardo: ora sono vostri, senza registrazione e senza costi.
 
 ## Scegli il tuo sfondo
 
