@@ -383,6 +383,7 @@ ${corpo}
  <p class="ricerca-stato" data-ricerca-stato role="status" aria-live="polite">${esc(u.searchType)}</p><ul class="ricerca-risultati" data-ricerca-risultati></ul>
 </dialog>
 <script src="/esperienza.js" defer></script>
+${percorso === "/sfondi/" ? '<script src="/sfondi-contatore.js" defer></script>' : ""}
 <script>document.addEventListener("click",function(e){document.querySelectorAll("details.lingue[open]").forEach(function(d){if(!d.contains(e.target))d.removeAttribute("open")})});</script>
 </body>
 </html>`;
