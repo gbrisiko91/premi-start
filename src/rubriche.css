@@ -118,3 +118,34 @@
 .bio-scorciatoia { display:flex; align-items:center; justify-content:center; text-align:center; min-height:3.2rem; padding:.6rem .8rem; border-radius:999px; background:#ffffff10; border:2px solid #ffffff22; font-family:var(--display); font-weight:800; font-style:italic; text-decoration:none; }
 .bio-scorciatoia:hover, .bio-scorciatoia:focus-visible { border-color:var(--viola); }
 .bio-tutte { text-align:center; margin:1.5rem 0 0; }
+
+/* Missione 5K e percorsi tematici: primo schermo utile per chi arriva da Instagram. */
+.bio-premio {
+  display:grid; grid-template-columns:minmax(0,1fr) 9rem; gap:1.25rem; align-items:center;
+  padding:1.35rem; margin:1.6rem 0 2.2rem; border-radius:22px; overflow:hidden;
+  border:2px solid var(--giallo); background:linear-gradient(125deg,#37274e,#211c40 65%);
+  box-shadow:0 14px 30px rgba(0,0,0,.18);
+}
+.bio-premio-contenuto { min-width:0; }
+.bio-premio-eyebrow { margin:0 0 .55rem; color:var(--giallo); font-size:.83rem; font-weight:900; letter-spacing:.04em; line-height:1.4; }
+.bio-premio h2 { margin:0 0 .7rem; font:italic 900 clamp(1.65rem,5vw,2.25rem)/1.08 var(--display); font-stretch:130%; }
+.bio-premio-contenuto > p:not(.bio-premio-eyebrow) { margin:0 0 1.15rem; font-size:.96rem; color:var(--testo); line-height:1.55; }
+.bio-premio img { width:100%; max-width:9rem; height:auto; aspect-ratio:9/16; object-fit:cover; border-radius:12px; image-rendering:pixelated; box-shadow:0 10px 25px #0005; }
+.bio-premio-azione { display:inline-flex; justify-content:center; align-items:center; gap:.45rem; padding:.75rem .95rem; min-height:3rem; font-family:var(--display); font-weight:900; text-align:center; text-decoration:none; border-radius:12px; background:var(--giallo); color:var(--notte); line-height:1.25; }
+.bio-premio-azione:hover, .bio-premio-azione:focus-visible { background:#ffe078; }
+.bio-tema { margin:0 0 2.15rem; }
+.bio-sezione-testa { margin:0 0 .9rem; }
+.bio-sezione-testa h2 { margin:.25rem 0 .4rem; font:italic 900 clamp(1.45rem,4vw,2rem)/1.15 var(--display); }
+.bio-sezione-testa p { margin:0; font-size:.95rem; color:var(--tenue); }
+.bio-ultime { margin:0; }
+.bio-ultime .bio-lista { margin-top:0; }
+@media (max-width:420px) {
+  .bio-premio { grid-template-columns:minmax(0,1fr) 5.5rem; gap:.85rem; padding:1rem; border-radius:16px; }
+  .bio-premio img { max-width:5.5rem; }
+  .bio-premio-azione { width:100%; font-size:.89rem; }
+  .bio-premio-eyebrow { font-size:.72rem; }
+}
+@media (max-width:340px) {
+  .bio-premio { grid-template-columns:1fr; }
+  .bio-premio img { display:none; }
+}
