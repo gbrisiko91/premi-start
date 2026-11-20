@@ -17,13 +17,15 @@ El responsable del tratamiento es **{{TITOLARE}}**. Para cualquier pregunta sobr
 ## En resumen
 
 - {{NOME_SITO}} **no usa cookies**, ni de perfilado ni estadísticas.
-- No usamos herramientas de análisis de tráfico ni publicidad.
+- No usamos servicios externos de análisis de tráfico ni publicidad. Solo contamos de forma agregada los clics en los tres botones de descarga de fondos, sin cookies ni identificadores de visitantes.
 - No te pedimos registrarte y no recogemos tu nombre, correo ni otros datos personales.
 - Las fuentes tipográficas están alojadas en nuestro propio sitio: tu visita no se comunica a Google Fonts.
 
 ## Datos recogidos durante la navegación
 
 El sitio está alojado en **Netlify, Inc.**, que para prestar el servicio registra automáticamente algunos datos técnicos de las solicitudes, como la dirección IP, el tipo de navegador, la página solicitada y la hora. Estos datos sirven para ofrecer el sitio, garantizar su seguridad y resolver problemas técnicos, y se conservan durante el tiempo previsto por Netlify. Netlify también puede tratar datos en Estados Unidos, con las garantías que exige el RGPD para las transferencias a terceros países. Más información en la [política de privacidad de Netlify](https://www.netlify.com/privacy/).
+
+**Recuento de clics en los fondos.** Al pulsar **Descargar** en la página de fondos, una función de Netlify recibe únicamente el identificador del fondo elegido. Guardamos la fecha (zona horaria de Roma) y un código aleatorio distinto por clic, no por persona. Nuestro registro de recuento no almacena direcciones IP, datos del navegador, cookies ni identificadores de visitantes. Las cifras agregadas por fondo y día no representan usuarios únicos ni confirman que una descarga se haya completado. Conservamos estos registros mientras sirvan para evaluar los regalos de la comunidad. Los registros técnicos de Netlify descritos arriba son independientes.
 
 La base jurídica es nuestro interés legítimo en ofrecer el sitio de forma segura (art. 6.1.f del RGPD).
 
