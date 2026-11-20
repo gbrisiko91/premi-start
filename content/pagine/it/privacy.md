@@ -17,13 +17,15 @@ Il titolare del trattamento è **{{TITOLARE}}**. Per qualsiasi domanda sulla pri
 ## In breve
 
 - {{NOME_SITO}} **non usa cookie**, né di profilazione né statistici.
-- Non usiamo strumenti di analisi del traffico né pubblicità.
+- Non usiamo strumenti esterni di analisi del traffico né pubblicità. Rileviamo solo il numero aggregato di clic sui pulsanti per scaricare gli sfondi, senza cookie o identificatori dei visitatori.
 - Non ti chiediamo di registrarti: l'unico dato personale che raccogliamo direttamente è l'indirizzo email, e solo se scegli di iscriverti alla newsletter.
 - I caratteri tipografici sono ospitati direttamente sul nostro sito: la tua visita non viene comunicata a Google Fonts.
 
 ## Dati raccolti durante la navigazione
 
 Il sito è ospitato da **Netlify, Inc.**, che per far funzionare il servizio registra in modo automatico alcuni dati tecnici delle richieste, come l'indirizzo IP, il tipo di browser, la pagina richiesta e l'orario. Questi dati servono a fornire il sito, a garantirne la sicurezza e a risolvere eventuali problemi tecnici, e vengono conservati per il tempo previsto da Netlify. Netlify può trattare i dati anche negli Stati Uniti, con le garanzie previste dal GDPR per i trasferimenti verso Paesi terzi. Maggiori informazioni nell'[informativa privacy di Netlify](https://www.netlify.com/privacy/).
+
+**Conteggio dei clic sugli sfondi.** Quando premi **Scarica** nella pagina degli sfondi, il sito invia a una funzione Netlify soltanto l'identificativo dello sfondo scelto. Memorizziamo la data del clic (fuso di Roma) e un codice casuale diverso per ogni clic, non per ogni persona. Nel nostro archivio di conteggio non salviamo IP, user agent, cookie o altri identificatori del visitatore. I conteggi sono mostrati soltanto in forma aggregata, per sfondo e per giorno; non indicano le persone uniche né garantiscono il completamento del download. I dati aggregati vengono conservati finché servono a misurare l'interesse per i premi della community. Restano applicabili i log tecnici gestiti da Netlify, descritti sopra.
 
 La base giuridica è il nostro legittimo interesse a rendere disponibile il sito in modo sicuro (art. 6, par. 1, lett. f del GDPR).
 
