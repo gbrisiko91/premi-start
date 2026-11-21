@@ -5,7 +5,7 @@ sommario: "Vasalius: Human Error on uusi Nintendo 64 -peli kasetilla, ensimmäis
 slug: "vasalius-human-error-nintendo-64-kickstarter"
 ---
 
-**Nintendo 64**:lle on tulossa uusi peli. Sen nimi on **Vasalius: Human Error**, ja se on ensimmäisen persoonan toimintapeli roolipelielementein, joka toimii alkuperäisellä konsolilla, kasetilla. Itsenäinen studio **The Retro Room Games** avasi joukkorahoituksen Kickstarterissa 18. marraskuuta, ja ääninäyttelijöiden joukossa on **Jon St. John**, Duke Nukemin pitkäaikainen ääninäyttelijä.
+**Nintendo 64**:lle on tulossa uusi peli. Sen nimi on **Vasalius: Human Error**, ja se on ensimmäisen persoonan toimintapeli roolipelielementein, joka on suunniteltu toimimaan alkuperäisellä konsolilla kasetilta. Itsenäinen studio **The Retro Room Games** avasi joukkorahoituksen Kickstarterissa 18. marraskuuta, ja ääninäyttelijöiden joukossa on **Jon St. John**, Duke Nukemin pitkäaikainen ääninäyttelijä.
 
 ## Vasalius: Human Error, mistä on kyse
 
