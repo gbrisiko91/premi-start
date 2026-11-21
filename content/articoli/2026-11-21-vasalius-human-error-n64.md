@@ -24,7 +24,7 @@ fonti:
     url: "https://www.kickstarter.com/projects/elland/vasalius-human-error"
 ---
 
-C'è un gioco nuovo in arrivo per il **Nintendo 64**. Si chiama **Vasalius: Human Error**, è un gioco d'azione in prima persona con elementi da gioco di ruolo e gira sulla console originale, su cartuccia. Lo studio indipendente **The Retro Room Games** ha aperto la raccolta fondi su Kickstarter il 18 novembre, e tra le voci del cast c'è **Jon St. John**, il doppiatore storico di Duke Nukem.
+C'è un gioco nuovo in arrivo per il **Nintendo 64**. Si chiama **Vasalius: Human Error**, è un gioco d'azione in prima persona con elementi da gioco di ruolo ed è progettato per funzionare sulla console originale, tramite cartuccia. Lo studio indipendente **The Retro Room Games** ha aperto la raccolta fondi su Kickstarter il 18 novembre, e tra le voci del cast c'è **Jon St. John**, il doppiatore storico di Duke Nukem.
 
 ## Vasalius: Human Error, di cosa parla
 
