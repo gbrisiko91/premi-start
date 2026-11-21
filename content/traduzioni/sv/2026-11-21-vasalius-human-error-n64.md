@@ -5,7 +5,7 @@ sommario: "Vasalius: Human Error är ett nytt Nintendo 64-spel på kassett, en f
 slug: "vasalius-human-error-nintendo-64-kickstarter"
 ---
 
-Ett nytt spel är på väg till **Nintendo 64**. Det heter **Vasalius: Human Error**, är ett actionspel i förstaperson med rollspelselement och körs på originalkonsolen, på kassett. Den oberoende studion **The Retro Room Games** startade insamlingen på Kickstarter den 18 november, och bland rösterna i rollistan finns **Jon St. John**, Duke Nukems klassiska röstskådespelare.
+Ett nytt spel är på väg till **Nintendo 64**. Det heter **Vasalius: Human Error**, är ett actionspel i förstaperson med rollspelselement och utvecklas för originalkonsolen med planerad utgivning på kassett. Den oberoende studion **The Retro Room Games** startade insamlingen på Kickstarter den 18 november, och bland rösterna i rollistan finns **Jon St. John**, Duke Nukems klassiska röstskådespelare.
 
 ## Vasalius: Human Error, vad handlar det om
 
