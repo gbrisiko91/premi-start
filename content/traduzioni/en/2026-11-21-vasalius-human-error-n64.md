@@ -5,7 +5,7 @@ sommario: "Vasalius: Human Error is a new Nintendo 64 game on cartridge, a first
 slug: "vasalius-human-error-nintendo-64-kickstarter"
 ---
 
-There is a new game on the way for the **Nintendo 64**. It is called **Vasalius: Human Error**, it is a first-person action game with role-playing elements and it runs on the original console, on cartridge. Independent studio **The Retro Room Games** opened its Kickstarter campaign on 18 November, and the voice cast includes **Jon St. John**, the long-time voice actor of Duke Nukem.
+There is a new game on the way for the **Nintendo 64**. It is called **Vasalius: Human Error**, it is a first-person action game with role-playing elements and is being developed to run on original hardware, via cartridge. Independent studio **The Retro Room Games** opened its Kickstarter campaign on 18 November, and the voice cast includes **Jon St. John**, the long-time voice actor of Duke Nukem.
 
 ## Vasalius: Human Error, what it is about
 
