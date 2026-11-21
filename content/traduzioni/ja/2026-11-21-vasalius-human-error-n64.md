@@ -5,7 +5,7 @@ sommario: "Vasalius: Human ErrorはN64向けカートリッジの新作一人称
 slug: "vasalius-human-error-n64-kickstarter"
 ---
 
-**Nintendo 64**向けに新作ゲームが登場する。タイトルは**Vasalius: Human Error**。RPG要素を備えた一人称アクションゲームで、オリジナルのゲーム機でカートリッジで動作する。インディースタジオの**The Retro Room**は11月18日にKickstarterでクラウドファンディングを開始し、声の出演者にはDuke Nukemの声を長年担当してきた**Jon St. John**が名を連ねている。
+**Nintendo 64**向けに新作ゲームが登場する。タイトルは**Vasalius: Human Error**。RPG要素を備えた一人称アクションゲームで、オリジナルのゲーム機でカートリッジで動作する。インディースタジオの**The Retro Room Games**は11月18日にKickstarterでクラウドファンディングを開始し、声の出演者にはDuke Nukemの声を長年担当してきた**Jon St. John**が名を連ねている。
 
 ## Vasalius: Human Errorのストーリー
 
