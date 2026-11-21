@@ -5,7 +5,7 @@ sommario: "Vasalius: Human Error ist ein neues Nintendo-64-Spiel auf Modul, ein 
 slug: "vasalius-human-error-nintendo-64-kickstarter"
 ---
 
-Für das **Nintendo 64** ist ein neues Spiel unterwegs. Es heißt **Vasalius: Human Error**, ist ein Ego-Actionspiel mit Rollenspielelementen und läuft auf der Originalkonsole, auf Modul. Das unabhängige Studio **The Retro Room Games** hat die Kickstarter-Kampagne am 18. November gestartet, und zu den Sprechern gehört **Jon St. John**, der langjährige Synchronsprecher von Duke Nukem.
+Für das **Nintendo 64** ist ein neues Spiel unterwegs. Es heißt **Vasalius: Human Error**, ist ein Ego-Actionspiel mit Rollenspielelementen und soll auf der Originalkonsole per Modul laufen. Das unabhängige Studio **The Retro Room Games** hat die Kickstarter-Kampagne am 18. November gestartet, und zu den Sprechern gehört **Jon St. John**, der langjährige Synchronsprecher von Duke Nukem.
 
 ## Vasalius: Human Error, worum es geht
 
