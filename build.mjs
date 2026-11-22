@@ -1071,6 +1071,18 @@ for (const l of CODICI) {
   scrivi(P.rss(l).slice(1), rss(l, lista));
 }
 
+// Identificativo pubblico dell'ultimo artefatto: distingue build e deploy reale.
+// Netlify imposta COMMIT_REF; GitHub Actions usa GITHUB_SHA. Nessun segreto incluso.
+// Il manifest serve unicamente al collaudo HTTP della versione effettivamente distribuita.
+const revisioneDeploy = process.env.COMMIT_REF || process.env.GITHUB_SHA || "local";
+const articoliDeploy = pubblicati(perLingua[PRINCIPALE]).slice(0, 3).map((a) => a.url);
+scrivi("stato-deploy.json", JSON.stringify({
+  revisione: /^[0-9a-f]{40}$/i.test(revisioneDeploy) ? revisioneDeploy.toLowerCase() : "local",
+  generatoIl: new Date().toISOString(),
+  ultimiArticoli: articoliDeploy,
+  specialeGta6: raccogliSpecialeGta6(pubblicati(perLingua[PRINCIPALE])).totale > 0,
+}) + "\n");
+
 // Gruppi per la sitemap (solo contenuti pubblici)
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.home(l) })) });
 const hubGta6 = raccogliSpecialeGta6(pubblicati(perLingua[PRINCIPALE]));
