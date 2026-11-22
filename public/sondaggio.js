@@ -76,22 +76,52 @@
     }
   });
 
-  // Pagina del sondaggio: risultati delle settimane precedenti
+  // La build pubblica già le domande storiche in HTML accessibile.
+  // Qui completiamo le schede con i conteggi reali, senza duplicarle. Se la
+  // data locale è cambiata dal deploy, aggiorniamo l'elenco senza incoerenze.
   const passati = document.querySelector("[data-sondaggi-passati]");
   if (passati) {
     const lista = passati.querySelector("[data-passati-lista]");
     const vecchi = iniziati.filter((s) => s.id !== corrente.id).reverse();
-    if (vecchi.length) {
-      passati.hidden = false;
-      for (const s of vecchi) {
-        const box = document.createElement("article");
+    const ids = new Set(vecchi.map((s) => s.id));
+    for (const box of lista.querySelectorAll("[data-sondaggio-passato]")) {
+      if (!ids.has(box.dataset.sondaggioPassato)) box.remove();
+    }
+    passati.hidden = vecchi.length === 0;
+    for (const s of vecchi) {
+      let box = [...lista.querySelectorAll("[data-sondaggio-passato]")]
+        .find((node) => node.dataset.sondaggioPassato === s.id);
+      if (!box) {
+        box = document.createElement("article");
         box.className = "sondaggio-passato";
-        box.innerHTML = `<h3>${esc(s.domanda)}</h3><p class="sondaggio-stato">${esc(D.testi.caricamento)}</p>`;
+        box.dataset.sondaggioPassato = s.id;
+        const titolo = document.createElement("h3");
+        titolo.textContent = s.domanda;
+        const opzioni = document.createElement("ul");
+        opzioni.className = "sondaggio-passato-opzioni";
+        for (const risposta of s.opzioni) {
+          const li = document.createElement("li");
+          li.textContent = risposta;
+          opzioni.appendChild(li);
+        }
+        const stato = document.createElement("p");
+        stato.className = "sondaggio-stato";
+        stato.dataset.statoPassato = "";
+        stato.hidden = true;
+        box.append(titolo,opzioni,stato);
         lista.appendChild(box);
-        chiama(s.id)
-          .then((dati) => { box.querySelector(".sondaggio-stato").outerHTML = risultati(s, dati.conti, dati.scelta ?? memoria.leggi(s.id)); })
-          .catch(() => { box.querySelector(".sondaggio-stato").textContent = D.testi.errore; });
       }
+      const stato = box.querySelector("[data-stato-passato]");
+      stato.hidden = false;
+      stato.textContent = D.testi.caricamento;
+      chiama(s.id)
+        .then((dati) => {
+          if (!box.isConnected) return;
+          box.querySelector(".sondaggio-passato-opzioni")?.remove();
+          stato.outerHTML = risultati(s, dati.conti, dati.scelta ?? memoria.leggi(s.id));
+        })
+        .catch(() => { if (stato.isConnected) stato.textContent = D.testi.errore; });
     }
   }
+
 })();

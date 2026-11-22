@@ -20,6 +20,7 @@ import { generaSitemapNews } from "./strumenti/sitemap-news.mjs";
 import { LINGUE, PRINCIPALE, T } from "./lingue.mjs";
 import { U } from "./novita.mjs";
 import { QUIZ } from "./quiz.mjs";
+import { QUIZ_ARCHIVIO_LABEL } from "./strumenti/quiz-archivio-label.mjs";
 import { GUIDE_RUBRICHE } from "./strumenti/guide-rubriche.mjs";
 import { META_RUBRICHE } from "./strumenti/meta-rubriche.mjs";
 import { R, USCITE, SONDAGGI, NEWSLETTER } from "./rubriche.mjs";
@@ -603,6 +604,22 @@ function guidaRubrica(l, tipo) {
   const links = tipo === "quiz" ? [[P.indie(l), U[l].indieTitle], [P.uscite(l), R[l].uscite.nome]] : [[P.archivio(l), T[l].archivio], [P.quiz(l), QUIZ[l].nome]];
   return `<section class="blocco-novita guida-rubrica" aria-labelledby="${id}"><h2 id="${id}" class="titolo-sezione">${esc(titolo)}</h2><div class="testo"><p>${esc(testo)}</p><p>${esc(nota)}</p></div><div class="mondi-griglia">${links.map(([href,label]) => `<a class="mondo-link" href="${href}"><strong>${esc(label)}</strong></a>`).join("")}</div></section>`;
 }
+// Tre esempi reali e consultabili anche senza JavaScript. Non sostituiscono
+// né anticipano la domanda quotidiana, che continua a essere scelta dal client.
+function archivioQuizStatico(l) {
+  const q = QUIZ[l];
+  const t = QUIZ_ARCHIVIO_LABEL[l];
+  const campioni = q.items.slice(-3);
+  if (!campioni.length) return "";
+  return `<section class="quiz-archivio" aria-labelledby="quiz-archivio-titolo">
+    <h2 id="quiz-archivio-titolo">${esc(t.title)}</h2>
+    <p>${esc(t.intro)}</p>
+    <ul class="quiz-archivio-lista">${campioni.map(([domanda, risposte, spiegazione]) =>
+      `<li><details><summary>${esc(domanda)}</summary><div class="quiz-archivio-risposta"><p><strong>${esc(t.answer)}: ${esc(risposte[0])}</strong></p><p>${esc(spiegazione)}</p></div></details></li>`
+    ).join("")}</ul>
+  </section>`;
+}
+
 function paginaQuiz(l) {
   const q = QUIZ[l];
   const dati = JSON.stringify(q).replace(/</g, "\\u003c");
@@ -623,6 +640,7 @@ function paginaQuiz(l) {
     <p class="quiz-torna"><a class="intro-link" href="${P.archivio(l)}">${esc(q.altro)} ↗</a></p>
   </section>
   ${guidaRubrica(l, "quiz")}
+  ${archivioQuizStatico(l)}
   <script id="quiz-dati" type="application/json">${dati}</script>
   <script src="/quiz.js" defer></script>`;
   return pagina({ l, titolo:q.nome, titoloSeo: TITOLI_QUIZ_SEO[l] || "", descrizione:META_RUBRICHE[l].quiz, percorso:P.quiz(l),corpo,alternative:tuttePerLingua(P.quiz) });
@@ -707,12 +725,30 @@ function bloccoSondaggio(l) {
   return `<section class="blocco-novita sondaggio-box" aria-labelledby="t-sondaggio"><div class="blocco-heading"><div><span class="eyebrow">07 / Poll</span><h2 id="t-sondaggio" class="titolo-sezione">${esc(p.nome)}</h2><p>${esc(p.intro)}</p></div><a class="intro-link" href="${P.sondaggio(l)}">${esc(p.passati)} ↗</a></div>${formSondaggio(l, sondaggioCorrente())}</section>
 ${datiSondaggi(l)}`;
 }
+// Archivio storico leggibile senza JavaScript: domande e opzioni realmente
+// già pubblicate. I conteggi non sono inventati; la funzione client li carica.
+function archivioSondaggiStatico(l) {
+  const p = R[l].poll;
+  const corr = sondaggioCorrente();
+  const vecchi = SONDAGGI.filter((s) => s.dal <= OGGI && s.id !== corr.id).reverse();
+  return `<section class="sondaggi-passati" data-sondaggi-passati${vecchi.length ? "" : " hidden"} aria-labelledby="t-passati">
+    <h2 id="t-passati">${esc(p.passati)}</h2>
+    <div class="sondaggi-passati-lista" data-passati-lista>${vecchi.map((s) => {
+      const [domanda, risposte] = s.testi[l];
+      return `<article class="sondaggio-passato" data-sondaggio-passato="${esc(s.id)}">
+        <h3>${esc(domanda)}</h3>
+        <ul class="sondaggio-passato-opzioni">${risposte.map((risposta) => `<li>${esc(risposta)}</li>`).join("")}</ul>
+        <p class="sondaggio-stato" data-stato-passato hidden></p>
+      </article>`;
+    }).join("")}</div>
+  </section>`;
+}
 function paginaSondaggio(l) {
   const p = R[l].poll;
   const corpo = `<section class="rubrica-pagina">
   <header class="rubrica-testa"><span class="eyebrow">${esc(config.nome)} / Poll</span><h1>${esc(p.nome)}</h1><p>${esc(p.intro)}</p></header>
   <div class="sondaggio-box">${formSondaggio(l, sondaggioCorrente())}</div>
-  <section class="sondaggi-passati" data-sondaggi-passati hidden aria-labelledby="t-passati"><h2 id="t-passati">${esc(p.passati)}</h2><div class="sondaggi-passati-lista" data-passati-lista></div></section>
+  ${archivioSondaggiStatico(l)}
 </section>
 ${guidaRubrica(l, "poll")}
 ${datiSondaggi(l)}`;
