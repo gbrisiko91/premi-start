@@ -143,3 +143,13 @@ Le protezioni integrate comprendono: sanitizer HTML dopo `marked` (PR #31), gate
 **PR #63:** nuovo manifest pubblico `/stato-deploy.json` (SHA commit e ultime tre URL italiane, senza dati personali); workflow GitHub `Verifica pubblicazione reale Netlify` che, **dopo ogni nuovo push su main**, controlla tramite HTTP il commit realmente distribuito, home, Instagram, sfondi, ultimi articoli, Speciale GTA 6, canonical, robots.txt e sitemap. Nuovi test nella suite; nessuna dipendenza, segreto o integrazione invasiva. Il workflow può risultare rosso in caso di deploy Netlify lento/non aggiornato: è una **diagnostica**, non un auto-rollback; se rosso controllare deploy Netlify e commit prima di cambiare file. Con merge successivo si attiva il workflow, quindi chiedere approvazione esplicita a Gianmarco prima di integrarla.
 
 **Attività successive:** attendere CI/gate/preview sull'HEAD della PR #63; chiedere approvazione rilascio; usare la prima esecuzione post-merge per confermare il sito pubblico. Per il crollo Google verificare anche i rapporti completi *Indicizzazione*, *Statistiche di scansione*, *Azioni manuali* e *Sicurezza* in Search Console; non applicare `noindex`, modifiche canonical o riscritture editoriali indiscriminate. Coordinare Claude per revisioni mirate alle pagine Fortnite che avevano domanda effettiva.
+
+## Aggiornamento 22/11/2026 — descrizioni SEO rubriche (PR successiva alla #65)
+
+**Stato di partenza:** `main` a `33cc154536afa3c439cf5a23ebca54396103acdd`, PR #65 integrata; build e verifica HTTP del deploy entrambe verdi, nessuna PR aperta.
+
+**Nuova PR tecnica:** metadati descrittivi localizzati per quiz, indie, sondaggio, autore e calendario uscite nelle **nove lingue**. Le 45 descrizioni riassumono funzionalità effettivamente presenti, sono distinte per pagina e non alterano H1, copy visibile, articoli o traduzioni di Claude. Test su lunghezza, canonical, robots, lingua e testo HTML; nessuna nuova dipendenza.
+
+**Motivo verificato:** audit OpenSEO del 22/11/2026, limitato a 50 pagine, segnala **27 meta description brevi** prevalentemente su rubriche e profili; in un sottoinsieme segnala 8 pagine quiz/sondaggi come *thin content*. Questa PR risolve solo la descrizione del risultato, **non** aggiunge testo fittizio né cambia indicizzabilità delle pagine thin. Google può ignorare il meta description e formare lo snippet da altre sezioni.
+
+**Attenzione:** il calo GSC dal 12/11 resta senza causa dimostrata. Le modifiche ai meta tag non sono presentate come soluzione al crollo, né garantiscono ranking/index. **Non eseguire merge prima di approvazione esplicita del proprietario**. Claude mantiene proprietà dei contenuti e delle traduzioni degli articoli.
