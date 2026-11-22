@@ -161,3 +161,19 @@ Le protezioni integrate comprendono: sanitizer HTML dopo `marked` (PR #31), gate
 **Intervento:** il quiz mostra nell'HTML tre esempi reali dalla banca dati esistente, con risposta e spiegazione dietro elementi `<details>`, senza alterare la domanda quotidiana gestita da `public/quiz.js`. La pagina sondaggi mostra direttamente in HTML domande e opzioni delle settimane passate, già pubblicate e localizzate in nove lingue. `public/sondaggio.js` usa e aggiorna le schede preesistenti con **conteggi effettivi dal backend**, senza ripeterle, e gestisce il cambio della domanda corrente quando la data locale avanza rispetto all'ultima build. In assenza di JavaScript si leggono le scelte storiche, **non** vengono attribuiti numeri di voti inesistenti.
 
 **Vincoli:** non modificare testi editoriali di Claude, dati reali del voto, `netlify/functions/sondaggio.mjs`, privacy, cookies o API. Test HTML delle nove lingue, canonical e robots invariati. L'audit OpenSEO del 22/11 ha segnalato alcune pagine quiz/sondaggi come `thin-content`, ma questo intervento mira all'utilità per i lettori; non costituisce garanzia di superamento delle soglie del crawler o di recupero delle impressioni. Verificare CI/gate/preview sull'ultimo HEAD e chiedere approvazione esplicita prima del merge.
+
+## Revisione mirata 22/11/2026 — Fortnite SV e GTA 6 preload EN (PR editoriale)
+
+**Partenza confermata:** `main` a `6197b8d265c1b5be79cfbd661511a52ca05c4246`, PR #67 integrata; build e verifica HTTP Netlify verdi; zero PR aperte prima dell'intervento. La issue #68 contiene il checkpoint operativo della chat; la issue #50 conserva l'indagine GSC.
+
+**Intervento proposto, da controllare con Claude:** due sole traduzioni, **Fortnite Pirate Shop Token in svedese (SV)** e **GTA 6 preload in inglese (EN)**; nessuna modifica all'originale italiano, altre traduzioni, infrastruttura di deploy o API. Fortnite SV: nuovo angle SEO su probabilità e reperimento, FAQ che distinguono stima community (1/700.000 forzieri) da dati ufficiali **non disponibili**, divieto di compravendita account con fonte Epic. GTA 6 EN: corregge il presente/futuro di date ormai passate (preload 10/11, uscita 19/11), precisa **fino a 212 GB per il preload a seconda del dispositivo**, introduce fonti primarie Rockstar e corregge un link a The Duskbloods verso la versione EN.
+
+**Verifiche primarie (22/11):**
+- Rockstar Newswire 3/11: https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10
+- Rockstar Newswire 10/11: https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now
+- Rockstar Newswire 19/11: https://www.rockstargames.com/newswire/article/39akk424a9oo53/grand-theft-auto-vi-now-available
+- Epic Games support: https://www.epicgames.com/help/c-34254770/c-Fortnite_BillingSupport/a14738255?lang=en-US (acquisto/vendita/condivisione di account non consentiti).
+
+**Misurazioni storiche:** GSC 23/10–19/11: Fortnite SV 423 impressioni, 1 clic (CTR 0,24%; posizione media 7,7); GTA 6 preload EN 107 impressioni, 1 clic. Attuale URL Inspection: entrambe `Crawled - currently not indexed`, canonical auto-referenziale. **Non** equiparare il CTR storico con lo stato di indicizzazione attuale e non aspettarsi che cambiare meta tag garantisca il ritorno in Google.
+
+**Processo:** questa PR è una **proposta editoriale per revisione Claude + ChatGPT**, non dà permesso a pubblicare da sola. Verificare correttezza idiomatica svedese/inglese, fonti, link e file; passare `npm test`, gate e Netlify preview. Il proprietario approva il merge **esplicitamente**; poi controllare CI e HTTP produzione. Non sovrapporre altra PR sugli stessi due file senza coordinamento.
