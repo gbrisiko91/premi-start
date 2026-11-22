@@ -14,6 +14,7 @@ import { sanificaHtml } from "./strumenti/html-sicuro.mjs";
 import config from "./sito.config.mjs";
 import { validaArticolo, rimuoviNote } from "./strumenti/verifica-editoriale.mjs";
 import { selezionaCorrelati } from "./strumenti/articoli-correlati.mjs";
+import { raccogliSpecialeGta6 } from "./strumenti/speciale-gta6.mjs";
 import { selezionaRimando, TESTI_PERCORSI } from "./strumenti/percorsi-editoriali.mjs";
 import { generaSitemapNews } from "./strumenti/sitemap-news.mjs";
 import { LINGUE, PRINCIPALE, T } from "./lingue.mjs";
@@ -52,6 +53,7 @@ const P = {
   categoria: (l, k) => `${pre(l)}/${T[l].seg.categoria}/${k}/`,
   archivio: (l) => `${pre(l)}/${T[l].seg.archivio}/`,
   indie: (l) => `${pre(l)}/indie/`,
+  specialeGta6: () => "/speciale-gta-6/",
   autore: (l) => `${pre(l)}/autore/gianmarco-buono/`,
   rss: (l) => `${pre(l)}/rss.xml`,
   quiz: (l) => `${pre(l)}/quiz/`,
@@ -459,6 +461,12 @@ function home(l, articoli) {
   for (const a of retro) mostrati.add(a.id);
   const archivio = resto.filter(a=>!mostrati.has(a.id)).slice(0,config.articoliPerPagina);
   const mondi = Object.keys(config.categorie).map((k)=>`<a class="mondo-link" data-colore="${colore(k)}" href="${P.categoria(l,k)}"><strong>${esc(nomeCat(l,k))}</strong><span>${esc(T[l].categorie[k]?.descrizione || config.categorie[k].descrizione)}</span></a>`).join("");
+  const richiamoGta6 = l === PRINCIPALE && articoli.some(a => !a.bozza && a.tag.includes("gta-6"))
+    ? `<aside class="speciale-gta6-home" aria-label="Percorso GTA 6">
+      <span><small>SPECIALE / GRAND THEFT AUTO VI</small><strong>GTA 6: guide e aggiornamenti in un unico posto</strong></span>
+      <a href="${P.specialeGta6()}">Esplora lo speciale →</a>
+    </aside>`
+    : "";
   const corpo = `
 <div class="intro-ritmo"><div><span class="eyebrow">${esc(config.nome)}</span><p>${esc(t.motto)}</p></div><a class="intro-link" href="${P.archivio(l)}">${esc(u.viewArchive)} ↗</a></div>
 <section class="eroe${apertura.immagine ? " eroe-con-arte" : ""}" data-colore="${colore(apertura.categoria)}" aria-labelledby="t-apertura">
@@ -476,6 +484,7 @@ function home(l, articoli) {
   </aside>
 </section>
 ${ultime.length ? `<section class="flusso homepage-ultime" aria-labelledby="t-ultime"><div class="blocco-heading"><div><span class="eyebrow">01 / ${esc(config.nome)}</span><h2 id="t-ultime" class="titolo-sezione">${esc(t.ultime)}</h2></div><a class="intro-link" href="${P.archivio(l)}">${esc(u.viewAll)} ↗</a></div><div class="griglia">${ultime.map(scheda).join("")}</div></section>` : ""}
+${richiamoGta6}
 ${digest.length ? `<section class="blocco-novita" aria-labelledby="t-digest"><div class="blocco-heading"><div><span class="eyebrow">02 / ${esc(u.digest)}</span><h2 id="t-digest" class="titolo-sezione">${esc(u.digest)}</h2><p>${esc(u.digestLead)}</p></div></div><div class="digest-griglia">${digest.map((a,i)=>`<article class="digest-voce"><span class="digest-numero" aria-hidden="true">0${i+1}</span><h3><a href="${a.url}">${esc(a.titolo)}</a></h3><p>${esc(a.sommario)}</p></article>`).join("")}</div></section>` : ""}
 ${scopertaIndie ? `<section class="blocco-novita indie-focus" aria-labelledby="t-indie"><div class="blocco-heading"><div><span class="eyebrow">03 / Indie</span><h2 id="t-indie" class="titolo-sezione">${esc(u.indieTitle)}</h2><p>${esc(u.indieLead)}</p></div><a class="intro-link" href="${P.indie(l)}">${esc(u.viewAll)} ↗</a></div><article class="indie-focus-card" data-colore="${colore(scopertaIndie.categoria)}"><a class="indie-focus-cover" href="${scopertaIndie.url}" aria-label="${esc(scopertaIndie.titolo)}">${scopertaIndie.immagine ? img({src:scopertaIndie.immagine,riserva:scopertaIndie.immagineRiserva,alt:scopertaIndie.altImmagine}) : `<span class="indie-focus-fallback">${esc(u.indieTitle)}</span>`}</a><div class="indie-focus-copy"><p class="meta">${etichettaCat(l,scopertaIndie.categoria)}<time datetime="${scopertaIndie.data.toISOString()}">${data(l,scopertaIndie.data,"breve")}</time></p><h3><a href="${scopertaIndie.url}">${esc(scopertaIndie.titolo)}</a></h3><p>${esc(scopertaIndie.sommario)}</p><a class="intro-link" href="${scopertaIndie.url}">${esc(t.leggi)} ↗</a></div></article></section>` : ""}
 ${retro.length ? `<section class="blocco-novita" aria-labelledby="t-retro"><div class="blocco-heading"><div><span class="eyebrow">04 / Retro</span><h2 id="t-retro" class="titolo-sezione">${esc(u.retro)}</h2><p>${esc(u.retroLead)}</p></div><a class="intro-link" href="${P.categoria(l,"retro")}">${esc(u.viewAll)} ↗</a></div><div class="griglia">${retro.map(scheda).join("")}</div></section>` : ""}
@@ -503,6 +512,11 @@ function paginaArticolo(a, stessaLingua, versioni) {
          <p>${esc(rimando.tipo === "gta6" ? testiRimando.gtaDesc : testiRimando.indieDescBox)}</p>
          <a href="${rimandoUrl}">${esc(rimando.tipo === "gta6" ? testiRimando.gtaCta : testiRimando.indieCta)} →</a>
        </aside>`
+    : "";
+  const linkSpeciale = !a.bozza && l === PRINCIPALE && a.tag.some(t => String(t).toLowerCase() === "gta-6")
+    ? `<nav class="speciale-gta6-rimando" aria-label="Tutte le notizie GTA 6">
+      <a href="${P.specialeGta6()}">🎮 Altri aggiornamenti e guide nello Speciale GTA 6 →</a>
+    </nav>`
     : "";
   const fonti = a.fonti.length
     ? `<section class="fonti" aria-labelledby="t-fonti"><div class="fonti-testa"><h2 id="t-fonti">${esc(t.fonti)}</h2><span class="fonti-contatore">${a.fonti.length} ${esc(u.sourcesConsulted)}</span></div><ul>${a.fonti
@@ -556,6 +570,7 @@ function paginaArticolo(a, stessaLingua, versioni) {
   <div class="testo">${a.html}</div>
   ${notaTraduzione}
   ${boxRimando}
+  ${linkSpeciale}
   ${a.tag.length ? `<p class="tag">${a.tag.map((x) => `<span>#${esc(x)}</span>`).join("")}</p>` : ""}
   ${a.bozza ? "" : `<div class="like-fine"><p>${esc(t.tiPiaciuta)}</p>${tastoLike(a)}</div>`}
   ${condivisione(a)}
@@ -730,6 +745,62 @@ function paginaConfermata() {
     corpo: `<section class="schermata-titolo"><p class="schermata-sopra">Newsletter</p><h1 class="schermata-logo"><span>Soffia</span><span>Cartuccia</span></h1><p class="schermata-sotto"><strong>${esc(n.confermataTitolo)}</strong> ${esc(n.confermataTesto)}</p><p class="confermata-azioni"><a class="tasto-start" href="${P.uscite(l)}">${esc(R[l].uscite.nome)}</a> <a class="tasto-start" href="${P.sondaggio(l)}">${esc(R[l].poll.nome)}</a> <a class="tasto-start" href="${P.home(l)}">${esc(n.torna)}</a></p></section>`,
   });
 }
+// Raccolta tematica italiana: articoli editoriali già pubblicati, ordinati e senza doppioni.
+function paginaSpecialeGta6(lista) {
+  const l = PRINCIPALE;
+  const { totale, guide, notizie, ultimoAggiornamento } = raccogliSpecialeGta6(lista);
+  if (!totale) return null;
+  const percorso = P.specialeGta6();
+  const guida = (a, i) => `<li class="speciale-gta6-guida">
+    <a href="${a.url}"><span class="speciale-gta6-numero" aria-hidden="true">0${i + 1}</span>
+    <span><small>${esc(nomeCat(l, a.categoria))} · ${data(l, a.data, "breve")}</small>
+    <strong>${esc(a.titolo)}</strong><span class="speciale-gta6-sommario">${esc(a.sommario)}</span></span>
+    <span class="speciale-gta6-freccia" aria-hidden="true">→</span></a></li>`;
+  const notizia = (a) => `<li><a class="speciale-gta6-notizia" href="${a.url}">
+    <time datetime="${a.data.toISOString()}">${data(l, a.data, "breve")}</time>
+    <span>${esc(a.titolo)}</span><span aria-hidden="true">→</span></a></li>`;
+  const contenuti = [...guide, ...notizie];
+  const dati = {
+    "@context": "https://schema.org", "@type": "CollectionPage",
+    name: "Speciale GTA 6 – Notizie e guide",
+    url: urlAssoluto(percorso),
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: contenuti.map((a, i) => ({
+        "@type": "ListItem", position: i + 1, name: a.titolo, url: urlAssoluto(a.url)
+      }))
+    }
+  };
+  const corpo = `<div class="speciale-gta6">
+  <nav class="briciole" aria-label="Percorso"><a href="/">Home</a><span aria-hidden="true">/</span><span>Speciale GTA 6</span></nav>
+  <header class="speciale-gta6-testa">
+    <span class="eyebrow">SPECIALE / GRAND THEFT AUTO VI</span>
+    <h1 id="gta6-speciale-titolo">GTA 6, tutto in un posto.</h1>
+    <p>Guide pratiche, aggiornamenti e notizie su Grand Theft Auto VI. Il gioco è arrivato su PS5 e Xbox il 19 novembre 2026: qui trovi le informazioni utili per orientarti, con collegamenti agli articoli e alle loro fonti.</p>
+    <div class="speciale-gta6-info"><span>${totale} articoli</span>${ultimoAggiornamento ? `<span>Ultimo aggiornamento: <time datetime="${ultimoAggiornamento.toISOString()}">${data(l, ultimoAggiornamento, "lunga")}</time></span>` : ""}</div>
+    <p class="speciale-gta6-metodo">Le notizie distinguono le comunicazioni ufficiali da rumor, segnalazioni e previsioni. Apri ciascun articolo per consultare le fonti e capire che cosa è confermato.</p>
+  </header>
+  ${guide.length ? `<section class="speciale-gta6-sezione" aria-labelledby="gta6-guide-titolo">
+    <div class="bio-sezione-testa"><span class="eyebrow">COMINCIA DA QUI</span><h2 id="gta6-guide-titolo">Le guide essenziali</h2>
+    <p>Uscita, disponibilità e dati del lancio: il percorso più rapido per iniziare.</p></div>
+    <ol class="speciale-gta6-guide">${guide.map(guida).join("")}</ol>
+  </section>` : ""}
+  <section class="speciale-gta6-sezione" aria-labelledby="gta6-news-titolo">
+    <div class="bio-sezione-testa"><span class="eyebrow">AGGIORNAMENTI</span><h2 id="gta6-news-titolo">Notizie e approfondimenti</h2>
+    <p>Le altre pubblicazioni, dalla più recente: ogni collegamento porta a un articolo già pubblicato.</p></div>
+    <ol class="speciale-gta6-notizie">${notizie.map(notizia).join("")}</ol>
+  </section>
+  <p class="speciale-gta6-fine"><a class="intro-link" href="${P.archivio(l)}">Esplora tutte le notizie gaming →</a></p>
+  <script type="application/ld+json">${JSON.stringify(dati).replace(/</g, "\\u003c")}</script>
+</div>`;
+  return pagina({
+    l, titolo: "Speciale GTA 6: notizie, guide e aggiornamenti",
+    titoloSeo: "GTA 6: notizie, guide e aggiornamenti",
+    descrizione: "Tutte le notizie e le guide di Soffia Cartuccia su GTA 6: lancio, vendite, curiosità e aggiornamenti, con fonti e distinzione tra conferme e rumor.",
+    percorso, corpo, alternative: {},
+  });
+}
+
 // Link in bio: ingresso rapido da Instagram verso regalo 2.500 follower, GTA 6 e ultime notizie.
 // UTM marcano i link condivisi: senza analytics attivi NON implicano misurazione delle visite.
 const PERCORSO_INSTAGRAM = "/instagram/";
@@ -748,6 +819,7 @@ function paginaInstagram(lista) {
   const voce = (a) =>
     `<li><a class="bio-voce" href="${utm(a.url)}" data-colore="${colore(a.categoria)}">${copertina(a, false)}<span class="bio-voce-testo"><span class="meta">${etichettaCatSemplice(l, a.categoria)}<time datetime="${a.data.toISOString()}">${data(l, a.data, "breve")}</time></span><span class="bio-voce-titolo">${esc(a.titolo)}</span></span></a></li>`;
   const scorciatoie = [
+    ...(gta6.length ? [[P.specialeGta6(), "🎮 Speciale GTA 6"]] : []),
     [P.quiz(l), `✦ ${QUIZ[l].nome}`],
     [P.sondaggio(l), R[l].poll.nome],
     [P.uscite(l), R[l].uscite.nome],
@@ -1001,6 +1073,12 @@ for (const l of CODICI) {
 
 // Gruppi per la sitemap (solo contenuti pubblici)
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.home(l) })) });
+const hubGta6 = raccogliSpecialeGta6(pubblicati(perLingua[PRINCIPALE]));
+if (hubGta6.totale) {
+  scriviPagina(P.specialeGta6(), paginaSpecialeGta6(perLingua[PRINCIPALE]));
+  gruppiSitemap.push({ versioni: [{ lingua: PRINCIPALE, url: P.specialeGta6() }],
+    lastmod: hubGta6.ultimoAggiornamento.toISOString().slice(0, 10) });
+}
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.quiz(l) })) });
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.uscite(l) })) });
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.sondaggio(l) })) });

@@ -124,3 +124,13 @@ Le protezioni integrate comprendono: sanitizer HTML dopo `marked` (PR #31), gate
 **SEO:** la Search Console conferma un crollo delle impressioni dal 12/11; la homepage è indicizzata, ma articoli selezionati GTA 6/Fortnite/Worlds sono scoperti o scansionati senza indicizzazione. Su diversi URL scansionati robots e canonical risultano corretti: **nessuna penalizzazione dimostrata**. Prima modificare contenuti e link solo dopo revisione mirata di pagine con domanda reale; vedi report tecnico aggiornato.
 
 **Prossimo passo:** ottenere approvazione della #58 dopo CI/gate/Netlify e valutare in una PR successiva un intervento editoriale mirato sui contenuti con impressioni, coordinando Claude sulle traduzioni. Conservare separati indicatori GSC, clic sui wallpaper e potenziali dati analytics.
+
+## Aggiornamento 22/11/2026 — hub Speciale GTA 6 (PR #61)
+
+**Stato di partenza verificato:** `main` a `4e432eda3e25d9a598563d45bd57847627c14aa0` dopo la pubblicazione autorizzata della PR #60 (3 articoli del 22/11, 24 traduzioni); nessuna PR aperta prima dell'intervento. La homepage pubblica mostrava effettivamente i tre articoli del 22/11 e `/sfondi/` mostrava i download della Missione 5K. L'accesso web automatico a `/instagram/` e `/api/statistiche-sfondi` non è stato conclusivo: **non dichiarare guasti o funzionamento HTTP confermato** senza un controllo dal browser/Netlify.
+
+**Nuova [PR #61](https://github.com/gbrisiko91/premi-start/pull/61):** pagina statica italiana `/speciale-gta-6/` che raccoglie **solo articoli GTA 6 pubblicati** e separa tre guide chiave dagli aggiornamenti, senza duplicati, link inventati o copie di bozze; introduzione editoriale con distinzione fra notizie ufficiali e rumor. Collega l'hub dalla homepage *dopo le ultime notizie*, dalla landing Instagram e dagli articoli italiani taggati GTA 6; include `CollectionPage` / `ItemList` JSON-LD, canonical, sitemap, CSS responsive e test dedicati. Altre lingue **non modificate** per evitare traduzioni mancanti o interfacce non localizzate. Nessuna modifica a contenuti di Claude, chiavi, newsletter, cookie o automazioni.
+
+**Obiettivo:** navigazione più utile e collegamenti interni coerenti; **non** è una correzione dimostrata del calo Google e non garantisce l'indicizzazione. Dopo l'eventuale rilascio controllare HTTP della pagina, link, struttura mobile e Google Search Console. **No auto-merge:** ottenere approvazione esplicita di Gianmarco e controllare build, gate e preview sull'ultimo HEAD.
+
+**Per Claude:** mantenere il tag `gta-6` soltanto sugli articoli pertinenti; la raccolta viene aggiornata automaticamente in fase di build. Non intervenire sul medesimo `build.mjs`/CSS condiviso in una PR concorrente senza coordinamento.
