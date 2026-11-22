@@ -2,6 +2,7 @@
 titolo: "Fortnite Pirate Shop Token: hur hittar man den och hur sällsynt är den?"
 titolo_seo: "Fortnite Pirate Shop Token: hur stor är chansen?"
 sommario: "Hur får man Pirate Shop Token i Fortnite, hur sällsynt är den och hur många har hittat den? Epic har inte bekräftat några siffror. Kontoköp bryter mot reglerna."
+aggiornato: 2026-11-22
 slug: "fortnite-pirate-shop-token-konton"
 alt_immagine: "Officiell bild från Fortnite från spelets sida på PlayStation Store"
 crediti_immagine: "Bild: Epic Games, officiella PlayStation.com-sidan"
