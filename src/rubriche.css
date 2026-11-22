@@ -149,3 +149,46 @@
   .bio-premio { grid-template-columns:1fr; }
   .bio-premio img { display:none; }
 }
+
+/* Speciale GTA 6: percorso editoriale leggibile e link interni verso notizie verificate. */
+.speciale-gta6 { max-width:70rem; margin:1.4rem auto 4rem; }
+.speciale-gta6 .briciole { display:flex; gap:.65rem; align-items:center; margin:0 0 1.3rem; }
+.speciale-gta6-testa { padding:clamp(1.5rem,4vw,3.2rem); border:1px solid #a78bfa77; border-radius:26px; background:linear-gradient(130deg,#2f214a,#171329 80%); }
+.speciale-gta6-testa h1 { margin:.65rem 0 1rem; font:italic 900 clamp(2.5rem,7vw,5rem)/.96 var(--display); letter-spacing:-.04em; text-wrap:balance; }
+.speciale-gta6-testa > p:not(.speciale-gta6-metodo) { margin:0; max-width:65ch; font-size:clamp(1.02rem,2vw,1.18rem); line-height:1.7; }
+.speciale-gta6-info { display:flex; flex-wrap:wrap; gap:.6rem; margin:1.35rem 0 0; }
+.speciale-gta6-info span { padding:.4rem .8rem; border:1px solid #ffffff38; border-radius:999px; background:#ffffff0d; font-weight:700; font-size:.86rem; }
+.speciale-gta6-metodo { margin:1.3rem 0 0; padding:.9rem 1rem; background:#ffffff0b; border-left:4px solid var(--giallo); color:var(--tenue); font-size:.95rem; line-height:1.6; }
+.speciale-gta6-sezione { margin:2.2rem 0; }
+.speciale-gta6-sezione .bio-sezione-testa h2 { font-size:clamp(1.7rem,4vw,2.45rem); }
+.speciale-gta6-guide, .speciale-gta6-notizie { list-style:none; margin:1.2rem 0 0; padding:0; }
+.speciale-gta6-guide { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr)); gap:1rem; }
+.speciale-gta6-guida a { display:flex; gap:.8rem; align-items:flex-start; height:100%; min-width:0; padding:1.25rem; text-decoration:none; color:var(--testo); border:1px solid #8b6cff77; border-radius:18px; background:var(--pannello); transition:transform .16s,border-color .16s; }
+.speciale-gta6-guida a:hover, .speciale-gta6-guida a:focus-visible { border-color:var(--giallo); transform:translateY(-2px); }
+.speciale-gta6-numero { flex:none; color:var(--giallo); font:italic 900 1.1rem var(--display); }
+.speciale-gta6-guida a > span:nth-child(2) { display:flex; flex:1; min-width:0; flex-direction:column; gap:.65rem; }
+.speciale-gta6-guida small { color:var(--tenue); font-size:.83rem; }
+.speciale-gta6-guida strong { font:800 1.22rem/1.16 var(--display); overflow-wrap:anywhere; }
+.speciale-gta6-sommario { color:var(--tenue); font-size:.94rem; line-height:1.55; }
+.speciale-gta6-freccia { color:var(--giallo); }
+.speciale-gta6-notizie { display:grid; gap:.55rem; }
+.speciale-gta6-notizia { display:grid; grid-template-columns:6rem minmax(0,1fr) 1.2rem; align-items:center; gap:.85rem; padding:.9rem 1rem; border-radius:12px; text-decoration:none; color:var(--testo); border:1px solid #ffffff20; background:var(--pannello); }
+.speciale-gta6-notizia:hover, .speciale-gta6-notizia:focus-visible { border-color:var(--viola); }
+.speciale-gta6-notizia time { color:var(--tenue); font-size:.82rem; white-space:nowrap; }
+.speciale-gta6-notizia > span:nth-child(2) { font-weight:750; line-height:1.4; }
+.speciale-gta6-notizia > span:last-child { color:var(--giallo); }
+.speciale-gta6-fine { margin-top:2rem; }
+.speciale-gta6-home { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; padding:1rem 1.3rem; margin:1.5rem 0; border-radius:16px; border:1px solid #8b6cff77; background:linear-gradient(100deg,#30224d,#1c1933); }
+.speciale-gta6-home span { display:grid; gap:.25rem; }
+.speciale-gta6-home small { color:var(--giallo); font-weight:900; letter-spacing:.06em; }
+.speciale-gta6-home strong { font:800 1.15rem/1.25 var(--display); }
+.speciale-gta6-home a { display:inline-block; border-radius:11px; background:var(--giallo); color:var(--notte); text-decoration:none; font-weight:900; padding:.7rem 1rem; }
+.speciale-gta6-rimando { margin:1.3rem 0; padding:1.1rem 1.3rem; background:#30214b; border-radius:15px; border-left:4px solid var(--giallo); font-weight:800; }
+.speciale-gta6-rimando a { color:var(--testo); text-underline-offset:4px; }
+@media(max-width:560px) {
+  .speciale-gta6-testa { border-radius:18px; }
+  .speciale-gta6-notizia { grid-template-columns:1fr 1.3rem; gap:.45rem .8rem; }
+  .speciale-gta6-notizia time { grid-column:1 / -1; }
+  .speciale-gta6-home a { width:100%; text-align:center; }
+}
+@media(prefers-reduced-motion:reduce) { .speciale-gta6-guida a { transition:none; } }
