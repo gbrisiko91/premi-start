@@ -1,0 +1,30 @@
+name: Verifica pubblicazione reale Netlify
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Se arriva un nuovo merge, annulla il collaudo della versione precedente.
+concurrency:
+  group: verifica-produzione-main
+  cancel-in-progress: true
+
+jobs:
+  controllo-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verifica commit servito da Netlify, pagine, SEO e sitemap
+        env:
+          EXPECTED_SHA: ${{ github.sha }}
+        run: node strumenti/verifica-produzione.mjs
