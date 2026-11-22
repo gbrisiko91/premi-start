@@ -461,6 +461,12 @@ function home(l, articoli) {
   for (const a of retro) mostrati.add(a.id);
   const archivio = resto.filter(a=>!mostrati.has(a.id)).slice(0,config.articoliPerPagina);
   const mondi = Object.keys(config.categorie).map((k)=>`<a class="mondo-link" data-colore="${colore(k)}" href="${P.categoria(l,k)}"><strong>${esc(nomeCat(l,k))}</strong><span>${esc(T[l].categorie[k]?.descrizione || config.categorie[k].descrizione)}</span></a>`).join("");
+  const richiamoGta6 = l === PRINCIPALE && articoli.some(a => !a.bozza && a.tag.includes("gta-6"))
+    ? `<aside class="speciale-gta6-home" aria-label="Percorso GTA 6">
+      <span><small>SPECIALE / GRAND THEFT AUTO VI</small><strong>GTA 6: guide e aggiornamenti in un unico posto</strong></span>
+      <a href="${P.specialeGta6()}">Esplora lo speciale →</a>
+    </aside>`
+    : "";
   const corpo = `
 <div class="intro-ritmo"><div><span class="eyebrow">${esc(config.nome)}</span><p>${esc(t.motto)}</p></div><a class="intro-link" href="${P.archivio(l)}">${esc(u.viewArchive)} ↗</a></div>
 <section class="eroe${apertura.immagine ? " eroe-con-arte" : ""}" data-colore="${colore(apertura.categoria)}" aria-labelledby="t-apertura">
@@ -478,6 +484,7 @@ function home(l, articoli) {
   </aside>
 </section>
 ${ultime.length ? `<section class="flusso homepage-ultime" aria-labelledby="t-ultime"><div class="blocco-heading"><div><span class="eyebrow">01 / ${esc(config.nome)}</span><h2 id="t-ultime" class="titolo-sezione">${esc(t.ultime)}</h2></div><a class="intro-link" href="${P.archivio(l)}">${esc(u.viewAll)} ↗</a></div><div class="griglia">${ultime.map(scheda).join("")}</div></section>` : ""}
+${richiamoGta6}
 ${digest.length ? `<section class="blocco-novita" aria-labelledby="t-digest"><div class="blocco-heading"><div><span class="eyebrow">02 / ${esc(u.digest)}</span><h2 id="t-digest" class="titolo-sezione">${esc(u.digest)}</h2><p>${esc(u.digestLead)}</p></div></div><div class="digest-griglia">${digest.map((a,i)=>`<article class="digest-voce"><span class="digest-numero" aria-hidden="true">0${i+1}</span><h3><a href="${a.url}">${esc(a.titolo)}</a></h3><p>${esc(a.sommario)}</p></article>`).join("")}</div></section>` : ""}
 ${scopertaIndie ? `<section class="blocco-novita indie-focus" aria-labelledby="t-indie"><div class="blocco-heading"><div><span class="eyebrow">03 / Indie</span><h2 id="t-indie" class="titolo-sezione">${esc(u.indieTitle)}</h2><p>${esc(u.indieLead)}</p></div><a class="intro-link" href="${P.indie(l)}">${esc(u.viewAll)} ↗</a></div><article class="indie-focus-card" data-colore="${colore(scopertaIndie.categoria)}"><a class="indie-focus-cover" href="${scopertaIndie.url}" aria-label="${esc(scopertaIndie.titolo)}">${scopertaIndie.immagine ? img({src:scopertaIndie.immagine,riserva:scopertaIndie.immagineRiserva,alt:scopertaIndie.altImmagine}) : `<span class="indie-focus-fallback">${esc(u.indieTitle)}</span>`}</a><div class="indie-focus-copy"><p class="meta">${etichettaCat(l,scopertaIndie.categoria)}<time datetime="${scopertaIndie.data.toISOString()}">${data(l,scopertaIndie.data,"breve")}</time></p><h3><a href="${scopertaIndie.url}">${esc(scopertaIndie.titolo)}</a></h3><p>${esc(scopertaIndie.sommario)}</p><a class="intro-link" href="${scopertaIndie.url}">${esc(t.leggi)} ↗</a></div></article></section>` : ""}
 ${retro.length ? `<section class="blocco-novita" aria-labelledby="t-retro"><div class="blocco-heading"><div><span class="eyebrow">04 / Retro</span><h2 id="t-retro" class="titolo-sezione">${esc(u.retro)}</h2><p>${esc(u.retroLead)}</p></div><a class="intro-link" href="${P.categoria(l,"retro")}">${esc(u.viewAll)} ↗</a></div><div class="griglia">${retro.map(scheda).join("")}</div></section>` : ""}
@@ -505,6 +512,11 @@ function paginaArticolo(a, stessaLingua, versioni) {
          <p>${esc(rimando.tipo === "gta6" ? testiRimando.gtaDesc : testiRimando.indieDescBox)}</p>
          <a href="${rimandoUrl}">${esc(rimando.tipo === "gta6" ? testiRimando.gtaCta : testiRimando.indieCta)} →</a>
        </aside>`
+    : "";
+  const linkSpeciale = !a.bozza && l === PRINCIPALE && a.tag.some(t => String(t).toLowerCase() === "gta-6")
+    ? `<nav class="speciale-gta6-rimando" aria-label="Tutte le notizie GTA 6">
+      <a href="${P.specialeGta6()}">🎮 Altri aggiornamenti e guide nello Speciale GTA 6 →</a>
+    </nav>`
     : "";
   const fonti = a.fonti.length
     ? `<section class="fonti" aria-labelledby="t-fonti"><div class="fonti-testa"><h2 id="t-fonti">${esc(t.fonti)}</h2><span class="fonti-contatore">${a.fonti.length} ${esc(u.sourcesConsulted)}</span></div><ul>${a.fonti
@@ -558,6 +570,7 @@ function paginaArticolo(a, stessaLingua, versioni) {
   <div class="testo">${a.html}</div>
   ${notaTraduzione}
   ${boxRimando}
+  ${linkSpeciale}
   ${a.tag.length ? `<p class="tag">${a.tag.map((x) => `<span>#${esc(x)}</span>`).join("")}</p>` : ""}
   ${a.bozza ? "" : `<div class="like-fine"><p>${esc(t.tiPiaciuta)}</p>${tastoLike(a)}</div>`}
   ${condivisione(a)}
@@ -806,6 +819,7 @@ function paginaInstagram(lista) {
   const voce = (a) =>
     `<li><a class="bio-voce" href="${utm(a.url)}" data-colore="${colore(a.categoria)}">${copertina(a, false)}<span class="bio-voce-testo"><span class="meta">${etichettaCatSemplice(l, a.categoria)}<time datetime="${a.data.toISOString()}">${data(l, a.data, "breve")}</time></span><span class="bio-voce-titolo">${esc(a.titolo)}</span></span></a></li>`;
   const scorciatoie = [
+    ...(gta6.length ? [[P.specialeGta6(), "🎮 Speciale GTA 6"]] : []),
     [P.quiz(l), `✦ ${QUIZ[l].nome}`],
     [P.sondaggio(l), R[l].poll.nome],
     [P.uscite(l), R[l].uscite.nome],
@@ -1059,6 +1073,12 @@ for (const l of CODICI) {
 
 // Gruppi per la sitemap (solo contenuti pubblici)
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.home(l) })) });
+const hubGta6 = raccogliSpecialeGta6(pubblicati(perLingua[PRINCIPALE]));
+if (hubGta6.totale) {
+  scriviPagina(P.specialeGta6(), paginaSpecialeGta6(perLingua[PRINCIPALE]));
+  gruppiSitemap.push({ versioni: [{ lingua: PRINCIPALE, url: P.specialeGta6() }],
+    lastmod: hubGta6.ultimoAggiornamento.toISOString().slice(0, 10) });
+}
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.quiz(l) })) });
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.uscite(l) })) });
 gruppiSitemap.push({ versioni: CODICI.map((l) => ({ lingua: l, url: P.sondaggio(l) })) });
