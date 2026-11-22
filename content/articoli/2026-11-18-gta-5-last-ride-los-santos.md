@@ -9,6 +9,10 @@ categoria: console
 tag: [gta-5, gta-online, gta-6, rockstar-games]
 viralita: 78
 bozza: false
+immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3240220/library_hero.jpg"
+immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3240220/header.jpg"
+alt_immagine: "Artwork ufficiale di Grand Theft Auto V con Franklin e Michael sulla mappa di Los Santos"
+crediti_immagine: "Immagine: Rockstar Games via Steam"
 verifica:
   stato: verificata
   natura: report

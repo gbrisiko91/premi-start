@@ -8,6 +8,9 @@ categoria: retro
 tag: [the-firemen-2, console-archives, hamster, playstation, retrogaming]
 viralita: 58
 bozza: false
+immagine: "https://upload.wikimedia.org/wikipedia/commons/3/39/PSX-Console-wController.jpg"
+alt_immagine: "La PlayStation originale con il controller, la console di The Firemen 2"
+crediti_immagine: "Immagine: Evan-Amos, Wikimedia Commons (pubblico dominio)"
 verifica:
   stato: verificata
   natura: ufficiale

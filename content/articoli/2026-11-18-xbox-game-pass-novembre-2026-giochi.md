@@ -8,6 +8,10 @@ categoria: console
 tag: [xbox-game-pass, xbox, high-on-life-2, the-outlast-trials]
 viralita: 60
 bozza: false
+immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2069250/library_hero.jpg"
+immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2069250/header.jpg"
+alt_immagine: "Artwork ufficiale di High on Life 2, uno dei giochi in arrivo su Game Pass"
+crediti_immagine: "Immagine: Squanch Games via Steam"
 verifica:
   stato: verificata
   natura: ufficiale

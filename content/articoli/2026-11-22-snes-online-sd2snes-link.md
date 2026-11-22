@@ -8,6 +8,9 @@ categoria: retro
 tag: [snes, sd2snes, fxpak-pro, retroachievements, retrogaming]
 viralita: 62
 bozza: false
+immagine: "https://upload.wikimedia.org/wikipedia/commons/3/31/SNES-Mod1-Console-Set.jpg"
+alt_immagine: "Un Super Nintendo originale con il controller, la console di sd2snes+ Link"
+crediti_immagine: "Immagine: Evan-Amos, Wikimedia Commons (pubblico dominio)"
 verifica:
   stato: verificata
   natura: ufficiale

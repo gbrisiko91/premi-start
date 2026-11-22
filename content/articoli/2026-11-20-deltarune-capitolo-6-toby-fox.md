@@ -8,6 +8,10 @@ categoria: pc
 tag: [deltarune, toby-fox, indie, undertale]
 viralita: 68
 bozza: false
+immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1671210/library_hero.jpg"
+immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1671210/header.jpg"
+alt_immagine: "Artwork ufficiale di Deltarune dalla pagina Steam di Toby Fox"
+crediti_immagine: "Immagine: Toby Fox via Steam"
 verifica:
   stato: verificata
   natura: dichiarazione
