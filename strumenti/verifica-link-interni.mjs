@@ -36,8 +36,10 @@ function listaHtml(root) {
 }
 
 export function esisteDestinazione(root, percorso) {
-  const destinazione = path.resolve(root, "." + percorso);
-  if (!destinazione.startsWith(path.resolve(root) + path.sep)) return false;
+  const base = path.resolve(root);
+  const destinazione = path.resolve(base, "." + percorso);
+  // Anche la radice / è una destinazione valida: dist/index.html.
+  if (destinazione !== base && !destinazione.startsWith(base + path.sep)) return false;
   const candidati = percorso.endsWith("/")
     ? [path.join(destinazione, "index.html")]
     : [destinazione, path.join(destinazione, "index.html")];
