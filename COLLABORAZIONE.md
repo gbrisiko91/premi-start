@@ -134,3 +134,12 @@ Le protezioni integrate comprendono: sanitizer HTML dopo `marked` (PR #31), gate
 **Obiettivo:** navigazione più utile e collegamenti interni coerenti; **non** è una correzione dimostrata del calo Google e non garantisce l'indicizzazione. Dopo l'eventuale rilascio controllare HTTP della pagina, link, struttura mobile e Google Search Console. **No auto-merge:** ottenere approvazione esplicita di Gianmarco e controllare build, gate e preview sull'ultimo HEAD.
 
 **Per Claude:** mantenere il tag `gta-6` soltanto sugli articoli pertinenti; la raccolta viene aggiornata automaticamente in fase di build. Non intervenire sul medesimo `build.mjs`/CSS condiviso in una PR concorrente senza coordinamento.
+
+
+## Aggiornamento 22/11/2026 notte — verifica automatica del deploy (PR #63)
+
+**Stato iniziale:** `main` a `a9a1cebbabf1cdb1e71c1f84038a1f2475c6f5f9` con PR #61 integrata e build riuscita; nessuna PR aperta. L'ispezione Google Search Console del 22/11 conferma 3.436 impressioni/60 clic dal 6 all'11/11 e solo 29 impressioni/1 clic dal 12 al 19/11. Il crollo è globale, la homepage italiana risulta indicizzata e varie pagine recenti non ancora; **causa non determinata, nessuna penalizzazione dimostrata**. Vedi `SEO-INDICIZZAZIONE-AUDIT.md`.
+
+**PR #63:** nuovo manifest pubblico `/stato-deploy.json` (SHA commit e ultime tre URL italiane, senza dati personali); workflow GitHub `Verifica pubblicazione reale Netlify` che, **dopo ogni nuovo push su main**, controlla tramite HTTP il commit realmente distribuito, home, Instagram, sfondi, ultimi articoli, Speciale GTA 6, canonical, robots.txt e sitemap. Nuovi test nella suite; nessuna dipendenza, segreto o integrazione invasiva. Il workflow può risultare rosso in caso di deploy Netlify lento/non aggiornato: è una **diagnostica**, non un auto-rollback; se rosso controllare deploy Netlify e commit prima di cambiare file. Con merge successivo si attiva il workflow, quindi chiedere approvazione esplicita a Gianmarco prima di integrarla.
+
+**Attività successive:** attendere CI/gate/preview sull'HEAD della PR #63; chiedere approvazione rilascio; usare la prima esecuzione post-merge per confermare il sito pubblico. Per il crollo Google verificare anche i rapporti completi *Indicizzazione*, *Statistiche di scansione*, *Azioni manuali* e *Sicurezza* in Search Console; non applicare `noindex`, modifiche canonical o riscritture editoriali indiscriminate. Coordinare Claude per revisioni mirate alle pagine Fortnite che avevano domanda effettiva.

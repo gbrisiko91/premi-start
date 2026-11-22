@@ -70,3 +70,24 @@ Fonti ufficiali:
 5. **Non proclamare recupero di traffico** finché GSC non mostri trend stabili; non è disponibile una causa verificata del crollo del 12/11.
 
 **Riferimenti:** [Google Search Console](https://search.google.com/search-console), [progetto OpenSEO](https://app.openseo.so/p/8d399ae4-3611-4c7e-a913-cb5fc1f49af0), [report precedente 18/11](https://app.openseo.so/p/8d399ae4-3611-4c7e-a913-cb5fc1f49af0).
+
+## Diagnosi aggiornata 22 novembre 2026 — crollo Google e verifica del deploy
+
+**Fonte:** Google Search Console proprietà `sc-domain:soffiacartuccia.it`, dati di ricerca Web consolidati (stato `final`) estratti il 22/11/2026 tramite OpenSEO. Il confronto non ha normalizzazione su giorni di pari durata: 6 giorni prima e 8 dopo; il dato giornaliero resta sufficientemente chiaro per constatare il cambio di scala, ma per stime del trend preferire periodi omogenei.
+
+| Periodo | Clic | Impressioni | Note |
+| --- | ---: | ---: | --- |
+| 6–11 novembre | 60 | 3.436 | Serie pre-calo |
+| 12–19 novembre | 1 | 29 | Serie dopo il crollo |
+| 11 novembre | 11 | 625 | Ultimo giorno ancora alto |
+| 12 novembre | 0 | 7 | Primo giorno del salto |
+
+**Segmentazione:**
+- Prima del calo le impressioni erano internazionali e distribuite su mobile (2.560), desktop (844), tablet (32); tra i paesi: Italia 815, Svezia 616, Russia 253 e altri. La caduta non è confinata al traffico GTA 6 né alla sola homepage.
+- Tra le URL più visibili dal 6 all'11: `/sv/artiklar/fortnite-pirate-shop-token-konton/` (420 impressioni), `/en/articles/fortnite-pirate-shop-token/` (364), `/ru/articles/fortnite-pirate-shop-token/` (159), `/es/articulos/fortnite-ficha-tienda-pirata/` (150). Le URL indicate sono **risultati storici**: non implicano che siano indicizzate oggi.
+- Campione ispezione URL al 22/11: homepage italiana **indicizzata** (ultimo crawl riportato 16/11); `/articoli/gta-6-guida-lancio/` **scoperta ma non indicizzata**; `/articoli/gta-6-disponibile-italia/`, `/articoli/gta-6-vendite-record/` e il nuovo `/speciale-gta-6/` ancora **sconosciuti a Google** nell'ispezione storica. Lo stato può cambiare dopo nuove scansioni. `/instagram/` è volutamente `noindex`.
+- OpenSEO ha limitato l'ultimo audit a 50 pagine; **non** descrive lo stato completo delle 9 lingue e delle centinaia di URL.
+
+**Conclusione tecnica:** non si può attribuire il crollo alla mancanza di un hub GTA 6, a un errore di canonical, a una penalizzazione manuale, né a un'azione algoritmica specifica senza evidenza aggiuntiva. Per prima cosa servono verifiche separabili sul deploy reale, sul rapporto completo *Indicizzazione delle pagine*, sul rapporto *Statistiche di scansione* e, nell'interfaccia Search Console, su *Azioni manuali* e *Problemi di sicurezza*. Non modificare robots e canonical indiscriminatamente. Seguire la [guida ufficiale di Google sui cali del traffico](https://developers.google.com/search/docs/monitor-debug/debugging-search-traffic-drops/).
+
+**Intervento tecnico di questa PR:** manifest statico `/stato-deploy.json` con commit, timestamp e tre articoli recenti (nessun dato personale); workflow GitHub read-only dopo il push su `main` che attende Netlify e verifica la **stessa revisione** servita in produzione, poi testa HTTP, canonical, meta robots, sitemap e robots.txt, con controlli speciali su `/instagram/` noindex e l'hub GTA 6. Non installa analytics, non modifica Google, non abilita auto-merge o pubblicazione editoriale. **Il workflow proverà la consistenza HTTP su una richiesta GitHub; non promette indicizzazione Google né monitoraggio 24/7.**
