@@ -9,7 +9,7 @@
     "anteprima": "node build.mjs --bozze && node serve.mjs",
     "dev": "node build.mjs && node serve.mjs",
     "audit:editoriale": "node strumenti/report-editoriale.mjs",
-    "test": "npm run build && node tests/verifica-build.mjs && node --test tests/sprint1.mjs tests/report-editoriale.mjs tests/articoli-correlati.mjs tests/sitemap-news.mjs && node --test tests/gate-pubblicazione.mjs && node --test tests/html-sicuro.mjs && node --test tests/seo-indexabilita.mjs && node --test tests/percorsi-editoriali.mjs && node --test tests/guide-rubriche.mjs && node --test tests/gta6-orari-ufficiali.mjs && node --test tests/sitemap-news-freshness.mjs && node --test tests/media-player-controls.mjs && node --test tests/sfondi-conteggi.mjs && node --test tests/instagram-bio.mjs"
+    "test": "npm run build && node tests/verifica-build.mjs && node --test tests/sprint1.mjs tests/report-editoriale.mjs tests/articoli-correlati.mjs tests/sitemap-news.mjs && node --test tests/gate-pubblicazione.mjs && node --test tests/html-sicuro.mjs && node --test tests/seo-indexabilita.mjs && node --test tests/percorsi-editoriali.mjs && node --test tests/guide-rubriche.mjs && node --test tests/gta6-orari-ufficiali.mjs && node --test tests/sitemap-news-freshness.mjs && node --test tests/media-player-controls.mjs && node --test tests/sfondi-conteggi.mjs && node --test tests/instagram-bio.mjs && node --test tests/speciale-gta6.mjs"
   },
   "dependencies": {
     "@fontsource-variable/anybody": "^5.0.0",
