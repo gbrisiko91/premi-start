@@ -153,3 +153,11 @@ Le protezioni integrate comprendono: sanitizer HTML dopo `marked` (PR #31), gate
 **Motivo verificato:** audit OpenSEO del 22/11/2026, limitato a 50 pagine, segnala **27 meta description brevi** prevalentemente su rubriche e profili; in un sottoinsieme segnala 8 pagine quiz/sondaggi come *thin content*. Questa PR risolve solo la descrizione del risultato, **non** aggiunge testo fittizio né cambia indicizzabilità delle pagine thin. Google può ignorare il meta description e formare lo snippet da altre sezioni.
 
 **Attenzione:** il calo GSC dal 12/11 resta senza causa dimostrata. Le modifiche ai meta tag non sono presentate come soluzione al crollo, né garantiscono ranking/index. **Non eseguire merge prima di approvazione esplicita del proprietario**. Claude mantiene proprietà dei contenuti e delle traduzioni degli articoli.
+
+## Aggiornamento 22/11/2026 — rubriche leggibili senza JavaScript (nuova PR)
+
+**Stato iniziale:** PR #66 integrata su `main` commit `56e21dee96b9a70b2b00e5124be89f2083835ea5`; GitHub build e verifica reale HTTP su Netlify entrambe verdi. Nessuna PR aperta all'avvio dell'attività.
+
+**Intervento:** il quiz mostra nell'HTML tre esempi reali dalla banca dati esistente, con risposta e spiegazione dietro elementi `<details>`, senza alterare la domanda quotidiana gestita da `public/quiz.js`. La pagina sondaggi mostra direttamente in HTML domande e opzioni delle settimane passate, già pubblicate e localizzate in nove lingue. `public/sondaggio.js` usa e aggiorna le schede preesistenti con **conteggi effettivi dal backend**, senza ripeterle, e gestisce il cambio della domanda corrente quando la data locale avanza rispetto all'ultima build. In assenza di JavaScript si leggono le scelte storiche, **non** vengono attribuiti numeri di voti inesistenti.
+
+**Vincoli:** non modificare testi editoriali di Claude, dati reali del voto, `netlify/functions/sondaggio.mjs`, privacy, cookies o API. Test HTML delle nove lingue, canonical e robots invariati. L'audit OpenSEO del 22/11 ha segnalato alcune pagine quiz/sondaggi come `thin-content`, ma questo intervento mira all'utilità per i lettori; non costituisce garanzia di superamento delle soglie del crawler o di recupero delle impressioni. Verificare CI/gate/preview sull'ultimo HEAD e chiedere approvazione esplicita prima del merge.
