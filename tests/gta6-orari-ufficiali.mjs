@@ -31,6 +31,10 @@ test("Rockstar ufficiale: mezzanotte locale 19 novembre anche su Xbox, in tutte 
     assert.ok(a,"Articolo tradotto mancante: "+l);
     const html=fs.readFileSync("dist"+a.url+"index.html","utf8");
     assert.ok(html.includes(fonte),l+": fonte ufficiale non in pagina");
-    assert.ok(html.includes('"dateModified":"2026-11-17T00:00:00.000Z"'),l+": data aggiornamento incoerente");
+    // La versione inglese è stata revisionata autonomamente il 22 novembre;
+    // le altre versioni mantengono la data del 17 senza falsa propagazione.
+    const expectedDate=l==="en"?"2026-11-22":"2026-11-17";
+    assert.ok(html.includes(`"dateModified":"${expectedDate}T00:00:00.000Z"`),
+      l+": data aggiornamento incoerente");
   }
 });
