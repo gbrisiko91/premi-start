@@ -2,6 +2,7 @@
 titolo: "GTA 6 preload began November 10: PS5, Xbox times and the 212 GB requirement"
 titolo_seo: "GTA 6 preload: November 10 timing and up to 212 GB"
 sommario: "GTA 6 preloading began November 10, before the November 19 launch. Rockstar confirmed the PS5 and Xbox timings and up to 212 GB of space, depending on device."
+aggiornato: 2026-11-22
 slug: "gta-6-preload-date-file-size"
 alt_immagine: "Official Grand Theft Auto VI image for the PS5 and Xbox preload announcement"
 crediti_immagine: "Image: Rockstar Games, official Rockstar Newswire"
