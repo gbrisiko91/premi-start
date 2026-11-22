@@ -37,6 +37,16 @@ export function verificaPagina(html, { path, indexabile = true, frammenti = [] }
   return errori;
 }
 
+// I meta robots nell'HTML non bastano: un X-Robots-Tag HTTP può comunque
+// disabilitare l'indicizzazione, anche quando canonical e sitemap sono corretti.
+export function verificaHeaderIndicizzazione(header, path) {
+  if (!header) return [];
+  // noindex e none (equivalente a noindex + nofollow), inclusi i prefissi per crawler.
+  if (/(?:^|[\s,;:])(?:noindex|none)(?=$|[\s,;])/i.test(header))
+    return [`Header X-Robots-Tag blocca l'indicizzazione su ${path}: ${header}`];
+  return [];
+}
+
 export function verificaSitemap(sitemap, pathObbligatori) {
   const errori = [];
   for (const p of pathObbligatori) {
@@ -49,7 +59,7 @@ export function verificaSitemap(sitemap, pathObbligatori) {
 const dormi = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const indirizzo = (path, nonce) => new URL(path + (path.includes("?") ? "&" : "?") + "_sc_verifica=" + nonce, BASE_PRODUZIONE);
 
-async function leggi(path, sha) {
+async function leggi(path, sha, { indexabile = false } = {}) {
   const res = await fetch(indirizzo(path, sha.slice(0, 12)), {
     headers: { "cache-control": "no-cache", accept: "*/*" },
     redirect: "follow",
@@ -57,6 +67,10 @@ async function leggi(path, sha) {
   });
   if (!res.ok) throw new Error(`HTTP ${res.status} su ${path}`);
   if (new URL(res.url).origin !== BASE_PRODUZIONE) throw new Error(`Redirect esterno su ${path}`);
+  if (indexabile) {
+    const problemi = verificaHeaderIndicizzazione(res.headers.get("x-robots-tag"), path);
+    if (problemi.length) throw new Error(problemi.join("; "));
+  }
   return res.text();
 }
 
@@ -79,7 +93,7 @@ export async function verificaDeploy(sha, { tentativi = 24, pausaMs = 15000, log
         pagine.push({path:"/speciale-gta-6/",indexabile:true,frammenti:['id="gta6-speciale-titolo"']});
       }
       const richieste = await Promise.all([
-        ...pagine.map(async (p) => ({tipo:"pagina", p, body:await leggi(p.path, revision)})),
+        ...pagine.map(async (p) => ({tipo:"pagina", p, body:await leggi(p.path, revision, { indexabile:p.indexabile })})),
         leggi("/sitemap.xml", revision).then((body) => ({tipo:"sitemap",body})),
         leggi("/robots.txt", revision).then((body) => ({tipo:"robots",body})),
       ]);
