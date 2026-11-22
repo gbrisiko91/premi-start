@@ -21,6 +21,7 @@ import { LINGUE, PRINCIPALE, T } from "./lingue.mjs";
 import { U } from "./novita.mjs";
 import { QUIZ } from "./quiz.mjs";
 import { GUIDE_RUBRICHE } from "./strumenti/guide-rubriche.mjs";
+import { META_RUBRICHE } from "./strumenti/meta-rubriche.mjs";
 import { R, USCITE, SONDAGGI, NEWSLETTER } from "./rubriche.mjs";
 
 const ROOT = path.dirname(new URL(import.meta.url).pathname);
@@ -624,7 +625,7 @@ function paginaQuiz(l) {
   ${guidaRubrica(l, "quiz")}
   <script id="quiz-dati" type="application/json">${dati}</script>
   <script src="/quiz.js" defer></script>`;
-  return pagina({ l, titolo:q.nome, titoloSeo: TITOLI_QUIZ_SEO[l] || "", descrizione:q.intro, percorso:P.quiz(l),corpo,alternative:tuttePerLingua(P.quiz) });
+  return pagina({ l, titolo:q.nome, titoloSeo: TITOLI_QUIZ_SEO[l] || "", descrizione:META_RUBRICHE[l].quiz, percorso:P.quiz(l),corpo,alternative:tuttePerLingua(P.quiz) });
 }
 
 // ---------- rubriche: calendario uscite, sondaggio, newsletter ----------
@@ -684,7 +685,7 @@ function paginaUscite(l, lista) {
   <p class="rubrica-nota">${esc(t.nota)}</p>
 </section>
 <script src="/uscite.js" defer></script>`;
-  return pagina({ l, titolo: t.nome, descrizione: t.descr, percorso: P.uscite(l), corpo, alternative: tuttePerLingua(P.uscite) });
+  return pagina({ l, titolo: t.nome, descrizione: META_RUBRICHE[l].releases, percorso: P.uscite(l), corpo, alternative: tuttePerLingua(P.uscite) });
 }
 
 const sondaggioCorrente = () => SONDAGGI.filter((s) => s.dal <= OGGI).at(-1) || SONDAGGI[0];
@@ -715,7 +716,7 @@ function paginaSondaggio(l) {
 </section>
 ${guidaRubrica(l, "poll")}
 ${datiSondaggi(l)}`;
-  return pagina({ l, titolo: p.nome, descrizione: p.intro, percorso: P.sondaggio(l), corpo, alternative: tuttePerLingua(P.sondaggio) });
+  return pagina({ l, titolo: p.nome, descrizione: META_RUBRICHE[l].poll, percorso: P.sondaggio(l), corpo, alternative: tuttePerLingua(P.sondaggio) });
 }
 
 function boxNewsletter(l) {
@@ -930,7 +931,7 @@ function paginaAutore(l, lista) {
     </section>
     <script type="application/ld+json">${JSON.stringify(datiStrutturati).replace(/</g, "\\u003c")}</script>
   </section>`;
-  return pagina({ l, titolo: `${config.autore} — ${u.authorTitle}`, titoloSeo: TITOLI_AUTORE_SEO[l] || "", descrizione: u.authorIntro, percorso, corpo, alternative: tuttePerLingua(P.autore) });
+  return pagina({ l, titolo: `${config.autore} — ${u.authorTitle}`, titoloSeo: TITOLI_AUTORE_SEO[l] || "", descrizione: META_RUBRICHE[l].author, percorso, corpo, alternative: tuttePerLingua(P.autore) });
 }
 
 // Segnaposto utilizzabili nelle pagine fisse
@@ -1060,7 +1061,7 @@ for (const l of CODICI) {
   scriviPagina(P.uscite(l), paginaUscite(l, lista));
   scriviPagina(P.sondaggio(l), paginaSondaggio(l));
   scriviPagina(P.autore(l), paginaAutore(l, lista));
-  scriviPagina(P.indie(l), paginaElenco({ l, titolo: U[l].indieTitle, descrizione: U[l].indieLead, percorso: P.indie(l), lista: pubblicati(lista).filter(a => a.tag.some(x => String(x).toLowerCase() === "indie")), introduzione: introduzioneIndie(l), alternative: tuttePerLingua(P.indie) }));
+  scriviPagina(P.indie(l), paginaElenco({ l, titolo: U[l].indieTitle, descrizione: META_RUBRICHE[l].indie, percorso: P.indie(l), lista: pubblicati(lista).filter(a => a.tag.some(x => String(x).toLowerCase() === "indie")), introduzione: introduzioneIndie(l), alternative: tuttePerLingua(P.indie) }));
   scrivi(`indice-${l}.json`, JSON.stringify(pubblicati(lista).map((a)=>({id:a.id,url:a.url,titolo:a.titolo,sommario:a.sommario,categoria:nomeCat(l,a.categoria),tag:a.tag,data:a.data.toISOString(),dataBreve:data(l,a.data,"breve")}))));
   for (const a of lista) scriviPagina(a.url, paginaArticolo(a, lista, versioniDi(a.id)));
   for (const k of Object.keys(config.categorie)) {
