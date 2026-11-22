@@ -14,6 +14,7 @@ import { sanificaHtml } from "./strumenti/html-sicuro.mjs";
 import config from "./sito.config.mjs";
 import { validaArticolo, rimuoviNote } from "./strumenti/verifica-editoriale.mjs";
 import { selezionaCorrelati } from "./strumenti/articoli-correlati.mjs";
+import { raccogliSpecialeGta6 } from "./strumenti/speciale-gta6.mjs";
 import { selezionaRimando, TESTI_PERCORSI } from "./strumenti/percorsi-editoriali.mjs";
 import { generaSitemapNews } from "./strumenti/sitemap-news.mjs";
 import { LINGUE, PRINCIPALE, T } from "./lingue.mjs";
@@ -52,6 +53,7 @@ const P = {
   categoria: (l, k) => `${pre(l)}/${T[l].seg.categoria}/${k}/`,
   archivio: (l) => `${pre(l)}/${T[l].seg.archivio}/`,
   indie: (l) => `${pre(l)}/indie/`,
+  specialeGta6: () => "/speciale-gta-6/",
   autore: (l) => `${pre(l)}/autore/gianmarco-buono/`,
   rss: (l) => `${pre(l)}/rss.xml`,
   quiz: (l) => `${pre(l)}/quiz/`,
@@ -730,6 +732,62 @@ function paginaConfermata() {
     corpo: `<section class="schermata-titolo"><p class="schermata-sopra">Newsletter</p><h1 class="schermata-logo"><span>Soffia</span><span>Cartuccia</span></h1><p class="schermata-sotto"><strong>${esc(n.confermataTitolo)}</strong> ${esc(n.confermataTesto)}</p><p class="confermata-azioni"><a class="tasto-start" href="${P.uscite(l)}">${esc(R[l].uscite.nome)}</a> <a class="tasto-start" href="${P.sondaggio(l)}">${esc(R[l].poll.nome)}</a> <a class="tasto-start" href="${P.home(l)}">${esc(n.torna)}</a></p></section>`,
   });
 }
+// Raccolta tematica italiana: articoli editoriali già pubblicati, ordinati e senza doppioni.
+function paginaSpecialeGta6(lista) {
+  const l = PRINCIPALE;
+  const { totale, guide, notizie, ultimoAggiornamento } = raccogliSpecialeGta6(lista);
+  if (!totale) return null;
+  const percorso = P.specialeGta6();
+  const guida = (a, i) => `<li class="speciale-gta6-guida">
+    <a href="${a.url}"><span class="speciale-gta6-numero" aria-hidden="true">0${i + 1}</span>
+    <span><small>${esc(nomeCat(l, a.categoria))} · ${data(l, a.data, "breve")}</small>
+    <strong>${esc(a.titolo)}</strong><span class="speciale-gta6-sommario">${esc(a.sommario)}</span></span>
+    <span class="speciale-gta6-freccia" aria-hidden="true">→</span></a></li>`;
+  const notizia = (a) => `<li><a class="speciale-gta6-notizia" href="${a.url}">
+    <time datetime="${a.data.toISOString()}">${data(l, a.data, "breve")}</time>
+    <span>${esc(a.titolo)}</span><span aria-hidden="true">→</span></a></li>`;
+  const contenuti = [...guide, ...notizie];
+  const dati = {
+    "@context": "https://schema.org", "@type": "CollectionPage",
+    name: "Speciale GTA 6 – Notizie e guide",
+    url: urlAssoluto(percorso),
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: contenuti.map((a, i) => ({
+        "@type": "ListItem", position: i + 1, name: a.titolo, url: urlAssoluto(a.url)
+      }))
+    }
+  };
+  const corpo = `<div class="speciale-gta6">
+  <nav class="briciole" aria-label="Percorso"><a href="/">Home</a><span aria-hidden="true">/</span><span>Speciale GTA 6</span></nav>
+  <header class="speciale-gta6-testa">
+    <span class="eyebrow">SPECIALE / GRAND THEFT AUTO VI</span>
+    <h1 id="gta6-speciale-titolo">GTA 6, tutto in un posto.</h1>
+    <p>Guide pratiche, aggiornamenti e notizie su Grand Theft Auto VI. Il gioco è arrivato su PS5 e Xbox il 19 novembre 2026: qui trovi le informazioni utili per orientarti, con collegamenti agli articoli e alle loro fonti.</p>
+    <div class="speciale-gta6-info"><span>${totale} articoli</span>${ultimoAggiornamento ? `<span>Ultimo aggiornamento: <time datetime="${ultimoAggiornamento.toISOString()}">${data(l, ultimoAggiornamento, "lunga")}</time></span>` : ""}</div>
+    <p class="speciale-gta6-metodo">Le notizie distinguono le comunicazioni ufficiali da rumor, segnalazioni e previsioni. Apri ciascun articolo per consultare le fonti e capire che cosa è confermato.</p>
+  </header>
+  ${guide.length ? `<section class="speciale-gta6-sezione" aria-labelledby="gta6-guide-titolo">
+    <div class="bio-sezione-testa"><span class="eyebrow">COMINCIA DA QUI</span><h2 id="gta6-guide-titolo">Le guide essenziali</h2>
+    <p>Uscita, disponibilità e dati del lancio: il percorso più rapido per iniziare.</p></div>
+    <ol class="speciale-gta6-guide">${guide.map(guida).join("")}</ol>
+  </section>` : ""}
+  <section class="speciale-gta6-sezione" aria-labelledby="gta6-news-titolo">
+    <div class="bio-sezione-testa"><span class="eyebrow">AGGIORNAMENTI</span><h2 id="gta6-news-titolo">Notizie e approfondimenti</h2>
+    <p>Le altre pubblicazioni, dalla più recente: ogni collegamento porta a un articolo già pubblicato.</p></div>
+    <ol class="speciale-gta6-notizie">${notizie.map(notizia).join("")}</ol>
+  </section>
+  <p class="speciale-gta6-fine"><a class="intro-link" href="${P.archivio(l)}">Esplora tutte le notizie gaming →</a></p>
+  <script type="application/ld+json">${JSON.stringify(dati).replace(/</g, "\\u003c")}</script>
+</div>`;
+  return pagina({
+    l, titolo: "Speciale GTA 6: notizie, guide e aggiornamenti",
+    titoloSeo: "GTA 6: notizie, guide e aggiornamenti",
+    descrizione: "Tutte le notizie e le guide di Soffia Cartuccia su GTA 6: lancio, vendite, curiosità e aggiornamenti, con fonti e distinzione tra conferme e rumor.",
+    percorso, corpo, alternative: {},
+  });
+}
+
 // Link in bio: ingresso rapido da Instagram verso regalo 2.500 follower, GTA 6 e ultime notizie.
 // UTM marcano i link condivisi: senza analytics attivi NON implicano misurazione delle visite.
 const PERCORSO_INSTAGRAM = "/instagram/";
