@@ -52,3 +52,30 @@ test("pagine generate: canonical e contenuti aggiornati senza alterare gli URL",
     assert.match(html,/<meta name="robots" content="index, follow/);
   }
 });
+
+test("dateModified e sitemap: aggiornamenti locali senza falsare altre lingue", () => {
+  const expected=[
+    {url:"/sv/artiklar/fortnite-pirate-shop-token-konton/",lang:"sv"},
+    {url:"/en/articles/gta-6-preload-date-file-size/",lang:"en"},
+  ];
+  const sitemap=fs.readFileSync(path.join(root,"dist/sitemap.xml"),"utf8");
+  for(const item of expected) {
+    const source=read(item.lang==="sv"?svPath:enPath);
+    assert.equal(source.data.aggiornato.toISOString().slice(0,10),"2026-11-22");
+    const html=fs.readFileSync(path.join(root,"dist",item.url.slice(1),"index.html"),"utf8");
+    const timestamp="2026-11-22T00:00:00.000Z";
+    assert.ok(html.includes(`<meta property="article:modified_time" content="${timestamp}">`),
+      item.lang+": meta OG non riflette la revisione");
+    assert.ok(html.includes(`"dateModified":"${timestamp}"`),
+      item.lang+": JSON-LD non riflette la revisione");
+    assert.ok(html.includes(`<time datetime="${timestamp}">`),
+      item.lang+": data visibile non riflette la revisione");
+    const block=[...sitemap.matchAll(/<url>([\s\S]*?)<\/url>/g)]
+      .find(x=>x[1].includes(`<loc>https://soffiacartuccia.it${item.url}</loc>`));
+    assert.ok(block,item.lang+": URL mancante dalla sitemap");
+    assert.match(block[1],/<lastmod>2026-11-22<\/lastmod>/,item.lang+": lastmod errato");
+  }
+  const original=fs.readFileSync(path.join(root,"dist/articoli/gta-6-preload-peso/index.html"),"utf8");
+  assert.ok(!original.includes('"dateModified":"2026-11-22T00:00:00.000Z"'),
+    "L'originale italiano non deve ricevere automaticamente la data di una modifica inglese");
+});
