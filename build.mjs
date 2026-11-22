@@ -300,6 +300,16 @@ let PAGINE_FISSE = [];
 const pagineDi = (l) => PAGINE_FISSE.filter((p) => p.lingua === l).sort((a, b) => a.ordine - b.ordine);
 const urlPaginaFissa = (l, id) => (PAGINE_FISSE.find((p) => p.lingua === l && p.id === id) || PAGINE_FISSE.find((p) => p.lingua === PRINCIPALE && p.id === id))?.url || P.home(l);
 
+// Titoli concisi per le homepage evidenziate nell'audit SEO del 22/11.
+// Mantengono il brand e descrivono l'argomento. Non alterano H1, testi o traduzioni.
+const TITOLI_HOME_SEO = Object.freeze({
+  it: "Soffia Cartuccia | Notizie e guide videogiochi",
+  en: "Soffia Cartuccia | Video Game News and Guides",
+  de: "Soffia Cartuccia | Gaming-News und Retrogames",
+  es: "Soffia Cartuccia | Noticias y guías de videojuegos",
+  ru: "Soffia Cartuccia | Игровые новости и ретро",
+});
+
 function pagina({ l, titolo, titoloSeo = "", descrizione, percorso, corpo, tipo = "website", ticker = [], articolo = null, alternative = {}, robots = "index, follow, max-image-preview:large, max-snippet:-1", errore = false }) {
   // Pagine di errore (404): fuori da Google, senza canonical, hreflang né og:url
   if (errore) robots = "noindex, follow";
@@ -307,7 +317,7 @@ function pagina({ l, titolo, titoloSeo = "", descrizione, percorso, corpo, tipo 
   const u = U[l];
   descrizione ??= t.motto;
   alternative = errore ? {} : { ...alternative, [l]: percorso };
-  const titoloCompleto = titolo ? `${titoloSeo || titolo} – ${config.nome}` : `${config.nome} – ${t.motto}`;
+  const titoloCompleto = titolo ? `${titoloSeo || titolo} – ${config.nome}` : (percorso === P.home(l) && TITOLI_HOME_SEO[l] ? TITOLI_HOME_SEO[l] : `${config.nome} – ${t.motto}`);
   const immagineSocial = articolo?.immagine ? urlImmagine(articolo.immagine) : urlAssoluto(articolo ? fileArte(articolo) : "/condivisione.png");
   const metaArticolo = articolo
     ? `\n<meta property="article:published_time" content="${articolo.data.toISOString()}">${articolo.aggiornato ? `\n<meta property="article:modified_time" content="${articolo.aggiornato.toISOString()}">` : ""}\n<meta property="article:section" content="${esc(nomeCat(l, articolo.categoria))}">${articolo.tag.map((x) => `\n<meta property="article:tag" content="${esc(x)}">`).join("")}`
@@ -430,7 +440,7 @@ const DESCRIZIONI_HOME = Object.freeze(  {
 // Titoli SEO distinti per lingue che avevano pagine con title identici nel crawl del 15/11.
 // I titoli visibili e le traduzioni non vengono alterati.
 const TITOLI_QUIZ_SEO = Object.freeze({ no: "Dagens spillquiz: test kunnskapene dine", sv: "Dagens spelquiz: testa dina kunskaper" });
-const TITOLI_AUTORE_SEO = Object.freeze({ de: "Gianmarco Buono: Gründer und Gaming-Autor", es: "Gianmarco Buono: creador y autor de videojuegos" });
+const TITOLI_AUTORE_SEO = Object.freeze({ de: "Gianmarco Buono: Gründer und Gaming-Autor", es: "Gianmarco Buono: autor de videojuegos" });
 
 function home(l, articoli) {
   const t = T[l];
