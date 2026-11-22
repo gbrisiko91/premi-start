@@ -158,10 +158,17 @@ function leggiTraduzioni(originali) {
       const { data: d, content } = matter(fs.readFileSync(path.join(cartella, file), "utf8"));
       if (!d.titolo || !content.trim()) { console.warn(`Avviso traduzioni/${l}/${file}: mancano titolo o testo, ignorata.`); continue; }
       const slug = String(d.slug || base.slug).toLowerCase().replace(/[^a-z0-9-]+/g, "-").replace(/^-|-$/g, "") || base.slug;
+      // Una traduzione può essere aggiornata in un giorno diverso dall'originale.
+      // Date visibili, JSON-LD, OpenGraph e sitemap devono riflettere quella modifica.
+      const aggiornato = d.aggiornato ? leggiDataFm(d.aggiornato) : base.aggiornato;
+      if (aggiornato && (!Number.isFinite(aggiornato.getTime()) || aggiornato < base.data)) {
+        throw new Error(`Data aggiornamento non valida: traduzioni/${l}/${file}`);
+      }
       risultato.push({
         ...base,
         lingua: l, file, slug,
         titolo: d.titolo,
+        aggiornato,
         titoloSeo: d.titolo_seo || "",
         sommario: d.sommario || "",
         altImmagine: d.alt_immagine || d.titolo,
@@ -1022,7 +1029,9 @@ function rss(l, articoli) {
 // Sitemap con le versioni nelle altre lingue (hreflang) per ogni pagina
 function sitemap(gruppi) {
   const righe = gruppi.flatMap(({ versioni, lastmod, immagine }) =>
-    versioni.map((v) => `<url><loc>${urlAssoluto(v.url)}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ""}${
+    versioni.map((v) => `<url><loc>${urlAssoluto(v.url)}</loc>${v.data || v.aggiornato
+      ? `<lastmod>${(v.aggiornato || v.data).toISOString().slice(0, 10)}</lastmod>`
+      : lastmod ? `<lastmod>${lastmod}</lastmod>` : ""}${
       versioni.length > 1 ? versioni.map((x) => `<xhtml:link rel="alternate" hreflang="${LINGUE[x.lingua].hreflang}" href="${urlAssoluto(x.url)}"/>`).join("") : ""}${
       immagine ? `<image:image><image:loc>${esc(urlImmagine(immagine))}</image:loc></image:image>` : ""}</url>`));
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">${righe.join("")}</urlset>`;
