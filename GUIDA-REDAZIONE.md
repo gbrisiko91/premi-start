@@ -105,16 +105,23 @@ Parti dalla **parola chiave principale**: la frase che un lettore italiano scriv
 
 **C. Approfondimento retro o evergreen**: una domanda utile nel tempo, documentazione storica e fonti primarie, incertezze dichiarate invece che colmate. `aggiornato: AAAA-MM-GG` solo per modifiche effettive.
 
-## 5. Immagini (facoltative)
+## 5. Immagini (richieste quando esiste una fonte ufficiale)
 
-Le immagini sono **facoltative**. Usale **solo quando i diritti di riutilizzo sono chiari**; in caso contrario lascia che il sito usi la copertina della categoria.
+Ogni articolo deve avere un'**immagine reale con i crediti** ogni volta che ne esiste una ufficiale: è una richiesta esplicita di Gianmarco (22/11/2026), perché le copertine illustrate del sito vanno usate solo come ultima scelta. Prima di lasciare i campi vuoti, prova le fonti qui sotto nell'ordine indicato e annota nella scheda di stato quali hai provato.
 
-**Ammesse**
-1. Press kit e pagine media ufficiali di editori o sviluppatori che ne consentono l'uso alla stampa.
-2. Wikimedia Commons con licenza libera (CC0, CC BY, CC BY-SA), con autore e licenza nei crediti.
-3. Materiale fornito direttamente dallo sviluppatore con consenso all'uso.
+**Ammesse, in ordine di preferenza**
+1. Immagine dell'annuncio sul canale ufficiale: post di PlayStation Blog, Xbox Wire, Nintendo, Rockstar Newswire, sito o press kit dell'editore o dello sviluppatore. Apri la pagina con WebFetch e prendi l'`og:image` o l'immagine principale.
+2. Asset ufficiali della pagina Steam del gioco, caricati dall'editore per la promozione: `https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/NUMERO/library_hero.jpg` come copertina e `.../NUMERO/header.jpg` come `immagine_riserva`. Controlla che il numero corrisponda al gioco giusto. Crediti: "Immagine: Editore via Steam".
+3. Per hardware e accessori: immagine del sito ufficiale del produttore, solo se l'articolo parla di quel prodotto. Crediti: "Immagine: Produttore, sito ufficiale".
+4. Wikimedia Commons con licenza libera (pubblico dominio, CC0, CC BY, CC BY-SA), soprattutto per le console storiche negli articoli retro: le foto di Evan-Amos sono in pubblico dominio. Crediti con autore e licenza, es. "Immagine: Evan-Amos, Wikimedia Commons (pubblico dominio)". Indirizzi già usati e funzionanti:
+   - Nintendo DS: `https://upload.wikimedia.org/wikipedia/commons/4/42/Nintendo-DS-Fat-Blue.jpg`
+   - Nokia N-Gage: `https://upload.wikimedia.org/wikipedia/commons/1/11/Nokia-NGage-LL.jpg`
+   - Super Nintendo: `https://upload.wikimedia.org/wikipedia/commons/3/31/SNES-Mod1-Console-Set.jpg`
+   - PlayStation: `https://upload.wikimedia.org/wikipedia/commons/3/39/PSX-Console-wController.jpg`
+   - Nintendo 64: `https://upload.wikimedia.org/wikipedia/commons/1/11/N64-Console-Set.jpg`
+5. Materiale fornito direttamente dallo sviluppatore con consenso all'uso.
 
-**Non ammesse senza una verifica esplicita dei diritti**: asset delle pagine Steam, render e foto dei produttori, immagini delle pagine prodotto.
+Se il gioco non ha ancora immagini ufficiali (per esempio un titolo trapelato da una classificazione), non usare artwork di altri giochi della serie: lascia la copertina illustrata e scrivilo nella scheda.
 
 **Mai**: immagini di altre testate, Google Immagini, Pinterest o social; foto di persone reali; immagini legate a tragedie o cronaca; leak; immagini generate con l'IA presentate come reali.
 

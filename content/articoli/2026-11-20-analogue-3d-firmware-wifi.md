@@ -8,6 +8,10 @@ categoria: retro
 tag: [analogue-3d, nintendo-64, fpga, firmware]
 viralita: 58
 bozza: false
+immagine: "https://images.analogue.co/hero_3dpage_desktop.4aaf05fa1dcf1b171ba1fc47b0b9bcee.png?w=3000&s=39f604a4a10e6c073fd139aad870f39d"
+immagine_riserva: "https://images.analogue.co/black1.adb08097ec45031eac7a4037babb798f.jpg?s=e54e6504888817a76ac330b80e39d2c2"
+alt_immagine: "Immagine ufficiale dell'Analogue 3D, la console FPGA per i giochi Nintendo 64"
+crediti_immagine: "Immagine: Analogue, sito ufficiale analogue.co"
 verifica:
   stato: verificata
   natura: ufficiale

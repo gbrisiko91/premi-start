@@ -8,6 +8,9 @@ categoria: retro
 tag: [nintendo-64, vasalius-human-error, homebrew, kickstarter]
 viralita: 55
 bozza: false
+immagine: "https://upload.wikimedia.org/wikipedia/commons/1/11/N64-Console-Set.jpg"
+alt_immagine: "Un Nintendo 64 originale con il suo controller, la console di Vasalius"
+crediti_immagine: "Immagine: Evan-Amos, Wikimedia Commons (pubblico dominio)"
 verifica:
   stato: verificata
   natura: dichiarazione
