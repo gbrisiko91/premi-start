@@ -192,3 +192,17 @@
   .speciale-gta6-home a { width:100%; text-align:center; }
 }
 @media(prefers-reduced-motion:reduce) { .speciale-gta6-guida a { transition:none; } }
+
+/* Rubriche accessibili senza JavaScript: domande reali, dettagli apribili e votazioni storiche. */
+.quiz-archivio { margin:2.2rem 0; padding:clamp(1rem,3vw,1.7rem); border:1px solid rgba(255,255,255,.13); border-radius:18px; background:var(--pannello); }
+.quiz-archivio h2 { margin:0 0 .5rem; font:900 clamp(1.35rem,3vw,1.8rem)/1.2 var(--display); }
+.quiz-archivio > p { margin:0 0 1.2rem; color:var(--tenue); line-height:1.6; max-width:65ch; }
+.quiz-archivio-lista { list-style:none; display:grid; gap:.7rem; margin:0; padding:0; }
+.quiz-archivio-lista details { border:1px solid rgba(255,255,255,.14); border-radius:12px; padding:.8rem 1rem; }
+.quiz-archivio-lista summary { cursor:pointer; font-weight:800; line-height:1.45; }
+.quiz-archivio-lista summary:focus-visible { outline:2px solid var(--giallo); outline-offset:4px; }
+.quiz-archivio-risposta { padding:.35rem 0 0; color:var(--tenue); line-height:1.6; }
+.quiz-archivio-risposta p { margin:.45rem 0; }
+.quiz-archivio-risposta strong { color:var(--testo); }
+.sondaggio-passato-opzioni { display:grid; gap:.45rem; margin:.7rem 0 0; padding-left:1.4rem; color:var(--tenue); line-height:1.5; }
+.sondaggio-passato .sondaggio-stato:not([hidden]) { margin-top:.8rem; }
