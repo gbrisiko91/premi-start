@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import {readFileSync,existsSync} from "node:fs";
-import {verificaManifest,verificaPagina,verificaSitemap,BASE_PRODUZIONE} from "../strumenti/verifica-produzione.mjs";
+import {verificaManifest,verificaPagina,verificaSitemap,verificaHeaderIndicizzazione,BASE_PRODUZIONE} from "../strumenti/verifica-produzione.mjs";
 
 const sha="a".repeat(40);
 test("manifest: controlla il commit esatto, senza considerare sufficiente una build precedente",()=>{
@@ -24,6 +24,16 @@ test("canonical e noindex rispettano i diversi tipi di pagina",()=>{
     {path:"/instagram/",indexabile:false}).length === 0);
   assert.ok(verificaPagina(pagina,{path:"/instagram/",indexabile:false}).length);
   assert.ok(verificaPagina("errore 404",{path:"/"}).length);
+});
+
+test("X-Robots-Tag HTTP: identifica noindex o none anche se il meta HTML dice index",()=>{
+  assert.deepEqual(verificaHeaderIndicizzazione(null, "/"), []);
+  assert.deepEqual(verificaHeaderIndicizzazione("all, max-snippet:-1", "/"), []);
+  assert.deepEqual(verificaHeaderIndicizzazione("nofollow", "/"), []);
+  assert.deepEqual(verificaHeaderIndicizzazione("noimageindex", "/"), []);
+  assert.match(verificaHeaderIndicizzazione("noindex, nofollow", "/")[0],/blocca l'indicizzazione/);
+  assert.match(verificaHeaderIndicizzazione("googlebot: noindex", "/")[0],/Google|googlebot/i);
+  assert.equal(verificaHeaderIndicizzazione("none", "/")[0].includes("su /"),true);
 });
 
 test("sitemap include le pagine strategiche e il nuovo hub",()=>{
