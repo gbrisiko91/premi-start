@@ -19,6 +19,28 @@ test("homepage: meta descrizioni specifiche e non il solo slogan", () => {
     assert.ok(d.length <= 170, `${l}: descrizione troppo lunga (${d.length})`);
   }
 });
+test("homepage: title concisi nelle cinque lingue segnalate dall'audit del 22/11", () => {
+  const titles = {
+    it: /notizie e guide videogiochi/i,
+    en: /video game news and guides/i,
+    de: /gaming-news und retrogames/i,
+    es: /noticias y guías de videojuegos/i,
+    ru: /игровые новости и ретро/i,
+  };
+  for (const [l, re] of Object.entries(titles)) {
+    const page = html(prefix(l) + "index.html");
+    const t = title(page);
+    assert.ok(t.includes("Soffia Cartuccia"), `${l}: nome della testata assente`);
+    assert.match(t,re,`${l}: tema della homepage assente`);
+    assert.ok(t.length <= 60, `${l}: titolo troppo lungo (${t.length} caratteri)`);
+    assert.ok(page.includes('<meta name="robots" content="index, follow'), `${l}: pagina non indicizzabile`);
+    assert.ok(page.includes('rel="canonical"'), `${l}: canonical mancante`);
+  }
+  const esAuthor = title(html("es/autore/gianmarco-buono/index.html"));
+  assert.ok(esAuthor.length <= 62, `Autore ES: title troppo lungo (${esAuthor.length})`);
+  assert.match(esAuthor,/Gianmarco Buono/);
+});
+
 test("niente title duplicati nelle due coppie individuate nell'audit", () => {
   const tDe = title(html("de/autore/gianmarco-buono/index.html"));
   const tEs = title(html("es/autore/gianmarco-buono/index.html"));
