@@ -23,6 +23,7 @@ import { QUIZ } from "./quiz.mjs";
 import { QUIZ_ARCHIVIO_LABEL } from "./strumenti/quiz-archivio-label.mjs";
 import { GUIDE_RUBRICHE } from "./strumenti/guide-rubriche.mjs";
 import { META_RUBRICHE } from "./strumenti/meta-rubriche.mjs";
+import { localizzaLinkArticoli } from "./strumenti/localizza-link-articoli.mjs";
 import { R, USCITE, SONDAGGI, NEWSLETTER } from "./rubriche.mjs";
 
 const ROOT = path.dirname(new URL(import.meta.url).pathname);
@@ -547,6 +548,7 @@ function paginaArticolo(a, stessaLingua, versioni) {
     : "";
   const alternative = Object.fromEntries(versioni.map((v) => [v.lingua, v.url]));
   const notaTraduzione = a.originale ? `<p class="nota-traduzione">${t.tradotto(a.originale.url)}</p>` : "";
+  const corpoLocalizzato = localizzaLinkArticoli(a.html, l, idDaUrlItaliano, linkTradottiPerLingua[l]);
   const altreLingue = versioni.filter((v) => v.lingua !== l);
   const editore = { "@type": "Organization", name: config.nome, url: config.url, logo: { "@type": "ImageObject", url: urlAssoluto("/logo.png"), width: 512, height: 512 } };
   const jsonld = [
@@ -586,7 +588,7 @@ function paginaArticolo(a, stessaLingua, versioni) {
     <div class="eroe-azioni-articolo">${hype(l, a.viralita)}${tastoLike(a)}${a.bozza ? "" : `<button type="button" hidden class="bottone-salva" data-salva-articolo="${esc(a.id)}" data-salva="${esc(u.save)}" data-salvato="${esc(u.saved)}" aria-pressed="false">${esc(u.save)}</button>`}${a.bozza ? "" : `<a class="tasto-vai-condividi" href="#condividi">${icona("condividi")}<span>${esc(t.condividi)}</span></a>`}</div>
   </header>
   ${immagine}
-  <div class="testo">${a.html}</div>
+  <div class="testo">${corpoLocalizzato}</div>
   ${notaTraduzione}
   ${boxRimando}
   ${linkSpeciale}
@@ -1082,6 +1084,10 @@ const visibile = (a) => CON_BOZZE || !a.bozza;
 const tutti = [...originali, ...traduzioni].filter(visibile);
 const perLingua = tuttePerLingua((l) => ordina(tutti.filter((a) => a.lingua === l)));
 const versioniDi = (id) => CODICI.map((l) => perLingua[l].find((a) => a.id === id)).filter(Boolean);
+// Il link è localizzabile solo se entrambe le pagine sono già pubblicate.
+// La nota trasparente che rinvia all’originale italiano resta invariata.
+const idDaUrlItaliano = new Map(perLingua[PRINCIPALE].filter((a) => !a.bozza).map((a) => [a.url, a.id]));
+const linkTradottiPerLingua = tuttePerLingua((l) => new Map(perLingua[l].filter((a) => !a.bozza).map((a) => [a.id, a.url])));
 PAGINE_FISSE = leggiPagine();
 
 fs.rmSync(DIST, { recursive: true, force: true });
