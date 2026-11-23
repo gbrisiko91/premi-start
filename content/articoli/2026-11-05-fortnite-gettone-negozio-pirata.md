@@ -26,6 +26,10 @@ fonti:
     url: "https://x.com/FortniteStatus/status/2119202610322227327"
   - titolo: "VGC – Epic conferma le probabilità di Pirate Shop Access"
     url: "https://www.videogameschronicle.com/news/fortnite-officially-confirms-pirate-shop-access-token-drop-rate-as-players-hunt-for-item-which-makes-entire-shop-free/"
+  - titolo: "VGC – Guida al Pirate Shop Token: forzieri, modalità ed esclusioni"
+    url: "https://www.videogameschronicle.com/news/fortnite-pirate-shop-access-token-guide/"
+  - titolo: "GamesRadar+ – Fortnite Pirate Shop Token: probabilità e Treasure Hours"
+    url: "https://www.gamesradar.com/games/fortnite/fortnite-pirate-shop-token/"
   - titolo: "Fortnite – account ufficiale su X"
     url: "https://x.com/FortniteGame"
 ---
@@ -38,11 +42,11 @@ Il **Gettone del Negozio pirata** di **Fortnite** è l'oggetto più cercato del 
 
 Il gettone si può ottenere aprendo i forzieri nella Battaglia reale e in Zero costruzioni: non occorre cercare soltanto quelli con il teschio. Chi lo trova ottiene l'accesso al Negozio dei pirati: per due settimane può prendersi gratis skin, emote e tutti gli oggetti che di solito si comprano con i V-Buck, e se li tiene per sempre.
 
-Qualche esclusione c'è: niente regali agli amici, niente livelli del Pass battaglia e niente articoli che si comprano solo con denaro reale. Secondo Kotaku e Push Square l'accesso è diviso in due periodi da 14 giorni, uno da usare nel 2026 e l'altro nel 2027. E c'è un dettaglio che ha acceso le squadre: quando un giocatore trova il gettone, la ricompensa arriva anche ai compagni del gruppo.
+Qualche esclusione c'è: niente regali agli amici, niente livelli del Pass battaglia e niente articoli che si comprano solo con denaro reale. Secondo Kotaku e Push Square l'accesso è diviso in due periodi da 14 giorni, uno da usare nel 2026 e l'altro nel 2027. Il primo va attivato entro il 15 dicembre 2026. E c'è un dettaglio che ha acceso le squadre: quando un giocatore trova il gettone, la ricompensa arriva anche ai compagni del gruppo.
 
 ## Quanto è raro il gettone e perché vale così tanto
 
-Il **7 novembre 2026** Epic Games ha [pubblicato le probabilità ufficiali](https://x.com/FortniteStatus/status/2119202610322227327): **1 possibilità su 137.500 per ogni forziere aperto in una partita normale** (circa 0,000727%). Durante le **Treasure Hours** la probabilità può aumentare: Epic ha indicato un moltiplicatore di 1,5× e, per una fascia speciale, di 2×. Le vecchie stime della community non sono più il riferimento corretto. Il numero totale di giocatori che hanno trovato il gettone non è stato comunicato ufficialmente.
+Il **7 novembre 2026** Epic Games ha [pubblicato le probabilità ufficiali](https://x.com/FortniteStatus/status/2119202610322227327): **1 possibilità su 137.500 per ogni forziere aperto in una partita normale** (circa 0,000727%). Durante le **Treasure Hours** la probabilità può aumentare: Epic parla di un moltiplicatore di 1,5×; secondo VGC e GamesRadar, la fascia del 10 novembre è arrivata a 2×. Le vecchie stime della community non sono più il riferimento corretto. Il numero totale di giocatori che hanno trovato il gettone non è stato comunicato ufficialmente.
 
 Ecco spiegata la corsa di questi giorni. C'è chi fa saltare i forzieri chiusi nei caveau con granate e palle di cannone, chi si organizza in gruppo per avere più possibilità e chi vende "accompagnamenti" a pagamento. Su forum e social girano anche programmi per il farming automatico e overlay che mostrano i forzieri, tutti vietati dalle regole del gioco.
 
@@ -60,19 +64,15 @@ La mini-stagione si conclude il 5 dicembre, quindi resta solo un periodo limitat
 
 Il gettone può uscire aprendo o rompendo i forzieri nella Battaglia reale e in Zero costruzioni, compresi quelli normali. Non esiste un metodo che garantisca il risultato.
 
+### Qual è la probabilità di trovare il Pirate Shop Token?
+
+**La probabilità ufficiale è 1 su 137.500 per forziere aperto in una partita normale**, secondo [Fortnite Status](https://x.com/FortniteStatus/status/2119202610322227327). Durante le Treasure Hours può essere maggiore. Ogni forziere ha la stessa probabilità, quindi anche dopo 137.500 forzieri il gettone non è garantito.
+
 ### Quanto dura il Negozio pirata gratis?
 
 L'accesso dura 14 giorni dall'attivazione. Gli oggetti riscattati in quel periodo restano nell'armadietto per sempre.
 
-### Qual è la probabilità di trovare il Pirate Shop Token?
-
-**La probabilità ufficiale è 1 su 137.500 per forziere aperto in una partita normale**, secondo [Fortnite Status](https://x.com/FortniteStatus/status/2119202610322227327). Durante le Treasure Hours può essere maggiore; non è una garanzia dopo un certo numero di forzieri.
-
-### Si può comprare o vendere un account Fortnite con il Pirate Shop Token?
-
-Esistono annunci online, ma **la compravendita di account viola le regole di Epic Games** e può esporre a truffe, perdita dell’accesso o provvedimenti sull’account. Non esiste un acquisto del gettone tramite canali ufficiali indicato in questo articolo.
-
 ### Conviene comprare un account con il gettone?
 
-No. Epic lo definisce una truffa e la vendita di account viola i termini di servizio, con il rischio di perdere soldi e account.
+No. Epic lo definisce una truffa e la compravendita di account viola le sue regole: si rischia di pagare senza ricevere nulla, di perdere l'account o di essere bannati.
 

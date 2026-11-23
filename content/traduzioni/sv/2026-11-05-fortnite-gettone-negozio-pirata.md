@@ -16,11 +16,11 @@ crediti_immagine: "Bild: Epic Games, officiella PlayStation.com-sidan"
 
 Polletten kan dyka upp när du öppnar eller slår sönder kistor i Battle Royale och Zero Build, även vanliga kistor: de behöver inte vara märkta med en dödskalle. Den som hittar den får tillgång till piratbutiken: i två veckor kan man ta skins, emotes och alla föremål som normalt köps med **V-Bucks** gratis, och behålla dem för alltid.
 
-Det finns några undantag: inga gåvor till vänner, inga nivåer i Battle Pass och inga artiklar som bara kan köpas med riktiga pengar. Enligt Kotaku och Push Square är tillgången uppdelad i två perioder på 14 dagar, en att använda 2026 och en 2027. En detalj som fått fart på lagen: när en spelare hittar polletten får även lagkamraterna belöningen.
+Det finns några undantag: inga gåvor till vänner, inga nivåer i Battle Pass och inga artiklar som bara kan köpas med riktiga pengar. Enligt Kotaku och Push Square är tillgången uppdelad i två perioder på 14 dagar, en att använda 2026 och en 2027. Den första måste aktiveras senast den 15 december 2026. En detalj som fått fart på lagen: när en spelare hittar polletten får även lagkamraterna belöningen.
 
 ## Hur sällsynt är polletten och varför är den värd så mycket
 
-Den **7 november 2026** [publicerade Epic Games den officiella droppchansen](https://x.com/FortniteStatus/status/2119202610322227327): **1 på 137 500 per öppnad kista i en vanlig match** (cirka 0,000727 %). Under **Treasure Hours** kan chansen höjas: Epic angav 1,5 gånger och vid ett särskilt tillfälle 2 gånger den vanliga chansen. Tidigare uppskattningar i communityn är inaktuella. Det finns fortfarande ingen offentlig, verifierad totalsiffra över hur många spelare som har hittat polletten.
+Den **7 november 2026** [publicerade Epic Games den officiella droppchansen](https://x.com/FortniteStatus/status/2119202610322227327): **1 på 137 500 per öppnad kista i en vanlig match** (cirka 0,000727 %). Under **Treasure Hours** kan chansen höjas: Epic anger 1,5 gånger den vanliga chansen, och enligt VGC och GamesRadar steg den till 2 gånger under passet den 10 november. Tidigare uppskattningar i communityn är inaktuella. Det finns fortfarande ingen offentlig, verifierad totalsiffra över hur många spelare som har hittat polletten.
 
 Därav rusningen de senaste dagarna. Vissa spränger de låsta kistorna i valven med granater och kanonkulor, andra organiserar sig i grupper för att mångdubbla chanserna, och några erbjuder betalda ”eskorter”. På forum och sociala medier cirkulerar även program för automatisk farming och overlays som visar kistorna, alla förbjudna enligt spelets regler.
 
