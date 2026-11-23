@@ -5,15 +5,15 @@ export const META_RUBRICHE = Object.freeze({
   "it": {
     "quiz": "Una domanda di videogiochi al giorno su console, giochi e storia del gaming. Scegli la risposta, scopri la spiegazione e condividi il risultato della sfida.",
     "indie": "Scopri i videogiochi indie raccontati da Soffia Cartuccia: nuovi progetti, studi e idee originali, con approfondimenti e fonti consultabili negli articoli.",
-    "poll": "Partecipa al sondaggio gaming della settimana, scegli la tua risposta e scopri le preferenze della community. Consulta anche le domande delle settimane precedenti.",
+    "poll": "Vota nel sondaggio gaming della settimana, scopri le preferenze della community e consulta anche le domande delle settimane precedenti.",
     "author": "Conosci Gianmarco Buono, autore di Soffia Cartuccia: leggi la sua presentazione e trova tutti gli articoli pubblicati sulla testata dedicata ai videogiochi.",
     "releases": "Consulta le prossime uscite di videogiochi su PS5, Xbox, Nintendo Switch e PC: date, piattaforme e collegamenti agli approfondimenti disponibili."
   },
   "en": {
-    "quiz": "Test your video game knowledge with one question every day about consoles, classics and gaming history. Choose an answer, read the explanation and share your result.",
-    "indie": "Explore independent games featured by Soffia Cartuccia: creative projects, small studios and original ideas, with practical details and cited sources in each story.",
+    "quiz": "Test your gaming knowledge with a daily question about consoles, classics and history. Pick an answer, read the explanation and share your result.",
+    "indie": "Discover indie games on Soffia Cartuccia: creative projects, small studios and original ideas, with useful details and sources linked in each story.",
     "poll": "Vote in this week's gaming poll, choose your answer and see what other readers think. Explore previous questions and join the discussion about video games.",
-    "author": "Meet Gianmarco Buono, a writer at Soffia Cartuccia. Read his profile and browse the articles he has published about video games, the industry and gaming culture.",
+    "author": "Meet Gianmarco Buono, writer at Soffia Cartuccia. Read his profile and explore articles on video games, the industry and gaming culture.",
     "releases": "Browse upcoming video game releases for PS5, Xbox, Nintendo Switch and PC, including release dates, platforms and links to relevant news and guides."
   },
   "de": {
@@ -24,7 +24,7 @@ export const META_RUBRICHE = Object.freeze({
     "releases": "Entdecke kommende Spiele für PS5, Xbox, Nintendo Switch und PC: Veröffentlichungstermine, Plattformen und passende Artikel mit weiteren Informationen."
   },
   "es": {
-    "quiz": "Pon a prueba tus conocimientos de videojuegos con una pregunta diaria sobre consolas, clásicos e historia del gaming. Elige una respuesta y descubre la explicación.",
+    "quiz": "Pon a prueba tus conocimientos de videojuegos con una pregunta diaria sobre consolas, clásicos e historia del gaming. Elige y descubre la explicación.",
     "indie": "Descubre videojuegos independientes en Soffia Cartuccia: estudios pequeños, proyectos originales e ideas nuevas con información y fuentes en cada artículo.",
     "poll": "Participa en la encuesta semanal sobre videojuegos, elige tu respuesta y descubre qué opinan otros lectores. Consulta también las preguntas anteriores.",
     "author": "Conoce a Gianmarco Buono, autor de Soffia Cartuccia. Lee su perfil y encuentra sus artículos publicados sobre videojuegos, la industria y la cultura gaming.",
@@ -59,7 +59,7 @@ export const META_RUBRICHE = Object.freeze({
     "releases": "PS5、Xbox、Nintendo Switch、PC向けゲームの今後の発売予定を確認。発売日、対応プラットフォーム、関連記事へのリンクをまとめて紹介しています。"
   },
   "ru": {
-    "quiz": "Проверьте знания о видеоиграх: каждый день новый вопрос об игровых консолях, классике и истории индустрии. Выберите ответ, прочитайте пояснение и поделитесь результатом.",
+    "quiz": "Проверьте знания об играх: каждый день новый вопрос о консолях, классике и истории. Выберите ответ, прочитайте пояснение и поделитесь результатом.",
     "indie": "Откройте независимые игры в подборке Soffia Cartuccia: небольшие студии, интересные проекты и оригинальные идеи с подробностями и источниками в каждой статье.",
     "poll": "Примите участие в еженедельном опросе об играх, выберите ответ и узнайте мнение других читателей. Посмотрите предыдущие вопросы о видеоиграх и игровой культуре.",
     "author": "Познакомьтесь с Джанмарко Буоно, автором Soffia Cartuccia. Прочитайте его профиль и найдите опубликованные материалы о видеоиграх и игровой культуре.",
