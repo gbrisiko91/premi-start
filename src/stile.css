@@ -430,3 +430,30 @@ main { max-width: 78rem; margin: 0 auto; padding: 0 1rem 5rem; }
 }
 .copertina > .copertina-nome.copertina-nome, .bio-copertina:not(.bio-copertina-grande) > .copertina-nome.copertina-nome { display: none; }
 .homepage-ultime .scheda .copertina > .copertina-nome.copertina-nome { font-size: .85rem; }
+
+
+/* Navigazione: torna all'inizio dopo aver scorso una pagina lunga. */
+.torna-su {
+  position: fixed;
+  right: calc(1rem + env(safe-area-inset-right, 0px));
+  bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px));
+  z-index: 8;
+  display: grid;
+  place-items: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  padding: 0;
+  border: 2px solid var(--notte);
+  border-radius: 50%;
+  color: var(--notte);
+  background: var(--giallo);
+  box-shadow: 0 4px 0 var(--viola), 0 10px 24px rgba(0, 0, 0, .35);
+  font: 900 1.7rem/1 var(--display);
+  cursor: pointer;
+}
+.torna-su[hidden] { display: none !important; }
+.torna-su:hover { background: var(--testo); transform: translateY(-2px); }
+.torna-su:active { transform: translateY(2px); }
+@media (prefers-reduced-motion: reduce) {
+  .torna-su { transition: none; }
+}

@@ -10,6 +10,10 @@ import ARTICOLI_NL from "../netlify/dati/newsletter.mjs";
 for (const lingua of Object.keys(LINGUE)) {
   const prefix = lingua === "it" ? "" : lingua + "/";
   const home = fs.readFileSync(`dist/${prefix}index.html`, "utf8");
+
+  assert.equal((home.match(/data-torna-su/g) || []).length, 1, "Ogni homepage deve avere un solo pulsante Torna su");
+  assert.match(home, /class="torna-su"[^>]*hidden/, "Il pulsante deve essere inizialmente nascosto");
+  assert.match(home, /aria-label="[^"]+"/, "Il pulsante deve avere un nome accessibile");
   const indice = JSON.parse(fs.readFileSync(`dist/indice-${lingua}.json`, "utf8"));
 
   // Verifica multilingua: nessuna traduzione deve presentare come confermata
@@ -219,4 +223,11 @@ assert.ok(robotsNews.includes("Sitemap: https://soffiacartuccia.it/sitemap-news.
 for (const f of ["dist/rubriche.css","dist/uscite.js","dist/sondaggio.js","dist/novita.css","dist/quiz.css","dist/quiz.js","dist/esperienza.js","dist/sitemap.xml","dist/rss.xml","dist/stile.css"]) {
   assert.ok(fs.existsSync(f), `File mancante: ${f}`);
 }
+
+const scorrimento = fs.readFileSync("dist/esperienza.js", "utf8");
+assert.ok(scorrimento.includes('window.scrollTo({ top: 0'), "Manca il ritorno all'inizio");
+assert.ok(scorrimento.includes("prefers-reduced-motion: reduce"), "Manca il rispetto delle preferenze di movimento");
+const stileTornaSu = fs.readFileSync("dist/stile.css", "utf8");
+assert.ok(stileTornaSu.includes(".torna-su[hidden]"), "Il pulsante non deve apparire prima dello scroll");
+
 console.log("OK: tutte le lingue, indici, articoli e asset verificati.");

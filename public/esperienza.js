@@ -214,4 +214,31 @@
     window.addEventListener("resize", misura);
     misura();
   }
+  // Su pagine lunghe, offre il ritorno rapido all'inizio senza occupare spazio all'apertura.
+  const tornaSu = document.querySelector("[data-torna-su]");
+  if (tornaSu) {
+    let previsto = false;
+    const aggiornaTornaSu = () => {
+      previsto = false;
+      const abbastanzaLunga = document.documentElement.scrollHeight > window.innerHeight + 950;
+      const visibile = abbastanzaLunga && window.scrollY > 700;
+      tornaSu.hidden = !visibile;
+      if (!visibile && document.activeElement === tornaSu) {
+        document.querySelector("a.marchio")?.focus({ preventScroll: true });
+      }
+    };
+    const pianificaTornaSu = () => {
+      if (previsto) return;
+      previsto = true;
+      requestAnimationFrame(aggiornaTornaSu);
+    };
+    tornaSu.addEventListener("click", () => {
+      const riduciMovimento = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      window.scrollTo({ top: 0, behavior: riduciMovimento ? "auto" : "smooth" });
+    });
+    window.addEventListener("scroll", pianificaTornaSu, { passive: true });
+    window.addEventListener("resize", pianificaTornaSu);
+    pianificaTornaSu();
+  }
+
 })();
