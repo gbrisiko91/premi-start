@@ -8,6 +8,10 @@ categoria: pc
 tag: [rob-run, steam, free-to-play, gta-6]
 viralita: 66
 bozza: false
+immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4262460/61dff3c7ebce05c75d9d60d69440b099d16cfd02/library_hero.jpg"
+immagine_riserva: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4262460/db8e0cf43c9475b96fb9446b4908de79fcb9f619/header.jpg?t=1793811654"
+alt_immagine: "Immagine ufficiale di ROB RUN dalla pagina Steam, con una casa nel deserto"
+crediti_immagine: "Immagine: ROB RUN via Steam"
 verifica:
   stato: verificata
   natura: report

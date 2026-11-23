@@ -8,6 +8,10 @@ categoria: pc
 tag: [the-binding-of-isaac, nicalis, edmund-mcmillen, intelligenza-artificiale]
 viralita: 74
 bozza: false
+immagine: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/250900/library_hero.jpg"
+immagine_riserva: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3353470/header.jpg"
+alt_immagine: "Artwork ufficiale di The Binding of Isaac con Isaac circondato dai mostri"
+crediti_immagine: "Immagine: Nicalis / Edmund McMillen via Steam"
 verifica:
   stato: verificata
   natura: report
