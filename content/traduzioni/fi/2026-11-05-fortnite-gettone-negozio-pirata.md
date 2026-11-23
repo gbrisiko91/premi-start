@@ -1,5 +1,6 @@
 ---
 titolo: "Fortniten merirosvokaupan merkkiä metsästetään: tilejä myynnissä jopa 10 000 dollarilla"
+aggiornato: 2026-11-23
 titolo_seo: "Fortniten merirosvokaupan merkki: tilit 10 000 dollaria"
 sommario: "Fortniten merirosvokaupan merkki avaa kaupan ilmaiseksi 14 päiväksi ja on harvinainen: eBayssa tilejä jopa 10 000 dollarilla. Epic varoittaa huijauksesta."
 slug: "fortnite-merirosvokauppa-merkki"
@@ -11,13 +12,13 @@ crediti_immagine: "Kuva: Epic Games, virallinen PlayStation.com-sivu"
 
 ## Mikä on Fortniten merirosvokaupan merkki
 
-Merkin voi löytää aarrearkuista, joissa on pääkallomerkintä ja joita on ympäri Battle Royalen karttaa. Löytäjä saa pääsyn merirosvokauppaan: kahden viikon ajan hän voi ottaa ilmaiseksi asuja, emoteja ja kaikkia esineitä, joita tavallisesti ostetaan **V-Buckseilla**, ja ne jäävät hänelle pysyvästi.
+Merkki voi löytyä avaamalla tai rikkomalla arkkuja Battle Royale- ja Zero Build -pelimuodoissa, myös tavallisista arkuista: pääkallomerkintää ei tarvita. Löytäjä saa pääsyn merirosvokauppaan: kahden viikon ajan hän voi ottaa ilmaiseksi asuja, emoteja ja kaikkia esineitä, joita tavallisesti ostetaan **V-Buckseilla**, ja ne jäävät hänelle pysyvästi.
 
 Joitakin poikkeuksia on: lahjoja ystäville ei voi antaa, Taistelupassin tasoja ei saa, eikä mukana ole tuotteita, joita voi ostaa vain oikealla rahalla. Kotakun ja Push Squaren mukaan pääsy on jaettu kahteen 14 päivän jaksoon, joista toinen käytetään vuonna 2026 ja toinen vuonna 2027. Yksi yksityiskohta on innostanut ryhmiä: kun pelaaja löytää merkin, palkinto tulee myös hänen joukkuetovereilleen.
 
 ## Kuinka harvinainen merkki on ja miksi se on niin arvokas
 
-Epic ei ole julkaissut virallista todennäköisyyttä. Yhteisö arvioi, että merkki tulee noin kerran **700 000 arkkua** kohden. Lukua ei ole vahvistettu, mutta se riittää muuttamaan minikauden lotoksi. Kukaan ei tiedä varmasti, kuinka moni pelaaja on jo löytänyt sen.
+**7. marraskuuta 2026** Epic Games [julkaisi virallisen pudotustodennäköisyyden](https://x.com/FortniteStatus/status/2119202610322227327): **1 mahdollisuus 137 500:sta jokaista tavallisessa ottelussa avattua arkkua kohti** (noin 0,000727 %). **Treasure Hours** -tapahtumien aikana todennäköisyyttä voidaan kasvattaa: Epic kertoi 1,5-kertaisesta kertoimesta ja yhden tapahtuman kohdalla 2-kertaisesta. Yhteisön aiemmat arviot eivät enää ole ajan tasalla. Epic ei ole julkaissut vahvistettua tietoa merkin löytäneiden pelaajien kokonaismäärästä.
 
 Tästä johtuu näiden päivien kilpajuoksu. Jotkut räjäyttävät holveihin lukittuja arkkuja kranaateilla ja tykinkuulilla, jotkut järjestäytyvät ryhmiksi moninkertaistaakseen mahdollisuutensa, jotkut tarjoavat maksullisia ”saattopalveluja”. Foorumeilla ja somessa liikkuu myös ohjelmia automaattiseen farmaamiseen ja arkut näyttäviä overlay-ohjelmia, jotka kaikki ovat pelin sääntöjen vastaisia.
 
@@ -27,13 +28,13 @@ Koska merkki pysyy sidottuna tiliin, jolla se löydettiin, rahaa havittelevat my
 
 Fortniten virallinen X-tili vastasi 3. marraskuuta: merkin sisältävien tilien ostaminen tai sen löytämiseen tarkoitettujen työkalujen käyttäminen on huijausta. Merkki tulee arkuista kuten mikä tahansa muu saalis, joten Epicin mukaan jokaisella pelaajalla on samat mahdollisuudet. Muistutamme, että tilien osto ja myynti rikkoo käyttöehtoja ja voi johtaa porttikieltoon, puhumattakaan todellisesta riskistä maksaa ja jäädä ilman mitään.
 
-Minikausi kestää 4. joulukuuta asti, joten metsästys on vasta alkanut. Pelien sisältöä koskevat säännöt ovat kuuma aihe muuallakin, kuten näimme, kun [itch.io poisti tekoälyllä tehdyt pelit](/articoli/itch-io-giochi-ia-eliminati/).
+Minikausi päättyy 5. joulukuuta, joten merkin löytämiseen on enää rajallisesti aikaa. Pelien sisältöä koskevat säännöt ovat kuuma aihe muuallakin, kuten näimme, kun [itch.io poisti tekoälyllä tehdyt pelit](/articoli/itch-io-giochi-ia-eliminati/).
 
 ## Usein kysytyt kysymykset
 
 ### Miten Fortniten merirosvokaupan merkin löytää?
 
-Se löytyy avaamalla Battle Royalessa aarrearkkuja, joissa on pääkallosymboli. Varmaa keinoa ei ole: kyseessä on satunnainen ja hyvin harvinainen saalis.
+Merkki voi löytyä avaamalla tai rikkomalla arkkuja Battle Royale- ja Zero Build -pelimuodoissa, myös tavallisista arkuista. Varmaa keinoa ei ole.
 
 ### Kuinka kauan ilmainen merirosvokauppa kestää?
 
