@@ -438,9 +438,9 @@ function inTendenza(articoli) {
 // Meta descrizioni delle homepage, più utili del motto breve nei risultati di ricerca.
 const DESCRIZIONI_HOME = Object.freeze(  {
     "it": "Notizie e approfondimenti su PS5, Xbox, Nintendo Switch 2, PC e retrogaming. Scopri il mondo indie e le storie dei videogiochi su Soffia Cartuccia.",
-    "en": "Video game news and analysis for PS5, Xbox, Nintendo Switch 2, PC and retro gaming. Discover indie games, new releases and source-backed stories on Soffia Cartuccia.",
+    "en": "Video game news for PS5, Xbox, Nintendo Switch 2, PC and retro gaming. Read indie discoveries, releases and sourced stories on Soffia Cartuccia.",
     "de": "Aktuelle Gaming-News zu PS5, Xbox, Nintendo Switch 2, PC und Retrospielen. Entdecke Indie-Games, neue Releases und Hintergründe auf Soffia Cartuccia.",
-    "es": "Noticias y análisis de videojuegos para PS5, Xbox, Nintendo Switch 2, PC y retro. Descubre juegos indie, lanzamientos y artículos con fuentes en Soffia Cartuccia.",
+    "es": "Noticias de PS5, Xbox, Nintendo Switch 2, PC y retro. Descubre juegos indie, próximos lanzamientos y artículos con fuentes en Soffia Cartuccia.",
     "no": "Spillnyheter om PS5, Xbox, Nintendo Switch 2, PC og retrospill. Les om nye spill, indiespill og historier med kilder hos Soffia Cartuccia.",
     "sv": "Spelnyheter om PS5, Xbox, Nintendo Switch 2, PC och retrospel. Läs om nya spel, indiespel och artiklar med källor på Soffia Cartuccia.",
     "fi": "Peliuutisia PS5:stä, Xboxista, Nintendo Switch 2:sta, PC:stä ja retropeleistä. Löydä indiepelit, uutuudet ja lähteistetyt jutut Soffia Cartuccialta.",
