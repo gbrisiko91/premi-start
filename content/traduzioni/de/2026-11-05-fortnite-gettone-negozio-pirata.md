@@ -1,5 +1,6 @@
 ---
 titolo: "Jagd auf den Piraten-Shop-Token in Fortnite: Accounts für bis zu 10.000 Dollar"
+aggiornato: 2026-11-23
 titolo_seo: "Fortnite Piraten-Shop-Token: Accounts für 10.000 Dollar"
 sommario: "Der Piraten-Shop-Token in Fortnite schenkt 14 Tage den Shop und ist extrem selten: Auf eBay kosten Accounts bis zu 10.000 Dollar. Epic warnt vor Betrug."
 slug: "fortnite-piraten-shop-token"
@@ -11,13 +12,13 @@ Der **Piraten-Shop-Token** in **Fortnite** ist derzeit der begehrteste Gegenstan
 
 ## Was der Piraten-Shop-Token in Fortnite ist
 
-Der Token steckt in den Schatztruhen mit dem Totenkopf, die über die Karte des Battle Royale verteilt sind. Wer ihn findet, erhält Zugang zum Piraten-Shop: Zwei Wochen lang kann man Skins, Emotes und alle Gegenstände, die man normalerweise mit **V-Bucks** kauft, kostenlos holen und für immer behalten.
+Der Token kann beim Öffnen oder Zerstören von Truhen in Battle Royale und Null Bauen erscheinen, auch aus gewöhnlichen Truhen: Eine Totenkopfmarkierung ist nicht erforderlich. Wer ihn findet, erhält Zugang zum Piraten-Shop: Zwei Wochen lang kann man Skins, Emotes und alle Gegenstände, die man normalerweise mit **V-Bucks** kauft, kostenlos holen und für immer behalten.
 
 Es gibt einige Ausnahmen: keine Geschenke an Freunde, keine Battle-Pass-Stufen und keine Artikel, die nur mit echtem Geld gekauft werden können. Laut Kotaku und Push Square ist der Zugang in zwei Zeiträume von je 14 Tagen aufgeteilt, einen für 2026 und einen für 2027. Ein Detail hat die Squads elektrisiert: Wenn ein Spieler den Token findet, erhalten auch die Mitspieler in der Gruppe die Belohnung.
 
 ## Wie selten der Token ist und warum er so viel wert ist
 
-Epic hat keine offizielle Wahrscheinlichkeit veröffentlicht. Die Community schätzt, dass etwa ein Token auf **700.000 Truhen** kommt – eine unbestätigte Zahl, die aber ausreicht, um die Mini-Season in eine Lotterie zu verwandeln. Niemand weiß sicher, wie viele Spieler ihn bereits gefunden haben.
+Am **7. November 2026** hat Epic Games [die offizielle Dropchance veröffentlicht](https://x.com/FortniteStatus/status/2119202610322227327): **1 zu 137.500 pro geöffneter Truhe in einer normalen Partie** (etwa 0,000727 %). Bei den **Treasure Hours** kann die Chance steigen: Epic nannte einen Faktor von 1,5 und bei einer bestimmten Aktion von 2. Frühere Schätzungen aus der Community sind überholt. Eine verifizierte Gesamtzahl der Spieler, die den Token gefunden haben, wurde nicht veröffentlicht.
 
 Daher der Ansturm dieser Tage. Manche sprengen die verschlossenen Truhen in den Tresorräumen mit Granaten und Kanonenkugeln, andere organisieren sich in Gruppen, um ihre Chancen zu vervielfachen, wieder andere bieten bezahlte „Begleitungen“ an. In Foren und sozialen Netzwerken kursieren zudem Programme zum automatischen Farmen und Overlays, die die Truhen anzeigen – allesamt nach den Spielregeln verboten.
 
@@ -27,13 +28,13 @@ Da der Token an den Account gebunden bleibt, der ihn gefunden hat, verkaufen die
 
 Der offizielle Fortnite-Account auf X reagierte am 3. November: Accounts mit dem Token zu kaufen oder Tools zu nutzen, um ihn zu finden, sei Betrug. Der Token stamme wie jede andere Beute aus Truhen, daher habe laut Epic jeder Spieler die gleichen Chancen. Wir erinnern daran, dass der Handel mit Accounts gegen die Nutzungsbedingungen verstößt und zu einem Bann führen kann – ganz abgesehen vom realen Risiko, zu bezahlen und nichts zu bekommen.
 
-Die Mini-Season läuft bis zum 4. Dezember, die Jagd hat also gerade erst begonnen. Das Thema der Regeln für Inhalte in Spielen ist auch anderswo heiß, wie wir bei [itch.io gesehen haben, das KI-generierte Spiele gelöscht hat](/articoli/itch-io-giochi-ia-eliminati/).
+Die Mini-Season endet am 5. Dezember: Für die Suche nach dem Token bleibt nur begrenzt Zeit. Das Thema der Regeln für Inhalte in Spielen ist auch anderswo heiß, wie wir bei [itch.io gesehen haben, das KI-generierte Spiele gelöscht hat](/articoli/itch-io-giochi-ia-eliminati/).
 
 ## Häufig gestellte Fragen
 
 ### Wie findet man den Piraten-Shop-Token in Fortnite?
 
-Man findet ihn, indem man im Battle Royale die Schatztruhen mit dem Totenkopfsymbol öffnet. Eine sichere Methode gibt es nicht: Es ist ein zufälliger und sehr seltener Drop.
+Er kann aus jeder geöffneten oder zerstörten Truhe in Battle Royale und Null Bauen erscheinen, auch aus gewöhnlichen Truhen. Es gibt keine garantierte Methode.
 
 ### Wie lange dauert der kostenlose Piraten-Shop?
 
