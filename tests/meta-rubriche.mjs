@@ -49,3 +49,23 @@ test("ogni rubrica ha una descrizione localizzata specifica e non duplicata", ()
     }
   }
 });
+
+
+test("metadati del campione audit 22/11: 8 snippet concisi e fedeli alle pagine", () => {
+  // Controllo mirato sugli URL effettivamente segnalati, non una soglia Google
+  // assoluta per tutte le lingue (in particolare non per il giapponese).
+  const urls = [
+    "/en/", "/es/", "/en/autore/gianmarco-buono/", "/en/indie/",
+    "/en/quiz/", "/es/quiz/", "/ru/quiz/", "/sondaggio/",
+  ];
+  for (const url of urls) {
+    const html=fs.readFileSync(path.join(new URL(dist).pathname,url.slice(1),"index.html"),"utf8");
+    const description=meta(html);
+    assert.ok(description,url+": meta description mancante");
+    const length=[...description].length;
+    assert.ok(length >= 120 && length <= 152,
+      url+": snippet del campione da ricontrollare ("+length+" caratteri)");
+    assert.ok(html.includes('<meta property="og:description" content="'+description+'">'),
+      url+": Open Graph non coerente");
+  }
+});
