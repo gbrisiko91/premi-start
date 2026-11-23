@@ -11,15 +11,16 @@ const read = (relative) => matter(fs.readFileSync(path.join(root,relative),"utf8
 const svPath="content/traduzioni/sv/2026-11-05-fortnite-gettone-negozio-pirata.md";
 const enPath="content/traduzioni/en/2026-11-04-gta-6-preload-peso.md";
 
-test("Fortnite svedese: risponde alle query senza inventare drop rate o conteggi", () => {
+test("Fortnite svedese: odds ufficiali e numero di possessori non inventato", () => {
   const { data: d, content: s }=read(svPath);
   assert.ok(d.titolo_seo.length<=60,"Titolo SEO oltre 60 caratteri");
   assert.ok(d.sommario.length<=160,"Sommario oltre 160 caratteri");
   assert.match(d.titolo_seo,/chansen\?/i,"Manca la domanda sulla probabilità");
   assert.match(s,/Hur stor är chansen att få Pirate Shop Token i Fortnite\?/);
   assert.match(s,/Hur många spelare har hittat Pirate Shop Token\?/);
-  assert.match(s,/(?:Ingen officiell dropchans|inte publicerat någon officiell sannolikhet)/);
-  assert.match(s,/700 000 kistor[\s\S]{0,160}(?:inte verifierad|obekräftad)/);
+  assert.match(s,/1 på 137 500/);
+  assert.match(s,/FortniteStatus\/status\/2119202610322227327/);
+  assert.doesNotMatch(s,/700 000 kistor/);
   assert.match(s,/ingen offentlig, verifierad totalsiffra/i);
   assert.match(s,/epicgames\.com\/help\//);
   assert.match(s,/köp, försäljning och delning av konton inte är tillåtet/);
@@ -61,9 +62,10 @@ test("dateModified e sitemap: aggiornamenti locali senza falsare altre lingue", 
   const sitemap=fs.readFileSync(path.join(root,"dist/sitemap.xml"),"utf8");
   for(const item of expected) {
     const source=read(item.lang==="sv"?svPath:enPath);
-    assert.equal(source.data.aggiornato.toISOString().slice(0,10),"2026-11-22");
+    const modified=item.lang==="sv"?"2026-11-23":"2026-11-22";
+    assert.equal(source.data.aggiornato.toISOString().slice(0,10),modified);
     const html=fs.readFileSync(path.join(root,"dist",item.url.slice(1),"index.html"),"utf8");
-    const timestamp="2026-11-22T00:00:00.000Z";
+    const timestamp=`${modified}T00:00:00.000Z`;
     assert.ok(html.includes(`<meta property="article:modified_time" content="${timestamp}">`),
       item.lang+": meta OG non riflette la revisione");
     assert.ok(html.includes(`"dateModified":"${timestamp}"`),
@@ -73,9 +75,22 @@ test("dateModified e sitemap: aggiornamenti locali senza falsare altre lingue", 
     const block=[...sitemap.matchAll(/<url>([\s\S]*?)<\/url>/g)]
       .find(x=>x[1].includes(`<loc>https://soffiacartuccia.it${item.url}</loc>`));
     assert.ok(block,item.lang+": URL mancante dalla sitemap");
-    assert.match(block[1],/<lastmod>2026-11-22<\/lastmod>/,item.lang+": lastmod errato");
+    assert.ok(block[1].includes(`<lastmod>${modified}</lastmod>`),item.lang+": lastmod errato");
   }
   const original=fs.readFileSync(path.join(root,"dist/articoli/gta-6-preload-peso/index.html"),"utf8");
   assert.ok(!original.includes('"dateModified":"2026-11-22T00:00:00.000Z"'),
     "L'originale italiano non deve ricevere automaticamente la data di una modifica inglese");
+});
+
+test("Fortnite: tutte le nove versioni riportano il dato ufficiale di Epic", () => {
+  const langs=["it","en","de","es","no","sv","fi","ja","ru"];
+  for(const l of langs) {
+    const file=l==="it"?"content/articoli/2026-11-05-fortnite-gettone-negozio-pirata.md":`content/traduzioni/${l}/2026-11-05-fortnite-gettone-negozio-pirata.md`;
+    const { data, content }=read(file);
+    assert.equal(data.aggiornato.toISOString().slice(0,10),"2026-11-23",l+": data non allineata");
+    assert.match(content,/FortniteStatus\/status\/2119202610322227327/,l+": fonte ufficiale assente");
+    assert.match(content,/137[., ]?500|13万7,500/,l+": probabilità ufficiale assente");
+    assert.doesNotMatch(content,/700[., ]?000|70万個/,l+": stima obsoleta ancora presente");
+    assert.match(content,/Treasure Hours/,l+": distinzione evento mancante");
+  }
 });
