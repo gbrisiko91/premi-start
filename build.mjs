@@ -398,6 +398,7 @@ ${corpo}
   <p class="piede-link">${linkPiede}</p>
   <nav class="piede-lingue" aria-label="${esc(t.lingua)}">${CODICI.map((x) => `<a href="${alternative[x] || P.home(x)}" hreflang="${LINGUE[x].hreflang}" lang="${LINGUE[x].hreflang}"${x === l ? ' aria-current="true"' : ""}>${esc(LINGUE[x].nome)}</a>`).join("")}</nav>
 </footer>
+<button type="button" class="torna-su" data-torna-su aria-label="${esc(t.tornaSu)}" title="${esc(t.tornaSu)}" hidden><span aria-hidden="true">↑</span></button>
 <dialog class="ricerca-dialog" data-ricerca-dialog data-scrivi="${esc(u.searchType)}" data-vuoto="${esc(u.searchEmpty)}" data-errore="${esc(u.searchError)}" aria-labelledby="ricerca-titolo">
  <div class="ricerca-top"><h2 id="ricerca-titolo">${esc(u.search)}</h2><button class="bottone-ricerca" type="button" data-ricerca-chiudi>${esc(u.close)}</button></div>
  <label for="ricerca-input">${esc(u.searchHint)}</label>
