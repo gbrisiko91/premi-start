@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import {readFileSync,existsSync} from "node:fs";
-import {verificaManifest,verificaPagina,verificaSitemap,verificaHeaderIndicizzazione,BASE_PRODUZIONE} from "../strumenti/verifica-produzione.mjs";
+import {verificaManifest,verificaPagina,verificaSitemap,verificaHeaderIndicizzazione,verificaSitemapNewsPubblicata,BASE_PRODUZIONE} from "../strumenti/verifica-produzione.mjs";
 
 const sha="a".repeat(40);
 test("manifest: controlla il commit esatto, senza considerare sufficiente una build precedente",()=>{
@@ -52,4 +52,44 @@ test("la build produce un manifest che corrisponde alle ultime pagine reali",()=
   for(const p of m.ultimiArticoli)
     assert.ok(existsSync(new URL("../dist"+p+"index.html",import.meta.url)),"Articolo assente: "+p);
   assert.equal(m.specialeGta6,true);
+});
+
+
+test("sitemap News pubblicata: accetta oggi, ieri e XML vuoto con no-store", () => {
+  const headers=new Headers({"content-type":"application/xml; charset=utf-8","cache-control":"no-store"});
+  const wrap=(body)=>'<?xml version="1.0" encoding="UTF-8"?>\n'
+    + '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">'
+    + body + '</urlset>';
+  const item=(date,id)=>'<url><loc>https://soffiacartuccia.it/articoli/'+id+'/</loc><news:news><news:publication>'
+    + '<news:name>Soffia Cartuccia</news:name><news:language>it</news:language></news:publication>'
+    + '<news:publication_date>'+date+'</news:publication_date><news:title>Notizia '+id+'</news:title></news:news></url>';
+  const now=new Date("2026-11-23T12:00:00Z");
+  assert.deepEqual(verificaSitemapNewsPubblicata(wrap(item("2026-11-23","oggi")+item("2026-11-22","ieri")),headers,now),[]);
+  assert.deepEqual(verificaSitemapNewsPubblicata(wrap(""),headers,now),[],"nessuna notizia recente: sitemap vuota valida");
+  assert.ok(verificaSitemapNewsPubblicata(wrap(item("2026-11-21","vecchio")),headers,now)
+    .some(x=>x.includes("scaduto")));
+  assert.ok(verificaSitemapNewsPubblicata(wrap(item("2026-11-24","futuro")),headers,now)
+    .some(x=>x.includes("futuro")));
+  assert.ok(verificaSitemapNewsPubblicata(wrap(item("2026-11-23","oggi").repeat(2)),headers,now)
+    .some(x=>x.includes("duplicato")));
+});
+
+test("sitemap News: smaschera file statico o Edge inattiva, XML malformato e metadati assenti", () => {
+  const now=new Date("2026-11-23T23:15:00Z"); // Roma: 24 novembre
+  const xml='<?xml version="1.0" encoding="UTF-8"?>'
+    + '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">'
+    + '<url><loc>https://soffiacartuccia.it/articoli/a/</loc><news:news><news:publication>'
+    + '<news:name>Soffia Cartuccia</news:name><news:language>it</news:language></news:publication>'
+    + '<news:publication_date>2026-11-22</news:publication_date><news:title>A</news:title></news:news></url></urlset>';
+  const headers=new Headers({"content-type":"application/xml","cache-control":"no-store"});
+  const problems=verificaSitemapNewsPubblicata(xml,headers,now);
+  assert.ok(problems.some(x=>x.includes("scaduto")),"dopo mezzanotte italiana l'URL vecchio non deve passare");
+  const wrongHeaders=new Headers({"content-type":"text/html","cache-control":"public, max-age=3600"});
+  const bad=verificaSitemapNewsPubblicata(xml,wrongHeaders,new Date("2026-11-23T12:00:00Z"));
+  assert.ok(bad.some(x=>x.includes("Content-Type")));
+  assert.ok(bad.some(x=>x.includes("no-store")));
+  assert.ok(verificaSitemapNewsPubblicata("<urlset></urlset>",headers,now)
+    .some(x=>x.includes("namespace")));
+  assert.ok(verificaSitemapNewsPubblicata(xml.replace("<news:title>A</news:title>",""),headers,new Date("2026-11-23T12:00:00Z"))
+    .some(x=>x.includes("incompleti")));
 });
