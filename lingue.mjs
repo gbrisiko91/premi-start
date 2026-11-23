@@ -17,6 +17,7 @@ export const PRINCIPALE = "it";
 
 export const T = {
   it: {
+    tornaSu: "Torna all'inizio della pagina",
     nArticoli: (n) => (n === 1 ? "1 articolo" : `${n} articoli`),
     altreLingue: "Leggi in altre lingue",
     motto: "Le notizie di videogiochi di cui si parla oggi",
@@ -45,6 +46,7 @@ export const T = {
     seg: { articoli: "articoli", categoria: "categoria", archivio: "archivio" },
   },
   en: {
+    tornaSu: "Back to top",
     nArticoli: (n) => (n === 1 ? "1 article" : `${n} articles`),
     altreLingue: "Read in other languages",
     motto: "The video game news everyone is talking about today",
@@ -73,6 +75,7 @@ export const T = {
     seg: { articoli: "articles", categoria: "category", archivio: "archive" },
   },
   de: {
+    tornaSu: "Zurück nach oben",
     nArticoli: (n) => (n === 1 ? "1 Artikel" : `${n} Artikel`),
     altreLingue: "In anderen Sprachen lesen",
     motto: "Die Videospiel-News, über die heute alle reden",
@@ -101,6 +104,7 @@ export const T = {
     seg: { articoli: "artikel", categoria: "kategorie", archivio: "archiv" },
   },
   es: {
+    tornaSu: "Volver arriba",
     nArticoli: (n) => (n === 1 ? "1 artículo" : `${n} artículos`),
     altreLingue: "Leer en otros idiomas",
     motto: "Las noticias de videojuegos de las que todo el mundo habla hoy",
@@ -129,6 +133,7 @@ export const T = {
     seg: { articoli: "articulos", categoria: "categoria", archivio: "archivo" },
   },
   no: {
+    tornaSu: "Tilbake til toppen",
     nArticoli: (n) => (n === 1 ? "1 artikkel" : `${n} artikler`),
     altreLingue: "Les på andre språk",
     motto: "Spillnyhetene alle snakker om i dag",
@@ -157,6 +162,7 @@ export const T = {
     seg: { articoli: "artikler", categoria: "kategori", archivio: "arkiv" },
   },
   sv: {
+    tornaSu: "Tillbaka till toppen",
     nArticoli: (n) => (n === 1 ? "1 artikel" : `${n} artiklar`),
     altreLingue: "Läs på andra språk",
     motto: "Spelnyheterna som alla pratar om i dag",
@@ -185,6 +191,7 @@ export const T = {
     seg: { articoli: "artiklar", categoria: "kategori", archivio: "arkiv" },
   },
   fi: {
+    tornaSu: "Takaisin ylös",
     nArticoli: (n) => (n === 1 ? "1 artikkeli" : `${n} artikkelia`),
     altreLingue: "Lue muilla kielillä",
     motto: "Pelauutiset, joista kaikki puhuvat tänään",
@@ -213,6 +220,7 @@ export const T = {
     seg: { articoli: "artikkelit", categoria: "kategoria", archivio: "arkisto" },
   },
   ja: {
+    tornaSu: "ページの先頭へ戻る",
     nArticoli: (n) => `${n}本の記事`,
     altreLingue: "他の言語で読む",
     motto: "今日みんなが話題にしているゲームニュース",
@@ -241,6 +249,7 @@ export const T = {
     seg: { articoli: "articles", categoria: "category", archivio: "archive" },
   },
   ru: {
+    tornaSu: "Вернуться наверх",
     nArticoli: (n) => `${n} ${n % 10 === 1 && n % 100 !== 11 ? "статья" : [2, 3, 4].includes(n % 10) && ![12, 13, 14].includes(n % 100) ? "статьи" : "статей"}`,
     altreLingue: "Читать на других языках",
     motto: "Новости видеоигр, о которых сегодня говорят все",
