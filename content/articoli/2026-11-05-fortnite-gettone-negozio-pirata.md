@@ -4,6 +4,7 @@ titolo_seo: "Fortnite Pirate Shop Token: rarità, come trovarlo e rischi"
 sommario: "Come trovare il Pirate Shop Token di Fortnite, quanto è raro e perché comprare account con il gettone comporta rischi e violazioni delle regole."
 parola_chiave: "gettone negozio pirata fortnite"
 data: 2026-11-05
+aggiornato: 2026-11-23
 categoria: pc
 tag: [fortnite, epic-games, one-piece, battle-royale]
 viralita: 78
@@ -21,23 +22,31 @@ fonti:
     url: "https://www.everyeye.it/notizie/fortnite-x-one-piece-gettone-negozio-gratis-scatena-mercato-nero-illegale-909827.html"
   - titolo: "Push Square – Fortnite's Pirate Shop Unlocks the Entire Item Shop for Free"
     url: "https://www.pushsquare.com/news/2026/11/fortnites-pirate-shop-unlocks-the-entire-item-shop-for-free"
+  - titolo: "Fortnite Status – probabilità ufficiali Pirate Shop Access (7 novembre 2026)"
+    url: "https://x.com/FortniteStatus/status/2119202610322227327"
+  - titolo: "VGC – Epic conferma le probabilità di Pirate Shop Access"
+    url: "https://www.videogameschronicle.com/news/fortnite-officially-confirms-pirate-shop-access-token-drop-rate-as-players-hunt-for-item-which-makes-entire-shop-free/"
+  - titolo: "VGC – Guida al Pirate Shop Token: forzieri, modalità ed esclusioni"
+    url: "https://www.videogameschronicle.com/news/fortnite-pirate-shop-access-token-guide/"
+  - titolo: "GamesRadar+ – Fortnite Pirate Shop Token: probabilità e Treasure Hours"
+    url: "https://www.gamesradar.com/games/fortnite/fortnite-pirate-shop-token/"
   - titolo: "Fortnite – account ufficiale su X"
     url: "https://x.com/FortniteGame"
 ---
 
 Il **Gettone del Negozio pirata** di **Fortnite** è l'oggetto più cercato del momento. È arrivato con la mini-stagione Cacciatori di tesori, quella del crossover con One Piece, e sblocca gratis quasi tutto il Negozio per 14 giorni. È così raro che su eBay sono spuntati account in vendita fino a 10.000 dollari, tanto che **Epic Games** è dovuta intervenire.
 
-**In breve:** il *Pirate Shop Token* (Gettone del Negozio pirata) è una ricompensa molto rara ottenibile casualmente nei forzieri del tesoro. **Epic non ha comunicato una probabilità ufficiale**: i numeri diffusi dalla community non sono confermati. Gli annunci di account con il gettone **non sono un modo sicuro per ottenerlo** e la compravendita di account viola le regole di Epic.
+**In breve (aggiornato il 23 novembre):** il *Pirate Shop Token* si ottiene casualmente aprendo i forzieri della Battaglia reale e di Zero costruzioni. **Epic ha confermato una probabilità di 1 su 137.500 per forziere nelle partite normali**; durante le Treasure Hours le possibilità possono aumentare. L'acquisto di account con il gettone viola le regole di Epic e comporta rischi di truffa.
 
 ## Cos'è il Gettone del Negozio pirata di Fortnite
 
-Il gettone si trova nei forzieri del tesoro, quelli segnati con il teschio, sparsi sulla mappa della Battaglia reale. Chi lo trova ottiene l'accesso al Negozio dei pirati: per due settimane può prendersi gratis skin, emote e tutti gli oggetti che di solito si comprano con i V-Buck, e se li tiene per sempre.
+Il gettone si può ottenere aprendo i forzieri nella Battaglia reale e in Zero costruzioni: non occorre cercare soltanto quelli con il teschio. Chi lo trova ottiene l'accesso al Negozio dei pirati: per due settimane può prendersi gratis skin, emote e tutti gli oggetti che di solito si comprano con i V-Buck, e se li tiene per sempre.
 
-Qualche esclusione c'è: niente regali agli amici, niente livelli del Pass battaglia e niente articoli che si comprano solo con denaro reale. Secondo Kotaku e Push Square l'accesso è diviso in due periodi da 14 giorni, uno da usare nel 2026 e l'altro nel 2027. E c'è un dettaglio che ha acceso le squadre: quando un giocatore trova il gettone, la ricompensa arriva anche ai compagni del gruppo.
+Qualche esclusione c'è: niente regali agli amici, niente livelli del Pass battaglia e niente articoli che si comprano solo con denaro reale. Secondo Kotaku e Push Square l'accesso è diviso in due periodi da 14 giorni, uno da usare nel 2026 e l'altro nel 2027. Il primo va attivato entro il 15 dicembre 2026. E c'è un dettaglio che ha acceso le squadre: quando un giocatore trova il gettone, la ricompensa arriva anche ai compagni del gruppo.
 
 ## Quanto è raro il gettone e perché vale così tanto
 
-Epic non ha pubblicato la probabilità ufficiale. Circola una stima non verificata di circa un gettone ogni 700.000 forzieri: **non è una percentuale ufficiale e non permette di calcolare le probabilità reali**. Quanti giocatori lo abbiano già trovato, con certezza non lo sa nessuno.
+Il **7 novembre 2026** Epic Games ha [pubblicato le probabilità ufficiali](https://x.com/FortniteStatus/status/2119202610322227327): **1 possibilità su 137.500 per ogni forziere aperto in una partita normale** (circa 0,000727%). Durante le **Treasure Hours** la probabilità può aumentare: Epic parla di un moltiplicatore di 1,5×; secondo VGC e GamesRadar, la fascia del 10 novembre è arrivata a 2×. Le vecchie stime della community non sono più il riferimento corretto. Il numero totale di giocatori che hanno trovato il gettone non è stato comunicato ufficialmente.
 
 Ecco spiegata la corsa di questi giorni. C'è chi fa saltare i forzieri chiusi nei caveau con granate e palle di cannone, chi si organizza in gruppo per avere più possibilità e chi vende "accompagnamenti" a pagamento. Su forum e social girano anche programmi per il farming automatico e overlay che mostrano i forzieri, tutti vietati dalle regole del gioco.
 
@@ -47,27 +56,23 @@ Il gettone resta legato all'account che lo ha trovato, quindi chi vuole guadagna
 
 Il 3 novembre l'account ufficiale di Fortnite su X ha risposto che comprare account con il gettone o usare strumenti per trovarlo è una truffa. Il gettone esce dai forzieri come qualsiasi altro bottino, e per Epic ogni giocatore ha le stesse possibilità. Ricordiamo che la compravendita di account viola i termini di servizio e può costare il ban, senza contare il rischio molto concreto di pagare e non ricevere niente.
 
-La mini-stagione dura fino al 4 dicembre, quindi la caccia è appena cominciata. Di regole sui contenuti si parla parecchio anche altrove, come nel caso di [itch.io che ha eliminato i giochi generati con l'IA](/articoli/itch-io-giochi-ia-eliminati/).
+La mini-stagione si conclude il 5 dicembre, quindi resta solo un periodo limitato per cercare il gettone. Di regole sui contenuti si parla parecchio anche altrove, come nel caso di [itch.io che ha eliminato i giochi generati con l'IA](/articoli/itch-io-giochi-ia-eliminati/).
 
 ## Domande frequenti
 
 ### Come si trova il Gettone del Negozio pirata in Fortnite?
 
-Si trova aprendo i forzieri del tesoro con il simbolo del teschio nella Battaglia reale. Non esiste un metodo sicuro: è un drop casuale e molto raro.
+Il gettone può uscire aprendo o rompendo i forzieri nella Battaglia reale e in Zero costruzioni, compresi quelli normali. Non esiste un metodo che garantisca il risultato.
+
+### Qual è la probabilità di trovare il Pirate Shop Token?
+
+**La probabilità ufficiale è 1 su 137.500 per forziere aperto in una partita normale**, secondo [Fortnite Status](https://x.com/FortniteStatus/status/2119202610322227327). Durante le Treasure Hours può essere maggiore. Ogni forziere ha la stessa probabilità, quindi anche dopo 137.500 forzieri il gettone non è garantito.
 
 ### Quanto dura il Negozio pirata gratis?
 
 L'accesso dura 14 giorni dall'attivazione. Gli oggetti riscattati in quel periodo restano nell'armadietto per sempre.
 
-### Qual è la probabilità di trovare il Pirate Shop Token?
-
-**Non è nota una probabilità ufficiale.** La cifra di un gettone ogni 700.000 forzieri circola nella community, ma non è verificata da Epic Games. Non va quindi presentata come tasso di drop certo.
-
-### Si può comprare o vendere un account Fortnite con il Pirate Shop Token?
-
-Esistono annunci online, ma **la compravendita di account viola le regole di Epic Games** e può esporre a truffe, perdita dell’accesso o provvedimenti sull’account. Non esiste un acquisto del gettone tramite canali ufficiali indicato in questo articolo.
-
 ### Conviene comprare un account con il gettone?
 
-No. Epic lo definisce una truffa e la vendita di account viola i termini di servizio, con il rischio di perdere soldi e account.
+No. Epic lo definisce una truffa e la compravendita di account viola le sue regole: si rischia di pagare senza ricevere nulla, di perdere l'account o di essere bannati.
 
