@@ -12,7 +12,7 @@ occhiello: "Prima dei numeri, delle live e dei traguardi, c'è sempre stato un i
 
 Un creator non nasce con una community. Ci sono una prima diretta, le prove che non funzionano, i dubbi, il tempo ritagliato tra lavoro e vita privata. E poi, a volte, arriva il momento che cambia tutto.
 
-**Premi Start — Come è cominciata davvero** è la rubrica di **Soffia Cartuccia** dedicata ai percorsi dei creator gaming italiani. Niente biografie riciclate: partiamo dalle loro parole, da esperienze concrete, dagli errori e dalle scelte che li hanno portati dove sono oggi.
+**Premi Start — Come è cominciata davvero** è la rubrica di **Soffia Cartuccia** dedicata ai percorsi dei creator gaming italiani. Partiamo dalle loro parole, da esperienze concrete, dagli errori e dalle scelte che li hanno portati fin qui.
 
 ## Episodio 0 — Dragone7
 
@@ -22,7 +22,7 @@ La prima storia è già qui: quella di **Dragone7**, Official Creator di Destiny
 
 [Leggi l'intervista a Dragone7: dalla prima live al sì di Bungie](/articoli/dragone7-official-creator-destiny-intervista/).
 
-L'intervista è stata pubblicata per la prima volta il **16 novembre 2026**; entra ora nella rubrica come **episodio zero**, con il consenso del creator comunicato alla redazione.
+L'intervista è stata pubblicata per la prima volta il **16 novembre 2026**. La riproponiamo come **episodio zero di Premi Start**.
 
 ## Le prossime storie
 
