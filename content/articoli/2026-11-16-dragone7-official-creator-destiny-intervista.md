@@ -19,6 +19,8 @@ fonti:
 ---
 
 
+**Premi Start — Episodio 0.** Questa intervista, pubblicata originariamente il 16 novembre 2026, inaugura la rubrica di Soffia Cartuccia [«Come è cominciata davvero»](/premi-start/), dedicata ai percorsi dei creator gaming italiani. Le dichiarazioni di Dragone7 riportate qui sono quelle dell'intervista originale.
+
 Tiziano ha 35 anni e vive a Salerno, la stessa zona da cui arriva [Pirates: Black Sails of the Sea](/articoli/pirates-black-sails-of-the-sea-gioco-offline/), di cui vi abbiamo parlato qualche settimana fa. Di giorno fa lo sviluppatore e il papà a tempo pieno, poi dal lunedì al venerdì alle 21 accende la live su Twitch e diventa **Dragone7**. Da qualche tempo è anche Official Creator di **Destiny**, cioè uno dei creator che **Bungie** riconosce ufficialmente per i contenuti sul suo sparatutto. Gli abbiamo chiesto come ci è arrivato, partendo dall'inizio.
 
 ## Chi è Dragone7, il creator di Destiny 2 che gioca "Ride or Die"
