@@ -1,7 +1,7 @@
 ---
 titolo: "Mondiale delle console: le 16 sfidanti e il tabellone, votate su Instagram"
 titolo_seo: "Mondiale delle console: le 16 sfidanti e le regole"
-sommario: "Il Mondiale delle console di Soffia Cartuccia: 16 console, otto sfide a eliminazione e cinque giorni di sondaggi nelle Storie Instagram. Sfidanti e regole."
+sommario: "Mondiale delle console di Soffia Cartuccia: 16 console, otto sfide iniziali a eliminazione diretta e cinque giorni di sondaggi su Instagram. Sfidanti e regole."
 parola_chiave: "mondiale delle console"
 data: 2026-11-28
 categoria: retro
@@ -15,7 +15,7 @@ verifica:
   stato: da_rivedere
   natura: report
   fonti_primarie: 2
-  fonti_indipendenti: 0
+  fonti_indipendenti: 1
   controllata_il: 2026-11-24T23:55+01:00
   dubbi: []
   revisione_umana: "Iniziativa della community legata al traguardo dei 3.000 follower: si pubblica solo il giorno del lancio (G0), a traguardo raggiunto e dopo l'approvazione di Gianmarco."
@@ -24,9 +24,11 @@ fonti:
     url: "https://www.nintendo.co.jp/ir/en/finance/hard_soft/index.html"
   - titolo: "Sony Interactive Entertainment – Business Data & Sales (unità sell-in)"
     url: "https://sonyinteractive.com/en/our-company/business-data-sales/"
+  - titolo: "Nintendo Life – Nintendo has sold over 700 million video game consoles to date (Game Boy e Game Boy Color)"
+    url: "https://www.nintendolife.com/news/2018/08/nintendo_has_sold_over_700_million_video_game_consoles_to_date"
 ---
 
-Il **Mondiale delle console** di Soffia Cartuccia comincia: sedici console, un tabellone a eliminazione diretta e cinque giorni di voto nelle Storie di [Instagram](https://www.instagram.com/soffiacartuccia/). Lo abbiamo preparato per festeggiare i 3.000 follower, e a decidere chi vince siete voi.
+Il **Mondiale delle console** di Soffia Cartuccia comincia: sedici console, otto sfide iniziali (quindici in tutto, fino alla finale), un tabellone a eliminazione diretta e cinque giorni di voto nelle Storie di [Instagram](https://www.instagram.com/soffiacartuccia/). Lo abbiamo preparato per festeggiare i 3.000 follower, e a decidere chi vince siete voi.
 
 Non c'è nessun premio in palio: è un sondaggio della redazione, gratuito, e per votare non serve seguire, taggare o condividere niente. Non è un concorso a premi e non è sponsorizzato né da Instagram né dai produttori delle console.
 
@@ -49,22 +51,22 @@ Se una sfida va allo spareggio, o se dobbiamo rigiocarla, tutto il calendario sl
 
 Molte sfide degli ottavi mettono di fronte console della stessa generazione, altre accostano epoche diverse. L'anno è quello del primo lancio, di solito in Giappone.
 
-Le unità sono i dati ufficiali dei produttori, dove esistono. Nintendo riporta le vendite mondiali cumulative al 30 settembre 2026. Sony indica unità *sell-in*, cioè distribuite ai negozi, con date diverse per ogni console. Per Mega Drive, Atari 2600, Xbox 360 e Dreamcast non abbiamo trovato un dato ufficiale aggiornato, quindi non lo riportiamo.
+Le unità sono i dati ufficiali dei produttori, dove esistono. Nintendo riporta le vendite mondiali cumulative al 30 settembre 2026. Sony indica unità *sell-in*, cioè distribuite ai negozi, con date diverse per ogni console. Per Mega Drive, Atari 2600, Xbox 360 e Dreamcast non abbiamo reperito un dato ufficiale dei produttori, quindi non lo riportiamo. Il dato del Game Boy riguarda l'intera famiglia, Game Boy Color compreso.
 
 | Sfida | Console | Anno | Unità (fonte ufficiale) |
 |---|---|---|---|
 | 1 | Super Nintendo | 1990 | 49,10 milioni (Nintendo) |
-| 1 | Mega Drive | 1988 | dato ufficiale non disponibile |
+| 1 | Mega Drive | 1988 | dato ufficiale non reperito |
 | 2 | PlayStation | 1994 | oltre 102,4 milioni (Sony, al 31 marzo 2012) |
 | 2 | Nintendo 64 | 1996 | 32,93 milioni (Nintendo) |
 | 3 | PlayStation 2 | 2000 | oltre 160 milioni (Sony, al 31 marzo 2012) |
 | 3 | GameCube | 2001 | 21,74 milioni (Nintendo) |
-| 4 | Xbox 360 | 2005 | dato ufficiale non disponibile |
+| 4 | Xbox 360 | 2005 | dato ufficiale non reperito |
 | 4 | Wii | 2006 | 101,63 milioni (Nintendo) |
-| 5 | Game Boy | 1989 | 118,69 milioni (Nintendo) |
-| 5 | Atari 2600 | 1977 | dato ufficiale non disponibile |
+| 5 | Game Boy | 1989 | 118,69 milioni, famiglia Game Boy incluso Game Boy Color (Nintendo) |
+| 5 | Atari 2600 | 1977 | dato ufficiale non reperito |
 | 6 | NES | 1983 | 61,91 milioni (Nintendo) |
-| 6 | Dreamcast | 1998 | dato ufficiale non disponibile |
+| 6 | Dreamcast | 1998 | dato ufficiale non reperito |
 | 7 | PlayStation 4 | 2013 | oltre 117 milioni (Sony, al 30 giugno 2022) |
 | 7 | Switch | 2017 | 157,20 milioni (Nintendo) |
 | 8 | PlayStation 5 | 2020 | oltre 100 milioni (Sony, al 10 novembre 2026) |
