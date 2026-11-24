@@ -1,11 +1,11 @@
 ---
 titolo: "Banjo-Kazooie listed among Activision's series in a job listing"
 titolo_seo: "Banjo-Kazooie and Activision: what the job listing says"
-sommario: "Banjo-Kazooie appears in an Activision job listing on LinkedIn among its series, next to Halo and Sea of Thieves. No new game has been announced."
+sommario: "According to VGC and Pure Xbox, an Activision job ad mentioned Banjo-Kazooie. The currently visible LinkedIn text does not include that list."
 slug: "banjo-kazooie-activision-job-listing"
 ---
 
-**Activision** now presents **Banjo-Kazooie** as one of its own series. That is what a job listing posted on the publisher's LinkedIn page says, as reported on 23 November by VGC, Pure Xbox and GamingBolt: the position is Product Manager for "emerging franchises".
+According to reports published on 23 November by **VGC** and **Pure Xbox**, **Banjo-Kazooie** appeared in an **Activision** job listing for a Product Manager working on emerging franchises. This does not announce a new game or prove a transfer of rights.
 
 ## What Activision's job listing says
 
@@ -13,7 +13,9 @@ In its description of the company, the listing names Activision's long-running s
 
 According to VGC, the role involves leading an upcoming premium game for console and PC, from the concept phase all the way to launch. The listing does not say which title it is, and there has been no comment from Microsoft, Activision or **Rare**.
 
-## Why Banjo-Kazooie is now under Activision
+**Verification, 24 November:** we opened [the LinkedIn posting](https://www.linkedin.com/jobs/view/product-manager-emerging-franchises-at-activision-4492760987/). The currently accessible version confirms a Product Manager vacancy for a premium console and PC title, but **does not list Banjo-Kazooie** among the franchises, unlike the reports from VGC and Pure Xbox. We cannot determine whether the text was revised or different versions exist. The reference is attributed to those reports.
+
+## Why Banjo-Kazooie is being linked to Activision
 
 The mention is the result of the reorganisation of the Xbox studios announced in September. Halo moved to Activision, and World's Edge (the Age of Empires studio) and Rare, the home of Sea of Thieves and of Banjo himself, also came under the oversight of the Call of Duty publisher.
 
@@ -21,4 +23,4 @@ For fans, this is news to take with a pinch of salt. The latest game in the seri
 
 ## Is a new Banjo-Kazooie on the way?
 
-Nothing has been announced. The job listing only confirms that the rights to the series now sit with Activision. Rare's classics, meanwhile, keep coming back into circulation: the [original Xbox games that arrived on PC](/articoli/giochi-xbox-originali-pc/) include Conker: Live and Reloaded and Grabbed by the Ghoulies.
+Nothing has been announced. The reported mention does not establish a formal transfer of rights or confirm a new Banjo-Kazooie game. Rare's classics, meanwhile, keep coming back into circulation: the [original Xbox games that arrived on PC](/articoli/giochi-xbox-originali-pc/) include Conker: Live and Reloaded and Grabbed by the Ghoulies.

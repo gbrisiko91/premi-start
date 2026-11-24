@@ -1,7 +1,7 @@
 ---
 titolo: "Banjo-KazooieがActivisionのシリーズに　求人情報で明らかに"
 titolo_seo: "Banjo-KazooieとActivision　求人情報が示すこと"
-sommario: "ActivisionのLinkedIn求人情報で、Banjo-KazooieがHaloやSea of Thievesと並ぶ自社シリーズとして記載された。新作の発表はない。"
+sommario: "VGCとPure Xboxの報道ではActivisionの求人にBanjo-Kazooieが挙げられていたが、現在閲覧できるLinkedIn本文にはその一覧がない。"
 slug: "banjo-kazooie-activision-job-listing"
 ---
 
@@ -13,7 +13,9 @@ slug: "banjo-kazooie-activision-job-listing"
 
 VGCによれば、このポジションはコンソールとPC向けに予定されているプレミアムタイトルを、コンセプト段階から発売まで率いる役割だという。どのタイトルなのかは求人情報には書かれておらず、Microsoft、Activision、**Rare**からのコメントも出ていない。
 
-## Banjo-KazooieがActivision傘下になった理由
+**11月24日の検証：** [LinkedInの求人ページ](https://www.linkedin.com/jobs/view/product-manager-emerging-franchises-at-activision-4492760987/)を直接確認した。コンソール・PC向け作品の担当者募集はあるが、**Banjo-Kazooieを含むシリーズ一覧は現在の本文にない**。求人が変更されたのか別の版があるのかは不明。言及内容はVGCとPure Xboxの報道に基づく。
+
+## Banjo-KazooieとActivisionが結び付けられる理由
 
 今回の記載は、9月に発表されたXboxスタジオの再編によるものだ。HaloはActivisionに移り、World's Edge（Age of Empiresのスタジオ）と、Sea of ThievesやBanjoそのものを手がけたRareも、Call of Dutyのパブリッシャーの監督下に入った。
 
@@ -21,4 +23,4 @@ VGCによれば、このポジションはコンソールとPC向けに予定さ
 
 ## 新しいBanjo-Kazooieは出るのか？
 
-発表は何もない。求人情報が裏付けているのは、シリーズの権利が現在Activisionに属しているということだけだ。一方でRareの名作は次々と復活しており、[PCに登場したオリジナルXboxのゲーム](/articoli/giochi-xbox-originali-pc/)にはConker: Live and ReloadedやGrabbed by the Ghouliesも含まれている。
+発表は何もない。報道された記載だけでは、権利の正式な移管も新作の開発も確認できない。一方でRareの名作は次々と復活しており、[PCに登場したオリジナルXboxのゲーム](/articoli/giochi-xbox-originali-pc/)にはConker: Live and ReloadedやGrabbed by the Ghouliesも含まれている。

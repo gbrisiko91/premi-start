@@ -1,7 +1,7 @@
 ---
 titolo: "Banjo-Kazooie bland Activisions serier, enligt en jobbannons"
 titolo_seo: "Banjo-Kazooie och Activision: vad jobbannonsen säger"
-sommario: "Banjo-Kazooie dyker upp i en jobbannons från Activision på LinkedIn bland bolagets serier, bredvid Halo och Sea of Thieves. Inget nytt spel är annonserat."
+sommario: "Enligt VGC och Pure Xbox nämndes Banjo-Kazooie i en jobbannons från Activision. Listan saknas i LinkedIn-texten som syns nu."
 slug: "banjo-kazooie-activision-jobbannons"
 ---
 
@@ -13,7 +13,9 @@ I företagspresentationen räknar annonsen upp Activisions klassiska serier, all
 
 Enligt VGC handlar rollen om att leda ett kommande premiumspel till konsol och PC, från konceptfasen fram till lanseringen. Annonsen säger inte vilken titel det gäller, och varken Microsoft, Activision eller **Rare** har kommenterat.
 
-## Varför Banjo-Kazooie nu ligger under Activision
+**Kontroll den 24 november:** Vi öppnade [LinkedIn-annonsen](https://www.linkedin.com/jobs/view/product-manager-emerging-franchises-at-activision-4492760987/). Texten gäller en Product Manager för ett premiumspel till konsol och PC, men **listan där Banjo-Kazooie nämns saknas**. Det är oklart om annonsen ändrats eller om flera versioner finns. Uppgiften tillskrivs VGC och Pure Xbox.
+
+## Varför Banjo-Kazooie kopplas till Activision
 
 Omnämnandet är ett resultat av omorganisationen av Xbox-studiorna som tillkännagavs i september. Halo flyttades till Activision, och även World's Edge (studion bakom Age of Empires) och Rare, som står bakom Sea of Thieves och Banjo själv, hamnade under tillsyn av Call of Duty-utgivaren.
 
@@ -21,4 +23,4 @@ För fansen är det en nyhet att ta med en nypa salt. Det senaste spelet i serie
 
 ## Är ett nytt Banjo-Kazooie på väg?
 
-Inget har utannonserats. Jobbannonsen bekräftar bara att rättigheterna till serien nu ligger hos Activision. Rares klassiker fortsätter samtidigt att göra comeback: bland de [ursprungliga Xbox-spelen som kommit till PC](/articoli/giochi-xbox-originali-pc/) finns även Conker: Live and Reloaded och Grabbed by the Ghoulies.
+Inget har utannonserats. Uppgiften i medierna styrker varken en formell rättighetsöverföring eller ett nytt spel. Rares klassiker fortsätter samtidigt att göra comeback: bland de [ursprungliga Xbox-spelen som kommit till PC](/articoli/giochi-xbox-originali-pc/) finns även Conker: Live and Reloaded och Grabbed by the Ghoulies.

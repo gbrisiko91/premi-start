@@ -1,7 +1,7 @@
 ---
 titolo: "Banjo-Kazooie zählt jetzt zu den Activision-Reihen, verrät eine Stellenanzeige"
 titolo_seo: "Banjo-Kazooie und Activision: Was die Stellenanzeige verrät"
-sommario: "Banjo-Kazooie steht in einer Activision-Stellenanzeige auf LinkedIn unter den eigenen Reihen, neben Halo und Sea of Thieves. Ein neues Spiel gibt es nicht."
+sommario: "Laut VGC und Pure Xbox wurde Banjo-Kazooie in einer Activision-Stellenanzeige erwähnt. Im aktuell sichtbaren LinkedIn-Text fehlt diese Auflistung."
 slug: "banjo-kazooie-activision-stellenanzeige"
 ---
 
@@ -13,7 +13,9 @@ In der Unternehmensvorstellung nennt die Anzeige die traditionsreichen Reihen vo
 
 Laut VGC geht es bei der Position darum, ein kommendes Premium-Spiel für Konsole und PC von der Konzeptphase bis zum Launch zu begleiten. Um welchen Titel es sich handelt, verrät die Anzeige nicht, und von Microsoft, Activision oder **Rare** gibt es keinen Kommentar.
 
-## Warum Banjo-Kazooie jetzt zu Activision gehört
+**Prüfung vom 24. November:** Wir haben [die LinkedIn-Stellenanzeige](https://www.linkedin.com/jobs/view/product-manager-emerging-franchises-at-activision-4492760987/) geöffnet. Dort wird aktuell ein Product Manager für ein Premiumspiel für Konsole und PC gesucht, doch **die Liste mit Banjo-Kazooie fehlt**. Ob die Anzeige geändert wurde oder unterschiedliche Versionen existieren, ist unklar. Die Erwähnung stützt sich auf Berichte von VGC und Pure Xbox.
+
+## Warum Banjo-Kazooie mit Activision in Verbindung gebracht wird
 
 Die Erwähnung ist eine Folge der Umstrukturierung der Xbox-Studios, die im September angekündigt wurde. Halo ist zu Activision gewechselt, und auch World's Edge (das Studio hinter Age of Empires) sowie Rare, die Heimat von Sea of Thieves und von Banjo selbst, stehen nun unter der Aufsicht des Call-of-Duty-Publishers.
 
@@ -21,4 +23,4 @@ Fans sollten die Nachricht mit Vorsicht genießen. Das bislang letzte Spiel der 
 
 ## Kommt ein neues Banjo-Kazooie?
 
-Angekündigt ist nichts. Die Stellenanzeige bestätigt nur, dass die Rechte an der Reihe nun bei Activision liegen. Die Rare-Klassiker kehren unterdessen weiter zurück: Unter den [Spielen der ersten Xbox, die auf den PC gekommen sind](/articoli/giochi-xbox-originali-pc/), finden sich auch Conker: Live and Reloaded und Grabbed by the Ghoulies.
+Angekündigt ist nichts. Die berichtete Erwähnung beweist weder eine formelle Übertragung der Rechte noch die Entwicklung eines neuen Spiels. Die Rare-Klassiker kehren unterdessen weiter zurück: Unter den [Spielen der ersten Xbox, die auf den PC gekommen sind](/articoli/giochi-xbox-originali-pc/), finden sich auch Conker: Live and Reloaded und Grabbed by the Ghoulies.

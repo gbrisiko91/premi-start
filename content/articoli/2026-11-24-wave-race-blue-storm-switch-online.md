@@ -11,11 +11,13 @@ bozza: false
 verifica:
   stato: verificata
   natura: ufficiale
-  fonti_primarie: 0
+  fonti_primarie: 1
   fonti_indipendenti: 3
   controllata_il: 2026-11-24T06:45+01:00
   dubbi: []
 fonti:
+  - titolo: "Nintendo – Annuncio ufficiale Wave Race Blue Storm su Nintendo Classics"
+    url: "https://www.nintendo.com/jp/topics/article/8cf1e987-b681-4b53-a68e-483b8d455ee7"
   - titolo: "Nintendo Life – Nintendo Expands Switch 2's GameCube Library With Another Game This Week"
     url: "https://www.nintendolife.com/news/2026/11/nintendo-expands-switch-2s-gamecube-library-with-another-game-this-week"
   - titolo: "Nintendo Soup – Wave Race: Blue Storm Coming To Nintendo Classics"
@@ -24,7 +26,7 @@ fonti:
     url: "https://finalweapon.net/2026/11/23/nintendo-switch-online-expansion-pack-wave-race-blue-storm-gamecube-classics/"
 ---
 
-**Wave Race: Blue Storm** entra nel catalogo GameCube di **Nintendo Switch Online**. **Nintendo** ha annunciato che il gioco di corse sulle moto d'acqua, uscito su **GameCube** nel 2001, è giocabile dal 24 novembre su Switch 2 per gli abbonati con il Pacchetto aggiuntivo.
+**Wave Race: Blue Storm** entra nel catalogo GameCube di **Nintendo Switch Online**. **Nintendo** ha [confermato ufficialmente](https://www.nintendo.com/jp/topics/article/8cf1e987-b681-4b53-a68e-483b8d455ee7) che il gioco di corse sulle moto d'acqua, uscito su **GameCube** nel 2001, è giocabile dal 24 novembre su Switch 2 per gli abbonati con il Pacchetto aggiuntivo.
 
 ## Come giocare Wave Race: Blue Storm su Switch 2
 
