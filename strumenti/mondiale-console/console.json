@@ -1,0 +1,18 @@
+{
+  "snes": {"nome": "Super Nintendo", "breve": "SNES", "anno": "1990", "credito": "Evan-Amos, pubblico dominio", "file": "https://commons.wikimedia.org/wiki/File:SNES-Mod1-Console-Set.jpg"},
+  "megadrive": {"nome": "Mega Drive", "breve": "Mega Drive", "anno": "1988", "credito": "Evan-Amos, pubblico dominio", "file": "https://commons.wikimedia.org/wiki/File:Sega-Mega-Drive-EU-Mk1-wController-FL.jpg"},
+  "playstation": {"nome": "PlayStation", "breve": "PS1", "anno": "1994", "credito": "Evan-Amos, pubblico dominio", "file": "https://commons.wikimedia.org/wiki/File:PSX-Console-wController.jpg"},
+  "n64": {"nome": "Nintendo 64", "breve": "N64", "anno": "1996", "credito": "Evan-Amos, pubblico dominio", "file": "https://commons.wikimedia.org/wiki/File:N64-Console-Set.jpg"},
+  "ps2": {"nome": "PlayStation 2", "breve": "PS2", "anno": "2000", "credito": "Evan-Amos, pubblico dominio", "file": "https://commons.wikimedia.org/wiki/File:PS2-Fat-Console-Set.jpg"},
+  "gamecube": {"nome": "GameCube", "breve": "GameCube", "anno": "2001", "credito": "Evan-Amos, pubblico dominio", "file": "https://commons.wikimedia.org/wiki/File:GameCube-Set.jpg"},
+  "xbox360": {"nome": "Xbox 360", "breve": "Xbox 360", "anno": "2005", "credito": "Evan-Amos, pubblico dominio", "file": "https://commons.wikimedia.org/wiki/File:Xbox-360-Consoles-Infobox.png"},
+  "wii": {"nome": "Wii", "breve": "Wii", "anno": "2006", "credito": "Evan-Amos, pubblico dominio", "file": "https://commons.wikimedia.org/wiki/File:Wii-console.jpg"},
+  "gameboy": {"nome": "Game Boy", "breve": "Game Boy", "anno": "1989", "credito": "Evan-Amos, pubblico dominio", "file": "https://commons.wikimedia.org/wiki/File:Game-Boy-Original.jpg"},
+  "atari2600": {"nome": "Atari 2600", "breve": "Atari 2600", "anno": "1977", "credito": "Evan-Amos, pubblico dominio", "file": "https://commons.wikimedia.org/wiki/File:Atari-2600-Wood-4Sw-Set.jpg"},
+  "nes": {"nome": "NES", "breve": "NES", "anno": "1983", "credito": "Evan-Amos, pubblico dominio", "file": "https://commons.wikimedia.org/wiki/File:NES-Console-Set.jpg"},
+  "dreamcast": {"nome": "Dreamcast", "breve": "Dreamcast", "anno": "1998", "credito": "Evan-Amos, CC BY-SA 3.0, ritagliata", "file": "https://commons.wikimedia.org/wiki/File:Dreamcast-Console-Set.jpg"},
+  "ps4": {"nome": "PlayStation 4", "breve": "PS4", "anno": "2013", "credito": "Evan-Amos, pubblico dominio", "file": "https://commons.wikimedia.org/wiki/File:PS4-Console-wDS4.png"},
+  "switch": {"nome": "Switch", "breve": "Switch", "anno": "2017", "credito": "Evan-Amos, pubblico dominio", "file": "https://commons.wikimedia.org/wiki/File:Nintendo-Switch-wJoyCons-BlRd-Standing-FL.jpg"},
+  "ps5": {"nome": "PlayStation 5", "breve": "PS5", "anno": "2020", "credito": "Howardcorn33, CC0", "file": "https://commons.wikimedia.org/wiki/File:Black_and_white_Playstation_5_base_edition_with_controller.png"},
+  "switch2": {"nome": "Switch 2", "breve": "Switch 2", "anno": "2025", "credito": "PantheraLeo1359531, CC BY 4.0, ritagliata", "file": "https://commons.wikimedia.org/wiki/File:Nintendo_Switch_2-Spieleequipment_20250605.png"}
+}
