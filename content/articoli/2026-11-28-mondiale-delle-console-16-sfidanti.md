@@ -34,18 +34,11 @@ Non c'è nessun premio in palio: è un sondaggio della redazione, gratuito, e pe
 
 ## Come funziona il Mondiale delle console
 
-Ogni Storia mette due console una contro l'altra con l'adesivo sondaggio di Instagram. Il sondaggio resta aperto 24 ore: alla chiusura passa il turno la console con più voti, e il turno successivo parte solo dopo che abbiamo controllato e salvato i risultati.
+Ogni Storia mette due console una contro l'altra con l'adesivo sondaggio di Instagram. Il sondaggio resta aperto 24 ore: alla chiusura passa il turno la console con più voti effettivi, e il turno successivo parte solo dopo che abbiamo controllato e salvato i risultati. Tutti i dettagli sono nel [regolamento ufficiale](#regolamento).
 
-Il calendario previsto, con le Storie pubblicate in serata:
+I sondaggi escono in serata, da domenica 29 novembre alle 18:00, con la finale prevista giovedì 3 dicembre e la proclamazione venerdì 4. Date e orari indicativi sono nel [regolamento](#regolamento), all'articolo 10.
 
-- **Domenica 29 novembre**: ottavi, sfide 1–4
-- **Lunedì 30 novembre**: ottavi, sfide 5–8
-- **Martedì 1° dicembre**: quarti
-- **Mercoledì 2 dicembre**: semifinali
-- **Giovedì 3 dicembre**: finale
-- **Venerdì 4 dicembre**: proclamazione del campione
-
-Se una sfida va allo spareggio, o se dobbiamo rigiocarla, tutto il calendario slitta di un giorno. Il tabellone aggiornato lo trovate ogni giorno sul [nostro profilo Instagram](https://www.instagram.com/soffiacartuccia/).
+Se una sfida va ripetuta, tutto il calendario slitta di un giorno. Il tabellone aggiornato lo trovate ogni giorno sul [nostro profilo Instagram](https://www.instagram.com/soffiacartuccia/).
 
 ## Le 16 console in gara
 
@@ -82,13 +75,76 @@ I numeri servono solo a dare un'idea delle dimensioni: nel Mondiale contano i vo
 
 **PlayStation 5 contro Switch 2** è l'unica sfida tra console di oggi, che abbiamo voluto aggiungere al tabellone. **Game Boy contro Atari 2600** mette di fronte la portatile che ha accompagnato i viaggi di un'intera generazione e la console che ha portato i videogiochi nelle case.
 
-## Le regole del voto
+<h2 id="regolamento">Regolamento ufficiale del Mondiale delle console</h2>
 
-- Ogni sfida dura 24 ore, dalla pubblicazione della Storia.
-- Passa il turno la console con più voti alla chiusura del sondaggio. Salviamo il risultato finale di ogni sfida con percentuali, numero di voti e orario.
-- In caso di parità effettiva la sfida si rigioca con un nuovo sondaggio di 24 ore. Se anche lo spareggio finisce in parità, si rigioca di nuovo, e il calendario slitta ogni volta di un giorno.
-- Se per un problema tecnico non riusciamo a recuperare il risultato finale di una sfida, non dichiariamo un vincitore: la sfida si rigioca.
-- Il sondaggio è editoriale e gratuito: nessun premio, nessun obbligo di seguire, taggare o condividere.
+Questo è il testo completo e unico del regolamento della prima edizione (2026), approvato il 25 novembre. Vale per tutta l'edizione.
+
+### Art. 1 · Organizzazione e scopo
+Il Mondiale delle console è un sondaggio editoriale organizzato da Soffia Cartuccia per festeggiare i 3.000 follower su Instagram. Questa è la prima edizione, del 2026. Lo scopo è scoprire la console più amata dalla community, indipendentemente da vendite, prestazioni o caratteristiche tecniche.
+
+### Art. 2 · Le console e il tabellone
+Partecipano 16 console, divise in 8 sfide degli ottavi:
+
+| Sfida | Console | Console |
+|---|---|---|
+| 1 | Super Nintendo | Mega Drive |
+| 2 | PlayStation | Nintendo 64 |
+| 3 | PlayStation 2 | GameCube |
+| 4 | Xbox 360 | Wii |
+| 5 | Game Boy | Atari 2600 |
+| 6 | NES | Dreamcast |
+| 7 | PlayStation 4 | Switch |
+| 8 | PlayStation 5 | Switch 2 |
+
+Dopo l'inizio del torneo il tabellone non cambia.
+
+### Art. 3 · Formula
+Il torneo è a eliminazione diretta: 8 ottavi, 4 quarti, 2 semifinali e 1 finale, per un totale di **15 sfide ordinarie**. Le eventuali ripetizioni previste dagli articoli 7, 8 e 9 non rientrano in questo conteggio.
+
+### Art. 4 · Come si vota
+Si vota soltanto con l'adesivo sondaggio pubblicato nelle Storie di @soffiacartuccia. La partecipazione è gratuita. Per votare non è richiesto di seguire l'account, taggare altre persone, condividere contenuti, registrarsi o acquistare qualcosa. Commenti, messaggi diretti, "mi piace" e reazioni non contano come voti.
+
+### Art. 5 · Durata delle sfide
+Ogni Storia con il sondaggio resta online per 24 ore effettive e viene pubblicata in fascia serale. Un sondaggio non viene chiuso prima del tempo. Il turno successivo parte solo dopo che il risultato del precedente è stato verificato.
+
+### Art. 6 · Chi vince una sfida
+Passa il turno la console che ha ottenuto il maggior numero effettivo di voti alla chiusura del sondaggio. Le percentuali arrotondate mostrate da Instagram non bastano a decidere una sfida. Ogni risultato viene verificato e documentato prima di essere annunciato.
+
+### Art. 7 · Parità e zero voti
+In caso di parità reale, anche ripetuta, o se un sondaggio chiude con zero voti, la sfida si ripete con un nuovo sondaggio di 24 ore, fino a ottenere un risultato valido. La redazione non decide mai una sfida in modo arbitrario. In questi casi il calendario slitta.
+
+### Art. 8 · Fair play
+Sono vietati bot, acquisto di voti, account creati per alterare il voto, molestie e qualsiasi altra manipolazione. La condivisione spontanea dei sondaggi è ammessa. Se un'anomalia documentata compromette il risultato di una sfida, la redazione può ripeterla, spiegandone pubblicamente il motivo. La redazione non è in grado di rilevare o eliminare i singoli voti.
+
+### Art. 9 · Risultati non recuperabili
+Se il risultato finale di una sfida non è recuperabile, la sfida si ripete per intero. I risultati parziali, come percentuali lette prima della chiusura o conteggi incompleti, non determinano mai il vincitore e non vengono annunciati. In caso di problemi tecnici persistenti, il torneo può essere sospeso, con un avviso pubblico.
+
+### Art. 10 · Calendario
+Il calendario è indicativo. I sondaggi si pubblicano in fascia serale e restano aperti 24 ore piene:
+
+| Data | Fase | Apertura indicativa |
+|---|---|---|
+| Sabato 28 novembre | G0: presentazione | sera, nessun sondaggio |
+| Domenica 29 novembre | Ottavi, sfide 1–4 | 18:00 |
+| Lunedì 30 novembre | Ottavi, sfide 5–8 | 18:15 |
+| Martedì 1 dicembre | Quarti | 18:30 |
+| Mercoledì 2 dicembre | Semifinali | 18:45 |
+| Giovedì 3 dicembre | Finale | 19:00 |
+| Venerdì 4 dicembre | Proclamazione | dopo la chiusura della finale e la verifica |
+
+Un turno parte solo dopo la chiusura e la verifica del precedente. Gli orari non vengono mai anticipati. In caso di ripetizioni il calendario slitta. L'avvio dipende dal raggiungimento effettivo dei 3.000 follower, dal test dei sondaggi e dall'autorizzazione del proprietario. Ogni variazione viene comunicata.
+
+### Art. 11 · Dati e privacy
+La redazione conserva soltanto i conteggi aggregati, le percentuali e l'orario di chiusura di ogni sondaggio. Gli screenshot usati per la verifica vengono ritagliati o oscurati in modo da conservare solo questi dati aggregati. Il tabellone aggiornato viene pubblicato su Instagram. Non vengono mai pubblicate le identità delle persone associate ai voti.
+
+### Art. 12 · Titolo
+La console vincitrice riceve il titolo simbolico di **Campionessa del Mondiale delle console 2026** e una grafica celebrativa. Non è previsto alcun premio materiale o economico.
+
+### Art. 13 · Indipendenza
+Il Mondiale delle console è un sondaggio editoriale indipendente. Non è sponsorizzato, amministrato o promosso da Instagram, da Meta o dai produttori delle console. Non è un concorso e non prevede premi.
+
+### Art. 14 · Validità e modifiche
+Il regolamento vale per tutta l'edizione. Eventuali chiarimenti vengono pubblicati. I criteri di vittoria non vengono mai modificati in modo retroattivo.
 
 ## Crediti delle foto
 
