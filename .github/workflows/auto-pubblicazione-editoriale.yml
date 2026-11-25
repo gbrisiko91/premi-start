@@ -1,0 +1,52 @@
+name: Auto-pubblicazione articoli verificati
+
+# Il job privilegiato usa ESCLUSIVAMENTE il codice del branch main.
+# Non esegue mai script o workflow provenienti dalla PR da pubblicare.
+on:
+  workflow_run:
+    workflows:
+      - "Verify Soffia Cartuccia 2.0"
+      - "Gate editoriale (dry-run, nessuna pubblicazione)"
+    types: [completed]
+  # Recupero nel caso la preview Netlify arrivi dopo i controlli CI.
+  schedule:
+    - cron: "15 7,10,14 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  checks: read
+  statuses: read
+  actions: write
+
+concurrency:
+  group: auto-pubblicazione-editoriale-main
+  cancel-in-progress: false
+
+jobs:
+  pubblica:
+    if: >-
+      github.event_name != 'workflow_run' ||
+      (github.event.workflow_run.event == 'pull_request' &&
+       github.event.workflow_run.conclusion == 'success')
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Scarica SOLO codice attendibile dal main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Installa dipendenze dal main
+        run: npm install --no-audit --no-fund
+      - name: Riconvalida PR, SHA, gate, CI e preview; merge solo se idonea
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Per spegnere subito: Settings > Secrets and variables > Actions > Variables
+          # Creare AUTO_PUBBLICAZIONE con valore off.
+          AUTO_PUBBLICAZIONE: ${{ vars.AUTO_PUBBLICAZIONE || 'on' }}
+        run: node strumenti/auto-pubblicazione-editoriale.mjs

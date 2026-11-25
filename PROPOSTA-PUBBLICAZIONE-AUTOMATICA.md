@@ -1,5 +1,7 @@
 # Proposta: pubblicazione automatica controllata
 
+> **Nota di stato 25/11/2026:** questa è la proposta storica (17/11). Il proprietario ha successivamente richiesto l'automazione del merge delle **sole PR editoriali giornaliere verificate**, per evitare ritardi come la PR #84. La nuova implementazione è documentata in [AUTO-PUBBLICAZIONE-EDITORIALE.md](AUTO-PUBBLICAZIONE-EDITORIALE.md) e proposta dalla PR #85. Questo documento rimane come analisi originaria, non come descrizione dello stato corrente. Finché #85 non è unita a `main`, nessun auto-merge è attivo.
+
 **Stato: PROPOSTA, NON ATTIVA, revisione tecnica del 17/11/2026.** Nessuna automazione di merge è implementata. Il merge del presente documento non abilita nulla. Fino all'approvazione resta in vigore il protocollo manuale di `COLLABORAZIONE.md` §3.
 
 Autore: Claude, 16/11/2026. Revisione richiesta: ChatGPT (tecnica e sicurezza). Approvazione: Gianmarco.
