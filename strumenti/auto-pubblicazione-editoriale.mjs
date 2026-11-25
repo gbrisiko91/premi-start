@@ -1,13 +1,15 @@
 // Workflow privilegiato: eseguito SOLO dal main attendibile. Mai eseguire codice delle PR.
 import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { valutaCambiamenti } from "./gate-pubblicazione.mjs";
 
 const repository = process.env.GITHUB_REPOSITORY;
 const token = process.env.GITHUB_TOKEN;
 const apiBase = process.env.GITHUB_API_URL || "https://api.github.com";
-if (!repository || !token) throw Error("Repository o token mancanti");
+
 const [owner] = repository.split("/");
-const event = JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH, "utf8"));
+const event = process.env.GITHUB_EVENT_PATH ? JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH, "utf8")) : {};
 const run = event.workflow_run;
 const branchPattern = /^contenuti\/(\d{4}-\d{2}-\d{2})$/;
 
@@ -113,6 +115,12 @@ async function checkPR(pr, triggerSha) {
   // Il GITHUB_TOKEN non genera push workflow: dispatch esplicito del controllo produzione.
   await api("POST", "/actions/workflows/verifica-produzione.yml/dispatches", { ref:"main" });
 }
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+if (!repository || !token || !process.env.GITHUB_EVENT_PATH) throw Error("Repository/token/evento mancanti");
+if (String(process.env.AUTO_PUBBLICAZIONE || "on").toLowerCase() === "off") {
+  summary("Auto-pubblicazione disattivata dal kill switch AUTO_PUBBLICAZIONE=off.");
+  process.exit(0);
+}
 if (run) {
   if (run.event !== "pull_request" || run.conclusion !== "success" || !isCandidateBranch(run.head_branch)) {
     summary("Evento non idoneo: nessuna operazione."); process.exit(0);
@@ -124,4 +132,6 @@ if (run) {
   const candidates = await api("GET", "/pulls?state=open&per_page=100");
   for (const pr of candidates.filter(p=>isCandidateBranch(p.head?.ref) && p.head?.repo?.full_name===repository))
     await checkPR(pr, pr.head.sha);
+}
+
 }
