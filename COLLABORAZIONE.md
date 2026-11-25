@@ -9,7 +9,7 @@
 - Sito pubblico: https://soffiacartuccia.it · codice: https://github.com/gbrisiko91/premi-start
 - Obiettivo: testata gaming italiana e multilingue (9 lingue), orientata a notizie **verificabili**, GTA 6 e grandi eventi, scoperte indie, retrogaming, guida al lettore e crescita organica misurabile; la qualità prevale sulla quantità.
 - Regole redazionali: [GUIDA-REDAZIONE.md](GUIDA-REDAZIONE.md). La **copia del Progetto privato Claude** è quella letta dalle automazioni; Claude deve mantenerla coerente con GitHub (la sincronizzazione dei due documenti non è automatica).
-- Disegno tecnico dell'autopubblicazione, **non attivo**: [PROPOSTA-PUBBLICAZIONE-AUTOMATICA.md](PROPOSTA-PUBBLICAZIONE-AUTOMATICA.md).
+- Pubblicazione automatica controllata per sole nuove notizie verificate (decisione 25/11, PR #85): [AUTO-PUBBLICAZIONE-EDITORIALE.md](AUTO-PUBBLICAZIONE-EDITORIALE.md). Disegno storico: [PROPOSTA-PUBBLICAZIONE-AUTOMATICA.md](PROPOSTA-PUBBLICAZIONE-AUTOMATICA.md).
 - Continuità fra conversazioni: [STATO-PROGETTO.md](STATO-PROGETTO.md); rilievi SEO: [SEO-INDICIZZAZIONE-AUDIT.md](SEO-INDICIZZAZIONE-AUDIT.md).
 
 ## 2. Ruoli, autorizzazioni e aree del repository
@@ -22,7 +22,7 @@
 
 Aree: `content/articoli/`, `content/traduzioni/`, `content/pagine/` e `GUIDA-REDAZIONE.md` prevalentemente Claude. `tests/`, `.github/workflows/`, `netlify/`, strumenti SEO e sicurezza prevalentemente ChatGPT. `build.mjs`, `src/`, `rubriche.mjs`, `sito.config.mjs`, `lingue.mjs`, `novita.mjs` sono **condivisi/delicati**: segnalare la modifica prima di una PR. Non modificare il medesimo file in due PR concorrenti. Non eliminare i branch storici senza nuova decisione di Gianmarco.
 
-**Rilascio:** il proprietario autorizza, un assistente può eseguire il merge per suo conto dopo verifica di fatti, diff, SHA, CI, gate e preview Netlify. L'autorizzazione generale al lavoro tecnico non equivale ad approvazione automatica di nuovi articoli. Non modificare segreti, produzione, newsletter/Brevo, protezione branch o automazioni senza autorizzazione appropriata.
+**Rilascio:** per le sole PR editoriali giornaliere verificate e ammesse dal controllo della PR #85 vale l'autorizzazione permanente del 25/11/2026. Tutte le altre PR richiedono un'approvazione specifica del proprietario dopo controlli di fatti, diff, SHA, CI, gate e preview Netlify. Non modificare segreti, produzione, newsletter/Brevo, protezione branch o automazioni senza autorizzazione appropriata.
 
 ## 3. Flusso giornaliero: programma del 18 novembre
 
@@ -47,7 +47,7 @@ Il **gate editoriale è solo diagnostico**: un job GitHub verde non significa ch
 
 Le protezioni integrate comprendono: sanitizer HTML dopo `marked` (PR #31), gate dry-run (PR #29), immagini opzionali e controllo su natura sensibile (PR #37), controllo del flag esplicito `verifica.revisione_umana` anche su notizie `ufficiale` (PR #40), test SEO per canonical/robots/sitemap (PR #33). La PR #41 ripristina layout immagini usando classi CSS; la PR #43 recupera i video Pirates con `controls` e `video.src` consentito soltanto per protocolli sicuri; la PR #44, su autorizzazione di Gianmarco, ripristina **autoplay soltanto con `muted`**, mantenendo `controls` e bloccando i protocolli non sicuri. Gli altri controlli XSS restano attivi. Il gate non verifica diritti immagini, la verità delle fonti né il segnale salvato nel Progetto privato.
 
-**Auto-merge: NON ATTIVO.** La proposta richiede: identità GitHub App/bot indipendente, controlli read-only separati dal workflow privilegiato, protezioni di `main`, fonte primaria/evidenze verificabili, XSS protetto, protezioni anti-concorrenza, verifica SHA e deploy finale, kill switch, **almeno 5 giorni consecutivi di dry-run documentati** e una nuova autorizzazione specifica di Gianmarco. Nessun merge automatico di urgenze, rettifiche, recensioni o codice.
+**Aggiornamento auto-merge del 25/11/2026:** Gianmarco ha richiesto espressamente di pubblicare automaticamente le notizie *già pronte* per evitare ritardi come la PR #84 (The Witcher 4). La PR tecnica #85 introduce un workflow privilegiato su `main` che ricontrolla autonomamente ogni nuova PR `contenuti/AAAA-MM-GG` con gate sicuro, soli file Markdown nuovi, build, gate e Netlify Preview verdi sulla stessa SHA, e verifica della pubblicazione reale dopo il merge. **Finché #85 non è integrata, questa funzione NON è attiva.** Una volta integrata, riguarda esclusivamente le PR idonee: qualsiasi codice, bozza, intervista, indiscrezione, rettifica e progetto speciale resta a merge manuale. Kill switch `AUTO_PUBBLICAZIONE=off` nelle variabili Actions. [Procedura e limiti](AUTO-PUBBLICAZIONE-EDITORIALE.md). I requisiti di bot indipendente/protezione `main` restano miglioramenti di sicurezza da completare prima di estendere i casi automatici.
 
 ## 5. Registro PR — snapshot GitHub 17/11
 
@@ -102,6 +102,7 @@ Le protezioni integrate comprendono: sanitizer HTML dopo `marked` (PR #31), gate
 
 | Data | Decisione approvata | Stato |
 |---|---|---|
+| 25/11 | Autorizzata auto-pubblicazione delle sole notizie giornaliere verificate, con gate attendibile, build+preview verdi e kill switch (PR #85) | In attesa del merge della PR #85 |
 | 16/11 | GitHub fonte persistente del progetto, PR per ogni cambiamento; `COLLABORAZIONE.md` documento principale, `STATO-PROGETTO.md` handoff | In vigore |
 | 16/11 | Claude contenuti, ChatGPT SEO/tecnica/audit, Gianmarco responsabile approvazioni; assistenti possono eseguire merge autorizzati | In vigore |
 | 16/11 | Una PR editoriale giornaliera; niente bozze private incomplete nel repository pubblico | In vigore |
