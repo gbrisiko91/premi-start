@@ -1,0 +1,189 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Anybody;src:url(../font-brand/Anybody.ttf);font-weight:100 900;font-stretch:50% 150%}
+@font-face{font-family:Anybody;src:url(../font-brand/Anybody-Italic.ttf);font-weight:100 900;font-stretch:50% 150%;font-style:italic}
+@font-face{font-family:Atkinson;src:url(../font-brand/AtkinsonHyperlegible-Regular.ttf);font-weight:400}
+@font-face{font-family:Atkinson;src:url(../font-brand/AtkinsonHyperlegible-Bold.ttf);font-weight:700}
+:root{--notte:#15122b;--pannello:#211c40;--pannello2:#2b2552;--testo:#f4f1ff;--tenue:#b0aad0;--viola:#8b6cff;--rosso:#ff3b4e;--giallo:#ffc21a}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;font-family:Atkinson,sans-serif;color:var(--testo);
+ background:radial-gradient(1200px 1000px at 85% -8%,#8b6cff38,transparent 70%),radial-gradient(1000px 900px at -10% 108%,#8b6cff22,transparent 65%),var(--notte)}
+.l{position:absolute;inset:0}
+.abs{position:absolute}
+.c{left:0;width:1080px;text-align:center}
+#grana{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(#f4f1ff08 2px,transparent 2px),linear-gradient(90deg,#f4f1ff08 2px,transparent 2px);background-size:60px 60px;-webkit-mask-image:linear-gradient(180deg,#000,transparent 75%)}
+#flash{position:absolute;inset:0;background:var(--testo);opacity:0;pointer-events:none}
+.marchio{top:120px;display:flex;justify-content:center;align-items:center;gap:16px;font-family:Anybody;font-weight:900;font-style:italic;font-stretch:150%;font-size:40px;letter-spacing:-1px}
+.marchio .v{color:var(--viola)} .marchio .cur{display:inline-block;width:18px;height:28px;background:var(--rosso);margin-left:4px}
+.badge{background:var(--viola);color:var(--notte);font-family:Anybody;font-weight:800;font-stretch:125%;letter-spacing:3px;text-transform:uppercase;border-radius:999px;padding:14px 34px;display:inline-block}
+.card{background:#fff;border-radius:44px;overflow:hidden;box-shadow:0 0 0 14px var(--pannello),0 0 0 16px var(--pannello2)}
+.card img{position:absolute;left:50%;top:45px;transform:translateX(-50%);width:870px;height:auto}
+.nome{color:var(--notte);font-family:Anybody;font-weight:800;font-stretch:112%}
+.anno{color:var(--viola);font-family:Anybody;font-weight:800;font-stretch:112%}
+.vs{width:190px;height:190px;border-radius:50%;background:var(--viola);border:12px solid var(--notte);color:var(--notte);display:flex;align-items:center;justify-content:center;font-family:Anybody;font-style:italic;font-weight:900;font-stretch:120%;font-size:70px}
+.big{font-family:Anybody;font-weight:900;font-style:italic;font-stretch:115%;line-height:.95}
+.or{color:var(--viola)}
+</style></head><body>
+
+<!-- S1 intro -->
+<div id="s1" class="l">
+  <div id="s1marchio" class="abs c marchio"><span style="display:flex"><svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#15122b"/><path d="M12 12h40v34H44v4H20v-4h-8z" fill="#8b6cff"/><g stroke="#15122b" stroke-width="2"><path d="M16 16h32"/><path d="M16 20h32"/></g><rect x="17" y="24" width="30" height="17" rx="2" fill="#15122b"/><rect x="21" y="28" width="15" height="3" fill="#ffc21a"/><rect x="21" y="34" width="10" height="3" fill="#22d07a"/><rect x="38" y="28" width="5" height="9" fill="#ff3b4e"/><g fill="#ffc21a"><rect x="23" y="46" width="2" height="4"/><rect x="28" y="46" width="2" height="4"/><rect x="33" y="46" width="2" height="4"/><rect x="38" y="46" width="2" height="4"/></g><g fill="none" stroke="#f4f1ff" stroke-width="2.6" stroke-linecap="round"><path d="M24 55q8 4 16 0"/><path d="M28 60q4 2 8 0"/></g></svg>
+</span><span><span class="v">Soffia</span> Cartuccia<span class="cur"></span></span></div>
+  <div id="s1num" class="abs c big" style="top:620px;font-size:290px;color:var(--viola);text-shadow:0 0 80px #8b6cff66">3.000</div>
+  <div id="s1fol" class="abs c" style="top:930px;font-family:Anybody;font-weight:800;font-stretch:125%;font-size:58px;letter-spacing:10px;color:var(--tenue)">FOLLOWER</div>
+  <div id="s1badge" class="abs c" style="top:1130px"><span class="badge" style="font-size:50px;background:var(--giallo)">Livello sbloccato</span></div>
+  <div id="s1grazie" class="abs c" style="top:1330px;font-size:44px;font-weight:500">Grazie a tutti voi. Per festeggiare:</div>
+</div>
+
+<!-- S2 16 console -->
+<div id="s2" class="l">
+  <div id="s2a" class="abs c big" style="top:500px;font-size:520px;color:var(--viola);text-shadow:0 0 90px #8b6cff66">16</div>
+  <div id="s2b" class="abs c big" style="top:1060px;font-size:160px">console</div>
+  <div id="s2c" class="abs c" style="top:1290px;font-size:56px;font-weight:700">si sfidano. Decidete voi.</div>
+</div>
+
+<!-- S3 montaggio -->
+<div id="s3" class="l">
+  <div class="abs c" style="top:130px;font-family:Anybody;font-weight:800;font-stretch:125%;font-size:30px;letter-spacing:10px;color:var(--viola)">MONDIALE DELLE CONSOLE</div>
+  <div id="s3card" class="abs card" style="left:65px;top:560px;width:950px;height:560px">
+    <img id="s3img" src="">
+    <div id="s3dc" class="abs c" style="top:120px;width:950px;font-size:150px;font-family:Anybody;font-style:italic;font-weight:900;font-stretch:110%;color:var(--notte);display:none">DREAM<br><span class="or">CAST</span></div>
+  </div>
+  <div id="s3nome" class="abs big" style="left:70px;top:1185px;font-size:96px;font-stretch:110%;white-space:nowrap"></div>
+  <div id="s3anno" class="abs" style="left:70px;top:1300px;font-family:Anybody;font-weight:800;font-stretch:120%;font-size:58px;color:var(--viola)"></div>
+  <div id="s3cnt" class="abs" style="right:70px;top:1310px;font-family:Anybody;font-weight:800;font-stretch:120%;font-size:46px;letter-spacing:4px;color:var(--tenue)"></div>
+  <div id="s3bar" class="abs" style="left:70px;top:1420px;height:10px;background:var(--viola);border-radius:5px"></div>
+</div>
+
+<!-- S4 sfide -->
+<div id="s4" class="l">
+  <div id="s4turno" class="abs" style="left:65px;top:230px"><span class="badge" style="font-size:36px">OTTAVI · SFIDA 1/8</span></div>
+  <div id="s4cA" class="abs card" style="left:65px;top:350px;width:950px;height:520px">
+    <img id="s4iA" src="" style="top:40px">
+    <div id="s4nA" class="abs nome" style="left:45px;top:395px;font-size:68px"></div>
+    <div id="s4yA" class="abs anno" style="right:45px;top:410px;font-size:52px"></div>
+  </div>
+  <div id="s4vs" class="abs vs" style="left:445px;top:840px">VS</div>
+  <div id="s4cB" class="abs card" style="left:65px;top:1000px;width:950px;height:520px">
+    <img id="s4iB" src="" style="top:40px">
+    <div id="s4nB" class="abs nome" style="left:45px;top:395px;font-size:68px"></div>
+    <div id="s4yB" class="abs anno" style="right:45px;top:410px;font-size:52px"></div>
+  </div>
+  <div id="s4q" class="abs c big" style="top:1610px;font-size:66px">Chi passa il <span class="or">turno</span>?</div>
+</div>
+
+<!-- S5 formula -->
+<div id="s5" class="l">
+  <div id="s5t1" class="abs c big" style="top:180px;font-size:104px;white-space:nowrap">15 sfide.</div>
+  <div id="s5t2" class="abs c big" style="top:300px;font-size:88px;font-stretch:108%;white-space:nowrap">Una sola <span class="or">leggenda.</span></div>
+  <img id="s5tab" class="abs" src="tabellone-brand.png" style="left:90px;top:500px;width:900px;border-radius:36px">
+  <div id="s5t3" class="abs c" style="top:1690px;font-family:Anybody;font-weight:800;font-stretch:115%;font-size:42px;letter-spacing:2px">Ottavi · Quarti · Semifinali · Finale</div>
+</div>
+
+<!-- S6 finale -->
+<div id="s6" class="l">
+  <div id="s6marchio" class="abs c marchio"><span style="display:flex"><svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#15122b"/><path d="M12 12h40v34H44v4H20v-4h-8z" fill="#8b6cff"/><g stroke="#15122b" stroke-width="2"><path d="M16 16h32"/><path d="M16 20h32"/></g><rect x="17" y="24" width="30" height="17" rx="2" fill="#15122b"/><rect x="21" y="28" width="15" height="3" fill="#ffc21a"/><rect x="21" y="34" width="10" height="3" fill="#22d07a"/><rect x="38" y="28" width="5" height="9" fill="#ff3b4e"/><g fill="#ffc21a"><rect x="23" y="46" width="2" height="4"/><rect x="28" y="46" width="2" height="4"/><rect x="33" y="46" width="2" height="4"/><rect x="38" y="46" width="2" height="4"/></g><g fill="none" stroke="#f4f1ff" stroke-width="2.6" stroke-linecap="round"><path d="M24 55q8 4 16 0"/><path d="M28 60q4 2 8 0"/></g></svg>
+</span><span><span class="v">Soffia</span> Cartuccia<span class="cur"></span></span></div>
+  <div id="s6t1" class="abs c big" style="top:530px;font-size:136px;font-stretch:110%;white-space:nowrap">Il <span class="or">Mondiale</span></div>
+  <div id="s6t2" class="abs c big" style="top:680px;font-size:112px;font-stretch:105%;white-space:nowrap">delle console</div>
+  <div id="s6line" class="abs" style="left:240px;top:880px;height:10px;width:600px;background:var(--viola);border-radius:5px"></div>
+  <div id="s6d" class="abs c" style="top:960px;font-size:62px;font-weight:700">Si parte <span class="or">sabato 28 novembre</span></div>
+  <div id="s6v" class="abs c" style="top:1080px;font-size:50px;font-weight:500">Si vota nelle Storie · 24 ore per sfida</div>
+  <div id="s6s" class="abs c" style="top:1240px"><span class="badge" style="font-size:42px">Attiva le notifiche</span></div>
+  <div id="s6cr" class="abs" style="left:40px;top:1620px;width:1000px;font-size:26px;line-height:1.45;color:var(--tenue);text-align:center">
+    Nessun premio in palio: è un sondaggio della redazione, non un concorso.<br>
+    Foto Wikimedia Commons: Evan-Amos (pubblico dominio),<br>Howardcorn33 (CC0), PantheraLeo1359531 (CC BY 4.0, ritagliata)</div>
+</div>
+
+<div id="grana"></div><div id="flash"></div>
+
+<script>
+const B = 60/128;                       // durata di un beat
+const S = {s1:[0,8],s2:[8,12],s3:[12,20],s4:[20,32],s5:[32,40],s6:[40,52]}; // in beat
+const CONSOLE = [
+ ["snes","Super Nintendo","1990"],["megadrive","Mega Drive","1988"],["playstation","PlayStation","1994"],["n64","Nintendo 64","1996"],
+ ["ps2","PlayStation 2","2000"],["gamecube","GameCube","2001"],["xbox360","Xbox 360","2005"],["wii","Wii","2006"],
+ ["gameboy","Game Boy","1989"],["atari2600","Atari 2600","1977"],["nes","NES","1983"],["dreamcast","Dreamcast","1998"],
+ ["ps4","PlayStation 4","2013"],["switch","Switch","2017"],["ps5","PlayStation 5","2020"],["switch2","Switch 2","2025"]];
+const SFIDE = [["OTTAVI · SFIDA 1/8",0,1],["OTTAVI · SFIDA 2/8",2,3],["OTTAVI · SFIDA 8/8",14,15]];
+const $ = id => document.getElementById(id);
+const cl = (x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const eo = x => 1-Math.pow(1-cl(x),3);                 // ease out
+const back = x => {x=cl(x);const c=1.9;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2);}  // overshoot
+function set(id,o,ty=0,sc=1,tx=0){const e=$(id);e.style.opacity=o;e.style.transform=`translate(${tx}px,${ty}px) scale(${sc})`;}
+function pre(){ // precarica tutte le immagini
+  return Promise.all(CONSOLE.map(c=>new Promise(r=>{const i=new Image();i.onload=r;i.onerror=r;i.src=`../foto/${c[0]}.png`;})).concat([document.fonts.ready]));
+}
+window.draw = function(t){
+  const tb = t/B; let flash=0;
+  for(const k in S){ $(k).style.display = (tb>=S[k][0] && tb<S[k][1]) ? 'block':'none'; }
+  // S1
+  if(tb<S.s1[1]){ const u=tb;
+    set('s1marchio', eo(u/1.2), (1-eo(u/1.2))*-30);
+    const n=(u-1)/0.9; set('s1num', cl(n*3), 0, n<0?0.6:back(n)*1);
+    set('s1fol', eo((u-1.8)/0.8), (1-eo((u-1.8)/0.8))*40);
+    const b=(u-3)/0.6; set('s1badge', cl(b*3), 0, b<0?1.5:1.5-0.5*back(b));
+    set('s1grazie', eo((u-4)/1), (1-eo((u-4)/1))*30);
+    if(u>=1&&u<1.25) flash=.55*(1-(u-1)/.25);
+    if(u>=3&&u<3.25) flash=.45*(1-(u-3)/.25);
+  }
+  // S2
+  else if(tb<S.s2[1]){ const u=tb-S.s2[0];
+    set('s2a', 1, 0, 1.8-0.8*back(u/0.7));
+    set('s2b', eo((u-0.9)/0.5), (1-eo((u-0.9)/0.5))*80);
+    set('s2c', eo((u-2)/0.8), (1-eo((u-2)/0.8))*30);
+    if(u<0.25) flash=.6*(1-u/.25);
+  }
+  // S3 montaggio: 16 console, mezzo beat ciascuna
+  else if(tb<S.s3[1]){ const u=tb-S.s3[0]; const i=Math.min(15,Math.floor(u*2)); const f=u*2-i; const c=CONSOLE[i];
+    const dc = c[0]==='dreamcast';
+    $('s3img').style.display = dc?'none':'block'; $('s3dc').style.display = dc?'block':'none';
+    if(!dc && $('s3img').getAttribute('src')!==`../foto/${c[0]}.png`) $('s3img').src=`../foto/${c[0]}.png`;
+    $('s3nome').textContent=c[1]; $('s3anno').textContent=c[2]; $('s3cnt').textContent=String(i+1).padStart(2,'0')+'/16';
+    const dir = i%2?1:-1;
+    set('s3card', 1, 0, 1.04+0.06*(1-f), dir*60*(1-eo(f*2.2)));
+    set('s3nome', 1, 0, 1, -dir*40*(1-eo(f*2.5)));
+    $('s3bar').style.width = (940*(i+f)/16)+'px';
+    if(f<0.18) flash=.22*(1-f/.18);
+  }
+  // S4 sfide: 4 beat ciascuna
+  else if(tb<S.s4[1]){ const u=tb-S.s4[0]; const k=Math.min(2,Math.floor(u/4)); const f=u-4*k; const [lab,a,b]=SFIDE[k];
+    const A=CONSOLE[a], Bc=CONSOLE[b];
+    $('s4turno').firstElementChild.textContent=lab;
+    if($('s4iA').getAttribute('src')!==`../foto/${A[0]}.png`){$('s4iA').src=`../foto/${A[0]}.png`;$('s4iB').src=`../foto/${Bc[0]}.png`;}
+    $('s4nA').textContent=A[1];$('s4yA').textContent=A[2];$('s4nB').textContent=Bc[1];$('s4yB').textContent=Bc[2];
+    set('s4turno', eo(f/0.4), 0, 1, -200*(1-eo(f/0.5)));
+    set('s4cA', 1, 0, 1, -1100*(1-eo(f/0.7)));
+    set('s4cB', 1, 0, 1, 1100*(1-eo((f-0.35)/0.7)));
+    const v=(f-1.05)/0.5; set('s4vs', cl(v*4), 0, v<0?2.2:2.2-1.2*back(v));
+    set('s4q', eo((f-1.7)/0.6), (1-eo((f-1.7)/0.6))*30);
+    if(f>=1.05&&f<1.35) flash=.5*(1-(f-1.05)/.3);
+  }
+  // S5 formula
+  else if(tb<S.s5[1]){ const u=tb-S.s5[0];
+    set('s5t1', eo(u/0.5), (1-eo(u/0.5))*-60);
+    set('s5t2', eo((u-0.5)/0.5), (1-eo((u-0.5)/0.5))*-60);
+    set('s5tab', eo((u-1)/0.8), (1-eo((u-1)/1))*250, 0.98+0.04*cl((u-1)/7));
+    set('s5t3', eo((u-2.5)/0.8), (1-eo((u-2.5)/0.8))*30);
+    if(u<0.25) flash=.35*(1-u/.25);
+  }
+  // S6 finale
+  else { const u=tb-S.s6[0];
+    set('s6marchio', eo(u/1));
+    const a=u/0.6; set('s6t1', cl(a*3), 0, a<0?1.6:1.6-0.6*back(a));
+    set('s6t2', eo((u-0.8)/0.6), (1-eo((u-0.8)/0.6))*60);
+    const l=eo((u-1.5)/0.8); $('s6line').style.width=(600*l)+'px'; $('s6line').style.left=(540-300*l)+'px';
+    set('s6d', eo((u-2.2)/0.7), (1-eo((u-2.2)/0.7))*40);
+    set('s6v', eo((u-3)/0.7), (1-eo((u-3)/0.7))*40);
+    const s=(u-4)/0.5; set('s6s', cl(s*3), 0, s<0?1.4:1.4-0.4*back(s));
+    set('s6cr', eo((u-4.5)/1));
+    if(u<0.3) flash=.7*(1-u/.3);
+    // dissolvenza finale a nero
+    const fine = cl((u-11.2)/0.8); document.body.style.filter = `brightness(${1-fine})`;
+  }
+  $('flash').style.opacity = flash;
+};
+window.ready = pre();
+</script>
+</body></html>
