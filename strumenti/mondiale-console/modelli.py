@@ -2,7 +2,7 @@
 import base64, html, json, pathlib
 from brand import QUI, css, marchio, filigrana, NOTTE, PANNELLO, PANNELLO_2, TESTO, TENUE, VIOLA, ROSSO, GIALLO, VERDE, BLU
 
-CONSOLE = json.loads((QUI / "console.json").read_text())
+CONSOLE = json.loads((QUI / "console.json").read_text(encoding="utf-8"))
 ORDINE = ["snes", "megadrive", "playstation", "n64", "ps2", "gamecube", "xbox360", "wii",
           "gameboy", "atari2600", "nes", "dreamcast", "ps4", "switch", "ps5", "switch2"]
 

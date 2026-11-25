@@ -32,7 +32,7 @@ def _dati(p: pathlib.Path, mime: str) -> str:
 
 
 def logo_svg() -> str:
-    return (QUI / "logo-cartuccia.svg").read_text()
+    return (QUI / "logo-cartuccia.svg").read_text(encoding="utf-8")
 
 
 def css(w: int, h: int) -> str:

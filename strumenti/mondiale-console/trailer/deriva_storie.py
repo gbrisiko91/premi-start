@@ -1,5 +1,5 @@
 # Deriva la versione Storie (15 s) da scena.html
-s=open('scena.html').read()
+s=open('scena.html', encoding='utf-8').read()
 R=[("const S = {s1:[0,8],s2:[8,12],s3:[12,20],s4:[20,32],s5:[32,40],s6:[40,52]};","const S = {s1:[0,4],s2:[4,7],s3:[7,15],s4:[15,19],s5:[19,19],s6:[19,32]};"),
 ('const SFIDE = [["OTTAVI · SFIDA 1/8",0,1],["OTTAVI · SFIDA 2/8",2,3],["OTTAVI · SFIDA 8/8",14,15]];','const SFIDE = [["OTTAVI · SFIDA 8/8",14,15]];'),
 ("const k=Math.min(2,Math.floor(u/4))","const k=0"),
@@ -23,4 +23,4 @@ R=[("const S = {s1:[0,8],s2:[8,12],s3:[12,20],s4:[20,32],s5:[32,40],s6:[40,52]};
 for a,b in R:
     assert a in s, a[:60]
     s=s.replace(a,b)
-open('scena-storie.html','w').write(s); print('ok')
+open('scena-storie.html','w', encoding='utf-8').write(s); print('ok')

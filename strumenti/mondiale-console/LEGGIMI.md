@@ -23,17 +23,34 @@ Palette e font sono in `brand.py`, copiati da `src/stile.css` del sito (25/11/20
 - **Logo:** la cartuccia di `public/favicon.svg`, in `logo-cartuccia.svg`, con la scritta "Soffia Cartuccia" e il cursore rosso, come nella testata del sito.
 
 ## Comandi
+Guida completa per Windows: `ISTRUZIONI-WINDOWS.md`.
 ```bash
-python3 produci.py ../kit-out                                   # rigenera tutte le grafiche del kit
-python3 genera.py sfida --turno "Quarti · Sfida 1/4" --a snes --b playstation -o out/quarti-1.png
-python3 genera.py tabellone --risultati risultati.json --stato "Quarti: si vota stasera" -o out/tabellone.png
-python3 genera.py campione --console snes --riga "In finale [N] voti contro [N]" -o out/campionessa.png
+python3 -m unittest -v test_validazione                                   # test, nessuna immagine
+python3 genera.py verifica --risultati risultati-torneo.json              # controlla i risultati
+python3 genera.py sfida --sfida O3 -o out/ottavi-3.png                    # ottavi: coppie fisse
+python3 genera.py sfida --sfida Q1 --risultati risultati-torneo.json -o out/quarti-1.png
+python3 genera.py tabellone --risultati risultati-torneo.json --stato "Quarti: si vota stasera" -o out/tabellone.png
+python3 genera.py campione --risultati risultati-torneo.json -o out/campionessa.png
+python3 produci.py ../kit-out                                             # rigenera tutto il kit di partenza
 ```
-L'opzione `--prova` aggiunge la filigrana "ESEMPIO · NON PUBBLICARE".
+Prove: `--prova` aggiunge la filigrana "ESEMPIO · NON PUBBLICARE". È l'unico modo per scegliere le console a mano (`--turno --a --b`, `--console`) o per usare `esempio-risultati.json`.
 
-`risultati.json` usa le chiavi q1–q8, s1–s4, f1, f2 e campione, con l'id della console vincente. Vanno inseriti solo risultati reali e verificati: il modello è `esempio-risultati.json`, che contiene dati inventati.
+## Validazione dei risultati (`validazione.py`)
+- **`risultati-torneo.json`** è il modello operativo, vuoto. Per ogni sfida (O1–O8, Q1–Q4, S1–S2, F1) si registrano i tentativi con `voti_a`, `voti_b`, `chiusura` e `verificato`. Le console non si scrivono: si ricavano dal tabellone.
+- **C'è un vincitore solo se** l'ultimo tentativo è verificato, ha conteggi interi ≥ 0, un totale maggiore di zero e non è in parità. Altrimenti la sfida risulta "da verificare" o "da ripetere" (art. 6, 7 e 9).
+- **Il generatore rifiuta:**
+  - risultati in una sfida le cui sfidanti non sono ancora decise;
+  - sfide o chiavi sconosciute;
+  - conteggi non validi;
+  - una console contro sé stessa;
+  - console scelte a mano senza `--prova`;
+  - la campionessa senza una finale decisa e verificata;
+  - il file di esempio senza `--prova`.
+- Le grafiche iniziali (ottavi, tabellone vuoto, celebrazione, G0) non richiedono risultati.
+- Se la foto del Dreamcast (CC BY-SA 3.0) compare in una grafica di produzione oltre la sfida 6 degli ottavi, il generatore stampa un promemoria sui crediti e sulla licenza.
 
 ## File
+- `validazione.py`: regole sui risultati; `test_validazione.py`: 23 test, anche negativi; `risultati-torneo.json`: modello vuoto; `esempio-risultati.json`: dati inventati, solo per le prove.
 - `brand.py`: palette, font, marchio e filigrana. `modelli.py`: Storia della sfida e post di ringraziamento. `kit.py`: Storie della celebrazione, carosello G0, tabellone, campionessa e cover dell'evidenza. `produci.py`: genera l'intero kit.
 - `console.json`: nomi, anni, crediti e link Commons delle 16 console.
 - `foto/`: ritagli delle foto di Wikimedia Commons. Dreamcast è CC BY-SA 3.0, Switch 2 CC BY 4.0, PS5 CC0, le altre di pubblico dominio. Nei mosaici e nei trailer il Dreamcast compare solo con il nome, per non estendere la licenza share-alike a tutta la grafica. Nella Storia della sfida 6 compare la foto, con il credito.

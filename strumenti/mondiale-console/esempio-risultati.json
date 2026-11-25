@@ -1,1 +1,162 @@
-{"q1":"snes","q2":"playstation","q3":"ps2","q4":"wii","q5":"gameboy","q6":"nes","q7":"switch","q8":"ps5","s1":"snes","s2":"ps2","s3":"gameboy","s4":"switch","f1":"snes","f2":"gameboy","campione":"snes"}
+{
+ "esempio": true,
+ "nota": "DATI INVENTATI: solo per prove con --prova, mai per la pubblicazione",
+ "sfide": {
+  "O1": {
+   "tentativi": [
+    {
+     "voti_a": 812,
+     "voti_b": 790,
+     "chiusura": "2026-12-01T18:00",
+     "verificato": true
+    }
+   ]
+  },
+  "O2": {
+   "tentativi": [
+    {
+     "voti_a": 640,
+     "voti_b": 655,
+     "chiusura": "2026-12-01T18:00",
+     "verificato": true
+    }
+   ]
+  },
+  "O3": {
+   "tentativi": [
+    {
+     "voti_a": 700,
+     "voti_b": 530,
+     "chiusura": "2026-12-01T18:00",
+     "verificato": true
+    }
+   ]
+  },
+  "O4": {
+   "tentativi": [
+    {
+     "voti_a": 410,
+     "voti_b": 520,
+     "chiusura": "2026-12-01T18:00",
+     "verificato": true
+    }
+   ]
+  },
+  "O5": {
+   "tentativi": [
+    {
+     "voti_a": 600,
+     "voti_b": 580,
+     "chiusura": "2026-12-01T18:00",
+     "verificato": true
+    }
+   ]
+  },
+  "O6": {
+   "tentativi": [
+    {
+     "voti_a": 720,
+     "voti_b": 700,
+     "chiusura": "2026-12-01T18:00",
+     "verificato": true
+    }
+   ]
+  },
+  "O7": {
+   "tentativi": [
+    {
+     "voti_a": 480,
+     "voti_b": 560,
+     "chiusura": "2026-12-01T18:00",
+     "verificato": true
+    }
+   ]
+  },
+  "O8": {
+   "tentativi": [
+    {
+     "voti_a": 650,
+     "voti_b": 620,
+     "chiusura": "2026-12-01T18:00",
+     "verificato": true
+    }
+   ]
+  },
+  "Q1": {
+   "tentativi": [
+    {
+     "voti_a": 900,
+     "voti_b": 880,
+     "chiusura": "2026-12-01T18:00",
+     "verificato": true
+    }
+   ]
+  },
+  "Q2": {
+   "tentativi": [
+    {
+     "voti_a": 700,
+     "voti_b": 700,
+     "chiusura": "2026-12-01T18:30",
+     "verificato": true
+    },
+    {
+     "voti_a": 760,
+     "voti_b": 720,
+     "chiusura": "2026-12-01T18:00",
+     "verificato": true
+    }
+   ]
+  },
+  "Q3": {
+   "tentativi": [
+    {
+     "voti_a": 830,
+     "voti_b": 790,
+     "chiusura": "2026-12-01T18:00",
+     "verificato": true
+    }
+   ]
+  },
+  "Q4": {
+   "tentativi": [
+    {
+     "voti_a": 500,
+     "voti_b": 610,
+     "chiusura": "2026-12-01T18:00",
+     "verificato": true
+    }
+   ]
+  },
+  "S1": {
+   "tentativi": [
+    {
+     "voti_a": 950,
+     "voti_b": 900,
+     "chiusura": "2026-12-01T18:00",
+     "verificato": true
+    }
+   ]
+  },
+  "S2": {
+   "tentativi": [
+    {
+     "voti_a": 870,
+     "voti_b": 880,
+     "chiusura": "2026-12-01T18:00",
+     "verificato": true
+    }
+   ]
+  },
+  "F1": {
+   "tentativi": [
+    {
+     "voti_a": 1234,
+     "voti_b": 987,
+     "chiusura": "2026-12-01T18:00",
+     "verificato": true
+    }
+   ]
+  }
+ }
+}
