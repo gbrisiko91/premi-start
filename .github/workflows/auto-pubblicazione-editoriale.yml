@@ -46,4 +46,7 @@ jobs:
       - name: Riconvalida PR, SHA, gate, CI e preview; merge solo se idonea
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Per spegnere subito: Settings > Secrets and variables > Actions > Variables
+          # Creare AUTO_PUBBLICAZIONE con valore off.
+          AUTO_PUBBLICAZIONE: ${{ vars.AUTO_PUBBLICAZIONE || 'on' }}
         run: node strumenti/auto-pubblicazione-editoriale.mjs
