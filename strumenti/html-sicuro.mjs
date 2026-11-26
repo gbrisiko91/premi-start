@@ -11,7 +11,7 @@ const ATTR = {
   "*": ["class", "id", "title", "lang", "dir", "role", "aria-label", "aria-hidden"],
   a: ["href", "name", "target", "rel", "download", "hreflang"],
   img: ["src", "alt", "width", "height", "loading", "decoding", "referrerpolicy", "fetchpriority"],
-  div: ["tabindex"],
+  div: ["tabindex", "data-id", "data-titolo"],
   td: ["colspan", "rowspan"],
   th: ["colspan", "rowspan", "scope"],
   ol: ["start", "type"],
