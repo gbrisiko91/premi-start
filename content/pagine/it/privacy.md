@@ -47,6 +47,14 @@ Se ti iscrivi al **Soffio della settimana**, trattiamo il tuo indirizzo email pe
 
 Il modulo di iscrizione e l'elenco degli iscritti sono gestiti per nostro conto da {{NL_FORNITORE}}. Conserviamo l'indirizzo finché resti iscritto e lo cancelliamo quando ti disiscrivi. Non lo cediamo a nessuno e non lo usiamo per altri scopi.
 
+## Video incorporati da YouTube
+
+Alcuni articoli mostrano registrazioni del gameplay pubblicate dal canale YouTube di Soffia Cartuccia. Il player non viene caricato automaticamente: prima di fare clic compare un'immagine di anteprima e un collegamento che può essere aperto direttamente su YouTube.
+
+**Attenzione:** le miniature degli articoli video sono attualmente richieste ai server `i.ytimg.com` di YouTube già durante il caricamento della pagina; questo può comunicare dati tecnici, come l'IP, a Google **anche prima del clic**. Dopo aver premuto Riproduci, il sito inserisce un player da `www.youtube-nocookie.com` in modalità privacy avanzata; YouTube/Google può ricevere dati tecnici e, durante la riproduzione, utilizzare tecnologie di memorizzazione secondo la propria informativa. Per approfondire: [Privacy di Google](https://policies.google.com/privacy).
+
+La modalità privacy avanzata non significa anonimato assoluto. Se non vuoi avviare il player incorporato, non premere Riproduci e puoi leggere normalmente l'articolo.
+
 ## Immagini e link di altri siti
 
 Alcune immagini degli articoli sono materiale ufficiale caricato direttamente dai server dei rispettivi proprietari (ad esempio Valve per Steam, Nintendo o gli editori dei giochi). Per mostrarle, il tuo browser si collega a quei server, che possono quindi vedere il tuo indirizzo IP, come avviene per qualsiasi sito. Il nostro sito chiede al browser di non comunicare loro da quale pagina provieni.
