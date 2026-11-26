@@ -601,7 +601,7 @@ function paginaArticolo(a, stessaLingua, versioni) {
   <p class="metodo-fonti"><a class="articolo-verifica" href="${urlPaginaFissa(l, "come-lavoriamo")}">${esc(u.verificationLink)} ↗</a></p>
   ${altreLingue.length ? `<nav class="altre-lingue" aria-label="${esc(t.altreLingue)}"><p>${icona("globo")}${esc(t.altreLingue)}</p><ul>${altreLingue.map((v) => `<li><a href="${v.url}" hreflang="${LINGUE[v.lingua].hreflang}" lang="${LINGUE[v.lingua].hreflang}">${esc(LINGUE[v.lingua].nome)}</a></li>`).join("")}</ul></nav>` : ""}
 </article>
-${a.bozza ? "" : `<script src="/like.js" defer></script>\n<script src="/condividi.js" defer></script>`}
+${a.html.includes('class="video-yt"') ? '<script src="/video.js" defer></script>\n' : ""}${a.bozza ? "" : `<script src="/like.js" defer></script>\n<script src="/condividi.js" defer></script>`}
 ${correlati.length ? `<section class="correlati" aria-labelledby="t-corr"><h2 id="t-corr" class="titolo-sezione">${esc(t.altroDa(nomeCat(l, a.categoria)))}</h2><div class="griglia">${correlati.map((x) => scheda(x)).join("")}</div></section>` : ""}
 <script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, "\\u003c")}</script>`;
   return pagina({ l, titolo: a.titolo, titoloSeo: a.titoloSeo, descrizione: a.sommario || t.motto, percorso: a.url, corpo, tipo: "article", articolo: a, alternative });
@@ -1097,6 +1097,7 @@ fs.copyFileSync(path.join(ROOT, "src", "stile.css"), path.join(DIST, "stile.css"
 fs.copyFileSync(path.join(ROOT, "src", "novita.css"), path.join(DIST, "novita.css"));
 fs.copyFileSync(path.join(ROOT, "src", "quiz.css"), path.join(DIST, "quiz.css"));
 fs.copyFileSync(path.join(ROOT, "src", "rubriche.css"), path.join(DIST, "rubriche.css"));
+fs.copyFileSync(path.join(ROOT, "src", "video.js"), path.join(DIST, "video.js"));
 const FONT = preparaFont();
 fs.writeFileSync(path.join(DIST, "font.css"), FONT.css);
 var FONT_PRECARICA = FONT.precarica.map((f) => `<link rel="preload" href="/font/${f}" as="font" type="font/woff2" crossorigin>\n`).join("");
