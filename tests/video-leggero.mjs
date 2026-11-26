@@ -24,7 +24,7 @@ test("pubblica video.js e lo carica soltanto negli articoli dotati di player", (
   const target = "dist/articoli/gta-6-prime-impressioni-ps5/index.html";
   if (fs.existsSync(target)) {
     const art = fs.readFileSync(target, "utf8");
-    assert.match(art, /src="\\/video\\.js" defer/);
+    assert.ok(art.includes('src="/video.js" defer'));
     assert.match(art, /data-id="p2VHYy3xtRk"/);
     assert.match(art, /data-id="Ibhpn2KHi04"/);
     assert.doesNotMatch(art, /<iframe/);
