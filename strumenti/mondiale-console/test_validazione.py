@@ -132,6 +132,10 @@ class Generatore(unittest.TestCase):
         ok, salvato, _ = self.esegui("campione", "--console", "dreamcast", "--riga", "x", "-o", "x.png")
         self.assertFalse(ok); self.assertFalse(salvato)
 
+    def test_testo_finale_arbitrario_senza_prova_rifiutato(self):
+        ok, salvato, msg = self.esegui("campione", "--riga", "Ho vinto senza voti", "-o", "x.png")
+        self.assertFalse(ok); self.assertFalse(salvato); self.assertIn("--prova", msg)
+
     def test_finale_in_parita_nessuna_campionessa(self):
         sfide = dict(OTTAVI_OK); sfide.update({f"Q{i}": [t(9, 3)] for i in range(1, 5)})
         sfide.update(S1=[t(5, 1)], S2=[t(5, 1)], F1=[t(50, 50)])
