@@ -103,6 +103,8 @@ def main(argv=None):
             salva(K.tabellone(a.stato, V.per_tabellone(an), a.finale, prova=a.prova), 1080, 1350, a.out)
 
         else:  # campione
+            if a.riga and not a.prova:
+                errore("--riga personalizzata solo con --prova: in produzione il testo deriva dai voti verificati")
             if a.console:
                 if not a.prova:
                     errore("--console a mano solo con --prova; in produzione la campionessa si ricava dalla finale verificata")
