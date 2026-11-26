@@ -80,11 +80,11 @@ def sfida(turno, a, b, domanda='Chi passa il <span style="color:%s">turno</span>
 <div class="abs largo" style="right:60px;top:156px;text-align:right;font-size:22px;letter-spacing:3px;line-height:1.3;color:{TENUE}">MONDIALE<br>DELLE CONSOLE</div>
 <div class="abs" style="left:60px;top:262px"><span class="chip chip-viola" style="font-size:26px">{e(turno)}</span></div>
 <div class="abs display" style="left:60px;top:350px;width:960px;font-size:76px;font-stretch:118%;white-space:nowrap">{domanda}</div>
-{scheda(470, a, True)}
-{scheda(990, b, False)}
-<div class="abs display" style="left:460px;top:880px;width:160px;height:160px;border-radius:50%;background:{VIOLA};border:12px solid {NOTTE};display:flex;align-items:center;justify-content:center;font-size:56px;font-stretch:120%;color:{NOTTE};padding-right:4px">VS</div>
+{scheda(445, a, True)}
+{scheda(910, b, False)}
+<div class="abs display" style="left:460px;top:825px;width:160px;height:160px;border-radius:50%;background:{VIOLA};border:12px solid {NOTTE};display:flex;align-items:center;justify-content:center;font-size:56px;font-stretch:120%;color:{NOTTE};padding-right:4px">VS</div>
 <div class="abs" style="left:60px;top:1500px;width:960px;height:160px;border:4px dashed {TESTO}66;border-radius:30px;display:flex;align-items:center;justify-content:center;font-size:38px;font-weight:700;color:{TESTO}cc">{e(cta)}</div>
-<div class="abs" style="left:60px;top:1680px;width:960px;font-size:{24 if len(cr) < 70 else 20}px;color:{TENUE};line-height:1.35">{e(cr)}</div>"""
+<div class="abs" style="left:60px;top:1398px;width:960px;font-size:{24 if len(cr) < 70 else 20}px;color:{TENUE};line-height:1.35">{e(cr)}</div>"""
     return doc(1080, 1920, corpo, prova)
 
 
