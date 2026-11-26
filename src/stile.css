@@ -457,3 +457,14 @@ main { max-width: 78rem; margin: 0 auto; padding: 0 1rem 5rem; }
 @media (prefers-reduced-motion: reduce) {
   .torna-su { transition: none; }
 }
+
+
+/* Miniature dei gameplay della redazione: caricamento del player solo al clic. */
+.video-yt{position:relative;aspect-ratio:16/9;margin:1.75rem 0;border-radius:12px;overflow:hidden;background:var(--notte)}
+.video-yt a,.video-yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+.video-yt img{width:100%;height:100%;object-fit:cover;transition:filter .2s}
+.video-yt a:hover img,.video-yt a:focus-visible img{filter:brightness(.8)}
+.video-yt__play{position:absolute;left:50%;top:50%;width:72px;height:72px;transform:translate(-50%,-50%);border-radius:50%;background:var(--rosso);box-shadow:0 4px 18px rgba(0,0,0,.45);pointer-events:none}
+.video-yt__play::after{content:"";position:absolute;left:29px;top:22px;border-style:solid;border-width:14px 0 14px 22px;border-color:transparent transparent transparent var(--testo)}
+.video-yt a:focus-visible{outline:3px solid var(--viola);outline-offset:-3px}
+.video-yt iframe{background:var(--notte)}
