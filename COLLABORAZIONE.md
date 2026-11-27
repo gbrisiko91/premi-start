@@ -188,3 +188,16 @@ Le protezioni integrate comprendono: sanitizer HTML dopo `marked` (PR #31), gate
 **Sul sondaggio FI:** l'ultimo audit del 22/11 conta 132 parole su `/fi/kysely/`, HTTP 200, indicizzabile, presente in sitemap. La pagina mostra già istruzioni, natura non rappresentativa del voto e domande storiche in HTML; è un avvertimento quantitativo `thin-content`, NON una prova di contenuto scorretto o un invito ad aggiungere parole inutili. La prossima domanda prevista per lunedì 23/11 potrà ampliare naturalmente l'archivio statico al successivo build. Revisione linguistica umana del finlandese rimane utile ma non urgente rispetto all'intervento sui link.
 
 **Processo:** nuova PR solo tecnica con build, test, gate e Deploy Preview; il merge richiede approvazione esplicita del proprietario. Claude continua a curare titoli e copy editoriali; segnalarci link in lingua impropria se una destinazione non ha traduzione.
+
+
+## 26/11/2026 — Prima prova diretta GTA 6 e player YouTube leggero
+
+Gianmarco Buono ha approvato **il 26/11 alle 23:15** il testo originale «GTA 6, le nostre prime impressioni su PS5», registrato su PS5. Pubblicazione in **due PR distinte**, senza interventi diretti a `main`:
+
+- **[PR #87](https://github.com/gbrisiko91/premi-start/pull/87)**: articolo italiano `gta-6-prime-impressioni-ps5` e otto traduzioni (de, en, es, fi, ja, no, ru, sv); integrata in `main` con commit `01bf231f1864c9f7eb3192bd8a9e6ad03d3c1ca2`. Categoria usata: `console`, perché la categoria `recensioni` non è definita. I due video rimangono materiale originale dichiarato dal fondatore; il voto 8,5/10 è **provvisorio**, non una recensione conclusiva né una prova prestazionale misurata in laboratorio. I link interni puntano a notizie già pubblicate.
+- **[PR #88](https://github.com/gbrisiko91/premi-start/pull/88)**: player cliccabile (miniatura + tasto play) in `src/video.js`, CSS in `src/stile.css`, mantenimento sicuro di `data-id` e `data-titolo` nella sanificazione, build che carica lo script solo sugli articoli con `.video-yt`, informativa privacy e test. La PR deve completare build/gate/preview **sull'ultimo HEAD** prima del merge.
+
+**Contratto del componente video per futuri articoli:**
+`<div class="video-yt" data-id="ID_DI_11_CARATTERI" data-titolo="Titolo"><a href="https://www.youtube.com/watch?v=ID_DI_11_CARATTERI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ID_DI_11_CARATTERI/hqdefault.jpg" alt="Descrizione" width="480" height="360" loading="lazy"><span class="video-yt__play" aria-hidden="true"></span></a></div>`. Da mantenere nel corpo Markdown come HTML; **non** aggiungere iframe o script nei contenuti. Il filtro li elimina. Con JavaScript disponibile, il clic carica un iframe `youtube-nocookie.com`; senza JavaScript il link apre YouTube. Il sito **richiede ancora le miniature da i.ytimg.com prima del clic**: non dichiarare zero richieste a Google. La privacy spiega questa distinzione.
+
+Il merge editoriale non autorizza pubblicazioni su Instagram né nuovi invii email agli ospiti di Premi Start. La PR #81 e la PR #83 restano indipendenti e sospese secondo le istruzioni del proprietario.
