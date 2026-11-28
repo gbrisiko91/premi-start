@@ -2,9 +2,10 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
+import vm from "node:vm";
 import path from "node:path";
 import {
-  giornoRoma, giornoPrima, selezionaCarosello, filtraGiorniClient, urlImmagineSicuro, TESTI_CAROSELLO, FALLBACK_CAROSELLO,
+  giornoRoma, giornoIstanteRoma, giornoPrima, selezionaCarosello, urlImmagineSicuro, TESTI_CAROSELLO, FALLBACK_CAROSELLO,
 } from "../strumenti/carosello-home.mjs";
 import { LINGUE } from "../lingue.mjs";
 
@@ -72,23 +73,80 @@ test("zero, una e due notizie; candidati nascosti per il cambio di data", () => 
   assert.throws(() => selezionaCarosello([], { oggi: "28/11/2026" }));
 });
 
-test("la regola del browser coincide con quella del build", () => {
-  const giorni = ["2026-11-28", "2026-11-28", "2026-11-27", "2026-11-20", "2026-11-19", "2026-11-18", "2026-11-17"];
-  assert.deepEqual(filtraGiorniClient(giorni, "2026-11-28"), { indici: [0, 1, 2], recenti: true });
-  assert.deepEqual(filtraGiorniClient(giorni, "2026-11-29"), { indici: [0, 1], recenti: true });
-  assert.deepEqual(filtraGiorniClient(giorni, "2026-11-30"), { indici: [0, 1, 2, 3, 4], recenti: false });
-  // Orologio del lettore indietro rispetto al build: non nasconde nulla e non svuota il carosello.
-  assert.deepEqual(filtraGiorniClient(giorni, "2026-11-27").indici, [0, 1, 2]);
-  const client = fs.readFileSync(path.join(ROOT, "public", "carosello.js"), "utf8");
-  assert.match(client, /Europe\/Rome/);
-  assert.match(client, />= ieri/);
-  assert.doesNotMatch(client, /fetch\(|XMLHttpRequest|https?:\/\//, "nessuna chiamata di rete o servizio esterno");
+// Il file effettivamente servito ai lettori, eseguito senza DOM: espone solo le regole pure.
+function caricaClient() {
+  const sandbox = { Intl, Date, Math, Number, String, Array, Object, RegExp };
+  vm.runInNewContext(fs.readFileSync(path.join(ROOT, "public", "carosello.js"), "utf8"), sandbox, { filename: "carosello.js" });
+  assert.ok(sandbox.SoffiaCarosello, "public/carosello.js non espone le regole");
+  return sandbox.SoffiaCarosello;
+}
+
+test("browser: data a Roma con formatToParts, anche a mezzanotte e con l'ora legale", () => {
+  const c = caricaClient();
+  const casi = ["2026-11-27T22:59:00Z", "2026-11-27T23:30:00Z", "2026-03-28T23:30:00Z", "2026-03-29T22:00:00Z", "2026-10-24T22:30:00Z", "2026-10-25T22:30:00Z", "2026-12-31T23:00:00Z"];
+  for (const iso of casi) assert.equal(c.giornoRoma(new Date(iso)), giornoIstanteRoma(new Date(iso)), iso);
+  assert.equal(c.giornoRoma(new Date("2026-12-31T23:00:00Z")), "2027-01-01");
+  assert.equal(c.giornoRoma(new Date("x")), "");
+  const sorgente = fs.readFileSync(path.join(ROOT, "public", "carosello.js"), "utf8");
+  assert.match(sorgente, /formatToParts/);
+  assert.doesNotMatch(sorgente, /en-CA/);
+  assert.doesNotMatch(sorgente, /fetch\(|XMLHttpRequest|https?:\/\//, "nessuna chiamata di rete o servizio esterno");
+  for (const g of ["2026-03-30", "2026-03-01", "2027-01-01", "2028-03-01"]) assert.equal(c.giornoPrima(g), giornoPrima(g));
 });
 
-test("immagini solo HTTPS o locali", () => {
-  assert.equal(urlImmagineSicuro("https://cdn.example/x.jpg"), "https://cdn.example/x.jpg");
-  assert.equal(urlImmagineSicuro("/media/x.png"), "/media/x.png");
-  for (const u of ["javascript:alert(1)", "http://x/y.jpg", "//evil/x.jpg", "data:image/png;base64,AA", 'https://x/"onerror=1', ""]) assert.equal(urlImmagineSicuro(u), "");
+test("browser: regola al cambio di data, con riferimento al massimo fra giorno del lettore e del build", () => {
+  const { regola } = caricaClient();
+  const giorni = ["2026-11-28", "2026-11-28", "2026-11-27", "2026-11-20", "2026-11-19", "2026-11-18", "2026-11-17"];
+  const r = (oggi, build = "2026-11-28") => { const x = regola(giorni, oggi, build, 5); return { indici: [...x.indici], recenti: x.recenti, oggi: x.oggi }; };
+  assert.deepEqual(r("2026-11-28"), { indici: [0, 1, 2], recenti: true, oggi: "2026-11-28" });
+  assert.deepEqual(r("2026-11-29"), { indici: [0, 1], recenti: true, oggi: "2026-11-29" });
+  assert.deepEqual(r("2026-11-30"), { indici: [0, 1, 2, 3, 4], recenti: false, oggi: "2026-11-30" });
+  // Orologio del lettore indietro (anche di giorni) o illeggibile: vale il giorno del build.
+  assert.deepEqual(r("2026-11-27"), { indici: [0, 1, 2], recenti: true, oggi: "2026-11-28" });
+  assert.deepEqual(r("2026-11-01"), { indici: [0, 1, 2], recenti: true, oggi: "2026-11-28" });
+  assert.deepEqual(r(""), { indici: [0, 1, 2], recenti: true, oggi: "2026-11-28" });
+  assert.deepEqual([...regola(["2026-11-28"], "2027-01-10", "2026-11-28", 5).indici], [0], "una sola slide: mai vuoto");
+});
+
+test("build e browser scelgono le stesse notizie (1000 casi casuali)", () => {
+  const { regola } = caricaClient();
+  let seme = 92;
+  const caso = () => (seme = (seme * 1103515245 + 12345) % 2147483648) / 2147483648;
+  for (let k = 0; k < 1000; k++) {
+    const oggi = `2026-${String(1 + Math.floor(caso() * 12)).padStart(2, "0")}-${String(1 + Math.floor(caso() * 28)).padStart(2, "0")}`;
+    let t = Date.parse(`${oggi}T00:00:00Z`) + 864e5;
+    const lista = Array.from({ length: Math.floor(caso() * 12) }, (_, i) => {
+      t -= Math.floor(caso() * 2.5) * 864e5;
+      return art(`a${i}`, new Date(t).toISOString().slice(0, 10), { bozza: caso() < 0.1 });
+    });
+    const build = selezionaCarosello(lista, { oggi });
+    if (!build.voci.length) continue;
+    const giorni = build.candidati.map((x) => x.giorno);
+    const client = regola(giorni, oggi, oggi, FALLBACK_CAROSELLO);
+    assert.deepEqual([...client.indici].map((i) => build.candidati[i].a.id), build.voci.map((x) => x.a.id), `caso ${k} (${oggi})`);
+    assert.equal(client.recenti, build.recenti);
+    // Il giorno dopo, senza deploy: stesso risultato di un build fatto quel giorno con gli stessi articoli.
+    const domani = new Date(Date.parse(`${oggi}T12:00:00Z`) + 864e5).toISOString().slice(0, 10);
+    // Le notizie con data futura al momento del build non sono nell'HTML: arrivano con il deploy successivo.
+    const buildDomani = selezionaCarosello(lista.filter((a) => giornoRoma(a.data) <= oggi), { oggi: domani });
+    const clientDomani = regola(giorni, domani, oggi, FALLBACK_CAROSELLO);
+    assert.deepEqual([...clientDomani.indici].map((i) => build.candidati[i].a.id), buildDomani.voci.map((x) => x.a.id), `caso ${k} il giorno dopo`);
+  }
+});
+
+test("immagini solo HTTPS o locali dello stesso sito", () => {
+  for (const u of ["https://cdn.example/x.jpg", "https://cdn.example/x.jpg?w=1&h=2", "/media/x.png", "/copertine/retro-1.png", "/a%5Cb.png"]) assert.equal(urlImmagineSicuro(u), u, u);
+  const rifiutati = [
+    "javascript:alert(1)", "JAVASCRIPT:alert(1)", "http://x/y.jpg", "//evil/x.jpg", "data:image/png;base64,AA", 'https://x/"onerror=1', "",
+    "/\\evil.example/x.png", "\\\\evil.example/x.png", "https://x/a\\b.png", "/x\ty.png", "/x\ny.png", "/x\u0000.png", "/x\u007f.png",
+    " /x.png", "/x y.png", "https://user:pw@example.com/x.png", "https:/example.com/x.png", "https:example.com/x.png", "ftp://example.com/x.png",
+  ];
+  for (const u of rifiutati) assert.equal(urlImmagineSicuro(u), "", JSON.stringify(u));
+  // Coerenza con il browser: ciò che passa resta nello stesso sito o in HTTPS anche dopo il parsing URL.
+  for (const u of ["/media/x.png", "https://cdn.example/x.jpg"]) {
+    const url = new URL(urlImmagineSicuro(u), "https://soffiacartuccia.it/");
+    assert.ok(url.protocol === "https:" && (u.startsWith("https:") || url.origin === "https://soffiacartuccia.it"));
+  }
 });
 
 test("testi del carosello presenti in tutte e nove le lingue", () => {

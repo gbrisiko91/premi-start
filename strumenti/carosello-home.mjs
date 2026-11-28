@@ -6,7 +6,15 @@ export const FUSO_REDAZIONE = "Europe/Rome";
 export const FALLBACK_CAROSELLO = 5;
 export const ROTAZIONE_MS = 6000;
 
-const formatoGiorno = new Intl.DateTimeFormat("en-CA", { timeZone: FUSO_REDAZIONE, year: "numeric", month: "2-digit", day: "2-digit" });
+const formatoGiorno = new Intl.DateTimeFormat("en-US", { timeZone: FUSO_REDAZIONE, year: "numeric", month: "2-digit", day: "2-digit" });
+
+// AAAA-MM-GG dell'istante a Roma, costruito con formatToParts (il formato della stringa non è garantito da ECMA-402).
+export function giornoIstanteRoma(istante = new Date()) {
+  const data = istante instanceof Date ? istante : new Date(istante);
+  if (Number.isNaN(data.getTime())) return "";
+  const p = Object.fromEntries(formatoGiorno.formatToParts(data).map((x) => [x.type, x.value]));
+  return `${p.year}-${p.month}-${p.day}`;
+}
 
 // Giorno AAAA-MM-GG di pubblicazione secondo la redazione.
 // Le date del front matter senza orario (AAAA-MM-GG) arrivano come mezzanotte UTC:
@@ -16,7 +24,7 @@ export function giornoRoma(d) {
   if (Number.isNaN(data.getTime())) return "";
   const iso = data.toISOString();
   if (iso.endsWith("T00:00:00.000Z")) return iso.slice(0, 10);
-  return formatoGiorno.format(data);
+  return giornoIstanteRoma(data);
 }
 
 // Giorno di calendario precedente: aritmetica sulla data, quindi indifferente all'ora legale.
@@ -44,19 +52,17 @@ export function selezionaCarosello(articoli, { oggi, fallback = FALLBACK_CAROSEL
   return { voci, recenti: recenti.length > 0, candidati, oggi, ieri };
 }
 
-// Stessa regola applicata dal browser (public/carosello.js) sui giorni scritti nell'HTML.
-// giorni: elenco nell'ordine delle slide. Restituisce gli indici da mostrare.
-export function filtraGiorniClient(giorni, oggi, fallback = FALLBACK_CAROSELLO) {
-  const ieri = giornoPrima(oggi);
-  const recenti = giorni.map((g, i) => (g >= ieri ? i : -1)).filter((i) => i >= 0);
-  if (recenti.length) return { indici: recenti, recenti: true };
-  return { indici: giorni.slice(0, fallback).map((_, i) => i), recenti: false };
-}
-
-// Solo immagini HTTPS o percorsi locali del sito; altrimenti copertina di categoria.
+// Solo immagini HTTPS o percorsi locali dello stesso sito; altrimenti copertina di categoria.
+// Rifiuta spazi, caratteri di controllo e backslash (i browser trattano "/\\host" come "//host"),
+// e verifica l'origine con il parser URL.
+const BASE_LOCALE = "https://soffiacartuccia.invalid";
 export const urlImmagineSicuro = (u) => {
-  const s = String(u || "").trim();
-  return /^https:\/\/[^\s"'<>]+$/i.test(s) || /^\/(?!\/)[^\s"'<>]*$/.test(s) ? s : "";
+  const s = String(u ?? "");
+  if (!s || /[\s\\\u0000-\u001f\u007f"'<>`]/.test(s)) return "";
+  let url;
+  try { url = new URL(s, BASE_LOCALE); } catch { return ""; }
+  if (s.startsWith("/")) return !s.startsWith("//") && url.origin === BASE_LOCALE ? s : "";
+  return /^https:\/\//i.test(s) && url.protocol === "https:" && !url.username && !url.password && url.hostname ? s : "";
 };
 
 // Testi dell'interfaccia nelle nove lingue del sito.
