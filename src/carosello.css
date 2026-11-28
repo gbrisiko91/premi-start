@@ -1,0 +1,47 @@
+/* Carosello di apertura della homepage (issue #92). Incorporato nella sola homepage da build.mjs. Una regola per riga. */
+.eroe-carosello { align-items: start; }
+.carosello { position: relative; min-width: 0; }
+.carosello-etichetta { margin: 0 0 .9rem; }
+.carosello-pista { display: flex; gap: 1rem; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scroll-padding: 0; border-radius: 22px; -webkit-overflow-scrolling: touch; }
+.carosello-attivo .carosello-pista { gap: 0; scrollbar-width: none; }
+.carosello-attivo .carosello-pista::-webkit-scrollbar { display: none; }
+.carosello-slide { position: relative; flex: 0 0 92%; scroll-snap-align: start; scroll-snap-stop: always; display: flex; flex-direction: column; background: var(--pannello); border: 1px solid var(--pannello-2); border-radius: 22px; overflow: hidden; isolation: isolate; }
+.carosello-attivo .carosello-slide, .carosello-singolo .carosello-slide { flex-basis: 100%; }
+.carosello-slide[hidden] { display: none; }
+.carosello-media { display: block; aspect-ratio: 16 / 9; }
+.carosello-media.copertina > .copertina-nome { display: none; }
+.carosello-testo { position: relative; padding: 1.25rem 1.25rem 1.4rem; }
+.carosello-titolo { font-size: clamp(1.9rem, 7.4vw, 3.2rem); max-width: 22ch; margin-bottom: .9rem; }
+:lang(ja) .carosello-titolo, :lang(ru) .carosello-titolo { font-size: clamp(1.7rem, 5.6vw, 2.7rem); }
+.carosello-sommario { font-size: 1.08rem; margin-bottom: 1.25rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.carosello-controlli { display: flex; align-items: center; gap: .5rem; margin-top: 1rem; }
+.carosello-controlli[hidden] { display: none; }
+.carosello-tasto { flex: none; width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; border: 1px solid var(--pannello-2); background: var(--pannello); color: var(--testo); font: 800 1.15rem/1 var(--display); cursor: pointer; }
+.carosello-tasto:hover { border-color: var(--viola); }
+.carosello-tasto:focus-visible, .carosello-punto:focus-visible { outline: 3px solid var(--giallo); outline-offset: 2px; }
+.carosello-pausa { margin-left: auto; }
+.icona-pausa { width: 12px; height: 14px; border-left: 4px solid currentColor; border-right: 4px solid currentColor; }
+.carosello-pausa[data-stato="fermo"] .icona-pausa { width: 0; height: 0; border-right: 0; border-left: 13px solid currentColor; border-top: 8px solid transparent; border-bottom: 8px solid transparent; margin-left: 4px; }
+.carosello-punti { display: flex; flex-wrap: wrap; justify-content: center; gap: 0; min-width: 0; flex: 1; }
+.carosello-punto { width: 28px; height: 44px; padding: 0; border: 0; background: none; cursor: pointer; display: grid; place-items: center; }
+.carosello-punto::before { content: ""; width: 10px; height: 10px; border-radius: 999px; background: var(--tenue); opacity: .55; transition: width .2s, background-color .2s; }
+.carosello-punto[aria-current="true"]::before { width: 22px; background: var(--giallo); opacity: 1; }
+@media (min-width: 761px) {
+.carosello-slide { min-height: clamp(27rem, 40vw, 34rem); justify-content: flex-end; }
+.carosello-media { position: absolute; inset: 0; z-index: -1; aspect-ratio: auto; }
+.carosello-media::after { content: ""; position: absolute; inset: 0; z-index: 2; background: linear-gradient(to top, rgba(16, 16, 38, .97) 0%, rgba(16, 16, 38, .9) 45%, rgba(16, 16, 38, .55) 72%, rgba(16, 16, 38, .1) 100%); }
+.carosello-testo { padding: 6rem 2rem 1.9rem; }
+.carosello-titolo, .carosello-sommario { text-shadow: 0 2px 14px rgba(16, 16, 38, .9); }
+.carosello-sommario { color: #e6e2fb; }
+}
+@media (max-width: 980px) {
+.eroe-carosello .classifica { order: 2; }
+}
+@media (max-width: 760px) {
+.carosello-sommario { -webkit-line-clamp: 2; }
+}
+@media (prefers-reduced-motion: reduce) {
+.carosello-pista { scroll-behavior: auto; }
+.carosello-punto::before { transition: none; }
+.carosello-titolo, .carosello-sommario, .carosello .eroe-azioni { animation: none; }
+}
