@@ -24,6 +24,7 @@ import { QUIZ_ARCHIVIO_LABEL } from "./strumenti/quiz-archivio-label.mjs";
 import { GUIDE_RUBRICHE } from "./strumenti/guide-rubriche.mjs";
 import { META_RUBRICHE } from "./strumenti/meta-rubriche.mjs";
 import { localizzaLinkArticoli } from "./strumenti/localizza-link-articoli.mjs";
+import { selezionaCarosello, urlImmagineSicuro, TESTI_CAROSELLO, FALLBACK_CAROSELLO, ROTAZIONE_MS } from "./strumenti/carosello-home.mjs";
 import { R, USCITE, SONDAGGI, NEWSLETTER } from "./rubriche.mjs";
 
 const ROOT = path.dirname(new URL(import.meta.url).pathname);
@@ -453,11 +454,51 @@ const DESCRIZIONI_HOME = Object.freeze(  {
 const TITOLI_QUIZ_SEO = Object.freeze({ no: "Dagens spillquiz: test kunnskapene dine", sv: "Dagens spelquiz: testa dina kunskaper" });
 const TITOLI_AUTORE_SEO = Object.freeze({ de: "Gianmarco Buono: Gründer und Gaming-Autor", es: "Gianmarco Buono: autor de videojuegos" });
 
+// Carosello di apertura (issue #92): selezione al build, riallineamento al cambio di data in public/carosello.js.
+const CSS_CAROSELLO = fs.readFileSync(path.join(ROOT, "src", "carosello.css"), "utf8").replace(/\/\*[\s\S]*?\*\//g, "").replace(/\s*\n\s*/g, "");
+function caroselloHome(l, { voci, candidati, recenti, oggi }) {
+  const t = T[l];
+  const k = TESTI_CAROSELLO[l] || TESTI_CAROSELLO[PRINCIPALE];
+  const n = voci.length;
+  const posizione = (i) => k.posizione.replace("{n}", i + 1).replace("{tot}", n);
+  const slide = candidati.map(({ a, giorno }, i) => {
+    const visibile = i < n;
+    const titolo = i === 0 ? "h1" : "h2";
+    const foto = urlImmagineSicuro(a.immagine);
+    const riserva = urlImmagineSicuro(a.immagineRiserva);
+    return `<article class="carosello-slide" data-colore="${colore(a.categoria)}" data-giorno="${esc(giorno)}" role="group" aria-roledescription="${esc(k.slide)}" aria-label="${esc(posizione(i))}"${visibile ? "" : " hidden"}>
+    <a class="carosello-media copertina" data-arte="${varianteArte(a)}" href="${esc(a.url)}" tabindex="-1" aria-hidden="true">${foto ? img({ src: foto, riserva, alt: "", lazy: i > 0, priorita: i === 0 }) : ""}</a>
+    <div class="carosello-testo">
+      <p class="meta">${etichettaCat(l, a.categoria)}<time datetime="${a.data.toISOString()}">${data(l, a.data, "lunga")}</time></p>
+      <${titolo}${i === 0 ? ' id="t-apertura"' : ""} class="eroe-titolo carosello-titolo"><a href="${esc(a.url)}">${esc(a.titolo)}</a></${titolo}>
+      ${a.sommario ? `<p class="eroe-sommario carosello-sommario">${esc(a.sommario)}</p>` : ""}
+      <div class="eroe-azioni"><a class="tasto-start" href="${esc(a.url)}">${esc(t.leggi)}</a>${hype(l, a.viralita)}</div>
+    </div>
+  </article>`;
+  }).join("\n  ");
+  const etichetta = recenti ? k.recenti : k.ultime;
+  return `<style>${CSS_CAROSELLO}</style>
+<div class="carosello" data-carosello role="region" aria-roledescription="${esc(k.carosello)}" aria-label="${esc(etichetta)}" data-oggi="${esc(oggi)}" data-fallback="${FALLBACK_CAROSELLO}" data-rotazione="${ROTAZIONE_MS}" data-testo-recenti="${esc(k.recenti)}" data-testo-ultime="${esc(k.ultime)}" data-posizione="${esc(k.posizione)}" data-vai="${esc(k.vai)}" data-pausa="${esc(k.pausa)}" data-avvia="${esc(k.avvia)}">
+  <p class="eyebrow carosello-etichetta" data-carosello-etichetta>${esc(etichetta)}</p>
+  <div class="carosello-pista" data-carosello-pista>
+  ${slide}
+  </div>
+  <div class="carosello-controlli" data-carosello-controlli hidden>
+    <button type="button" class="carosello-tasto" data-carosello-prec aria-label="${esc(k.prec)}"><span aria-hidden="true">←</span></button>
+    <div class="carosello-punti" data-carosello-punti></div>
+    <button type="button" class="carosello-tasto" data-carosello-succ aria-label="${esc(k.succ)}"><span aria-hidden="true">→</span></button>
+    <button type="button" class="carosello-tasto carosello-pausa" data-carosello-pausa aria-label="${esc(k.pausa)}" aria-pressed="false"><span class="icona-pausa" aria-hidden="true"></span></button>
+  </div>
+</div>`;
+}
+
 function home(l, articoli) {
   const t = T[l];
   const u = U[l];
   const alternative = tuttePerLingua(P.home);
-  if (!articoli.length) {
+  const carosello = articoli.length ? selezionaCarosello(articoli, { oggi: OGGI }) : { voci: [] };
+  // Nessun carosello vuoto e nessuna bozza in apertura: senza articoli pubblicati resta la schermata iniziale.
+  if (!carosello.voci.length) {
     return pagina({
       l, percorso: P.home(l), alternative, descrizione: DESCRIZIONI_HOME[l],
       corpo: `<section class="schermata-titolo">
@@ -468,10 +509,11 @@ function home(l, articoli) {
 </section>`,
     });
   }
-  const [apertura, ...resto] = articoli;
+  const inCarosello = new Set(carosello.voci.map((x) => x.a.id));
+  const resto = articoli.filter((a) => !inCarosello.has(a.id));
   const tendenza = inTendenza(articoli);
   const ultime = resto.slice(0, 6);
-  const mostrati = new Set([apertura.id, ...ultime.map(a=>a.id)]);
+  const mostrati = new Set([...inCarosello, ...ultime.map(a=>a.id)]);
   // La scoperta indie è un articolo autentico già pubblicato, scelto tra
   // i contenuti marcati editorialmente con il tag 'indie'.
   const scopertaIndie = resto.find(a => a.tag.includes("indie") && !mostrati.has(a.id));
@@ -490,14 +532,8 @@ function home(l, articoli) {
     : "";
   const corpo = `
 <div class="intro-ritmo"><div><span class="eyebrow">${esc(config.nome)}</span><p>${esc(t.motto)}</p></div><a class="intro-link" href="${P.archivio(l)}">${esc(u.viewArchive)} ↗</a></div>
-<section class="eroe${apertura.immagine ? " eroe-con-arte" : ""}" data-colore="${colore(apertura.categoria)}" aria-labelledby="t-apertura">
-  ${apertura.immagine ? `<div class="eroe-arte" aria-hidden="true">${img({ src: apertura.immagine, riserva: apertura.immagineRiserva, lazy: false, priorita: true })}</div>` : ""}
-  <div class="eroe-testo">
-    <p class="meta">${etichettaCat(l, apertura.categoria)}<time datetime="${apertura.data.toISOString()}">${data(l, apertura.data, "lunga")}</time>${segnoBozza(apertura)}</p>
-    <h1 id="t-apertura" class="eroe-titolo"><a href="${apertura.url}">${esc(apertura.titolo)}</a></h1>
-    ${apertura.sommario ? `<p class="eroe-sommario">${esc(apertura.sommario)}</p>` : ""}
-    <div class="eroe-azioni"><a class="tasto-start" href="${apertura.url}">${esc(t.leggi)}</a>${hype(l, apertura.viralita)}</div>
-  </div>
+<section class="eroe eroe-carosello">
+  ${caroselloHome(l, carosello)}
   <aside class="classifica" aria-labelledby="t-classifica">
     <h2 id="t-classifica">${esc(u.editorialHype)}</h2>
     <p class="classifica-nota">${esc(u.editorialHypeHelp)} <a href="${urlPaginaFissa(l, "come-lavoriamo")}">${esc(u.viewAll)} ↗</a></p>
@@ -515,7 +551,8 @@ ${retro.length ? `<section class="blocco-novita" aria-labelledby="t-retro"><div 
 ${bloccoUscite(l, articoli)}
 ${bloccoSondaggio(l)}
 ${boxNewsletter(l)}
-${archivio.length ? `<section class="flusso homepage-archivio" aria-labelledby="t-archivio"><div class="blocco-heading"><div><h2 id="t-archivio" class="titolo-sezione">${esc(t.archivio)}</h2></div><a class="intro-link" href="${P.archivio(l)}">${esc(u.viewAll)} ↗</a></div><div class="griglia">${archivio.map(scheda).join("")}</div></section>` : ""}`;
+${archivio.length ? `<section class="flusso homepage-archivio" aria-labelledby="t-archivio"><div class="blocco-heading"><div><h2 id="t-archivio" class="titolo-sezione">${esc(t.archivio)}</h2></div><a class="intro-link" href="${P.archivio(l)}">${esc(u.viewAll)} ↗</a></div><div class="griglia">${archivio.map(scheda).join("")}</div></section>` : ""}
+<script src="/carosello.js" defer></script>`;
   return pagina({ l, percorso: P.home(l), corpo, ticker: articoli.slice(0, 8), alternative, descrizione: DESCRIZIONI_HOME[l] });
 }
 
