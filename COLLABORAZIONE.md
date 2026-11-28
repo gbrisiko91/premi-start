@@ -201,3 +201,33 @@ Gianmarco Buono ha approvato **il 26/11 alle 23:15** il testo originale «GTA 6,
 `<div class="video-yt" data-id="ID_DI_11_CARATTERI" data-titolo="Titolo"><a href="https://www.youtube.com/watch?v=ID_DI_11_CARATTERI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ID_DI_11_CARATTERI/hqdefault.jpg" alt="Descrizione" width="480" height="360" loading="lazy"><span class="video-yt__play" aria-hidden="true"></span></a></div>`. Da mantenere nel corpo Markdown come HTML; **non** aggiungere iframe o script nei contenuti. Il filtro li elimina. Con JavaScript disponibile, il clic carica un iframe `youtube-nocookie.com`; senza JavaScript il link apre YouTube. Il sito **richiede ancora le miniature da i.ytimg.com prima del clic**: non dichiarare zero richieste a Google. La privacy spiega questa distinzione.
 
 Il merge editoriale non autorizza pubblicazioni su Instagram né nuovi invii email agli ospiti di Premi Start. La PR #81 e la PR #83 restano indipendenti e sospese secondo le istruzioni del proprietario.
+
+## 28/11/2026 — Carosello in homepage (issue #92, PR #93) e coordinamento con la PR #81
+
+Il 28/11 Gianmarco Buono ha approvato il carosello di apertura della homepage. Le specifiche sono nella [issue #92](https://github.com/gbrisiko91/premi-start/issues/92).
+
+**Verifica della PR #81 (Premi Start, episodio 0):**
+- aperta, `mergeable: clean`, CI verde su `06deefd`, 30 commit indietro rispetto a `main` (`4fa5983`);
+- un merge di prova su `main` non dà conflitti;
+- in `build.mjs` aggiunge una riga in `home()` dopo `richiamoGta6`, lontana dal blocco eroe.
+
+L'impedimento non è tecnico: mancano l'approvazione specifica del proprietario e la verifica dell'ambito d'uso del consenso di Dragone7 prima della promozione social. Coordinamento pubblicato in [#92](https://github.com/gbrisiko91/premi-start/issues/92#issuecomment-7236438969) e in [#81](https://github.com/gbrisiko91/premi-start/pull/81#issuecomment-7236439144).
+
+**[PR #93](https://github.com/gbrisiko91/premi-start/pull/93), in bozza:**
+- branch `funzionalita/home-carosello-notizie`;
+- dipende da #81: rispettando §2 ("non modificare il medesimo file in due PR concorrenti"), non va integrata prima che #81 sia integrata o chiusa; dopo, si fa il rebase e si ricontrollano CI e preview sull'ultima SHA;
+- file nuovi: `strumenti/carosello-home.mjs`, `public/carosello.js`, `src/carosello.css` (incorporato solo in homepage), `tests/carosello-home.mjs`;
+- file modificati: `build.mjs`, limitato a `home()` più l'import e il renderer `caroselloHome`, e `package.json`, che aggiunge il test.
+
+**Regole fissate dal carosello, da conservare:**
+- giorni di calendario Europe/Rome (oggi + ieri), senza bozze né date future, ordine del sito, nessun limite;
+- se non c'è nulla di recente, le ultime 5 pubblicate;
+- il browser riapplica la stessa regola al cambio di data, senza chiamate di rete;
+- la prima notizia resta `h1`;
+- immagini solo HTTPS o locali, altrimenti la copertina di categoria; una sola immagine `eager`.
+
+Canonical, sitemap, newsletter, workflow e auto-pubblicazione restano invariati.
+
+**Nota emersa nei test, preesistente e non modificata:** il ticker e "Ultime notizie" mostrano anche articoli con data futura. Va valutato separatamente se serve un filtro.
+
+Il rilascio richiede la revisione di ChatGPT e l'approvazione specifica del proprietario. Nessun merge autonomo.
